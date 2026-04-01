@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Interconnection Engineering Studies — Software Concept Map</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue-50: #E6F1FB; --blue-200: #85B7EB; --blue-600: #185FA5; --blue-800: #0C447C;
+  --amber-50: #FAEEDA; --amber-200: #EF9F27; --amber-600: #854F0B; --amber-800: #633806;
+  --purple-50: #EEEDFE; --purple-200: #AFA9EC; --purple-600: #534AB7; --purple-800: #3C3489;
+  --green-50: #EAF3DE; --green-200: #97C459; --green-600: #3B6D11; --green-800: #27500A;
+  --coral-50: #FAECE7; --coral-200: #F0997B; --coral-600: #993C1D; --coral-800: #712B13;
+  --teal-50: #E1F5EE; --teal-200: #5DCAA5; --teal-600: #0F6E56; --teal-800: #085041;
+  --pink-50: #FBEAF0; --pink-200: #ED93B1; --pink-600: #993556; --pink-800: #72243E;
+  --gray-50: #F1EFE8; --gray-200: #B4B2A9; --gray-600: #5F5E5A; --gray-800: #444441;
+  --bg: #f9f8f5; --surface: #ffffff; --border: #e0ddd6; --text: #1a1a18; --muted: #6b6a64;
+}
+
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(135deg, #0C447C 0%, #185FA5 50%, #378ADD 100%);
+  color: white; padding: 60px 24px 50px; text-align: center;
+}
+.hero h1 { font-size: clamp(22px,4vw,36px); font-weight: 700; margin-bottom: 10px; letter-spacing: -0.5px; }
+.hero p  { font-size: clamp(13px,2vw,16px); opacity: 0.85; max-width: 580px; margin: 0 auto 24px; }
+.hero-badges { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.hero-badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 99px; padding: 4px 14px; font-size: 12px; }
+
+/* ── STUDY FLOW BANNER ── */
+.flow-banner { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; overflow-x: auto; }
+.flow-steps { display: flex; align-items: center; gap: 0; min-width: max-content; margin: 0 auto; width: fit-content; }
+.flow-step { text-align: center; padding: 8px 16px; }
+.flow-step-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue-600); color: white; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; margin: 0 auto 4px; }
+.flow-step-label { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.flow-arrow { color: var(--gray-200); font-size: 18px; margin: 0 4px; padding-bottom: 16px; }
+
+/* ── MAIN LAYOUT ── */
+.main { max-width: 1100px; margin: 0 auto; padding: 28px 20px 60px; }
+
+/* ── FILTER BAR ── */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; align-items: center; }
+.filter-label { font-size: 12px; color: var(--muted); margin-right: 4px; }
+.filter-btn { font-size: 12px; padding: 5px 14px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface); cursor: pointer; transition: all 0.15s; color: var(--text); }
+.filter-btn:hover { background: var(--gray-50); }
+.filter-btn.active { background: var(--blue-600); color: white; border-color: var(--blue-600); }
+
+/* ── GRID ── */
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+
+.sw-card {
+  border-radius: 14px; border: 1.5px solid var(--border);
+  background: var(--surface); cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  overflow: hidden;
+}
+.sw-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.09); }
+.sw-card.active { box-shadow: 0 0 0 2.5px var(--accent-color); border-color: var(--accent-color); }
+.sw-card.dimmed { opacity: 0.4; }
+
+.card-header { padding: 16px 16px 12px; border-bottom: 1px solid var(--border); }
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; }
+.card-icon { width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+.card-badges { display: flex; flex-direction: column; gap: 3px; align-items: flex-end; }
+.badge { font-size: 10px; padding: 2px 8px; border-radius: 99px; font-weight: 500; white-space: nowrap; }
+.card-name { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.card-vendor { font-size: 11px; color: var(--muted); }
+
+.card-body { padding: 12px 16px 14px; }
+.card-sub { font-size: 12.5px; color: var(--muted); margin-bottom: 10px; line-height: 1.5; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.card-tag { font-size: 10px; padding: 2px 7px; border-radius: 4px; background: var(--gray-50); color: var(--gray-600); border: 0.5px solid var(--border); }
+
+/* ── DETAIL PANEL ── */
+.detail-panel {
+  background: var(--surface); border: 1.5px solid var(--border);
+  border-radius: 16px; margin-top: 14px; overflow: hidden;
+  display: none;
+}
+.detail-panel.open { display: block; }
+
+.dp-hero { padding: 22px 24px 18px; border-bottom: 1px solid var(--border); }
+.dp-hero-top { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 10px; }
+.dp-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; }
+.dp-name { font-size: 20px; font-weight: 700; margin-bottom: 2px; }
+.dp-meta { font-size: 13px; color: var(--muted); }
+.dp-close { margin-left: auto; width: 30px; height: 30px; border-radius: 50%; background: var(--gray-50); border: 1px solid var(--border); cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--muted); }
+.dp-desc { font-size: 14px; color: var(--text); line-height: 1.65; }
+
+/* screenshot strip */
+.dp-screenshots { display: flex; gap: 10px; padding: 16px 24px; border-bottom: 1px solid var(--border); overflow-x: auto; background: var(--gray-50); }
+.dp-screenshot { border-radius: 8px; border: 1px solid var(--border); overflow: hidden; flex-shrink: 0; cursor: pointer; transition: transform 0.15s; }
+.dp-screenshot:hover { transform: scale(1.03); }
+.dp-screenshot img { width: 200px; height: 130px; object-fit: cover; display: block; background: var(--gray-50); }
+.dp-screenshot-label { font-size: 10px; text-align: center; padding: 4px 6px; color: var(--muted); background: white; }
+
+/* tabs */
+.dp-tabs { display: flex; border-bottom: 1px solid var(--border); overflow-x: auto; }
+.dp-tab { padding: 12px 20px; font-size: 13px; cursor: pointer; white-space: nowrap; border-bottom: 2.5px solid transparent; color: var(--muted); transition: all 0.15s; }
+.dp-tab:hover { color: var(--text); }
+.dp-tab.active { color: var(--blue-600); border-bottom-color: var(--blue-600); font-weight: 500; }
+
+.dp-content { padding: 22px 24px; }
+
+/* studies */
+.studies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-bottom: 16px; }
+.study-pill {
+  padding: 10px 14px; border-radius: 10px; border: 1.5px solid var(--border);
+  cursor: pointer; transition: all 0.15s; background: var(--surface);
+}
+.study-pill:hover { background: var(--gray-50); }
+.study-pill.active { border-color: var(--accent-color); background: var(--accent-bg); }
+.study-pill-name { font-size: 13px; font-weight: 500; margin-bottom: 3px; }
+.study-pill-hint { font-size: 11px; color: var(--muted); }
+
+.study-detail-box {
+  background: var(--gray-50); border-radius: 12px; padding: 18px 20px;
+  border: 1px solid var(--border); display: none; margin-top: 4px;
+}
+.study-detail-box.open { display: block; }
+.study-detail-title { font-size: 14px; font-weight: 600; margin-bottom: 8px; }
+.study-detail-text { font-size: 13.5px; line-height: 1.7; color: var(--text); }
+.study-detail-text strong { font-weight: 600; }
+
+/* workflow */
+.workflow-list { display: flex; flex-direction: column; gap: 0; }
+.wf-item { display: flex; gap: 12px; align-items: flex-start; position: relative; padding-bottom: 16px; }
+.wf-item:last-child { padding-bottom: 0; }
+.wf-item:last-child .wf-line { display: none; }
+.wf-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.wf-num { width: 28px; height: 28px; border-radius: 50%; background: var(--accent-color); color: white; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+.wf-line { width: 2px; flex: 1; background: var(--border); margin-top: 4px; min-height: 20px; }
+.wf-text { font-size: 13.5px; line-height: 1.6; padding-top: 4px; }
+.wf-tag { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 4px; margin-left: 6px; font-weight: 500; }
+
+/* file formats */
+.files-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.file-card { background: var(--gray-50); border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; }
+.file-ext { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 13px; font-weight: 600; color: var(--blue-800); margin-bottom: 2px; }
+.file-desc { font-size: 11px; color: var(--muted); }
+
+/* comparison table */
+.comp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.comp-table th { text-align: left; padding: 8px 12px; background: var(--gray-50); border: 1px solid var(--border); font-weight: 500; }
+.comp-table td { padding: 8px 12px; border: 1px solid var(--border); }
+.comp-table tr:nth-child(even) td { background: var(--gray-50); }
+.check { color: #3B6D11; font-weight: 600; }
+.partial { color: #854F0B; }
+.cross { color: #993C1D; }
+
+/* lightbox */
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 90vw; max-height: 85vh; border-radius: 8px; object-fit: contain; }
+.lightbox-close { position: fixed; top: 16px; right: 20px; color: white; font-size: 28px; cursor: pointer; }
+
+/* note box */
+.note-box { background: var(--blue-50); border: 1px solid var(--blue-200); border-radius: 10px; padding: 12px 16px; font-size: 13px; line-height: 1.6; margin-top: 16px; }
+.note-box strong { color: var(--blue-800); }
+
+/* responsive */
+@media (max-width: 600px) {
+  .dp-screenshots .dp-screenshot img { width: 160px; height: 105px; }
+  .dp-content { padding: 16px; }
+  .studies-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Grid Interconnection Engineering Studies</h1>
+  <p>The software landscape for medium-to-large projects — from load flow to EMT, protection to DER hosting capacity</p>
+  <div class="hero-badges">
+    <span class="hero-badge">7 Software Tools</span>
+    <span class="hero-badge">Transmission · Distribution · Substation</span>
+    <span class="hero-badge">RMS · EMT · Protection</span>
+    <span class="hero-badge">ISO/RTO Workflows</span>
+  </div>
+</div>
+
+<!-- STUDY FLOW BANNER -->
+<div class="flow-banner">
+  <div class="flow-steps">
+    <div class="flow-step"><div class="flow-step-num">1</div><div class="flow-step-label">Application &amp; Screening</div></div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step"><div class="flow-step-num">2</div><div class="flow-step-label">Feasibility Study</div></div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step"><div class="flow-step-num">3</div><div class="flow-step-label">System Impact Study</div></div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step"><div class="flow-step-num">4</div><div class="flow-step-label">Facilities Study</div></div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step"><div class="flow-step-num">5</div><div class="flow-step-label">Interconnection Agreement</div></div>
+    <div class="flow-arrow">›</div>
+    <div class="flow-step"><div class="flow-step-num">6</div><div class="flow-step-label">Construction &amp; Commissioning</div></div>
+  </div>
+</div>
+
+<div class="main">
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <span class="filter-label">Filter by:</span>
+    <button class="filter-btn active" data-filter="all">All tools</button>
+    <button class="filter-btn" data-filter="transmission">Transmission</button>
+    <button class="filter-btn" data-filter="emt">EMT</button>
+    <button class="filter-btn" data-filter="protection">Protection</button>
+    <button class="filter-btn" data-filter="distribution">Distribution</button>
+    <button class="filter-btn" data-filter="substation">Substation</button>
+    <button class="filter-btn" data-filter="opensource">Open-source</button>
+  </div>
+
+  <!-- CARDS GRID -->
+  <div class="cards-grid" id="cardsGrid"></div>
+
+  <!-- DETAIL PANEL -->
+  <div class="detail-panel" id="detailPanel"></div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" onclick="closeLightbox()">×</span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+const SW = [
+  {
+    id: "psse",
+    name: "PSS/E",
+    full: "Power System Simulator for Engineering",
+    vendor: "Siemens",
+    type: "Positive-sequence / RMS",
+    icon: "⚡",
+    accentColor: "#185FA5",
+    accentBg: "#E6F1FB",
+    badgeColor: "#E6F1FB",
+    badgeText: "#0C447C",
+    badge: "ISO/RTO Standard",
+    badge2: "Transmission",
+    tags: ["transmission", "rms"],
+    sub: "The required platform at most US ISO/RTOs — MISO, PJM, NYISO, ISO-NE, SPP, CAISO all distribute planning cases in PSS/E .raw format.",
+    cardTags: ["Load Flow", "N-1 Contingency", "Transient Stability", "Python API"],
+    desc: "PSS/E (Power System Simulator for Engineering) is Siemens' flagship transmission planning platform and the de facto standard at virtually every US ISO/RTO. ISOs distribute their approved planning base cases in PSS/E .raw format — developers must match ISO/RTO results in PSS/E to validate interconnection proposals. With over 200,000-bus capacity and 2,000+ Python APIs, it handles everything from simple load flow to complex NERC TPL-001 compliance studies.",
+    screenshots: [
+      { url: "https://www.siemens.com/content/dam/webassetpool/mam/tag-siemens-com/smdb/corporate-core/press/2021/technology-and-innovation/03/siemens-psse-screenshot.jpg", label: "PSS/E interface overview" },
+      { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/PowerWorld_Simulator_Screenshot.png/640px-PowerWorld_Simulator_Screenshot.png", label: "One-line diagram view" },
+    ],
+    studies: [
+      { label: "Load Flow", hint: "Newton-Raphson solver, 200k buses", text: "<strong>What it does:</strong> PSS/E solves the Newton-Raphson power flow equations across networks up to 200,000 buses. Engineers build a base case from <code>.raw</code> files containing bus data, branch impedances, shunt admittances, transformer taps, and generator dispatch. The solver iterates to find voltage magnitudes, angles, and MW/Mvar flows at every bus until convergence within a specified tolerance.<br><br><strong>In interconnection practice:</strong> The project generator bus, step-up transformer, and collector system equivalent are inserted into the ISO/RTO approved planning case. Load flow is run for multiple dispatch scenarios (peak load, light load, summer/winter peak) to confirm the system operates within thermal ratings and voltage limits (typically ±5% of nominal) before and after the project addition. Any pre-existing violations must be documented separately." },
+      { label: "N-1 Contingency", hint: "Batch trip of every element", text: "<strong>What it does:</strong> PSS/E's contingency analysis engine trips each network element (transmission lines, transformers, generating units) one at a time — the N-1 criterion — and automatically re-solves the power flow for each outage. Results are scanned for thermal overloads (loading > 100% of emergency rating) and voltage violations (bus voltages outside the utility's specified band).<br><br><strong>In interconnection practice:</strong> Hundreds of contingencies are evaluated. Any violation triggered by the new project (that wasn't present before) constitutes a study finding and triggers a required network upgrade, which the developer typically must fund. Under FERC Order 2023, cluster studies evaluate many projects simultaneously in the same contingency scan, making Python API automation of the PSS/E contingency workflow essential." },
+      { label: "Transient Stability", hint: ".dyr dynamic models, NERC TPL-001", text: "<strong>What it does:</strong> Using the <code>.dyr</code> dynamic model file — which stores generator models (GENROU, GENSAL), excitation systems (EXST1, IEEET1), governors (GGOV1, IEEEG1), power system stabilizers, and IBR control models (REEC_A, REGC_A) — PSS/E simulates how the power system responds to large disturbances over a timeframe of 0–30 seconds. The differential-algebraic equations are integrated numerically at each time step.<br><br><strong>Key outputs:</strong> Rotor angle swings (do generators stay in synchronism?), bus voltage recovery trajectories, frequency excursions, and machine speed deviations. NERC TPL-001-5 requires utilities to demonstrate stable operation for a defined set of credible contingencies — this study is the primary means of demonstrating compliance." },
+      { label: "Short Circuit (Fault)", hint: ".seq zero-sequence data", text: "<strong>What it does:</strong> PSS/E calculates three-phase bolted, single-line-to-ground, double-line-to-ground, and line-to-line fault currents at every bus in the network using the symmetric component method. The <code>.seq</code> file provides zero-sequence impedances for lines (tower geometry dependent) and transformers (winding configuration dependent).<br><br><strong>In interconnection practice:</strong> Fault current levels are compared to existing circuit breaker interrupting ratings per IEEE C37. Adding generation typically increases fault current levels at the interconnection substation and on adjacent buses. If calculated fault current exceeds a breaker's rated interrupting capability, the breaker must be replaced — a significant and often unexpected cost finding during the facilities study phase." },
+      { label: "Voltage Stability (PV/QV)", hint: "Nose curves, reactive margin", text: "<strong>What it does:</strong> PV (power-voltage) curves are generated by progressively increasing load until voltage collapse, tracing the 'nose curve'. QV (reactive-voltage) curves show the reactive power demand at a bus as a function of voltage, identifying the minimum reactive power reserve (QV margin) before voltage instability occurs.<br><br><strong>In interconnection practice:</strong> PV curves check that adding the new project doesn't reduce the voltage stability margin below acceptable thresholds under stressed system conditions (e.g., high summer load + multiple outages). QV curves at the point of interconnection show whether reactive compensation (capacitor banks, STATCOMs, SVCs) is needed. These are particularly important for projects in areas with weak transmission." },
+      { label: "Python API Automation", hint: "2,000+ APIs, psspy module", text: "<strong>What it does:</strong> PSS/E 35+ exposes a comprehensive Python API via the <code>psspy</code> module. Every function in the PSS/E GUI can be called programmatically — loading cases, adding buses, running load flow, reading results, flagging violations, modifying network elements, and generating reports — all without touching the GUI.<br><br><strong>Why it matters:</strong> Under FERC Order 2023, RTOs must evaluate clusters of 20–100+ projects simultaneously. Manually running load flow, contingency analysis, and stability studies for each combination of project inclusions/withdrawals is infeasible without automation. Python scripts that iterate through project combinations, run the full study suite, and output structured results tables have become a core competency at RTOs and their consultants. PSS/E's Python API is the primary interface for this automation." },
+    ],
+    workflow: [
+      { step: "Obtain ISO/RTO approved planning case", detail: "Download base case .raw + .dyr from the relevant ISO/RTO (MISO, PJM, NYISO etc.)", tag: "Data acquisition", tagColor: "#185FA5" },
+      { step: "Insert project into base case", detail: "Add generator bus, step-up transformer, gen model with correct REEC/REGC IBR models", tag: "Modelling", tagColor: "#3B6D11" },
+      { step: "Run Newton-Raphson load flow", detail: "Check convergence; fix any flatstart issues or non-convergence", tag: "Load Flow", tagColor: "#534AB7" },
+      { step: "Execute N-1 contingency batch", detail: "Flag all thermal overloads and voltage violations caused by the project", tag: "Contingency", tagColor: "#993C1D" },
+      { step: "Run transient stability (.dyr)", detail: "Three-phase faults at POI and adjacent buses; check NERC TPL-001 compliance", tag: "Stability", tagColor: "#854F0B" },
+      { step: "Run short circuit analysis (.seq)", detail: "Compare to breaker ratings; identify equipment upgrades required", tag: "Fault Study", tagColor: "#0F6E56" },
+      { step: "Identify network upgrades", detail: "Document all violations and corresponding required transmission upgrades", tag: "Results", tagColor: "#993556" },
+      { step: "Submit deliverables", detail: "Provide .raw, .dyr, .sav files + formal study report to transmission provider", tag: "Submission", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".raw", desc: "Network topology & power flow data (bus, branch, generator, load)" },
+      { ext: ".dyr", desc: "Dynamic model parameters (generators, exciters, governors, IBR controls)" },
+      { ext: ".sav", desc: "Saved binary case file (complete working power flow snapshot)" },
+      { ext: ".seq", desc: "Zero-sequence impedance data for short circuit analysis" },
+      { ext: ".loc", desc: "Bus location data (geographic coordinates)" },
+      { ext: ".out", desc: "Output report files from simulations" },
+    ],
+    note: "PSS/E is required at MISO, PJM, NYISO, ISO-NE, SPP, CAISO, and most other US ISO/RTOs. Siemens releases PSS/E v36.0 with NERC TPL-001 automation and hybrid cloud acceleration. IPPs must match ISO/RTO results in PSS/E to validate their interconnection proposals.",
+  },
+  {
+    id: "powerfactory",
+    name: "PowerFactory",
+    full: "DIgSILENT PowerFactory",
+    vendor: "DIgSILENT GmbH (Germany)",
+    type: "Integrated RMS + EMT platform",
+    icon: "🔬",
+    accentColor: "#993556",
+    accentBg: "#FBEAF0",
+    badgeColor: "#FBEAF0",
+    badgeText: "#72243E",
+    badge: "European Standard",
+    badge2: "RMS + EMT",
+    tags: ["transmission", "emt", "protection", "distribution"],
+    sub: "The dominant platform in Europe, Australia, and Latin America — preferred for grid code compliance, advanced stability studies, and integrated T&D modelling.",
+    cardTags: ["Load Flow", "RMS Dynamics", "EMT (built-in)", "DPL/Python", "Grid Code"],
+    desc: "DIgSILENT PowerFactory is a fully integrated power system analysis platform covering load flow, short circuit, RMS dynamic simulation, EMT simulation, protection coordination, and harmonic analysis in a single database-driven environment. Developed in Germany since 1976, it is the dominant tool in Europe (required by ENTSO-E, National Grid UK, AEMO Australia, and many TSOs worldwide), and increasingly used alongside PSS/E for projects with international scope. Its unique architecture allows the same network model to be used across all study types without re-entry, and its built-in RMS-EMT co-simulation capability is increasingly important for IBR-heavy grids.",
+    screenshots: [
+      { url: "https://www.digsilent.de/fileadmin/user_upload/content/solutions/products/powerfactory/screenshots/PF2022_screenshot_01.png", label: "Network diagram view" },
+      { url: "https://www.digsilent.de/fileadmin/user_upload/content/solutions/products/powerfactory/screenshots/PF2022_screenshot_03.png", label: "Results & plotting" },
+    ],
+    studies: [
+      { label: "Load Flow & OPF", hint: "Balanced & unbalanced, CIM import", text: "<strong>What it does:</strong> PowerFactory's load flow engine supports balanced (positive sequence) and unbalanced (three-phase) power flow, covering transmission, sub-transmission, and LV distribution in the same model. The optimal power flow (OPF) module minimises cost or losses subject to thermal, voltage, and reactive power constraints. Unlike PSS/E, PowerFactory stores load flow and dynamic data in a unified internal database — there are no separate <code>.raw</code> and <code>.dyr</code> files; all data lives in the project database (<code>.pfd</code>).<br><br><strong>In interconnection practice:</strong> PowerFactory imports PSS/E <code>.raw</code> and <code>.dyr</code> files, making it straightforward to work with ISO/RTO base cases. Its advantage over PSS/E for interconnection is the ability to model the complete system — from the HV transmission network down through the MV collector system and individual wind turbine or PV inverter terminals — in one consistent model." },
+      { label: "RMS Dynamics", hint: "Equivalent to PSS/E transient stability", text: "<strong>What it does:</strong> PowerFactory's RMS (phasor-domain) dynamic simulation is equivalent in scope to PSS/E transient stability. It simulates generator rotor angle stability, voltage stability, and frequency dynamics following large disturbances. PowerFactory uses DIgSILENT Simulation Language (DSL) for defining dynamic models — a block-diagram language for building custom generator, control, and protection models.<br><br><strong>Advantages for IBR modelling:</strong> PowerFactory's generic grid-forming and grid-following inverter models (based on IEC 61400-27 for wind, and WECC REGC/REEC for solar) are considered more flexible and better documented than PSS/E's equivalents by many engineers. This makes PowerFactory the preferred tool for detailed IBR stability studies in regions where the TSO/ISO accepts it." },
+      { label: "Built-in EMT", hint: "RMS-EMT co-simulation unique feature", text: "<strong>What it does:</strong> Uniquely among major planning tools, PowerFactory includes a built-in EMT (electromagnetic transient) simulation engine alongside the RMS engine. Engineers can run EMT simulations directly in the same environment and, crucially, run RMS-EMT co-simulation: the transmission system is modelled in RMS (for computational efficiency) while a specific subsystem of interest (e.g., a wind farm collector system and inverters) is modelled in EMT (for high fidelity). The two solvers exchange boundary conditions at each time step.<br><br><strong>Why this matters:</strong> This eliminates the need to export data to a separate EMT tool like PSCAD for many study types. Denmark's TSO Energinet mandates PowerFactory for RMS studies and PSCAD for EMT studies, but many European TSOs accept PowerFactory EMT directly — reducing the toolchain for developers." },
+      { label: "Short Circuit", hint: "IEC 60909, ANSI, VDE, AS3851", text: "<strong>What it does:</strong> PowerFactory supports multiple international short circuit standards simultaneously: IEC 60909 (most commonly used in Europe), ANSI/IEEE C37, VDE, AS3851 (Australia), and complete calculation (full network model). All three symmetrical components are calculated as well as phase quantities. Thevenin impedances as seen from the faulted node are computed for every bus.<br><br><strong>In interconnection practice:</strong> This multi-standard capability makes PowerFactory the preferred tool for international projects (e.g., a European developer building in Australia) or for utilities that must demonstrate compliance with multiple standards. The fault current results feed directly into the protection coordination module without re-entering network data." },
+      { label: "Protection Coordination", hint: "Integrated relay library, grid code checking", text: "<strong>What it does:</strong> PowerFactory's protection module includes a library of relay models (overcurrent, distance, differential, under/overvoltage, frequency) that operate during dynamic simulations. Unlike ASPEN OneLiner's standalone approach, PowerFactory's relays are fully integrated into the network model — during an RMS or EMT simulation, relays detect fault conditions and issue trip signals that modify the network topology in real time.<br><br><strong>In interconnection practice:</strong> This allows engineers to study protection miscoordination events as they actually unfold dynamically — not just as static time-current curve checks. StationWare (DIgSILENT's companion product) provides relay setting management and documentation, integrated with PowerFactory via direct data exchange." },
+      { label: "DPL & Python Scripting", hint: "DIgSILENT Programming Language", text: "<strong>What it does:</strong> PowerFactory offers two scripting interfaces: DPL (DIgSILENT Programming Language), its native scripting language for automation within PowerFactory, and a Python API for external script control via the PowerFactory COM interface or the newer PowerFactory Python package. DPL scripts can control all calculation functions, modify network data, loop through contingency scenarios, and generate formatted output reports.<br><br><strong>In interconnection practice:</strong> DPL/Python scripts are used to automate grid code compliance checks — stepping through voltage ride-through tests, frequency response tests, and reactive power capability assessments, then comparing results to the required performance envelopes automatically. This is particularly valuable for the iterative model validation process during the interconnection study cycle." },
+    ],
+    workflow: [
+      { step: "Build or import network model", detail: "Build from scratch in PF database or import PSS/E .raw + .dyr / CIM / DGS format", tag: "Data setup", tagColor: "#993556" },
+      { step: "Define study cases & scenarios", detail: "Create Study Cases for peak load, light load, N-1, N-2; link to Variations for project modelling", tag: "Scenario setup", tagColor: "#993556" },
+      { step: "Run balanced load flow", detail: "Solve power flow; check voltage and thermal limits across all scenarios", tag: "Load Flow", tagColor: "#534AB7" },
+      { step: "Run RMS dynamic simulations", detail: "Three-phase faults, generator trips, load rejection; check rotor angle & voltage stability", tag: "Dynamics", tagColor: "#185FA5" },
+      { step: "Run EMT or RMS-EMT co-sim", detail: "Detailed IBR transient and control interaction studies using built-in EMT engine", tag: "EMT", tagColor: "#854F0B" },
+      { step: "Run short circuit (IEC/ANSI)", detail: "Calculate fault currents at all buses; check breaker ratings and protection adequacy", tag: "Fault Study", tagColor: "#0F6E56" },
+      { step: "Run protection coordination", detail: "Simulate relay operations dynamically; verify selectivity and coordination margins", tag: "Protection", tagColor: "#993C1D" },
+      { step: "Export results & submit", detail: "Generate reports; export .pfd project or convert to PSS/E format for ISO submission", tag: "Submission", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".pfd", desc: "PowerFactory Data — primary project database export format (recommended)" },
+      { ext: ".pfdx", desc: "PowerFactory Data (zip) — includes external files, introduced in PF 2025" },
+      { ext: ".dz", desc: "Legacy project export format (older projects; superseded by .pfd)" },
+      { ext: ".dgs", desc: "DIgSILENT Gateway Script — ASCII exchange format for model data" },
+      { ext: ".csv / .xlsx", desc: "Tabular result exports for plotting and post-processing" },
+      { ext: ".raw / .dyr", desc: "PSS/E import formats (PowerFactory can import these natively)" },
+    ],
+    note: "PowerFactory 2025 is the current release (Feb 2025). It is the required tool at ENTSO-E, National Grid ESO (UK), AEMO (Australia), Energinet (Denmark), and many European/Asian TSOs. For projects in these regions, PowerFactory is the PSS/E equivalent — mandatory for ISO submission.",
+  },
+  {
+    id: "pscad",
+    name: "PSCAD",
+    full: "Power Systems Computer Aided Design",
+    vendor: "Manitoba Hydro International (MHI)",
+    type: "Electromagnetic Transient (EMT)",
+    icon: "⚛️",
+    accentColor: "#854F0B",
+    accentBg: "#FAEEDA",
+    badgeColor: "#FAEEDA",
+    badgeText: "#633806",
+    badge: "EMT Gold Standard",
+    badge2: "IBR Required",
+    tags: ["transmission", "emt"],
+    sub: "The gold standard for electromagnetic transient (EMT) studies — required by utilities for inverter-based resources above ~100 MW and for any project near series-compensated transmission.",
+    cardTags: ["EMT Simulation", "IBR Modelling", "FRT Studies", "SSR/SSCI", "Model Benchmarking"],
+    desc: "PSCAD (Power Systems Computer Aided Design) is the world's leading electromagnetic transient simulation platform, developed by Manitoba Hydro International. It simulates power electronics, control systems, and electromagnetic phenomena at microsecond time resolution — orders of magnitude finer than RMS tools like PSS/E. As inverter-based resources (solar PV, wind, BESS) now dominate new interconnection requests, PSCAD has moved from a specialist tool to a near-universal requirement for large projects. The .pscx model file submitted to the transmission provider is a key deliverable alongside the PSS/E dynamic model.",
+    screenshots: [],
+    studies: [
+      { label: "EMT / Transient", hint: "Microsecond time-step, IGBT switching", text: "<strong>What it does:</strong> PSCAD represents the full electromagnetic behaviour of the power system including distributed parameter transmission lines (travelling wave models), transformer saturation and hysteresis, cable models, and — critically — the detailed switching behaviour of power electronics. Time steps of 10–50 microseconds capture IGBT switching events, phase-locked loop dynamics, and current controller responses that are completely invisible in PSS/E's 1–10 millisecond RMS simulation.<br><br><strong>Why it's required:</strong> Grid-forming and grid-following inverters respond to disturbances based on complex control algorithms operating at kHz bandwidth. An RMS simulation represents these with simplified phasor-domain equivalents, which can miss critical interaction modes. Utilities now typically require a validated PSCAD model for any IBR project — particularly above 100 MW or at electrically weak points of interconnection (low SCR)." },
+      { label: "Fault Ride-Through (FRT)", hint: "NERC PRC-024, PRC-029-1 (2026)", text: "<strong>What it does:</strong> PSCAD simulates how inverters respond during voltage sags caused by nearby faults. Engineers apply three-phase bolted faults, single-line-to-ground faults, and phase-to-phase faults at the point of interconnection and on adjacent buses. The key metrics are: does the inverter stay connected during the fault? Does it inject the required reactive current during the low-voltage period? Does voltage recover within the prescribed post-fault trajectory?<br><br><strong>Regulatory context:</strong> NERC PRC-024-3 defines voltage-ride-through performance requirements for large generators. The new PRC-029-1 (effective 2026) extends these requirements to IBRs specifically, with more stringent performance criteria. Critical clearing time analysis in PSCAD determines the maximum fault duration the inverter can withstand before tripping — a key input to the protection coordination study." },
+      { label: "SSR / SSCI", hint: "Subsynchronous resonance, 5-55 Hz", text: "<strong>What it does:</strong> Subsynchronous Resonance (SSR) and Subsynchronous Control Interaction (SSCI) are phenomena where inverter control loops interact with series-compensated transmission lines or nearby synchronous machine shaft systems to produce oscillations at frequencies below 60 Hz (typically 5–55 Hz). These oscillations can grow rapidly and cause generator shaft damage or inverter tripping — as occurred in ERCOT in 2009 (Zorillo Gulf event).<br><br><strong>How PSCAD is used:</strong> Engineers build a full EMT model of the wind/solar plant, the series-compensated transmission path, and nearby synchronous generators. Frequency scanning and eigenvalue analysis are performed to identify any unstable resonant modes. If SSR/SSCI is detected, mitigation options (subsynchronous damping controllers, series capacitor bypass schemes) are designed and tested in PSCAD before being implemented." },
+      { label: "Model Benchmarking", hint: "RMS vs EMT cross-validation", text: "<strong>What it does:</strong> PSCAD models must be validated against two reference points: (1) the PSS/E positive-sequence (RMS) dynamic model — identical disturbances in both tools should give consistent results for voltage, active and reactive power trajectories; and (2) factory test data from the inverter OEM, where available — the PSCAD model should replicate the measured inverter response during hardware tests.<br><br><strong>Why it matters:</strong> NERC, WECC, and most TSOs require that submitted EMT models have been benchmarked and the cross-validation documented. Significant divergence between PSCAD and PSS/E results — beyond what is explainable by the fundamental difference in simulation methodology — suggests a modelling error. Common sources of divergence: PLL tuning differences, reactive current injection ramp rate limits, and low-voltage power logic settings." },
+      { label: "Harmonic / Power Quality", hint: "IEEE 519, resonance identification", text: "<strong>What it does:</strong> PSCAD models harmonic current injections from inverter switching at the fundamental and at harmonic frequencies (typically 5th, 7th, 11th, 13th, and at the switching frequency ~1–5 kHz). The collector system's cable capacitances form LC resonant circuits with transformer leakage reactances. If a harmonic injection frequency coincides with a resonant frequency, harmonic voltage amplification can cause equipment damage and non-compliance with IEEE 519 voltage distortion limits.<br><br><strong>In interconnection practice:</strong> PSCAD is used for detailed harmonic resonance studies after ETAP identifies a potential resonance risk from the simpler frequency scan. The PSCAD model includes detailed cable models, transformer saturation, and inverter harmonic spectra to give a definitive assessment of harmonic voltage at the point of interconnection." },
+    ],
+    workflow: [
+      { step: "Obtain OEM inverter model (.pscx)", detail: "Encrypted model from wind turbine or solar inverter manufacturer — internal logic hidden but behaviour accurate", tag: "Data acquisition", tagColor: "#854F0B" },
+      { step: "Build plant model", detail: "Collector cables (π sections or distributed parameter), pad-mount and step-up transformers, substation bus", tag: "Modelling", tagColor: "#854F0B" },
+      { step: "Define grid equivalent at POI", detail: "Thevenin impedance derived from PSS/E short-circuit results; model for min/max SCR conditions", tag: "Grid modelling", tagColor: "#185FA5" },
+      { step: "Steady-state validation", detail: "Match PSCAD and PSS/E operating point (P, Q, V, I) — baseline before disturbance testing", tag: "Validation", tagColor: "#3B6D11" },
+      { step: "Fault simulations (FRT testing)", detail: "3-phase and SLG faults at POI; 2-phase faults; verify LVRT/HVRT curves against PRC-024 / PRC-029", tag: "FRT", tagColor: "#993C1D" },
+      { step: "SSR/SSCI sweep (if applicable)", detail: "Frequency scan 0–100 Hz; eigenvalue analysis; design damping controller if needed", tag: "SSR", tagColor: "#993556" },
+      { step: "Benchmark vs PSS/E", detail: "Overlay PSCAD and PSS/E waveforms for same fault; document differences; explain divergence", tag: "Benchmarking", tagColor: "#534AB7" },
+      { step: "Submit .pscx + report", detail: "Provide encrypted PSCAD project file and simulation report to transmission provider / TSO", tag: "Submission", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".pscx", desc: "PSCAD project file — contains full simulation model, may be encrypted for IBR OEM models" },
+      { ext: ".inf", desc: "PSCAD information file — simulation settings and runtime parameters" },
+      { ext: ".out", desc: "Binary output channel data from simulation runs" },
+      { ext: ".f", desc: "Fortran source files for custom component models (EMTDC subroutines)" },
+      { ext: ".lib", desc: "PSCAD library files — collections of custom components" },
+    ],
+    note: "PSCAD is developed by MHI (Manitoba Hydro International) and is the globally accepted standard for EMT studies. Most utilities that require EMT studies specify PSCAD/EMTDC as the accepted tool. EMTP (Alternative Transients Program) is accepted by some European and Canadian utilities. As IBR penetration rises, PSCAD requirements are spreading even to projects that previously only needed PSS/E.",
+  },
+  {
+    id: "aspen",
+    name: "ASPEN OneLiner",
+    full: "ASPEN OneLiner",
+    vendor: "ASPEN Inc.",
+    type: "Short Circuit & Protection",
+    icon: "🛡️",
+    accentColor: "#534AB7",
+    accentBg: "#EEEDFE",
+    badgeColor: "#EEEDFE",
+    badgeText: "#3C3489",
+    badge: "46% Market Share",
+    badge2: "Protection",
+    tags: ["protection", "transmission"],
+    sub: "The leading short-circuit and relay coordination program — 46% market share across 87 utilities in 24 countries. Built-in NERC PRC compliance automation.",
+    cardTags: ["Short Circuit", "Relay Coordination", "NERC PRC Compliance", "Arc Flash", "Stepped-Event"],
+    desc: "ASPEN OneLiner is the dominant protection engineering software in North America, holding approximately 46% market share for short-circuit and relay coordination according to Newton-Evans Research surveys. It is the tool of choice for protection engineers who need to model how adding generation changes fault current levels and relay coordination throughout the network. Its graphical relay characteristic display, automatic coordination checking, and built-in NERC PRC compliance tools make it the standard for interconnection protection studies.",
+    screenshots: [],
+    studies: [
+      { label: "Short Circuit Analysis", hint: "All fault types, breaker duty", text: "<strong>What it does:</strong> OneLiner calculates symmetrical and asymmetrical fault currents at every bus in the network for all fault types: three-phase bolted, single-line-to-ground, line-to-line, double-line-to-ground, and open-conductor faults. Results include magnitude, angle, and sequence components (positive, negative, zero) at each bus and on each branch flowing to the fault.<br><br><strong>In interconnection practice:</strong> Adding generation increases fault current levels. The core question is whether fault current now exceeds existing circuit breaker interrupting ratings per ANSI/IEEE C37.010 or IEC 62271. OneLiner cross-checks calculated X/R ratio-adjusted fault current against each breaker's nameplate interrupting capability and flags exceedances. Breaker replacement is typically a high-cost finding — sometimes millions of dollars — that can make or break a project's economics." },
+      { label: "Relay Coordination", hint: "TOC curves, distance zones, selectivity", text: "<strong>What it does:</strong> OneLiner's core function is graphical time-current coordination. Engineers pull up the relay characteristic curves for every protective device in the affected zone — time-overcurrent (TOC) relays, distance relays, reclosers, and fuses — and verify the selectivity margin: the relay nearest the fault trips first, and backup protection has adequate time to operate if the primary relay fails.<br><br><strong>In interconnection practice:</strong> Adding generation changes the direction and magnitude of fault current, which can cause previously coordinated relays to lose coordination — a condition called 'sympathetic tripping' or 'coordination infringement'. Engineers must re-check and often re-set relays on every line terminating at affected buses. Deliverables are relay setting sheets acceptable to the utility — typically requiring engineer of record sign-off." },
+      { label: "NERC PRC Compliance", hint: "PRC-023, PRC-025, PRC-026, PRC-027", text: "<strong>What it does:</strong> OneLiner has built-in automated compliance checking for four critical NERC PRC standards: PRC-023-3 (transmission relay loadability — ensures relays don't trip on load current), PRC-025-1 (generator relay loadability — ensures generator protection doesn't trip on system swings), PRC-026 (relay performance during stable power swings), and PRC-027 (relay maintenance intervals).<br><br><strong>In interconnection practice:</strong> Transmission providers must demonstrate NERC compliance for all relay settings. Adding generation changes the relay loadability margins calculated in PRC-023. OneLiner automates the bulk scanning of all relay settings against PRC criteria and produces a compliance report that becomes part of the facilities study deliverables package." },
+      { label: "Arc Flash Analysis", hint: "IEEE 1584-2018, NFPA 70E", text: "<strong>What it does:</strong> OneLiner calculates incident energy levels (cal/cm²) at every switchgear bus, disconnect, and equipment terminal in the interconnection substation using the IEEE 1584-2018 methodology. Arc flash boundaries and required PPE (Personal Protective Equipment) categories are assigned to each working location.<br><br><strong>In interconnection practice:</strong> Every new interconnection substation requires arc flash labels on all equipment before commissioning, per NFPA 70E. OneLiner leverages the same short-circuit model already built for the interconnection study — no re-entry of network data. The arc flash results feed directly into the substation design drawings and safety documentation package." },
+      { label: "Stepped-Event Analysis", hint: "Sequential protection operations", text: "<strong>What it does:</strong> Stepped-event analysis simulates the sequence of protective device operations following a fault — the primary relay trips, the network reconfigures, possibly triggering another relay to detect the modified fault current and also trip, and so on. OneLiner traces this cascade automatically and verifies that the fault is ultimately cleared by the correct sequence of devices operating within their coordination windows.<br><br><strong>Why it matters for interconnection:</strong> The new generator provides an infeed to the fault from the project side of the network. This infeed current slows the fault current seen by the upstream utility relay (the relay detects less total fault current than without the infeed), potentially delaying its operation beyond its coordination window with the downstream relay. This 'infeed effect' can cause protection miscoordination that only stepped-event analysis reveals." },
+    ],
+    workflow: [
+      { step: "Obtain utility protection model (.olr)", detail: "Network model with all existing relay settings from the transmission provider", tag: "Data acquisition", tagColor: "#534AB7" },
+      { step: "Insert project and interconnection substation", detail: "Add generator bus, step-up transformer, POI transformer, and interconnection substation switchgear", tag: "Modelling", tagColor: "#534AB7" },
+      { step: "Run all-bus fault current calculations", detail: "Three-phase and SLG faults at all affected buses; both with and without project", tag: "Fault Study", tagColor: "#993C1D" },
+      { step: "Compare to breaker ratings (ANSI C37)", detail: "Flag any bus where new fault current exceeds circuit breaker interrupting duty", tag: "Breaker duty", tagColor: "#854F0B" },
+      { step: "Display relay coordination curves", detail: "Plot TOC and distance relay characteristics for all zones affected by changed fault current", tag: "Coordination", tagColor: "#3B6D11" },
+      { step: "Run PRC-023 / PRC-025 compliance sweeps", detail: "Auto-check all relay settings against NERC loadability requirements", tag: "NERC PRC", tagColor: "#185FA5" },
+      { step: "Run arc flash study", detail: "Calculate incident energy at substation equipment per IEEE 1584-2018", tag: "Arc Flash", tagColor: "#0F6E56" },
+      { step: "Adjust settings & document", detail: "Revise relay settings; generate relay setting sheets; obtain utility approval", tag: "Deliverables", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".olr", desc: "OneLiner relay database and network model file (primary project file)" },
+      { ext: ".pwd", desc: "One-line diagram file (visual representation of the network)" },
+      { ext: ".csv", desc: "Exported fault current results, relay settings, and compliance reports" },
+      { ext: ".rpt", desc: "Formatted study report output from OneLiner batch analysis" },
+    ],
+    note: "ASPEN OneLiner holds ~46% market share per Newton-Evans Research (87 utilities, 24 countries). CAPE (Electrocon) is the major competitor at ~30%. OneLiner's built-in Python API allows scripted batch processing for large relay coordination studies covering thousands of relay settings simultaneously.",
+  },
+  {
+    id: "pw",
+    name: "PowerWorld",
+    full: "PowerWorld Simulator",
+    vendor: "PowerWorld Corporation",
+    type: "Positive-sequence / Visualisation",
+    icon: "🗺️",
+    accentColor: "#3B6D11",
+    accentBg: "#EAF3DE",
+    badgeColor: "#EAF3DE",
+    badgeText: "#27500A",
+    badge: "Visualisation Leader",
+    badge2: "Transmission",
+    tags: ["transmission"],
+    sub: "The dominant tool for transmission visualisation, early-stage interconnection screening, and OPF/LMP analysis. Eastern Interconnection and WECC base cases distributed in PowerWorld format.",
+    cardTags: ["Load Flow", "Contingency", "PTDF/OTDF", "OPF / LMPs", "GIS Maps"],
+    desc: "PowerWorld Simulator is a power system analysis platform distinguished by its real-time animated single-line diagrams and exceptional visualisation capabilities. While PSS/E is the ISO/RTO workhorse for formal study submissions, PowerWorld is widely used for early-stage interconnection screening, transmission planning visualisation, market analysis, and educational purposes. It handles networks up to 250,000 buses and can read/write PSS/E .raw format, making it a natural companion tool. The Eastern Interconnection and WECC system base cases are distributed in PowerWorld format.",
+    screenshots: [],
+    studies: [
+      { label: "Power Flow (Load Flow)", hint: "Animated single-line, 250k buses", text: "<strong>What it does:</strong> PowerWorld solves the same Newton-Raphson power flow equations as PSS/E with comparable accuracy for large networks. Its defining feature is the animated single-line diagram: real-time MW and Mvar flows appear as moving pie-chart arrows on the diagram as the solution converges, with lines colour-coded from green (lightly loaded) through yellow/orange to red (overloaded). This makes it immediately obvious where the system is stressed and how power flows change with different generation dispatches.<br><br><strong>In interconnection practice:</strong> PowerWorld is often used for exploratory analysis before the formal PSS/E study — quickly testing different project sizes and locations to understand the impact range before committing to a formal ISO submission. Case files can be exported to PSS/E .raw format for the formal study." },
+      { label: "Contingency Analysis", hint: "N-1, N-2, ATC calculation", text: "<strong>What it does:</strong> PowerWorld's contingency analysis module evaluates N-1 and N-2 outages and immediately highlights overloaded lines on the animated diagram. Available Transfer Capability (ATC) calculations determine the maximum additional power transfer between two areas before a thermal constraint is violated. The results update the diagram in real time as contingencies are selected.<br><br><strong>In interconnection practice:</strong> ATC analysis is used during preliminary site screening to understand the headroom available at candidate interconnection points. A point of interconnection in an area with high ATC can potentially support a larger project or require fewer network upgrades than one with low ATC, influencing site selection before a formal interconnection application is filed." },
+      { label: "Sensitivity (PTDF/OTDF)", hint: "Flowgate impact analysis", text: "<strong>What it does:</strong> PTDFs (Power Transfer Distribution Factors) quantify what fraction of a 1 MW injection at one bus and withdrawal at another flows on each transmission line in the network. OTDFs (Outage Transfer Distribution Factors) apply the same calculation for post-contingency flows. PowerWorld computes these as a matrix across the entire network interactively.<br><br><strong>In interconnection practice:</strong> By computing the PTDF vector for a candidate project location, an engineer can instantly identify which transmission lines (flowgates) are most affected by injecting power at that point. High PTDFs on already-congested paths indicate expensive upgrade requirements. This sensitivity analysis is a key input to early-stage interconnection siting decisions and cluster study pre-screening." },
+      { label: "OPF & LMP Analysis", hint: "Security-constrained OPF, nodal pricing", text: "<strong>What it does:</strong> PowerWorld's Optimal Power Flow (OPF) minimises generation cost subject to thermal, voltage, reactive power, and stability constraints using LP and mixed-integer formulations. Security-Constrained OPF (SCOPF) extends this to maintain feasibility after any credible N-1 contingency. Locational Marginal Prices (LMPs) — the nodal electricity prices used by US organised markets — are computed as the dual variables of the OPF constraints.<br><br><strong>In interconnection practice:</strong> LMP analysis helps developers understand the market revenue potential of different interconnection points before filing. Congested paths result in nodal price separation: a project in a load pocket commands a price premium, while a project in an energy-surplus region faces negative LMPs during high-generation periods. PowerWorld's OPF is widely used for pre-application market impact screening." },
+      { label: "GIS Visualisation", hint: "Geographic base case maps", text: "<strong>What it does:</strong> PowerWorld's oneline diagrams can be overlaid on geographic maps (GIS integration), showing actual transmission line routes, substation locations, load centre positions, and generation facility locations on a real map background. Network loading, voltage levels, and contingency impacts are visualised geographically — making it easy to understand which corridors are congested and how the new project's injection patterns relate to geography.<br><br><strong>In interconnection practice:</strong> Geographic visualisation is valuable for stakeholder presentations and for understanding the regional context of interconnection. Seeing that a proposed wind farm in Wyoming has high PTDFs on the PACE-Idaho interface, for example, immediately tells an experienced planner that Path 29 capacity will be a constraint. The WECC Transmission Expansion Planning (TEP) process uses PowerWorld geographic cases as the primary planning tool." },
+    ],
+    workflow: [
+      { step: "Open base case (.pwb or import .raw)", detail: "Load Eastern Interconnection, WECC, or utility-specific planning case", tag: "Data setup", tagColor: "#3B6D11" },
+      { step: "Build animated oneline diagram (.pwd)", detail: "Define geographic or schematic one-line showing the study area of interest", tag: "Visualisation", tagColor: "#3B6D11" },
+      { step: "Insert project at candidate POI", detail: "Add generator bus, step-up transformer; set generation dispatch level", tag: "Modelling", tagColor: "#534AB7" },
+      { step: "Run load flow; review animated flows", detail: "Watch flow arrows update; identify any new overloads shown in orange/red", tag: "Load Flow", tagColor: "#185FA5" },
+      { step: "Run contingency list", detail: "Execute N-1 list; sort results by overload magnitude; highlight worst cases", tag: "Contingency", tagColor: "#993C1D" },
+      { step: "Compute PTDF/OTDF sensitivity", detail: "Identify which flowgates are most impacted by injection at the project's bus", tag: "Sensitivity", tagColor: "#854F0B" },
+      { step: "Run OPF / compute LMPs", detail: "Estimate nodal market value of project; identify congested paths", tag: "Market analysis", tagColor: "#0F6E56" },
+      { step: "Export to PSS/E .raw for formal study", detail: "Hand off updated base case to PSS/E for the formal ISO/RTO study submission", tag: "Handoff", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".pwb", desc: "PowerWorld binary case file (complete model including economic and dynamic data)" },
+      { ext: ".pwd", desc: "PowerWorld oneline diagram file (visual single-line diagram associated with the case)" },
+      { ext: ".aux", desc: "PowerWorld auxiliary text file (case data in human-readable format; scriptable)" },
+      { ext: ".raw", desc: "PSS/E raw format export (for handoff to PSS/E for formal ISO study)" },
+    ],
+    note: "PowerWorld is used by WECC, MISO, PJM, and most US ISOs for transmission planning visualisation. The Eastern Interconnection base case (>70,000 buses) and WECC base case are distributed in PowerWorld format. PowerWorld's free Viewer package allows stakeholders without a licence to open and view large planning cases.",
+  },
+  {
+    id: "etap",
+    name: "ETAP",
+    full: "Electrical Transient Analyzer Program",
+    vendor: "ETAP / Operation Technology Inc.",
+    type: "AC/DC Substation & Industrial",
+    icon: "🏭",
+    accentColor: "#993C1D",
+    accentBg: "#FAECE7",
+    badgeColor: "#FAECE7",
+    badgeText: "#712B13",
+    badge: "Substation Design",
+    badge2: "Substation",
+    tags: ["substation", "protection"],
+    sub: "The dominant tool for interconnection substation and collector system design — works in parallel with PSS/E on the same project, covering the project side of the point of interconnection.",
+    cardTags: ["Substation Load Flow", "Short Circuit", "Arc Flash", "Harmonic Analysis", "DC Systems"],
+    desc: "ETAP (Electrical Transient Analyzer Program) is the leading software for substation and industrial power system design in North America. While PSS/E models the transmission grid, ETAP models the project side of the point of interconnection in detail — the interconnection substation, step-up transformers, collector system feeders, and individual inverter pad-mount transformers. ETAP and PSS/E are routinely used in parallel on the same interconnection project by different engineering teams (transmission planners use PSS/E; substation/collector system engineers use ETAP).",
+    screenshots: [],
+    studies: [
+      { label: "Substation Load Flow", hint: "Cable/feeder level detail, inverter terminals", text: "<strong>What it does:</strong> ETAP models the interconnection substation and collector system at a level of detail that PSS/E doesn't support — individual cable runs (with conductor type, length, conduit fill, and ambient temperature), transformer taps and impedance tolerances, shunt capacitor banks, harmonic filters, and protective device configurations. Load flow is run for multiple generation dispatch scenarios (0%, 50%, 100% of rated capacity; export and import if bidirectional).<br><br><strong>Key checks:</strong> Cable ampacity (no conductor exceeds thermal rating), voltage at inverter terminals (within inverter operating limits — typically 0.9–1.1 pu), transformer loading under worst-case conditions, and losses in the collector system." },
+      { label: "Short Circuit (Equipment Sizing)", hint: "IEEE, IEC, ANSI — equipment sizing", text: "<strong>What it does:</strong> ETAP's short-circuit engine sizes the physical substation equipment: circuit breakers must be rated to interrupt the maximum available fault current, bus bars must withstand the mechanical and thermal stress of fault current, current transformer (CT) and potential transformer (PT) ratings must accommodate the fault current range, and surge arresters must be coordinated with insulation levels. All calculations reference IEEE 141 (Red Book), IEEE 242 (Buff Book), or IEC 60909 standards.<br><br><strong>Distinction from ASPEN OneLiner:</strong> ASPEN is used for relay coordination (settings, timing, selectivity). ETAP is used for equipment sizing (ratings, physical specifications). Both are needed; they're complementary, not alternatives." },
+      { label: "Arc Flash (IEEE 1584-2018)", hint: "Incident energy, PPE categories", text: "<strong>What it does:</strong> ETAP implements IEEE 1584-2018, the definitive arc flash calculation standard. It calculates incident energy (cal/cm²) and arc flash boundary distance at every bus in the substation and collector system. Results are used to specify the PPE (arc-rated suit, face shield, voltage-rated gloves) required for workers performing energised electrical work at each piece of equipment.<br><br><strong>In interconnection practice:</strong> Arc flash labelling of every piece of switchgear and electrical equipment is a commissioning prerequisite. The labels must reflect the actual as-built configuration (not the design configuration) — any change in transformer impedance, system configuration, or fault clearing time requires a re-study. ETAP allows rapid re-studies when design changes occur." },
+      { label: "Collector System Harmonic Analysis", hint: "IEEE 519, resonance, filters", text: "<strong>What it does:</strong> ETAP's harmonic analysis module performs a frequency scan of the collector system, sweeping from the fundamental (50/60 Hz) through harmonic orders up to the 50th or higher. The scan reveals resonant frequencies — points where the system impedance has a peak (parallel resonance) or trough (series resonance). If a resonant frequency coincides with a harmonic injection frequency from the inverters, harmonic voltages amplify.<br><br><strong>In interconnection practice:</strong> Many solar farms experience harmonic resonance between the inverter LCL output filters and the collector cable capacitance, typically in the range of 800–2000 Hz (13th–33rd harmonic). ETAP identifies the resonant frequency and calculates THD (Total Harmonic Distortion) at the point of common coupling. If IEEE 519 limits are exceeded, passive harmonic filters are designed and modelled in ETAP to demonstrate compliance." },
+      { label: "DC Systems & Battery", hint: "Station service, BESS, UPS", text: "<strong>What it does:</strong> ETAP models the DC battery systems that power substation protection, control, and communications equipment (relay panels, SCADA, communications equipment, breaker trip coils all operate on 125V or 48V DC). ETAP sizes battery banks based on load schedules and required autonomy time, calculates DC voltage drop under load, and designs DC protection (fuses, MCCBs) for the DC distribution system.<br><br><strong>For BESS projects:</strong> Large battery energy storage projects require detailed AC-DC interface modelling covering the DC bus, battery management system, bidirectional inverter, and AC connection. ETAP models both the AC side (load flow, fault current, protection) and the DC side (battery sizing, charger ratings, DC protection coordination)." },
+    ],
+    workflow: [
+      { step: "Build substation single-line in ETAP", detail: "Model all buses, breakers, switches, transformers, cables, generators in graphical editor", tag: "Modelling", tagColor: "#993C1D" },
+      { step: "Enter all equipment data", detail: "Transformer impedance, cable size/length/ampacity, generator ratings, relay types", tag: "Data entry", tagColor: "#993C1D" },
+      { step: "Run load flow for all dispatch scenarios", detail: "Check cable thermal loading and inverter terminal voltage limits", tag: "Load Flow", tagColor: "#185FA5" },
+      { step: "Run short circuit study", detail: "Size breakers, bus bars, CTs, PTs per IEEE 141 / IEC 60909 standards", tag: "Short Circuit", tagColor: "#534AB7" },
+      { step: "Run arc flash study (IEEE 1584-2018)", detail: "Calculate incident energy at all equipment; generate arc flash labels", tag: "Arc Flash", tagColor: "#854F0B" },
+      { step: "Run harmonic frequency scan", detail: "Identify resonant frequencies; check IEEE 519 THD compliance at POI", tag: "Harmonics", tagColor: "#0F6E56" },
+      { step: "Run relay coordination", detail: "Coordinate collector feeder fuses, reclosers, and HV interconnection protection", tag: "Protection", tagColor: "#3B6D11" },
+      { step: "Export to engineering drawings", detail: "Generate equipment specification sheets, cable schedules, relay setting sheets", tag: "Deliverables", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".etap", desc: "ETAP project database file — complete network model and results" },
+      { ext: ".xml / .pti", desc: "Import/export formats for data exchange with other systems" },
+      { ext: ".pdf / .xlsx", desc: "Report outputs — equipment schedules, arc flash labels, study reports" },
+    ],
+    note: "ETAP is the standard for substation and collector system design in North America. PSS/E handles the transmission network (outside the POI); ETAP handles the project side (inside the POI). The two tools' results must be consistent at the point of interconnection — the Thevenin equivalent that ETAP uses for its grid representation should match the PSS/E fault study results.",
+  },
+  {
+    id: "opendss",
+    name: "OpenDSS",
+    full: "Open Distribution System Simulator",
+    vendor: "EPRI (open-source, free)",
+    type: "Distribution / DER",
+    icon: "🔌",
+    accentColor: "#0F6E56",
+    accentBg: "#E1F5EE",
+    badgeColor: "#E1F5EE",
+    badgeText: "#085041",
+    badge: "Open-Source",
+    badge2: "Distribution",
+    tags: ["distribution", "opensource"],
+    sub: "The standard open-source tool for distribution-level interconnection, DER hosting capacity analysis, and IEEE 1547-2018 compliance studies.",
+    cardTags: ["DER Hosting Capacity", "Feeder Load Flow", "Voltage Regulation", "IEEE 1547", "Time-Series"],
+    desc: "OpenDSS (Open Distribution System Simulator) is an open-source, free distribution system simulation platform developed and maintained by EPRI. It is the standard tool for distribution-level interconnection studies (projects < ~10 MW), DER hosting capacity analysis, and IEEE 1547-2018 compliance verification. Its Python interface (opendssdirect.py) makes it the platform of choice for automated, scripted large-scale studies — hosting capacity maps covering every node of every feeder in a utility's service territory are generated by OpenDSS running in automated batch mode.",
+    screenshots: [],
+    studies: [
+      { label: "Feeder Load Flow", hint: "Forward-backward sweep, radial feeders", text: "<strong>What it does:</strong> OpenDSS uses a forward-backward sweep power flow algorithm, which is well-suited to the radial or weakly-meshed topology of distribution feeders. Unlike the Newton-Raphson method used in transmission tools, the forward-backward sweep handles unbalanced (three-phase asymmetric) loading, single-phase laterals, and the high R/X ratios of distribution feeders without convergence issues.<br><br><strong>In interconnection practice:</strong> For distribution-level interconnection (rooftop solar, community solar, small battery storage, EV charging hubs), OpenDSS models the complete feeder from the substation bus down to the last customer transformer, including every conductor segment, splice, transformer, capacitor bank, and switch. This level of detail reveals whether a specific feeder node can absorb new DER without overvoltage during light-load, high-generation periods (the classic midday solar reverse-flow problem)." },
+      { label: "Hosting Capacity Analysis", hint: "Node-by-node DER sizing sweep", text: "<strong>What it does:</strong> Hosting capacity is the maximum DER that can be interconnected at each point on the feeder without causing a violation — overvoltage (> 1.05 pu), overcurrent (cable ampacity exceeded), or protection misoperation (fuse blowing, recloser false trip). OpenDSS performs this analysis by placing DER at each node in the feeder model, incrementally increasing the DER size from zero, and recording the first violation.<br><br><strong>In interconnection practice:</strong> Utilities run automated hosting capacity studies covering all nodes on all feeders (a large utility might have 50,000+ feeder nodes) to produce hosting capacity maps. These maps are made available to developers on utility websites and are referenced in the simplified interconnection process — projects below the hosting capacity limit can use a streamlined review process, dramatically reducing study time and cost." },
+      { label: "Voltage Regulation", hint: "Volt-var control, IEEE 1547-2018", text: "<strong>What it does:</strong> High DER penetration causes reverse power flow on feeders designed for unidirectional flow, raising voltage above acceptable limits at mid-feeder buses during light-load, high-generation conditions. OpenDSS models smart inverter control modes — volt-var (reactive power as a function of voltage), volt-watt (active power reduction as a function of voltage), and fixed power factor — as specified in IEEE 1547-2018 and California Rule 21.<br><br><strong>In interconnection practice:</strong> OpenDSS is used to evaluate whether enabling volt-var response on DER inverters can solve overvoltage problems without physical upgrades (line reconductoring, voltage regulator installation, capacitor bank removal). This 'smart inverter mitigation' analysis is now standard practice and can avoid hundreds of thousands of dollars in upgrade costs for feeder-saturated areas." },
+      { label: "Protection & Anti-Islanding", hint: "IEEE 1547 Sec. 6, infeed effects", text: "<strong>What it does:</strong> OpenDSS simulates fault currents throughout the feeder with DER energised to verify that fuses, reclosers, and sectionalising switches still operate correctly. DER infeed can cause protection blinding (the upstream device sees less current and delays tripping) or sympathetic tripping (a fuse on an un-faulted adjacent feeder operates due to fault current from DER).<br><br><strong>Anti-islanding analysis:</strong> IEEE 1547-2018 Section 6 requires all DER to detect and clear within 2 seconds when the utility circuit is de-energised. OpenDSS simulates islanding scenarios — the feeder breaker opens while DER continues to supply load — to verify that the anti-islanding detection algorithms operate correctly and that the island is cleared before the recloser attempts to reclose (which would cause a severe voltage transient if the DER and grid are out of phase)." },
+      { label: "Time-Series Analysis", hint: "8,760-hour annual simulation", text: "<strong>What it does:</strong> OpenDSS supports annual time-series simulations using hourly (or sub-hourly) load and generation profiles. An 8,760-hour simulation runs the full year of load and solar/wind generation profiles through the feeder model, recording violations as they occur. This gives a far more accurate picture of DER impact than a single worst-case snapshot — a feeder might show no violations at peak load (when DER output is high and load absorbs the generation) but severe overvoltage at midday on a clear-sky, low-load Sunday in April.<br><br><strong>In interconnection practice:</strong> Time-series analysis is increasingly required by utilities for larger DER projects (> 1 MW) to accurately characterise the number of hours per year that voltage or thermal violations occur, and to size mitigation measures appropriately." },
+    ],
+    workflow: [
+      { step: "Obtain feeder model data", detail: "From utility GIS system, AMI data, or manual input from engineering drawings", tag: "Data acquisition", tagColor: "#0F6E56" },
+      { step: "Build OpenDSS feeder model (.dss)", detail: "Define line objects, transformer objects, load objects, and capacitor banks", tag: "Modelling", tagColor: "#0F6E56" },
+      { step: "Define DER model", detail: "Size, power factor control mode, IEEE 1547 category (A or B), smart inverter settings", tag: "DER setup", tagColor: "#534AB7" },
+      { step: "Run snapshot and time-series power flow", detail: "Worst-case snapshot + 8,760-hour annual simulation with load and solar profiles", tag: "Load Flow", tagColor: "#185FA5" },
+      { step: "Identify voltage and thermal violations", detail: "Flag buses with voltage > 1.05 pu; cables loaded > 100% ampacity", tag: "Violation check", tagColor: "#993C1D" },
+      { step: "Run hosting capacity sweep", detail: "Increment DER size at each node; record first violation to build hosting capacity map", tag: "Hosting capacity", tagColor: "#854F0B" },
+      { step: "Evaluate volt-var mitigation options", detail: "Test IEEE 1547 volt-var / volt-watt curves; check if smart inverter alone resolves violations", tag: "Mitigation", tagColor: "#3B6D11" },
+      { step: "Run protection and anti-islanding check", detail: "Verify fuse coordination with DER infeed; simulate islanding scenarios", tag: "Protection", tagColor: "#993C1D" },
+      { step: "Submit distribution study report", detail: "Provide OpenDSS model files, results, and written report to utility for interconnection approval", tag: "Submission", tagColor: "#5F5E5A" },
+    ],
+    files: [
+      { ext: ".dss", desc: "OpenDSS script file — defines network model (circuit, lines, transformers, loads, generators)" },
+      { ext: ".csv", desc: "Load profiles, generation profiles, and simulation results in tabular format" },
+      { ext: ".txt", desc: "OpenDSS output files — summary results, violation logs, element reports" },
+    ],
+    note: "OpenDSS is developed by EPRI and is completely free and open-source. Python scripting via the opendssdirect.py package (also free) enables fully automated batch studies. NREL demonstrated a HELICS-based co-simulation coupling OpenDSS, PSS/E, and PSCAD in a single framework for studying DER aggregation impacts on transmission stability.",
+  },
+];
+
+let activeId = null;
+let activeStudy = null;
+let activeTab = 'studies';
+let activeFilter = 'all';
+
+function renderCards() {
+  const grid = document.getElementById('cardsGrid');
+  grid.innerHTML = '';
+  SW.forEach(sw => {
+    const filtered = activeFilter === 'all' || sw.tags.includes(activeFilter);
+    const card = document.createElement('div');
+    card.className = 'sw-card' + (activeId === sw.id ? ' active' : '') + (!filtered ? ' dimmed' : '');
+    card.style.setProperty('--accent-color', sw.accentColor);
+    card.innerHTML = `
+      <div class="card-header">
+        <div class="card-top">
+          <div class="card-icon" style="background:${sw.accentBg}">${sw.icon}</div>
+          <div class="card-badges">
+            <span class="badge" style="background:${sw.accentBg};color:${sw.badgeText}">${sw.badge}</span>
+            <span class="badge" style="background:#F1EFE8;color:#5F5E5A">${sw.badge2}</span>
+          </div>
+        </div>
+        <div class="card-name">${sw.name}</div>
+        <div class="card-vendor">${sw.vendor}</div>
+      </div>
+      <div class="card-body">
+        <div class="card-sub">${sw.sub}</div>
+        <div class="card-tags">${sw.cardTags.map(t=>`<span class="card-tag">${t}</span>`).join('')}</div>
+      </div>`;
+    card.onclick = () => toggleCard(sw.id);
+    grid.appendChild(card);
+  });
+}
+
+function toggleCard(id) {
+  const panel = document.getElementById('detailPanel');
+  if (activeId === id) {
+    activeId = null; activeStudy = null; activeTab = 'studies';
+    panel.classList.remove('open'); panel.innerHTML = '';
+  } else {
+    activeId = id; activeStudy = null; activeTab = 'studies';
+    renderDetail(SW.find(s => s.id === id));
+    setTimeout(() => panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 100);
+  }
+  renderCards();
+}
+
+function renderDetail(sw) {
+  const panel = document.getElementById('detailPanel');
+  panel.style.setProperty('--accent-color', sw.accentColor);
+  panel.style.setProperty('--accent-bg', sw.accentBg);
+
+  const screenshotsHtml = sw.screenshots && sw.screenshots.length > 0 ? `
+    <div class="dp-screenshots">
+      ${sw.screenshots.map(s => `
+        <div class="dp-screenshot" onclick="openLightbox('${s.url}')">
+          <img src="${s.url}" alt="${s.label}" onerror="this.parentElement.style.display='none'">
+          <div class="dp-screenshot-label">${s.label}</div>
+        </div>`).join('')}
+      <div class="dp-screenshot" style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:200px;background:#f8f7f5;border-radius:8px;border:1px dashed #d0cec6;cursor:default">
+        <div style="font-size:24px;margin-bottom:4px">🔍</div>
+        <div style="font-size:11px;color:#888;text-align:center;padding:0 12px">Search "${sw.name} software screenshot" for more images</div>
+      </div>
+    </div>` : `
+    <div class="dp-screenshots">
+      <div class="dp-screenshot" style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:200px;background:#f8f7f5;border-radius:8px;border:1px dashed #d0cec6;cursor:default">
+        <div style="font-size:24px;margin-bottom:4px">🖥️</div>
+        <div style="font-size:11px;color:#888;text-align:center;padding:0 12px">Search "${sw.name} interface screenshot" online</div>
+      </div>
+    </div>`;
+
+  panel.innerHTML = `
+    <div class="dp-hero">
+      <div class="dp-hero-top">
+        <div class="dp-icon" style="background:${sw.accentBg}">${sw.icon}</div>
+        <div>
+          <div class="dp-name">${sw.name}</div>
+          <div class="dp-meta">${sw.full} &nbsp;·&nbsp; ${sw.vendor} &nbsp;·&nbsp; ${sw.type}</div>
+        </div>
+        <button class="dp-close" onclick="closeDetail()">×</button>
+      </div>
+      <div class="dp-desc">${sw.desc}</div>
+    </div>
+    ${screenshotsHtml}
+    <div class="dp-tabs">
+      <div class="dp-tab active" data-tab="studies" onclick="switchTab('studies',this)">Study Types</div>
+      <div class="dp-tab" data-tab="workflow" onclick="switchTab('workflow',this)">Workflow</div>
+      <div class="dp-tab" data-tab="files" onclick="switchTab('files',this)">File Formats</div>
+      <div class="dp-tab" data-tab="note" onclick="switchTab('note',this)">Industry Context</div>
+    </div>
+    <div class="dp-content" id="dpContent"></div>`;
+
+  renderTabContent(sw, 'studies');
+  panel.classList.add('open');
+}
+
+function switchTab(tab, el) {
+  activeTab = tab; activeStudy = null;
+  document.querySelectorAll('.dp-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const sw = SW.find(s => s.id === activeId);
+  renderTabContent(sw, tab);
+}
+
+function renderTabContent(sw, tab) {
+  const content = document.getElementById('dpContent');
+  if (!content) return;
+  if (tab === 'studies') {
+    const pillsHtml = sw.studies.map((s,i) => `
+      <div class="study-pill" data-i="${i}" onclick="toggleStudy(${i})">
+        <div class="study-pill-name">${s.label}</div>
+        <div class="study-pill-hint">${s.hint}</div>
+      </div>`).join('');
+    content.innerHTML = `
+      <div class="studies-grid">${pillsHtml}</div>
+      <div class="study-detail-box" id="studyBox"></div>`;
+  } else if (tab === 'workflow') {
+    const stepsHtml = sw.workflow.map((w,i) => `
+      <div class="wf-item">
+        <div class="wf-left">
+          <div class="wf-num" style="background:${w.tagColor}">${i+1}</div>
+          <div class="wf-line"></div>
+        </div>
+        <div class="wf-text">
+          <strong>${w.step}</strong>
+          <span class="wf-tag" style="background:${w.tagColor}22;color:${w.tagColor}">${w.tag}</span>
+          <br><span style="color:#6b6a64;font-size:13px">${w.detail}</span>
+        </div>
+      </div>`).join('');
+    content.innerHTML = `<div class="workflow-list">${stepsHtml}</div>`;
+  } else if (tab === 'files') {
+    const filesHtml = sw.files.map(f => `
+      <div class="file-card">
+        <div class="file-ext">${f.ext}</div>
+        <div class="file-desc">${f.desc}</div>
+      </div>`).join('');
+    content.innerHTML = `<div class="files-grid">${filesHtml}</div>`;
+  } else if (tab === 'note') {
+    content.innerHTML = `<div class="note-box"><strong>Industry context:</strong> ${sw.note}</div>`;
+  }
+}
+
+function toggleStudy(i) {
+  const sw = SW.find(s => s.id === activeId);
+  const box = document.getElementById('studyBox');
+  document.querySelectorAll('.study-pill').forEach(p => p.classList.remove('active'));
+  if (activeStudy === i) {
+    activeStudy = null;
+    box.classList.remove('open');
+    box.innerHTML = '';
+  } else {
+    activeStudy = i;
+    document.querySelectorAll('.study-pill')[i].classList.add('active');
+    const s = sw.studies[i];
+    box.innerHTML = `<div class="study-detail-title" style="color:var(--accent-color)">${s.label}</div><div class="study-detail-text">${s.text}</div>`;
+    box.classList.add('open');
+  }
+}
+
+function closeDetail() {
+  activeId = null; activeStudy = null; activeTab = 'studies';
+  document.getElementById('detailPanel').classList.remove('open');
+  document.getElementById('detailPanel').innerHTML = '';
+  renderCards();
+}
+
+function openLightbox(url) {
+  document.getElementById('lightboxImg').src = url;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+document.getElementById('lightbox').onclick = function(e) {
+  if (e.target === this) closeLightbox();
+};
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.onclick = function() {
+    activeFilter = this.dataset.filter;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    if (activeId && !SW.find(s => s.id === activeId).tags.includes(activeFilter) && activeFilter !== 'all') {
+      closeDetail();
+    } else {
+      renderCards();
+    }
+  };
+});
+
+renderCards();
+</script>
+</body>
+</html>
