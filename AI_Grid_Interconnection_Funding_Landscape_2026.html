@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Grid Interconnection Funding Landscape 2026</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: #f5f7fa; color: #1a1d23; line-height: 1.6; }
+    .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 20px; text-align: center; }
+    .hero h1 { font-size: 2.8em; margin-bottom: 15px; font-weight: 700; }
+    .hero p { font-size: 1.2em; opacity: 0.95; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto; }
+    .hero-stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 40px; }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 2.2em; font-weight: 700; }
+    .stat-label { font-size: 0.95em; opacity: 0.85; margin-top: 5px; }
+
+    /* FLOW BANNER */
+    .flow-banner { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 25px 20px; }
+    .flow-content { max-width: 1400px; margin: 0 auto; }
+    .flow-title { font-size: 1.1em; font-weight: 600; color: #1b4d7a; margin-bottom: 15px; }
+    .flow-steps { display: flex; gap: 20px; flex-wrap: wrap; }
+    .flow-step { display: flex; align-items: center; gap: 8px; font-size: 0.95em; color: #4a5568; }
+    .flow-step::before { content: ''; display: inline-block; width: 8px; height: 8px; background: #667eea; border-radius: 50%; flex-shrink: 0; }
+
+    /* FILTER BAR */
+    .filter-bar { background: white; padding: 20px; border-bottom: 1px solid #e2e8f0; }
+    .filter-container { max-width: 1400px; margin: 0 auto; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
+    .filter-label { font-weight: 600; color: #4a5568; }
+    .filter-buttons { display: flex; gap: 10px; flex-wrap: wrap; }
+    .filter-btn { padding: 8px 16px; border: 1px solid #cbd5e0; background: white; border-radius: 20px; cursor: pointer; font-size: 0.9em; transition: all 0.2s; color: #4a5568; }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active { background: #667eea; color: white; border-color: #667eea; }
+
+    /* CARDS GRID */
+    .grid-container { max-width: 1400px; margin: 0 auto; padding: 40px 20px; }
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 25px; }
+    .country-card { background: white; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); overflow: hidden; cursor: pointer; transition: all 0.3s; border-left: 5px solid #ccc; }
+    .country-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); transform: translateY(-2px); }
+
+    .card-header { padding: 20px; display: flex; align-items: flex-start; gap: 15px; }
+    .card-icon { font-size: 2.5em; flex-shrink: 0; }
+    .card-titles { flex: 1; }
+    .card-name { font-size: 1.3em; font-weight: 700; color: #1a1d23; }
+    .card-type { font-size: 0.85em; color: #718096; margin-top: 3px; }
+    .card-badges { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+    .card-badge { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 0.75em; font-weight: 600; }
+
+    .card-body { padding: 0 20px 15px; }
+    .card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+    .card-tag { display: inline-block; padding: 3px 10px; background: #f0f4f8; border-radius: 4px; font-size: 0.75em; color: #4a5568; }
+    .card-desc { font-size: 0.9em; line-height: 1.5; color: #4a5568; }
+
+    .card-footer { padding: 15px 20px; border-top: 1px solid #e2e8f0; background: #fafbfc; display: flex; justify-content: space-between; align-items: center; }
+    .card-detail-btn { background: #667eea; color: white; border: none; padding: 8px 20px; border-radius: 6px; cursor: pointer; font-size: 0.9em; font-weight: 600; transition: background 0.2s; }
+    .card-detail-btn:hover { background: #5568d3; }
+    .card-count { font-size: 0.85em; color: #718096; }
+
+    /* DETAIL PANEL */
+    .detail-panel { position: fixed; top: 0; right: -520px; width: 500px; height: 100vh; background: white; box-shadow: -4px 0 20px rgba(0,0,0,0.15); overflow-y: auto; transition: right 0.3s ease; z-index: 1000; padding-bottom: 40px; }
+    .detail-panel.open { right: 0; }
+    @media (max-width: 768px) { .detail-panel { width: 100%; right: -100%; } }
+
+    .panel-header { padding: 20px; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; gap: 15px; }
+    .panel-icon { font-size: 2.2em; }
+    .panel-titles { flex: 1; }
+    .panel-title { font-size: 1.5em; font-weight: 700; color: #1a1d23; }
+    .panel-subtitle { font-size: 0.9em; color: #718096; margin-top: 3px; }
+    .panel-close { background: none; border: none; font-size: 1.5em; cursor: pointer; color: #718096; transition: color 0.2s; }
+    .panel-close:hover { color: #1a1d23; }
+
+    .panel-tabs { display: flex; border-bottom: 1px solid #e2e8f0; background: #fafbfc; }
+    .panel-tab { flex: 1; padding: 15px; text-align: center; cursor: pointer; border-bottom: 3px solid transparent; color: #718096; font-weight: 500; transition: all 0.2s; }
+    .panel-tab.active { color: #667eea; border-bottom-color: #667eea; }
+
+    .panel-content { padding: 20px; }
+    .tab-pane { display: none; }
+    .tab-pane.active { display: block; }
+
+    .studies-list { display: flex; flex-direction: column; gap: 15px; }
+    .study-item { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; cursor: pointer; transition: all 0.2s; }
+    .study-item:hover { background: #eef2f7; border-color: #cbd5e0; }
+    .study-label { font-weight: 600; color: #1a1d23; font-size: 0.95em; }
+    .study-hint { font-size: 0.8em; color: #718096; margin-top: 4px; }
+
+    .study-detail { background: white; border: 2px solid #e2e8f0; border-radius: 8px; padding: 15px; margin-top: 15px; }
+    .study-detail-text { font-size: 0.9em; line-height: 1.6; color: #2d3748; }
+    .study-detail-text strong { color: #1a1d23; }
+    .study-detail-text .section-label { display: block; font-weight: 600; color: #1b4d7a; margin-top: 10px; margin-bottom: 4px; font-size: 13px; }
+
+    .workflow-step { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; }
+    .workflow-step:last-child { border-bottom: none; }
+    .step-title { font-weight: 600; color: #1a1d23; font-size: 0.95em; margin-bottom: 5px; }
+    .step-detail { font-size: 0.85em; color: #718096; margin-bottom: 8px; }
+    .step-tag { display: inline-block; padding: 4px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 600; color: white; }
+
+    .faq-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-weight: 600; color: #1a1d23; margin-bottom: 8px; font-size: 0.95em; }
+    .faq-a { font-size: 0.85em; color: #4a5568; line-height: 1.6; }
+
+    .note-box { background: #fffbeb; border-left: 4px solid #fcd34d; padding: 15px; border-radius: 6px; margin-bottom: 20px; font-size: 0.9em; color: #78350f; line-height: 1.6; }
+
+    /* LINK BOX STYLING */
+    .link-box { display: inline-flex; align-items: center; gap: 6px; background: #e8f4fd; border: 1px solid #b3d9f2; border-radius: 6px; padding: 6px 12px; margin: 4px 4px; font-size: 0.8em; text-decoration: none; color: #1565c0; transition: all 0.15s; white-space: nowrap; }
+    .link-box:hover { background: #d0eafc; border-color: #90c9ed; }
+    .link-box::before { content: '🔗'; font-size: 10px; }
+    .links-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+
+    /* MARKDOWN COPY */
+    .markdown-section { margin-top: 20px; padding-top: 20px; border-top: 1px solid #e2e8f0; }
+    .copy-btn { background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-size: 0.9em; font-weight: 600; transition: background 0.2s; }
+    .copy-btn:hover { background: #5568d3; }
+    .copy-btn.copied { background: #48bb78; }
+    .markdown-output { background: #f7fafc; border: 1px solid #cbd5e0; border-radius: 6px; padding: 15px; margin-top: 10px; font-family: 'Monaco', 'Menlo', monospace; font-size: 0.8em; color: #2d3748; max-height: 400px; overflow-y: auto; white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>AI Grid Interconnection Funding Landscape 2026</h1>
+  <p>A comprehensive guide to $200B+ in global funding, programmes, and pathways for AI-powered grid automation across 11 countries</p>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-number">11</div>
+      <div class="stat-label">Countries</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">81</div>
+      <div class="stat-label">Programmes</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">$200B+</div>
+      <div class="stat-label">Funding Available</div>
+    </div>
+  </div>
+</div>
+
+<div class="flow-banner">
+  <div class="flow-content">
+    <div class="flow-title">Typical Funding Pathway</div>
+    <div class="flow-steps">
+      <div class="flow-step">Identify Priority Market</div>
+      <div class="flow-step">Map Programmes by Type</div>
+      <div class="flow-step">Build Local Entity (if needed)</div>
+      <div class="flow-step">Submit Applications in Waves</div>
+      <div class="flow-step">Activate Partnerships</div>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-container">
+    <span class="filter-label">Filter by region:</span>
+    <div class="filter-buttons">
+      <button class="filter-btn active" onclick="filterRegion('all', this)">All Regions</button>
+      <button class="filter-btn" onclick="filterRegion('europe', this)">Europe</button>
+      <button class="filter-btn" onclick="filterRegion('americas', this)">Americas</button>
+      <button class="filter-btn" onclick="filterRegion('apac', this)">Asia-Pacific</button>
+      <button class="filter-btn" onclick="filterRegion('africa', this)">Africa</button>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="cards-grid" id="cardsGrid"></div>
+</div>
+
+<div class="detail-panel" id="detailPanel">
+  <div class="panel-header">
+    <div class="panel-icon" id="panelIcon"></div>
+    <div class="panel-titles">
+      <div class="panel-title" id="panelTitle"></div>
+      <div class="panel-subtitle" id="panelSubtitle"></div>
+    </div>
+    <button class="panel-close" onclick="closePanel()">&times;</button>
+  </div>
+
+  <div class="panel-tabs">
+    <div class="panel-tab active" onclick="switchTab('programmes', this)">Programmes</div>
+    <div class="panel-tab" onclick="switchTab('pathway', this)">Application Pathway</div>
+    <div class="panel-tab" onclick="switchTab('faq', this)">FAQ</div>
+    <div class="panel-tab" onclick="switchTab('note', this)">Strategy Note</div>
+  </div>
+
+  <div class="panel-content">
+    <div class="tab-pane active" id="tab-programmes">
+      <div class="studies-list" id="studiesList"></div>
+    </div>
+
+    <div class="tab-pane" id="tab-pathway">
+      <div id="workflowContent"></div>
+    </div>
+
+    <div class="tab-pane" id="tab-faq">
+      <div id="faqContent"></div>
+    </div>
+
+    <div class="tab-pane" id="tab-note">
+      <div id="noteContent"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = [
+  {
+    id:"uk", name:"United Kingdom", full:"United Kingdom — Ofgem, NESO & DNO Innovation Ecosystem", vendor:"Ofgem · NESO · DNOs · Innovate UK", type:"Home Market",
+    icon:"🇬🇧", accentColor:"#1B4D7A", accentBg:"#E6F1FB", badgeColor:"#E6F1FB", badgeText:"#0C447C",
+    badge:"Home Market", badge2:"8 Programmes", tags:["europe"],
+    sub:"The UK has the richest innovation funding ecosystem for grid interconnection, with SIF, NIA, NESO Big Ideas, and Innovate UK all directly funding AI-powered grid automation tools.",
+    cardTags:["SIF","NIA","NESO","Innovate UK","National Grid Partners"],
+    desc:"As the home market, the UK offers the most accessible funding routes. The Strategic Innovation Fund (SIF) provides multimillion-pound funding across 3 phases. Every DNO/TNO holds ring-fenced Network Innovation Allowance (NIA) budgets of £50K–£2M. NESO's Big Ideas pipeline feeds directly into funded projects. National Grid Partners has committed $100M specifically to AI for grid interconnection. The Energy Networks Innovation Taskforce launches new challenges in April 2026.",
+    studies:[
+      {label:"Ofgem Strategic Innovation Fund (SIF)", hint:"Up to £6M across 3 phases",
+       text:"<span class='section-label'>What it does</span>SIF is Ofgem's flagship innovation programme, replacing the former NIC. It funds projects across three phases: Discovery (up to £150K, ~5 months), Alpha (up to £500K-£1M, ~8-9 months), and Beta (multimillion-pound, up to 5 years). Overall investment target: £450M by 2028. Three application windows per year for all phases.<span class='section-label'>Why it matters</span>SIF is the single largest innovation funding route in UK energy, specifically designed for network-level problems including connection queue management and grid capacity optimisation.<span class='section-label'>How to apply</span>A UK startup typically partners with a DNO (e.g. UKPN, SSEN, NGET) who acts as the licence holder. The DNO submits the SIF application with the startup as the technology delivery partner.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation/technology-and-innovation/innovation/apply-strategic-innovation-fund-sif' target='_blank'>Ofgem SIF Application</a><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/' target='_blank'>Innovate UK Funding Portal</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/ofgem-strategic-innovation-fund/' target='_blank'>IUK Business Connect — SIF</a><a class='link-box' href='https://www.ofgem.gov.uk/strategic-innovation-fund-sif' target='_blank'>SIF Main Page</a></div>"},
+      {label:"Network Innovation Allowance (NIA)", hint:"£50K–£2M per project, rolling",
+       text:"<span class='section-label'>What it does</span>Each DNO and TNO holds ring-fenced budgets for smaller, faster innovation projects. NIA requires only a 6-page proposal submitted directly to the network operator's innovation team. Each operator has independent budget and decision authority.<span class='section-label'>Why it matters</span>NIA is the fastest route to a funded pilot in the UK energy sector. There's no central competition — submit directly to any DNO.<span class='section-label'>Individual DNO Innovation Portals</span><div class='links-row'><a class='link-box' href='https://innovation.ukpowernetworks.co.uk/network-innovation-allowance' target='_blank'>UKPN NIA Portal</a><a class='link-box' href='https://www.ssen-transmission.co.uk/about-us/innovation/' target='_blank'>SSEN Transmission Innovation</a><a class='link-box' href='https://ssen-innovation.co.uk/' target='_blank'>SSEN Innovation Hub</a><a class='link-box' href='https://www.nationalgrid.com/electricity-transmission/innovation' target='_blank'>National Grid ET Innovation</a><a class='link-box' href='https://www.nationalgrid.co.uk/innovation' target='_blank'>National Grid ED (WPD) Innovation</a><a class='link-box' href='https://www.northernpowergrid.com/innovation' target='_blank'>Northern Powergrid Innovation</a><a class='link-box' href='https://www.spenergynetworks.co.uk/pages/innovation.aspx' target='_blank'>SP Energy Networks Innovation</a><a class='link-box' href='https://www.enwl.co.uk/innovation/' target='_blank'>Electricity North West Innovation</a><a class='link-box' href='https://smarter.energynetworks.org/' target='_blank'>ENA Smarter Networks Portal</a></div>"},
+      {label:"NESO Innovation Programme", hint:"Big Ideas + NIA/SIF routing",
+       text:"<span class='section-label'>What it does</span>NESO (National Energy System Operator) runs an innovation pipeline built on 6 priorities: Demand-side flexibility, Digitalisation & AI, System security, Whole systems integration, Regional networks, and Long-term resilience. The Big Ideas portal accepts submissions continuously — NESO assesses alignment and routes to appropriate funding (NIA or SIF).<span class='section-label'>Why it matters</span>Grid connection reforms are expected to unlock £40B/yr in clean investment (283 GW generation/storage, 99 GW demand). AI for queue management directly matches Priority 2. NESO has run 61 NIA projects, 15 SIF projects, and 83 Big Ideas.<div class='links-row'><a class='link-box' href='https://www.neso.energy/about/innovation/get-involved-neso-innovation' target='_blank'>NESO — Get Involved</a><a class='link-box' href='https://www.neso.energy/industry-information/connections-reform' target='_blank'>NESO Connections Reform</a></div>"},
+      {label:"National Grid Partners $100M AI Fund", hint:"Corporate VC, $100M committed",
+       text:"<span class='section-label'>What it does</span>National Grid Partners committed $100M in March 2025 specifically to invest in AI startups advancing energy. This is corporate venture capital — they take equity stakes. NGP has invested $150M+ in 18 AI startups since founding in 2018; 37% of portfolio is now AI-focused.<span class='section-label'>Why it matters</span>NGP explicitly named grid interconnection as 'the biggest challenge facing renewable energy'. Queue management and capacity increase are stated priorities. National Grid operates in both UK and US.<div class='links-row'><a class='link-box' href='https://www.ngpartners.com/' target='_blank'>National Grid Partners</a><a class='link-box' href='https://www.nationalgrid.com/media-centre/press-releases/national-grid-partners-commits-100-million-invest-ai-startups-advancing-future-energy' target='_blank'>$100M Announcement</a></div>"},
+      {label:"Innovate UK Innovation Loans", hint:"£100K–£5M, 7.4% interest",
+       text:"<span class='section-label'>What it does</span>Innovate UK offers loans of £100K–£5M for UK-registered SMEs. Interest rate: 3.7% during project period, 7.4% during 7-year repayment. No personal guarantees required. Net Zero, health & wellbeing, and digital tech are named focus areas.<span class='section-label'>Why it matters</span>Unlike grants, loans don't dilute equity. Consistent availability with regular rounds.<div class='links-row'><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/competition/2373/overview/609dc5dd-d3e8-4f51-af3a-3eb1b3314710' target='_blank'>Round 25 Application</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/innovation-loans/' target='_blank'>Innovation Loans Info</a></div>"},
+      {label:"Energy Networks Innovation Taskforce", hint:"Launching April 2026, 5-year challenges",
+       text:"<span class='section-label'>What it does</span>A joint Ofgem + Innovate UK initiative publishing innovation challenges that remain open for 5 years. Formally launched November 2025, with first challenges due April 2026. Focus: grid connection delays, smart/resilient/affordable net-zero systems. Bold, high-risk ideas explicitly encouraged.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/blog/launching-energy-networks-innovation-taskforce' target='_blank'>Ofgem Taskforce Blog</a><a class='link-box' href='https://iuk-business-connect.org.uk/' target='_blank'>Innovate UK Business Connect</a></div>"},
+      {label:"Ofgem Regulatory Sandbox", hint:"No funding — regulatory cover",
+       text:"<span class='section-label'>What it does</span>Provides bespoke regulatory guidance, comfort letters, derogations, and market entry confirmation. No direct funding — the value is in testing AI-assisted decision support within regulated connection processes. 5 sandboxes granted to date. An AI Technical Sandbox pilot (12-month trial) is also being consulted on.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation-sandbox' target='_blank'>Ofgem Sandbox</a><a class='link-box' href='https://www.ofgem.gov.uk/consultation/ai-technical-sandbox' target='_blank'>AI Technical Sandbox Consultation</a></div>"},
+      {label:"EIC Accelerator (via Horizon Europe)", hint:"Up to €2.5M grant (UK: grant-only)",
+       text:"<span class='section-label'>What it does</span>The European Innovation Council Accelerator provides up to €2.5M in grant funding. Since UK became an Associated Country in January 2024, UK companies can access the grant component only (not equity). Competitive: ~3-5% success rate.<span class='section-label'>Important correction</span>EIC Accelerator does NOT require consortium partners — applicants must be single legal entities. No multi-entity structure needed.<div class='links-row'><a class='link-box' href='https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en' target='_blank'>EIC Accelerator</a><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>"}
+    ],
+    workflow:[
+      {step:"Register on Innovate UK / Ofgem portals", detail:"Create accounts on apply-for-innovation-funding.service.gov.uk and the NESO innovation portal", tag:"Week 1", tagColor:"#1B7A3D"},
+      {step:"Map DNO innovation contacts", detail:"Identify innovation leads at UKPN, SSEN, NGET, WPD, NPG. Use smarter.energynetworks.org registry", tag:"Week 1-2", tagColor:"#1B7A3D"},
+      {step:"Submit NESO Big Idea", detail:"Complete submission via NESO innovation portal. NESO responds in 4-6 weeks", tag:"Week 2", tagColor:"#2E75B6"},
+      {step:"Prepare NIA proposal", detail:"6-page max proposal to target DNO. Fastest funding route", tag:"Week 3-4", tagColor:"#2E75B6"},
+      {step:"Apply to SIF Discovery", detail:"Partner with DNO licence holder. Submit via Innovate UK portal when challenge round opens", tag:"Month 2", tagColor:"#D4A017"},
+      {step:"Approach National Grid Partners", detail:"VC pitch — prepare deck, demo, and traction metrics", tag:"Month 2-3", tagColor:"#D4A017"},
+      {step:"Apply for Innovation Loans", detail:"£100K-£5M at 7.4%. Check for latest round", tag:"Month 3", tagColor:"#C0392B"},
+      {step:"Monitor Taskforce Challenges", detail:"New 5-year challenges launching April 2026", tag:"Ongoing", tagColor:"#6B6A64"}
+    ],
+    faq:[
+      {q:"Can a startup apply directly to SIF, or do we need a DNO partner?", a:"You need a DNO or TNO licence holder as the lead applicant. However, the startup typically does all the technical work and receives the majority of the funding. DNOs actively seek partners — approach their innovation teams directly. UKPN, SSEN, and NGET are the most active."},
+      {q:"What's the fastest route to funded pilot in the UK?", a:"The Network Innovation Allowance (NIA) is the fastest. A 6-page proposal submitted directly to a DNO can be approved relatively quickly. There's no central competition — each DNO has its own budget. Start with UKPN's innovation portal or NESO's Big Ideas submission."},
+      {q:"Is Horizon Europe accessible post-Brexit?", a:"Yes. The UK became an Associated Country in January 2024. UK companies can participate in and even lead Horizon Europe consortia. The key limitation is that UK companies can only access grant funding (not EIC equity). For EIC Accelerator, you apply as a single entity — no consortium needed."},
+      {q:"How much is National Grid Partners investing per company?", a:"NGP hasn't published per-company amounts from the $100M fund. As corporate VC, typical energy-tech investments range from $2M–$15M at Series A/B. They explicitly named grid interconnection queue management as a priority. Approach as a VC deal with a pitch deck and product demo."},
+      {q:"What's the Energy Networks Innovation Taskforce?", a:"A joint Ofgem + Innovate UK initiative launched November 2025. It will publish innovation challenges that stay open for 5 years. Focus areas include grid connection delays and smart grid systems. First challenges expected April 2026."}
+    ],
+    note:"The UK is the home market and most accessible funding landscape. Prioritise NIA for speed, SIF for scale, and NESO for strategic alignment. National Grid Partners represents the largest single investment opportunity at $100M."
+  },
+  {
+    id:"usa", name:"United States", full:"United States — DOE, FERC & RTO/ISO Innovation", vendor:"DOE · ARPA-E · SBIR · RTOs/ISOs", type:"Largest Market",
+    icon:"🇺🇸", accentColor:"#B22234", accentBg:"#FDE8EA", badgeColor:"#FDE8EA", badgeText:"#8B1A28",
+    badge:"$62B+ Federal", badge2:"6 Programmes", tags:["americas"],
+    sub:"The US has the largest grid modernisation budget globally, with $62B+ in federal funding through BIL and IRA. FERC Order 2023 creates urgent demand for interconnection automation.",
+    cardTags:["DOE Grid","ARPA-E","SBIR","FERC 2023","IRA/BIL"],
+    desc:"Federal funding through DOE's Grid Deployment Office ($20.5B), ARPA-E ($420M/yr), and SBIR ($4B+ across agencies) provides massive scale. FERC Order 2023 mandates cluster study reforms creating market demand for AI queue management. RTOs/ISOs like PJM, MISO, CAISO, and ERCOT are actively seeking technology partners. A US subsidiary ($1.5-3K) unlocks all federal programmes.",
+    studies:[
+      {label:"DOE Grid Resilience & Innovation Partnerships (GRIP)", hint:"$10.5B for grid modernisation",
+       text:"<span class='section-label'>What it does</span>GRIP is the largest single grid modernisation programme in US history, funded by the Bipartisan Infrastructure Law. $10.5B across three tracks: Grid Resilience Grants, Smart Grid Grants, and Grid Innovation Program. In October 2024, $4.2B was awarded to 46 projects across 47 states.<span class='section-label'>Why it matters</span>Smart Grid Grants specifically fund AI-powered grid management, predictive analytics, and automation. Requires a US-based entity.<div class='links-row'><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program' target='_blank'>DOE GRIP Portal</a><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program-projects' target='_blank'>GRIP Projects</a></div>"},
+      {label:"ARPA-E (Advanced Research Projects Agency - Energy)", hint:"$420M annual, transformative projects",
+       text:"<span class='section-label'>What it does</span>ARPA-E funds high-risk, high-reward energy technology R&D. Annual budget ~$420M (FY2024-25). Relevant programmes include PERFORM (grid reliability analytics) and open topic calls. Awards typically $1M-$10M over 2-3 years. ~3% success rate.<span class='section-label'>Why it matters</span>Enormous prestige and credibility. AI-powered grid automation fits their transformative mandate. Requires a US entity.<div class='links-row'><a class='link-box' href='https://arpa-e-foa.energy.gov/' target='_blank'>ARPA-E eXCHANGE</a><a class='link-box' href='https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/perform' target='_blank'>PERFORM Programme</a></div>"},
+      {label:"SBIR/STTR (Small Business Innovation Research)", hint:"$4B+ across agencies, Phase I/II/III",
+       text:"<span class='section-label'>What it does</span>Largest small business R&D programme in the world. DOE SBIR alone awards ~$300M+ annually. Phase I: up to ~$275K for 6-12 months. Phase II: up to ~$1.1M for 2 years. Phase III: commercialisation (no limit).<span class='section-label'>Why it matters</span>Non-dilutive funding with clear concept-to-commercialisation pathway. DOE topics frequently include grid modernisation and AI for energy.<div class='links-row'><a class='link-box' href='https://www.sbir.gov/apply' target='_blank'>SBIR Apply</a><a class='link-box' href='https://www.energy.gov/cmei/ammto/small-business-innovation-research-sbir-and-small-business-technology-transfer-sttr' target='_blank'>DOE SBIR/STTR</a><a class='link-box' href='https://sam.gov/entity-registration' target='_blank'>SAM.gov Registration</a></div>"},
+      {label:"FERC Order 2023 — Market Demand Driver", hint:"Regulatory mandate, not funding",
+       text:"<span class='section-label'>What it does</span>FERC Order 2023 fundamentally reforms US interconnection: mandatory cluster studies, financial readiness requirements, increased deposits, strict timelines. All RTOs/ISOs implementing by 2025-2026. ~2,000 GW interconnection queue backlog.<span class='section-label'>Individual RTO/ISO Interconnection Portals</span><div class='links-row'><a class='link-box' href='https://www.pjm.com/Home/planning/services-requests/interconnection-queues' target='_blank'>PJM Interconnection Queue</a><a class='link-box' href='https://www.misoenergy.org/planning/resource-utilization/generator-interconnection/' target='_blank'>MISO Generator Interconnection</a><a class='link-box' href='https://www.caiso.com/generation-transmission/generation/generator-interconnection' target='_blank'>CAISO Interconnection</a><a class='link-box' href='https://www.spp.org/engineering/generator-interconnection/' target='_blank'>SPP Interconnection</a><a class='link-box' href='https://www.ercot.com/services/rq/integration' target='_blank'>ERCOT Resource Integration</a><a class='link-box' href='https://www.iso-ne.com/system-planning/interconnection-service' target='_blank'>ISO-NE Interconnection</a><a class='link-box' href='https://www.nyiso.com/interconnections' target='_blank'>NYISO Interconnections</a><a class='link-box' href='https://www.ferc.gov/explainer-interconnection-final-rule' target='_blank'>FERC Order 2023 Explainer</a></div>"},
+      {label:"IRA Section 48C Advanced Energy Manufacturing Tax Credit", hint:"30% tax credit, $10B allocated",
+       text:"<span class='section-label'>What it does</span>30% tax credit for investments in facilities manufacturing clean energy equipment. $10B total with $4B reserved for energy communities. Round 2 (Jan 2025): $6B to 140+ projects. Software companies building AI infrastructure for grid management may qualify.<div class='links-row'><a class='link-box' href='https://www.energy.gov/infrastructure/qualifying-advanced-energy-project-credit-48c-program' target='_blank'>DOE 48C Portal</a><a class='link-box' href='https://www.irs.gov/credits-deductions/businesses/advanced-energy-project-credit' target='_blank'>IRS 48C Credit</a></div>"},
+      {label:"National Labs Partnership (NREL, PNNL, ANL)", hint:"CRADAs and licensing",
+       text:"<span class='section-label'>What it does</span>DOE National Laboratories offer CRADAs, licensing, and Work-for-Others agreements. Labs have deep expertise in power systems modelling and AI for grid operations. International companies can participate though US companies have statutory preference.<div class='links-row'><a class='link-box' href='https://www.nrel.gov/workingwithus' target='_blank'>NREL Working With Us</a><a class='link-box' href='https://www.pnnl.gov/industry-partnerships' target='_blank'>PNNL Partnerships</a></div>"}
+    ],
+    workflow:[
+      {step:"Establish US subsidiary", detail:"Delaware LLC or C-Corp, $1.5-3K setup. Required for most federal programmes", tag:"Month 1", tagColor:"#B22234"},
+      {step:"Register on SAM.gov and sbir.gov", detail:"System for Award Management registration required for all federal funding", tag:"Month 1", tagColor:"#B22234"},
+      {step:"Apply to DOE SBIR Phase I", detail:"Up to ~$275K feasibility study. Watch for grid modernisation topics", tag:"Month 2", tagColor:"#2E75B6"},
+      {step:"Engage RTO/ISO innovation teams", detail:"Contact PJM, MISO, CAISO directly with FERC Order 2023 solution pitch", tag:"Month 2-3", tagColor:"#2E75B6"},
+      {step:"Submit ARPA-E concept paper", detail:"When relevant FOA opens. High-risk, high-reward framing", tag:"When open", tagColor:"#D4A017"},
+      {step:"Explore National Lab CRADAs", detail:"Contact NREL or PNNL Technology Transfer Offices", tag:"Month 3-4", tagColor:"#D4A017"},
+      {step:"Apply to GRIP Smart Grid Grants", detail:"$10.5B programme — partner with US utility", tag:"When open", tagColor:"#1B7A3D"}
+    ],
+    faq:[
+      {q:"Do I need a US entity to access federal funding?", a:"Yes, for almost all programmes. SBIR requires a US small business. DOE grants require US-based organisations. A Delaware LLC costs $1.5-3K and takes 1-2 weeks."},
+      {q:"What does FERC Order 2023 mean for our product?", a:"It's the single biggest market driver. Mandates cluster studies instead of serial processing, creating massive computational demands. Every RTO/ISO is implementing it and actively seeking automation solutions."},
+      {q:"How competitive is ARPA-E funding?", a:"Extremely — roughly 3% success rate. However, the prestige and funding level ($1M-$10M) make it worth pursuing. Frame your application around the step-change in interconnection processing speed that AI enables."},
+      {q:"Can I partner with a National Lab without a US entity?", a:"Yes, CRADAs are available to international companies, though US companies have statutory preference. NREL and PNNL both have international partnership experience."},
+      {q:"Which RTO/ISO should I target first?", a:"PJM (largest US RTO, massive queue) and MISO (facing worst backlog with multi-year study delays) are the highest-priority targets. Both are actively implementing FERC Order 2023 reforms."}
+    ],
+    note:"The US represents the largest market opportunity. FERC Order 2023 creates regulatory urgency. A Delaware LLC ($1.5-3K) unlocks access to the entire federal funding ecosystem including $10.5B GRIP and $4B+ SBIR."
+  },
+  {
+    id:"germany", name:"Germany", full:"Germany — TSOs, BMWK & KfW Innovation Landscape", vendor:"TenneT · Amprion · 50Hertz · TransnetBW · BMWK", type:"TSO Innovation Hub",
+    icon:"🇩🇪", accentColor:"#DD0000", accentBg:"#FDE8E8", badgeColor:"#FDE8E8", badgeText:"#8B0000",
+    badge:"4 TSOs + DSOs", badge2:"8 Programmes", tags:["europe"],
+    sub:"Germany has the most active TSO innovation ecosystem in Europe. All 4 TSOs run individual open innovation programmes, plus the joint TSO Innovation Alliance. Federal BMWK and KfW provide large-scale funding.",
+    cardTags:["TSO Innovation","BMWK","KfW","Horizon Europe","Fraunhofer"],
+    desc:"Each of Germany's 4 TSOs runs its own innovation programme open to international startups. TenneT is most active with rolling challenges and explicit AI/congestion focus. 50Hertz/Elia offers €50K PoC cash funding. The joint 8-TSO Innovation Alliance provides access to all major European transmission operators simultaneously. Federal programmes (BMWK, KfW Deutschlandfonds) require German entity but offer massive scale. German GmbH setup costs ~€25K minimum capital.",
+    studies:[
+      {label:"TenneT DE — Open Innovation", hint:"Rolling challenges, AI/congestion focus",
+       text:"<span class='section-label'>What it does</span>TenneT operates 25,000+ km of high-voltage grid and runs rolling open innovation challenges. Recent themes include congestion forecasting (N-SIDE partnership), sustainability, and digital control. First programme (2023) received 57+ entries. €5.5B invested in H1 2025.<span class='section-label'>Why it matters</span>No nationality restriction. Submit a 2-minute pitch video. TenneT operates in both Germany and the Netherlands.<div class='links-row'><a class='link-box' href='https://magazines.tennet.eu/open-innovation-programme/' target='_blank'>TenneT Open Innovation</a></div>"},
+      {label:"Amprion Innovation Programme", hint:"11,000km grid, western Germany",
+       text:"<span class='section-label'>What it does</span>Amprion operates 11,000km of extra-high-voltage grid across western Germany. Innovation focuses on weather & grid resilience, predictive maintenance, and cross-border data pooling. Investment plan doubled to €27.5B through 2028.<span class='section-label'>Why it matters</span>Part of TSO Innovation Alliance. Open to direct partnership approaches. No nationality restriction.<div class='links-row'><a class='link-box' href='https://www.amprion.net/' target='_blank'>Amprion</a></div>"},
+      {label:"50Hertz/Elia — Open Innovation Challenge", hint:"€50K PoC funding per winner",
+       text:"<span class='section-label'>What it does</span>50Hertz (Elia Group, serving 18M people in eastern Germany) runs annual Open Innovation Challenges with €50,000 cash per winner for PoC development plus expert support. 2025 edition theme: 'People First'. Part of Elia Group's €12B+ CAPEX plan to 2030.<span class='section-label'>How to apply</span>Submit a 3-slide deck. Process: shortlisting → deep-dive → final pitch. Open worldwide.<div class='links-row'><a class='link-box' href='https://innovation.eliagroup.eu/en/how-we-work/open-innovation-challenges/' target='_blank'>Elia Innovation Portal</a></div>"},
+      {label:"TransnetBW — TransNEXT Innovation", hint:"Innoloft platform, NEXTLab facility",
+       text:"<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://transnetbw.innoloft.com/' target='_blank'>TransnetBW Innoloft</a></div>"},
+      {label:"TSO Innovation Alliance (Joint 8-TSO)", hint:"8 European TSOs, open to all",
+       text:"<span class='section-label'>What it does</span>Joint alliance of 8 European TSOs: TenneT, Amprion, 50Hertz/Elia, Terna (Italy), RTE (France), Swissgrid, Red Eléctrica (Spain). Launched July 2025. First programme: Weather & Grid Resilience.<span class='section-label'>How to apply</span>Submit 2-minute pitch video. No geographic restriction.<div class='links-row'><a class='link-box' href='https://challenges.rethinking-energy.org/spaces/34/pages/65' target='_blank'>TSO Alliance Platform</a></div>"},
+      {label:"Westnetz/E.ON — Grid Innovation", hint:"Germany's largest DSO",
+       text:"<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.gridx.ai/success-stories/westnetz-smart-grid-control-dso' target='_blank'>gridX/Westnetz Case Study</a></div>"},
+      {label:"BMWK 8th Energy Research Programme", hint:"~€1.3B annually, continuous via easy-Online",
+       text:"<span class='section-label'>What it does</span>Germany's federal energy research programme provides ~€1.3B annually across missions: Electricity Transition 2045, Grid Stability & Security, Energy System Digitalization. 50-100% of eligible costs covered.<span class='section-label'>Requirements</span>Requires German entity. Apply continuously via easy-Online portal.<div class='links-row'><a class='link-box' href='https://foerderportal.bund.de/easyonline/nutzungsbedingungen.jsf' target='_blank'>easy-Online Portal</a><a class='link-box' href='https://www.energieforschung.de/en/home' target='_blank'>Energy Research Programme</a></div>"},
+      {label:"KfW Deutschlandfonds", hint:"Up to €50M per investment, €30B total",
+       text:"<span class='section-label'>What it does</span>Launched December 2025. €1B for startups/scale-ups by 2030 (up to €50M per investment). €30B total public capital for economic transformation. Focus: DeepTech, AI, Climate Tech.<div class='links-row'><a class='link-box' href='https://www.kfw-capital.de/Investment-focus/Deutschlandfonds/' target='_blank'>KfW Deutschlandfonds</a><a class='link-box' href='https://www.bundesnetzagentur.de/ki' target='_blank'>BNetzA AI Service Desk</a><a class='link-box' href='https://www.fraunhofer.co.uk/' target='_blank'>Fraunhofer UK Research</a><a class='link-box' href='https://www.iee.fraunhofer.de/en/contact.html' target='_blank'>Fraunhofer IEE</a></div>"}
+    ],
+    workflow:[
+      {step:"Submit to TenneT Open Innovation", detail:"2-min pitch video. No entity required. Fastest entry", tag:"Week 1", tagColor:"#1B7A3D"},
+      {step:"Register on TSO Alliance platform", detail:"Create account on challenges.rethinking-energy.org", tag:"Week 1", tagColor:"#1B7A3D"},
+      {step:"Apply to 50Hertz/Elia OIC", detail:"3-slide deck for €50K PoC. Watch for 2026 cycle", tag:"When open", tagColor:"#2E75B6"},
+      {step:"Contact Westnetz/E.ON innovation team", detail:"Commercial partnership — no entity needed", tag:"Month 1-2", tagColor:"#2E75B6"},
+      {step:"Engage Fraunhofer IEE/ISE", detail:"UK office in Glasgow. Contract R&D for AI grid research", tag:"Month 2-3", tagColor:"#D4A017"},
+      {step:"Establish GmbH if pursuing federal funds", detail:"~€25K minimum capital. Unlocks BMWK and KfW", tag:"Month 3-6", tagColor:"#C0392B"},
+      {step:"Apply to BMWK via easy-Online", detail:"~€1.3B/yr programme, continuous applications", tag:"After GmbH", tagColor:"#C0392B"}
+    ],
+    faq:[
+      {q:"Can I apply to individual TSO programmes without a German entity?", a:"Yes. TenneT, Amprion, 50Hertz/Elia, and TransnetBW all accept international startups. The TSO Innovation Alliance is explicitly open worldwide. No German entity needed for these."},
+      {q:"Which German TSO should I target first?", a:"TenneT — most active with rolling challenges, explicit AI/congestion focus, and the largest grid (25,000+ km). They also operate in the Netherlands. 50Hertz/Elia is second due to €50K PoC funding."},
+      {q:"How much does it cost to set up a German GmbH?", a:"~€25,000 minimum share capital plus registration costs. Only worth it for BMWK or KfW programmes. Not needed for TSO innovation programmes."},
+      {q:"What is the BNetzA AI Regulatory Sandbox?", a:"Germany's federal network agency is establishing AI regulatory sandboxes under the EU AI Act. The KI-Service Desk has been operational since July 2025, with permanent sandboxes by August 2026."},
+      {q:"Is Fraunhofer accessible from the UK?", a:"Yes — Fraunhofer UK Research Ltd operates from Glasgow. IEE (energy systems) and ISE (solar/grid) institutes lead AI4Grids research."}
+    ],
+    note:"Germany's TSO innovation ecosystem is uniquely open to international startups. Prioritise TenneT and 50Hertz for direct engagement without entity setup. Federal programmes (BMWK, KfW) require German GmbH but offer massive scale."
+  },
+  {
+    id:"netherlands", name:"Netherlands", full:"Netherlands — TenneT & RVO Flexibility & Grid Innovation", vendor:"TenneT · RVO · Alliander", type:"Grid Flexibility Hub",
+    icon:"🇳🇱", accentColor:"#FF6600", accentBg:"#FFF4E6", badgeColor:"#FFF4E6", badgeText:"#CC5500",
+    badge:"Grid Flexibility", badge2:"5 Programmes", tags:["europe"],
+    sub:"Netherlands leads Europe in grid flexibility procurement and demand-side response. TenneT's 12,000+ queue drives congestion solutions. RVO funds €350M+ in innovation. Alliander scales AI to 2,500+ smart contracts in 2025.",
+    cardTags:["TenneT","RVO","Flex-e","Alliander","LV-NExT"],
+    desc:"TenneT operates both Dutch and German grids. Its congestion management service (take-and-feed) actively engages technology partners. RVO (Netherlands Enterprise Agency) runs €350M+ innovation portfolio across MOOI, Flex-e, and DEI+. Alliander, largest Dutch DSO, deployed gridX AI across 100+ local grids and is scaling XENON platform to 2,500 smart contracts in 2025. No local entity required for TenneT or Alliander partnerships.",
+    studies:[
+      {label:"TenneT NL Congestion Management", hint:"Demand-side response, take-and-feed",
+       text:"<span class='section-label'>What it does</span>TenneT operates 12,000+ MW interconnection queue in the Netherlands. Launched 'take-and-feed' service (2024) that actively manages grid congestion through real-time flexibility dispatch. Commercial partnerships with tech providers — no nationality restriction.<span class='section-label'>Why it matters</span>Direct route to procure capacity reduction solutions. TenneT has explicit AI integration roadmap.<div class='links-row'><a class='link-box' href='https://www.tennet.eu/nl-en/markets/dutch-market/congestion-management-take-and-feed' target='_blank'>TenneT Take-and-Feed</a></div>"},
+      {label:"RVO MOOI (Modernisation of Electricity Supply)", hint:"€90M+ fund, 3-year projects",
+       text:"<span class='section-label'>What it does</span>Part of RVO's €350M innovation portfolio. MOOI specifically targets electricity grid modernisation including congestion management, predictive analytics, and AI integration. Grants up to €3M per project. €90M+ annually allocated.<span class='section-label'>How to apply</span>Requires Dutch partner entity. Annual calls with 6-8 week decision cycle.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/mooi/elektriciteit' target='_blank'>RVO MOOI Portal</a></div>"},
+      {label:"LV-NExT (Low Voltage Network Exploration & Experimentation Toolkit)", hint:"DSO-led smart metering rollout",
+       text:"<span class='section-label'>What it does</span>Consortium programme (2023-2027) deploying smart metering & AI forecasting across Dutch low-voltage networks. Open to technology partnerships. Focus: demand forecasting, congestion prediction, and automated response.<div class='links-row'><a class='link-box' href='https://lvnext.nl/' target='_blank'>LV-NExT Platform</a></div>"},
+      {label:"RVO Flex-e (Flexibility Innovation)", hint:"€70M+ fund for demand response",
+       text:"<span class='section-label'>What it does</span>€70M+ dedicated to flexibility and demand response innovation. Smaller projects (€100K-€500K) with rolling applications. Direct DSO partnerships. Explicit support for AI load forecasting and automated curtailment.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/flex-e' target='_blank'>Flex-e Fund</a></div>"},
+      {label:"RVO DEI+ (Energy & Climate Innovation)", hint:"€80M+ for system-level projects",
+       text:"<span class='section-label'>What it does</span>Broader energy innovation fund (€80M+). Supports grid digitalisation, system integration, and cross-sector energy projects. Consortia-based, larger scale.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/dei/energie-en-klimaatinnovaties' target='_blank'>DEI+ Portal</a></div>"}
+    ],
+    workflow:[
+      {step:"Contact TenneT Commercial team", detail:"Direct partnership approach for congestion solutions. No entity required.", tag:"Week 1", tagColor:"#FF6600"},
+      {step:"Join LV-NExT ecosystem", detail:"Register on LV-NExT platform. Access DSO test beds.", tag:"Week 1-2", tagColor:"#FF6600"},
+      {step:"Engage Alliander innovation team", detail:"XENON platform partnership. Scaling from 100+ to 2,500 smart contracts in 2025.", tag:"Week 2-3", tagColor:"#2E75B6"},
+      {step:"Apply to RVO Flex-e", detail:"€70M fund, rolling applications. Fast decision cycle (6-8 weeks).", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Apply to RVO MOOI", detail:"€90M fund. Requires Dutch partner entity.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Explore DEI+ for larger consortia", detail:"€80M fund. System-level projects with multiple partners.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"Can we access RVO funding without a Dutch entity?", a:"You need at least one Dutch partner in the consortium. RVO-funded projects must be led by or include a Dutch organisation. Alliander and TenneT partnerships don't require this."},
+      {q:"How active is TenneT in technology partnerships?", a:"Very active. They operate 12,000+ MW queue and explicitly use commercial technology partners for congestion management. The take-and-feed service (2024) is their primary commercial engagement vehicle."},
+      {q:"What's the difference between Flex-e and MOOI?", a:"Flex-e targets flexibility/demand-response (€70M), with smaller projects and faster decisions. MOOI focuses on grid modernisation (€90M), with larger multiyear projects. Both are RVO-administered."},
+      {q:"How many smart contracts is Alliander aiming to deploy?", a:"Alliander is scaling XENON (gridX AI) from 100+ contracts in 2024 to 2,500+ contracts in 2025. This represents exponential expansion of the addressable market."}
+    ],
+    note:"Netherlands is Europe's leading flexibility market. TenneT and Alliander partnerships don't require local entity. RVO funds (Flex-e, MOOI, DEI+) offer €240M+ but require Dutch partner."
+  },
+  {
+    id:"spain", name:"Spain", full:"Spain — Red Eléctrica, Iberdrola & CDTI Innovation", vendor:"Red Eléctrica · Iberdrola · IDAE · CDTI", type:"Southern Europe Hub",
+    icon:"🇪🇸", accentColor:"#FFC400", accentBg:"#FFFAEB", badgeColor:"#FFFAEB", badgeText:"#CC9900",
+    badge:"€13.59B Transmission", badge2:"7 Programmes", tags:["europe"],
+    sub:"Spain is Europe's largest renewable energy producer and grid operator, with Red Eléctrica investing €13.59B in transmission networks 2025-2030. Iberdrola PERSEO has invested €200M+ in AI portfolio. CDTI and IDAE provide €300M+ annually.",
+    cardTags:["Red Eléctrica","Iberdrola","CDTI","IDAE","Elewit Ventures"],
+    desc:"Red Eléctrica (REE) operates Spain's high-voltage grid and is investing €13.59B across 2025-2030 specifically for renewable integration. Elewit Ventures is REE's corporate venture arm. Iberdrola PERSEO international startup program has invested €200M+ with explicit AI focus. CDTI (national R&D agency) and IDAE (energy agency) provide €300M+ annually in grants. Spanish company registration takes 2-4 weeks.",
+    studies:[
+      {label:"Red Eléctrica Innovation Partnerships", hint:"€13.59B transmission investment 2025-2030",
+       text:"<span class='section-label'>What it does</span>Red Eléctrica operates 48,000+ km of Spanish grid with explicit AI/digitalisation roadmap. €13.59B allocated to transmission networks 2025-2030. Direct vendor partnerships for grid automation, forecasting, and congestion management. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups.<span class='section-label'>How to apply</span>Direct approach to REE Innovation team or pitch to Elewit Ventures as VC deal.<div class='links-row'><a class='link-box' href='https://www.redeia.com/en' target='_blank'>Red Eléctrica</a><a class='link-box' href='https://www.elewit.ventures/en' target='_blank'>Elewit Ventures</a></div>"},
+      {label:"Iberdrola PERSEO", hint:"€200M+ invested in startup portfolio",
+       text:"<span class='section-label'>What it does</span>International startup programme with €200M+ invested in AI, renewable integration, and grid management portfolio. Equity and strategic partnership model. Explicit focus on next-generation grid technologies.<span class='section-label'>Why it matters</span>Direct access to Europe's largest utility (81M customers). Iberdola operates in Spain, Portugal, UK, US, Mexico, and Brazil.<div class='links-row'><a class='link-box' href='https://www.iberdrola.com/innovation/international-startup-program-perseo' target='_blank'>Iberdrola PERSEO</a></div>"},
+      {label:"CDTI R&D Funding (NEOTEC 2025+)", hint:"€300M+ annually, 40-75% subsidy",
+       text:"<span class='section-label'>What it does</span>Spain's Centre for Industrial Technological Development. NEOTEC programme funds R&D projects in AI, climate, and energy. Grants cover 40-75% of eligible costs. €300M+ pool across all sectors. Rolling applications via online portal.<span class='section-label'>Requirements</span>Spanish company registration required (2-4 weeks to establish SL/SLU).<div class='links-row'><a class='link-box' href='https://sede.cdti.gob.es/' target='_blank'>CDTI Portal</a><a class='link-box' href='https://www.cdti.es/en/ayudas/neotec-2025' target='_blank'>NEOTEC 2025</a></div>"},
+      {label:"IDAE Energy Innovation Grants", hint:"€200M+ fund, 50-75% subsidy",
+       text:"<span class='section-label'>What it does</span>Spanish Institute for Energy Diversification & Saving. Dedicated innovation budget (€200M+) for grid modernisation, distributed energy, and AI integration. 50-75% cost coverage for approved projects.<div class='links-row'><a class='link-box' href='https://sede.idae.gob.es/' target='_blank'>IDAE Portal</a></div>"},
+      {label:"ENISA (SME Growth Support)", hint:"€300M+ SME financing",
+       text:"<span class='section-label'>What it does</span>Spanish state-owned entity providing quasi-equity loans (€300K-€1.5M) and growth financing for SMEs. No interest during growth phase. Explicit support for DeepTech and ClimaTech.<div class='links-row'><a class='link-box' href='https://portaldelcliente.enisa.es:8443/web/clientes/alta-solicitud' target='_blank'>ENISA Portal</a></div>"},
+      {label:"Endesa Innovation (Enel Group)", hint:"€150M+ portfolio, 2,000+ employees R&D",
+       text:"<span class='section-label'>What it does</span>Enel Group's Spanish utility Endesa runs open innovation with vendor partnerships. €150M+ portfolio. Joint ventures with startups in grid automation and forecasting.<div class='links-row'><a class='link-box' href='https://www.endesa.com/en/our-commitment/innovation/open-innovation' target='_blank'>Endesa Innovation</a></div>"},
+      {label:"Horizon Europe (via Spain)", hint:"€95.5B EU programme, single entity eligible",
+       text:"<span class='section-label'>What it does</span>UK companies can participate post-Brexit as Associated Country. Spain routes some funding via Spanish tech clusters. EIC Accelerator grants (€2.5M) available for Spanish-led consortia.<div class='links-row'><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>"}
+    ],
+    workflow:[
+      {step:"Contact Red Eléctrica/Elewit", detail:"Pitch grid automation solution. €13.59B 2025-2030 transmission investment.", tag:"Week 1", tagColor:"#FFC400"},
+      {step:"Approach Iberdrola PERSEO", detail:"Equity deal — prepare pitch deck, metrics, product demo.", tag:"Week 1-2", tagColor:"#FFC400"},
+      {step:"Register Spanish company (SL or SLU)", detail:"2-4 weeks. €3-5K legal fees. Unlocks CDTI, IDAE, ENISA.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Apply to CDTI NEOTEC 2025", detail:"€300M fund, 40-75% subsidy. Rolling applications.", tag:"Month 1-2", tagColor:"#2E75B6"},
+      {step:"Apply to IDAE Energy Innovation", detail:"€200M fund, 50-75% coverage.", tag:"Month 2", tagColor:"#D4A017"},
+      {step:"Engage Endesa partnership", detail:"Open innovation vendor partnerships.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"What is Red Eléctrica's €13.59B investment targeting?", a:"Transmission network modernisation 2025-2030, with explicit focus on renewable integration, AI automation, and congestion management. This is the single largest grid infrastructure investment in Southern Europe."},
+      {q:"How much has Iberdrola PERSEO invested to date?", a:"€200M+ in portfolio across AI, renewable integration, and grid tech startups. PERSEO explicitly positions grid interconnection queue management as a priority."},
+      {q:"How quickly can I register a Spanish company?", a:"2-4 weeks for SL (Ltd) or SLU (limited liability sole trader). Costs €3-5K for legal registration. This unlocks access to CDTI (€300M), IDAE (€200M), and ENISA funding."},
+      {q:"What's the difference between CDTI and IDAE grants?", a:"CDTI focuses on R&D and technology development (40-75% subsidy). IDAE focuses on energy innovation and deployment (50-75% subsidy). Both are worth applying to in parallel."},
+      {q:"Can we pitch to multiple Spanish utilities?", a:"Yes. Red Eléctrica, Endesa, Iberdrola, and regional utilities all have independent innovation partnerships. They typically don't have exclusivity clauses for technology partnerships."}
+    ],
+    note:"Spain is Europe's renewable energy leader with €13.59B transmission investment 2025-2030. Elewit Ventures (REE) and Iberdrola PERSEO offer immediate VC access. Spanish registration (2-4 weeks) unlocks €500M+ in government grants (CDTI, IDAE, ENISA)."
+  },
+  {
+    id:"france", name:"France", full:"France — RTE, EDF & Bpifrance Deep-Tech Funding", vendor:"RTE · EDF · Bpifrance · CRE", type:"Western Europe",
+    icon:"🇫🇷", accentColor:"#002395", accentBg:"#E8ECFF", badgeColor:"#E8ECFF", badgeText:"#001B75",
+    badge:"€5B+ Energy R&D", badge2:"6 Programmes", tags:["europe"],
+    sub:"France invests €5B+ annually in energy R&D through Bpifrance. RTE and EDF partner with 100+ startups. CRE regulatory sandbox accelerates AI pilots. France 2030 supports €300M/yr in climate-tech deeptech.",
+    cardTags:["RTE","EDF","Bpifrance","CRE","France 2030"],
+    desc:"RTE operates 100,000+ km of transmission with explicit AI/forecasting roadmap. EDF Pulse Awards fund 50+ startups/yr across innovation areas. Bpifrance manages €300M/yr France 2030 Deep-Tech fund explicitly targeting AI, DeepTech, and ClimaTech. CRE (energy regulator) runs regulatory sandbox for AI pilots. ADEME provides €400M+ annually for energy transitions.",
+    studies:[
+      {label:"RTE Innovation & Partnerships", hint:"€5.5B annual investment, 100+ startups",
+       text:"<span class='section-label'>What it does</span>RTE operates 100,000+ km French transmission grid. Runs open innovation programme with 100+ active startup partnerships. Explicit focus on forecasting, grid automation, and congestion management. €5.5B annual capex with AI integration mandate. Direct vendor partnerships, no nationality restriction.<span class='section-label'>Why it matters</span>Largest single European grid operator by capex. AI for congestion forecasting is named priority.<div class='links-row'><a class='link-box' href='https://www.rte-france.com/en/uninterrupted-flow-current/innovating-preparation-tomorrow-grid' target='_blank'>RTE Innovation</a></div>"},
+      {label:"EDF Pulse Awards", hint:"€50M+ portfolio, strategic partnerships",
+       text:"<span class='section-label'>What it does</span>EDF's international startup programme funding 50+ startups annually. €50M+ investment portfolio. Explicit support for grid modernisation, AI, and renewable integration. Equity and partnership options.<span class='section-label'>Why it matters</span>Access to Europe's largest utility (180M customers across 10 countries).<div class='links-row'><a class='link-box' href='https://www.edf.fr/en/pulse/edf-pulse-awards' target='_blank'>EDF Pulse Awards</a></div>"},
+      {label:"Bpifrance France 2030 Deep-Tech", hint:"€300M/yr, AI & ClimaTech focus",
+       text:"<span class='section-label'>What it does</span>Bpifrance (French development bank) administers France 2030 Deep-Tech fund: €300M/yr targeting AI, quantum, biotech, and climate innovation. Grants and equity financing available. Two-tier support: early-stage (€200K-€500K) and scale-up (€5M+).<span class='section-label'>Requirements</span>French company registration (SARL/SAS, €500 + 2-3 weeks). Alternatively, partnership with French company acceptable.<div class='links-row'><a class='link-box' href='https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-des-pionniers-de-lintelligence-artificielle' target='_blank'>Bpifrance AI Pioneers</a></div>"},
+      {label:"CRE Regulatory Sandbox", hint:"No funding — regulatory cover for AI pilots",
+       text:"<span class='section-label'>What it does</span>French energy regulator (CRE) operates regulatory sandbox for AI-assisted grid operations testing. Provides comfort letters and derogations. Identical to UK Ofgem sandbox in principle. Open to international companies with French partner.<div class='links-row'><a class='link-box' href='https://www.demarches-simplifiees.fr/commencer/dispositif-d-experimentation-reglementaire' target='_blank'>CRE Regulatory Sandbox</a></div>"},
+      {label:"ADEME Energy Transition Funding", hint:"€400M+ annually for innovation",
+       text:"<span class='section-label'>What it does</span>French Environment & Energy Management Agency. €400M+ annual budget for energy transitions, including grid modernisation, distributed generation, and smart systems. Grants (50-80% coverage) and low-interest loans available.<div class='links-row'><a class='link-box' href='https://www.ademe.fr/en/our-missions/funding/' target='_blank'>ADEME Funding</a></div>"},
+      {label:"France 2030 (Broader Programme)", hint:"€300B sovereign investment plan",
+       text:"<span class='section-label'>What it does</span>France 2030 is the national strategic investment plan (€300B total). Energy transition is a core pillar with €50B+ allocated. Administered through Bpifrance, local government, and sector agencies.<div class='links-row'><a class='link-box' href='https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030' target='_blank'>France 2030 Overview</a></div>"}
+    ],
+    workflow:[
+      {step:"Contact RTE Innovation team", detail:"Direct pitch for grid automation. 100+ active partnerships.", tag:"Week 1", tagColor:"#002395"},
+      {step:"Apply to EDF Pulse Awards", detail:"Strategic partnership or equity investment. €50M portfolio.", tag:"Week 1-2", tagColor:"#002395"},
+      {step:"Engage CRE Regulatory Sandbox", detail:"Propose AI pilot with French utility partner.", tag:"Week 2-3", tagColor:"#2E75B6"},
+      {step:"Register French company (optional)", detail:"SARL/SAS registration: €500 + 2-3 weeks. Unlocks Bpifrance funding.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Apply to Bpifrance France 2030", detail:"€300M/yr fund. AI & Deep-Tech focus.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Apply to ADEME Energy Grants", detail:"€400M+ annual funding for transition projects.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"Can we approach RTE without a French entity?", a:"Yes. RTE operates 100+ startup partnerships with no nationality restriction on direct vendor partnerships. However, you'll need French representation/contact for engagement."},
+      {q:"How different is France 2030 from standard Bpifrance grants?", a:"France 2030 is the broader €300B national plan; Bpifrance administers the implementation. For startups, apply to Bpifrance's specific France 2030 Deep-Tech fund (€300M/yr)."},
+      {q:"What's the CRE regulatory sandbox approval timeline?", a:"6-8 weeks for initial assessment. Once approved, pilots can run 12-24 months with regulatory cover and derogation letters."},
+      {q:"How much capital does it cost to register a French SARL?", a:"€500 registration cost + 2-3 weeks. Minimum capital: €1 (symbolic). Much simpler than German GmbH or Spanish setup."},
+      {q:"Does Bpifrance require French incorporation?", a:"No — you can partner with a French company and apply as a consortium, or register a French entity. Both routes are acceptable."}
+    ],
+    note:"France offers €5B+ in energy R&D funding with the lowest company registration barrier in Europe (€500 SARL). RTE + EDF partnerships don't require local entity. Bpifrance France 2030 (€300M/yr) unlocks massive Deep-Tech funding."
+  },
+  {
+    id:"india", name:"India", full:"India — MNRE, PowerGrid & Smart Grid Innovation", vendor:"MNRE · Smart Grid · Startup India · Social Alpha", type:"Emerging Market",
+    icon:"🇮🇳", accentColor:"#FF9933", accentBg:"#FFF7E6", badgeColor:"#FFF7E6", badgeText:"#CC6600",
+    badge:"1.4B People", badge2:"6 Programmes", tags:["apac"],
+    sub:"India targets 250M smart meters by 2030 and invests $4B+ in grid modernisation. MNRE oversees renewables; Smart Grid drives automation. Startup India offers £10K+ grants. Social Alpha accelerates 50+ cleantech startups/yr.",
+    cardTags:["MNRE","Smart Grid","Startup India","World Bank","ADB"],
+    desc:"India is deploying 250M smart meters by 2030 and investing $4B+ in grid modernisation under MNRE oversight. The National Smart Grid Mission (NSGM) coordinates grid automation across 13 states. Startup India provides £10K+ grants + incubation. Social Alpha's Techtonic platform accelerates 50+ cleantech startups annually through CEIIC (Climate Emergency Incubator). World Bank and ADB provide concessional finance. No local entity required for Startup India or accelerators; optional for MNRE partnerships.",
+    studies:[
+      {label:"MNRE Green Energy Corridors", hint:"$2B+ fund, transmission backbone",
+       text:"<span class='section-label'>What it does</span>Ministry of New & Renewable Energy (MNRE) manages green energy corridors — transmission infrastructure to support 280+ GW renewable targets. Dedicated to enabling high renewable penetration. Grid management, forecasting, and congestion automation are core priorities.<span class='section-label'>Why it matters</span>India's renewable expansion creates massive AI/grid automation demand. Direct partnership opportunities with state utilities and independent power producers (IPPs).<div class='links-row'><a class='link-box' href='https://mnre.gov.in/en/green-energy-corridors/' target='_blank'>MNRE Green Energy Corridors</a></div>"},
+      {label:"Smart Grid Mission India (NSGM)", hint:"13-state deployment, real-time monitoring",
+       text:"<span class='section-label'>What it does</span>National Smart Grid Mission (2013-ongoing) deploying advanced metering, SCADA, and AI analytics across 13 states. 250M smart meters target by 2030. Vendor partnerships for forecasting, demand-side management, and automated response.<span class='section-label'>Why it matters</span>Largest smart metering rollout globally. Real-time grid operations data creates opportunities for AI-driven automation.<div class='links-row'><a class='link-box' href='https://www.nsgm.gov.in/' target='_blank'>Smart Grid Mission</a></div>"},
+      {label:"Startup India Deep Tech Fund", hint:"£10K-£100K grants + incubation",
+       text:"<span class='section-label'>What it does</span>Government of India's Startup India programme provides £10K-£100K grants for registered Indian startups. Deep Tech vertical explicitly supports AI, hardware, climate, and energy. Annual recognition ceremony at India Innovation Summit.<span class='section-label'>How to apply</span>Register Indian startup entity (₹100, ~$1.20 fee). Apply via DPIIT portal. No foreigners need apply — but can partner with Indian startup.<div class='links-row'><a class='link-box' href='https://www.startupindia.gov.in/content/sih/en/home-page.html' target='_blank'>Startup India Portal</a></div>"},
+      {label:"Social Alpha Techtonic & CEIIC", hint:"50+ startups/yr, $1M+ capital",
+       text:"<span class='section-label'>What it does</span>Social Alpha is India's leading climate-tech accelerator. Techtonic platform runs quarterly cohorts (50+ startups/yr). CEIIC (Climate Emergency Incubator) provides $100K-$1M+ growth capital. Mentorship from power utilities, grid operators, and venture investors.<span class='section-label'>Why it matters</span>Access to PowerGrid, state utilities, and international climate investors. No Indian entity required.<div class='links-row'><a class='link-box' href='https://www.socialalpha.org/techtonic/' target='_blank'>Social Alpha Techtonic</a><a class='link-box' href='https://ceiic.socialalpha.org/' target='_blank'>CEIIC Platform</a></div>"},
+      {label:"PowerGrid R&D & Technology Partnerships", hint:"National grid operator, 170,000+ circuit km",
+       text:"<span class='section-label'>What it does</span>Central transmission utility (PowerGrid) operates 170,000+ circuit km. Active in AI for load forecasting, dynamic line rating, and outage prediction. Direct partnerships with technology providers — no nationality restriction.<span class='section-label'>Why it matters</span>Controls India's backbone transmission. AI for grid operations directly addresses their stated roadmap priorities.<div class='links-row'><a class='link-box' href='https://www.powergrid.in/en/technology-development-rd' target='_blank'>PowerGrid Technology</a></div>"},
+      {label:"Grid-India & RTC Partnership Platform", hint:"Real-time dispatch, forecasting service",
+       text:"<span class='section-label'>What it does</span>Grid-India (state-run dispatch operator, ~200 GW managed) operates real-time energy market. RTC (Regional Load Dispatch Centres) manage 13 regional grids. Technology partnerships for forecasting and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.grid-india.in/' target='_blank'>Grid-India</a></div>"}
+    ],
+    workflow:[
+      {step:"Register on Startup India Portal", detail:"Annual deep-tech recognition. £10K-£100K grants available.", tag:"Week 1", tagColor:"#FF9933"},
+      {step:"Apply to Social Alpha Techtonic", detail:"Quarterly cohorts. 50+ startups/yr. $1M+ growth capital access.", tag:"Week 1-2", tagColor:"#FF9933"},
+      {step:"Contact PowerGrid Technology Partnerships", detail:"Direct pitch for grid forecasting/automation solution.", tag:"Week 2-3", tagColor:"#2E75B6"},
+      {step:"Engage Grid-India RTC platform", detail:"Real-time dispatch operator partnership opportunity.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Approach MNRE green corridors team", detail:"250M smart meter deployment + transmission expansion.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Explore World Bank / ADB financing", detail:"Concessional rates for India energy projects.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"Do I need an Indian entity to access funding?", a:"For Startup India grants, yes — but can be a newly registered entity (₹100 + ~$1.20 fee). For Social Alpha accelerators, NO entity needed. PowerGrid partnerships also don't require formal incorporation."},
+      {q:"How many smart meters is India targeting?", a:"250M smart meters by 2030 as part of the Smart Grid Mission. This is the largest smart metering rollout globally and creates massive grid data opportunities."},
+      {q:"Who manages India's grid real-time operations?", a:"Grid-India manages the national real-time energy market. 13 Regional Load Dispatch Centres (RTCs) manage state grids. Both are open to technology partnerships for forecasting and congestion management."},
+      {q:"What's the difference between Social Alpha Techtonic and CEIIC?", a:"Techtonic is the accelerator programme (quarterly cohorts, mentorship). CEIIC is the climate-focused growth capital fund (£100K-$1M+). Both are administered by Social Alpha but serve different stages."},
+      {q:"Can non-Indians access World Bank or ADB energy funding?", a:"Yes, with an Indian partner. World Bank and ADB fund large infrastructure projects in India with concessional rates. International technology providers can participate as vendors."}
+    ],
+    note:"India is the world's fastest-growing electricity market. 250M smart meters by 2030 + $4B grid modernisation = massive opportunity. No Indian entity needed for Social Alpha or PowerGrid partnerships; optional for Startup India."
+  },
+  {
+    id:"australia", name:"Australia", full:"Australia — AEMO, ARENA & Network Operator Innovation", vendor:"AEMO · ARENA · AusNet · Ausgrid", type:"Developed Market (APAC)",
+    icon:"🇦🇺", accentColor:"#002B7F", accentBg:"#E8ECFF", badgeColor:"#E8ECFF", badgeText:"#001B5F",
+    badge:"11 CRI Reforms", badge2:"7 Programmes", tags:["apac"],
+    sub:"AEMO's Connections Reform Initiative (11 reforms across 4 areas) creates urgent market demand for queue management. ARENA funds $100M+ clean energy projects. 310+ EnergyLab alumni across 7+ programmes. Network operators actively seek technology partnerships.",
+    cardTags:["AEMO","ARENA","EnergyLab","Network Operators","R&D Tax"],
+    desc:"AEMO manages the National Electricity Market and has launched 11 reforms across 4 priority areas specifically to address the interconnection queue crisis. ARENA (Australian Renewable Energy Agency) funds $100M+ projects with explicit grid automation focus. EnergyLab has graduated 310+ cleantech startups across 7 programmes. Australia's R&D Tax Incentive provides 43.5% cash rebates on R&D spend. Network operators (AusNet, Ausgrid, Transgrid, Energex) actively seek technology partnerships. No local entity required for accelerators; optional for ARENA/tax credits.",
+    studies:[
+      {label:"AEMO Connections Reform Initiative (CRI)", hint:"11 reforms, 2026+ implementation",
+       text:"<span class='section-label'>What it does</span>AEMO (Australian Energy Market Operator) manages the NEM and launched 11 reforms across 4 priority areas: Staged generator setup, Improved connection requirements, Enhanced network support, Streamlined processes. Each reform creates specific software/AI automation needs. Direct technology partnerships with AEMO and network operators.<span class='section-label'>Why it matters</span>Regulatory mandate (AEMC) to resolve interconnection backlog. Australia's renewable queue is 2nd largest globally (350+ GW pending).<div class='links-row'><a class='link-box' href='https://www.aemo.com.au/initiatives/major-programs/connections-reform-initiative' target='_blank'>AEMO CRI</a></div>"},
+      {label:"ARENA (Australian Renewable Energy Agency)", hint:"$100M+ project funding",
+       text:"<span class='section-label'>What it does</span>ARENA funds renewable energy projects including grid modernisation, storage, and AI for operations. $100M+ active portfolio. Grants and concessional loans (2-5% interest). Explicit support for interconnection automation, forecasting, and demand-side management.<span class='section-label'>How to apply</span>Australian entity required (easy setup, $200 AUD). Annual funding rounds. 4-6 week decision cycle.<div class='links-row'><a class='link-box' href='https://arena.gov.au/funding/future-made-in-australia-innovation-fund/' target='_blank'>ARENA Funding</a></div>"},
+      {label:"Australia R&D Tax Incentive", hint:"43.5% cash rebate on R&D spend",
+       text:"<span class='section-label'>What it does</span>Australian companies claim 43.5% cash rebate on all R&D expenditure. No size limits. Tech companies building AI/grid software are fully eligible. Annual claims submitted to ATO; rebates received in 1-2 months.<span class='section-label'>Why it matters</span>Non-dilutive funding. Every Australian startup should use this. Can be claimed retroactively for past 2 years.<div class='links-row'><a class='link-box' href='https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/research-and-development-tax-incentive-and-concessions/research-and-development-tax-incentive' target='_blank'>ATO R&D Tax Incentive</a></div>"},
+      {label:"EnergyLab Accelerator", hint:"310+ alumni, 7+ programmes",
+       text:"<span class='section-label'>What it does</span>Australia's leading cleantech accelerator (310+ alumni graduates). Runs 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence). Cohort-based mentorship + capital introductions to utilities and government agencies.<span class='section-label'>Why it matters</span>Direct access to every major Australian network operator (AusNet, Ausgrid, Energex, Transgrid, SA Power Networks). No entity required for application.<div class='links-row'><a class='link-box' href='https://energylab.org.au/' target='_blank'>EnergyLab</a></div>"},
+      {label:"Network Operator Partnerships (AusNet, Ausgrid, Transgrid)", hint:"Commercial vendor relationships",
+       text:"<span class='section-label'>What it does</span>Each network operator independently funds innovation pilots and vendor partnerships. AusNet and Ausgrid explicitly focus on demand management, forecasting, and automation. Transgrid (NSW transmission) has a dedicated innovation budget. Open to technology partnerships, no entity required.<div class='links-row'><a class='link-box' href='https://www.ausnetservices.com.au/projects-and-innovation' target='_blank'>AusNet Services</a><a class='link-box' href='https://www.ausgrid.com.au/About-Us/Future-Grid/Innovation-Portfolio' target='_blank'>Ausgrid Innovation</a><a class='link-box' href='https://www.transgrid.com.au/about-us/network/funding-opportunities-for-demand-management-innovation/' target='_blank'>Transgrid Innovation</a></div>"},
+      {label:"CRC-P (Cooperative Research Centre Projects)", hint:"$30M+ fund, university partnerships",
+       text:"<span class='section-label'>What it does</span>Australian government's Cooperative Research Centre Projects fund collaborative R&D (businesses + universities). $30M+ pool. Grid automation, forecasting, and AI all eligible. Grants up to $1M per project, 3-5 year durations.<div class='links-row'><a class='link-box' href='https://business.gov.au/grants-and-programs/cooperative-research-centres-projects-crcp-grants' target='_blank'>CRC-P Grants</a></div>"},
+      {label:"CEFC (Clean Energy Finance Corporation)", hint:"$20B+ concessional finance",
+       text:"<span class='section-label'>What it does</span>CEFC provides concessional (below-market) finance for clean energy projects. $20B+ deployed. Interest rates 2-4%. Equity and debt instruments available. Grid modernisation and storage projects prioritised.<div class='links-row'><a class='link-box' href='https://www.cefc.com.au/' target='_blank'>CEFC</a></div>"}
+    ],
+    workflow:[
+      {step:"Apply to EnergyLab Accelerator", detail:"310+ alumni network. Direct access to all network operators.", tag:"Week 1-2", tagColor:"#002B7F"},
+      {step:"Contact AEMO Connections Reform team", detail:"Direct pitch for queue management/automation solution.", tag:"Week 2-3", tagColor:"#002B7F"},
+      {step:"Engage network operators (AusNet, Ausgrid, Transgrid)", detail:"Commercial partnerships. Innovation budgets available.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Register Australian entity (optional)", detail:"$200 AUD. Unlocks ARENA, R&D Tax, CRC-P.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Apply to ARENA project funding", detail:"$100M+ fund. 4-6 week decision cycle.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Claim R&D Tax Incentive", detail:"43.5% cash rebate. Retroactive 2 years. Annual submission.", tag:"Ongoing", tagColor:"#D4A017"},
+      {step:"Explore CRC-P university partnerships", detail:"$30M+ collaborative R&D fund. 3-5 year projects.", tag:"Month 2-3", tagColor:"#1B7A3D"}
+    ],
+    faq:[
+      {q:"What are AEMO's 11 Connections Reform initiatives?", a:"Four priority areas: (1) Staged generator setup, (2) Improved connection requirements, (3) Enhanced network support, (4) Streamlined processes. Each reform creates specific software/AI automation needs. Implementation ongoing through 2026+."},
+      {q:"Do I need an Australian entity for ARENA funding?", a:"Yes, but registration costs only $200 AUD and takes 1-2 days online. Highly recommend establishing one for ARENA, R&D Tax Incentive access, and network operator partnerships."},
+      {q:"How does the R&D Tax Incentive work?", a:"Claim 43.5% cash rebate on all R&D spend. No size limits. Tech companies building AI/grid software are fully eligible. Submit annual claims to ATO; rebates arrive in 1-2 months."},
+      {q:"Which network operators should I approach first?", a:"AusNet and Ausgrid have the most active innovation budgets and explicit demand management focus. Transgrid (NSW transmission) also invests in automation. EnergyLab provides introductions to all three."},
+      {q:"How many startups has EnergyLab graduated?", a:"310+ alumni across 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence, etc.). Direct alumni network includes all major Australian utilities."}
+    ],
+    note:"Australia combines regulatory urgency (AEMO 11 reforms), massive funding (ARENA $100M+, CEFC $20B+), and strong accelerators (EnergyLab 310+ alumni). R&D Tax Incentive (43.5% rebate) is non-dilutive and available immediately. Minimal entity setup required."
+  },
+  {
+    id:"southafrica", name:"South Africa", full:"South Africa — Eskom, DMRE & Climate Finance", vendor:"Eskom · DMRE · CIF · GET.invest", type:"Energy Transition",
+    icon:"🇿🇦", accentColor:"#007749", accentBg:"#E6F5F0", badgeColor:"#E6F5F0", badgeText:"#004D2D",
+    badge:"Energy Crisis Driver", badge2:"6 Programmes", tags:["africa"],
+    sub:"South Africa's energy crisis (chronic load shedding) drives grid automation demand. Eskom runs open innovation. DMRE REIPPPP funds renewable infrastructure. JET-IP $8B climate finance. CIF, EEP Africa, and Catalyst Fund provide capital and acceleration.",
+    cardTags:["Eskom","DMRE","REIPPPP","Catalyst Fund","JET-IP"],
+    desc:"South Africa faces chronic electricity shortages creating urgent demand for grid optimisation and demand-side response. Eskom (state utility) launched renewable energy offtake programme (first ever) with implicit technology partnership pathway. DMRE REIPPPP funds $10B+ renewable projects. JET-IP (Just Energy Transition Partnership) mobilises $8B climate finance. CIF, EEP Africa, and Catalyst Fund provide grant capital and acceleration. No local entity needed for accelerators; optional for direct utility partnerships.",
+    studies:[
+      {label:"Eskom Renewable Energy Offtake Programme (REOP)", hint:"First-ever commercial partnerships",
+       text:"<span class='section-label'>What it does</span>Eskom launched its first renewable energy offtake programme (2024) enabling independent power producers (IPPs) and technology partners to develop grid solutions. Opens pathway for tech partnerships in grid management, forecasting, and demand response.<span class='section-label'>Why it matters</span>Eskom (state utility, 95% grid penetration) is seeking technology partnerships to address supply constraints. Direct access to national grid operator.<div class='links-row'><a class='link-box' href='https://www.eskom.co.za/eskom-launches-first-ever-renewable-energy-offtake-programme/' target='_blank'>Eskom RE Programme</a></div>"},
+      {label:"DMRE REIPPPP (Renewable Energy IPP Procurement)", hint:"$10B+ fund, mega auctions",
+       text:"<span class='section-label'>What it does</span>Department of Mineral Resources & Energy manages Renewable Energy Independent Power Producer Procurement Programme. Six mega-auctions (2011-2024) totalling $10B+ invested. Round 7 ongoing. Implicit demand for AI-driven queue management and integration tools.<span class='section-label'>Why it matters</span>Largest renewable energy procurement programme in Africa. Technology partners support IPPs through EPC and operational optimization phases.<div class='links-row'><a class='link-box' href='https://www.dmre.gov.za/energy-resources/reippp-programme' target='_blank'>DMRE REIPPPP</a></div>"},
+      {label:"Climate Investment Fund (CIF)", hint:"$600M+ concessional climate finance",
+       text:"<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ deployed in South Africa) for climate and energy transition projects. Grants and loans (1-2% interest) for renewable infrastructure, energy efficiency, and grid modernisation. Explicit support for energy access and grid resilience.<span class='section-label'>How to apply</span>Works through regional development banks (AfDB, World Bank). Technology partners can be financed indirectly through project financing.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF</a></div>"},
+      {label:"EEP Africa (Energy & Environment Partnership)", hint:"€55M+ fund, 13 African countries",
+       text:"<span class='section-label'>What it does</span>EU-African partnership providing grants (€50K-€500K) for energy projects across 13 African countries including South Africa. Explicit support for renewable integration, grid modernisation, and digitalization. Non-dilutive grants; 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>"},
+      {label:"Catalyst Fund", hint:"$100M+ VC for African climate tech",
+       text:"<span class='section-label'>What it does</span>Pan-African venture capital fund ($100M+ AUM) investing in climate-tech startups across Africa. Explicit focus on energy access, renewable integration, and grid modernisation. Equity investments (typically $100K-$2M). No entity required for pitching.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a></div>"},
+      {label:"JET-IP (Just Energy Transition Investment Partnership)", hint:"$8B climate finance mobilisation",
+       text:"<span class='section-label'>What it does</span>G7 commitment to South Africa for Just Energy Transition. $8B concessional finance to accelerate renewable deployment and grid infrastructure. Administered through World Bank, AfDB. Technology partnerships eligible for project financing.<div class='links-row'><a class='link-box' href='https://www.climatecommission.org.za/south-africas-jet-ip' target='_blank'>South Africa JET-IP</a></div>"}
+    ],
+    workflow:[
+      {step:"Contact Eskom Technology Partnerships", detail:"Pitch grid automation/demand response solution. REOP pathway.", tag:"Week 1", tagColor:"#007749"},
+      {step:"Apply to Catalyst Fund", detail:"$100M+ VC. €100K-€2M typical cheques. No entity needed.", tag:"Week 1-2", tagColor:"#007749"},
+      {step:"Explore EEP Africa grants", detail:"€50K-€500K non-dilutive. 6-month cycle. South Africa eligible.", tag:"Week 2-3", tagColor:"#2E75B6"},
+      {step:"Connect with DMRE for REIPPPP support", detail:"$10B+ fund. Ongoing Round 7 auction. Technology partnerships available.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Apply to CIF concessional finance", detail:"$600M+ fund. Loans at 1-2% interest via development banks.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Explore JET-IP project opportunities", detail:"$8B climate finance. World Bank/AfDB intermediation.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"What is South Africa's energy crisis and how does it drive grid tech demand?", a:"Eskom faces chronic supply shortages and load shedding (rolling blackouts). Demand-side response, grid optimisation, and renewable integration are urgent priorities. This creates immediate market demand for AI-driven forecasting and congestion management."},
+      {q:"Can international startups pitch to Eskom directly?", a:"Yes. Eskom launched its first renewable energy offtake programme (2024) explicitly opening technology partnerships. No local entity required for initial engagement."},
+      {q:"What is JET-IP and who can access it?", a:"Just Energy Transition Investment Partnership: $8B G7 commitment for South African energy transition. Administered through World Bank and AfDB. Technology partners can participate indirectly through project financing."},
+      {q:"How much does Catalyst Fund typically invest?", a:"€100K-€2M typical cheques. Equity-only investment model. No local entity required to pitch."},
+      {q:"What is REIPPPP and how does it create tech opportunities?", a:"DMRE's Renewable Energy Independent Power Producer Procurement Programme: $10B+ invested across six mega-auctions. Technology partners support IPPs through EPC, operations, and grid integration phases."}
+    ],
+    note:"South Africa's energy crisis creates urgent demand for grid automation. Eskom's REOP programme (first-ever) opens technology partnerships directly. Catalyst Fund ($100M+ VC) and EEP Africa (€55M+ grants) provide accessible capital. No local entity required for pitching."
+  },
+  {
+    id:"kenya", name:"Kenya", full:"Kenya — RECs, KOSAP & Climate Finance Growth", vendor:"REREC · CIF · EEP Africa · Kenya Power", type:"East Africa Growth",
+    icon:"🇰🇪", accentColor:"#CE1126", accentBg:"#FFE6E6", badgeColor:"#FFE6E6", badgeText:"#8B0A1A",
+    badge:"East Africa Hub", badge2:"5 Programmes", tags:["africa"],
+    sub:"Kenya has Africa's 2nd fastest growing electricity market (7% CAGR). REREC coordinates renewable expansion; Kenya Power seeks grid modernisation. AECF and CIF provide $500M+ in concessional finance. Climate Ventures and Catalyst Fund accelerate climate startups.",
+    cardTags:["REREC","Kenya Power","CIF","AECF","EEP Africa"],
+    desc:"Kenya targets 100% renewable electricity by 2030 (vs. 40% today) with $5B+ investment. REREC (Renewable Energy Regulatory Commission) coordinates 100+ renewable projects. Kenya Power (national utility) explicitly seeks grid automation and demand-side management technologies. AECF (Africa Enterprise Challenge Fund) provides €300M+ grants. CIF and EEP Africa deliver concessional capital. Catalyst Fund and local climate venture funds support early-stage startups. No local entity required for accelerators or CIF; optional for Kenya Power partnerships.",
+    studies:[
+      {label:"REREC (Renewable Energy Regulatory Commission)", hint:"100% renewable target by 2030",
+       text:"<span class='section-label'>What it does</span>REREC coordinates Kenya's 100% renewable electricity target (vs. 40% today). Manages licensing and grid integration for 100+ renewable projects. Implicit coordination demand for forecasting, congestion management, and demand-side response technologies. No funding directly available but regulatory pathway access is critical.<span class='section-label'>Why it matters</span>Kenya has Africa's 2nd fastest electricity market growth (7% CAGR). $5B+ investment to 2030. Direct regulatory access to grid integration process.<div class='links-row'><a class='link-box' href='https://www.rerec.co.ke/' target='_blank'>REREC</a></div>"},
+      {label:"Kenya Power Innovation & Partnerships", hint:"National utility, 8M+ customers",
+       text:"<span class='section-label'>What it does</span>Kenya Power operates the national grid and explicitly seeks technology partnerships for grid modernisation, demand-side management, and renewable integration. 8M+ customers provide massive data opportunity. Direct vendor partnerships, no entity required.<span class='section-label'>Why it matters</span>Access to national utility. Grid connectivity data and real-time operations visibility.<div class='links-row'><a class='link-box' href='https://innovations.kplcinstitute.ac.ke/' target='_blank'>Kenya Power Innovation Institute</a></div>"},
+      {label:"Climate Investment Fund (CIF)", hint:"$600M+ concessional finance pan-Africa",
+       text:"<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ across Africa including Kenya) for climate and energy projects. Loans (1-2% interest) and grants for renewable infrastructure, grid modernisation, energy efficiency. Kenya is explicit priority country.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF Kenya</a></div>"},
+      {label:"AECF (Africa Enterprise Challenge Fund)", hint:"€300M+ grants, 24 African countries",
+       text:"<span class='section-label'>What it does</span>AECF provides matching grants (€50K-€1M) for businesses operating across 24 African countries. Energy and clean-tech explicitly prioritised. 50% grant + 50% investor match. Kenya is core market.<div class='links-row'><a class='link-box' href='https://www.aecfafrica.org/' target='_blank'>AECF</a></div>"},
+      {label:"EEP Africa", hint:"€55M+ programme, 13 African countries",
+       text:"<span class='section-label'>What it does</span>EU-African partnership providing non-dilutive grants (€50K-€500K) for energy projects. Explicit support for renewable integration, grid modernisation, digitalization. Kenya is priority. 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>"}
+    ],
+    workflow:[
+      {step:"Contact Kenya Power Innovation Institute", detail:"Direct pitch for grid modernisation solution. No entity required.", tag:"Week 1", tagColor:"#CE1126"},
+      {step:"Apply to EEP Africa", detail:"€50K-€500K non-dilutive grants. 6-month cycle.", tag:"Week 1-2", tagColor:"#CE1126"},
+      {step:"Apply to AECF matching grants", detail:"€50K-€1M (50% grant + 50% investor match).", tag:"Week 2-3", tagColor:"#2E75B6"},
+      {step:"Engage REREC regulatory pathway", detail:"Understand grid integration requirements for renewable projects.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Explore CIF concessional finance", detail:"$600M+ pan-Africa. Loans at 1-2% interest.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Connect with Catalyst Fund", detail:"$100M+ VC for African climate tech.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"What is Kenya's renewable energy target?", a:"100% renewable electricity by 2030 (vs. 40% today). $5B+ investment required. Kenya has Africa's 2nd fastest electricity market growth at 7% CAGR."},
+      {q:"Can we approach Kenya Power without a local entity?", a:"Yes. Kenya Power explicitly seeks technology partnerships for grid modernisation. No local incorporation required for initial engagement. Kenya Power Innovation Institute is the primary contact."},
+      {q:"How much does AECF grant?", a:"€50K-€1M matching grants. 50% grant + 50% investor match structure. Non-dilutive capital."},
+      {q:"What is the timeline for EEP Africa approval?", a:"6-month decision cycle from submission. Grants €50K-€500K for energy projects."},
+      {q:"Can CIF funding be accessed directly?", a:"CIF works through regional development banks (World Bank, AfDB). Technology partners typically access via project financing through utility or renewable developer partnerships."}
+    ],
+    note:"Kenya targets 100% renewables by 2030 with $5B+ investment. Kenya Power (8M+ customers) explicitly seeks grid modernisation tech. EEP Africa (€55M+ programme) and AECF (€300M+) provide accessible grants. No local entity required for most routes."
+  },
+  {
+    id:"nigeria", name:"Nigeria", full:"Nigeria — TCN, NISO & Startup Acceleration", vendor:"TCN · NISO · Catalyst Fund · Google Startups", type:"West Africa Growth",
+    icon:"🇳🇬", accentColor:"#007A5E", accentBg:"#E6F5F0", badgeColor:"#E6F5F0", badgeText:"#004D3A",
+    badge:"Africa's Largest", badge2:"5 Programmes", tags:["africa"],
+    sub:"Nigeria is Africa's largest electricity market (200M+ population) with $12B+ investment potential. TCN operates 30,000+ km transmission. NISO coordinates generation. Energy Transition Strategy mandates grid modernisation. Google Accelerator and Catalyst Fund support startups.",
+    cardTags:["TCN","NISO","Energy Transition","Google Startups","DRE Fund"],
+    desc:"Nigeria's energy transition strategy mandates grid modernisation across 30,000+ km transmission (TCN). NISO coordinates 26 GW generation. $12B+ investment to 2030. Google's Africa startup accelerator focuses on Nigeria. Catalyst Fund and local venture firms support climate-tech. Energy Transition Council coordinates $500M+ public + private investment. No local entity required for accelerators; optional for TCN/NISO partnerships.",
+    studies:[
+      {label:"Transmission Company of Nigeria (TCN)", hint:"30,000+ km transmission, modernisation mandate",
+       text:"<span class='section-label'>What it does</span>TCN operates 30,000+ km of high-voltage transmission across Nigeria. Energy Transition Strategy (2023) mandates grid modernisation with explicit focus on congestion management and real-time operations. Direct technology partnerships available; no nationality restriction.<span class='section-label'>Why it matters</span>Africa's largest electricity market (200M+ population). $12B+ investment to 2030. TCN controls grid access for all generation and distribution.<div class='links-row'><a class='link-box' href='https://tcn.org.ng/' target='_blank'>TCN</a></div>"},
+      {label:"NISO (Nigerian Electricity System Operator)", hint:"26 GW capacity coordination",
+       text:"<span class='section-label'>What it does</span>NISO (spun off from TCN, 2023) coordinates 26 GW total generation capacity. Manages real-time dispatch, grid balance, and renewable integration. Technology partnerships for forecasting, demand-side response, and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.niso.org.ng/' target='_blank'>NISO</a></div>"},
+      {label:"Nigeria Energy Transition Strategy", hint:"$500M+ public + private investment",
+       text:"<span class='section-label'>What it does</span>Government energy transition strategy (2023) mandates 40% renewable electricity by 2030 (vs. 16% today). Coordinates $500M+ public + private investment. Implicit demand for grid automation, forecasting, and renewable integration solutions. Technology partners can be funded indirectly through project financing.<div class='links-row'><a class='link-box' href='https://energytransition.gov.ng/' target='_blank'>Energy Transition Council</a></div>"},
+      {label:"Google Startups Africa Accelerator", hint:"€1M+ capital access, Nigeria focus",
+       text:"<span class='section-label'>What it does</span>Google's dedicated Africa startup accelerator (Nigeria primary focus). Cohort-based programme providing €1M+ capital introductions, mentorship, and market access. Energy and climate tech explicitly supported.<span class='section-label'>How to apply</span>No entity required for initial pitch. Two-month cohorts, 3x per year.<div class='links-row'><a class='link-box' href='https://startup.google.com/programs/accelerator/africa/' target='_blank'>Google Africa Accelerator</a></div>"},
+      {label:"Catalyst Fund & DRE-Nigeria Fund", hint:"$100M+ VC for climate tech startups",
+       text:"<span class='section-label'>What it does</span>Catalyst Fund is pan-African VC ($100M+ AUM) with Nigeria focus. DRE-Nigeria Fund (NSIA partnership, $500M+) funds decentralised renewable energy projects. Both invest in climate-tech and energy startups. Equity model; €100K-€2M typical cheques.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a><a class='link-box' href='https://www.seforall.org/news/nsia-seforall-isa-and-africa50-unveil-us500-million-dre-nigeria-fund' target='_blank'>DRE-Nigeria Fund</a></div>"}
+    ],
+    workflow:[
+      {step:"Contact TCN / NISO Partnerships", detail:"Direct pitch for grid automation solution. No entity required.", tag:"Week 1", tagColor:"#007A5E"},
+      {step:"Apply to Google Africa Accelerator", detail:"€1M+ capital access. Cohorts 3x per year.", tag:"Week 1-2", tagColor:"#007A5E"},
+      {step:"Pitch to Catalyst Fund", detail:"$100M+ VC. €100K-€2M typical investments.", tag:"Week 2-3", tagColor:"#2E75B6"},
+      {step:"Connect with Energy Transition Council", detail:"$500M+ coordination. Project financing pathways.", tag:"Month 1", tagColor:"#2E75B6"},
+      {step:"Explore DRE-Nigeria Fund", detail:"$500M+ for decentralised renewable energy.", tag:"Month 1-2", tagColor:"#D4A017"},
+      {step:"Engage local VCs and development partners", detail:"AfDB, World Bank, bilateral donors active in Nigeria.", tag:"Month 2-3", tagColor:"#D4A017"}
+    ],
+    faq:[
+      {q:"What is Nigeria's energy transition target?", a:"40% renewable electricity by 2030 (vs. 16% today). $500M+ public + private investment. Africa's largest market (200M+ population) with 26 GW generation capacity."},
+      {q:"Can we pitch to TCN/NISO without a local entity?", a:"Yes. TCN and NISO explicitly seek technology partnerships for grid modernisation. No local incorporation required for initial engagement."},
+      {q:"How large is Google's Africa accelerator programme?", a:"Cohort-based with €1M+ capital introductions per cohort. Three cohorts per year. Nigeria is the primary focus market."},
+      {q:"How much does Catalyst Fund invest per company?", a:"€100K-€2M typical equity cheques. Pan-African focus with Nigeria as priority."},
+      {q:"What is the DRE-Nigeria Fund?", a:"$500M+ decentralised renewable energy fund (NSIA partnership). Targets rural electrification and distributed generation projects. Technology partners can participate via project financing."}
+    ],
+    note:"Nigeria is Africa's largest electricity market (200M+ population, 26 GW generation). TCN/NISO explicitly seek grid modernisation tech. Google Africa Accelerator and Catalyst Fund ($100M+ VC) provide accessible startup capital. No local entity required for pitching."
+  }
+];
+
+const TAGS = ['europe', 'americas', 'apac', 'africa'];
+let currentCountry = null;
+let selectedStudy = null;
+let currentRegionFilter = 'all';
+
+function renderCards() {
+  const grid = document.getElementById('cardsGrid');
+  grid.innerHTML = '';
+
+  DATA.forEach(country => {
+    if (currentRegionFilter === 'all' || country.tags.includes(currentRegionFilter)) {
+      const card = document.createElement('div');
+      card.className = 'country-card';
+      card.style.borderLeftColor = country.accentColor;
+
+      const badgeHtml = `<span class='card-badge' style='background:${country.badgeColor};color:${country.badgeText}'>${country.badge}</span>` +
+                        (country.badge2 ? `<span class='card-badge' style='background:${country.badgeColor};color:${country.badgeText}'>${country.badge2}</span>` : '');
+
+      card.onclick = function() { openPanel(country.id); };
+      card.innerHTML = `
+        <div class='card-header' style='background:${country.accentBg}'>
+          <div class='card-icon'>${country.icon}</div>
+          <div class='card-titles'>
+            <div class='card-name'>${country.name}</div>
+            <div class='card-type'>${country.type}</div>
+            <div class='card-badges'>${badgeHtml}</div>
+          </div>
+        </div>
+        <div class='card-body'>
+          <div class='card-tags'>${country.cardTags.map(t => `<span class='card-tag'>${t}</span>`).join('')}</div>
+          <div class='card-desc'>${country.sub}</div>
+        </div>
+        <div class='card-footer'>
+          <span class='card-detail-btn'>View Details →</span>
+          <span class='card-count'>${country.studies.length} programmes</span>
+        </div>
+      `;
+      grid.appendChild(card);
+    }
+  });
+}
+
+function filterRegion(region, btn) {
+  currentRegionFilter = region;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards();
+}
+
+function openPanel(countryId) {
+  currentCountry = DATA.find(c => c.id === countryId);
+  selectedStudy = null;
+
+  document.getElementById('panelIcon').textContent = currentCountry.icon;
+  document.getElementById('panelTitle').textContent = currentCountry.name;
+  document.getElementById('panelSubtitle').textContent = currentCountry.full;
+
+  renderStudies();
+
+  // Reset tabs to Programmes
+  document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(t => t.classList.remove('active'));
+  document.querySelector('.panel-tab').classList.add('active');
+  document.getElementById('tab-programmes').classList.add('active');
+
+  document.getElementById('detailPanel').classList.add('open');
+  document.getElementById('detailPanel').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function closePanel() {
+  document.getElementById('detailPanel').classList.remove('open');
+  currentCountry = null;
+  selectedStudy = null;
+}
+
+function renderStudies() {
+  const list = document.getElementById('studiesList');
+  list.innerHTML = '';
+
+  currentCountry.studies.forEach((study, idx) => {
+    const item = document.createElement('div');
+    item.className = 'study-item';
+    item.innerHTML = `
+      <div class='study-label'>${study.label}</div>
+      <div class='study-hint'>${study.hint}</div>
+      ${selectedStudy === idx ? `<div class='study-detail'><div class='study-detail-text'>${study.text}</div></div>` : ''}
+    `;
+    item.onclick = (e) => { if (!e.target.closest('.link-box')) toggleStudy(idx); };
+    list.appendChild(item);
+  });
+}
+
+function toggleStudy(idx) {
+  selectedStudy = selectedStudy === idx ? null : idx;
+  renderStudies();
+}
+
+function switchTab(tabName, tabEl) {
+  document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-pane').forEach(t => t.classList.remove('active'));
+
+  if (tabEl) tabEl.classList.add('active');
+  else document.querySelector(`.panel-tab[onclick*="${tabName}"]`).classList.add('active');
+  document.getElementById('tab-' + tabName).classList.add('active');
+
+  if (tabName === 'programmes') renderStudies();
+  else if (tabName === 'pathway') renderWorkflow();
+  else if (tabName === 'faq') renderFAQ();
+  else if (tabName === 'note') renderNote();
+}
+
+function renderWorkflow() {
+  const content = document.getElementById('workflowContent');
+  content.innerHTML = currentCountry.workflow.map(step => `
+    <div class='workflow-step'>
+      <div class='step-title'>${step.step}</div>
+      <div class='step-detail'>${step.detail}</div>
+      <span class='step-tag' style='background:${step.tagColor}'>${step.tag}</span>
+    </div>
+  `).join('');
+}
+
+function renderFAQ() {
+  const content = document.getElementById('faqContent');
+  content.innerHTML = currentCountry.faq.map(item => `
+    <div class='faq-item'>
+      <div class='faq-q'>${item.q}</div>
+      <div class='faq-a'>${item.a}</div>
+    </div>
+  `).join('');
+}
+
+function renderNote() {
+  const content = document.getElementById('noteContent');
+  content.innerHTML = `<div class='note-box'>${currentCountry.note}</div>`;
+
+  content.innerHTML += `
+    <div class='markdown-section'>
+      <button class='copy-btn' onclick='copyMarkdown()'>Copy Markdown</button>
+      <div class='markdown-output' id='markdownOutput'></div>
+    </div>
+  `;
+
+  renderMarkdown();
+}
+
+function renderMarkdown() {
+  let md = `# ${currentCountry.full}\n\n`;
+  md += `**Type:** ${currentCountry.type}\n`;
+  md += `**Vendor:** ${currentCountry.vendor}\n\n`;
+  md += `## Overview\n${currentCountry.desc}\n\n`;
+
+  md += `## Programmes\n`;
+  currentCountry.studies.forEach(study => {
+    md += `\n### ${study.label}\n`;
+    md += `_${study.hint}_\n\n`;
+    md += `${study.text.replace(/<[^>]*>/g, '').substring(0, 200)}...\n`;
+  });
+
+  md += `\n## Application Workflow\n`;
+  currentCountry.workflow.forEach((step, idx) => {
+    md += `${idx + 1}. **${step.step}** (${step.tag})\n   ${step.detail}\n\n`;
+  });
+
+  md += `\n## Strategy Note\n${currentCountry.note}\n`;
+
+  document.getElementById('markdownOutput').textContent = md;
+}
+
+function copyMarkdown() {
+  const text = document.getElementById('markdownOutput').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = event.target;
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy Markdown';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', renderCards);
+</script>
+
+</body>
+</html>
