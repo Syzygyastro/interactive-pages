@@ -4,7 +4,7 @@
   "full": "Kenya — RECs, KOSAP & Climate Finance Growth",
   "vendor": "REREC · CIF · EEP Africa · Kenya Power",
   "type": "East Africa Growth",
-  "icon": "🇰🇪",
+  "icon": "\ud83c\uddf0\ud83c\uddea",
   "accentColor": "#CE1126",
   "accentBg": "#FFE6E6",
   "badgeColor": "#FFE6E6",
@@ -14,48 +14,115 @@
   "tags": ["africa"],
   "sub": "Kenya has Africa's 2nd fastest growing electricity market (7% CAGR). REREC coordinates renewable expansion; Kenya Power seeks grid modernisation. AECF and CIF provide $500M+ in concessional finance. Climate Ventures and Catalyst Fund accelerate climate startups.",
   "cardTags": ["REREC", "Kenya Power", "CIF", "AECF", "EEP Africa"],
-  "desc": "Kenya targets 100% renewable electricity by 2030 (vs. 40% today) with $5B+ investment. REREC (Renewable Energy Regulatory Commission) coordinates 100+ renewable projects. Kenya Power (national utility) explicitly seeks grid automation and demand-side management technologies. AECF (Africa Enterprise Challenge Fund) provides €300M+ grants. CIF and EEP Africa deliver concessional capital. Catalyst Fund and local climate venture funds support early-stage startups. No local entity required for accelerators or CIF; optional for Kenya Power partnerships.",
+  "desc": "Kenya targets 100% renewable electricity by 2030 (vs. 40% today) with $5B+ investment. REREC (Renewable Energy Regulatory Commission) coordinates 100+ renewable projects. Kenya Power (national utility) explicitly seeks grid automation and demand-side management technologies. AECF (Africa Enterprise Challenge Fund) provides \u20ac300M+ grants. CIF and EEP Africa deliver concessional capital. Catalyst Fund and local climate venture funds support early-stage startups. No local entity required for accelerators or CIF; optional for Kenya Power partnerships.",
   "studies": [
     {
       "label": "REREC (Renewable Energy Regulatory Commission)",
       "hint": "100% renewable target by 2030",
-      "text": "<span class='section-label'>What it does</span>REREC coordinates Kenya's 100% renewable electricity target (vs. 40% today). Manages licensing and grid integration for 100+ renewable projects. Implicit coordination demand for forecasting, congestion management, and demand-side response technologies. No funding directly available but regulatory pathway access is critical.<span class='section-label'>Why it matters</span>Kenya has Africa's 2nd fastest electricity market growth (7% CAGR). $5B+ investment to 2030. Direct regulatory access to grid integration process.<div class='links-row'><a class='link-box' href='https://www.rerec.co.ke/' target='_blank'>REREC</a></div>"
+      "text": "<span class='section-label'>What it does</span>REREC coordinates Kenya's 100% renewable electricity target (vs. 40% today). Manages licensing and grid integration for 100+ renewable projects. Implicit coordination demand for forecasting, congestion management, and demand-side response technologies. No funding directly available but regulatory pathway access is critical.<span class='section-label'>Why it matters</span>Kenya has Africa's 2nd fastest electricity market growth (7% CAGR). $5B+ investment to 2030. Direct regulatory access to grid integration process.<div class='links-row'><a class='link-box' href='https://www.rerec.co.ke/' target='_blank'>REREC</a></div>",
+      "budget": "Regulatory body (no direct funding)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "No funding directly but regulatory pathway access is critical. Direct engagement for grid integration licensing and standards."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Coordinates Kenya's 100% renewable target but primarily regulatory not technology-procurement. Useful for understanding grid integration requirements."
+      },
+      "applicationRoute": [
+        { "step": "Contact REREC", "detail": "rerec.co.ke" },
+        { "step": "Present grid integration technology", "detail": "Focus on renewable forecasting and congestion management" },
+        { "step": "Understand regulatory requirements", "detail": "Licensing and grid code compliance" },
+        { "step": "Regulatory pathway established", "detail": "Foundation for Kenya market entry" }
+      ]
     },
     {
       "label": "Kenya Power Innovation & Partnerships",
       "hint": "National utility, 8M+ customers",
-      "text": "<span class='section-label'>What it does</span>Kenya Power operates the national grid and explicitly seeks technology partnerships for grid modernisation, demand-side management, and renewable integration. 8M+ customers provide massive data opportunity. Direct vendor partnerships, no entity required.<span class='section-label'>Why it matters</span>Access to national utility. Grid connectivity data and real-time operations visibility.<div class='links-row'><a class='link-box' href='https://innovations.kplcinstitute.ac.ke/' target='_blank'>Kenya Power Innovation Institute</a></div>"
+      "text": "<span class='section-label'>What it does</span>Kenya Power operates the national grid and explicitly seeks technology partnerships for grid modernisation, demand-side management, and renewable integration. 8M+ customers provide massive data opportunity. Direct vendor partnerships, no entity required.<span class='section-label'>Why it matters</span>Access to national utility. Grid connectivity data and real-time operations visibility.<div class='links-row'><a class='link-box' href='https://innovations.kplcinstitute.ac.ke/' target='_blank'>Kenya Power Innovation Institute</a></div>",
+      "budget": "Partnership model (8M+ customers)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Direct vendor partnerships \u2014 no entity required. Kenya Power explicitly seeks grid modernisation technology."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "National utility with 8M+ customers explicitly seeking grid modernisation demand-side management and renewable integration technologies. Direct operational need."
+      },
+      "applicationRoute": [
+        { "step": "Contact Kenya Power Innovation Institute", "detail": "innovations.kplcinstitute.ac.ke" },
+        { "step": "Present grid automation solution", "detail": "Focus on demand management and renewable integration" },
+        { "step": "Technical assessment", "detail": "Evaluated against grid modernisation priorities" },
+        { "step": "Vendor partnership", "detail": "Technology deployment across Kenya Power grid" }
+      ]
     },
     {
       "label": "Climate Investment Fund (CIF)",
       "hint": "$600M+ concessional finance pan-Africa",
-      "text": "<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ across Africa including Kenya) for climate and energy projects. Loans (1-2% interest) and grants for renewable infrastructure, grid modernisation, energy efficiency. Kenya is explicit priority country.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF Kenya</a></div>"
+      "text": "<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ across Africa including Kenya) for climate and energy projects. Loans (1-2% interest) and grants for renewable infrastructure, grid modernisation, energy efficiency. Kenya is explicit priority country.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF Kenya</a></div>",
+      "budget": "$600M+ pan-Africa (1-2% interest)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Works through AfDB and World Bank. Technology partners access via project financing not direct application. Kenya is explicit priority country."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Concessional infrastructure finance. Technology startups participate indirectly via utility partnerships."
+      },
+      "applicationRoute": [
+        { "step": "Identify CIF-funded project in Kenya", "detail": "Via AfDB or World Bank" },
+        { "step": "Partner with project developer", "detail": "Technology vendor role" },
+        { "step": "Indirect financing through project", "detail": "Technology costs in project budget" },
+        { "step": "Grid modernisation deployment", "detail": "Within CIF-funded infrastructure" }
+      ]
     },
     {
       "label": "AECF (Africa Enterprise Challenge Fund)",
-      "hint": "€300M+ grants, 24 African countries",
-      "text": "<span class='section-label'>What it does</span>AECF provides matching grants (€50K-€1M) for businesses operating across 24 African countries. Energy and clean-tech explicitly prioritised. 50% grant + 50% investor match. Kenya is core market.<div class='links-row'><a class='link-box' href='https://www.aecfafrica.org/' target='_blank'>AECF</a></div>"
+      "hint": "\u20ac300M+ grants, 24 African countries",
+      "text": "<span class='section-label'>What it does</span>AECF provides matching grants (\u20ac50K-\u20ac1M) for businesses operating across 24 African countries. Energy and clean-tech explicitly prioritised. 50% grant + 50% investor match. Kenya is core market.<div class='links-row'><a class='link-box' href='https://www.aecfafrica.org/' target='_blank'>AECF</a></div>",
+      "budget": "\u20ac50K\u2013\u20ac1M matching grants (50% grant + 50% investor match)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open to businesses operating in 24 African countries. Energy and clean-tech explicitly prioritised. Kenya is core market."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Matching grant structure requires co-investment. Energy and clean-tech eligible but broad focus not grid-interconnection-specific."
+      },
+      "applicationRoute": [
+        { "step": "Submit application via AECF portal", "detail": "aecfafrica.org" },
+        { "step": "Project proposal", "detail": "Energy or clean-tech focus in Kenya" },
+        { "step": "AECF assessment", "detail": "Competitive evaluation" },
+        { "step": "Matching grant agreement", "detail": "50% grant + 50% investor match required" }
+      ]
     },
     {
       "label": "EEP Africa",
-      "hint": "€55M+ programme, 13 African countries",
-      "text": "<span class='section-label'>What it does</span>EU-African partnership providing non-dilutive grants (€50K-€500K) for energy projects. Explicit support for renewable integration, grid modernisation, digitalization. Kenya is priority. 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>"
+      "hint": "\u20ac55M+ programme, 13 African countries",
+      "text": "<span class='section-label'>What it does</span>EU-African partnership providing non-dilutive grants (\u20ac50K-\u20ac500K) for energy projects. Explicit support for renewable integration, grid modernisation, digitalization. Kenya is priority. 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>",
+      "budget": "\u20ac50K\u2013\u20ac500K grants",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Non-dilutive grants. Kenya is a priority country. 6-month decision cycle."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "EU-African partnership supporting grid modernisation and digitalisation. Broad focus but grid innovation eligible."
+      },
+      "applicationRoute": [
+        { "step": "Submit via EEP Africa portal", "detail": "eepafrica.org" },
+        { "step": "Project proposal", "detail": "Grid modernisation or renewable integration in Kenya" },
+        { "step": "EEP assessment", "detail": "6-month decision cycle" },
+        { "step": "Grant agreement", "detail": "\u20ac50K-\u20ac500K non-dilutive" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Contact Kenya Power Innovation Institute", "detail": "Direct pitch for grid modernisation solution. No entity required.", "tag": "Week 1", "tagColor": "#CE1126" },
-    { "step": "Apply to EEP Africa", "detail": "€50K-€500K non-dilutive grants. 6-month cycle.", "tag": "Week 1-2", "tagColor": "#CE1126" },
-    { "step": "Apply to AECF matching grants", "detail": "€50K-€1M (50% grant + 50% investor match).", "tag": "Week 2-3", "tagColor": "#2E75B6" },
-    { "step": "Engage REREC regulatory pathway", "detail": "Understand grid integration requirements for renewable projects.", "tag": "Month 1", "tagColor": "#2E75B6" },
-    { "step": "Explore CIF concessional finance", "detail": "$600M+ pan-Africa. Loans at 1-2% interest.", "tag": "Month 1-2", "tagColor": "#D4A017" },
-    { "step": "Connect with Catalyst Fund", "detail": "$100M+ VC for African climate tech.", "tag": "Month 2-3", "tagColor": "#D4A017" }
   ],
   "faq": [
     { "q": "What is Kenya's renewable energy target?", "a": "100% renewable electricity by 2030 (vs. 40% today). $5B+ investment required. Kenya has Africa's 2nd fastest electricity market growth at 7% CAGR." },
     { "q": "Can we approach Kenya Power without a local entity?", "a": "Yes. Kenya Power explicitly seeks technology partnerships for grid modernisation. No local incorporation required for initial engagement. Kenya Power Innovation Institute is the primary contact." },
-    { "q": "How much does AECF grant?", "a": "€50K-€1M matching grants. 50% grant + 50% investor match structure. Non-dilutive capital." },
-    { "q": "What is the timeline for EEP Africa approval?", "a": "6-month decision cycle from submission. Grants €50K-€500K for energy projects." },
+    { "q": "How much does AECF grant?", "a": "\u20ac50K-\u20ac1M matching grants. 50% grant + 50% investor match structure. Non-dilutive capital." },
+    { "q": "What is the timeline for EEP Africa approval?", "a": "6-month decision cycle from submission. Grants \u20ac50K-\u20ac500K for energy projects." },
     { "q": "Can CIF funding be accessed directly?", "a": "CIF works through regional development banks (World Bank, AfDB). Technology partners typically access via project financing through utility or renewable developer partnerships." }
   ],
-  "note": "Kenya targets 100% renewables by 2030 with $5B+ investment. Kenya Power (8M+ customers) explicitly seeks grid modernisation tech. EEP Africa (€55M+ programme) and AECF (€300M+) provide accessible grants. No local entity required for most routes."
+  "note": "Kenya targets 100% renewables by 2030 with $5B+ investment. Kenya Power (8M+ customers) explicitly seeks grid modernisation tech. EEP Africa (\u20ac55M+ programme) and AECF (\u20ac300M+) provide accessible grants. No local entity required for most routes."
 }

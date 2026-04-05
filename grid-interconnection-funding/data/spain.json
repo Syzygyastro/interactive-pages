@@ -19,46 +19,143 @@
     {
       "label": "Red Eléctrica Innovation Partnerships",
       "hint": "€13.59B transmission investment 2025-2030",
-      "text": "<span class='section-label'>What it does</span>Red Eléctrica operates 48,000+ km of Spanish grid with explicit AI/digitalisation roadmap. €13.59B allocated to transmission networks 2025-2030. Direct vendor partnerships for grid automation, forecasting, and congestion management. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups.<span class='section-label'>How to apply</span>Direct approach to REE Innovation team or pitch to Elewit Ventures as VC deal.<div class='links-row'><a class='link-box' href='https://www.redeia.com/en' target='_blank'>Red Eléctrica</a><a class='link-box' href='https://www.elewit.ventures/en' target='_blank'>Elewit Ventures</a></div>"
+      "text": "<span class='section-label'>What it does</span>Red Eléctrica operates 48,000+ km of Spanish grid with explicit AI/digitalisation roadmap. €13.59B allocated to transmission networks 2025-2030. Direct vendor partnerships for grid automation, forecasting, and congestion management. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups.<span class='section-label'>How to apply</span>Direct approach to REE Innovation team or pitch to Elewit Ventures as VC deal.<div class='links-row'><a class='link-box' href='https://www.redeia.com/en' target='_blank'>Red Eléctrica</a><a class='link-box' href='https://www.elewit.ventures/en' target='_blank'>Elewit Ventures</a></div>",
+      "budget": "€13.59B transmission investment 2025-2030",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Direct vendor partnerships for grid automation — no nationality restriction. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Red Eléctrica operates 48,000+ km grid with explicit AI and digitalisation roadmap. Congestion management and renewable integration are stated priorities."
+      },
+      "applicationRoute": [
+        { "step": "Direct approach to REE Innovation team", "detail": "Or pitch to Elewit Ventures as VC deal" },
+        { "step": "Present grid automation solution", "detail": "Focus on congestion management and queue optimisation" },
+        { "step": "Technical evaluation", "detail": "Assessment against REE digitalisation roadmap" },
+        { "step": "Vendor partnership or Elewit investment", "detail": "Commercial terms or equity deal via corporate venture" }
+      ]
     },
     {
       "label": "Iberdrola PERSEO",
       "hint": "€200M+ invested in startup portfolio",
-      "text": "<span class='section-label'>What it does</span>International startup programme with €200M+ invested in AI, renewable integration, and grid management portfolio. Equity and strategic partnership model. Explicit focus on next-generation grid technologies.<span class='section-label'>Why it matters</span>Direct access to Europe's largest utility (81M customers). Iberdola operates in Spain, Portugal, UK, US, Mexico, and Brazil.<div class='links-row'><a class='link-box' href='https://www.iberdrola.com/innovation/international-startup-program-perseo' target='_blank'>Iberdrola PERSEO</a></div>"
+      "text": "<span class='section-label'>What it does</span>International startup programme with €200M+ invested in AI, renewable integration, and grid management portfolio. Equity and strategic partnership model. Explicit focus on next-generation grid technologies.<span class='section-label'>Why it matters</span>Direct access to Europe's largest utility (81M customers). Iberdola operates in Spain, Portugal, UK, US, Mexico, and Brazil.<div class='links-row'><a class='link-box' href='https://www.iberdrola.com/innovation/international-startup-program-perseo' target='_blank'>Iberdrola PERSEO</a></div>",
+      "budget": "€200M+ portfolio (equity model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "International startup programme — no nationality restriction. Equity and strategic partnership model."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Explicitly focuses on next-generation grid technologies. Iberdrola operates in Spain, Portugal, UK, US, Mexico, and Brazil — multi-market access."
+      },
+      "applicationRoute": [
+        { "step": "Submit application via PERSEO portal", "detail": "iberdrola.com/innovation/international-startup-program-perseo" },
+        { "step": "Present pitch deck with product demo", "detail": "Equity deal — standard VC metrics expected" },
+        { "step": "Due diligence and technical assessment", "detail": "Evaluated by Iberdrola grid technology experts" },
+        { "step": "Strategic partnership with equity investment", "detail": "Access to 81M customers across 6 countries" }
+      ]
     },
     {
       "label": "CDTI R&D Funding (NEOTEC 2025+)",
       "hint": "€300M+ annually, 40-75% subsidy",
-      "text": "<span class='section-label'>What it does</span>Spain's Centre for Industrial Technological Development. NEOTEC programme funds R&D projects in AI, climate, and energy. Grants cover 40-75% of eligible costs. €300M+ pool across all sectors. Rolling applications via online portal.<span class='section-label'>Requirements</span>Spanish company registration required (2-4 weeks to establish SL/SLU).<div class='links-row'><a class='link-box' href='https://sede.cdti.gob.es/' target='_blank'>CDTI Portal</a><a class='link-box' href='https://www.cdti.es/en/ayudas/neotec-2025' target='_blank'>NEOTEC 2025</a></div>"
+      "text": "<span class='section-label'>What it does</span>Spain's Centre for Industrial Technological Development. NEOTEC programme funds R&D projects in AI, climate, and energy. Grants cover 40-75% of eligible costs. €300M+ pool across all sectors. Rolling applications via online portal.<span class='section-label'>Requirements</span>Spanish company registration required (2-4 weeks to establish SL/SLU).<div class='links-row'><a class='link-box' href='https://sede.cdti.gob.es/' target='_blank'>CDTI Portal</a><a class='link-box' href='https://www.cdti.es/en/ayudas/neotec-2025' target='_blank'>NEOTEC 2025</a></div>",
+      "budget": "€300M+ pool (40-75% subsidy)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires Spanish company registration (SL or SLU). 2-4 weeks setup at €3-5K. Rolling applications."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "General R&D funding across AI, climate, and energy. Not grid-specific but energy innovation is eligible."
+      },
+      "applicationRoute": [
+        { "step": "Register Spanish SL or SLU", "detail": "2-4 weeks and €3-5K legal fees" },
+        { "step": "Register on CDTI portal", "detail": "sede.cdti.gob.es" },
+        { "step": "Submit rolling application", "detail": "NEOTEC programme for innovative companies" },
+        { "step": "CDTI assessment", "detail": "40-75% of eligible costs covered if approved" }
+      ]
     },
     {
       "label": "IDAE Energy Innovation Grants",
       "hint": "€200M+ fund, 50-75% subsidy",
-      "text": "<span class='section-label'>What it does</span>Spanish Institute for Energy Diversification & Saving. Dedicated innovation budget (€200M+) for grid modernisation, distributed energy, and AI integration. 50-75% cost coverage for approved projects.<div class='links-row'><a class='link-box' href='https://sede.idae.gob.es/' target='_blank'>IDAE Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>Spanish Institute for Energy Diversification & Saving. Dedicated innovation budget (€200M+) for grid modernisation, distributed energy, and AI integration. 50-75% cost coverage for approved projects.<div class='links-row'><a class='link-box' href='https://sede.idae.gob.es/' target='_blank'>IDAE Portal</a></div>",
+      "budget": "€200M+ fund (50-75% subsidy)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires Spanish entity. Dedicated to energy innovation including grid modernisation and AI integration."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Dedicated innovation budget for grid modernisation, distributed energy, and AI integration — directly relevant to grid interconnection tools."
+      },
+      "applicationRoute": [
+        { "step": "Establish Spanish entity if not already", "detail": "Required for IDAE applications" },
+        { "step": "Submit via IDAE portal", "detail": "sede.idae.gob.es" },
+        { "step": "IDAE technical assessment", "detail": "Evaluated against energy innovation priorities" },
+        { "step": "Funded project", "detail": "50-75% of eligible costs covered" }
+      ]
     },
     {
       "label": "ENISA (SME Growth Support)",
       "hint": "€300M+ SME financing",
-      "text": "<span class='section-label'>What it does</span>Spanish state-owned entity providing quasi-equity loans (€300K-€1.5M) and growth financing for SMEs. No interest during growth phase. Explicit support for DeepTech and ClimaTech.<div class='links-row'><a class='link-box' href='https://portaldelcliente.enisa.es:8443/web/clientes/alta-solicitud' target='_blank'>ENISA Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>Spanish state-owned entity providing quasi-equity loans (€300K-€1.5M) and growth financing for SMEs. No interest during growth phase. Explicit support for DeepTech and ClimaTech.<div class='links-row'><a class='link-box' href='https://portaldelcliente.enisa.es:8443/web/clientes/alta-solicitud' target='_blank'>ENISA Portal</a></div>",
+      "budget": "€300K–€1.5M quasi-equity loans",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires Spanish entity. No interest during growth phase. DeepTech and ClimaTech explicitly supported."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "General SME growth financing, not grid-specific. Useful for scaling Spanish operations but not targeted at interconnection."
+      },
+      "applicationRoute": [
+        { "step": "Establish Spanish entity", "detail": "Required for ENISA applications" },
+        { "step": "Submit via ENISA portal", "detail": "portaldelcliente.enisa.es" },
+        { "step": "Financial assessment", "detail": "Evaluated on growth potential and technology" },
+        { "step": "Quasi-equity loan agreement", "detail": "No interest during growth phase; repayment later" }
+      ]
     },
     {
       "label": "Endesa Innovation (Enel Group)",
       "hint": "€150M+ portfolio, 2,000+ employees R&D",
-      "text": "<span class='section-label'>What it does</span>Enel Group's Spanish utility Endesa runs open innovation with vendor partnerships. €150M+ portfolio. Joint ventures with startups in grid automation and forecasting.<div class='links-row'><a class='link-box' href='https://www.endesa.com/en/our-commitment/innovation/open-innovation' target='_blank'>Endesa Innovation</a></div>"
+      "text": "<span class='section-label'>What it does</span>Enel Group's Spanish utility Endesa runs open innovation with vendor partnerships. €150M+ portfolio. Joint ventures with startups in grid automation and forecasting.<div class='links-row'><a class='link-box' href='https://www.endesa.com/en/our-commitment/innovation/open-innovation' target='_blank'>Endesa Innovation</a></div>",
+      "budget": "€150M+ portfolio (partnership model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open innovation with vendor partnerships — no nationality restriction. Enel Group subsidiary."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Grid automation and forecasting are relevant themes. Endesa is distribution-focused, which is adjacent to but not directly interconnection."
+      },
+      "applicationRoute": [
+        { "step": "Contact Endesa open innovation team", "detail": "endesa.com/innovation/open-innovation" },
+        { "step": "Present grid automation solution", "detail": "Joint venture or vendor partnership model" },
+        { "step": "Technical and commercial evaluation", "detail": "Assessed by Endesa R&D team" },
+        { "step": "Vendor partnership if selected", "detail": "Access to Endesa distribution network" }
+      ]
     },
     {
       "label": "Horizon Europe (via Spain)",
       "hint": "€95.5B EU programme, single entity eligible",
-      "text": "<span class='section-label'>What it does</span>UK companies can participate post-Brexit as Associated Country. Spain routes some funding via Spanish tech clusters. EIC Accelerator grants (€2.5M) available for Spanish-led consortia.<div class='links-row'><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>UK companies can participate post-Brexit as Associated Country. Spain routes some funding via Spanish tech clusters. EIC Accelerator grants (€2.5M) available for Spanish-led consortia.<div class='links-row'><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>",
+      "budget": "Up to €2.5M EIC grant",
+      "eligibility": {
+        "status": "eligible",
+        "text": "UK companies can participate as Associated Country since January 2024. Grant-only for UK entities."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Competitive EU-wide programme. Not grid-specific but clean energy and AI are eligible. Spanish tech clusters can provide consortium routes."
+      },
+      "applicationRoute": [
+        { "step": "Register on EU Funding Portal", "detail": "ec.europa.eu/info/funding-tenders" },
+        { "step": "Identify relevant call or Spanish consortium", "detail": "Grid innovation or clean energy topics" },
+        { "step": "Submit application", "detail": "Single entity for EIC or consortium for collaborative calls" },
+        { "step": "EU evaluation", "detail": "Competitive assessment across member states" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Contact Red Eléctrica/Elewit", "detail": "Pitch grid automation solution. €13.59B 2025-2030 transmission investment.", "tag": "Week 1", "tagColor": "#FFC400" },
-    { "step": "Approach Iberdrola PERSEO", "detail": "Equity deal — prepare pitch deck, metrics, product demo.", "tag": "Week 1-2", "tagColor": "#FFC400" },
-    { "step": "Register Spanish company (SL or SLU)", "detail": "2-4 weeks. €3-5K legal fees. Unlocks CDTI, IDAE, ENISA.", "tag": "Month 1", "tagColor": "#2E75B6" },
-    { "step": "Apply to CDTI NEOTEC 2025", "detail": "€300M fund, 40-75% subsidy. Rolling applications.", "tag": "Month 1-2", "tagColor": "#2E75B6" },
-    { "step": "Apply to IDAE Energy Innovation", "detail": "€200M fund, 50-75% coverage.", "tag": "Month 2", "tagColor": "#D4A017" },
-    { "step": "Engage Endesa partnership", "detail": "Open innovation vendor partnerships.", "tag": "Month 2-3", "tagColor": "#D4A017" }
   ],
   "faq": [
     { "q": "What is Red Eléctrica's €13.59B investment targeting?", "a": "Transmission network modernisation 2025-2030, with explicit focus on renewable integration, AI automation, and congestion management. This is the single largest grid infrastructure investment in Southern Europe." },

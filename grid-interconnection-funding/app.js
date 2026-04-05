@@ -1,223 +1,244 @@
-/* Grid Interconnection Funding Landscape — app.js
-   Loads country data from data/*.json, renders cards + detail panel. */
+/* Grid Interconnection Funding Landscape — app.js */
 
 const DATA_FILES = [
-  'data/uk.json',
-  'data/usa.json',
-  'data/germany.json',
-  'data/netherlands.json',
-  'data/spain.json',
-  'data/france.json',
-  'data/india.json',
-  'data/australia.json',
-  'data/south-africa.json',
-  'data/kenya.json',
-  'data/nigeria.json'
+  'data/uk.json','data/usa.json','data/germany.json','data/netherlands.json',
+  'data/spain.json','data/france.json','data/india.json','data/australia.json',
+  'data/south-africa.json','data/kenya.json','data/nigeria.json'
 ];
 
 let DATA = [];
 let currentCountry = null;
-let selectedStudy = null;
+let openProgrammes = new Set();
+let faqOpen = false;
+let noteOpen = false;
 let currentRegionFilter = 'all';
 
 // ── Data Loading ──
 
 async function loadData() {
-  const responses = await Promise.all(DATA_FILES.map(f => fetch(f).then(r => r.json())));
-  DATA = responses;
+  DATA = await Promise.all(DATA_FILES.map(f => fetch(f).then(r => r.json())));
   renderCards();
 }
 
-// ── Card Rendering ──
+// ── Cards ──
 
 function renderCards() {
   const grid = document.getElementById('cardsGrid');
   grid.innerHTML = '';
-
-  DATA.forEach(country => {
-    if (currentRegionFilter === 'all' || country.tags.includes(currentRegionFilter)) {
-      const card = document.createElement('div');
-      card.className = 'country-card';
-      card.style.borderLeftColor = country.accentColor;
-
-      const badgeHtml = `<span class='card-badge' style='background:${country.badgeColor};color:${country.badgeText}'>${country.badge}</span>` +
-                        (country.badge2 ? `<span class='card-badge' style='background:${country.badgeColor};color:${country.badgeText}'>${country.badge2}</span>` : '');
-
-      card.onclick = function() { openPanel(country.id); };
-      card.innerHTML = `
-        <div class='card-header' style='background:${country.accentBg}'>
-          <div class='card-icon'>${country.icon}</div>
-          <div class='card-titles'>
-            <div class='card-name'>${country.name}</div>
-            <div class='card-type'>${country.type}</div>
-            <div class='card-badges'>${badgeHtml}</div>
+  DATA.forEach(c => {
+    if (currentRegionFilter !== 'all' && !c.tags.includes(currentRegionFilter)) return;
+    const card = document.createElement('div');
+    card.className = 'country-card';
+    card.style.borderLeftColor = c.accentColor;
+    card.onclick = () => openDetail(c.id);
+    card.innerHTML = `
+      <div class='card-header' style='background:${c.accentBg}'>
+        <div class='card-icon'>${c.icon}</div>
+        <div class='card-titles'>
+          <div class='card-name'>${c.name}</div>
+          <div class='card-type'>${c.type}</div>
+          <div class='card-badges'>
+            <span class='card-badge' style='background:${c.badgeColor};color:${c.badgeText}'>${c.badge}</span>
+            ${c.badge2 ? `<span class='card-badge' style='background:${c.badgeColor};color:${c.badgeText}'>${c.badge2}</span>` : ''}
           </div>
         </div>
-        <div class='card-body'>
-          <div class='card-tags'>${country.cardTags.map(t => `<span class='card-tag'>${t}</span>`).join('')}</div>
-          <div class='card-desc'>${country.sub}</div>
-        </div>
-        <div class='card-footer'>
-          <span class='card-detail-btn'>View Details &rarr;</span>
-          <span class='card-count'>${country.studies.length} programmes</span>
-        </div>
-      `;
-      grid.appendChild(card);
-    }
+      </div>
+      <div class='card-body'>
+        <div class='card-tags'>${c.cardTags.map(t => `<span class='card-tag'>${t}</span>`).join('')}</div>
+        <div class='card-desc'>${c.sub}</div>
+      </div>
+      <div class='card-footer'>
+        <span class='card-detail-btn'>View Details &rarr;</span>
+        <span class='card-count'>${c.studies.length} programmes</span>
+      </div>`;
+    grid.appendChild(card);
   });
 }
-
-// ── Filters ──
 
 function filterRegion(region, btn) {
   currentRegionFilter = region;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCards();
+  closeDetail();
 }
 
-// ── Detail Panel ──
+// ── Inline Detail ──
 
-function openPanel(countryId) {
+function openDetail(countryId) {
   currentCountry = DATA.find(c => c.id === countryId);
-  selectedStudy = null;
-
-  document.getElementById('panelIcon').textContent = currentCountry.icon;
-  document.getElementById('panelTitle').textContent = currentCountry.name;
-  document.getElementById('panelSubtitle').textContent = currentCountry.full;
-
-  renderStudies();
-
-  // Reset tabs to Programmes
-  document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-pane').forEach(t => t.classList.remove('active'));
-  document.querySelector('.panel-tab').classList.add('active');
-  document.getElementById('tab-programmes').classList.add('active');
-
-  document.getElementById('detailPanel').classList.add('open');
-  document.getElementById('detailPanel').scrollIntoView({behavior:'smooth', block:'start'});
+  openProgrammes = new Set();
+  faqOpen = false;
+  noteOpen = false;
+  renderDetail();
+  const section = document.getElementById('detailSection');
+  section.style.display = 'block';
+  setTimeout(() => section.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
 }
 
-function closePanel() {
-  document.getElementById('detailPanel').classList.remove('open');
+function closeDetail() {
+  document.getElementById('detailSection').style.display = 'none';
   currentCountry = null;
-  selectedStudy = null;
 }
 
-// ── Studies (Programmes) ──
-
-function renderStudies() {
-  const list = document.getElementById('studiesList');
-  list.innerHTML = '';
-
-  currentCountry.studies.forEach((study, idx) => {
-    const item = document.createElement('div');
-    item.className = 'study-item';
-    item.innerHTML = `
-      <div class='study-label'>${study.label}</div>
-      <div class='study-hint'>${study.hint}</div>
-      ${selectedStudy === idx ? `<div class='study-detail'><div class='study-detail-text'>${study.text}</div></div>` : ''}
-    `;
-    item.onclick = (e) => { if (!e.target.closest('.link-box')) toggleStudy(idx); };
-    list.appendChild(item);
-  });
-}
-
-function toggleStudy(idx) {
-  selectedStudy = selectedStudy === idx ? null : idx;
-  renderStudies();
-}
-
-// ── Tab Switching ──
-
-function switchTab(tabName, tabEl) {
-  document.querySelectorAll('.panel-tab').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.tab-pane').forEach(t => t.classList.remove('active'));
-
-  if (tabEl) tabEl.classList.add('active');
-  else document.querySelector(`.panel-tab[onclick*="${tabName}"]`).classList.add('active');
-  document.getElementById('tab-' + tabName).classList.add('active');
-
-  if (tabName === 'programmes') renderStudies();
-  else if (tabName === 'pathway') renderWorkflow();
-  else if (tabName === 'faq') renderFAQ();
-  else if (tabName === 'note') renderNote();
-}
-
-// ── Workflow ──
-
-function renderWorkflow() {
-  const content = document.getElementById('workflowContent');
-  content.innerHTML = currentCountry.workflow.map(step => `
-    <div class='workflow-step'>
-      <div class='step-title'>${step.step}</div>
-      <div class='step-detail'>${step.detail}</div>
-      <span class='step-tag' style='background:${step.tagColor}'>${step.tag}</span>
+function renderDetail() {
+  if (!currentCountry) return;
+  const c = currentCountry;
+  document.getElementById('detailBox').innerHTML = `
+    <div class="detail-header" style="border-left:5px solid ${c.accentColor}">
+      <div class="detail-icon">${c.icon}</div>
+      <div class="detail-titles">
+        <div class="detail-name">${c.name}</div>
+        <div class="detail-full">${c.full}</div>
+      </div>
+      <button class="detail-close" onclick="closeDetail()">&times;</button>
     </div>
-  `).join('');
+    <div class="detail-desc">${c.desc}</div>
+    <div class="section-heading">Programmes &amp; Innovation Routes</div>
+    ${c.studies.map((s, i) => renderProgrammeNode(s, i)).join('')}
+    <div class="collapsible-header ${faqOpen ? 'open' : ''}" onclick="toggleFAQ()">
+      <span class="collapsible-arrow">&#9654;</span>
+      <span class="collapsible-title">Frequently Asked Questions (${c.faq.length})</span>
+    </div>
+    <div class="collapsible-body">${renderFAQ()}</div>
+    <div class="collapsible-header ${noteOpen ? 'open' : ''}" onclick="toggleNote()">
+      <span class="collapsible-arrow">&#9654;</span>
+      <span class="collapsible-title">Strategy Note</span>
+    </div>
+    <div class="collapsible-body">${renderNote()}</div>`;
+}
+
+// ── Programme Nodes ──
+
+function renderProgrammeNode(s, idx) {
+  const isOpen = openProgrammes.has(idx);
+  const el = s.eligibility || {};
+  const rl = s.relevance || {};
+  const elStatus = el.status || 'unknown';
+  const rlLevel = rl.level || 'unknown';
+
+  const elBadgeClass = elStatus === 'eligible' ? 'badge-eligible' : elStatus === 'partial' ? 'badge-partial' : 'badge-ineligible';
+  const elLabel = elStatus === 'eligible' ? 'Eligible' : elStatus === 'partial' ? 'Conditional' : 'Not Eligible';
+  const elIcon = elStatus === 'eligible' ? '\u2713' : elStatus === 'partial' ? '\u25D0' : '\u2717';
+
+  const rlBadgeClass = rlLevel === 'high' ? 'badge-high' : rlLevel === 'medium' ? 'badge-medium' : 'badge-low';
+  const rlLabel = rlLevel.charAt(0).toUpperCase() + rlLevel.slice(1);
+
+  let body = '';
+  if (isOpen) {
+    body = `<div class="prog-body">
+      <div class="prog-meta">
+        <div class="meta-card">
+          <div class="meta-label">Eligibility</div>
+          <div class="meta-status ${elStatus}">${elIcon} ${elLabel}</div>
+          <div class="meta-explain">${el.text || ''}</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Relevance</div>
+          <div class="meta-status ${rlLevel}">${rlLabel}</div>
+          <div class="meta-explain">${rl.text || ''}</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-label">Budget</div>
+          <div class="budget-value">${s.budget || 'N/A'}</div>
+        </div>
+      </div>
+      <div class="prog-desc">${s.text}</div>
+      ${renderAppRoute(s)}
+    </div>`;
+  }
+
+  return `<div class="programme-node ${isOpen ? 'open' : ''}" data-idx="${idx}">
+    <div class="prog-header" onclick="toggleProgramme(${idx})">
+      <span class="prog-arrow">&#9654;</span>
+      <span class="prog-name">${s.label}</span>
+      <div class="prog-badges">
+        <span class="prog-badge ${elBadgeClass}">${elIcon} ${elLabel}</span>
+        <span class="prog-badge ${rlBadgeClass}">${rlLabel}</span>
+        ${s.budget ? `<span class="prog-badge badge-budget">${s.budget}</span>` : ''}
+      </div>
+    </div>
+    ${body}
+  </div>`;
+}
+
+function renderAppRoute(s) {
+  const route = s.applicationRoute;
+  if (!route || !route.length) return '';
+  return `<div class="app-route">
+    <div class="app-route-title">Application Route &mdash; ${s.label}</div>
+    ${route.map((r, i) => `<div class="route-step">
+      <div class="route-num">${i + 1}</div>
+      <div class="route-text">
+        <div class="route-step-title">${r.step}</div>
+        <div class="route-step-detail">${r.detail}</div>
+      </div>
+    </div>`).join('')}
+  </div>`;
+}
+
+function toggleProgramme(idx) {
+  if (openProgrammes.has(idx)) openProgrammes.delete(idx);
+  else openProgrammes.add(idx);
+  renderDetail();
 }
 
 // ── FAQ ──
 
-function renderFAQ() {
-  const content = document.getElementById('faqContent');
-  content.innerHTML = currentCountry.faq.map(item => `
-    <div class='faq-item'>
-      <div class='faq-q'>${item.q}</div>
-      <div class='faq-a'>${item.a}</div>
-    </div>
-  `).join('');
+function toggleFAQ() {
+  faqOpen = !faqOpen;
+  renderDetail();
 }
 
-// ── Strategy Note + Markdown Export ──
+function renderFAQ() {
+  if (!faqOpen || !currentCountry) return '';
+  return currentCountry.faq.map(f =>
+    `<div class="faq-item"><div class="faq-q">${f.q}</div><div class="faq-a">${f.a}</div></div>`
+  ).join('');
+}
+
+// ── Strategy Note ──
+
+function toggleNote() {
+  noteOpen = !noteOpen;
+  renderDetail();
+}
 
 function renderNote() {
-  const content = document.getElementById('noteContent');
-  content.innerHTML = `<div class='note-box'>${currentCountry.note}</div>`;
-
-  content.innerHTML += `
-    <div class='markdown-section'>
-      <button class='copy-btn' onclick='copyMarkdown()'>Copy Markdown</button>
-      <div class='markdown-output' id='markdownOutput'></div>
-    </div>
-  `;
-
-  renderMarkdown();
+  if (!noteOpen || !currentCountry) return '';
+  const c = currentCountry;
+  return `<div class="note-box">${c.note}</div>
+    <div class="md-section">
+      <button class="copy-btn" onclick="copyMarkdown(event)">Copy Markdown</button>
+      <div class="md-output" id="mdOutput">${buildMarkdown()}</div>
+    </div>`;
 }
 
-function renderMarkdown() {
-  let md = `# ${currentCountry.full}\n\n`;
-  md += `**Type:** ${currentCountry.type}\n`;
-  md += `**Vendor:** ${currentCountry.vendor}\n\n`;
-  md += `## Overview\n${currentCountry.desc}\n\n`;
-
-  md += `## Programmes\n`;
-  currentCountry.studies.forEach(study => {
-    md += `\n### ${study.label}\n`;
-    md += `_${study.hint}_\n\n`;
-    md += `${study.text.replace(/<[^>]*>/g, '').substring(0, 200)}...\n`;
+function buildMarkdown() {
+  const c = currentCountry;
+  let md = `# ${c.full}\n\n**Type:** ${c.type}\n**Organisations:** ${c.vendor}\n\n## Overview\n${c.desc}\n\n## Programmes\n`;
+  c.studies.forEach(s => {
+    md += `\n### ${s.label}\n_${s.hint}_\n`;
+    md += `- **Budget:** ${s.budget || 'N/A'}\n`;
+    md += `- **Eligibility:** ${(s.eligibility||{}).status||'?'} — ${(s.eligibility||{}).text||''}\n`;
+    md += `- **Relevance:** ${(s.relevance||{}).level||'?'} — ${(s.relevance||{}).text||''}\n\n`;
+    md += `${s.text.replace(/<[^>]*>/g, '').substring(0, 200)}...\n`;
+    if (s.applicationRoute && s.applicationRoute.length) {
+      md += `\n**Application Route:**\n`;
+      s.applicationRoute.forEach((r, i) => { md += `${i+1}. **${r.step}** — ${r.detail}\n`; });
+    }
   });
-
-  md += `\n## Application Workflow\n`;
-  currentCountry.workflow.forEach((step, idx) => {
-    md += `${idx + 1}. **${step.step}** (${step.tag})\n   ${step.detail}\n\n`;
-  });
-
-  md += `\n## Strategy Note\n${currentCountry.note}\n`;
-
-  document.getElementById('markdownOutput').textContent = md;
+  md += `\n## Strategy Note\n${c.note}\n`;
+  return md;
 }
 
-function copyMarkdown() {
-  const text = document.getElementById('markdownOutput').textContent;
+function copyMarkdown(e) {
+  const text = document.getElementById('mdOutput').textContent;
   navigator.clipboard.writeText(text).then(() => {
-    const btn = event.target;
+    const btn = e.target;
     btn.textContent = 'Copied!';
     btn.classList.add('copied');
-    setTimeout(() => {
-      btn.textContent = 'Copy Markdown';
-      btn.classList.remove('copied');
-    }, 2000);
+    setTimeout(() => { btn.textContent = 'Copy Markdown'; btn.classList.remove('copied'); }, 2000);
   });
 }
 

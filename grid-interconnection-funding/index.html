@@ -10,41 +10,20 @@
 
 <div class="hero">
   <h1>AI Grid Interconnection Funding Landscape 2026</h1>
-  <p>A comprehensive guide to $200B+ in global funding, programmes, and pathways for AI-powered grid automation across 11 countries</p>
   <div class="hero-stats">
-    <div class="stat-item">
-      <div class="stat-number">11</div>
-      <div class="stat-label">Countries</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">81</div>
-      <div class="stat-label">Programmes</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">$200B+</div>
-      <div class="stat-label">Funding Available</div>
-    </div>
-  </div>
-</div>
-
-<div class="flow-banner">
-  <div class="flow-content">
-    <div class="flow-title">Typical Funding Pathway</div>
-    <div class="flow-steps">
-      <div class="flow-step">Identify Priority Market</div>
-      <div class="flow-step">Map Programmes by Type</div>
-      <div class="flow-step">Build Local Entity (if needed)</div>
-      <div class="flow-step">Submit Applications in Waves</div>
-      <div class="flow-step">Activate Partnerships</div>
-    </div>
+    <span class="hero-stat">11 Countries</span>
+    <span class="hero-sep">&middot;</span>
+    <span class="hero-stat">81 Programmes</span>
+    <span class="hero-sep">&middot;</span>
+    <span class="hero-stat">$200B+ Funding</span>
   </div>
 </div>
 
 <div class="filter-bar">
   <div class="filter-container">
-    <span class="filter-label">Filter by region:</span>
+    <span class="filter-label">Filter:</span>
     <div class="filter-buttons">
-      <button class="filter-btn active" onclick="filterRegion('all', this)">All Regions</button>
+      <button class="filter-btn active" onclick="filterRegion('all', this)">All</button>
       <button class="filter-btn" onclick="filterRegion('europe', this)">Europe</button>
       <button class="filter-btn" onclick="filterRegion('americas', this)">Americas</button>
       <button class="filter-btn" onclick="filterRegion('apac', this)">Asia-Pacific</button>
@@ -57,40 +36,8 @@
   <div class="cards-grid" id="cardsGrid"></div>
 </div>
 
-<div class="detail-panel" id="detailPanel">
-  <div class="panel-header">
-    <div class="panel-icon" id="panelIcon"></div>
-    <div class="panel-titles">
-      <div class="panel-title" id="panelTitle"></div>
-      <div class="panel-subtitle" id="panelSubtitle"></div>
-    </div>
-    <button class="panel-close" onclick="closePanel()">&times;</button>
-  </div>
-
-  <div class="panel-tabs">
-    <div class="panel-tab active" onclick="switchTab('programmes', this)">Programmes</div>
-    <div class="panel-tab" onclick="switchTab('pathway', this)">Application Pathway</div>
-    <div class="panel-tab" onclick="switchTab('faq', this)">FAQ</div>
-    <div class="panel-tab" onclick="switchTab('note', this)">Strategy Note</div>
-  </div>
-
-  <div class="panel-content">
-    <div class="tab-pane active" id="tab-programmes">
-      <div class="studies-list" id="studiesList"></div>
-    </div>
-
-    <div class="tab-pane" id="tab-pathway">
-      <div id="workflowContent"></div>
-    </div>
-
-    <div class="tab-pane" id="tab-faq">
-      <div id="faqContent"></div>
-    </div>
-
-    <div class="tab-pane" id="tab-note">
-      <div id="noteContent"></div>
-    </div>
-  </div>
+<div class="detail-section" id="detailSection" style="display:none">
+  <div class="detail-box" id="detailBox"></div>
 </div>
 
 <script src="app.js"></script>

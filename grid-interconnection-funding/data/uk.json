@@ -19,53 +19,169 @@
     {
       "label": "Ofgem Strategic Innovation Fund (SIF)",
       "hint": "Up to £6M across 3 phases",
-      "text": "<span class='section-label'>What it does</span>SIF is Ofgem's flagship innovation programme, replacing the former NIC. It funds projects across three phases: Discovery (up to £150K, ~5 months), Alpha (up to £500K-£1M, ~8-9 months), and Beta (multimillion-pound, up to 5 years). Overall investment target: £450M by 2028. Three application windows per year for all phases.<span class='section-label'>Why it matters</span>SIF is the single largest innovation funding route in UK energy, specifically designed for network-level problems including connection queue management and grid capacity optimisation.<span class='section-label'>How to apply</span>A UK startup typically partners with a DNO (e.g. UKPN, SSEN, NGET) who acts as the licence holder. The DNO submits the SIF application with the startup as the technology delivery partner.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation/technology-and-innovation/innovation/apply-strategic-innovation-fund-sif' target='_blank'>Ofgem SIF Application</a><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/' target='_blank'>Innovate UK Funding Portal</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/ofgem-strategic-innovation-fund/' target='_blank'>IUK Business Connect — SIF</a><a class='link-box' href='https://www.ofgem.gov.uk/strategic-innovation-fund-sif' target='_blank'>SIF Main Page</a></div>"
+      "text": "<span class='section-label'>What it does</span>SIF is Ofgem's flagship innovation programme, replacing the former NIC. It funds projects across three phases: Discovery (up to £150K, ~5 months), Alpha (up to £500K-£1M, ~8-9 months), and Beta (multimillion-pound, up to 5 years). Overall investment target: £450M by 2028. Three application windows per year for all phases.<span class='section-label'>Why it matters</span>SIF is the single largest innovation funding route in UK energy, specifically designed for network-level problems including connection queue management and grid capacity optimisation.<span class='section-label'>How to apply</span>A UK startup typically partners with a DNO (e.g. UKPN, SSEN, NGET) who acts as the licence holder. The DNO submits the SIF application with the startup as the technology delivery partner.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation/technology-and-innovation/innovation/apply-strategic-innovation-fund-sif' target='_blank'>Ofgem SIF Application</a><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/' target='_blank'>Innovate UK Funding Portal</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/ofgem-strategic-innovation-fund/' target='_blank'>IUK Business Connect — SIF</a><a class='link-box' href='https://www.ofgem.gov.uk/strategic-innovation-fund-sif' target='_blank'>SIF Main Page</a></div>",
+      "budget": "Up to £6M across 3 phases",
+      "eligibility": {
+        "status": "eligible",
+        "text": "UK startup applies as technology delivery partner with a DNO/TNO licence holder as lead applicant."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Directly funds network-level grid interconnection problems including connection queue management and capacity optimisation. Ofgem's flagship innovation programme."
+      },
+      "applicationRoute": [
+        { "step": "Register on Innovate UK funding portal", "detail": "apply-for-innovation-funding.service.gov.uk" },
+        { "step": "Identify and approach target DNO innovation team", "detail": "UKPN SSEN and NGET are most active in seeking partners" },
+        { "step": "Co-develop proposal with DNO as licence holder", "detail": "DNO leads application; startup delivers technology" },
+        { "step": "Submit via Innovate UK when challenge round opens", "detail": "Three windows per year for Discovery Alpha and Beta" },
+        { "step": "Discovery phase 5 months if selected", "detail": "Up to £150K then progress to Alpha and Beta" }
+      ]
     },
     {
       "label": "Network Innovation Allowance (NIA)",
       "hint": "£50K–£2M per project, rolling",
-      "text": "<span class='section-label'>What it does</span>Each DNO and TNO holds ring-fenced budgets for smaller, faster innovation projects. NIA requires only a 6-page proposal submitted directly to the network operator's innovation team. Each operator has independent budget and decision authority.<span class='section-label'>Why it matters</span>NIA is the fastest route to a funded pilot in the UK energy sector. There's no central competition — submit directly to any DNO.<span class='section-label'>Individual DNO Innovation Portals</span><div class='links-row'><a class='link-box' href='https://innovation.ukpowernetworks.co.uk/network-innovation-allowance' target='_blank'>UKPN NIA Portal</a><a class='link-box' href='https://www.ssen-transmission.co.uk/about-us/innovation/' target='_blank'>SSEN Transmission Innovation</a><a class='link-box' href='https://ssen-innovation.co.uk/' target='_blank'>SSEN Innovation Hub</a><a class='link-box' href='https://www.nationalgrid.com/electricity-transmission/innovation' target='_blank'>National Grid ET Innovation</a><a class='link-box' href='https://www.nationalgrid.co.uk/innovation' target='_blank'>National Grid ED (WPD) Innovation</a><a class='link-box' href='https://www.northernpowergrid.com/innovation' target='_blank'>Northern Powergrid Innovation</a><a class='link-box' href='https://www.spenergynetworks.co.uk/pages/innovation.aspx' target='_blank'>SP Energy Networks Innovation</a><a class='link-box' href='https://www.enwl.co.uk/innovation/' target='_blank'>Electricity North West Innovation</a><a class='link-box' href='https://smarter.energynetworks.org/' target='_blank'>ENA Smarter Networks Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>Each DNO and TNO holds ring-fenced budgets for smaller, faster innovation projects. NIA requires only a 6-page proposal submitted directly to the network operator's innovation team. Each operator has independent budget and decision authority.<span class='section-label'>Why it matters</span>NIA is the fastest route to a funded pilot in the UK energy sector. There's no central competition — submit directly to any DNO.<span class='section-label'>Individual DNO Innovation Portals</span><div class='links-row'><a class='link-box' href='https://innovation.ukpowernetworks.co.uk/network-innovation-allowance' target='_blank'>UKPN NIA Portal</a><a class='link-box' href='https://www.ssen-transmission.co.uk/about-us/innovation/' target='_blank'>SSEN Transmission Innovation</a><a class='link-box' href='https://ssen-innovation.co.uk/' target='_blank'>SSEN Innovation Hub</a><a class='link-box' href='https://www.nationalgrid.com/electricity-transmission/innovation' target='_blank'>National Grid ET Innovation</a><a class='link-box' href='https://www.nationalgrid.co.uk/innovation' target='_blank'>National Grid ED (WPD) Innovation</a><a class='link-box' href='https://www.northernpowergrid.com/innovation' target='_blank'>Northern Powergrid Innovation</a><a class='link-box' href='https://www.spenergynetworks.co.uk/pages/innovation.aspx' target='_blank'>SP Energy Networks Innovation</a><a class='link-box' href='https://www.enwl.co.uk/innovation/' target='_blank'>Electricity North West Innovation</a><a class='link-box' href='https://smarter.energynetworks.org/' target='_blank'>ENA Smarter Networks Portal</a></div>",
+      "budget": "£50K–£2M per project",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Submit 6-page proposal directly to any DNO innovation team. No central competition. Each DNO has independent budget."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Fastest route to a funded pilot in UK energy. DNOs independently fund grid innovation including AI-powered connection and capacity tools."
+      },
+      "applicationRoute": [
+        { "step": "Identify target DNO innovation lead", "detail": "Use smarter.energynetworks.org to find contacts" },
+        { "step": "Prepare 6-page proposal", "detail": "Focused on problem statement technology approach and expected outcomes" },
+        { "step": "Submit directly to DNO innovation team", "detail": "No central portal — each DNO accepts independently" },
+        { "step": "DNO evaluates against NIA criteria", "detail": "Decision within 4-8 weeks typically" },
+        { "step": "Project begins if approved", "detail": "Funding flows directly from DNO ring-fenced budget" }
+      ]
     },
     {
       "label": "NESO Innovation Programme",
       "hint": "Big Ideas + NIA/SIF routing",
-      "text": "<span class='section-label'>What it does</span>NESO (National Energy System Operator) runs an innovation pipeline built on 6 priorities: Demand-side flexibility, Digitalisation & AI, System security, Whole systems integration, Regional networks, and Long-term resilience. The Big Ideas portal accepts submissions continuously — NESO assesses alignment and routes to appropriate funding (NIA or SIF).<span class='section-label'>Why it matters</span>Grid connection reforms are expected to unlock £40B/yr in clean investment (283 GW generation/storage, 99 GW demand). AI for queue management directly matches Priority 2. NESO has run 61 NIA projects, 15 SIF projects, and 83 Big Ideas.<div class='links-row'><a class='link-box' href='https://www.neso.energy/about/innovation/get-involved-neso-innovation' target='_blank'>NESO — Get Involved</a><a class='link-box' href='https://www.neso.energy/industry-information/connections-reform' target='_blank'>NESO Connections Reform</a></div>"
+      "text": "<span class='section-label'>What it does</span>NESO (National Energy System Operator) runs an innovation pipeline built on 6 priorities: Demand-side flexibility, Digitalisation & AI, System security, Whole systems integration, Regional networks, and Long-term resilience. The Big Ideas portal accepts submissions continuously — NESO assesses alignment and routes to appropriate funding (NIA or SIF).<span class='section-label'>Why it matters</span>Grid connection reforms are expected to unlock £40B/yr in clean investment (283 GW generation/storage, 99 GW demand). AI for queue management directly matches Priority 2. NESO has run 61 NIA projects, 15 SIF projects, and 83 Big Ideas.<div class='links-row'><a class='link-box' href='https://www.neso.energy/about/innovation/get-involved-neso-innovation' target='_blank'>NESO — Get Involved</a><a class='link-box' href='https://www.neso.energy/industry-information/connections-reform' target='_blank'>NESO Connections Reform</a></div>",
+      "budget": "Routes to NIA or SIF funding",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open submission via Big Ideas portal. NESO assesses alignment and routes to appropriate funding stream."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "AI for queue management directly matches NESO Priority 2 (Digitalisation and AI). Grid connection reforms expected to unlock £40B/yr in clean investment."
+      },
+      "applicationRoute": [
+        { "step": "Submit Big Idea via NESO innovation portal", "detail": "Continuous submissions accepted" },
+        { "step": "NESO assesses alignment with 6 priorities", "detail": "Response within 4-6 weeks" },
+        { "step": "Routed to NIA or SIF funding stream", "detail": "NESO recommends best funding pathway" },
+        { "step": "Follow NIA or SIF application process", "detail": "NESO provides introduction to relevant DNO or programme" }
+      ]
     },
     {
       "label": "National Grid Partners $100M AI Fund",
       "hint": "Corporate VC, $100M committed",
-      "text": "<span class='section-label'>What it does</span>National Grid Partners committed $100M in March 2025 specifically to invest in AI startups advancing energy. This is corporate venture capital — they take equity stakes. NGP has invested $150M+ in 18 AI startups since founding in 2018; 37% of portfolio is now AI-focused.<span class='section-label'>Why it matters</span>NGP explicitly named grid interconnection as 'the biggest challenge facing renewable energy'. Queue management and capacity increase are stated priorities. National Grid operates in both UK and US.<div class='links-row'><a class='link-box' href='https://www.ngpartners.com/' target='_blank'>National Grid Partners</a><a class='link-box' href='https://www.nationalgrid.com/media-centre/press-releases/national-grid-partners-commits-100-million-invest-ai-startups-advancing-future-energy' target='_blank'>$100M Announcement</a></div>"
+      "text": "<span class='section-label'>What it does</span>National Grid Partners committed $100M in March 2025 specifically to invest in AI startups advancing energy. This is corporate venture capital — they take equity stakes. NGP has invested $150M+ in 18 AI startups since founding in 2018; 37% of portfolio is now AI-focused.<span class='section-label'>Why it matters</span>NGP explicitly named grid interconnection as 'the biggest challenge facing renewable energy'. Queue management and capacity increase are stated priorities. National Grid operates in both UK and US.<div class='links-row'><a class='link-box' href='https://www.ngpartners.com/' target='_blank'>National Grid Partners</a><a class='link-box' href='https://www.nationalgrid.com/media-centre/press-releases/national-grid-partners-commits-100-million-invest-ai-startups-advancing-future-energy' target='_blank'>$100M Announcement</a></div>",
+      "budget": "$100M fund (typical $2M–$15M per deal)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Corporate VC open to UK and US companies. National Grid operates in both markets. Equity investment model."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "NGP explicitly named grid interconnection as the biggest challenge facing renewable energy. Queue management and capacity increase are stated investment priorities."
+      },
+      "applicationRoute": [
+        { "step": "Prepare VC pitch deck with traction metrics", "detail": "Standard venture pitch: problem market product traction and ask" },
+        { "step": "Contact NGP investment team", "detail": "Via ngpartners.com or warm introduction through National Grid network" },
+        { "step": "Initial screening and partner meeting", "detail": "NGP evaluates strategic fit and technology differentiation" },
+        { "step": "Technical due diligence", "detail": "Grid domain experts assess product capability" },
+        { "step": "Term sheet and investment", "detail": "Equity stake with strategic partnership access to National Grid assets" }
+      ]
     },
     {
       "label": "Innovate UK Innovation Loans",
       "hint": "£100K–£5M, 7.4% interest",
-      "text": "<span class='section-label'>What it does</span>Innovate UK offers loans of £100K–£5M for UK-registered SMEs. Interest rate: 3.7% during project period, 7.4% during 7-year repayment. No personal guarantees required. Net Zero, health & wellbeing, and digital tech are named focus areas.<span class='section-label'>Why it matters</span>Unlike grants, loans don't dilute equity. Consistent availability with regular rounds.<div class='links-row'><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/competition/2373/overview/609dc5dd-d3e8-4f51-af3a-3eb1b3314710' target='_blank'>Round 25 Application</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/innovation-loans/' target='_blank'>Innovation Loans Info</a></div>"
+      "text": "<span class='section-label'>What it does</span>Innovate UK offers loans of £100K–£5M for UK-registered SMEs. Interest rate: 3.7% during project period, 7.4% during 7-year repayment. No personal guarantees required. Net Zero, health & wellbeing, and digital tech are named focus areas.<span class='section-label'>Why it matters</span>Unlike grants, loans don't dilute equity. Consistent availability with regular rounds.<div class='links-row'><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/competition/2373/overview/609dc5dd-d3e8-4f51-af3a-3eb1b3314710' target='_blank'>Round 25 Application</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/innovation-loans/' target='_blank'>Innovation Loans Info</a></div>",
+      "budget": "£100K–£5M per loan at 7.4%",
+      "eligibility": {
+        "status": "eligible",
+        "text": "UK-registered SME. No personal guarantees required. Net Zero is a named focus area."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "General innovation funding not specific to grid interconnection. Useful for scaling operations but not targeted at network problems."
+      },
+      "applicationRoute": [
+        { "step": "Check for open round on IUK portal", "detail": "Regular rounds throughout the year" },
+        { "step": "Submit application with detailed business plan", "detail": "Financial projections technical description and market analysis" },
+        { "step": "Assessment by Innovate UK panel", "detail": "Competitive evaluation against other applicants" },
+        { "step": "Loan agreement if approved", "detail": "3.7% during project then 7.4% over 7-year repayment" },
+        { "step": "Disbursement during project period", "detail": "No equity dilution; repayment begins after project completion" }
+      ]
     },
     {
       "label": "Energy Networks Innovation Taskforce",
       "hint": "Launching April 2026, 5-year challenges",
-      "text": "<span class='section-label'>What it does</span>A joint Ofgem + Innovate UK initiative publishing innovation challenges that remain open for 5 years. Formally launched November 2025, with first challenges due April 2026. Focus: grid connection delays, smart/resilient/affordable net-zero systems. Bold, high-risk ideas explicitly encouraged.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/blog/launching-energy-networks-innovation-taskforce' target='_blank'>Ofgem Taskforce Blog</a><a class='link-box' href='https://iuk-business-connect.org.uk/' target='_blank'>Innovate UK Business Connect</a></div>"
+      "text": "<span class='section-label'>What it does</span>A joint Ofgem + Innovate UK initiative publishing innovation challenges that remain open for 5 years. Formally launched November 2025, with first challenges due April 2026. Focus: grid connection delays, smart/resilient/affordable net-zero systems. Bold, high-risk ideas explicitly encouraged.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/blog/launching-energy-networks-innovation-taskforce' target='_blank'>Ofgem Taskforce Blog</a><a class='link-box' href='https://iuk-business-connect.org.uk/' target='_blank'>Innovate UK Business Connect</a></div>",
+      "budget": "TBD — launching April 2026",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open challenges explicitly encouraging bold high-risk ideas. Joint Ofgem and Innovate UK initiative."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Grid connection delays is a named focus area. 5-year challenge windows provide long-term funding certainty for sustained R&D."
+      },
+      "applicationRoute": [
+        { "step": "Monitor Ofgem and IUK announcements", "detail": "First challenges expected April 2026" },
+        { "step": "Review published challenge requirements", "detail": "Challenges remain open for 5 years" },
+        { "step": "Submit proposal via designated portal", "detail": "Format to be confirmed when challenges launch" },
+        { "step": "Multi-year engagement if selected", "detail": "5-year challenge windows allow sustained development" }
+      ]
     },
     {
       "label": "Ofgem Regulatory Sandbox",
       "hint": "No funding — regulatory cover",
-      "text": "<span class='section-label'>What it does</span>Provides bespoke regulatory guidance, comfort letters, derogations, and market entry confirmation. No direct funding — the value is in testing AI-assisted decision support within regulated connection processes. 5 sandboxes granted to date. An AI Technical Sandbox pilot (12-month trial) is also being consulted on.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation-sandbox' target='_blank'>Ofgem Sandbox</a><a class='link-box' href='https://www.ofgem.gov.uk/consultation/ai-technical-sandbox' target='_blank'>AI Technical Sandbox Consultation</a></div>"
+      "text": "<span class='section-label'>What it does</span>Provides bespoke regulatory guidance, comfort letters, derogations, and market entry confirmation. No direct funding — the value is in testing AI-assisted decision support within regulated connection processes. 5 sandboxes granted to date. An AI Technical Sandbox pilot (12-month trial) is also being consulted on.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation-sandbox' target='_blank'>Ofgem Sandbox</a><a class='link-box' href='https://www.ofgem.gov.uk/consultation/ai-technical-sandbox' target='_blank'>AI Technical Sandbox Consultation</a></div>",
+      "budget": "No direct funding",
+      "eligibility": {
+        "status": "eligible",
+        "text": "UK-based companies. Provides bespoke regulatory guidance comfort letters and derogations for testing AI in regulated processes."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Enables testing AI-assisted decision support within regulated connection processes. Critical for product validation and regulatory credibility."
+      },
+      "applicationRoute": [
+        { "step": "Submit sandbox application to Ofgem", "detail": "Describe proposed innovation and regulatory barriers encountered" },
+        { "step": "Ofgem assesses application", "detail": "6-8 week assessment period" },
+        { "step": "Receive comfort letter or derogation", "detail": "Bespoke regulatory cover for pilot" },
+        { "step": "Run pilot under regulatory cover", "detail": "12-month trial period for AI Technical Sandbox" },
+        { "step": "Document outcomes for regulatory evidence", "detail": "Supports future product deployment and compliance" }
+      ]
     },
     {
       "label": "EIC Accelerator (via Horizon Europe)",
       "hint": "Up to €2.5M grant (UK: grant-only)",
-      "text": "<span class='section-label'>What it does</span>The European Innovation Council Accelerator provides up to €2.5M in grant funding. Since UK became an Associated Country in January 2024, UK companies can access the grant component only (not equity). Competitive: ~3-5% success rate.<span class='section-label'>Important correction</span>EIC Accelerator does NOT require consortium partners — applicants must be single legal entities. No multi-entity structure needed.<div class='links-row'><a class='link-box' href='https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en' target='_blank'>EIC Accelerator</a><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>The European Innovation Council Accelerator provides up to €2.5M in grant funding. Since UK became an Associated Country in January 2024, UK companies can access the grant component only (not equity). Competitive: ~3-5% success rate.<span class='section-label'>Important correction</span>EIC Accelerator does NOT require consortium partners — applicants must be single legal entities. No multi-entity structure needed.<div class='links-row'><a class='link-box' href='https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en' target='_blank'>EIC Accelerator</a><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>",
+      "budget": "Up to €2.5M grant",
+      "eligibility": {
+        "status": "eligible",
+        "text": "UK as Associated Country since January 2024. Single entity application — no consortium needed. Grant component only (no equity)."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Highly competitive (~3-5% success rate). Not grid-specific but clean energy and AI are eligible topics. Useful for scale-up capital."
+      },
+      "applicationRoute": [
+        { "step": "Register on EU Funding and Tenders Portal", "detail": "Create account and complete company profile" },
+        { "step": "Submit short application when call opens", "detail": "3-page application with video pitch" },
+        { "step": "Full proposal if shortlisted", "detail": "Detailed business plan and innovation description" },
+        { "step": "Remote interview with EIC jury", "detail": "Panel evaluates innovation impact and team" },
+        { "step": "Grant agreement if selected", "detail": "Up to €2.5M non-dilutive for UK applicants" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Register on Innovate UK / Ofgem portals", "detail": "Create accounts on apply-for-innovation-funding.service.gov.uk and the NESO innovation portal", "tag": "Week 1", "tagColor": "#1B7A3D" },
-    { "step": "Map DNO innovation contacts", "detail": "Identify innovation leads at UKPN, SSEN, NGET, WPD, NPG. Use smarter.energynetworks.org registry", "tag": "Week 1-2", "tagColor": "#1B7A3D" },
-    { "step": "Submit NESO Big Idea", "detail": "Complete submission via NESO innovation portal. NESO responds in 4-6 weeks", "tag": "Week 2", "tagColor": "#2E75B6" },
-    { "step": "Prepare NIA proposal", "detail": "6-page max proposal to target DNO. Fastest funding route", "tag": "Week 3-4", "tagColor": "#2E75B6" },
-    { "step": "Apply to SIF Discovery", "detail": "Partner with DNO licence holder. Submit via Innovate UK portal when challenge round opens", "tag": "Month 2", "tagColor": "#D4A017" },
-    { "step": "Approach National Grid Partners", "detail": "VC pitch — prepare deck, demo, and traction metrics", "tag": "Month 2-3", "tagColor": "#D4A017" },
-    { "step": "Apply for Innovation Loans", "detail": "£100K-£5M at 7.4%. Check for latest round", "tag": "Month 3", "tagColor": "#C0392B" },
-    { "step": "Monitor Taskforce Challenges", "detail": "New 5-year challenges launching April 2026", "tag": "Ongoing", "tagColor": "#6B6A64" }
   ],
   "faq": [
     { "q": "Can a startup apply directly to SIF, or do we need a DNO partner?", "a": "You need a DNO or TNO licence holder as the lead applicant. However, the startup typically does all the technical work and receives the majority of the funding. DNOs actively seek partners — approach their innovation teams directly. UKPN, SSEN, and NGET are the most active." },

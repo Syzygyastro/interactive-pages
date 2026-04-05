@@ -19,41 +19,123 @@
     {
       "label": "RTE Innovation & Partnerships",
       "hint": "€5.5B annual investment, 100+ startups",
-      "text": "<span class='section-label'>What it does</span>RTE operates 100,000+ km French transmission grid. Runs open innovation programme with 100+ active startup partnerships. Explicit focus on forecasting, grid automation, and congestion management. €5.5B annual capex with AI integration mandate. Direct vendor partnerships, no nationality restriction.<span class='section-label'>Why it matters</span>Largest single European grid operator by capex. AI for congestion forecasting is named priority.<div class='links-row'><a class='link-box' href='https://www.rte-france.com/en/uninterrupted-flow-current/innovating-preparation-tomorrow-grid' target='_blank'>RTE Innovation</a></div>"
+      "text": "<span class='section-label'>What it does</span>RTE operates 100,000+ km French transmission grid. Runs open innovation programme with 100+ active startup partnerships. Explicit focus on forecasting, grid automation, and congestion management. €5.5B annual capex with AI integration mandate. Direct vendor partnerships, no nationality restriction.<span class='section-label'>Why it matters</span>Largest single European grid operator by capex. AI for congestion forecasting is named priority.<div class='links-row'><a class='link-box' href='https://www.rte-france.com/en/uninterrupted-flow-current/innovating-preparation-tomorrow-grid' target='_blank'>RTE Innovation</a></div>",
+      "budget": "€5.5B annual capex (partnership model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "100+ active startup partnerships with no nationality restriction on direct vendor partnerships."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Largest European grid operator by capex. AI for congestion forecasting is a named priority. Operates 100,000+ km French transmission."
+      },
+      "applicationRoute": [
+        { "step": "Contact RTE Innovation team", "detail": "rte-france.com or via industry events" },
+        { "step": "Present grid automation and forecasting solution", "detail": "Focus on congestion management and queue optimisation" },
+        { "step": "Technical evaluation by RTE engineers", "detail": "Assessment against RTE innovation priorities" },
+        { "step": "Vendor partnership", "detail": "Direct commercial engagement with technology deployment pathway" }
+      ]
     },
     {
       "label": "EDF Pulse Awards",
       "hint": "€50M+ portfolio, strategic partnerships",
-      "text": "<span class='section-label'>What it does</span>EDF's international startup programme funding 50+ startups annually. €50M+ investment portfolio. Explicit support for grid modernisation, AI, and renewable integration. Equity and partnership options.<span class='section-label'>Why it matters</span>Access to Europe's largest utility (180M customers across 10 countries).<div class='links-row'><a class='link-box' href='https://www.edf.fr/en/pulse/edf-pulse-awards' target='_blank'>EDF Pulse Awards</a></div>"
+      "text": "<span class='section-label'>What it does</span>EDF's international startup programme funding 50+ startups annually. €50M+ investment portfolio. Explicit support for grid modernisation, AI, and renewable integration. Equity and partnership options.<span class='section-label'>Why it matters</span>Access to Europe's largest utility (180M customers across 10 countries).<div class='links-row'><a class='link-box' href='https://www.edf.fr/en/pulse/edf-pulse-awards' target='_blank'>EDF Pulse Awards</a></div>",
+      "budget": "€50M+ portfolio",
+      "eligibility": {
+        "status": "eligible",
+        "text": "International startup programme — no nationality restriction. 50+ startups funded annually."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Broad innovation focus including grid modernisation, AI, and renewable integration. Not exclusively grid interconnection but relevant themes included."
+      },
+      "applicationRoute": [
+        { "step": "Apply via EDF Pulse Awards portal", "detail": "edf.fr/en/pulse/edf-pulse-awards" },
+        { "step": "Submit innovation pitch", "detail": "Evaluated on innovation impact and scalability" },
+        { "step": "Selection process", "detail": "50+ startups selected annually" },
+        { "step": "Strategic partnership or equity investment", "detail": "Access to 180M customers across 10 countries" }
+      ]
     },
     {
       "label": "Bpifrance France 2030 Deep-Tech",
       "hint": "€300M/yr, AI & ClimaTech focus",
-      "text": "<span class='section-label'>What it does</span>Bpifrance (French development bank) administers France 2030 Deep-Tech fund: €300M/yr targeting AI, quantum, biotech, and climate innovation. Grants and equity financing available. Two-tier support: early-stage (€200K-€500K) and scale-up (€5M+).<span class='section-label'>Requirements</span>French company registration (SARL/SAS, €500 + 2-3 weeks). Alternatively, partnership with French company acceptable.<div class='links-row'><a class='link-box' href='https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-des-pionniers-de-lintelligence-artificielle' target='_blank'>Bpifrance AI Pioneers</a></div>"
+      "text": "<span class='section-label'>What it does</span>Bpifrance (French development bank) administers France 2030 Deep-Tech fund: €300M/yr targeting AI, quantum, biotech, and climate innovation. Grants and equity financing available. Two-tier support: early-stage (€200K-€500K) and scale-up (€5M+).<span class='section-label'>Requirements</span>French company registration (SARL/SAS, €500 + 2-3 weeks). Alternatively, partnership with French company acceptable.<div class='links-row'><a class='link-box' href='https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-des-pionniers-de-lintelligence-artificielle' target='_blank'>Bpifrance AI Pioneers</a></div>",
+      "budget": "€300M/yr Deep-Tech fund",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires French company (SARL/SAS, €500 + 2-3 weeks) or partnership with French company."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "AI and ClimaTech are explicitly named priorities. Two-tier support: early-stage €200K-€500K and scale-up €5M+."
+      },
+      "applicationRoute": [
+        { "step": "Register French SARL or SAS", "detail": "€500 registration + 2-3 weeks — or identify French partner" },
+        { "step": "Apply via Bpifrance AI Pioneers call", "detail": "bpifrance.fr" },
+        { "step": "Bpifrance evaluation", "detail": "Technical and commercial assessment" },
+        { "step": "Grant or equity financing", "detail": "Early-stage €200K-€500K or scale-up €5M+" }
+      ]
     },
     {
       "label": "CRE Regulatory Sandbox",
       "hint": "No funding — regulatory cover for AI pilots",
-      "text": "<span class='section-label'>What it does</span>French energy regulator (CRE) operates regulatory sandbox for AI-assisted grid operations testing. Provides comfort letters and derogations. Identical to UK Ofgem sandbox in principle. Open to international companies with French partner.<div class='links-row'><a class='link-box' href='https://www.demarches-simplifiees.fr/commencer/dispositif-d-experimentation-reglementaire' target='_blank'>CRE Regulatory Sandbox</a></div>"
+      "text": "<span class='section-label'>What it does</span>French energy regulator (CRE) operates regulatory sandbox for AI-assisted grid operations testing. Provides comfort letters and derogations. Identical to UK Ofgem sandbox in principle. Open to international companies with French partner.<div class='links-row'><a class='link-box' href='https://www.demarches-simplifiees.fr/commencer/dispositif-d-experimentation-reglementaire' target='_blank'>CRE Regulatory Sandbox</a></div>",
+      "budget": "No direct funding — regulatory cover",
+      "eligibility": {
+        "status": "partial",
+        "text": "Open to international companies with French partner. Provides comfort letters and derogations for AI pilots."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Enables testing AI-assisted grid operations within regulated French energy market. Critical for demonstrating compliance in European context."
+      },
+      "applicationRoute": [
+        { "step": "Identify French utility partner", "detail": "RTE, EDF, or regional DSO" },
+        { "step": "Submit sandbox application to CRE", "detail": "demarches-simplifiees.fr" },
+        { "step": "CRE assessment", "detail": "6-8 weeks for initial evaluation" },
+        { "step": "Regulatory cover granted", "detail": "Comfort letters and derogations for 12-24 month pilot" }
+      ]
     },
     {
       "label": "ADEME Energy Transition Funding",
       "hint": "€400M+ annually for innovation",
-      "text": "<span class='section-label'>What it does</span>French Environment & Energy Management Agency. €400M+ annual budget for energy transitions, including grid modernisation, distributed generation, and smart systems. Grants (50-80% coverage) and low-interest loans available.<div class='links-row'><a class='link-box' href='https://www.ademe.fr/en/our-missions/funding/' target='_blank'>ADEME Funding</a></div>"
+      "text": "<span class='section-label'>What it does</span>French Environment & Energy Management Agency. €400M+ annual budget for energy transitions, including grid modernisation, distributed generation, and smart systems. Grants (50-80% coverage) and low-interest loans available.<div class='links-row'><a class='link-box' href='https://www.ademe.fr/en/our-missions/funding/' target='_blank'>ADEME Funding</a></div>",
+      "budget": "€400M+ annually (50-80% coverage)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires French entity or significant French presence. Grants and low-interest loans available."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Broad energy transition funding including grid modernisation. Not specifically targeted at interconnection but grid digitalisation eligible."
+      },
+      "applicationRoute": [
+        { "step": "Establish French presence", "detail": "Entity or partnership with French organisation" },
+        { "step": "Submit via ADEME funding portal", "detail": "ademe.fr" },
+        { "step": "Technical review", "detail": "Evaluated against energy transition priorities" },
+        { "step": "Grant or loan agreement", "detail": "50-80% of eligible costs covered" }
+      ]
     },
     {
       "label": "France 2030 (Broader Programme)",
       "hint": "€300B sovereign investment plan",
-      "text": "<span class='section-label'>What it does</span>France 2030 is the national strategic investment plan (€300B total). Energy transition is a core pillar with €50B+ allocated. Administered through Bpifrance, local government, and sector agencies.<div class='links-row'><a class='link-box' href='https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030' target='_blank'>France 2030 Overview</a></div>"
+      "text": "<span class='section-label'>What it does</span>France 2030 is the national strategic investment plan (€300B total). Energy transition is a core pillar with €50B+ allocated. Administered through Bpifrance, local government, and sector agencies.<div class='links-row'><a class='link-box' href='https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030' target='_blank'>France 2030 Overview</a></div>",
+      "budget": "€50B+ energy pillar (€300B total plan)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires French entity or partnership. Administered through Bpifrance and sector agencies."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Massive national investment plan with energy transition as core pillar. Access primarily through Bpifrance-specific calls rather than directly."
+      },
+      "applicationRoute": [
+        { "step": "Identify relevant Bpifrance call", "detail": "France 2030 administered through multiple agencies" },
+        { "step": "Apply via designated portal", "detail": "Bpifrance or sector agency depending on call" },
+        { "step": "Multi-stage evaluation", "detail": "Technical, commercial, and strategic assessment" },
+        { "step": "Funded project", "detail": "Scale varies by specific programme within France 2030" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Contact RTE Innovation team", "detail": "Direct pitch for grid automation. 100+ active partnerships.", "tag": "Week 1", "tagColor": "#002395" },
-    { "step": "Apply to EDF Pulse Awards", "detail": "Strategic partnership or equity investment. €50M portfolio.", "tag": "Week 1-2", "tagColor": "#002395" },
-    { "step": "Engage CRE Regulatory Sandbox", "detail": "Propose AI pilot with French utility partner.", "tag": "Week 2-3", "tagColor": "#2E75B6" },
-    { "step": "Register French company (optional)", "detail": "SARL/SAS registration: €500 + 2-3 weeks. Unlocks Bpifrance funding.", "tag": "Month 1", "tagColor": "#2E75B6" },
-    { "step": "Apply to Bpifrance France 2030", "detail": "€300M/yr fund. AI & Deep-Tech focus.", "tag": "Month 1-2", "tagColor": "#D4A017" },
-    { "step": "Apply to ADEME Energy Grants", "detail": "€400M+ annual funding for transition projects.", "tag": "Month 2-3", "tagColor": "#D4A017" }
   ],
   "faq": [
     { "q": "Can we approach RTE without a French entity?", "a": "Yes. RTE operates 100+ startup partnerships with no nationality restriction on direct vendor partnerships. However, you'll need French representation/contact for engagement." },

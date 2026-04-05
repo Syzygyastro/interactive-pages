@@ -19,52 +19,163 @@
     {
       "label": "TenneT DE — Open Innovation",
       "hint": "Rolling challenges, AI/congestion focus",
-      "text": "<span class='section-label'>What it does</span>TenneT operates 25,000+ km of high-voltage grid and runs rolling open innovation challenges. Recent themes include congestion forecasting (N-SIDE partnership), sustainability, and digital control. First programme (2023) received 57+ entries. €5.5B invested in H1 2025.<span class='section-label'>Why it matters</span>No nationality restriction. Submit a 2-minute pitch video. TenneT operates in both Germany and the Netherlands.<div class='links-row'><a class='link-box' href='https://magazines.tennet.eu/open-innovation-programme/' target='_blank'>TenneT Open Innovation</a></div>"
+      "text": "<span class='section-label'>What it does</span>TenneT operates 25,000+ km of high-voltage grid and runs rolling open innovation challenges. Recent themes include congestion forecasting (N-SIDE partnership), sustainability, and digital control. First programme (2023) received 57+ entries. €5.5B invested in H1 2025.<span class='section-label'>Why it matters</span>No nationality restriction. Submit a 2-minute pitch video. TenneT operates in both Germany and the Netherlands.<div class='links-row'><a class='link-box' href='https://magazines.tennet.eu/open-innovation-programme/' target='_blank'>TenneT Open Innovation</a></div>",
+      "budget": "Not disclosed (partnership model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "No nationality restriction. Submit 2-minute pitch video. TenneT operates in Germany and Netherlands."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Rolling challenges include congestion forecasting and digital control — directly relevant to AI grid queue management."
+      },
+      "applicationRoute": [
+        { "step": "Submit 2-minute pitch video via TenneT portal", "detail": "No entity or nationality requirements" },
+        { "step": "TenneT screens and shortlists", "detail": "Evaluated against current innovation themes" },
+        { "step": "Deep-dive session with TenneT engineers", "detail": "Technical assessment of solution fit" },
+        { "step": "Pilot partnership if selected", "detail": "Access to TenneT grid data and test environment" }
+      ]
     },
     {
       "label": "Amprion Innovation Programme",
       "hint": "11,000km grid, western Germany",
-      "text": "<span class='section-label'>What it does</span>Amprion operates 11,000km of extra-high-voltage grid across western Germany. Innovation focuses on weather & grid resilience, predictive maintenance, and cross-border data pooling. Investment plan doubled to €27.5B through 2028.<span class='section-label'>Why it matters</span>Part of TSO Innovation Alliance. Open to direct partnership approaches. No nationality restriction.<div class='links-row'><a class='link-box' href='https://www.amprion.net/' target='_blank'>Amprion</a></div>"
+      "text": "<span class='section-label'>What it does</span>Amprion operates 11,000km of extra-high-voltage grid across western Germany. Innovation focuses on weather & grid resilience, predictive maintenance, and cross-border data pooling. Investment plan doubled to €27.5B through 2028.<span class='section-label'>Why it matters</span>Part of TSO Innovation Alliance. Open to direct partnership approaches. No nationality restriction.<div class='links-row'><a class='link-box' href='https://www.amprion.net/' target='_blank'>Amprion</a></div>",
+      "budget": "Not disclosed (partnership model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open to direct partnership approaches. No nationality restriction. Part of TSO Innovation Alliance."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Focus on weather resilience and predictive maintenance. Grid congestion is adjacent but not primary innovation theme."
+      },
+      "applicationRoute": [
+        { "step": "Direct approach to Amprion innovation team", "detail": "Via amprion.net or TSO Alliance platform" },
+        { "step": "Present solution aligned to Amprion priorities", "detail": "Weather resilience, predictive maintenance, cross-border data" },
+        { "step": "Partnership negotiation", "detail": "Commercial terms for pilot or technology integration" }
+      ]
     },
     {
       "label": "50Hertz/Elia — Open Innovation Challenge",
       "hint": "€50K PoC funding per winner",
-      "text": "<span class='section-label'>What it does</span>50Hertz (Elia Group, serving 18M people in eastern Germany) runs annual Open Innovation Challenges with €50,000 cash per winner for PoC development plus expert support. 2025 edition theme: 'People First'. Part of Elia Group's €12B+ CAPEX plan to 2030.<span class='section-label'>How to apply</span>Submit a 3-slide deck. Process: shortlisting → deep-dive → final pitch. Open worldwide.<div class='links-row'><a class='link-box' href='https://innovation.eliagroup.eu/en/how-we-work/open-innovation-challenges/' target='_blank'>Elia Innovation Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>50Hertz (Elia Group, serving 18M people in eastern Germany) runs annual Open Innovation Challenges with €50,000 cash per winner for PoC development plus expert support. 2025 edition theme: 'People First'. Part of Elia Group's €12B+ CAPEX plan to 2030.<span class='section-label'>How to apply</span>Submit a 3-slide deck. Process: shortlisting → deep-dive → final pitch. Open worldwide.<div class='links-row'><a class='link-box' href='https://innovation.eliagroup.eu/en/how-we-work/open-innovation-challenges/' target='_blank'>Elia Innovation Portal</a></div>",
+      "budget": "€50K per winner for PoC",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open worldwide. Submit 3-slide deck. Part of Elia Group's €12B+ CAPEX plan to 2030."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Annual challenges with cash PoC funding. Grid automation and congestion management align with Elia Group's digitalisation priorities."
+      },
+      "applicationRoute": [
+        { "step": "Submit 3-slide deck when challenge opens", "detail": "Watch innovation.eliagroup.eu for annual cycle" },
+        { "step": "Shortlisting by Elia innovation team", "detail": "Evaluated on innovation, impact, and feasibility" },
+        { "step": "Deep-dive session", "detail": "Technical and commercial assessment" },
+        { "step": "Final pitch to jury", "detail": "€50K cash plus expert support if selected" }
+      ]
     },
     {
       "label": "TransnetBW — TransNEXT Innovation",
       "hint": "Innoloft platform, NEXTLab facility",
-      "text": "<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://transnetbw.innoloft.com/' target='_blank'>TransnetBW Innoloft</a></div>"
+      "text": "<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://transnetbw.innoloft.com/' target='_blank'>TransnetBW Innoloft</a></div>",
+      "budget": "Not disclosed (partnership model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "No nationality restriction stated. Innoloft platform with Design Thinking methodology."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Innovation campus in Wendlingen. Grid automation is relevant but TransnetBW is smallest of 4 German TSOs."
+      },
+      "applicationRoute": [
+        { "step": "Register on TransnetBW Innoloft platform", "detail": "Create profile and browse challenges" },
+        { "step": "Submit innovation proposal", "detail": "Aligned to TransNEXT programme themes" },
+        { "step": "NEXTLab engagement", "detail": "Design Thinking workshops at Wendlingen campus" }
+      ]
     },
     {
       "label": "TSO Innovation Alliance (Joint 8-TSO)",
       "hint": "8 European TSOs, open to all",
-      "text": "<span class='section-label'>What it does</span>Joint alliance of 8 European TSOs: TenneT, Amprion, 50Hertz/Elia, Terna (Italy), RTE (France), Swissgrid, Red Eléctrica (Spain). Launched July 2025. First programme: Weather & Grid Resilience.<span class='section-label'>How to apply</span>Submit 2-minute pitch video. No geographic restriction.<div class='links-row'><a class='link-box' href='https://challenges.rethinking-energy.org/spaces/34/pages/65' target='_blank'>TSO Alliance Platform</a></div>"
+      "text": "<span class='section-label'>What it does</span>Joint alliance of 8 European TSOs: TenneT, Amprion, 50Hertz/Elia, Terna (Italy), RTE (France), Swissgrid, Red Eléctrica (Spain). Launched July 2025. First programme: Weather & Grid Resilience.<span class='section-label'>How to apply</span>Submit 2-minute pitch video. No geographic restriction.<div class='links-row'><a class='link-box' href='https://challenges.rethinking-energy.org/spaces/34/pages/65' target='_blank'>TSO Alliance Platform</a></div>",
+      "budget": "Not disclosed (8-TSO consortium)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "No geographic restriction. Submit 2-minute pitch video. Access to 8 major European TSOs simultaneously."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Joint alliance of 8 European TSOs provides unprecedented multi-market access. First programme: Weather and Grid Resilience."
+      },
+      "applicationRoute": [
+        { "step": "Register on challenges.rethinking-energy.org", "detail": "Create account on alliance platform" },
+        { "step": "Submit 2-minute pitch video", "detail": "Respond to current programme theme" },
+        { "step": "Multi-TSO screening", "detail": "Evaluated by representatives from all 8 TSOs" },
+        { "step": "Pilot with one or more TSOs", "detail": "Access to multiple European grid operators simultaneously" }
+      ]
     },
     {
       "label": "Westnetz/E.ON — Grid Innovation",
       "hint": "Germany's largest DSO",
-      "text": "<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.gridx.ai/success-stories/westnetz-smart-grid-control-dso' target='_blank'>gridX/Westnetz Case Study</a></div>"
+      "text": "<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.gridx.ai/success-stories/westnetz-smart-grid-control-dso' target='_blank'>gridX/Westnetz Case Study</a></div>",
+      "budget": "Commercial terms (vendor partnership)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Commercial vendor partnerships with no nationality restriction. Germany's largest DSO."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Grid Operation 4.0 deploys smart metering and AI congestion resolution. XENON platform for automated grid management directly relevant."
+      },
+      "applicationRoute": [
+        { "step": "Contact Westnetz/E.ON innovation team", "detail": "Direct commercial approach" },
+        { "step": "Present grid automation solution", "detail": "Focus on congestion resolution and smart grid control" },
+        { "step": "Commercial partnership negotiation", "detail": "Vendor terms for technology deployment" },
+        { "step": "Deployment across Westnetz grid", "detail": "Germany's largest DSO with 100+ local grids" }
+      ]
     },
     {
       "label": "BMWK 8th Energy Research Programme",
       "hint": "~€1.3B annually, continuous via easy-Online",
-      "text": "<span class='section-label'>What it does</span>Germany's federal energy research programme provides ~€1.3B annually across missions: Electricity Transition 2045, Grid Stability & Security, Energy System Digitalization. 50-100% of eligible costs covered.<span class='section-label'>Requirements</span>Requires German entity. Apply continuously via easy-Online portal.<div class='links-row'><a class='link-box' href='https://foerderportal.bund.de/easyonline/nutzungsbedingungen.jsf' target='_blank'>easy-Online Portal</a><a class='link-box' href='https://www.energieforschung.de/en/home' target='_blank'>Energy Research Programme</a></div>"
+      "text": "<span class='section-label'>What it does</span>Germany's federal energy research programme provides ~€1.3B annually across missions: Electricity Transition 2045, Grid Stability & Security, Energy System Digitalization. 50-100% of eligible costs covered.<span class='section-label'>Requirements</span>Requires German entity. Apply continuously via easy-Online portal.<div class='links-row'><a class='link-box' href='https://foerderportal.bund.de/easyonline/nutzungsbedingungen.jsf' target='_blank'>easy-Online Portal</a><a class='link-box' href='https://www.energieforschung.de/en/home' target='_blank'>Energy Research Programme</a></div>",
+      "budget": "~€1.3B annually (50-100% costs covered)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires German entity. GmbH setup costs ~€25K minimum capital. Continuous applications via easy-Online portal."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Dedicated missions for Electricity Transition 2045, Grid Stability, and Energy System Digitalization — all directly relevant."
+      },
+      "applicationRoute": [
+        { "step": "Establish German GmbH", "detail": "~€25K minimum share capital plus registration" },
+        { "step": "Register on easy-Online portal", "detail": "foerderportal.bund.de" },
+        { "step": "Submit project proposal", "detail": "Continuous applications accepted — no fixed rounds" },
+        { "step": "Federal review and approval", "detail": "50-100% of eligible costs covered" },
+        { "step": "Multi-year funded research project", "detail": "Aligned to 8th Energy Research Programme missions" }
+      ]
     },
     {
       "label": "KfW Deutschlandfonds",
       "hint": "Up to €50M per investment, €30B total",
-      "text": "<span class='section-label'>What it does</span>Launched December 2025. €1B for startups/scale-ups by 2030 (up to €50M per investment). €30B total public capital for economic transformation. Focus: DeepTech, AI, Climate Tech.<div class='links-row'><a class='link-box' href='https://www.kfw-capital.de/Investment-focus/Deutschlandfonds/' target='_blank'>KfW Deutschlandfonds</a><a class='link-box' href='https://www.bundesnetzagentur.de/ki' target='_blank'>BNetzA AI Service Desk</a><a class='link-box' href='https://www.fraunhofer.co.uk/' target='_blank'>Fraunhofer UK Research</a><a class='link-box' href='https://www.iee.fraunhofer.de/en/contact.html' target='_blank'>Fraunhofer IEE</a></div>"
+      "text": "<span class='section-label'>What it does</span>Launched December 2025. €1B for startups/scale-ups by 2030 (up to €50M per investment). €30B total public capital for economic transformation. Focus: DeepTech, AI, Climate Tech.<div class='links-row'><a class='link-box' href='https://www.kfw-capital.de/Investment-focus/Deutschlandfonds/' target='_blank'>KfW Deutschlandfonds</a><a class='link-box' href='https://www.bundesnetzagentur.de/ki' target='_blank'>BNetzA AI Service Desk</a><a class='link-box' href='https://www.fraunhofer.co.uk/' target='_blank'>Fraunhofer UK Research</a><a class='link-box' href='https://www.iee.fraunhofer.de/en/contact.html' target='_blank'>Fraunhofer IEE</a></div>",
+      "budget": "Up to €50M per investment",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires German entity. Focus on DeepTech, AI, and Climate Tech. Equity investment model."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "€1B for startups and scale-ups by 2030. AI and Climate Tech are explicitly named priorities. Up to €50M per investment."
+      },
+      "applicationRoute": [
+        { "step": "Establish German GmbH if not already", "detail": "Required for KfW investment" },
+        { "step": "Prepare investment pitch", "detail": "DeepTech and Climate Tech positioning" },
+        { "step": "Apply via KfW Capital portal", "detail": "kfw-capital.de" },
+        { "step": "KfW due diligence", "detail": "Technical and financial assessment" },
+        { "step": "Equity investment if approved", "detail": "Up to €50M per investment from €30B total programme" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Submit to TenneT Open Innovation", "detail": "2-min pitch video. No entity required. Fastest entry", "tag": "Week 1", "tagColor": "#1B7A3D" },
-    { "step": "Register on TSO Alliance platform", "detail": "Create account on challenges.rethinking-energy.org", "tag": "Week 1", "tagColor": "#1B7A3D" },
-    { "step": "Apply to 50Hertz/Elia OIC", "detail": "3-slide deck for €50K PoC. Watch for 2026 cycle", "tag": "When open", "tagColor": "#2E75B6" },
-    { "step": "Contact Westnetz/E.ON innovation team", "detail": "Commercial partnership — no entity needed", "tag": "Month 1-2", "tagColor": "#2E75B6" },
-    { "step": "Engage Fraunhofer IEE/ISE", "detail": "UK office in Glasgow. Contract R&D for AI grid research", "tag": "Month 2-3", "tagColor": "#D4A017" },
-    { "step": "Establish GmbH if pursuing federal funds", "detail": "~€25K minimum capital. Unlocks BMWK and KfW", "tag": "Month 3-6", "tagColor": "#C0392B" },
-    { "step": "Apply to BMWK via easy-Online", "detail": "~€1.3B/yr programme, continuous applications", "tag": "After GmbH", "tagColor": "#C0392B" }
   ],
   "faq": [
     { "q": "Can I apply to individual TSO programmes without a German entity?", "a": "Yes. TenneT, Amprion, 50Hertz/Elia, and TransnetBW all accept international startups. The TSO Innovation Alliance is explicitly open worldwide. No German entity needed for these." },

@@ -4,7 +4,7 @@
   "full": "South Africa — Eskom, DMRE & Climate Finance",
   "vendor": "Eskom · DMRE · CIF · GET.invest",
   "type": "Energy Transition",
-  "icon": "🇿🇦",
+  "icon": "\ud83c\uddff\ud83c\udde6",
   "accentColor": "#007749",
   "accentBg": "#E6F5F0",
   "badgeColor": "#E6F5F0",
@@ -19,48 +19,130 @@
     {
       "label": "Eskom Renewable Energy Offtake Programme (REOP)",
       "hint": "First-ever commercial partnerships",
-      "text": "<span class='section-label'>What it does</span>Eskom launched its first renewable energy offtake programme (2024) enabling independent power producers (IPPs) and technology partners to develop grid solutions. Opens pathway for tech partnerships in grid management, forecasting, and demand response.<span class='section-label'>Why it matters</span>Eskom (state utility, 95% grid penetration) is seeking technology partnerships to address supply constraints. Direct access to national grid operator.<div class='links-row'><a class='link-box' href='https://www.eskom.co.za/eskom-launches-first-ever-renewable-energy-offtake-programme/' target='_blank'>Eskom RE Programme</a></div>"
+      "text": "<span class='section-label'>What it does</span>Eskom launched its first renewable energy offtake programme (2024) enabling independent power producers (IPPs) and technology partners to develop grid solutions. Opens pathway for tech partnerships in grid management, forecasting, and demand response.<span class='section-label'>Why it matters</span>Eskom (state utility, 95% grid penetration) is seeking technology partnerships to address supply constraints. Direct access to national grid operator.<div class='links-row'><a class='link-box' href='https://www.eskom.co.za/eskom-launches-first-ever-renewable-energy-offtake-programme/' target='_blank'>Eskom RE Programme</a></div>",
+      "budget": "Programme-level (partnership model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "First-ever technology partnerships opened via renewable energy offtake programme 2024. No local entity required for initial engagement."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Eskom controls 95% of South African grid and faces chronic supply shortages. Grid automation demand response and forecasting are urgent operational priorities."
+      },
+      "applicationRoute": [
+        { "step": "Contact Eskom Technology Partnerships", "detail": "Pitch grid automation and demand response solution" },
+        { "step": "Present REOP-aligned solution", "detail": "Focus on supply optimisation and renewable integration" },
+        { "step": "Technical evaluation", "detail": "Assessment against Eskom operational priorities" },
+        { "step": "Partnership agreement", "detail": "Technology deployment supporting grid stability" }
+      ]
     },
     {
       "label": "DMRE REIPPPP (Renewable Energy IPP Procurement)",
       "hint": "$10B+ fund, mega auctions",
-      "text": "<span class='section-label'>What it does</span>Department of Mineral Resources & Energy manages Renewable Energy Independent Power Producer Procurement Programme. Six mega-auctions (2011-2024) totalling $10B+ invested. Round 7 ongoing. Implicit demand for AI-driven queue management and integration tools.<span class='section-label'>Why it matters</span>Largest renewable energy procurement programme in Africa. Technology partners support IPPs through EPC and operational optimization phases.<div class='links-row'><a class='link-box' href='https://www.dmre.gov.za/energy-resources/reippp-programme' target='_blank'>DMRE REIPPPP</a></div>"
+      "text": "<span class='section-label'>What it does</span>Department of Mineral Resources & Energy manages Renewable Energy Independent Power Producer Procurement Programme. Six mega-auctions (2011-2024) totalling $10B+ invested. Round 7 ongoing. Implicit demand for AI-driven queue management and integration tools.<span class='section-label'>Why it matters</span>Largest renewable energy procurement programme in Africa. Technology partners support IPPs through EPC and operational optimization phases.<div class='links-row'><a class='link-box' href='https://www.dmre.gov.za/energy-resources/reippp-programme' target='_blank'>DMRE REIPPPP</a></div>",
+      "budget": "$10B+ programme (Round 7 ongoing)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Technology partners support IPPs through EPC and operational phases. Indirect participation \u2014 requires partnership with participating IPP or EPC contractor."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Largest renewable procurement programme in Africa. Technology partners support IPPs but funding flows through project developers not directly to tech startups."
+      },
+      "applicationRoute": [
+        { "step": "Identify participating IPP or EPC contractor", "detail": "Round 7 auction participants" },
+        { "step": "Present grid integration technology", "detail": "AI for queue management and operational optimisation" },
+        { "step": "Partnership with IPP", "detail": "Technology vendor role within REIPPPP project" },
+        { "step": "Indirect funding through project financing", "detail": "Technology costs embedded in project budget" }
+      ]
     },
     {
       "label": "Climate Investment Fund (CIF)",
       "hint": "$600M+ concessional climate finance",
-      "text": "<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ deployed in South Africa) for climate and energy transition projects. Grants and loans (1-2% interest) for renewable infrastructure, energy efficiency, and grid modernisation. Explicit support for energy access and grid resilience.<span class='section-label'>How to apply</span>Works through regional development banks (AfDB, World Bank). Technology partners can be financed indirectly through project financing.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF</a></div>"
+      "text": "<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ deployed in South Africa) for climate and energy transition projects. Grants and loans (1-2% interest) for renewable infrastructure, energy efficiency, and grid modernisation. Explicit support for energy access and grid resilience.<span class='section-label'>How to apply</span>Works through regional development banks (AfDB, World Bank). Technology partners can be financed indirectly through project financing.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF</a></div>",
+      "budget": "$600M+ deployed in South Africa (1-2% interest)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Works through AfDB and World Bank. Technology partners financed indirectly through project financing structures."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Concessional climate finance for infrastructure projects. Technology startups access indirectly via utility or developer partnerships not as direct applicants."
+      },
+      "applicationRoute": [
+        { "step": "Identify CIF-funded project in South Africa", "detail": "Via AfDB or World Bank project pipelines" },
+        { "step": "Partner with project developer or utility", "detail": "Technology vendor role within funded project" },
+        { "step": "Indirect financing", "detail": "Technology costs covered through project budget" },
+        { "step": "Deployment within CIF-funded infrastructure", "detail": "Grid modernisation and renewable integration projects" }
+      ]
     },
     {
       "label": "EEP Africa (Energy & Environment Partnership)",
-      "hint": "€55M+ fund, 13 African countries",
-      "text": "<span class='section-label'>What it does</span>EU-African partnership providing grants (€50K-€500K) for energy projects across 13 African countries including South Africa. Explicit support for renewable integration, grid modernisation, and digitalization. Non-dilutive grants; 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>"
+      "hint": "\u20ac55M+ fund, 13 African countries",
+      "text": "<span class='section-label'>What it does</span>EU-African partnership providing grants (\u20ac50K-\u20ac500K) for energy projects across 13 African countries including South Africa. Explicit support for renewable integration, grid modernisation, and digitalization. Non-dilutive grants; 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>",
+      "budget": "\u20ac50K\u2013\u20ac500K grants",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Non-dilutive grants for energy projects across 13 African countries including South Africa. 6-month decision cycle. Open to international applicants."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "EU-African energy partnership with broad focus on renewable integration and grid modernisation. Not grid-interconnection-specific but digitalisation is eligible."
+      },
+      "applicationRoute": [
+        { "step": "Submit application via EEP Africa portal", "detail": "eepafrica.org" },
+        { "step": "Project proposal", "detail": "Focus on grid modernisation or renewable integration in South Africa" },
+        { "step": "EEP assessment", "detail": "6-month decision cycle" },
+        { "step": "Grant agreement", "detail": "\u20ac50K-\u20ac500K non-dilutive funding" }
+      ]
     },
     {
       "label": "Catalyst Fund",
       "hint": "$100M+ VC for African climate tech",
-      "text": "<span class='section-label'>What it does</span>Pan-African venture capital fund ($100M+ AUM) investing in climate-tech startups across Africa. Explicit focus on energy access, renewable integration, and grid modernisation. Equity investments (typically $100K-$2M). No entity required for pitching.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a></div>"
+      "text": "<span class='section-label'>What it does</span>Pan-African venture capital fund ($100M+ AUM) investing in climate-tech startups across Africa. Explicit focus on energy access, renewable integration, and grid modernisation. Equity investments (typically $100K-$2M). No entity required for pitching.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a></div>",
+      "budget": "$100M+ AUM (\u20ac100K\u2013\u20ac2M per deal)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "No entity required for pitching. Pan-African VC with explicit focus on energy access and climate tech."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "General climate-tech VC not specifically grid interconnection. Useful for African market entry and growth capital but not targeted at queue management tools."
+      },
+      "applicationRoute": [
+        { "step": "Submit pitch to Catalyst Fund", "detail": "thecatalystfund.com" },
+        { "step": "Initial screening", "detail": "Evaluated on climate impact and scalability" },
+        { "step": "Due diligence", "detail": "Technical and financial assessment" },
+        { "step": "Equity investment", "detail": "\u20ac100K\u2013\u20ac2M typical cheque size" }
+      ]
     },
     {
       "label": "JET-IP (Just Energy Transition Investment Partnership)",
       "hint": "$8B climate finance mobilisation",
-      "text": "<span class='section-label'>What it does</span>G7 commitment to South Africa for Just Energy Transition. $8B concessional finance to accelerate renewable deployment and grid infrastructure. Administered through World Bank, AfDB. Technology partnerships eligible for project financing.<div class='links-row'><a class='link-box' href='https://www.climatecommission.org.za/south-africas-jet-ip' target='_blank'>South Africa JET-IP</a></div>"
+      "text": "<span class='section-label'>What it does</span>G7 commitment to South Africa for Just Energy Transition. $8B concessional finance to accelerate renewable deployment and grid infrastructure. Administered through World Bank, AfDB. Technology partnerships eligible for project financing.<div class='links-row'><a class='link-box' href='https://www.climatecommission.org.za/south-africas-jet-ip' target='_blank'>South Africa JET-IP</a></div>",
+      "budget": "$8B climate finance mobilisation",
+      "eligibility": {
+        "status": "partial",
+        "text": "Administered through World Bank and AfDB. Technology partners participate indirectly via project financing. Not direct startup funding."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Massive G7 commitment but flows through development banks and government channels. Technology startups access via utility partnerships not as direct recipients."
+      },
+      "applicationRoute": [
+        { "step": "Identify JET-IP funded projects", "detail": "Via World Bank or AfDB pipelines" },
+        { "step": "Partner with South African utility or developer", "detail": "Technology vendor role" },
+        { "step": "Indirect project financing", "detail": "Technology costs embedded in funded project" },
+        { "step": "Deployment supporting energy transition", "detail": "Grid infrastructure and renewable integration" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Contact Eskom Technology Partnerships", "detail": "Pitch grid automation/demand response solution. REOP pathway.", "tag": "Week 1", "tagColor": "#007749" },
-    { "step": "Apply to Catalyst Fund", "detail": "$100M+ VC. €100K-€2M typical cheques. No entity needed.", "tag": "Week 1-2", "tagColor": "#007749" },
-    { "step": "Explore EEP Africa grants", "detail": "€50K-€500K non-dilutive. 6-month cycle. South Africa eligible.", "tag": "Week 2-3", "tagColor": "#2E75B6" },
-    { "step": "Connect with DMRE for REIPPPP support", "detail": "$10B+ fund. Ongoing Round 7 auction. Technology partnerships available.", "tag": "Month 1", "tagColor": "#2E75B6" },
-    { "step": "Apply to CIF concessional finance", "detail": "$600M+ fund. Loans at 1-2% interest via development banks.", "tag": "Month 1-2", "tagColor": "#D4A017" },
-    { "step": "Explore JET-IP project opportunities", "detail": "$8B climate finance. World Bank/AfDB intermediation.", "tag": "Month 2-3", "tagColor": "#D4A017" }
   ],
   "faq": [
     { "q": "What is South Africa's energy crisis and how does it drive grid tech demand?", "a": "Eskom faces chronic supply shortages and load shedding (rolling blackouts). Demand-side response, grid optimisation, and renewable integration are urgent priorities. This creates immediate market demand for AI-driven forecasting and congestion management." },
     { "q": "Can international startups pitch to Eskom directly?", "a": "Yes. Eskom launched its first renewable energy offtake programme (2024) explicitly opening technology partnerships. No local entity required for initial engagement." },
     { "q": "What is JET-IP and who can access it?", "a": "Just Energy Transition Investment Partnership: $8B G7 commitment for South African energy transition. Administered through World Bank and AfDB. Technology partners can participate indirectly through project financing." },
-    { "q": "How much does Catalyst Fund typically invest?", "a": "€100K-€2M typical cheques. Equity-only investment model. No local entity required to pitch." },
+    { "q": "How much does Catalyst Fund typically invest?", "a": "\u20ac100K-\u20ac2M typical cheques. Equity-only investment model. No local entity required to pitch." },
     { "q": "What is REIPPPP and how does it create tech opportunities?", "a": "DMRE's Renewable Energy Independent Power Producer Procurement Programme: $10B+ invested across six mega-auctions. Technology partners support IPPs through EPC, operations, and grid integration phases." }
   ],
-  "note": "South Africa's energy crisis creates urgent demand for grid automation. Eskom's REOP programme (first-ever) opens technology partnerships directly. Catalyst Fund ($100M+ VC) and EEP Africa (€55M+ grants) provide accessible capital. No local entity required for pitching."
+  "note": "South Africa's energy crisis creates urgent demand for grid automation. Eskom's REOP programme (first-ever) opens technology partnerships directly. Catalyst Fund ($100M+ VC) and EEP Africa (\u20ac55M+ grants) provide accessible capital. No local entity required for pitching."
 }

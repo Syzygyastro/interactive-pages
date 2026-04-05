@@ -19,36 +19,104 @@
     {
       "label": "TenneT NL Congestion Management",
       "hint": "Demand-side response, take-and-feed",
-      "text": "<span class='section-label'>What it does</span>TenneT operates 12,000+ MW interconnection queue in the Netherlands. Launched 'take-and-feed' service (2024) that actively manages grid congestion through real-time flexibility dispatch. Commercial partnerships with tech providers — no nationality restriction.<span class='section-label'>Why it matters</span>Direct route to procure capacity reduction solutions. TenneT has explicit AI integration roadmap.<div class='links-row'><a class='link-box' href='https://www.tennet.eu/nl-en/markets/dutch-market/congestion-management-take-and-feed' target='_blank'>TenneT Take-and-Feed</a></div>"
+      "text": "<span class='section-label'>What it does</span>TenneT operates 12,000+ MW interconnection queue in the Netherlands. Launched 'take-and-feed' service (2024) that actively manages grid congestion through real-time flexibility dispatch. Commercial partnerships with tech providers — no nationality restriction.<span class='section-label'>Why it matters</span>Direct route to procure capacity reduction solutions. TenneT has explicit AI integration roadmap.<div class='links-row'><a class='link-box' href='https://www.tennet.eu/nl-en/markets/dutch-market/congestion-management-take-and-feed' target='_blank'>TenneT Take-and-Feed</a></div>",
+      "budget": "Commercial terms (procurement model)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Commercial partnerships with tech providers — no nationality restriction. TenneT has explicit AI integration roadmap."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "TenneT operates 12,000+ MW interconnection queue. Take-and-feed service directly procures congestion management solutions — exact fit for AI queue management."
+      },
+      "applicationRoute": [
+        { "step": "Contact TenneT NL commercial team", "detail": "Direct partnership approach for congestion solutions" },
+        { "step": "Present AI congestion management solution", "detail": "Frame around take-and-feed service and queue reduction" },
+        { "step": "Technical evaluation by TenneT", "detail": "Assessment against current congestion challenges" },
+        { "step": "Commercial agreement", "detail": "Procurement-style engagement for technology deployment" }
+      ]
     },
     {
       "label": "RVO MOOI (Modernisation of Electricity Supply)",
       "hint": "€90M+ fund, 3-year projects",
-      "text": "<span class='section-label'>What it does</span>Part of RVO's €350M innovation portfolio. MOOI specifically targets electricity grid modernisation including congestion management, predictive analytics, and AI integration. Grants up to €3M per project. €90M+ annually allocated.<span class='section-label'>How to apply</span>Requires Dutch partner entity. Annual calls with 6-8 week decision cycle.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/mooi/elektriciteit' target='_blank'>RVO MOOI Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>Part of RVO's €350M innovation portfolio. MOOI specifically targets electricity grid modernisation including congestion management, predictive analytics, and AI integration. Grants up to €3M per project. €90M+ annually allocated.<span class='section-label'>How to apply</span>Requires Dutch partner entity. Annual calls with 6-8 week decision cycle.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/mooi/elektriciteit' target='_blank'>RVO MOOI Portal</a></div>",
+      "budget": "Up to €3M per project (€90M+ annually)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires Dutch partner entity in consortium. Annual calls with 6-8 week decision cycle."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Specifically targets electricity grid modernisation including congestion management, predictive analytics, and AI integration."
+      },
+      "applicationRoute": [
+        { "step": "Identify Dutch consortium partner", "detail": "University, utility, or research institute" },
+        { "step": "Form consortium and develop proposal", "detail": "UK startup as technology partner" },
+        { "step": "Submit during annual call", "detail": "Via rvo.nl portal" },
+        { "step": "RVO assessment", "detail": "6-8 week decision cycle" },
+        { "step": "3-year funded project", "detail": "Up to €3M for grid modernisation research" }
+      ]
     },
     {
       "label": "LV-NExT (Low Voltage Network Exploration & Experimentation Toolkit)",
       "hint": "DSO-led smart metering rollout",
-      "text": "<span class='section-label'>What it does</span>Consortium programme (2023-2027) deploying smart metering & AI forecasting across Dutch low-voltage networks. Open to technology partnerships. Focus: demand forecasting, congestion prediction, and automated response.<div class='links-row'><a class='link-box' href='https://lvnext.nl/' target='_blank'>LV-NExT Platform</a></div>"
+      "text": "<span class='section-label'>What it does</span>Consortium programme (2023-2027) deploying smart metering & AI forecasting across Dutch low-voltage networks. Open to technology partnerships. Focus: demand forecasting, congestion prediction, and automated response.<div class='links-row'><a class='link-box' href='https://lvnext.nl/' target='_blank'>LV-NExT Platform</a></div>",
+      "budget": "Consortium-funded (2023-2027)",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Open to technology partnerships. No entity requirement for partnership participation."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Deploying smart metering and AI forecasting across Dutch low-voltage networks. Demand forecasting and congestion prediction directly relevant."
+      },
+      "applicationRoute": [
+        { "step": "Register on LV-NExT platform", "detail": "lvnext.nl" },
+        { "step": "Express interest in technology partnership", "detail": "Aligned to demand forecasting or congestion prediction" },
+        { "step": "Technical assessment by consortium", "detail": "Evaluation of solution fit for LV network challenges" },
+        { "step": "Integration into consortium programme", "detail": "Access to DSO test beds and smart metering data" }
+      ]
     },
     {
       "label": "RVO Flex-e (Flexibility Innovation)",
       "hint": "€70M+ fund for demand response",
-      "text": "<span class='section-label'>What it does</span>€70M+ dedicated to flexibility and demand response innovation. Smaller projects (€100K-€500K) with rolling applications. Direct DSO partnerships. Explicit support for AI load forecasting and automated curtailment.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/flex-e' target='_blank'>Flex-e Fund</a></div>"
+      "text": "<span class='section-label'>What it does</span>€70M+ dedicated to flexibility and demand response innovation. Smaller projects (€100K-€500K) with rolling applications. Direct DSO partnerships. Explicit support for AI load forecasting and automated curtailment.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/flex-e' target='_blank'>Flex-e Fund</a></div>",
+      "budget": "€100K–€500K per project (€70M+ fund)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Requires Dutch partner or entity. Rolling applications with fast decision cycle."
+      },
+      "relevance": {
+        "level": "high",
+        "text": "Dedicated to flexibility and demand response innovation. Explicit support for AI load forecasting and automated curtailment."
+      },
+      "applicationRoute": [
+        { "step": "Identify Dutch partner if needed", "detail": "DSO or energy company" },
+        { "step": "Submit rolling application via RVO", "detail": "rvo.nl/subsidies-financiering/flex-e" },
+        { "step": "RVO fast-track assessment", "detail": "6-8 week decision cycle" },
+        { "step": "Project begins if approved", "detail": "€100K-€500K for flexibility innovation" }
+      ]
     },
     {
       "label": "RVO DEI+ (Energy & Climate Innovation)",
       "hint": "€80M+ for system-level projects",
-      "text": "<span class='section-label'>What it does</span>Broader energy innovation fund (€80M+). Supports grid digitalisation, system integration, and cross-sector energy projects. Consortia-based, larger scale.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/dei/energie-en-klimaatinnovaties' target='_blank'>DEI+ Portal</a></div>"
+      "text": "<span class='section-label'>What it does</span>Broader energy innovation fund (€80M+). Supports grid digitalisation, system integration, and cross-sector energy projects. Consortia-based, larger scale.<div class='links-row'><a class='link-box' href='https://www.rvo.nl/subsidies-financiering/dei/energie-en-klimaatinnovaties' target='_blank'>DEI+ Portal</a></div>",
+      "budget": "€80M+ fund (system-level projects)",
+      "eligibility": {
+        "status": "partial",
+        "text": "Consortia-based — requires Dutch lead partner. Larger scale than Flex-e."
+      },
+      "relevance": {
+        "level": "medium",
+        "text": "Broader energy innovation fund covering grid digitalisation and system integration. Less targeted than MOOI or Flex-e for specific grid interconnection."
+      },
+      "applicationRoute": [
+        { "step": "Form consortium with Dutch lead partner", "detail": "University, utility, or research institute" },
+        { "step": "Develop system-level project proposal", "detail": "Cross-sector energy integration focus" },
+        { "step": "Submit via RVO DEI+ portal", "detail": "rvo.nl" },
+        { "step": "Multi-partner funded project", "detail": "Larger scale, longer duration than Flex-e" }
+      ]
     }
-  ],
-  "workflow": [
-    { "step": "Contact TenneT Commercial team", "detail": "Direct partnership approach for congestion solutions. No entity required.", "tag": "Week 1", "tagColor": "#FF6600" },
-    { "step": "Join LV-NExT ecosystem", "detail": "Register on LV-NExT platform. Access DSO test beds.", "tag": "Week 1-2", "tagColor": "#FF6600" },
-    { "step": "Engage Alliander innovation team", "detail": "XENON platform partnership. Scaling from 100+ to 2,500 smart contracts in 2025.", "tag": "Week 2-3", "tagColor": "#2E75B6" },
-    { "step": "Apply to RVO Flex-e", "detail": "€70M fund, rolling applications. Fast decision cycle (6-8 weeks).", "tag": "Month 1", "tagColor": "#2E75B6" },
-    { "step": "Apply to RVO MOOI", "detail": "€90M fund. Requires Dutch partner entity.", "tag": "Month 1-2", "tagColor": "#D4A017" },
-    { "step": "Explore DEI+ for larger consortia", "detail": "€80M fund. System-level projects with multiple partners.", "tag": "Month 2-3", "tagColor": "#D4A017" }
   ],
   "faq": [
     { "q": "Can we access RVO funding without a Dutch entity?", "a": "You need at least one Dutch partner in the consortium. RVO-funded projects must be led by or include a Dutch organisation. Alliander and TenneT partnerships don't require this." },
