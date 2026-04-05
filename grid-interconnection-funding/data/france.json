@@ -1,0 +1,66 @@
+{
+  "id": "france",
+  "name": "France",
+  "full": "France — RTE, EDF & Bpifrance Deep-Tech Funding",
+  "vendor": "RTE · EDF · Bpifrance · CRE",
+  "type": "Western Europe",
+  "icon": "🇫🇷",
+  "accentColor": "#002395",
+  "accentBg": "#E8ECFF",
+  "badgeColor": "#E8ECFF",
+  "badgeText": "#001B75",
+  "badge": "€5B+ Energy R&D",
+  "badge2": "6 Programmes",
+  "tags": ["europe"],
+  "sub": "France invests €5B+ annually in energy R&D through Bpifrance. RTE and EDF partner with 100+ startups. CRE regulatory sandbox accelerates AI pilots. France 2030 supports €300M/yr in climate-tech deeptech.",
+  "cardTags": ["RTE", "EDF", "Bpifrance", "CRE", "France 2030"],
+  "desc": "RTE operates 100,000+ km of transmission with explicit AI/forecasting roadmap. EDF Pulse Awards fund 50+ startups/yr across innovation areas. Bpifrance manages €300M/yr France 2030 Deep-Tech fund explicitly targeting AI, DeepTech, and ClimaTech. CRE (energy regulator) runs regulatory sandbox for AI pilots. ADEME provides €400M+ annually for energy transitions.",
+  "studies": [
+    {
+      "label": "RTE Innovation & Partnerships",
+      "hint": "€5.5B annual investment, 100+ startups",
+      "text": "<span class='section-label'>What it does</span>RTE operates 100,000+ km French transmission grid. Runs open innovation programme with 100+ active startup partnerships. Explicit focus on forecasting, grid automation, and congestion management. €5.5B annual capex with AI integration mandate. Direct vendor partnerships, no nationality restriction.<span class='section-label'>Why it matters</span>Largest single European grid operator by capex. AI for congestion forecasting is named priority.<div class='links-row'><a class='link-box' href='https://www.rte-france.com/en/uninterrupted-flow-current/innovating-preparation-tomorrow-grid' target='_blank'>RTE Innovation</a></div>"
+    },
+    {
+      "label": "EDF Pulse Awards",
+      "hint": "€50M+ portfolio, strategic partnerships",
+      "text": "<span class='section-label'>What it does</span>EDF's international startup programme funding 50+ startups annually. €50M+ investment portfolio. Explicit support for grid modernisation, AI, and renewable integration. Equity and partnership options.<span class='section-label'>Why it matters</span>Access to Europe's largest utility (180M customers across 10 countries).<div class='links-row'><a class='link-box' href='https://www.edf.fr/en/pulse/edf-pulse-awards' target='_blank'>EDF Pulse Awards</a></div>"
+    },
+    {
+      "label": "Bpifrance France 2030 Deep-Tech",
+      "hint": "€300M/yr, AI & ClimaTech focus",
+      "text": "<span class='section-label'>What it does</span>Bpifrance (French development bank) administers France 2030 Deep-Tech fund: €300M/yr targeting AI, quantum, biotech, and climate innovation. Grants and equity financing available. Two-tier support: early-stage (€200K-€500K) and scale-up (€5M+).<span class='section-label'>Requirements</span>French company registration (SARL/SAS, €500 + 2-3 weeks). Alternatively, partnership with French company acceptable.<div class='links-row'><a class='link-box' href='https://www.bpifrance.fr/nos-appels-a-projets-concours/appel-a-projets-des-pionniers-de-lintelligence-artificielle' target='_blank'>Bpifrance AI Pioneers</a></div>"
+    },
+    {
+      "label": "CRE Regulatory Sandbox",
+      "hint": "No funding — regulatory cover for AI pilots",
+      "text": "<span class='section-label'>What it does</span>French energy regulator (CRE) operates regulatory sandbox for AI-assisted grid operations testing. Provides comfort letters and derogations. Identical to UK Ofgem sandbox in principle. Open to international companies with French partner.<div class='links-row'><a class='link-box' href='https://www.demarches-simplifiees.fr/commencer/dispositif-d-experimentation-reglementaire' target='_blank'>CRE Regulatory Sandbox</a></div>"
+    },
+    {
+      "label": "ADEME Energy Transition Funding",
+      "hint": "€400M+ annually for innovation",
+      "text": "<span class='section-label'>What it does</span>French Environment & Energy Management Agency. €400M+ annual budget for energy transitions, including grid modernisation, distributed generation, and smart systems. Grants (50-80% coverage) and low-interest loans available.<div class='links-row'><a class='link-box' href='https://www.ademe.fr/en/our-missions/funding/' target='_blank'>ADEME Funding</a></div>"
+    },
+    {
+      "label": "France 2030 (Broader Programme)",
+      "hint": "€300B sovereign investment plan",
+      "text": "<span class='section-label'>What it does</span>France 2030 is the national strategic investment plan (€300B total). Energy transition is a core pillar with €50B+ allocated. Administered through Bpifrance, local government, and sector agencies.<div class='links-row'><a class='link-box' href='https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030' target='_blank'>France 2030 Overview</a></div>"
+    }
+  ],
+  "workflow": [
+    { "step": "Contact RTE Innovation team", "detail": "Direct pitch for grid automation. 100+ active partnerships.", "tag": "Week 1", "tagColor": "#002395" },
+    { "step": "Apply to EDF Pulse Awards", "detail": "Strategic partnership or equity investment. €50M portfolio.", "tag": "Week 1-2", "tagColor": "#002395" },
+    { "step": "Engage CRE Regulatory Sandbox", "detail": "Propose AI pilot with French utility partner.", "tag": "Week 2-3", "tagColor": "#2E75B6" },
+    { "step": "Register French company (optional)", "detail": "SARL/SAS registration: €500 + 2-3 weeks. Unlocks Bpifrance funding.", "tag": "Month 1", "tagColor": "#2E75B6" },
+    { "step": "Apply to Bpifrance France 2030", "detail": "€300M/yr fund. AI & Deep-Tech focus.", "tag": "Month 1-2", "tagColor": "#D4A017" },
+    { "step": "Apply to ADEME Energy Grants", "detail": "€400M+ annual funding for transition projects.", "tag": "Month 2-3", "tagColor": "#D4A017" }
+  ],
+  "faq": [
+    { "q": "Can we approach RTE without a French entity?", "a": "Yes. RTE operates 100+ startup partnerships with no nationality restriction on direct vendor partnerships. However, you'll need French representation/contact for engagement." },
+    { "q": "How different is France 2030 from standard Bpifrance grants?", "a": "France 2030 is the broader €300B national plan; Bpifrance administers the implementation. For startups, apply to Bpifrance's specific France 2030 Deep-Tech fund (€300M/yr)." },
+    { "q": "What's the CRE regulatory sandbox approval timeline?", "a": "6-8 weeks for initial assessment. Once approved, pilots can run 12-24 months with regulatory cover and derogation letters." },
+    { "q": "How much capital does it cost to register a French SARL?", "a": "€500 registration cost + 2-3 weeks. Minimum capital: €1 (symbolic). Much simpler than German GmbH or Spanish setup." },
+    { "q": "Does Bpifrance require French incorporation?", "a": "No — you can partner with a French company and apply as a consortium, or register a French entity. Both routes are acceptable." }
+  ],
+  "note": "France offers €5B+ in energy R&D funding with the lowest company registration barrier in Europe (€500 SARL). RTE + EDF partnerships don't require local entity. Bpifrance France 2030 (€300M/yr) unlocks massive Deep-Tech funding."
+}

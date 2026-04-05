@@ -1,0 +1,67 @@
+{
+  "id": "usa",
+  "name": "United States",
+  "full": "United States — DOE, FERC & RTO/ISO Innovation",
+  "vendor": "DOE · ARPA-E · SBIR · RTOs/ISOs",
+  "type": "Largest Market",
+  "icon": "🇺🇸",
+  "accentColor": "#B22234",
+  "accentBg": "#FDE8EA",
+  "badgeColor": "#FDE8EA",
+  "badgeText": "#8B1A28",
+  "badge": "$62B+ Federal",
+  "badge2": "6 Programmes",
+  "tags": ["americas"],
+  "sub": "The US has the largest grid modernisation budget globally, with $62B+ in federal funding through BIL and IRA. FERC Order 2023 creates urgent demand for interconnection automation.",
+  "cardTags": ["DOE Grid", "ARPA-E", "SBIR", "FERC 2023", "IRA/BIL"],
+  "desc": "Federal funding through DOE's Grid Deployment Office ($20.5B), ARPA-E ($420M/yr), and SBIR ($4B+ across agencies) provides massive scale. FERC Order 2023 mandates cluster study reforms creating market demand for AI queue management. RTOs/ISOs like PJM, MISO, CAISO, and ERCOT are actively seeking technology partners. A US subsidiary ($1.5-3K) unlocks all federal programmes.",
+  "studies": [
+    {
+      "label": "DOE Grid Resilience & Innovation Partnerships (GRIP)",
+      "hint": "$10.5B for grid modernisation",
+      "text": "<span class='section-label'>What it does</span>GRIP is the largest single grid modernisation programme in US history, funded by the Bipartisan Infrastructure Law. $10.5B across three tracks: Grid Resilience Grants, Smart Grid Grants, and Grid Innovation Program. In October 2024, $4.2B was awarded to 46 projects across 47 states.<span class='section-label'>Why it matters</span>Smart Grid Grants specifically fund AI-powered grid management, predictive analytics, and automation. Requires a US-based entity.<div class='links-row'><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program' target='_blank'>DOE GRIP Portal</a><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program-projects' target='_blank'>GRIP Projects</a></div>"
+    },
+    {
+      "label": "ARPA-E (Advanced Research Projects Agency - Energy)",
+      "hint": "$420M annual, transformative projects",
+      "text": "<span class='section-label'>What it does</span>ARPA-E funds high-risk, high-reward energy technology R&D. Annual budget ~$420M (FY2024-25). Relevant programmes include PERFORM (grid reliability analytics) and open topic calls. Awards typically $1M-$10M over 2-3 years. ~3% success rate.<span class='section-label'>Why it matters</span>Enormous prestige and credibility. AI-powered grid automation fits their transformative mandate. Requires a US entity.<div class='links-row'><a class='link-box' href='https://arpa-e-foa.energy.gov/' target='_blank'>ARPA-E eXCHANGE</a><a class='link-box' href='https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/perform' target='_blank'>PERFORM Programme</a></div>"
+    },
+    {
+      "label": "SBIR/STTR (Small Business Innovation Research)",
+      "hint": "$4B+ across agencies, Phase I/II/III",
+      "text": "<span class='section-label'>What it does</span>Largest small business R&D programme in the world. DOE SBIR alone awards ~$300M+ annually. Phase I: up to ~$275K for 6-12 months. Phase II: up to ~$1.1M for 2 years. Phase III: commercialisation (no limit).<span class='section-label'>Why it matters</span>Non-dilutive funding with clear concept-to-commercialisation pathway. DOE topics frequently include grid modernisation and AI for energy.<div class='links-row'><a class='link-box' href='https://www.sbir.gov/apply' target='_blank'>SBIR Apply</a><a class='link-box' href='https://www.energy.gov/cmei/ammto/small-business-innovation-research-sbir-and-small-business-technology-transfer-sttr' target='_blank'>DOE SBIR/STTR</a><a class='link-box' href='https://sam.gov/entity-registration' target='_blank'>SAM.gov Registration</a></div>"
+    },
+    {
+      "label": "FERC Order 2023 — Market Demand Driver",
+      "hint": "Regulatory mandate, not funding",
+      "text": "<span class='section-label'>What it does</span>FERC Order 2023 fundamentally reforms US interconnection: mandatory cluster studies, financial readiness requirements, increased deposits, strict timelines. All RTOs/ISOs implementing by 2025-2026. ~2,000 GW interconnection queue backlog.<span class='section-label'>Individual RTO/ISO Interconnection Portals</span><div class='links-row'><a class='link-box' href='https://www.pjm.com/Home/planning/services-requests/interconnection-queues' target='_blank'>PJM Interconnection Queue</a><a class='link-box' href='https://www.misoenergy.org/planning/resource-utilization/generator-interconnection/' target='_blank'>MISO Generator Interconnection</a><a class='link-box' href='https://www.caiso.com/generation-transmission/generation/generator-interconnection' target='_blank'>CAISO Interconnection</a><a class='link-box' href='https://www.spp.org/engineering/generator-interconnection/' target='_blank'>SPP Interconnection</a><a class='link-box' href='https://www.ercot.com/services/rq/integration' target='_blank'>ERCOT Resource Integration</a><a class='link-box' href='https://www.iso-ne.com/system-planning/interconnection-service' target='_blank'>ISO-NE Interconnection</a><a class='link-box' href='https://www.nyiso.com/interconnections' target='_blank'>NYISO Interconnections</a><a class='link-box' href='https://www.ferc.gov/explainer-interconnection-final-rule' target='_blank'>FERC Order 2023 Explainer</a></div>"
+    },
+    {
+      "label": "IRA Section 48C Advanced Energy Manufacturing Tax Credit",
+      "hint": "30% tax credit, $10B allocated",
+      "text": "<span class='section-label'>What it does</span>30% tax credit for investments in facilities manufacturing clean energy equipment. $10B total with $4B reserved for energy communities. Round 2 (Jan 2025): $6B to 140+ projects. Software companies building AI infrastructure for grid management may qualify.<div class='links-row'><a class='link-box' href='https://www.energy.gov/infrastructure/qualifying-advanced-energy-project-credit-48c-program' target='_blank'>DOE 48C Portal</a><a class='link-box' href='https://www.irs.gov/credits-deductions/businesses/advanced-energy-project-credit' target='_blank'>IRS 48C Credit</a></div>"
+    },
+    {
+      "label": "National Labs Partnership (NREL, PNNL, ANL)",
+      "hint": "CRADAs and licensing",
+      "text": "<span class='section-label'>What it does</span>DOE National Laboratories offer CRADAs, licensing, and Work-for-Others agreements. Labs have deep expertise in power systems modelling and AI for grid operations. International companies can participate though US companies have statutory preference.<div class='links-row'><a class='link-box' href='https://www.nrel.gov/workingwithus' target='_blank'>NREL Working With Us</a><a class='link-box' href='https://www.pnnl.gov/industry-partnerships' target='_blank'>PNNL Partnerships</a></div>"
+    }
+  ],
+  "workflow": [
+    { "step": "Establish US subsidiary", "detail": "Delaware LLC or C-Corp, $1.5-3K setup. Required for most federal programmes", "tag": "Month 1", "tagColor": "#B22234" },
+    { "step": "Register on SAM.gov and sbir.gov", "detail": "System for Award Management registration required for all federal funding", "tag": "Month 1", "tagColor": "#B22234" },
+    { "step": "Apply to DOE SBIR Phase I", "detail": "Up to ~$275K feasibility study. Watch for grid modernisation topics", "tag": "Month 2", "tagColor": "#2E75B6" },
+    { "step": "Engage RTO/ISO innovation teams", "detail": "Contact PJM, MISO, CAISO directly with FERC Order 2023 solution pitch", "tag": "Month 2-3", "tagColor": "#2E75B6" },
+    { "step": "Submit ARPA-E concept paper", "detail": "When relevant FOA opens. High-risk, high-reward framing", "tag": "When open", "tagColor": "#D4A017" },
+    { "step": "Explore National Lab CRADAs", "detail": "Contact NREL or PNNL Technology Transfer Offices", "tag": "Month 3-4", "tagColor": "#D4A017" },
+    { "step": "Apply to GRIP Smart Grid Grants", "detail": "$10.5B programme — partner with US utility", "tag": "When open", "tagColor": "#1B7A3D" }
+  ],
+  "faq": [
+    { "q": "Do I need a US entity to access federal funding?", "a": "Yes, for almost all programmes. SBIR requires a US small business. DOE grants require US-based organisations. A Delaware LLC costs $1.5-3K and takes 1-2 weeks." },
+    { "q": "What does FERC Order 2023 mean for our product?", "a": "It's the single biggest market driver. Mandates cluster studies instead of serial processing, creating massive computational demands. Every RTO/ISO is implementing it and actively seeking automation solutions." },
+    { "q": "How competitive is ARPA-E funding?", "a": "Extremely — roughly 3% success rate. However, the prestige and funding level ($1M-$10M) make it worth pursuing. Frame your application around the step-change in interconnection processing speed that AI enables." },
+    { "q": "Can I partner with a National Lab without a US entity?", "a": "Yes, CRADAs are available to international companies, though US companies have statutory preference. NREL and PNNL both have international partnership experience." },
+    { "q": "Which RTO/ISO should I target first?", "a": "PJM (largest US RTO, massive queue) and MISO (facing worst backlog with multi-year study delays) are the highest-priority targets. Both are actively implementing FERC Order 2023 reforms." }
+  ],
+  "note": "The US represents the largest market opportunity. FERC Order 2023 creates regulatory urgency. A Delaware LLC ($1.5-3K) unlocks access to the entire federal funding ecosystem including $10.5B GRIP and $4B+ SBIR."
+}

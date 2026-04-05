@@ -1,0 +1,61 @@
+{
+  "id": "nigeria",
+  "name": "Nigeria",
+  "full": "Nigeria — TCN, NISO & Startup Acceleration",
+  "vendor": "TCN · NISO · Catalyst Fund · Google Startups",
+  "type": "West Africa Growth",
+  "icon": "🇳🇬",
+  "accentColor": "#007A5E",
+  "accentBg": "#E6F5F0",
+  "badgeColor": "#E6F5F0",
+  "badgeText": "#004D3A",
+  "badge": "Africa's Largest",
+  "badge2": "5 Programmes",
+  "tags": ["africa"],
+  "sub": "Nigeria is Africa's largest electricity market (200M+ population) with $12B+ investment potential. TCN operates 30,000+ km transmission. NISO coordinates generation. Energy Transition Strategy mandates grid modernisation. Google Accelerator and Catalyst Fund support startups.",
+  "cardTags": ["TCN", "NISO", "Energy Transition", "Google Startups", "DRE Fund"],
+  "desc": "Nigeria's energy transition strategy mandates grid modernisation across 30,000+ km transmission (TCN). NISO coordinates 26 GW generation. $12B+ investment to 2030. Google's Africa startup accelerator focuses on Nigeria. Catalyst Fund and local venture firms support climate-tech. Energy Transition Council coordinates $500M+ public + private investment. No local entity required for accelerators; optional for TCN/NISO partnerships.",
+  "studies": [
+    {
+      "label": "Transmission Company of Nigeria (TCN)",
+      "hint": "30,000+ km transmission, modernisation mandate",
+      "text": "<span class='section-label'>What it does</span>TCN operates 30,000+ km of high-voltage transmission across Nigeria. Energy Transition Strategy (2023) mandates grid modernisation with explicit focus on congestion management and real-time operations. Direct technology partnerships available; no nationality restriction.<span class='section-label'>Why it matters</span>Africa's largest electricity market (200M+ population). $12B+ investment to 2030. TCN controls grid access for all generation and distribution.<div class='links-row'><a class='link-box' href='https://tcn.org.ng/' target='_blank'>TCN</a></div>"
+    },
+    {
+      "label": "NISO (Nigerian Electricity System Operator)",
+      "hint": "26 GW capacity coordination",
+      "text": "<span class='section-label'>What it does</span>NISO (spun off from TCN, 2023) coordinates 26 GW total generation capacity. Manages real-time dispatch, grid balance, and renewable integration. Technology partnerships for forecasting, demand-side response, and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.niso.org.ng/' target='_blank'>NISO</a></div>"
+    },
+    {
+      "label": "Nigeria Energy Transition Strategy",
+      "hint": "$500M+ public + private investment",
+      "text": "<span class='section-label'>What it does</span>Government energy transition strategy (2023) mandates 40% renewable electricity by 2030 (vs. 16% today). Coordinates $500M+ public + private investment. Implicit demand for grid automation, forecasting, and renewable integration solutions. Technology partners can be funded indirectly through project financing.<div class='links-row'><a class='link-box' href='https://energytransition.gov.ng/' target='_blank'>Energy Transition Council</a></div>"
+    },
+    {
+      "label": "Google Startups Africa Accelerator",
+      "hint": "€1M+ capital access, Nigeria focus",
+      "text": "<span class='section-label'>What it does</span>Google's dedicated Africa startup accelerator (Nigeria primary focus). Cohort-based programme providing €1M+ capital introductions, mentorship, and market access. Energy and climate tech explicitly supported.<span class='section-label'>How to apply</span>No entity required for initial pitch. Two-month cohorts, 3x per year.<div class='links-row'><a class='link-box' href='https://startup.google.com/programs/accelerator/africa/' target='_blank'>Google Africa Accelerator</a></div>"
+    },
+    {
+      "label": "Catalyst Fund & DRE-Nigeria Fund",
+      "hint": "$100M+ VC for climate tech startups",
+      "text": "<span class='section-label'>What it does</span>Catalyst Fund is pan-African VC ($100M+ AUM) with Nigeria focus. DRE-Nigeria Fund (NSIA partnership, $500M+) funds decentralised renewable energy projects. Both invest in climate-tech and energy startups. Equity model; €100K-€2M typical cheques.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a><a class='link-box' href='https://www.seforall.org/news/nsia-seforall-isa-and-africa50-unveil-us500-million-dre-nigeria-fund' target='_blank'>DRE-Nigeria Fund</a></div>"
+    }
+  ],
+  "workflow": [
+    { "step": "Contact TCN / NISO Partnerships", "detail": "Direct pitch for grid automation solution. No entity required.", "tag": "Week 1", "tagColor": "#007A5E" },
+    { "step": "Apply to Google Africa Accelerator", "detail": "€1M+ capital access. Cohorts 3x per year.", "tag": "Week 1-2", "tagColor": "#007A5E" },
+    { "step": "Pitch to Catalyst Fund", "detail": "$100M+ VC. €100K-€2M typical investments.", "tag": "Week 2-3", "tagColor": "#2E75B6" },
+    { "step": "Connect with Energy Transition Council", "detail": "$500M+ coordination. Project financing pathways.", "tag": "Month 1", "tagColor": "#2E75B6" },
+    { "step": "Explore DRE-Nigeria Fund", "detail": "$500M+ for decentralised renewable energy.", "tag": "Month 1-2", "tagColor": "#D4A017" },
+    { "step": "Engage local VCs and development partners", "detail": "AfDB, World Bank, bilateral donors active in Nigeria.", "tag": "Month 2-3", "tagColor": "#D4A017" }
+  ],
+  "faq": [
+    { "q": "What is Nigeria's energy transition target?", "a": "40% renewable electricity by 2030 (vs. 16% today). $500M+ public + private investment. Africa's largest market (200M+ population) with 26 GW generation capacity." },
+    { "q": "Can we pitch to TCN/NISO without a local entity?", "a": "Yes. TCN and NISO explicitly seek technology partnerships for grid modernisation. No local incorporation required for initial engagement." },
+    { "q": "How large is Google's Africa accelerator programme?", "a": "Cohort-based with €1M+ capital introductions per cohort. Three cohorts per year. Nigeria is the primary focus market." },
+    { "q": "How much does Catalyst Fund invest per company?", "a": "€100K-€2M typical equity cheques. Pan-African focus with Nigeria as priority." },
+    { "q": "What is the DRE-Nigeria Fund?", "a": "$500M+ decentralised renewable energy fund (NSIA partnership). Targets rural electrification and distributed generation projects. Technology partners can participate via project financing." }
+  ],
+  "note": "Nigeria is Africa's largest electricity market (200M+ population, 26 GW generation). TCN/NISO explicitly seek grid modernisation tech. Google Africa Accelerator and Catalyst Fund ($100M+ VC) provide accessible startup capital. No local entity required for pitching."
+}

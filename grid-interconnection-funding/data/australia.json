@@ -1,0 +1,72 @@
+{
+  "id": "australia",
+  "name": "Australia",
+  "full": "Australia — AEMO, ARENA & Network Operator Innovation",
+  "vendor": "AEMO · ARENA · AusNet · Ausgrid",
+  "type": "Developed Market (APAC)",
+  "icon": "🇦🇺",
+  "accentColor": "#002B7F",
+  "accentBg": "#E8ECFF",
+  "badgeColor": "#E8ECFF",
+  "badgeText": "#001B5F",
+  "badge": "11 CRI Reforms",
+  "badge2": "7 Programmes",
+  "tags": ["apac"],
+  "sub": "AEMO's Connections Reform Initiative (11 reforms across 4 areas) creates urgent market demand for queue management. ARENA funds $100M+ clean energy projects. 310+ EnergyLab alumni across 7+ programmes. Network operators actively seek technology partnerships.",
+  "cardTags": ["AEMO", "ARENA", "EnergyLab", "Network Operators", "R&D Tax"],
+  "desc": "AEMO manages the National Electricity Market and has launched 11 reforms across 4 priority areas specifically to address the interconnection queue crisis. ARENA (Australian Renewable Energy Agency) funds $100M+ projects with explicit grid automation focus. EnergyLab has graduated 310+ cleantech startups across 7 programmes. Australia's R&D Tax Incentive provides 43.5% cash rebates on R&D spend. Network operators (AusNet, Ausgrid, Transgrid, Energex) actively seek technology partnerships. No local entity required for accelerators; optional for ARENA/tax credits.",
+  "studies": [
+    {
+      "label": "AEMO Connections Reform Initiative (CRI)",
+      "hint": "11 reforms, 2026+ implementation",
+      "text": "<span class='section-label'>What it does</span>AEMO (Australian Energy Market Operator) manages the NEM and launched 11 reforms across 4 priority areas: Staged generator setup, Improved connection requirements, Enhanced network support, Streamlined processes. Each reform creates specific software/AI automation needs. Direct technology partnerships with AEMO and network operators.<span class='section-label'>Why it matters</span>Regulatory mandate (AEMC) to resolve interconnection backlog. Australia's renewable queue is 2nd largest globally (350+ GW pending).<div class='links-row'><a class='link-box' href='https://www.aemo.com.au/initiatives/major-programs/connections-reform-initiative' target='_blank'>AEMO CRI</a></div>"
+    },
+    {
+      "label": "ARENA (Australian Renewable Energy Agency)",
+      "hint": "$100M+ project funding",
+      "text": "<span class='section-label'>What it does</span>ARENA funds renewable energy projects including grid modernisation, storage, and AI for operations. $100M+ active portfolio. Grants and concessional loans (2-5% interest). Explicit support for interconnection automation, forecasting, and demand-side management.<span class='section-label'>How to apply</span>Australian entity required (easy setup, $200 AUD). Annual funding rounds. 4-6 week decision cycle.<div class='links-row'><a class='link-box' href='https://arena.gov.au/funding/future-made-in-australia-innovation-fund/' target='_blank'>ARENA Funding</a></div>"
+    },
+    {
+      "label": "Australia R&D Tax Incentive",
+      "hint": "43.5% cash rebate on R&D spend",
+      "text": "<span class='section-label'>What it does</span>Australian companies claim 43.5% cash rebate on all R&D expenditure. No size limits. Tech companies building AI/grid software are fully eligible. Annual claims submitted to ATO; rebates received in 1-2 months.<span class='section-label'>Why it matters</span>Non-dilutive funding. Every Australian startup should use this. Can be claimed retroactively for past 2 years.<div class='links-row'><a class='link-box' href='https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/research-and-development-tax-incentive-and-concessions/research-and-development-tax-incentive' target='_blank'>ATO R&D Tax Incentive</a></div>"
+    },
+    {
+      "label": "EnergyLab Accelerator",
+      "hint": "310+ alumni, 7+ programmes",
+      "text": "<span class='section-label'>What it does</span>Australia's leading cleantech accelerator (310+ alumni graduates). Runs 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence). Cohort-based mentorship + capital introductions to utilities and government agencies.<span class='section-label'>Why it matters</span>Direct access to every major Australian network operator (AusNet, Ausgrid, Energex, Transgrid, SA Power Networks). No entity required for application.<div class='links-row'><a class='link-box' href='https://energylab.org.au/' target='_blank'>EnergyLab</a></div>"
+    },
+    {
+      "label": "Network Operator Partnerships (AusNet, Ausgrid, Transgrid)",
+      "hint": "Commercial vendor relationships",
+      "text": "<span class='section-label'>What it does</span>Each network operator independently funds innovation pilots and vendor partnerships. AusNet and Ausgrid explicitly focus on demand management, forecasting, and automation. Transgrid (NSW transmission) has a dedicated innovation budget. Open to technology partnerships, no entity required.<div class='links-row'><a class='link-box' href='https://www.ausnetservices.com.au/projects-and-innovation' target='_blank'>AusNet Services</a><a class='link-box' href='https://www.ausgrid.com.au/About-Us/Future-Grid/Innovation-Portfolio' target='_blank'>Ausgrid Innovation</a><a class='link-box' href='https://www.transgrid.com.au/about-us/network/funding-opportunities-for-demand-management-innovation/' target='_blank'>Transgrid Innovation</a></div>"
+    },
+    {
+      "label": "CRC-P (Cooperative Research Centre Projects)",
+      "hint": "$30M+ fund, university partnerships",
+      "text": "<span class='section-label'>What it does</span>Australian government's Cooperative Research Centre Projects fund collaborative R&D (businesses + universities). $30M+ pool. Grid automation, forecasting, and AI all eligible. Grants up to $1M per project, 3-5 year durations.<div class='links-row'><a class='link-box' href='https://business.gov.au/grants-and-programs/cooperative-research-centres-projects-crcp-grants' target='_blank'>CRC-P Grants</a></div>"
+    },
+    {
+      "label": "CEFC (Clean Energy Finance Corporation)",
+      "hint": "$20B+ concessional finance",
+      "text": "<span class='section-label'>What it does</span>CEFC provides concessional (below-market) finance for clean energy projects. $20B+ deployed. Interest rates 2-4%. Equity and debt instruments available. Grid modernisation and storage projects prioritised.<div class='links-row'><a class='link-box' href='https://www.cefc.com.au/' target='_blank'>CEFC</a></div>"
+    }
+  ],
+  "workflow": [
+    { "step": "Apply to EnergyLab Accelerator", "detail": "310+ alumni network. Direct access to all network operators.", "tag": "Week 1-2", "tagColor": "#002B7F" },
+    { "step": "Contact AEMO Connections Reform team", "detail": "Direct pitch for queue management/automation solution.", "tag": "Week 2-3", "tagColor": "#002B7F" },
+    { "step": "Engage network operators (AusNet, Ausgrid, Transgrid)", "detail": "Commercial partnerships. Innovation budgets available.", "tag": "Month 1", "tagColor": "#2E75B6" },
+    { "step": "Register Australian entity (optional)", "detail": "$200 AUD. Unlocks ARENA, R&D Tax, CRC-P.", "tag": "Month 1", "tagColor": "#2E75B6" },
+    { "step": "Apply to ARENA project funding", "detail": "$100M+ fund. 4-6 week decision cycle.", "tag": "Month 1-2", "tagColor": "#D4A017" },
+    { "step": "Claim R&D Tax Incentive", "detail": "43.5% cash rebate. Retroactive 2 years. Annual submission.", "tag": "Ongoing", "tagColor": "#D4A017" },
+    { "step": "Explore CRC-P university partnerships", "detail": "$30M+ collaborative R&D fund. 3-5 year projects.", "tag": "Month 2-3", "tagColor": "#1B7A3D" }
+  ],
+  "faq": [
+    { "q": "What are AEMO's 11 Connections Reform initiatives?", "a": "Four priority areas: (1) Staged generator setup, (2) Improved connection requirements, (3) Enhanced network support, (4) Streamlined processes. Each reform creates specific software/AI automation needs. Implementation ongoing through 2026+." },
+    { "q": "Do I need an Australian entity for ARENA funding?", "a": "Yes, but registration costs only $200 AUD and takes 1-2 days online. Highly recommend establishing one for ARENA, R&D Tax Incentive access, and network operator partnerships." },
+    { "q": "How does the R&D Tax Incentive work?", "a": "Claim 43.5% cash rebate on all R&D spend. No size limits. Tech companies building AI/grid software are fully eligible. Submit annual claims to ATO; rebates arrive in 1-2 months." },
+    { "q": "Which network operators should I approach first?", "a": "AusNet and Ausgrid have the most active innovation budgets and explicit demand management focus. Transgrid (NSW transmission) also invests in automation. EnergyLab provides introductions to all three." },
+    { "q": "How many startups has EnergyLab graduated?", "a": "310+ alumni across 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence, etc.). Direct alumni network includes all major Australian utilities." }
+  ],
+  "note": "Australia combines regulatory urgency (AEMO 11 reforms), massive funding (ARENA $100M+, CEFC $20B+), and strong accelerators (EnergyLab 310+ alumni). R&D Tax Incentive (43.5% rebate) is non-dilutive and available immediately. Minimal entity setup required."
+}

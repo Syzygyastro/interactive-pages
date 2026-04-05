@@ -1,0 +1,66 @@
+{
+  "id": "india",
+  "name": "India",
+  "full": "India — MNRE, PowerGrid & Smart Grid Innovation",
+  "vendor": "MNRE · Smart Grid · Startup India · Social Alpha",
+  "type": "Emerging Market",
+  "icon": "🇮🇳",
+  "accentColor": "#FF9933",
+  "accentBg": "#FFF7E6",
+  "badgeColor": "#FFF7E6",
+  "badgeText": "#CC6600",
+  "badge": "1.4B People",
+  "badge2": "6 Programmes",
+  "tags": ["apac"],
+  "sub": "India targets 250M smart meters by 2030 and invests $4B+ in grid modernisation. MNRE oversees renewables; Smart Grid drives automation. Startup India offers £10K+ grants. Social Alpha accelerates 50+ cleantech startups/yr.",
+  "cardTags": ["MNRE", "Smart Grid", "Startup India", "World Bank", "ADB"],
+  "desc": "India is deploying 250M smart meters by 2030 and investing $4B+ in grid modernisation under MNRE oversight. The National Smart Grid Mission (NSGM) coordinates grid automation across 13 states. Startup India provides £10K+ grants + incubation. Social Alpha's Techtonic platform accelerates 50+ cleantech startups annually through CEIIC (Climate Emergency Incubator). World Bank and ADB provide concessional finance. No local entity required for Startup India or accelerators; optional for MNRE partnerships.",
+  "studies": [
+    {
+      "label": "MNRE Green Energy Corridors",
+      "hint": "$2B+ fund, transmission backbone",
+      "text": "<span class='section-label'>What it does</span>Ministry of New & Renewable Energy (MNRE) manages green energy corridors — transmission infrastructure to support 280+ GW renewable targets. Dedicated to enabling high renewable penetration. Grid management, forecasting, and congestion automation are core priorities.<span class='section-label'>Why it matters</span>India's renewable expansion creates massive AI/grid automation demand. Direct partnership opportunities with state utilities and independent power producers (IPPs).<div class='links-row'><a class='link-box' href='https://mnre.gov.in/en/green-energy-corridors/' target='_blank'>MNRE Green Energy Corridors</a></div>"
+    },
+    {
+      "label": "Smart Grid Mission India (NSGM)",
+      "hint": "13-state deployment, real-time monitoring",
+      "text": "<span class='section-label'>What it does</span>National Smart Grid Mission (2013-ongoing) deploying advanced metering, SCADA, and AI analytics across 13 states. 250M smart meters target by 2030. Vendor partnerships for forecasting, demand-side management, and automated response.<span class='section-label'>Why it matters</span>Largest smart metering rollout globally. Real-time grid operations data creates opportunities for AI-driven automation.<div class='links-row'><a class='link-box' href='https://www.nsgm.gov.in/' target='_blank'>Smart Grid Mission</a></div>"
+    },
+    {
+      "label": "Startup India Deep Tech Fund",
+      "hint": "£10K-£100K grants + incubation",
+      "text": "<span class='section-label'>What it does</span>Government of India's Startup India programme provides £10K-£100K grants for registered Indian startups. Deep Tech vertical explicitly supports AI, hardware, climate, and energy. Annual recognition ceremony at India Innovation Summit.<span class='section-label'>How to apply</span>Register Indian startup entity (₹100, ~$1.20 fee). Apply via DPIIT portal. No foreigners need apply — but can partner with Indian startup.<div class='links-row'><a class='link-box' href='https://www.startupindia.gov.in/content/sih/en/home-page.html' target='_blank'>Startup India Portal</a></div>"
+    },
+    {
+      "label": "Social Alpha Techtonic & CEIIC",
+      "hint": "50+ startups/yr, $1M+ capital",
+      "text": "<span class='section-label'>What it does</span>Social Alpha is India's leading climate-tech accelerator. Techtonic platform runs quarterly cohorts (50+ startups/yr). CEIIC (Climate Emergency Incubator) provides $100K-$1M+ growth capital. Mentorship from power utilities, grid operators, and venture investors.<span class='section-label'>Why it matters</span>Access to PowerGrid, state utilities, and international climate investors. No Indian entity required.<div class='links-row'><a class='link-box' href='https://www.socialalpha.org/techtonic/' target='_blank'>Social Alpha Techtonic</a><a class='link-box' href='https://ceiic.socialalpha.org/' target='_blank'>CEIIC Platform</a></div>"
+    },
+    {
+      "label": "PowerGrid R&D & Technology Partnerships",
+      "hint": "National grid operator, 170,000+ circuit km",
+      "text": "<span class='section-label'>What it does</span>Central transmission utility (PowerGrid) operates 170,000+ circuit km. Active in AI for load forecasting, dynamic line rating, and outage prediction. Direct partnerships with technology providers — no nationality restriction.<span class='section-label'>Why it matters</span>Controls India's backbone transmission. AI for grid operations directly addresses their stated roadmap priorities.<div class='links-row'><a class='link-box' href='https://www.powergrid.in/en/technology-development-rd' target='_blank'>PowerGrid Technology</a></div>"
+    },
+    {
+      "label": "Grid-India & RTC Partnership Platform",
+      "hint": "Real-time dispatch, forecasting service",
+      "text": "<span class='section-label'>What it does</span>Grid-India (state-run dispatch operator, ~200 GW managed) operates real-time energy market. RTC (Regional Load Dispatch Centres) manage 13 regional grids. Technology partnerships for forecasting and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.grid-india.in/' target='_blank'>Grid-India</a></div>"
+    }
+  ],
+  "workflow": [
+    { "step": "Register on Startup India Portal", "detail": "Annual deep-tech recognition. £10K-£100K grants available.", "tag": "Week 1", "tagColor": "#FF9933" },
+    { "step": "Apply to Social Alpha Techtonic", "detail": "Quarterly cohorts. 50+ startups/yr. $1M+ growth capital access.", "tag": "Week 1-2", "tagColor": "#FF9933" },
+    { "step": "Contact PowerGrid Technology Partnerships", "detail": "Direct pitch for grid forecasting/automation solution.", "tag": "Week 2-3", "tagColor": "#2E75B6" },
+    { "step": "Engage Grid-India RTC platform", "detail": "Real-time dispatch operator partnership opportunity.", "tag": "Month 1", "tagColor": "#2E75B6" },
+    { "step": "Approach MNRE green corridors team", "detail": "250M smart meter deployment + transmission expansion.", "tag": "Month 1-2", "tagColor": "#D4A017" },
+    { "step": "Explore World Bank / ADB financing", "detail": "Concessional rates for India energy projects.", "tag": "Month 2-3", "tagColor": "#D4A017" }
+  ],
+  "faq": [
+    { "q": "Do I need an Indian entity to access funding?", "a": "For Startup India grants, yes — but can be a newly registered entity (₹100 + ~$1.20 fee). For Social Alpha accelerators, NO entity needed. PowerGrid partnerships also don't require formal incorporation." },
+    { "q": "How many smart meters is India targeting?", "a": "250M smart meters by 2030 as part of the Smart Grid Mission. This is the largest smart metering rollout globally and creates massive grid data opportunities." },
+    { "q": "Who manages India's grid real-time operations?", "a": "Grid-India manages the national real-time energy market. 13 Regional Load Dispatch Centres (RTCs) manage state grids. Both are open to technology partnerships for forecasting and congestion management." },
+    { "q": "What's the difference between Social Alpha Techtonic and CEIIC?", "a": "Techtonic is the accelerator programme (quarterly cohorts, mentorship). CEIIC is the climate-focused growth capital fund (£100K-$1M+). Both are administered by Social Alpha but serve different stages." },
+    { "q": "Can non-Indians access World Bank or ADB energy funding?", "a": "Yes, with an Indian partner. World Bank and ADB fund large infrastructure projects in India with concessional rates. International technology providers can participate as vendors." }
+  ],
+  "note": "India is the world's fastest-growing electricity market. 250M smart meters by 2030 + $4B grid modernisation = massive opportunity. No Indian entity needed for Social Alpha or PowerGrid partnerships; optional for Startup India."
+}
