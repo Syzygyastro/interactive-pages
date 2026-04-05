@@ -40,7 +40,7 @@
       "label": "NISO (Nigerian Electricity System Operator)",
       "hint": "26 GW capacity coordination",
       "text": "<span class='section-label'>What it does</span>NISO (spun off from TCN, 2023) coordinates 26 GW total generation capacity. Manages real-time dispatch, grid balance, and renewable integration. Technology partnerships for forecasting, demand-side response, and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.niso.org.ng/' target='_blank'>NISO</a></div>",
-      "budget": "Partnership model (26 GW coordination)",
+      "budget": "Est. $100K–$300K per vendor engagement (new operator, established 2023)",
       "eligibility": {
         "status": "eligible",
         "text": "Open to vendor partnerships. NISO manages real-time dispatch and renewable integration across Nigeria."

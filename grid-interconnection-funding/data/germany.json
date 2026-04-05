@@ -20,7 +20,7 @@
       "label": "TenneT DE — Open Innovation",
       "hint": "Rolling challenges, AI/congestion focus",
       "text": "<span class='section-label'>What it does</span>TenneT operates 25,000+ km of high-voltage grid and runs rolling open innovation challenges. Recent themes include congestion forecasting (N-SIDE partnership), sustainability, and digital control. First programme (2023) received 57+ entries. €5.5B invested in H1 2025.<span class='section-label'>Why it matters</span>No nationality restriction. Submit a 2-minute pitch video. TenneT operates in both Germany and the Netherlands.<div class='links-row'><a class='link-box' href='https://magazines.tennet.eu/open-innovation-programme/' target='_blank'>TenneT Open Innovation</a></div>",
-      "budget": "Not disclosed (partnership model)",
+      "budget": "Est. €100K–€500K per pilot (based on funded PoC partnerships)",
       "eligibility": {
         "status": "eligible",
         "text": "No nationality restriction. Submit 2-minute pitch video. TenneT operates in Germany and Netherlands."
@@ -40,7 +40,7 @@
       "label": "Amprion Innovation Programme",
       "hint": "11,000km grid, western Germany",
       "text": "<span class='section-label'>What it does</span>Amprion operates 11,000km of extra-high-voltage grid across western Germany. Innovation focuses on weather & grid resilience, predictive maintenance, and cross-border data pooling. Investment plan doubled to €27.5B through 2028.<span class='section-label'>Why it matters</span>Part of TSO Innovation Alliance. Open to direct partnership approaches. No nationality restriction.<div class='links-row'><a class='link-box' href='https://www.amprion.net/' target='_blank'>Amprion</a></div>",
-      "budget": "Not disclosed (partnership model)",
+      "budget": "Est. €100K–€300K per pilot (€27.5B total grid investment to 2028)",
       "eligibility": {
         "status": "eligible",
         "text": "Open to direct partnership approaches. No nationality restriction. Part of TSO Innovation Alliance."
@@ -79,7 +79,7 @@
       "label": "TransnetBW — TransNEXT Innovation",
       "hint": "Innoloft platform, NEXTLab facility",
       "text": "<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://transnetbw.innoloft.com/' target='_blank'>TransnetBW Innoloft</a></div>",
-      "budget": "Not disclosed (partnership model)",
+      "budget": "Est. €50K–€200K per pilot (smallest of 4 German TSOs)",
       "eligibility": {
         "status": "eligible",
         "text": "No nationality restriction stated. Innoloft platform with Design Thinking methodology."
@@ -98,7 +98,7 @@
       "label": "TSO Innovation Alliance (Joint 8-TSO)",
       "hint": "8 European TSOs, open to all",
       "text": "<span class='section-label'>What it does</span>Joint alliance of 8 European TSOs: TenneT, Amprion, 50Hertz/Elia, Terna (Italy), RTE (France), Swissgrid, Red Eléctrica (Spain). Launched July 2025. First programme: Weather & Grid Resilience.<span class='section-label'>How to apply</span>Submit 2-minute pitch video. No geographic restriction.<div class='links-row'><a class='link-box' href='https://challenges.rethinking-energy.org/spaces/34/pages/65' target='_blank'>TSO Alliance Platform</a></div>",
-      "budget": "Not disclosed (8-TSO consortium)",
+      "budget": "Est. €100K–€500K per pilot (8-TSO shared programme)",
       "eligibility": {
         "status": "eligible",
         "text": "No geographic restriction. Submit 2-minute pitch video. Access to 8 major European TSOs simultaneously."
@@ -118,7 +118,7 @@
       "label": "Westnetz/E.ON — Grid Innovation",
       "hint": "Germany's largest DSO",
       "text": "<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.gridx.ai/success-stories/westnetz-smart-grid-control-dso' target='_blank'>gridX/Westnetz Case Study</a></div>",
-      "budget": "Commercial terms (vendor partnership)",
+      "budget": "Est. €200K–€1M per deployment (E.ON innovation budget)",
       "eligibility": {
         "status": "eligible",
         "text": "Commercial vendor partnerships with no nationality restriction. Germany's largest DSO."

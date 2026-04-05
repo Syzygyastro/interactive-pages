@@ -20,7 +20,7 @@
       "label": "TenneT NL Congestion Management",
       "hint": "Demand-side response, take-and-feed",
       "text": "<span class='section-label'>What it does</span>TenneT operates 12,000+ MW interconnection queue in the Netherlands. Launched 'take-and-feed' service (2024) that actively manages grid congestion through real-time flexibility dispatch. Commercial partnerships with tech providers — no nationality restriction.<span class='section-label'>Why it matters</span>Direct route to procure capacity reduction solutions. TenneT has explicit AI integration roadmap.<div class='links-row'><a class='link-box' href='https://www.tennet.eu/nl-en/markets/dutch-market/congestion-management-take-and-feed' target='_blank'>TenneT Take-and-Feed</a></div>",
-      "budget": "Commercial terms (procurement model)",
+      "budget": "Est. €200K–€2M per contract (congestion management procurement)",
       "eligibility": {
         "status": "eligible",
         "text": "Commercial partnerships with tech providers — no nationality restriction. TenneT has explicit AI integration roadmap."
@@ -61,7 +61,7 @@
       "label": "LV-NExT (Low Voltage Network Exploration & Experimentation Toolkit)",
       "hint": "DSO-led smart metering rollout",
       "text": "<span class='section-label'>What it does</span>Consortium programme (2023-2027) deploying smart metering & AI forecasting across Dutch low-voltage networks. Open to technology partnerships. Focus: demand forecasting, congestion prediction, and automated response.<div class='links-row'><a class='link-box' href='https://lvnext.nl/' target='_blank'>LV-NExT Platform</a></div>",
-      "budget": "Consortium-funded (2023-2027)",
+      "budget": "Est. €100K–€500K per technology partner (4-year consortium)",
       "eligibility": {
         "status": "eligible",
         "text": "Open to technology partnerships. No entity requirement for partnership participation."

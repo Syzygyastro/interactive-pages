@@ -100,7 +100,7 @@
       "label": "PowerGrid R&D & Technology Partnerships",
       "hint": "National grid operator, 170,000+ circuit km",
       "text": "<span class='section-label'>What it does</span>Central transmission utility (PowerGrid) operates 170,000+ circuit km. Active in AI for load forecasting, dynamic line rating, and outage prediction. Direct partnerships with technology providers — no nationality restriction.<span class='section-label'>Why it matters</span>Controls India's backbone transmission. AI for grid operations directly addresses their stated roadmap priorities.<div class='links-row'><a class='link-box' href='https://www.powergrid.in/en/technology-development-rd' target='_blank'>PowerGrid Technology</a></div>",
-      "budget": "Partnership model (170,000+ circuit km operator)",
+      "budget": "Est. $100K–$500K per partnership (~$50M/yr R&D budget)",
       "eligibility": {
         "status": "eligible",
         "text": "Direct partnerships with technology providers — no nationality restriction. PowerGrid is India's central transmission utility."
@@ -120,7 +120,7 @@
       "label": "Grid-India & RTC Partnership Platform",
       "hint": "Real-time dispatch, forecasting service",
       "text": "<span class='section-label'>What it does</span>Grid-India (state-run dispatch operator, ~200 GW managed) operates real-time energy market. RTC (Regional Load Dispatch Centres) manage 13 regional grids. Technology partnerships for forecasting and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.grid-india.in/' target='_blank'>Grid-India</a></div>",
-      "budget": "Partnership model (dispatch operator)",
+      "budget": "Est. $100K–$300K per vendor engagement",
       "eligibility": {
         "status": "eligible",
         "text": "Open to vendor partnerships. Grid-India manages ~200 GW national real-time energy market."

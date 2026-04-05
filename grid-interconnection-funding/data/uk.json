@@ -62,7 +62,7 @@
       "label": "NESO Innovation Programme",
       "hint": "Big Ideas + NIA/SIF routing",
       "text": "<span class='section-label'>What it does</span>NESO (National Energy System Operator) runs an innovation pipeline built on 6 priorities: Demand-side flexibility, Digitalisation & AI, System security, Whole systems integration, Regional networks, and Long-term resilience. The Big Ideas portal accepts submissions continuously — NESO assesses alignment and routes to appropriate funding (NIA or SIF).<span class='section-label'>Why it matters</span>Grid connection reforms are expected to unlock £40B/yr in clean investment (283 GW generation/storage, 99 GW demand). AI for queue management directly matches Priority 2. NESO has run 61 NIA projects, 15 SIF projects, and 83 Big Ideas.<div class='links-row'><a class='link-box' href='https://www.neso.energy/about/innovation/get-involved-neso-innovation' target='_blank'>NESO — Get Involved</a><a class='link-box' href='https://www.neso.energy/industry-information/connections-reform' target='_blank'>NESO Connections Reform</a></div>",
-      "budget": "Routes to NIA or SIF funding",
+      "budget": "£50K–£6M (routes to NIA £50K-£2M or SIF up to £6M)",
       "eligibility": {
         "status": "eligible",
         "text": "Open submission via Big Ideas portal. NESO assesses alignment and routes to appropriate funding stream."
@@ -124,7 +124,7 @@
       "label": "Energy Networks Innovation Taskforce",
       "hint": "Launching April 2026, 5-year challenges",
       "text": "<span class='section-label'>What it does</span>A joint Ofgem + Innovate UK initiative publishing innovation challenges that remain open for 5 years. Formally launched November 2025, with first challenges due April 2026. Focus: grid connection delays, smart/resilient/affordable net-zero systems. Bold, high-risk ideas explicitly encouraged.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/blog/launching-energy-networks-innovation-taskforce' target='_blank'>Ofgem Taskforce Blog</a><a class='link-box' href='https://iuk-business-connect.org.uk/' target='_blank'>Innovate UK Business Connect</a></div>",
-      "budget": "TBD — launching April 2026",
+      "budget": "Est. £500K–£5M per challenge (based on SIF/NIC precedent)",
       "eligibility": {
         "status": "eligible",
         "text": "Open challenges explicitly encouraging bold high-risk ideas. Joint Ofgem and Innovate UK initiative."

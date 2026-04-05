@@ -123,7 +123,7 @@
       "label": "National Labs Partnership (NREL, PNNL, ANL)",
       "hint": "CRADAs and licensing",
       "text": "<span class='section-label'>What it does</span>DOE National Laboratories offer CRADAs, licensing, and Work-for-Others agreements. Labs have deep expertise in power systems modelling and AI for grid operations. International companies can participate though US companies have statutory preference.<div class='links-row'><a class='link-box' href='https://www.nrel.gov/workingwithus' target='_blank'>NREL Working With Us</a><a class='link-box' href='https://www.pnnl.gov/industry-partnerships' target='_blank'>PNNL Partnerships</a></div>",
-      "budget": "Varies by agreement type",
+      "budget": "Est. $200K–$2M per CRADA (2-3 year agreements typical)",
       "eligibility": {
         "status": "eligible",
         "text": "CRADAs available to international companies, though US companies have statutory preference. No US entity strictly required."

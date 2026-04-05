@@ -80,7 +80,7 @@
       "label": "EnergyLab Accelerator",
       "hint": "310+ alumni, 7+ programmes",
       "text": "<span class='section-label'>What it does</span>Australia's leading cleantech accelerator (310+ alumni graduates). Runs 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence). Cohort-based mentorship + capital introductions to utilities and government agencies.<span class='section-label'>Why it matters</span>Direct access to every major Australian network operator (AusNet, Ausgrid, Energex, Transgrid, SA Power Networks). No entity required for application.<div class='links-row'><a class='link-box' href='https://energylab.org.au/' target='_blank'>EnergyLab</a></div>",
-      "budget": "Accelerator programme (capital introductions)",
+      "budget": "Equity-free accelerator; capital introductions typically A$500K–A$5M",
       "eligibility": {
         "status": "eligible",
         "text": "No entity required for application. 310+ alumni across 7 programmes. International startups welcome."
@@ -100,7 +100,7 @@
       "label": "Network Operator Partnerships (AusNet, Ausgrid, Transgrid)",
       "hint": "Commercial vendor relationships",
       "text": "<span class='section-label'>What it does</span>Each network operator independently funds innovation pilots and vendor partnerships. AusNet and Ausgrid explicitly focus on demand management, forecasting, and automation. Transgrid (NSW transmission) has a dedicated innovation budget. Open to technology partnerships, no entity required.<div class='links-row'><a class='link-box' href='https://www.ausnetservices.com.au/projects-and-innovation' target='_blank'>AusNet Services</a><a class='link-box' href='https://www.ausgrid.com.au/About-Us/Future-Grid/Innovation-Portfolio' target='_blank'>Ausgrid Innovation</a><a class='link-box' href='https://www.transgrid.com.au/about-us/network/funding-opportunities-for-demand-management-innovation/' target='_blank'>Transgrid Innovation</a></div>",
-      "budget": "Innovation budgets (varies by operator)",
+      "budget": "Est. A$200K–A$1M per pilot (AusNet and Ausgrid innovation budgets)",
       "eligibility": {
         "status": "eligible",
         "text": "Open to technology partnerships with no entity requirement. Each operator has independent innovation budget."
