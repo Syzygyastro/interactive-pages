@@ -126,7 +126,15 @@ function renderProgrammeNode(s, idx) {
 
   let body = '';
   if (isOpen) {
+    const budgetEstHtml = s.budgetIsEstimate
+      ? `<div class="estimate-tag">Estimated</div><div class="meta-explain">${s.budgetBasis || ''}</div>`
+      : `<div class="confirmed-tag">Confirmed</div>`;
+
     body = `<div class="prog-body">
+      <div class="prog-top-bar">
+        ${s.programmeType ? `<span class="prog-type-badge">${s.programmeType}</span>` : ''}
+        ${s.deadline ? `<span class="prog-deadline">${s.deadline}</span>` : ''}
+      </div>
       <div class="prog-meta">
         <div class="meta-card">
           <div class="meta-label">Eligibility</div>
@@ -141,6 +149,7 @@ function renderProgrammeNode(s, idx) {
         <div class="meta-card">
           <div class="meta-label">Budget</div>
           <div class="budget-value">${s.budget || 'N/A'}</div>
+          ${budgetEstHtml}
         </div>
       </div>
       <div class="prog-desc">${s.text}</div>
@@ -155,7 +164,7 @@ function renderProgrammeNode(s, idx) {
       <div class="prog-badges">
         <span class="prog-badge ${elBadgeClass}">${elIcon} ${elLabel}</span>
         <span class="prog-badge ${rlBadgeClass}">${rlLabel}</span>
-        ${s.budget ? `<span class="prog-badge badge-budget">${s.budget}</span>` : ''}
+        ${s.programmeType ? `<span class="prog-badge badge-type">${s.programmeType}</span>` : ''}
       </div>
     </div>
     ${body}

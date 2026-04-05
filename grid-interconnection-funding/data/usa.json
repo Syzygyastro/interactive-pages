@@ -20,7 +20,10 @@
       "label": "DOE Grid Resilience & Innovation Partnerships (GRIP)",
       "hint": "$10.5B for grid modernisation",
       "text": "<span class='section-label'>What it does</span>GRIP is the largest single grid modernisation programme in US history, funded by the Bipartisan Infrastructure Law. $10.5B across three tracks: Grid Resilience Grants, Smart Grid Grants, and Grid Innovation Program. In October 2024, $4.2B was awarded to 46 projects across 47 states.<span class='section-label'>Why it matters</span>Smart Grid Grants specifically fund AI-powered grid management, predictive analytics, and automation. Requires a US-based entity.<div class='links-row'><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program' target='_blank'>DOE GRIP Portal</a><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program-projects' target='_blank'>GRIP Projects</a></div>",
-      "budget": "$10.5B programme",
+      "budget": "$10.5B total programme ($1.9B SPARK round 3 open now)",
+      "programmeType": "Federal Grant",
+      "deadline": "SPARK Round 3 (March 2026): Concept papers due 2 April 2026. Full applications due 20 May 2026 at 5pm ET.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires US-based entity. UK startup needs Delaware LLC or C-Corp ($1.5-3K setup, 1-2 weeks). Must partner with US utility."
@@ -42,6 +45,9 @@
       "hint": "$420M annual, transformative projects",
       "text": "<span class='section-label'>What it does</span>ARPA-E funds high-risk, high-reward energy technology R&D. Annual budget ~$420M (FY2024-25). Relevant programmes include PERFORM (grid reliability analytics) and open topic calls. Awards typically $1M-$10M over 2-3 years. ~3% success rate.<span class='section-label'>Why it matters</span>Enormous prestige and credibility. AI-powered grid automation fits their transformative mandate. Requires a US entity.<div class='links-row'><a class='link-box' href='https://arpa-e-foa.energy.gov/' target='_blank'>ARPA-E eXCHANGE</a><a class='link-box' href='https://arpa-e.energy.gov/programs-and-initiatives/view-all-programs/perform' target='_blank'>PERFORM Programme</a></div>",
       "budget": "$1M–$10M per award",
+      "programmeType": "Federal R&D Grant",
+      "deadline": "Up to 4 new focused solicitations planned for FY2026. Monitor arpa-e-foa.energy.gov for FOA releases.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires US entity. ~3% success rate. High-risk high-reward mandate. Must demonstrate transformative potential."
@@ -63,6 +69,9 @@
       "hint": "$4B+ across agencies, Phase I/II/III",
       "text": "<span class='section-label'>What it does</span>Largest small business R&D programme in the world. DOE SBIR alone awards ~$300M+ annually. Phase I: up to ~$275K for 6-12 months. Phase II: up to ~$1.1M for 2 years. Phase III: commercialisation (no limit).<span class='section-label'>Why it matters</span>Non-dilutive funding with clear concept-to-commercialisation pathway. DOE topics frequently include grid modernisation and AI for energy.<div class='links-row'><a class='link-box' href='https://www.sbir.gov/apply' target='_blank'>SBIR Apply</a><a class='link-box' href='https://www.energy.gov/cmei/ammto/small-business-innovation-research-sbir-and-small-business-technology-transfer-sttr' target='_blank'>DOE SBIR/STTR</a><a class='link-box' href='https://sam.gov/entity-registration' target='_blank'>SAM.gov Registration</a></div>",
       "budget": "Phase I ~$275K · Phase II ~$1.1M",
+      "programmeType": "Federal Small Business Grant",
+      "deadline": "Topics released ~July (Release 1) and ~November (Release 2) annually. FY2026 R1 topics were slightly delayed. Monitor sbir.gov.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires US small business entity. DOE SBIR alone awards ~$300M+ annually. Clear pathway from concept to commercialisation."
@@ -84,6 +93,9 @@
       "hint": "Regulatory mandate, not funding",
       "text": "<span class='section-label'>What it does</span>FERC Order 2023 fundamentally reforms US interconnection: mandatory cluster studies, financial readiness requirements, increased deposits, strict timelines. All RTOs/ISOs implementing by 2025-2026. ~2,000 GW interconnection queue backlog.<span class='section-label'>Individual RTO/ISO Interconnection Portals</span><div class='links-row'><a class='link-box' href='https://www.pjm.com/Home/planning/services-requests/interconnection-queues' target='_blank'>PJM Interconnection Queue</a><a class='link-box' href='https://www.misoenergy.org/planning/resource-utilization/generator-interconnection/' target='_blank'>MISO Generator Interconnection</a><a class='link-box' href='https://www.caiso.com/generation-transmission/generation/generator-interconnection' target='_blank'>CAISO Interconnection</a><a class='link-box' href='https://www.spp.org/engineering/generator-interconnection/' target='_blank'>SPP Interconnection</a><a class='link-box' href='https://www.ercot.com/services/rq/integration' target='_blank'>ERCOT Resource Integration</a><a class='link-box' href='https://www.iso-ne.com/system-planning/interconnection-service' target='_blank'>ISO-NE Interconnection</a><a class='link-box' href='https://www.nyiso.com/interconnections' target='_blank'>NYISO Interconnections</a><a class='link-box' href='https://www.ferc.gov/explainer-interconnection-final-rule' target='_blank'>FERC Order 2023 Explainer</a></div>",
       "budget": "No direct funding — regulatory mandate",
+      "programmeType": "Regulatory Mandate",
+      "deadline": "Implementation ongoing across all RTOs/ISOs through 2025-2026. Compliance filings due mid-2024; cluster study windows vary by RTO.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Market demand driver — no application needed. Creates commercial opportunity as RTOs/ISOs seek automation solutions."
@@ -103,7 +115,10 @@
       "label": "IRA Section 48C Advanced Energy Manufacturing Tax Credit",
       "hint": "30% tax credit, $10B allocated",
       "text": "<span class='section-label'>What it does</span>30% tax credit for investments in facilities manufacturing clean energy equipment. $10B total with $4B reserved for energy communities. Round 2 (Jan 2025): $6B to 140+ projects. Software companies building AI infrastructure for grid management may qualify.<div class='links-row'><a class='link-box' href='https://www.energy.gov/infrastructure/qualifying-advanced-energy-project-credit-48c-program' target='_blank'>DOE 48C Portal</a><a class='link-box' href='https://www.irs.gov/credits-deductions/businesses/advanced-energy-project-credit' target='_blank'>IRS 48C Credit</a></div>",
-      "budget": "30% tax credit from $10B pool",
+      "budget": "30% tax credit — $10B fully allocated across Rounds 1-2",
+      "programmeType": "Federal Tax Credit",
+      "deadline": "$10B fully allocated. Round 1 ($4B) awarded March 2024. Round 2 ($6B) awarded late 2024. No Round 3 announced.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires US entity. Software companies building AI infrastructure for grid management may qualify but primary focus is manufacturing."
@@ -124,6 +139,10 @@
       "hint": "CRADAs and licensing",
       "text": "<span class='section-label'>What it does</span>DOE National Laboratories offer CRADAs, licensing, and Work-for-Others agreements. Labs have deep expertise in power systems modelling and AI for grid operations. International companies can participate though US companies have statutory preference.<div class='links-row'><a class='link-box' href='https://www.nrel.gov/workingwithus' target='_blank'>NREL Working With Us</a><a class='link-box' href='https://www.pnnl.gov/industry-partnerships' target='_blank'>PNNL Partnerships</a></div>",
       "budget": "Est. $200K–$2M per CRADA (2-3 year agreements typical)",
+      "programmeType": "Federal Research Partnership",
+      "deadline": "Rolling — CRADAs negotiated on individual basis. Typical timeline: 2-4 months from initial contact to execution.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Based on typical DOE CRADA agreements which range $200K-$2M over 2-3 years. NREL and PNNL published partnership reports show this range for industry collaborations.",
       "eligibility": {
         "status": "eligible",
         "text": "CRADAs available to international companies, though US companies have statutory preference. No US entity strictly required."

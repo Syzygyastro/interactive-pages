@@ -21,6 +21,9 @@
       "hint": "Up to £6M across 3 phases",
       "text": "<span class='section-label'>What it does</span>SIF is Ofgem's flagship innovation programme, replacing the former NIC. It funds projects across three phases: Discovery (up to £150K, ~5 months), Alpha (up to £500K-£1M, ~8-9 months), and Beta (multimillion-pound, up to 5 years). Overall investment target: £450M by 2028. Three application windows per year for all phases.<span class='section-label'>Why it matters</span>SIF is the single largest innovation funding route in UK energy, specifically designed for network-level problems including connection queue management and grid capacity optimisation.<span class='section-label'>How to apply</span>A UK startup typically partners with a DNO (e.g. UKPN, SSEN, NGET) who acts as the licence holder. The DNO submits the SIF application with the startup as the technology delivery partner.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation/technology-and-innovation/innovation/apply-strategic-innovation-fund-sif' target='_blank'>Ofgem SIF Application</a><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/' target='_blank'>Innovate UK Funding Portal</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/ofgem-strategic-innovation-fund/' target='_blank'>IUK Business Connect — SIF</a><a class='link-box' href='https://www.ofgem.gov.uk/strategic-innovation-fund-sif' target='_blank'>SIF Main Page</a></div>",
       "budget": "Up to £6M across 3 phases",
+      "programmeType": "Government Innovation Grant",
+      "deadline": "3 rounds/yr. Cycle 5 Discovery was Jan-Feb 2026. Next windows expected summer and autumn 2026.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "UK startup applies as technology delivery partner with a DNO/TNO licence holder as lead applicant."
@@ -42,6 +45,9 @@
       "hint": "£50K–£2M per project, rolling",
       "text": "<span class='section-label'>What it does</span>Each DNO and TNO holds ring-fenced budgets for smaller, faster innovation projects. NIA requires only a 6-page proposal submitted directly to the network operator's innovation team. Each operator has independent budget and decision authority.<span class='section-label'>Why it matters</span>NIA is the fastest route to a funded pilot in the UK energy sector. There's no central competition — submit directly to any DNO.<span class='section-label'>Individual DNO Innovation Portals</span><div class='links-row'><a class='link-box' href='https://innovation.ukpowernetworks.co.uk/network-innovation-allowance' target='_blank'>UKPN NIA Portal</a><a class='link-box' href='https://www.ssen-transmission.co.uk/about-us/innovation/' target='_blank'>SSEN Transmission Innovation</a><a class='link-box' href='https://ssen-innovation.co.uk/' target='_blank'>SSEN Innovation Hub</a><a class='link-box' href='https://www.nationalgrid.com/electricity-transmission/innovation' target='_blank'>National Grid ET Innovation</a><a class='link-box' href='https://www.nationalgrid.co.uk/innovation' target='_blank'>National Grid ED (WPD) Innovation</a><a class='link-box' href='https://www.northernpowergrid.com/innovation' target='_blank'>Northern Powergrid Innovation</a><a class='link-box' href='https://www.spenergynetworks.co.uk/pages/innovation.aspx' target='_blank'>SP Energy Networks Innovation</a><a class='link-box' href='https://www.enwl.co.uk/innovation/' target='_blank'>Electricity North West Innovation</a><a class='link-box' href='https://smarter.energynetworks.org/' target='_blank'>ENA Smarter Networks Portal</a></div>",
       "budget": "£50K–£2M per project",
+      "programmeType": "Regulated Innovation Allowance",
+      "deadline": "Rolling — continuous submissions. Ofgem confirmed Feb 2026 that NIA registrations continue beyond March 2026 within RIIO-2.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Submit 6-page proposal directly to any DNO innovation team. No central competition. Each DNO has independent budget."
@@ -63,6 +69,9 @@
       "hint": "Big Ideas + NIA/SIF routing",
       "text": "<span class='section-label'>What it does</span>NESO (National Energy System Operator) runs an innovation pipeline built on 6 priorities: Demand-side flexibility, Digitalisation & AI, System security, Whole systems integration, Regional networks, and Long-term resilience. The Big Ideas portal accepts submissions continuously — NESO assesses alignment and routes to appropriate funding (NIA or SIF).<span class='section-label'>Why it matters</span>Grid connection reforms are expected to unlock £40B/yr in clean investment (283 GW generation/storage, 99 GW demand). AI for queue management directly matches Priority 2. NESO has run 61 NIA projects, 15 SIF projects, and 83 Big Ideas.<div class='links-row'><a class='link-box' href='https://www.neso.energy/about/innovation/get-involved-neso-innovation' target='_blank'>NESO — Get Involved</a><a class='link-box' href='https://www.neso.energy/industry-information/connections-reform' target='_blank'>NESO Connections Reform</a></div>",
       "budget": "£50K–£6M (routes to NIA £50K-£2M or SIF up to £6M)",
+      "programmeType": "Innovation Pipeline / Routing",
+      "deadline": "Continuous — Big Ideas portal accepts submissions year-round. NESO responds within 4-6 weeks.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Open submission via Big Ideas portal. NESO assesses alignment and routes to appropriate funding stream."
@@ -83,6 +92,9 @@
       "hint": "Corporate VC, $100M committed",
       "text": "<span class='section-label'>What it does</span>National Grid Partners committed $100M in March 2025 specifically to invest in AI startups advancing energy. This is corporate venture capital — they take equity stakes. NGP has invested $150M+ in 18 AI startups since founding in 2018; 37% of portfolio is now AI-focused.<span class='section-label'>Why it matters</span>NGP explicitly named grid interconnection as 'the biggest challenge facing renewable energy'. Queue management and capacity increase are stated priorities. National Grid operates in both UK and US.<div class='links-row'><a class='link-box' href='https://www.ngpartners.com/' target='_blank'>National Grid Partners</a><a class='link-box' href='https://www.nationalgrid.com/media-centre/press-releases/national-grid-partners-commits-100-million-invest-ai-startups-advancing-future-energy' target='_blank'>$100M Announcement</a></div>",
       "budget": "$100M fund (typical $2M–$15M per deal)",
+      "programmeType": "Corporate Venture Capital",
+      "deadline": "Rolling — ongoing VC deal flow. No fixed application rounds. Targeting ~3 investments/yr over 5 years.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Corporate VC open to UK and US companies. National Grid operates in both markets. Equity investment model."
@@ -104,6 +116,9 @@
       "hint": "£100K–£5M, 7.4% interest",
       "text": "<span class='section-label'>What it does</span>Innovate UK offers loans of £100K–£5M for UK-registered SMEs. Interest rate: 3.7% during project period, 7.4% during 7-year repayment. No personal guarantees required. Net Zero, health & wellbeing, and digital tech are named focus areas.<span class='section-label'>Why it matters</span>Unlike grants, loans don't dilute equity. Consistent availability with regular rounds.<div class='links-row'><a class='link-box' href='https://apply-for-innovation-funding.service.gov.uk/competition/2373/overview/609dc5dd-d3e8-4f51-af3a-3eb1b3314710' target='_blank'>Round 25 Application</a><a class='link-box' href='https://iuk-business-connect.org.uk/programme/innovation-loans/' target='_blank'>Innovation Loans Info</a></div>",
       "budget": "£100K–£5M per loan at 7.4%",
+      "programmeType": "Government Innovation Loan",
+      "deadline": "Round 25 closed 4 March 2026. Round 26 expected to open imminently. Rounds run every 2-3 months.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "UK-registered SME. No personal guarantees required. Net Zero is a named focus area."
@@ -125,6 +140,10 @@
       "hint": "Launching April 2026, 5-year challenges",
       "text": "<span class='section-label'>What it does</span>A joint Ofgem + Innovate UK initiative publishing innovation challenges that remain open for 5 years. Formally launched November 2025, with first challenges due April 2026. Focus: grid connection delays, smart/resilient/affordable net-zero systems. Bold, high-risk ideas explicitly encouraged.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/blog/launching-energy-networks-innovation-taskforce' target='_blank'>Ofgem Taskforce Blog</a><a class='link-box' href='https://iuk-business-connect.org.uk/' target='_blank'>Innovate UK Business Connect</a></div>",
       "budget": "Est. £500K–£5M per challenge (based on SIF/NIC precedent)",
+      "programmeType": "Government Innovation Challenge",
+      "deadline": "First challenges publishing April 2026. Challenges remain open for SIF applications for 5 years.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Estimated based on SIF and former NIC challenge funding precedent. SIF Discovery awards up to £150K, Alpha up to £1M, Beta multimillion. Taskforce challenges feed into SIF.",
       "eligibility": {
         "status": "eligible",
         "text": "Open challenges explicitly encouraging bold high-risk ideas. Joint Ofgem and Innovate UK initiative."
@@ -145,6 +164,9 @@
       "hint": "No funding — regulatory cover",
       "text": "<span class='section-label'>What it does</span>Provides bespoke regulatory guidance, comfort letters, derogations, and market entry confirmation. No direct funding — the value is in testing AI-assisted decision support within regulated connection processes. 5 sandboxes granted to date. An AI Technical Sandbox pilot (12-month trial) is also being consulted on.<div class='links-row'><a class='link-box' href='https://www.ofgem.gov.uk/energy-regulation-sandbox' target='_blank'>Ofgem Sandbox</a><a class='link-box' href='https://www.ofgem.gov.uk/consultation/ai-technical-sandbox' target='_blank'>AI Technical Sandbox Consultation</a></div>",
       "budget": "No direct funding",
+      "programmeType": "Regulatory Sandbox",
+      "deadline": "AI Technical Sandbox consultation closed 20 March 2026. Pilot decision expected soon (12-month programme). General Energy Regulation Sandbox accepts applications on rolling basis.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "UK-based companies. Provides bespoke regulatory guidance comfort letters and derogations for testing AI in regulated processes."
@@ -166,6 +188,9 @@
       "hint": "Up to €2.5M grant (UK: grant-only)",
       "text": "<span class='section-label'>What it does</span>The European Innovation Council Accelerator provides up to €2.5M in grant funding. Since UK became an Associated Country in January 2024, UK companies can access the grant component only (not equity). Competitive: ~3-5% success rate.<span class='section-label'>Important correction</span>EIC Accelerator does NOT require consortium partners — applicants must be single legal entities. No multi-entity structure needed.<div class='links-row'><a class='link-box' href='https://eic.ec.europa.eu/eic-funding-opportunities/eic-accelerator_en' target='_blank'>EIC Accelerator</a><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>",
       "budget": "Up to €2.5M grant",
+      "programmeType": "EU Innovation Grant",
+      "deadline": "Bimonthly cut-offs in 2026: 7 Jan, 4 Mar, 6 May, 8 Jul, 2 Sep, 4 Nov. Next: 6 May 2026.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "UK as Associated Country since January 2024. Single entity application — no consortium needed. Grant component only (no equity)."

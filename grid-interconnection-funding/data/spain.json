@@ -21,6 +21,9 @@
       "hint": "€13.59B transmission investment 2025-2030",
       "text": "<span class='section-label'>What it does</span>Red Eléctrica operates 48,000+ km of Spanish grid with explicit AI/digitalisation roadmap. €13.59B allocated to transmission networks 2025-2030. Direct vendor partnerships for grid automation, forecasting, and congestion management. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups.<span class='section-label'>How to apply</span>Direct approach to REE Innovation team or pitch to Elewit Ventures as VC deal.<div class='links-row'><a class='link-box' href='https://www.redeia.com/en' target='_blank'>Red Eléctrica</a><a class='link-box' href='https://www.elewit.ventures/en' target='_blank'>Elewit Ventures</a></div>",
       "budget": "€13.59B transmission investment 2025-2030",
+      "programmeType": "Corporate VC / Vendor Partnership",
+      "deadline": "Rolling — Elewit Ventures accepts startup pitches year-round. No fixed application windows. Elewit has made 8 investments to date.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Direct vendor partnerships for grid automation — no nationality restriction. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups."
@@ -41,6 +44,9 @@
       "hint": "€200M+ invested in startup portfolio",
       "text": "<span class='section-label'>What it does</span>International startup programme with €200M+ invested in AI, renewable integration, and grid management portfolio. Equity and strategic partnership model. Explicit focus on next-generation grid technologies.<span class='section-label'>Why it matters</span>Direct access to Europe's largest utility (81M customers). Iberdola operates in Spain, Portugal, UK, US, Mexico, and Brazil.<div class='links-row'><a class='link-box' href='https://www.iberdrola.com/innovation/international-startup-program-perseo' target='_blank'>Iberdrola PERSEO</a></div>",
       "budget": "€200M+ portfolio (equity model)",
+      "programmeType": "Corporate VC / Accelerator",
+      "deadline": "Rolling — multiple active challenges open on iberdrola.com including grid resilience, wind measurement, and solar plant inspection. No fixed annual deadline.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "International startup programme — no nationality restriction. Equity and strategic partnership model."
@@ -60,7 +66,10 @@
       "label": "CDTI R&D Funding (NEOTEC 2025+)",
       "hint": "€300M+ annually, 40-75% subsidy",
       "text": "<span class='section-label'>What it does</span>Spain's Centre for Industrial Technological Development. NEOTEC programme funds R&D projects in AI, climate, and energy. Grants cover 40-75% of eligible costs. €300M+ pool across all sectors. Rolling applications via online portal.<span class='section-label'>Requirements</span>Spanish company registration required (2-4 weeks to establish SL/SLU).<div class='links-row'><a class='link-box' href='https://sede.cdti.gob.es/' target='_blank'>CDTI Portal</a><a class='link-box' href='https://www.cdti.es/en/ayudas/neotec-2025' target='_blank'>NEOTEC 2025</a></div>",
-      "budget": "€300M+ pool (40-75% subsidy)",
+      "budget": "Up to €250K per beneficiary (€20M total 2026 budget)",
+      "programmeType": "Government Startup Grant",
+      "deadline": "2026 convocatoria expected to open March-April 2026. Application window typically 6-8 weeks. Companies must have been founded between May 2022 and November 2024.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Spanish company registration (SL or SLU). 2-4 weeks setup at €3-5K. Rolling applications."
@@ -81,6 +90,9 @@
       "hint": "€200M+ fund, 50-75% subsidy",
       "text": "<span class='section-label'>What it does</span>Spanish Institute for Energy Diversification & Saving. Dedicated innovation budget (€200M+) for grid modernisation, distributed energy, and AI integration. 50-75% cost coverage for approved projects.<div class='links-row'><a class='link-box' href='https://sede.idae.gob.es/' target='_blank'>IDAE Portal</a></div>",
       "budget": "€200M+ fund (50-75% subsidy)",
+      "programmeType": "Government Energy Grant",
+      "deadline": "Periodic calls — check sede.idae.gob.es for current open calls. Dedicated energy innovation windows typically 1-2 per year.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Spanish entity. Dedicated to energy innovation including grid modernisation and AI integration."
@@ -101,6 +113,9 @@
       "hint": "€300M+ SME financing",
       "text": "<span class='section-label'>What it does</span>Spanish state-owned entity providing quasi-equity loans (€300K-€1.5M) and growth financing for SMEs. No interest during growth phase. Explicit support for DeepTech and ClimaTech.<div class='links-row'><a class='link-box' href='https://portaldelcliente.enisa.es:8443/web/clientes/alta-solicitud' target='_blank'>ENISA Portal</a></div>",
       "budget": "€300K–€1.5M quasi-equity loans",
+      "programmeType": "Government Quasi-Equity Loan",
+      "deadline": "Rolling — submit via portaldelcliente.enisa.es. Continuous application acceptance.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Spanish entity. No interest during growth phase. DeepTech and ClimaTech explicitly supported."
@@ -121,6 +136,9 @@
       "hint": "€150M+ portfolio, 2,000+ employees R&D",
       "text": "<span class='section-label'>What it does</span>Enel Group's Spanish utility Endesa runs open innovation with vendor partnerships. €150M+ portfolio. Joint ventures with startups in grid automation and forecasting.<div class='links-row'><a class='link-box' href='https://www.endesa.com/en/our-commitment/innovation/open-innovation' target='_blank'>Endesa Innovation</a></div>",
       "budget": "€150M+ portfolio (partnership model)",
+      "programmeType": "Utility Vendor Partnership",
+      "deadline": "Rolling — open innovation partnerships negotiated on individual basis.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Open innovation with vendor partnerships — no nationality restriction. Enel Group subsidiary."
@@ -141,6 +159,9 @@
       "hint": "€95.5B EU programme, single entity eligible",
       "text": "<span class='section-label'>What it does</span>UK companies can participate post-Brexit as Associated Country. Spain routes some funding via Spanish tech clusters. EIC Accelerator grants (€2.5M) available for Spanish-led consortia.<div class='links-row'><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>",
       "budget": "Up to €2.5M EIC grant",
+      "programmeType": "EU Innovation Grant",
+      "deadline": "EIC Accelerator bimonthly cut-offs: 7 Jan, 4 Mar, 6 May, 8 Jul, 2 Sep, 4 Nov 2026. Next: 6 May 2026.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "UK companies can participate as Associated Country since January 2024. Grant-only for UK entities."

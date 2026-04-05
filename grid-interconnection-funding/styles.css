@@ -82,9 +82,21 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 /* Budget badge */
 .badge-budget { background: #f0fdf4; color: #14532d; border: 1px solid #bbf7d0; }
 
+/* Programme type badge */
+.badge-type { background: #f0f0f0; color: #444; border: 1px solid #d0d0d0; }
+
 /* ── PROGRAMME BODY (expanded) ── */
 .prog-body { display: none; padding: 0 24px 20px 50px; }
 .programme-node.open .prog-body { display: block; }
+
+/* Top bar: programme type + deadline */
+.prog-top-bar { display: flex; gap: 10px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 14px; padding: 10px 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; }
+.prog-type-badge { display: inline-block; padding: 3px 10px; background: #1a1d23; color: #fff; border-radius: 4px; font-size: 0.72em; font-weight: 600; white-space: nowrap; letter-spacing: 0.3px; }
+.prog-deadline { font-size: 0.8em; color: #4a5568; line-height: 1.5; flex: 1; }
+
+/* Budget estimate/confirmed tags */
+.estimate-tag { display: inline-block; padding: 2px 8px; background: #fef3c7; color: #92400e; border-radius: 4px; font-size: 0.7em; font-weight: 600; margin-top: 6px; margin-bottom: 4px; }
+.confirmed-tag { display: inline-block; padding: 2px 8px; background: #dcfce7; color: #166534; border-radius: 4px; font-size: 0.7em; font-weight: 600; margin-top: 6px; }
 
 /* Meta grid: eligibility, relevance, budget */
 .prog-meta { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 16px; }

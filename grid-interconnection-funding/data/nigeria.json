@@ -21,6 +21,9 @@
       "hint": "30,000+ km transmission, modernisation mandate",
       "text": "<span class='section-label'>What it does</span>TCN operates 30,000+ km of high-voltage transmission across Nigeria. Energy Transition Strategy (2023) mandates grid modernisation with explicit focus on congestion management and real-time operations. Direct technology partnerships available; no nationality restriction.<span class='section-label'>Why it matters</span>Africa's largest electricity market (200M+ population). $12B+ investment to 2030. TCN controls grid access for all generation and distribution.<div class='links-row'><a class='link-box' href='https://tcn.org.ng/' target='_blank'>TCN</a></div>",
       "budget": "$12B+ investment to 2030 (partnership model)",
+      "programmeType": "National Utility Partnership",
+      "deadline": "Ongoing \u2014 Energy Transition Strategy (2023) mandates grid modernisation. World Bank TREP programme active. Direct approaches accepted.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Direct technology partnerships available \u2014 no nationality restriction. TCN controls grid access for all generation and distribution."
@@ -40,7 +43,11 @@
       "label": "NISO (Nigerian Electricity System Operator)",
       "hint": "26 GW capacity coordination",
       "text": "<span class='section-label'>What it does</span>NISO (spun off from TCN, 2023) coordinates 26 GW total generation capacity. Manages real-time dispatch, grid balance, and renewable integration. Technology partnerships for forecasting, demand-side response, and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.niso.org.ng/' target='_blank'>NISO</a></div>",
-      "budget": "Est. $100K–$300K per vendor engagement (new operator, established 2023)",
+      "budget": "Est. $100K\u2013$300K per vendor engagement (new operator, established 2023)",
+      "programmeType": "System Operator Partnership",
+      "deadline": "Rolling \u2014 vendor partnerships accepted year-round. NISO established 2023, actively building technology partnerships.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "NISO is newly established (2023) and does not publish engagement budgets. Estimated from comparable African system operator technology procurement and NISO's 26 GW coordination scope.",
       "eligibility": {
         "status": "eligible",
         "text": "Open to vendor partnerships. NISO manages real-time dispatch and renewable integration across Nigeria."
@@ -61,6 +68,9 @@
       "hint": "$500M+ public + private investment",
       "text": "<span class='section-label'>What it does</span>Government energy transition strategy (2023) mandates 40% renewable electricity by 2030 (vs. 16% today). Coordinates $500M+ public + private investment. Implicit demand for grid automation, forecasting, and renewable integration solutions. Technology partners can be funded indirectly through project financing.<div class='links-row'><a class='link-box' href='https://energytransition.gov.ng/' target='_blank'>Energy Transition Council</a></div>",
       "budget": "$500M+ public + private investment",
+      "programmeType": "Government Investment Programme",
+      "deadline": "Ongoing \u2014 $500M+ coordination through Energy Transition Council. Project-level timelines vary by implementing agency.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Technology partners funded indirectly through project financing. Government-coordinated programme."
@@ -80,7 +90,10 @@
       "label": "Google Startups Africa Accelerator",
       "hint": "\u20ac1M+ capital access, Nigeria focus",
       "text": "<span class='section-label'>What it does</span>Google's dedicated Africa startup accelerator (Nigeria primary focus). Cohort-based programme providing \u20ac1M+ capital introductions, mentorship, and market access. Energy and climate tech explicitly supported.<span class='section-label'>How to apply</span>No entity required for initial pitch. Two-month cohorts, 3x per year.<div class='links-row'><a class='link-box' href='https://startup.google.com/programs/accelerator/africa/' target='_blank'>Google Africa Accelerator</a></div>",
-      "budget": "\u20ac1M+ capital introductions per cohort",
+      "budget": "Equity-free accelerator (\u20ac1M+ capital introductions)",
+      "programmeType": "Corporate Accelerator",
+      "deadline": "Cohort 10 applications closed 18 March 2026. Programme runs April-June 2026. Next cohort expected late 2026. 12-week hybrid programme.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "No entity required for initial pitch. Two-month cohorts 3x per year. Energy and climate tech explicitly supported."
@@ -101,6 +114,9 @@
       "hint": "$100M+ VC for climate tech startups",
       "text": "<span class='section-label'>What it does</span>Catalyst Fund is pan-African VC ($100M+ AUM) with Nigeria focus. DRE-Nigeria Fund (NSIA partnership, $500M+) funds decentralised renewable energy projects. Both invest in climate-tech and energy startups. Equity model; \u20ac100K-\u20ac2M typical cheques.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a><a class='link-box' href='https://www.seforall.org/news/nsia-seforall-isa-and-africa50-unveil-us500-million-dre-nigeria-fund' target='_blank'>DRE-Nigeria Fund</a></div>",
       "budget": "\u20ac100K\u2013\u20ac2M equity + $500M DRE fund",
+      "programmeType": "Pan-African Climate VC + DRE Fund",
+      "deadline": "Catalyst Fund: rolling pitches year-round. DRE-Nigeria Fund: project-level engagement via NSIA.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "No local entity required to pitch Catalyst Fund. DRE-Nigeria Fund targets decentralised energy projects."

@@ -21,6 +21,10 @@
       "hint": "First-ever commercial partnerships",
       "text": "<span class='section-label'>What it does</span>Eskom launched its first renewable energy offtake programme (2024) enabling independent power producers (IPPs) and technology partners to develop grid solutions. Opens pathway for tech partnerships in grid management, forecasting, and demand response.<span class='section-label'>Why it matters</span>Eskom (state utility, 95% grid penetration) is seeking technology partnerships to address supply constraints. Direct access to national grid operator.<div class='links-row'><a class='link-box' href='https://www.eskom.co.za/eskom-launches-first-ever-renewable-energy-offtake-programme/' target='_blank'>Eskom RE Programme</a></div>",
       "budget": "Est. $200K–$1M per technology partnership (Eskom REOP first cohort)",
+      "programmeType": "Utility Offtake Programme",
+      "deadline": "RFP issued 2025 for 291MW Solar PV. Earliest commercial operation expected December 2027. Targeting 2GW construction-ready by 2026.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Eskom does not disclose per-technology-partner budgets. Estimated from REOP programme scope (291MW initial, 2GW by 2026) and comparable South African utility technology procurement contracts.",
       "eligibility": {
         "status": "eligible",
         "text": "First-ever technology partnerships opened via renewable energy offtake programme 2024. No local entity required for initial engagement."
@@ -41,6 +45,9 @@
       "hint": "$10B+ fund, mega auctions",
       "text": "<span class='section-label'>What it does</span>Department of Mineral Resources & Energy manages Renewable Energy Independent Power Producer Procurement Programme. Six mega-auctions (2011-2024) totalling $10B+ invested. Round 7 ongoing. Implicit demand for AI-driven queue management and integration tools.<span class='section-label'>Why it matters</span>Largest renewable energy procurement programme in Africa. Technology partners support IPPs through EPC and operational optimization phases.<div class='links-row'><a class='link-box' href='https://www.dmre.gov.za/energy-resources/reippp-programme' target='_blank'>DMRE REIPPPP</a></div>",
       "budget": "$10B+ programme (Round 7 ongoing)",
+      "programmeType": "Government Procurement Programme",
+      "deadline": "Round 7 underway. Previous rounds ran 6-12 month procurement cycles. Check dmre.gov.za for current status.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Technology partners support IPPs through EPC and operational phases. Indirect participation \u2014 requires partnership with participating IPP or EPC contractor."
@@ -61,6 +68,9 @@
       "hint": "$600M+ concessional climate finance",
       "text": "<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ deployed in South Africa) for climate and energy transition projects. Grants and loans (1-2% interest) for renewable infrastructure, energy efficiency, and grid modernisation. Explicit support for energy access and grid resilience.<span class='section-label'>How to apply</span>Works through regional development banks (AfDB, World Bank). Technology partners can be financed indirectly through project financing.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF</a></div>",
       "budget": "$600M+ deployed in South Africa (1-2% interest)",
+      "programmeType": "Multilateral Climate Finance",
+      "deadline": "Rolling — project financing via AfDB and World Bank pipelines. Technology partners access indirectly through funded projects.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Works through AfDB and World Bank. Technology partners financed indirectly through project financing structures."
@@ -80,7 +90,10 @@
       "label": "EEP Africa (Energy & Environment Partnership)",
       "hint": "\u20ac55M+ fund, 13 African countries",
       "text": "<span class='section-label'>What it does</span>EU-African partnership providing grants (\u20ac50K-\u20ac500K) for energy projects across 13 African countries including South Africa. Explicit support for renewable integration, grid modernisation, and digitalization. Non-dilutive grants; 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>",
-      "budget": "\u20ac50K\u2013\u20ac500K grants",
+      "budget": "\u20ac200K\u2013\u20ac500K grants (30-50% co-financing required)",
+      "programmeType": "EU-Africa Grant Programme",
+      "deadline": "2026 Call for Proposals open. Two-stage process: Expression of Interest then Full Proposal. Note: For South Africa, 2026 call limited to e-waste management from clean energy sector.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Non-dilutive grants for energy projects across 13 African countries including South Africa. 6-month decision cycle. Open to international applicants."
@@ -101,6 +114,9 @@
       "hint": "$100M+ VC for African climate tech",
       "text": "<span class='section-label'>What it does</span>Pan-African venture capital fund ($100M+ AUM) investing in climate-tech startups across Africa. Explicit focus on energy access, renewable integration, and grid modernisation. Equity investments (typically $100K-$2M). No entity required for pitching.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a></div>",
       "budget": "$100M+ AUM (\u20ac100K\u2013\u20ac2M per deal)",
+      "programmeType": "Pan-African Climate VC",
+      "deadline": "Rolling \u2014 pitches accepted year-round via thecatalystfund.com. \u20ac100K-\u20ac2M equity investments.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "No entity required for pitching. Pan-African VC with explicit focus on energy access and climate tech."
@@ -121,6 +137,9 @@
       "hint": "$8B climate finance mobilisation",
       "text": "<span class='section-label'>What it does</span>G7 commitment to South Africa for Just Energy Transition. $8B concessional finance to accelerate renewable deployment and grid infrastructure. Administered through World Bank, AfDB. Technology partnerships eligible for project financing.<div class='links-row'><a class='link-box' href='https://www.climatecommission.org.za/south-africas-jet-ip' target='_blank'>South Africa JET-IP</a></div>",
       "budget": "$8B climate finance mobilisation",
+      "programmeType": "G7 Climate Finance Partnership",
+      "deadline": "Ongoing — $8B commitment administered through World Bank and AfDB. Project-level timelines vary.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Administered through World Bank and AfDB. Technology partners participate indirectly via project financing. Not direct startup funding."

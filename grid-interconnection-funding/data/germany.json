@@ -21,6 +21,10 @@
       "hint": "Rolling challenges, AI/congestion focus",
       "text": "<span class='section-label'>What it does</span>TenneT operates 25,000+ km of high-voltage grid and runs rolling open innovation challenges. Recent themes include congestion forecasting (N-SIDE partnership), sustainability, and digital control. First programme (2023) received 57+ entries. €5.5B invested in H1 2025.<span class='section-label'>Why it matters</span>No nationality restriction. Submit a 2-minute pitch video. TenneT operates in both Germany and the Netherlands.<div class='links-row'><a class='link-box' href='https://magazines.tennet.eu/open-innovation-programme/' target='_blank'>TenneT Open Innovation</a></div>",
       "budget": "Est. €100K–€500K per pilot (based on funded PoC partnerships)",
+      "programmeType": "TSO Innovation Partnership",
+      "deadline": "Rolling challenges. 2024 programme (2nd edition) completed with 3 winners selected. Watch magazines.tennet.eu for next cycle.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "TenneT does not disclose per-pilot budgets. Estimated from comparable 50Hertz PoC funding (€50K) and typical TSO pilot scales. TenneT's larger grid (25,000km vs 10,000km) suggests higher budget per engagement.",
       "eligibility": {
         "status": "eligible",
         "text": "No nationality restriction. Submit 2-minute pitch video. TenneT operates in Germany and Netherlands."
@@ -41,6 +45,10 @@
       "hint": "11,000km grid, western Germany",
       "text": "<span class='section-label'>What it does</span>Amprion operates 11,000km of extra-high-voltage grid across western Germany. Innovation focuses on weather & grid resilience, predictive maintenance, and cross-border data pooling. Investment plan doubled to €27.5B through 2028.<span class='section-label'>Why it matters</span>Part of TSO Innovation Alliance. Open to direct partnership approaches. No nationality restriction.<div class='links-row'><a class='link-box' href='https://www.amprion.net/' target='_blank'>Amprion</a></div>",
       "budget": "Est. €100K–€300K per pilot (€27.5B total grid investment to 2028)",
+      "programmeType": "TSO Innovation Partnership",
+      "deadline": "Rolling — direct partnership approaches accepted year-round. Part of TSO Innovation Alliance for joint programmes.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Amprion does not publish innovation pilot budgets. Estimated from €27.5B total investment plan to 2028 and comparable European TSO pilot programmes.",
       "eligibility": {
         "status": "eligible",
         "text": "Open to direct partnership approaches. No nationality restriction. Part of TSO Innovation Alliance."
@@ -60,6 +68,9 @@
       "hint": "€50K PoC funding per winner",
       "text": "<span class='section-label'>What it does</span>50Hertz (Elia Group, serving 18M people in eastern Germany) runs annual Open Innovation Challenges with €50,000 cash per winner for PoC development plus expert support. 2025 edition theme: 'People First'. Part of Elia Group's €12B+ CAPEX plan to 2030.<span class='section-label'>How to apply</span>Submit a 3-slide deck. Process: shortlisting → deep-dive → final pitch. Open worldwide.<div class='links-row'><a class='link-box' href='https://innovation.eliagroup.eu/en/how-we-work/open-innovation-challenges/' target='_blank'>Elia Innovation Portal</a></div>",
       "budget": "€50K per winner for PoC",
+      "programmeType": "TSO Innovation Challenge",
+      "deadline": "Annual cycle. 5th Open Innovation Challenge launching 2026. Watch innovation.eliagroup.eu for application window.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Open worldwide. Submit 3-slide deck. Part of Elia Group's €12B+ CAPEX plan to 2030."
@@ -80,6 +91,10 @@
       "hint": "Innoloft platform, NEXTLab facility",
       "text": "<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://transnetbw.innoloft.com/' target='_blank'>TransnetBW Innoloft</a></div>",
       "budget": "Est. €50K–€200K per pilot (smallest of 4 German TSOs)",
+      "programmeType": "TSO Innovation Partnership",
+      "deadline": "Rolling via Innoloft platform. NEXTLab campus in Wendlingen available for Design Thinking workshops.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "TransnetBW does not disclose pilot budgets. Estimated as smallest of 4 German TSOs. Based on Innoloft platform scale and comparable TransNEXT programme scope.",
       "eligibility": {
         "status": "eligible",
         "text": "No nationality restriction stated. Innoloft platform with Design Thinking methodology."
@@ -99,6 +114,10 @@
       "hint": "8 European TSOs, open to all",
       "text": "<span class='section-label'>What it does</span>Joint alliance of 8 European TSOs: TenneT, Amprion, 50Hertz/Elia, Terna (Italy), RTE (France), Swissgrid, Red Eléctrica (Spain). Launched July 2025. First programme: Weather & Grid Resilience.<span class='section-label'>How to apply</span>Submit 2-minute pitch video. No geographic restriction.<div class='links-row'><a class='link-box' href='https://challenges.rethinking-energy.org/spaces/34/pages/65' target='_blank'>TSO Alliance Platform</a></div>",
       "budget": "Est. €100K–€500K per pilot (8-TSO shared programme)",
+      "programmeType": "Multi-TSO Innovation Programme",
+      "deadline": "Programme-based. First programme (Weather & Grid Resilience) launched July 2025. Watch challenges.rethinking-energy.org for next programme.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Alliance does not disclose per-pilot budgets. Estimated from shared 8-TSO model and comparable individual TSO pilot funding ranges.",
       "eligibility": {
         "status": "eligible",
         "text": "No geographic restriction. Submit 2-minute pitch video. Access to 8 major European TSOs simultaneously."
@@ -119,6 +138,10 @@
       "hint": "Germany's largest DSO",
       "text": "<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.gridx.ai/success-stories/westnetz-smart-grid-control-dso' target='_blank'>gridX/Westnetz Case Study</a></div>",
       "budget": "Est. €200K–€1M per deployment (E.ON innovation budget)",
+      "programmeType": "DSO Vendor Partnership",
+      "deadline": "Rolling — commercial vendor partnerships negotiated on individual basis.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "E.ON does not publish per-vendor innovation budgets. Estimated from E.ON Group innovation spend (~€1.5B/yr) and typical DSO technology deployment contracts.",
       "eligibility": {
         "status": "eligible",
         "text": "Commercial vendor partnerships with no nationality restriction. Germany's largest DSO."
@@ -139,6 +162,9 @@
       "hint": "~€1.3B annually, continuous via easy-Online",
       "text": "<span class='section-label'>What it does</span>Germany's federal energy research programme provides ~€1.3B annually across missions: Electricity Transition 2045, Grid Stability & Security, Energy System Digitalization. 50-100% of eligible costs covered.<span class='section-label'>Requirements</span>Requires German entity. Apply continuously via easy-Online portal.<div class='links-row'><a class='link-box' href='https://foerderportal.bund.de/easyonline/nutzungsbedingungen.jsf' target='_blank'>easy-Online Portal</a><a class='link-box' href='https://www.energieforschung.de/en/home' target='_blank'>Energy Research Programme</a></div>",
       "budget": "~€1.3B annually (50-100% costs covered)",
+      "programmeType": "Federal Research Grant",
+      "deadline": "Continuous — applications accepted year-round via easy-Online portal (foerderportal.bund.de). No fixed rounds.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires German entity. GmbH setup costs ~€25K minimum capital. Continuous applications via easy-Online portal."
@@ -160,6 +186,9 @@
       "hint": "Up to €50M per investment, €30B total",
       "text": "<span class='section-label'>What it does</span>Launched December 2025. €1B for startups/scale-ups by 2030 (up to €50M per investment). €30B total public capital for economic transformation. Focus: DeepTech, AI, Climate Tech.<div class='links-row'><a class='link-box' href='https://www.kfw-capital.de/Investment-focus/Deutschlandfonds/' target='_blank'>KfW Deutschlandfonds</a><a class='link-box' href='https://www.bundesnetzagentur.de/ki' target='_blank'>BNetzA AI Service Desk</a><a class='link-box' href='https://www.fraunhofer.co.uk/' target='_blank'>Fraunhofer UK Research</a><a class='link-box' href='https://www.iee.fraunhofer.de/en/contact.html' target='_blank'>Fraunhofer IEE</a></div>",
       "budget": "Up to €50M per investment",
+      "programmeType": "Government-Backed Venture Capital",
+      "deadline": "Active — Scale-up Direct facility launched December 2025 with €1B. KfW Capital making initial investments in 2026. Rolling applications.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires German entity. Focus on DeepTech, AI, and Climate Tech. Equity investment model."

@@ -21,6 +21,9 @@
       "hint": "$2B+ fund, transmission backbone",
       "text": "<span class='section-label'>What it does</span>Ministry of New & Renewable Energy (MNRE) manages green energy corridors — transmission infrastructure to support 280+ GW renewable targets. Dedicated to enabling high renewable penetration. Grid management, forecasting, and congestion automation are core priorities.<span class='section-label'>Why it matters</span>India's renewable expansion creates massive AI/grid automation demand. Direct partnership opportunities with state utilities and independent power producers (IPPs).<div class='links-row'><a class='link-box' href='https://mnre.gov.in/en/green-energy-corridors/' target='_blank'>MNRE Green Energy Corridors</a></div>",
       "budget": "$2B+ fund",
+      "programmeType": "Government Infrastructure Programme",
+      "deadline": "Phase 2 ongoing through 2025-26 targeting 20 GW intra-state transmission. Implementation is state-level — timelines vary.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Direct partnership opportunities with state utilities and IPPs. Foreign companies typically need Indian partner or local presence for MNRE engagement."
@@ -41,6 +44,9 @@
       "hint": "13-state deployment, real-time monitoring",
       "text": "<span class='section-label'>What it does</span>National Smart Grid Mission (2013-ongoing) deploying advanced metering, SCADA, and AI analytics across 13 states. 250M smart meters target by 2030. Vendor partnerships for forecasting, demand-side management, and automated response.<span class='section-label'>Why it matters</span>Largest smart metering rollout globally. Real-time grid operations data creates opportunities for AI-driven automation.<div class='links-row'><a class='link-box' href='https://www.nsgm.gov.in/' target='_blank'>Smart Grid Mission</a></div>",
       "budget": "$4B+ total programme",
+      "programmeType": "Government Smart Grid Programme",
+      "deadline": "Ongoing — vendor selections active across 13 states. 250M smart meter target by 2030. State-level procurement timelines vary.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Vendor partnerships available but formal participation typically requires Indian entity or local partner. 250M smart meter rollout creates massive data opportunity."
@@ -61,6 +67,9 @@
       "hint": "£10K-£100K grants + incubation",
       "text": "<span class='section-label'>What it does</span>Government of India's Startup India programme provides £10K-£100K grants for registered Indian startups. Deep Tech vertical explicitly supports AI, hardware, climate, and energy. Annual recognition ceremony at India Innovation Summit.<span class='section-label'>How to apply</span>Register Indian startup entity (₹100, ~$1.20 fee). Apply via DPIIT portal. No foreigners need apply — but can partner with Indian startup.<div class='links-row'><a class='link-box' href='https://www.startupindia.gov.in/content/sih/en/home-page.html' target='_blank'>Startup India Portal</a></div>",
       "budget": "£10K–£100K grants",
+      "programmeType": "Government Startup Grant",
+      "deadline": "Annual application cycles. Deep Tech recognition at India Innovation Summit. Check startupindia.gov.in for current open calls.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires registered Indian startup entity (₹100 fee ~$1.20). Foreign founders can register but must have Indian entity. Deep Tech vertical supports AI and energy."
@@ -81,6 +90,9 @@
       "hint": "50+ startups/yr, $1M+ capital",
       "text": "<span class='section-label'>What it does</span>Social Alpha is India's leading climate-tech accelerator. Techtonic platform runs quarterly cohorts (50+ startups/yr). CEIIC (Climate Emergency Incubator) provides $100K-$1M+ growth capital. Mentorship from power utilities, grid operators, and venture investors.<span class='section-label'>Why it matters</span>Access to PowerGrid, state utilities, and international climate investors. No Indian entity required.<div class='links-row'><a class='link-box' href='https://www.socialalpha.org/techtonic/' target='_blank'>Social Alpha Techtonic</a><a class='link-box' href='https://ceiic.socialalpha.org/' target='_blank'>CEIIC Platform</a></div>",
       "budget": "$100K–$1M+ growth capital",
+      "programmeType": "Accelerator / Climate VC",
+      "deadline": "Multiple active 2026 cohorts: Innovations for Sustainability, Sustainable Urban Transition, Agriculture and Rural Livelihoods. Rolling applications via socialalpha.org.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "No Indian entity required. International startups welcome. Quarterly cohorts with 50+ startups per year."
@@ -101,6 +113,10 @@
       "hint": "National grid operator, 170,000+ circuit km",
       "text": "<span class='section-label'>What it does</span>Central transmission utility (PowerGrid) operates 170,000+ circuit km. Active in AI for load forecasting, dynamic line rating, and outage prediction. Direct partnerships with technology providers — no nationality restriction.<span class='section-label'>Why it matters</span>Controls India's backbone transmission. AI for grid operations directly addresses their stated roadmap priorities.<div class='links-row'><a class='link-box' href='https://www.powergrid.in/en/technology-development-rd' target='_blank'>PowerGrid Technology</a></div>",
       "budget": "Est. $100K–$500K per partnership (~$50M/yr R&D budget)",
+      "programmeType": "Utility R&D Partnership",
+      "deadline": "Rolling — direct partnership approaches accepted year-round via powergrid.in.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "PowerGrid does not publish per-partnership budgets. Estimated from PowerGrid's annual R&D expenditure (~$50M/yr reported in annual reports) and typical Indian utility technology partnership scales.",
       "eligibility": {
         "status": "eligible",
         "text": "Direct partnerships with technology providers — no nationality restriction. PowerGrid is India's central transmission utility."
@@ -121,6 +137,10 @@
       "hint": "Real-time dispatch, forecasting service",
       "text": "<span class='section-label'>What it does</span>Grid-India (state-run dispatch operator, ~200 GW managed) operates real-time energy market. RTC (Regional Load Dispatch Centres) manage 13 regional grids. Technology partnerships for forecasting and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.grid-india.in/' target='_blank'>Grid-India</a></div>",
       "budget": "Est. $100K–$300K per vendor engagement",
+      "programmeType": "System Operator Partnership",
+      "deadline": "Rolling — vendor partnerships negotiated on individual basis. Grid-India manages ~200 GW real-time dispatch.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Grid-India does not publish per-vendor engagement budgets. Estimated from comparable Indian system operator technology procurement scales and Grid-India's operational scope.",
       "eligibility": {
         "status": "eligible",
         "text": "Open to vendor partnerships. Grid-India manages ~200 GW national real-time energy market."

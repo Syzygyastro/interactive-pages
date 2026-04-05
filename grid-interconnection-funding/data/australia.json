@@ -21,6 +21,9 @@
       "hint": "11 reforms, 2026+ implementation",
       "text": "<span class='section-label'>What it does</span>AEMO (Australian Energy Market Operator) manages the NEM and launched 11 reforms across 4 priority areas: Staged generator setup, Improved connection requirements, Enhanced network support, Streamlined processes. Each reform creates specific software/AI automation needs. Direct technology partnerships with AEMO and network operators.<span class='section-label'>Why it matters</span>Regulatory mandate (AEMC) to resolve interconnection backlog. Australia's renewable queue is 2nd largest globally (350+ GW pending).<div class='links-row'><a class='link-box' href='https://www.aemo.com.au/initiatives/major-programs/connections-reform-initiative' target='_blank'>AEMO CRI</a></div>",
       "budget": "Regulatory programme (no direct funding)",
+      "programmeType": "Regulatory Reform Programme",
+      "deadline": "Implementation phase: Draft EAF Guideline published January 2026. NER 5.3.9 webinar 30 Jan 2026. Commissioning Guideline webinar 10 Feb 2026. Pre-application Services webinar 24 Feb 2026. Ongoing through 2026+.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "Direct technology partnerships with AEMO and network operators. No nationality restriction for vendor engagement."
@@ -40,7 +43,10 @@
       "label": "ARENA (Australian Renewable Energy Agency)",
       "hint": "$100M+ project funding",
       "text": "<span class='section-label'>What it does</span>ARENA funds renewable energy projects including grid modernisation, storage, and AI for operations. $100M+ active portfolio. Grants and concessional loans (2-5% interest). Explicit support for interconnection automation, forecasting, and demand-side management.<span class='section-label'>How to apply</span>Australian entity required (easy setup, $200 AUD). Annual funding rounds. 4-6 week decision cycle.<div class='links-row'><a class='link-box' href='https://arena.gov.au/funding/future-made-in-australia-innovation-fund/' target='_blank'>ARENA Funding</a></div>",
-      "budget": "$100M+ active portfolio",
+      "budget": "$100M+ active portfolio (Advancing Renewables Program ongoing)",
+      "programmeType": "Government Innovation Grant",
+      "deadline": "Advancing Renewables Program: open and ongoing until funds exhausted. Solar Sunshot R2 EOI closes 30 April 2026. Industrial Transformation R3 open and ongoing.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Australian entity ($200 AUD setup 1-2 days online). Grants and concessional loans at 2-5% interest."
@@ -61,6 +67,9 @@
       "hint": "43.5% cash rebate on R&D spend",
       "text": "<span class='section-label'>What it does</span>Australian companies claim 43.5% cash rebate on all R&D expenditure. No size limits. Tech companies building AI/grid software are fully eligible. Annual claims submitted to ATO; rebates received in 1-2 months.<span class='section-label'>Why it matters</span>Non-dilutive funding. Every Australian startup should use this. Can be claimed retroactively for past 2 years.<div class='links-row'><a class='link-box' href='https://www.ato.gov.au/businesses-and-organisations/income-deductions-and-concessions/incentives-and-concessions/research-and-development-tax-incentive-and-concessions/research-and-development-tax-incentive' target='_blank'>ATO R&D Tax Incentive</a></div>",
       "budget": "43.5% cash rebate on all R&D spend",
+      "programmeType": "Tax Incentive",
+      "deadline": "Annual claims — submit to ATO after financial year end. 43.5% refundable offset for entities under A$20M turnover. Can claim retroactively for 2 prior years.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Australian company registration ($200 AUD). Can be claimed retroactively for past 2 years. No size limits on R&D spend."
@@ -81,6 +90,9 @@
       "hint": "310+ alumni, 7+ programmes",
       "text": "<span class='section-label'>What it does</span>Australia's leading cleantech accelerator (310+ alumni graduates). Runs 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence). Cohort-based mentorship + capital introductions to utilities and government agencies.<span class='section-label'>Why it matters</span>Direct access to every major Australian network operator (AusNet, Ausgrid, Energex, Transgrid, SA Power Networks). No entity required for application.<div class='links-row'><a class='link-box' href='https://energylab.org.au/' target='_blank'>EnergyLab</a></div>",
       "budget": "Equity-free accelerator; capital introductions typically A$500K–A$5M",
+      "programmeType": "Equity-Free Accelerator",
+      "deadline": "2026 programmes: Supercharge Australia Incubator apps 12 Jan - 22 Mar 2026 (programme Apr-Jun 2026). Scaleup Programme Jun-Oct 2026. Climate Tech Ignite EOI Nov 2025 - Apr 2026 (apps May-Jul 2026).",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
         "text": "No entity required for application. 310+ alumni across 7 programmes. International startups welcome."
@@ -101,6 +113,10 @@
       "hint": "Commercial vendor relationships",
       "text": "<span class='section-label'>What it does</span>Each network operator independently funds innovation pilots and vendor partnerships. AusNet and Ausgrid explicitly focus on demand management, forecasting, and automation. Transgrid (NSW transmission) has a dedicated innovation budget. Open to technology partnerships, no entity required.<div class='links-row'><a class='link-box' href='https://www.ausnetservices.com.au/projects-and-innovation' target='_blank'>AusNet Services</a><a class='link-box' href='https://www.ausgrid.com.au/About-Us/Future-Grid/Innovation-Portfolio' target='_blank'>Ausgrid Innovation</a><a class='link-box' href='https://www.transgrid.com.au/about-us/network/funding-opportunities-for-demand-management-innovation/' target='_blank'>Transgrid Innovation</a></div>",
       "budget": "Est. A$200K–A$1M per pilot (AusNet and Ausgrid innovation budgets)",
+      "programmeType": "Utility Innovation Partnership",
+      "deadline": "Rolling — each operator accepts direct approaches year-round. AusNet, Ausgrid, and Transgrid most active.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Network operators do not publish per-pilot budgets. Estimated from AusNet and Ausgrid innovation budget disclosures in annual regulatory filings and comparable Australian DNSP innovation project scales.",
       "eligibility": {
         "status": "eligible",
         "text": "Open to technology partnerships with no entity requirement. Each operator has independent innovation budget."
@@ -121,6 +137,9 @@
       "hint": "$30M+ fund, university partnerships",
       "text": "<span class='section-label'>What it does</span>Australian government's Cooperative Research Centre Projects fund collaborative R&D (businesses + universities). $30M+ pool. Grid automation, forecasting, and AI all eligible. Grants up to $1M per project, 3-5 year durations.<div class='links-row'><a class='link-box' href='https://business.gov.au/grants-and-programs/cooperative-research-centres-projects-crcp-grants' target='_blank'>CRC-P Grants</a></div>",
       "budget": "Up to $1M per project ($30M+ fund)",
+      "programmeType": "Government-University R&D Grant",
+      "deadline": "Periodic competitive rounds — check business.gov.au for current open rounds. 3-5 year project durations.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Australian entity and university partnership. Collaborative R&D model with 3-5 year project durations."
@@ -142,6 +161,9 @@
       "hint": "$20B+ concessional finance",
       "text": "<span class='section-label'>What it does</span>CEFC provides concessional (below-market) finance for clean energy projects. $20B+ deployed. Interest rates 2-4%. Equity and debt instruments available. Grid modernisation and storage projects prioritised.<div class='links-row'><a class='link-box' href='https://www.cefc.com.au/' target='_blank'>CEFC</a></div>",
       "budget": "$20B+ concessional finance (2-4% interest)",
+      "programmeType": "Government Concessional Finance",
+      "deadline": "Rolling — submit proposals via cefc.com.au. Assessed on energy impact and financial viability.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
         "text": "Requires Australian entity. Concessional debt and equity for clean energy projects. Grid modernisation and storage prioritised."
