@@ -244,6 +244,17 @@
       ]
     }
   ],
+  "dsoTerm": "DSO (Gestionnaire de réseau)",
+  "dsoPartners": [
+    {
+      "name": "Enedis",
+      "parent": "EDF Group",
+      "customers": "~37M (95% of France)",
+      "region": "All France (excl. local ELDs)",
+      "engagement": "Start Me Up / Concours Start-up (annual competition, 5 domains: customer relations, smart grids, connected technician, training, safety). Open Innovation approach. 400 startups sourced, 70 tested. 35M Linky smart meters.",
+      "innovationUrl": "https://www.enedis.fr/open-innovation"
+    }
+  ],
   "faq": [
     {
       "q": "Can we approach RTE without a French entity?",

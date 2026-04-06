@@ -279,6 +279,33 @@
       ]
     }
   ],
+  "dsoTerm": "DSO (Distribuidora)",
+  "dsoPartners": [
+    {
+      "name": "i-DE Redes Eléctricas",
+      "parent": "Iberdrola Group",
+      "customers": "~11M",
+      "region": "10 autonomous communities",
+      "engagement": "S2F Sandbox for distribution flexibility. BeFlexible EU project (12 pilots). Global Smart Grids Innovation Hub (100+ companies, 120 projects, €110M). Access via PERSEO.",
+      "innovationUrl": "https://www.i-de.es/about-us/digitalization-and-innovation"
+    },
+    {
+      "name": "e-distribución",
+      "parent": "Endesa / Enel Group",
+      "customers": "~12M",
+      "region": "Southern & Eastern Spain, Canaries, Balearics",
+      "engagement": "Enel Open Innovability platform (€280M in supply contracts to startups). TheCube Innovation Hub (Madrid). LV Supervisor, IoT digital twins, fraud detection AI.",
+      "innovationUrl": "https://openinnovability.enel.com/challenges"
+    },
+    {
+      "name": "UFD Distribución",
+      "parent": "EDP Group / Viesgo",
+      "customers": "~3.4M",
+      "region": "Asturias, Cantabria, parts of Galicia, Aragon",
+      "engagement": "EDP Energy Starter programme (183 startups, €23M invested, 7 editions). Fully-funded pilots. UK startups selected in past cohorts.",
+      "innovationUrl": "https://www.edp.com/en/innovation/startups"
+    }
+  ],
   "faq": [
     {
       "q": "What is Red Eléctrica's €13.59B investment targeting?",

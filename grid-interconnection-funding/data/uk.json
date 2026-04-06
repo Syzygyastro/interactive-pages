@@ -359,6 +359,57 @@
       ]
     }
   ],
+  "dsoTerm": "DNO",
+  "dsoPartners": [
+    {
+      "name": "UK Power Networks (UKPN)",
+      "parent": "CK Group",
+      "customers": "~8M",
+      "region": "London, South East, East",
+      "engagement": "75% of NIA funding to third-party innovators. Submit 6-page NIA proposal directly. Dedicated innovation portal.",
+      "innovationUrl": "https://innovation.ukpowernetworks.co.uk/"
+    },
+    {
+      "name": "National Grid ED (NGED)",
+      "parent": "National Grid",
+      "customers": "~7.9M",
+      "region": "West Midlands, South West, South Wales",
+      "engagement": "Online NIA submission portal. £418K allocated for AI in connections. Partnered with Yottar for connection automation.",
+      "innovationUrl": "https://commercial.nationalgrid.co.uk/innovation"
+    },
+    {
+      "name": "SSEN Distribution",
+      "parent": "SSE plc",
+      "customers": "~3.8M",
+      "region": "Northern Scotland, Central Southern England",
+      "engagement": "NIA proposals accepted continuously. £17.8M SIF Beta secured. Both distribution and transmission licences.",
+      "innovationUrl": "https://ssen-innovation.co.uk/"
+    },
+    {
+      "name": "Northern Powergrid",
+      "parent": "Berkshire Hathaway Energy",
+      "customers": "~3.9M",
+      "region": "North East, Yorkshire",
+      "engagement": "NIA proposals accepted continuously. £3.7M SIF for AI forecasting. Active partner sourcing.",
+      "innovationUrl": "https://www.northernpowergrid.com/innovation"
+    },
+    {
+      "name": "SP Energy Networks (SPEN)",
+      "parent": "Iberdrola Group",
+      "customers": "~3.5M",
+      "region": "Central/Southern Scotland, Merseyside, North Wales",
+      "engagement": "NIA via ENA Smarter Networks Portal. £10M ENSIGN digital twin project. £12B network overhaul.",
+      "innovationUrl": "https://www.spenergynetworks.co.uk/pages/innovation.aspx"
+    },
+    {
+      "name": "Electricity North West (ENWL)",
+      "parent": "Private",
+      "customers": "~2.4M",
+      "region": "Greater Manchester, Lancashire, Cumbria, Cheshire",
+      "engagement": "NIA proposals accepted continuously. 17 of 18 recent partners were new. £9M QUEST AI/ML project completed.",
+      "innovationUrl": "https://www.enwl.co.uk/innovation/"
+    }
+  ],
   "faq": [
     { "q": "Can a startup apply directly to SIF, or do we need a DNO partner?", "a": "You need a DNO or TNO licence holder as the lead applicant. However, the startup typically does all the technical work and receives the majority of the funding. DNOs actively seek partners — approach their innovation teams directly. UKPN, SSEN, and NGET are the most active." },
     { "q": "What's the fastest route to funded pilot in the UK?", "a": "The Network Innovation Allowance (NIA) is the fastest. A 6-page proposal submitted directly to a DNO can be approved relatively quickly. There's no central competition — each DNO has its own budget. Start with UKPN's innovation portal or NESO's Big Ideas submission." },

@@ -248,6 +248,33 @@
       ]
     }
   ],
+  "dsoTerm": "DSO (Netbeheerder)",
+  "dsoPartners": [
+    {
+      "name": "Alliander / Liander",
+      "parent": "Alliander N.V.",
+      "customers": "~3.3M",
+      "region": "Amsterdam, North Holland, Gelderland, Flevoland",
+      "engagement": "Powered startup programme (10 startups per cohort). Next Grid CVC arm. AI for Energy Grid Lab with 5 universities. Joint LV-NExT challenge.",
+      "innovationUrl": "https://www.alliander.com/en/organisation/powered/"
+    },
+    {
+      "name": "Stedin",
+      "parent": "Stedin Group",
+      "customers": "~2.3M",
+      "region": "Rotterdam, The Hague, Utrecht",
+      "engagement": "Joint innovation via LV-NExT, Quick & Simple Substation challenges. €500M EIB loan 2025-2026. Innovation via Rethinking Energy platform.",
+      "innovationUrl": "https://www.stedin.net/"
+    },
+    {
+      "name": "Enexis",
+      "parent": "Enexis Holding N.V.",
+      "customers": "~3M",
+      "region": "North Brabant, Limburg, Groningen, Overijssel",
+      "engagement": "Joint innovation via LV-NExT. AI Centre of Expertise (internal). Market challenges for MV station acceleration. PILV neighbourhood expansion.",
+      "innovationUrl": "https://www.enexis.nl/"
+    }
+  ],
   "faq": [
     {
       "q": "Can we access RVO funding without a Dutch entity?",

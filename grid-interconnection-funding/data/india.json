@@ -115,6 +115,33 @@
       ]
     }
   ],
+  "dsoTerm": "DISCOM (Distribution Company)",
+  "dsoPartners": [
+    {
+      "name": "Tata Power Distribution",
+      "parent": "Tata Group",
+      "customers": "~12M",
+      "region": "Mumbai, Delhi, Odisha",
+      "engagement": "CEIIC incubator (with Social Alpha). AutoGrid AI partnership. EnerUni platform with TCS. 70 technology partnerships. Innovation Lab (EIIL) with LSE.",
+      "innovationUrl": "https://www.tatapower.com/innovation"
+    },
+    {
+      "name": "BSES (Reliance Infrastructure)",
+      "parent": "Reliance Infrastructure",
+      "customers": "~4.5M",
+      "region": "Delhi (South & East, Yamuna)",
+      "engagement": "MoU with TERI for DER integration. India's first DISCOM-level BESS (20MW/40MWh). Targeting 55% green portfolio by FY2027.",
+      "innovationUrl": "https://www.bsesdelhi.com/"
+    },
+    {
+      "name": "Adani Electricity Mumbai",
+      "parent": "Adani Group",
+      "customers": "~3M",
+      "region": "Mumbai (suburbs)",
+      "engagement": "Technology partnerships with established vendors (GE Vernova, AspenTech). Smart meter rollout. Primarily vendor-driven innovation.",
+      "innovationUrl": "https://www.adanielectricity.com/"
+    }
+  ],
   "faq": [
     { "q": "Do I need an Indian entity to access funding?", "a": "For Social Alpha accelerators, NO entity needed. PowerGrid and Grid-India partnerships also don't require formal incorporation — open to international technology vendors." },
     { "q": "How many smart meters is India targeting?", "a": "250M smart meters by 2030 as part of the Smart Grid Mission. This is the largest smart metering rollout globally and creates massive grid data opportunities." },

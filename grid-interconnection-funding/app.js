@@ -96,6 +96,7 @@ function renderDetail() {
     <div class="detail-desc">${c.desc}</div>
     <div class="section-heading">Programmes &amp; Innovation Routes</div>
     ${c.studies.map((s, i) => renderProgrammeNode(s, i)).join('')}
+    ${c.dsoPartners && c.dsoPartners.length ? renderDSOSection(c) : ''}
     <div class="collapsible-header ${faqOpen ? 'open' : ''}" onclick="toggleFAQ()">
       <span class="collapsible-arrow">&#9654;</span>
       <span class="collapsible-title">Frequently Asked Questions (${c.faq.length})</span>
@@ -190,6 +191,30 @@ function toggleProgramme(idx) {
   if (openProgrammes.has(idx)) openProgrammes.delete(idx);
   else openProgrammes.add(idx);
   renderDetail();
+}
+
+// ── DSO Partners ──
+
+function renderDSOSection(c) {
+  const localTerm = c.dsoTerm || 'Distribution Network Operator';
+  return `
+    <div class="section-heading">Distribution Partners <span class="dso-term-label">(${localTerm}s)</span></div>
+    <div class="dso-grid">
+      ${c.dsoPartners.map(d => `
+        <div class="dso-card">
+          <div class="dso-card-header">
+            <div class="dso-name">${d.name}</div>
+            ${d.parent ? `<div class="dso-parent">${d.parent}</div>` : ''}
+          </div>
+          <div class="dso-meta">
+            <span class="dso-customers">${d.customers}</span>
+            ${d.region ? `<span class="dso-region">${d.region}</span>` : ''}
+          </div>
+          <div class="dso-engagement">${d.engagement}</div>
+          ${d.innovationUrl ? `<a class="dso-link" href="${d.innovationUrl}" target="_blank">Innovation Portal &rarr;</a>` : ''}
+        </div>
+      `).join('')}
+    </div>`;
 }
 
 // ── FAQ ──

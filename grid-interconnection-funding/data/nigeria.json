@@ -90,6 +90,33 @@
       ]
     }
   ],
+  "dsoTerm": "DisCo (Distribution Company)",
+  "dsoPartners": [
+    {
+      "name": "IE Energy Lagos",
+      "parent": "New licensee (2025)",
+      "customers": "~4M (formerly Ikeja Electric territory)",
+      "region": "Lagos (North)",
+      "engagement": "Newly licensed (2025/2026). Deploying innovative solutions. Building operational capabilities. Early engagement opportunity.",
+      "innovationUrl": "https://www.ikejaelectric.com/"
+    },
+    {
+      "name": "Excel Distribution Company",
+      "parent": "New licensee (2025)",
+      "customers": "~3M (formerly Eko Electricity territory)",
+      "region": "Lagos (South & Islands)",
+      "engagement": "Newly licensed (2025/2026). Competition-driven service delivery. Building technology stack. Early engagement opportunity.",
+      "innovationUrl": ""
+    },
+    {
+      "name": "Abuja Electricity Distribution",
+      "parent": "AEDC",
+      "customers": "~2M",
+      "region": "Abuja (FCT), Niger, Kogi, Nassarawa",
+      "engagement": "One of the top-performing DisCos. Smart meter deployment. Technology partnerships for loss reduction and grid management.",
+      "innovationUrl": ""
+    }
+  ],
   "faq": [
     { "q": "What is Nigeria's energy transition target?", "a": "40% renewable electricity by 2030 (vs. 16% today). $500M+ public + private investment. Africa's largest market (200M+ population) with 26 GW generation capacity." },
     { "q": "Can we pitch to TCN/NISO without a local entity?", "a": "Yes. TCN and NISO explicitly seek technology partnerships for grid modernisation. No local incorporation required for initial engagement." },

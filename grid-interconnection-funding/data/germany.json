@@ -318,6 +318,41 @@
       "gridLevel": "both"
     }
   ],
+  "dsoTerm": "DSO (Verteilnetzbetreiber)",
+  "dsoPartners": [
+    {
+      "name": "Westnetz",
+      "parent": "E.ON / Westenergie",
+      "customers": "~5M",
+      "region": "Western Germany",
+      "engagement": "E.ON Grid Startup Challenge (annual, 6 startups selected). Grid Operation 4.0 with 100+ smart metering local grids. Direct vendor partnerships.",
+      "innovationUrl": "https://www.eon.com/en/innovation.html"
+    },
+    {
+      "name": "Bayernwerk Netz",
+      "parent": "E.ON",
+      "customers": "~7M people served",
+      "region": "Bavaria",
+      "engagement": "Energie Start-up Bayern competition. Heimdall Power sensors pilot. €4B investment 2025-2026.",
+      "innovationUrl": "https://www.bayernwerk.de/de/ueber-uns/innovation-energiezukunft.html"
+    },
+    {
+      "name": "Netze BW",
+      "parent": "EnBW",
+      "customers": "~5.5M",
+      "region": "Baden-Württemberg",
+      "engagement": "NETZlabor real-world test environments for smart grids. EnBW ENERGY LAUNCHPAD (pan-European, 2026 focus: resilience). Venture clienting 3-6 month PoCs. 17 startups in portfolio. 7x best corporate innovation unit in Germany. Contact: innovation@enbw.com",
+      "innovationUrl": "https://www.enbw.com/unternehmen/wie-wir-handeln/innovation.html"
+    },
+    {
+      "name": "Stromnetz Hamburg",
+      "parent": "City of Hamburg",
+      "customers": "~1.1M",
+      "region": "Hamburg",
+      "engagement": "Municipal DSO. Innovation via InfraLab Berlin co-creation space and direct vendor partnerships.",
+      "innovationUrl": "https://www.stromnetz-hamburg.de/"
+    }
+  ],
   "faq": [
     {
       "q": "Can I apply to individual TSO programmes without a German entity?",

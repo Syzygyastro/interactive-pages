@@ -137,6 +137,33 @@
       ]
     }
   ],
+  "dsoTerm": "Municipal Distributor",
+  "dsoPartners": [
+    {
+      "name": "City Power Johannesburg",
+      "parent": "City of Johannesburg",
+      "customers": "~400K metered",
+      "region": "Johannesburg",
+      "engagement": "480MW renewable target by 2026/27. Smart meter rollout. IPP procurement programme. Municipal innovation through vendor partnerships.",
+      "innovationUrl": "https://www.citypower.co.za/"
+    },
+    {
+      "name": "Cape Town Electricity",
+      "parent": "City of Cape Town",
+      "customers": "~1M",
+      "region": "Cape Town metropolitan area",
+      "engagement": "R4B grid upgrades. Wheeling regime opened for IPPs (2025). Tendering for electricity trading company (Feb 2026). New connection queue challenge.",
+      "innovationUrl": "https://www.capetown.gov.za/"
+    },
+    {
+      "name": "eThekwini Electricity",
+      "parent": "eThekwini Municipality",
+      "customers": "~850K",
+      "region": "Durban metropolitan area",
+      "engagement": "400MW MPPPP (100MW solar + 300MW gas-to-power). Ministerial approval received. Opening grid to IPPs.",
+      "innovationUrl": "https://www.durban.gov.za/"
+    }
+  ],
   "faq": [
     { "q": "What is South Africa's energy crisis and how does it drive grid tech demand?", "a": "South Africa faces chronic supply shortages and load shedding (rolling blackouts). Demand-side response, grid optimisation, and renewable integration are urgent priorities. This creates immediate market demand for AI-driven forecasting and congestion management." },
     { "q": "What is JET-IP and who can access it?", "a": "Just Energy Transition Investment Partnership: $9.3B G7 commitment for South African energy transition. Administered through World Bank and AfDB. Technology partners can participate indirectly through project financing only." },

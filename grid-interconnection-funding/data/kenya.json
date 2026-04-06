@@ -90,6 +90,17 @@
       ]
     }
   ],
+  "dsoTerm": "National Utility",
+  "dsoPartners": [
+    {
+      "name": "Kenya Power (KPLC)",
+      "parent": "Government of Kenya (majority)",
+      "customers": "~9.6M",
+      "region": "All Kenya",
+      "engagement": "Innovation Hub platform with AI categorization. 310,618 km of distribution lines. Grid modernisation priority. Direct vendor approaches accepted year-round.",
+      "innovationUrl": "https://innovations.kplcinstitute.ac.ke/"
+    }
+  ],
   "faq": [
     { "q": "What is Kenya's renewable energy target?", "a": "100% renewable electricity by 2030 (vs. 40% today). $5B+ investment required. Kenya has Africa's 2nd fastest electricity market growth at 7% CAGR." },
     { "q": "Can we approach Kenya Power without a local entity?", "a": "Yes. Kenya Power explicitly seeks technology partnerships for grid modernisation. No local incorporation required for initial engagement. Kenya Power Innovation Institute is the primary contact." },
