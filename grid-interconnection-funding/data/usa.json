@@ -10,7 +10,7 @@
   "badgeColor": "#FDE8EA",
   "badgeText": "#8B1A28",
   "badge": "$62B+ Federal",
-  "badge2": "8 Programmes",
+  "badge2": "10 Programmes",
   "tags": ["americas"],
   "sub": "The US has the largest grid modernisation budget globally, with $62B+ in federal funding through BIL and IRA. FERC Order 2023 creates urgent demand for interconnection automation.",
   "cardTags": ["DOE Grid", "ARPA-E", "SBIR", "FERC 2023", "IRA/BIL"],
@@ -19,7 +19,7 @@
     {
       "label": "DOE Grid Resilience & Innovation Partnerships (GRIP)",
       "hint": "$10.5B for grid modernisation",
-      "text": "<span class='section-label'>What it does</span>GRIP is the largest single grid modernisation programme in US history, funded by the Bipartisan Infrastructure Law. $10.5B across three tracks: Grid Resilience Grants, Smart Grid Grants, and Grid Innovation Program. In October 2024, $4.2B was awarded to 46 projects across 47 states.<span class='section-label'>Why it matters</span>Smart Grid Grants specifically fund AI-powered grid management, predictive analytics, and automation. Requires a US-based entity.<div class='links-row'><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program' target='_blank'>DOE GRIP Portal</a><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program-projects' target='_blank'>GRIP Projects</a></div>",
+      "text": "<span class='section-label'>What it does</span>GRIP is the largest single grid modernisation programme in US history, funded by the Bipartisan Infrastructure Law. $10.5B across three tracks: Grid Resilience Grants, Smart Grid Grants, and Grid Innovation Program. In October 2024, $4.2B was awarded to 46 projects across 47 states.<span class='section-label'>Why it matters</span>Smart Grid Grants specifically fund AI-powered grid management, predictive analytics, and automation. Requires a US-based entity.<div class='links-row'><a class='link-box' href='https://www.energy.gov/oe/grid-resilience-and-innovation-partnerships-grip' target='_blank'>DOE GRIP Portal</a><a class='link-box' href='https://www.energy.gov/gdo/grid-resilience-and-innovation-partnerships-grip-program-projects' target='_blank'>GRIP Projects</a></div>",
       "budget": "$10.5B total programme ($1.9B SPARK round 3 open now)",
       "programmeType": "Federal Grant",
       "deadline": "SPARK Round 3 (March 2026): Concept papers due 2 April 2026. Full applications due 20 May 2026 at 5pm ET.",
@@ -31,7 +31,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "SPARK Round 3 ($1.9B) has 3 tracks: Grid Resilience ($427M, reconductoring/ATTs), Smart Grid ($614M, software tools for real-time monitoring and optimisation), and Grid Innovation ($862M, transmission expansion for large loads). Smart Grid track directly funds AI-powered grid management software — strongest fit for Grid Agents."
+        "text": "SPARK Round 3 ($1.9B, March 2026) has 3 tracks including Smart Grid ($614M) directly funding AI-powered grid management software. Now under Office of Electricity (OE). Concept papers due 2 April 2026, full applications 20 May 2026."
       },
       "applicationRoute": [
         { "step": "Establish US subsidiary", "detail": "Delaware LLC or C-Corp, $1.5-3K setup" },
@@ -56,7 +56,7 @@
       "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Current FOA: GRADIENTS ($30M) targets grid reliability under high renewable penetration — inverter-based resources providing inertia and frequency regulation. PERFORM (completed) applied financial risk management to grid operations. Grid Agents' AI for connection automation fits ARPA-E's transformative mandate."
+        "text": "ARPA-E eXCHANGE portal active with multiple FOAs. GRADIENTS ($30M) targets grid reliability. PERFORM applied risk management to grid. Grid Agents' AI connection automation fits the transformative mandate. ~3% success rate but $1M-$10M awards."
       },
       "applicationRoute": [
         { "step": "Establish US entity if not already", "detail": "Required for application" },
@@ -113,30 +113,6 @@
         { "step": "Present FERC Order 2023 solution pitch", "detail": "Frame around cluster study automation and queue management" },
         { "step": "Negotiate pilot or vendor agreement", "detail": "Commercial relationship, not grant application" },
         { "step": "Deploy solution within RTO/ISO workflow", "detail": "Integration with existing interconnection study processes" }
-      ]
-    },
-    {
-      "label": "IRA Section 48C Advanced Energy Manufacturing Tax Credit",
-      "hint": "30% tax credit, $10B allocated",
-      "text": "<span class='section-label'>What it does</span>30% tax credit for investments in facilities manufacturing clean energy equipment. $10B total with $4B reserved for energy communities. Round 2 (Jan 2025): $6B to 140+ projects. Software companies building AI infrastructure for grid management may qualify.<div class='links-row'><a class='link-box' href='https://www.energy.gov/infrastructure/qualifying-advanced-energy-project-credit-48c-program' target='_blank'>DOE 48C Portal</a><a class='link-box' href='https://www.irs.gov/credits-deductions/businesses/advanced-energy-project-credit' target='_blank'>IRS 48C Credit</a></div>",
-      "budget": "30% tax credit — $10B fully allocated across Rounds 1-2",
-      "programmeType": "Federal Tax Credit",
-      "deadline": "$10B fully allocated. Round 1 ($4B) awarded March 2024. Round 2 ($6B) awarded late 2024. No Round 3 announced.",
-      "budgetIsEstimate": false,
-      "eligibility": {
-        "status": "partial",
-        "text": "Grid Agents as a SaaS AI platform is unlikely to qualify — programme primarily targets manufacturing facilities, not software. $10B fully allocated with no Round 3 announced. Low priority for Grid Agents."
-      },
-      "gridLevel": "both",
-      "relevance": {
-        "level": "low",
-        "text": "$10B fully allocated across Rounds 1-2. No Round 3 — the One Big Beautiful Bill Act (July 2025) eliminated replenishment. Primarily targeted manufacturing, not software. IRA clean energy credits are being phased out: production/investment tax credits end for projects placed in service after December 2027."
-      },
-      "applicationRoute": [
-        { "step": "Confirm eligibility with tax adviser", "detail": "Software-only companies may not qualify" },
-        { "step": "Submit concept paper to DOE", "detail": "Describe qualifying investment and energy impact" },
-        { "step": "IRS review and certification", "detail": "Technical and financial assessment" },
-        { "step": "Claim 30% tax credit on qualifying investment", "detail": "Applied to facility costs, not operating expenses" }
       ]
     },
     {
@@ -213,6 +189,80 @@
         { "step": "Mount Holly Lab evaluation", "detail": "Testing on 1.5-mile distribution feeder and simulation test-bed" },
         { "step": "Technology partnership if validated", "detail": "Deployment across 6-state service territory" }
       ]
+    },
+    {
+      "label": "EPRI Incubatenergy Labs Challenge",
+      "hint": "50+ utility members, paid demos",
+      "text": "<span class='section-label'>What it does</span>EPRI's Incubatenergy Labs connects startups directly with 50+ utility members for paid demonstration projects. Annual challenge cycle with pitch day and demo day. 2026 focus areas include AI-powered grid management, advanced data analytics, and DER integration.<span class='section-label'>Why it matters</span>Direct pathway to paid utility demonstration contracts ($50K-$500K). International startups welcome. Southern Company, Duke Energy, PG&E and other major US utilities are members.<div class='links-row'><a class='link-box' href='https://labs.incubatenergy.org/' target='_blank'>Incubatenergy Labs</a></div>",
+      "budget": "Paid demonstration contracts ($50K–$500K per project)",
+      "programmeType": "Utility Innovation Challenge",
+      "deadline": "2026 cohort closed November 2025. 2027 cycle expected to open ~September 2026. Pitch Day Spring, Demo Day Fall each year.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "EPRI does not publish per-project budgets. Estimated from typical utility demonstration contract scales and programme scope with 50+ member utilities.",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can apply — international startups welcome. No US entity required for initial application. AI for grid connection review fits 'modernizing grids' and 'DER integration' tracks. 2027 cycle expected September 2026."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "2026 focus areas explicitly include AI-powered grid management and advanced data analytics. Directly connects startups to 50+ utility decision-makers for paid demonstration projects. Past cohorts included international startups. ThinkLabs AI (similar to Grid Agents) was a recent MassCEC winner."
+      },
+      "applicationRoute": [
+        { "step": "Monitor labs.incubatenergy.org for 2027 cycle", "detail": "Expected to open ~September 2026" },
+        { "step": "Submit application during open window", "detail": "Pitch deck and technology description" },
+        { "step": "Pitch Day presentation to utility panel", "detail": "Spring event with 50+ utility representatives" },
+        { "step": "Matched with utility partner for demonstration", "detail": "Paid demonstration contract negotiated per project" },
+        { "step": "Demo Day showcase", "detail": "Fall event presenting demonstration results" }
+      ]
+    },
+    {
+      "label": "NYSERDA Grid Modernization Program",
+      "hint": "$12M+ rounds, Con Edison + National Grid",
+      "text": "<span class='section-label'>What it does</span>New York State Energy Research & Development Authority funds product development and demonstration projects for grid technology startups. Partners include Con Edison (10M+ customers) and National Grid. $12M available in recent round. Previous rounds $8M-$30M each.<span class='section-label'>Why it matters</span>Directly funds grid technology startups with major utility partners. Explicitly seeks technologies for faster integration of renewables and managing DER impacts on distribution systems.<div class='links-row'><a class='link-box' href='https://www.nyserda.ny.gov/All-Programs/Grid-Modernization-Program' target='_blank'>NYSERDA Grid Modernization</a></div>",
+      "budget": "$8M–$30M per round",
+      "programmeType": "State Innovation Grant",
+      "deadline": "Periodic rounds. April 2025 round closed July 2025. Next round expected 2026. Monitor nyserda.ny.gov.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would need a US entity. Partners with Con Edison and National Grid — both operate in UK and US. Grid connection queue management fits transmission & distribution reliability mandate."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Directly funds product development and demonstration for grid tech startups. Partners include Con Edison (10M+ customers) and National Grid (US/UK operations). $12M+ rounds with previous rounds up to $30M. Explicitly seeks technologies for faster renewable integration and DER management."
+      },
+      "applicationRoute": [
+        { "step": "Establish US entity if not already", "detail": "Required for NYSERDA funding" },
+        { "step": "Monitor NYSERDA for next open round", "detail": "nyserda.ny.gov/All-Programs/Grid-Modernization-Program" },
+        { "step": "Submit proposal during open window", "detail": "Product development or demonstration project" },
+        { "step": "Funded project with utility partner", "detail": "Con Edison or National Grid as demonstration site" }
+      ]
+    },
+    {
+      "label": "MassCEC InnovateMass Gridtech Spotlight",
+      "hint": "Up to $350K, Eversource + National Grid",
+      "text": "<span class='section-label'>What it does</span>Massachusetts Clean Energy Center targets grid technology startups for utility demonstration partnerships with Eversource and National Grid. Up to $350K per project. Concept-paper-based entry. Recent winner ThinkLabs AI built 'AI-based digital twin for utility interconnection and DER integration' — almost identical to Grid Agents' value proposition.<span class='section-label'>Why it matters</span>Direct validation that AI for grid interconnection is a funded use case. Partners with Eversource ($26.5B capital plan) and National Grid. Next round expected late 2026.<div class='links-row'><a class='link-box' href='https://www.masscec.com/program/innovatemass' target='_blank'>InnovateMass</a></div>",
+      "budget": "Up to $350K per project",
+      "programmeType": "State Innovation Grant",
+      "deadline": "2026 awardees announced. Next round expected late 2026. Monitor masscec.com.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would need a US entity. Concept-paper-based entry. ThinkLabs AI (almost identical product) was a recent winner — proves the use case is funded."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "Recent winner ThinkLabs AI built 'AI-based digital twin for utility interconnection and DER integration' — validates Grid Agents' exact use case. Partners with Eversource ($26.5B capital plan, $16.2B distribution) and National Grid. Concept-paper entry with $350K funding."
+      },
+      "applicationRoute": [
+        { "step": "Establish US entity if not already", "detail": "Required for MassCEC funding" },
+        { "step": "Monitor MassCEC for next Gridtech Spotlight", "detail": "masscec.com/program/innovatemass" },
+        { "step": "Submit concept paper when round opens", "detail": "Concept-paper-based entry process" },
+        { "step": "Demonstration partnership if selected", "detail": "With Eversource or National Grid at real sites" }
+      ]
     }
   ],
   "faq": [
@@ -222,5 +272,5 @@
     { "q": "Can I partner with a National Lab without a US entity?", "a": "Yes, CRADAs are available to international companies, though US companies have statutory preference. NREL and PNNL both have international partnership experience." },
     { "q": "Which RTO/ISO should I target first?", "a": "PJM (largest US RTO, massive queue) and MISO (facing worst backlog with multi-year study delays) are the highest-priority targets. Both are actively implementing FERC Order 2023 reforms." }
   ],
-  "note": "The US represents the largest market opportunity. FERC Order 2023 creates regulatory urgency. A Delaware LLC ($1.5-3K) unlocks access to the entire federal funding ecosystem including $10.5B GRIP and $4B+ SBIR."
+  "note": "The US represents the largest market opportunity. FERC Order 2023 creates regulatory urgency. A Delaware LLC ($1.5-3K) unlocks access to the entire federal funding ecosystem including $10.5B GRIP, $4B+ SBIR, and EPRI's 50+ utility network."
 }

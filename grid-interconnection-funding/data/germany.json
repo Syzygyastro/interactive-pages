@@ -39,7 +39,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "2024 challenge: sustainable EHV substation buildings (57 submissions, Ingerop won). Parallel congestion-focused programme with Dutch DSOs selected N-SIDE (probabilistic congestion forecasting), Dynamic Asset Rating, and a DER Management SaaS platform. No 2025/2026 theme announced yet."
+        "text": "2024 challenge completed (57 submissions, Ingerop won sustainable substation buildings). Parallel congestion programme selected N-SIDE, Dynamic Asset Rating, and DER Management SaaS. No 2025/2026 theme announced. TenneT explicitly seeks 'more solutions to connect more customers to the grid'."
       },
       "applicationRoute": [
         {
@@ -108,7 +108,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "2025 theme was 'People First' (knowledge transfer, safety, wellbeing — Manual.to won). Past themes: 'Digital' (2023), 'Sustainability' (2024). 2026 theme not yet announced. €50K PoC cash per winner. Grid automation and congestion management align with Elia Group's digitalisation priorities."
+        "text": "Annual challenges since 2017. 2025 theme: 'People First' (Manual.to won). Past themes: 'Digital' (2023), 'Sustainability' (2024). Notable projects: ToOp (Topology Optimization for Congestion management), VoltControl (decision support for control rooms), Predico (collaborative forecasting). €50K PoC cash per winner."
       },
       "applicationRoute": [
         {
@@ -177,8 +177,8 @@
         "text": "Grid Agents can submit a 2-minute pitch — no geographic restriction. Access to 8 European TSOs simultaneously is highly valuable for multi-market expansion of Grid Agents' connection management platform."
       },
       "relevance": {
-        "level": "high",
-        "text": "First programme (Oct 2025): 'Weather and Grid Resilience — Building a Climate-Resilient Power Grid'. Three focus areas: extreme-weather forecasting, decision support tools (multi-horizon forecasting + grid vulnerability), and planning/investment support. Selected providers collaborate with all 8 TSOs."
+        "level": "medium",
+        "text": "First open call (Oct 2025): 'Weather and Grid Resilience' — extreme weather forecasting and climate-proof planning. Call closed Nov 2025. Not directly relevant to connection queue management but provides access to 8 European TSOs. Future calls may cover more relevant topics like congestion management."
       },
       "applicationRoute": [
         {

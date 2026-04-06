@@ -2,7 +2,7 @@
   "id": "india",
   "name": "India",
   "full": "India — MNRE, PowerGrid & Smart Grid Innovation",
-  "vendor": "MNRE · Smart Grid · Startup India · Social Alpha",
+  "vendor": "Smart Grid · Social Alpha · PowerGrid · Grid-India",
   "type": "Emerging Market",
   "icon": "🇮🇳",
   "accentColor": "#FF9933",
@@ -10,36 +10,12 @@
   "badgeColor": "#FFF7E6",
   "badgeText": "#CC6600",
   "badge": "1.4B People",
-  "badge2": "6 Programmes",
+  "badge2": "4 Programmes",
   "tags": ["apac"],
-  "sub": "India targets 250M smart meters by 2030 and invests $4B+ in grid modernisation. MNRE oversees renewables; Smart Grid drives automation. Startup India offers £10K+ grants. Social Alpha accelerates 50+ cleantech startups/yr.",
-  "cardTags": ["MNRE", "Smart Grid", "Startup India", "World Bank", "ADB"],
-  "desc": "India is deploying 250M smart meters by 2030 and investing $4B+ in grid modernisation under MNRE oversight. The National Smart Grid Mission (NSGM) coordinates grid automation across 13 states. Startup India provides £10K+ grants + incubation. Social Alpha's Techtonic platform accelerates 50+ cleantech startups annually through CEIIC (Climate Emergency Incubator). World Bank and ADB provide concessional finance. No local entity required for Startup India or accelerators; optional for MNRE partnerships.",
+  "sub": "India targets 250M smart meters by 2030 and invests $4B+ in grid modernisation. Smart Grid Mission drives automation. Social Alpha accelerates 50+ cleantech startups/yr. PowerGrid and Grid-India offer direct partnerships.",
+  "cardTags": ["Smart Grid", "Social Alpha", "PowerGrid", "Grid-India"],
+  "desc": "India is deploying 250M smart meters by 2030 and investing $4B+ in grid modernisation. The National Smart Grid Mission (NSGM) coordinates grid automation across 13 states. Social Alpha's Techtonic platform accelerates 50+ cleantech startups annually through CEIIC (Climate Emergency Incubator). PowerGrid and Grid-India offer direct technology partnerships. No local entity required for Social Alpha or PowerGrid partnerships.",
   "studies": [
-    {
-      "label": "MNRE Green Energy Corridors",
-      "hint": "$2B+ fund, transmission backbone",
-      "text": "<span class='section-label'>What it does</span>Ministry of New & Renewable Energy (MNRE) manages green energy corridors — transmission infrastructure to support 280+ GW renewable targets. Dedicated to enabling high renewable penetration. Grid management, forecasting, and congestion automation are core priorities.<span class='section-label'>Why it matters</span>India's renewable expansion creates massive AI/grid automation demand. Direct partnership opportunities with state utilities and independent power producers (IPPs).<div class='links-row'><a class='link-box' href='https://mnre.gov.in/en/green-energy-corridors/' target='_blank'>MNRE Green Energy Corridors</a></div>",
-      "budget": "$2B+ fund",
-      "programmeType": "Government Infrastructure Programme",
-      "deadline": "Phase 2 ongoing through 2025-26 targeting 20 GW intra-state transmission. Implementation is state-level — timelines vary.",
-      "budgetIsEstimate": false,
-      "eligibility": {
-        "status": "partial",
-        "text": "Grid Agents would need an Indian partner or local presence for MNRE engagement. Grid automation is a core MNRE priority but Grid Agents' connection application review focus would need adaptation for Indian grid code and processes."
-      },
-      "gridLevel": "transmission",
-      "relevance": {
-        "level": "high",
-        "text": "GEC Phase 2 targets 20 GW RE integration through 10,750 ckm of transmission lines across 7 states. Rajasthan, Karnataka, and Tamil Nadu have completed implementation. Phase 3 and 4 now planned to address continued transmission bottlenecks."
-      },
-      "applicationRoute": [
-        { "step": "Identify Indian utility or IPP partner", "detail": "State utilities or independent power producers" },
-        { "step": "Contact MNRE green corridors team", "detail": "Present grid automation solution for renewable integration" },
-        { "step": "Joint proposal development", "detail": "Partner leads engagement with MNRE" },
-        { "step": "Pilot deployment with state utility", "detail": "Access to Indian transmission and distribution data" }
-      ]
-    },
     {
       "label": "Smart Grid Mission India (NSGM)",
       "hint": "13-state deployment, real-time monitoring",
@@ -54,38 +30,14 @@
       },
       "gridLevel": "both",
       "relevance": {
-        "level": "high",
-        "text": "22 crore smart meters sanctioned, ~2.77 crore installed (April 2025). 1,093 PMUs on 400kV lines for transmission monitoring (URTDSM project). Phase I (through 2026) targets 50% coverage of distribution transformer and feeder metering."
+        "level": "medium",
+        "text": "250M smart meter rollout is a hardware/infrastructure programme. Grid Agents' connection application review product would need significant adaptation for Indian grid code. PMU deployment and distribution metering are adjacent but different from connection queue management."
       },
       "applicationRoute": [
         { "step": "Identify state utility partner", "detail": "13 states participating in NSGM" },
         { "step": "Contact NSGM coordination office", "detail": "Present AI analytics and forecasting solution" },
         { "step": "Technical evaluation", "detail": "Assessment against smart grid deployment priorities" },
         { "step": "Vendor agreement with state utility", "detail": "Technology deployment alongside smart meter rollout" }
-      ]
-    },
-    {
-      "label": "Startup India Deep Tech Fund",
-      "hint": "£10K-£100K grants + incubation",
-      "text": "<span class='section-label'>What it does</span>Government of India's Startup India programme provides £10K-£100K grants for registered Indian startups. Deep Tech vertical explicitly supports AI, hardware, climate, and energy. Annual recognition ceremony at India Innovation Summit.<span class='section-label'>How to apply</span>Register Indian startup entity (₹100, ~$1.20 fee). Apply via DPIIT portal. No foreigners need apply — but can partner with Indian startup.<div class='links-row'><a class='link-box' href='https://www.startupindia.gov.in/content/sih/en/home-page.html' target='_blank'>Startup India Portal</a></div>",
-      "budget": "£10K–£100K grants",
-      "programmeType": "Government Startup Grant",
-      "deadline": "Annual application cycles. Deep Tech recognition at India Innovation Summit. Check startupindia.gov.in for current open calls.",
-      "budgetIsEstimate": false,
-      "eligibility": {
-        "status": "partial",
-        "text": "Grid Agents would need a registered Indian entity (₹100 fee). Small grants (£10K-£100K) aimed at early-stage Indian startups. Grant size may not justify the effort of establishing Indian operations for Grid Agents."
-      },
-      "gridLevel": "both",
-      "relevance": {
-        "level": "low",
-        "text": "Small grants aimed at early-stage Indian startups. Not targeted at grid interconnection specifically. More useful for establishing Indian market presence than for core R&D funding."
-      },
-      "applicationRoute": [
-        { "step": "Register Indian startup entity", "detail": "₹100 fee via DPIIT portal" },
-        { "step": "Apply for Deep Tech recognition", "detail": "Annual recognition ceremony at India Innovation Summit" },
-        { "step": "Submit grant application", "detail": "£10K-£100K for qualifying startups" },
-        { "step": "Incubation and mentorship", "detail": "Access to Startup India ecosystem" }
       ]
     },
     {
@@ -128,7 +80,7 @@
       "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Current R&D priorities: STATCOMs at solar evacuation stations (600 MVAR), WAMS at scale, AI-driven SFRA analysis, PALMS (Asset Life Management System), VSC-HVDC for congestion, substation inspection robots (with IIT Kanpur). Natural ester transformer deployed March 2025."
+        "text": "Current R&D priorities (STATCOMs, WAMS, SFRA analysis, substation robots) are primarily hardware-focused. AI-driven analysis is adjacent but PowerGrid's focus is on transmission infrastructure rather than connection application review. Product adaptation needed."
       },
       "applicationRoute": [
         { "step": "Contact PowerGrid Technology Development division", "detail": "powergrid.in/en/technology-development-rd" },
@@ -153,7 +105,7 @@
       "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Current focus: Frequency Response Obligation assessment, Security Constrained Economic Dispatch (SCED) optimisation, Regional Energy Management Centres (REMCs) for RE forecasting, and Automatic Generation Control. Real-time dispatch across 13 regional grids."
+        "text": "Grid-India manages real-time dispatch and frequency control across 13 regional grids — a different domain from connection application review. SCED optimisation and RE forecasting are adjacent capabilities. Product adaptation required for Indian market."
       },
       "applicationRoute": [
         { "step": "Contact Grid-India partnership team", "detail": "grid-india.in" },
@@ -164,11 +116,11 @@
     }
   ],
   "faq": [
-    { "q": "Do I need an Indian entity to access funding?", "a": "For Startup India grants, yes — but can be a newly registered entity (₹100 + ~$1.20 fee). For Social Alpha accelerators, NO entity needed. PowerGrid partnerships also don't require formal incorporation." },
+    { "q": "Do I need an Indian entity to access funding?", "a": "For Social Alpha accelerators, NO entity needed. PowerGrid and Grid-India partnerships also don't require formal incorporation — open to international technology vendors." },
     { "q": "How many smart meters is India targeting?", "a": "250M smart meters by 2030 as part of the Smart Grid Mission. This is the largest smart metering rollout globally and creates massive grid data opportunities." },
     { "q": "Who manages India's grid real-time operations?", "a": "Grid-India manages the national real-time energy market. 13 Regional Load Dispatch Centres (RTCs) manage state grids. Both are open to technology partnerships for forecasting and congestion management." },
     { "q": "What's the difference between Social Alpha Techtonic and CEIIC?", "a": "Techtonic is the accelerator programme (quarterly cohorts, mentorship). CEIIC is the climate-focused growth capital fund (£100K-$1M+). Both are administered by Social Alpha but serve different stages." },
     { "q": "Can non-Indians access World Bank or ADB energy funding?", "a": "Yes, with an Indian partner. World Bank and ADB fund large infrastructure projects in India with concessional rates. International technology providers can participate as vendors." }
   ],
-  "note": "India is the world's fastest-growing electricity market. 250M smart meters by 2030 + $4B grid modernisation = massive opportunity. No Indian entity needed for Social Alpha or PowerGrid partnerships; optional for Startup India."
+  "note": "India is the world's fastest-growing electricity market. 250M smart meters by 2030 + $4B grid modernisation = massive opportunity. No Indian entity needed for Social Alpha or PowerGrid partnerships."
 }

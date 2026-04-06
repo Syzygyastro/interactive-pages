@@ -39,7 +39,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "TenneT invested €14.8B in grid infrastructure in 2025 (€4.9B in NL). 2026 Regional Flexibility Tenders: Liander, Enexis, Stedin + TenneT each issuing at least one flexibility tender targeting €500M/yr additional flexibility. Redispatch costs rising from €17.1M (2024) to €31M (2025). Direct demand for congestion management."
+        "text": "TenneT invested €14.8B in grid infrastructure in 2025 (€4.9B in NL). 2026 Regional Flexibility Tenders with Liander, Enexis, Stedin targeting €500M/yr additional flexibility. Redispatch costs rising from €17.1M to €31M. Take-and-feed congestion management service operational since 2024. Direct demand for AI queue management."
       },
       "applicationRoute": [
         {
@@ -75,7 +75,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "2026 MOOI Electricity call: €20M, up to €4M per project. Pre-applications 17 March - 16 April 2026. Full proposals 2 June - 3 September 2026. Themes: onshore/offshore wind and solar, flexibility markets, integration technologies, better use of grid and generation assets. Consortia of 3+ required."
+        "text": "2026 MOOI Electricity call: €20M, up to €4M per project. Pre-applications 17 March - 16 April 2026. Full proposals 2 June - 3 September 2026. Themes: flexibility markets, integration technologies, better use of grid and generation assets. Consortia of 3+ companies required."
       },
       "applicationRoute": [
         {
@@ -116,7 +116,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "Joint challenge by Enexis, Stedin, and Alliander to expand LV grid 10x faster (100→1,000 neighbourhoods/yr). Simulation street opened November 2025. Invites solutions from non-energy sectors (automotive, defence, shipping). Prysmian won related 'Quick & Simple Substation' challenge."
+        "text": "Joint challenge by Enexis, Stedin, and Alliander to expand LV grid 10x faster (100→1,000 neighbourhoods/yr). Simulation street opened November 2025. Invites solutions from non-energy sectors. Prysmian won related 'Quick & Simple Substation' challenge. Ongoing consortium (2023-2027)."
       },
       "applicationRoute": [
         {
@@ -151,8 +151,8 @@
         "text": "Grid Agents would need a Dutch partner or entity. AI capabilities are relevant to Flex-e's load forecasting and automated curtailment focus, though connection queue management is a distinct problem domain."
       },
       "relevance": {
-        "level": "high",
-        "text": "2026 call: applications open 6 May - 15 October 2026. €13.56M per year. Three modules: Flexibility Scan, Feasibility Study, and Implementation. Eligible: businesses with 100+ kW contracted capacity. Focused on behind-the-meter flexibility rather than grid-level connection management."
+        "level": "medium",
+        "text": "2026 call: applications open 6 May - 15 October 2026, €13.56M per year. Three modules: Flexibility Scan, Feasibility Study, Implementation. For businesses with 100+ kW contracted capacity. Focused on behind-the-meter flexibility rather than grid-level connection management."
       },
       "applicationRoute": [
         {

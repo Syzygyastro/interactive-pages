@@ -2,7 +2,7 @@
   "id": "southafrica",
   "name": "South Africa",
   "full": "South Africa — Eskom, DMRE & Climate Finance",
-  "vendor": "Eskom · DMRE · CIF · GET.invest",
+  "vendor": "DMRE · CIF · Catalyst Fund · JET-IP",
   "type": "Energy Transition",
   "icon": "\ud83c\uddff\ud83c\udde6",
   "accentColor": "#007749",
@@ -10,35 +10,34 @@
   "badgeColor": "#E6F5F0",
   "badgeText": "#004D2D",
   "badge": "Energy Crisis Driver",
-  "badge2": "6 Programmes",
+  "badge2": "5 Programmes",
   "tags": ["africa"],
-  "sub": "South Africa's energy crisis (chronic load shedding) drives grid automation demand. Eskom runs open innovation. DMRE REIPPPP funds renewable infrastructure. JET-IP $8B climate finance. CIF, EEP Africa, and Catalyst Fund provide capital and acceleration.",
-  "cardTags": ["Eskom", "DMRE", "REIPPPP", "Catalyst Fund", "JET-IP"],
-  "desc": "South Africa faces chronic electricity shortages creating urgent demand for grid optimisation and demand-side response. Eskom (state utility) launched renewable energy offtake programme (first ever) with implicit technology partnership pathway. DMRE REIPPPP funds $10B+ renewable projects. JET-IP (Just Energy Transition Partnership) mobilises $8B climate finance. CIF, EEP Africa, and Catalyst Fund provide grant capital and acceleration. No local entity needed for accelerators; optional for direct utility partnerships.",
+  "sub": "South Africa's energy crisis (chronic load shedding) drives grid automation demand. DMRE REIPPPP funds renewable infrastructure. JET-IP $9.3B climate finance. CIF and Catalyst Fund provide capital. Most routes indirect for early-stage AI startups.",
+  "cardTags": ["DMRE", "REIPPPP", "Catalyst Fund", "JET-IP"],
+  "desc": "South Africa faces chronic electricity shortages creating urgent demand for grid optimisation and demand-side response. DMRE REIPPPP funds $10B+ renewable projects through IPP procurement auctions. JET-IP (Just Energy Transition Partnership) mobilises $9.3B G7 climate finance. CIF and Catalyst Fund provide concessional and venture capital. Most funding flows through government channels, development banks, and project developers \u2014 not directly to early-stage AI startups.",
   "studies": [
     {
-      "label": "Eskom Renewable Energy Offtake Programme (REOP)",
-      "hint": "First-ever commercial partnerships",
-      "text": "<span class='section-label'>What it does</span>Eskom launched its first renewable energy offtake programme (2024) enabling independent power producers (IPPs) and technology partners to develop grid solutions. Opens pathway for tech partnerships in grid management, forecasting, and demand response.<span class='section-label'>Why it matters</span>Eskom (state utility, 95% grid penetration) is seeking technology partnerships to address supply constraints. Direct access to national grid operator.<div class='links-row'><a class='link-box' href='https://www.eskom.co.za/eskom-launches-first-ever-renewable-energy-offtake-programme/' target='_blank'>Eskom RE Programme</a></div>",
-      "budget": "Est. $200K–$1M per technology partnership (Eskom REOP first cohort)",
-      "programmeType": "Utility Offtake Programme",
-      "deadline": "RFP issued 2025 for 291MW Solar PV. Earliest commercial operation expected December 2027. Targeting 2GW construction-ready by 2026.",
-      "budgetIsEstimate": true,
-      "budgetBasis": "Eskom does not disclose per-technology-partner budgets. Estimated from REOP programme scope (291MW initial, 2GW by 2026) and comparable South African utility technology procurement contracts.",
+      "label": "NTCSA (National Transmission Company South Africa)",
+      "hint": "30GW renewable connections by 2029",
+      "text": "<span class='section-label'>What it does</span>NTCSA was unbundled from Eskom in July 2024 as South Africa's independent transmission company. R112 billion ($6.3B) Transmission Development Programme. CEO appointed October 2025. Connecting 30,000 MW of renewable capacity by 2029. Building technology stack from scratch.<span class='section-label'>Why it matters</span>As a newly established entity building its technology stack from scratch, NTCSA is more likely to adopt modern AI tools than legacy Eskom systems. 30GW renewable connection target creates massive demand for connection queue management.<div class='links-row'><a class='link-box' href='https://www.ntcsa.co.za/' target='_blank'>NTCSA</a></div>",
+      "budget": "R112B ($6.3B) Transmission Development Programme",
+      "programmeType": "National Utility Partnership",
+      "deadline": "Ongoing — NTCSA actively building capabilities. 11,000 MW new capacity expected online by 2027.",
+      "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Grid Agents can approach directly \u2014 no entity required. Eskom's energy crisis drives demand for grid automation but the core need is supply optimisation rather than connection application review."
+        "text": "Grid Agents can approach directly — NTCSA is a new entity actively building partnerships and technology stack. No local entity required for initial engagement. 30GW renewable connection target is directly Grid Agents' core use case."
       },
-      "gridLevel": "both",
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Eskom handles both T&D (~95% of SA electricity) but is being unbundled: NTCSA (National Transmission Company) established as independent subsidiary; NEDCSA (distribution) planned next. Municipal distributors (City Power, Cape Town, eThekwini) buy bulk from Eskom. Grid automation urgently needed."
+        "text": "Newly established (July 2024), building technology stack from scratch. R112B ($6.3B) development programme. Connecting 30,000 MW renewable capacity by 2029 — creates massive demand for connection queue management. More open to modern AI tools than legacy Eskom. 11,000 MW new capacity expected online by 2027."
       },
       "applicationRoute": [
-        { "step": "Contact Eskom Technology Partnerships", "detail": "Pitch grid automation and demand response solution" },
-        { "step": "Present REOP-aligned solution", "detail": "Focus on supply optimisation and renewable integration" },
-        { "step": "Technical evaluation", "detail": "Assessment against Eskom operational priorities" },
-        { "step": "Partnership agreement", "detail": "Technology deployment supporting grid stability" }
+        { "step": "Contact NTCSA directly", "detail": "ntcsa.co.za" },
+        { "step": "Present AI connection queue management solution", "detail": "Frame around 30GW renewable connection challenge" },
+        { "step": "Technical evaluation", "detail": "New entity building capabilities" },
+        { "step": "Partnership agreement", "detail": "Technology deployment supporting Transmission Development Programme" }
       ]
     },
     {
@@ -55,8 +54,8 @@
       },
       "gridLevel": "transmission",
       "relevance": {
-        "level": "medium",
-        "text": "Largest renewable procurement programme in Africa. Technology partners support IPPs but funding flows through project developers not directly to tech startups."
+        "level": "low",
+        "text": "IPP procurement auctions for building generation capacity. Technology startups participate indirectly only through project developers. Not suited to early-stage AI startups. Funding flows through project developers, not directly to tech companies."
       },
       "applicationRoute": [
         { "step": "Identify participating IPP or EPC contractor", "detail": "Round 7 auction participants" },
@@ -79,38 +78,14 @@
       },
       "gridLevel": "both",
       "relevance": {
-        "level": "medium",
-        "text": "Concessional climate finance for infrastructure projects. Technology startups access indirectly via utility or developer partnerships not as direct applicants."
+        "level": "low",
+        "text": "Large concessional infrastructure finance through development banks. CIF's $462M SA investment plan targets wind, solar, and energy efficiency infrastructure \u2014 not AI startups. Indirect access only through utility partnerships."
       },
       "applicationRoute": [
         { "step": "Identify CIF-funded project in South Africa", "detail": "Via AfDB or World Bank project pipelines" },
         { "step": "Partner with project developer or utility", "detail": "Technology vendor role within funded project" },
         { "step": "Indirect financing", "detail": "Technology costs covered through project budget" },
         { "step": "Deployment within CIF-funded infrastructure", "detail": "Grid modernisation and renewable integration projects" }
-      ]
-    },
-    {
-      "label": "EEP Africa (Energy & Environment Partnership)",
-      "hint": "\u20ac55M+ fund, 13 African countries",
-      "text": "<span class='section-label'>What it does</span>EU-African partnership providing grants (\u20ac50K-\u20ac500K) for energy projects across 13 African countries including South Africa. Explicit support for renewable integration, grid modernisation, and digitalization. Non-dilutive grants; 6-month decision cycle.<div class='links-row'><a class='link-box' href='https://eepafrica.org/' target='_blank'>EEP Africa</a></div>",
-      "budget": "\u20ac200K\u2013\u20ac500K grants (30-50% co-financing required)",
-      "programmeType": "EU-Africa Grant Programme",
-      "deadline": "2026 Call for Proposals open. Two-stage process: Expression of Interest then Full Proposal. Note: For South Africa, 2026 call limited to e-waste management from clean energy sector.",
-      "budgetIsEstimate": false,
-      "eligibility": {
-        "status": "eligible",
-        "text": "Grid Agents can apply \u2014 non-dilutive grants, open to international applicants. However, South Africa's 2026 call is limited to e-waste management from clean energy sector, significantly reducing relevance for Grid Agents."
-      },
-      "gridLevel": "both",
-      "relevance": {
-        "level": "medium",
-        "text": "EU-African energy partnership with broad focus. Note: South Africa's 2026 call is limited to e-waste management from clean energy sector — significantly reduces relevance for Grid Agents this cycle."
-      },
-      "applicationRoute": [
-        { "step": "Submit application via EEP Africa portal", "detail": "eepafrica.org" },
-        { "step": "Project proposal", "detail": "Focus on grid modernisation or renewable integration in South Africa" },
-        { "step": "EEP assessment", "detail": "6-month decision cycle" },
-        { "step": "Grant agreement", "detail": "\u20ac50K-\u20ac500K non-dilutive funding" }
       ]
     },
     {
@@ -151,8 +126,8 @@
       },
       "gridLevel": "both",
       "relevance": {
-        "level": "medium",
-        "text": "Massive G7 commitment but flows through development banks and government channels. Technology startups access via utility partnerships not as direct recipients."
+        "level": "low",
+        "text": "$9.3B G7 commitment flowing through World Bank, AfDB, and government channels. Six portfolios (electricity, Mpumalanga transition, NEVs, hydrogen, skills, municipalities). No direct pathway for AI startups. Technology companies access only via utility or developer partnerships."
       },
       "applicationRoute": [
         { "step": "Identify JET-IP funded projects", "detail": "Via World Bank or AfDB pipelines" },
@@ -163,11 +138,10 @@
     }
   ],
   "faq": [
-    { "q": "What is South Africa's energy crisis and how does it drive grid tech demand?", "a": "Eskom faces chronic supply shortages and load shedding (rolling blackouts). Demand-side response, grid optimisation, and renewable integration are urgent priorities. This creates immediate market demand for AI-driven forecasting and congestion management." },
-    { "q": "Can international startups pitch to Eskom directly?", "a": "Yes. Eskom launched its first renewable energy offtake programme (2024) explicitly opening technology partnerships. No local entity required for initial engagement." },
-    { "q": "What is JET-IP and who can access it?", "a": "Just Energy Transition Investment Partnership: $8B G7 commitment for South African energy transition. Administered through World Bank and AfDB. Technology partners can participate indirectly through project financing." },
+    { "q": "What is South Africa's energy crisis and how does it drive grid tech demand?", "a": "South Africa faces chronic supply shortages and load shedding (rolling blackouts). Demand-side response, grid optimisation, and renewable integration are urgent priorities. This creates immediate market demand for AI-driven forecasting and congestion management." },
+    { "q": "What is JET-IP and who can access it?", "a": "Just Energy Transition Investment Partnership: $9.3B G7 commitment for South African energy transition. Administered through World Bank and AfDB. Technology partners can participate indirectly through project financing only." },
     { "q": "How much does Catalyst Fund typically invest?", "a": "\u20ac100K-\u20ac2M typical cheques. Equity-only investment model. No local entity required to pitch." },
     { "q": "What is REIPPPP and how does it create tech opportunities?", "a": "DMRE's Renewable Energy Independent Power Producer Procurement Programme: $10B+ invested across six mega-auctions. Technology partners support IPPs through EPC, operations, and grid integration phases." }
   ],
-  "note": "South Africa's energy crisis creates urgent demand for grid automation. Eskom's REOP programme (first-ever) opens technology partnerships directly. Catalyst Fund ($100M+ VC) and EEP Africa (\u20ac55M+ grants) provide accessible capital. No local entity required for pitching."
+  "note": "South Africa's energy crisis creates urgent demand for grid automation. DMRE REIPPPP, CIF, and JET-IP provide large-scale infrastructure finance but flow through government channels and project developers. Catalyst Fund ($100M+ VC) provides accessible climate-tech capital. No local entity required for pitching to Catalyst Fund."
 }

@@ -10,10 +10,10 @@
   "badgeColor": "#E6F1FB",
   "badgeText": "#0C447C",
   "badge": "Home Market",
-  "badge2": "11 Programmes",
+  "badge2": "14 Programmes",
   "tags": ["europe"],
   "sub": "The UK has the richest innovation funding ecosystem for grid interconnection, with SIF, NIA, NESO Big Ideas, and Innovate UK all directly funding AI-powered grid automation tools.",
-  "cardTags": ["SIF", "NIA", "NESO", "Innovate UK", "National Grid Partners", "UKPN", "SSEN"],
+  "cardTags": ["SIF", "NIA", "NESO", "Innovate UK", "National Grid Partners", "UKPN", "SSEN", "NGED", "SPEN", "ENWL"],
   "desc": "As the home market, the UK offers the most accessible funding routes. The Strategic Innovation Fund (SIF) provides multimillion-pound funding across 3 phases. Every DNO/TNO holds ring-fenced Network Innovation Allowance (NIA) budgets of £50K–£2M. NESO's Big Ideas pipeline feeds directly into funded projects. National Grid Partners has committed $100M specifically to AI for grid interconnection. The Energy Networks Innovation Taskforce launches new challenges in April 2026.",
   "studies": [
     {
@@ -31,7 +31,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "SIF Round 5 challenges include 'Dynamic Modelling' (squeezing more capacity from existing networks), 'Enhanced System Visibility and Control', and 'High Energy Demand Point Integration' — all directly relevant to Grid Agents' AI-powered connection review and queue management."
+        "text": "SIF Cycle 5 Discovery closed Feb 2026. Next windows expected summer and autumn 2026. Challenges include 'Dynamic Modelling', 'Enhanced System Visibility and Control', and 'High Energy Demand Point Integration' — all directly relevant to Grid Agents' AI-powered connection review and queue management."
       },
       "applicationRoute": [
         { "step": "Register on Innovate UK funding portal", "detail": "apply-for-innovation-funding.service.gov.uk" },
@@ -56,7 +56,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Fastest route to a funded pilot in UK energy. All 6 DNO groups and TNOs hold ring-fenced budgets. UKPN runs smart substations with AI/ML; Northern Powergrid funds AI load forecasting; ENWL runs QUEST whole-system optimisation. DNOs actively fund AI-powered connection and capacity tools."
+        "text": "Fastest route to a funded pilot in UK energy. All 6 DNO groups and TNOs hold ring-fenced budgets. UKPN sends 75% to third-party innovators. DNOs actively fund AI-powered connection and capacity tools. Submit 6-page proposal directly to any DNO."
       },
       "applicationRoute": [
         { "step": "Identify target DNO innovation lead", "detail": "Use smarter.energynetworks.org to find contacts" },
@@ -81,7 +81,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "NESO's Whole System Innovation Strategy (July 2025) names 6 priorities. Grid Agents maps to Priority 2 (Leverage Digitalisation & AI) and Priority 3 (Unlock System Capacity). NESO has run 83 Big Ideas, 61 NIA projects, and 15 SIF projects. Connection reforms expected to unlock £40B/yr."
+        "text": "NESO's 6 innovation priorities include Digitalisation & AI (Priority 2) and Unlock System Capacity (Priority 3). Big Ideas portal accepts continuous submissions with 4-6 week response. NESO has run 83 Big Ideas, 61 NIA projects, and 15 SIF projects. Connection reforms expected to unlock £40B/yr."
       },
       "applicationRoute": [
         { "step": "Submit Big Idea via NESO innovation portal", "detail": "Continuous submissions accepted" },
@@ -130,7 +130,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "medium",
-        "text": "General innovation funding across 'Future Economy' themes. Net Zero and Transformative Technologies (AI) are both named focus areas. Round 26 opened 5 March 2026, closes 29 April 2026. Not grid-specific but Grid Agents' AI platform fits Net Zero theme."
+        "text": "General innovation funding across 'Future Economy' themes. Net Zero and Transformative Technologies (AI) are both named focus areas. Round 26 opened 5 March 2026, closes 29 April 2026. Non-dilutive loan funding suitable for scaling after initial pilot validation."
       },
       "applicationRoute": [
         { "step": "Check for open round on IUK portal", "detail": "Regular rounds throughout the year" },
@@ -156,7 +156,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Chaired by Laura Sandys, focusing on 2030-2045. Grid connection delays is a named focus area. Taskforce report with long-term innovation challenges due April 2026 — challenges will remain open for SIF applications for 5 years. Bold, high-risk AI approaches explicitly encouraged."
+        "text": "Joint Ofgem + Innovate UK initiative. Grid connection delays is a named focus area. Taskforce challenges due April 2026, remain open for SIF applications for 5 years. Bold, high-risk AI approaches explicitly encouraged."
       },
       "applicationRoute": [
         { "step": "Monitor Ofgem and IUK announcements", "detail": "First challenges expected April 2026" },
@@ -180,7 +180,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "AI Technical Sandbox consultation closed 20 March 2026 — pilot decision expected soon. Designed for testing AI solutions in energy sector before live deployment. Grid Agents' AI for connection application review is exactly the use case this sandbox targets."
+        "text": "AI Technical Sandbox consultation closed 20 March 2026 — pilot decision imminent (12-month programme). 5 sandboxes granted to date. Grid Agents' AI for connection application review is exactly the use case this sandbox targets. Application form available on Ofgem website."
       },
       "applicationRoute": [
         { "step": "Submit sandbox application to Ofgem", "detail": "Describe proposed innovation and regulatory barriers encountered" },
@@ -230,7 +230,7 @@
       "gridLevel": "distribution",
       "relevance": {
         "level": "high",
-        "text": "UKPN priorities include smart substations using AI/ML, flexibility services, DSO data platforms, and connections innovation (Heatropolis project). AI-driven image analysis and digitalisation strategy align with Grid Agents' document processing capabilities."
+        "text": "75% of NIA funding goes to third-party innovators. Innovation priorities include smart substations using AI/ML, flexibility services (Flex Forward), DSO data platforms, and connections innovation (Heatropolis). 2024/25 NIA report published. Submit ideas via innovation.ukpowernetworks.co.uk."
       },
       "applicationRoute": [
         { "step": "Contact UKPN Innovation team", "detail": "innovation.ukpowernetworks.co.uk" },
@@ -254,7 +254,7 @@
       "gridLevel": "distribution",
       "relevance": {
         "level": "high",
-        "text": "SIF-funded Artificial Forecasting project demonstrates appetite for AI at grid level. Targets £1B in customer benefits. AI load forecasting at monthly/weekly/daily/hourly granularity directly adjacent to Grid Agents' capabilities."
+        "text": "Secured £3.7M SIF for Artificial Forecasting and GeoGrid projects. Innovation strategy covers smart grids, smart meter data, affordability. Smart Network Design Methodologies project explores LV system modelling. Targets £1B in customer benefits over 5 years."
       },
       "applicationRoute": [
         { "step": "Contact Northern Powergrid innovation team", "detail": "northernpowergrid.com/innovation" },
@@ -285,6 +285,77 @@
         { "step": "Submit NIA proposal (distribution or transmission)", "detail": "SSEN accepts proposals for both licence areas" },
         { "step": "Evaluation against SSEN innovation priorities", "detail": "Network resilience, whole-system planning, digitalisation" },
         { "step": "Funded pilot if approved", "detail": "Potential route to SSEN's £120M innovation deployment budget" }
+      ]
+    },
+    {
+      "label": "NGED Innovation (National Grid Electricity Distribution)",
+      "hint": "~7.9M customers, AI connections focus",
+      "text": "<span class='section-label'>What it does</span>NGED (formerly Western Power Distribution) serves ~7.9M customers across West Midlands, South West, and South Wales. Secured £6.85M in SIF funding for PRIDE and Phase Switch System projects. Online NIA proposal submission portal. In March 2026, partnered with grid intelligence startup Yottar to build a digital platform automating grid capacity assessment and connection processes.<span class='section-label'>Why it matters</span>NGED allocated £418K specifically for exploring AI within the connections journey. Approved 60% of EV connections in two seconds (vs two days) through digital innovation. PRIDE project uses digital tools for integrated connection planning.<div class='links-row'><a class='link-box' href='https://commercial.nationalgrid.co.uk/innovation' target='_blank'>NGED Innovation Portal</a><a class='link-box' href='https://www.nationalgrid.co.uk/innovation' target='_blank'>National Grid ED Innovation</a></div>",
+      "budget": "£50K–£2M per NIA project + £6.85M SIF secured",
+      "programmeType": "DNO Innovation Partnership",
+      "deadline": "Rolling — NIA proposals accepted continuously via online portal. SIF projects active. Ofgem confirmed additional NIA funding for 2026-28.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can submit NIA proposals directly via online portal. NGED's March 2026 partnership with Yottar (automating connection capacity assessment) proves active appetite for AI startups in the connections space. £418K allocated specifically for AI in connections."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "Strongest connections-AI signal of any UK DNO. NGED-Yottar partnership (March 2026) automates grid capacity assessment — directly complementary to Grid Agents' application review. £418K allocated for AI in connections. PRIDE project (SIF-funded) uses digital tools for integrated connection planning. 60% of EV connections approved in 2 seconds via digital innovation."
+      },
+      "applicationRoute": [
+        { "step": "Submit NIA proposal via NGED online portal", "detail": "commercial.nationalgrid.co.uk/innovation" },
+        { "step": "NGED evaluates against innovation priorities", "detail": "Focus on connections AI and digital innovation" },
+        { "step": "Funded pilot if approved", "detail": "£50K-£2M NIA funding directly from NGED budget" }
+      ]
+    },
+    {
+      "label": "SP Energy Networks (SPEN) Innovation",
+      "hint": "~3.5M customers, £12B network overhaul",
+      "text": "<span class='section-label'>What it does</span>SP Energy Networks (Iberdrola group) serves ~3.5M customers across Central/Southern Scotland and Merseyside/North Wales. £10M ENSIGN digital twin project with University of Strathclyde. £914K SIF funding for Equiflex and LVOE projects. Part of Iberdrola's £12B UK network overhaul (2025).<span class='section-label'>Why it matters</span>SPEN expects to connect 1.5M EVs, 1M heat pumps, and 7GW+ of distributed generation by 2030 — creating massive connection queue pressure. £1.4B annual investment commitment to support Clean Power 2030.<div class='links-row'><a class='link-box' href='https://www.spenergynetworks.co.uk/pages/innovation.aspx' target='_blank'>SPEN Innovation</a><a class='link-box' href='https://smarter.energynetworks.org/' target='_blank'>ENA Smarter Networks Portal</a></div>",
+      "budget": "£50K–£2M per NIA project + £10M ENSIGN digital twin",
+      "programmeType": "DNO Innovation Partnership",
+      "deadline": "Rolling — NIA proposals accepted continuously via ENA Smarter Networks Portal. SIF projects active.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can submit NIA proposals directly. SPEN's massive infrastructure buildout (£12B, 1.5M EVs, 7GW+ DG by 2030) creates surge in connection applications needing AI processing."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "Expects 1.5M EVs, 1M heat pumps, 7GW+ distributed generation by 2030 — massive connection queue pressure. £10M ENSIGN digital twin project uses AI for demand forecasting. £1.4B annual investment for Clean Power 2030. Part of Iberdrola group (connection to PERSEO programme)."
+      },
+      "applicationRoute": [
+        { "step": "Submit idea via ENA Smarter Networks Portal", "detail": "smarter.energynetworks.org" },
+        { "step": "Contact SPEN innovation team directly", "detail": "spenergynetworks.co.uk/pages/innovation.aspx" },
+        { "step": "NIA proposal evaluation", "detail": "Decision within 4-8 weeks typically" },
+        { "step": "Funded pilot if approved", "detail": "£50K-£2M NIA or potential SIF partner" }
+      ]
+    },
+    {
+      "label": "Electricity North West (ENWL) Innovation",
+      "hint": "~2.4M customers, £9M QUEST project",
+      "text": "<span class='section-label'>What it does</span>ENWL serves ~2.4M customers across North West England (Greater Manchester, Lancashire, Cumbria, Cheshire). £8.4M total NIA allocation across RIIO-ED2. Flagship £9M QUEST project (completed January 2026) demonstrated whole-system optimisation using AI/ML. 17 of 18 recent project partners were new to ENWL.<span class='section-label'>Why it matters</span>QUEST project architecture — wrapping existing systems with a single AI optimisation layer — is directly analogous to how Grid Agents layers AI over existing connection processes. Strong third-party partnership ethos.<div class='links-row'><a class='link-box' href='https://www.enwl.co.uk/innovation/' target='_blank'>ENWL Innovation</a><a class='link-box' href='https://smarter.energynetworks.org/' target='_blank'>ENA Smarter Networks Portal</a></div>",
+      "budget": "£50K–£2M per NIA project (£8.4M total RIIO-ED2 allocation)",
+      "programmeType": "DNO Innovation Partnership",
+      "deadline": "Rolling — NIA proposals accepted continuously. Ofgem confirmed additional NIA funding for 2026-28. 17 of 18 recent partners were new to ENWL.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can submit NIA proposals directly. ENWL's strong third-party partnership ethos (17 of 18 recent partners were new) and smaller scale make it ideal for focused pilot partnerships."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "£9M QUEST project (completed Jan 2026) used AI/ML for whole-system optimisation — architecturally similar to Grid Agents' approach. Smallest DNO by customer count, potentially more agile for pilot partnerships. Digitalisation strategy updated March 2025. Over £3M/year spent on innovation delivery."
+      },
+      "applicationRoute": [
+        { "step": "Contact ENWL innovation team", "detail": "enwl.co.uk/innovation/" },
+        { "step": "Submit NIA proposal", "detail": "Third parties involved in all innovation projects" },
+        { "step": "ENWL evaluates against innovation priorities", "detail": "Net zero system transition focus" },
+        { "step": "Funded pilot if approved", "detail": "Strong ethos of partnering with new third parties" }
       ]
     }
   ],

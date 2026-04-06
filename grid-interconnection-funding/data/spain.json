@@ -10,7 +10,7 @@
   "badgeColor": "#FFFAEB",
   "badgeText": "#CC9900",
   "badge": "€13.59B Transmission",
-  "badge2": "8 Programmes",
+  "badge2": "7 Programmes",
   "tags": [
     "europe"
   ],
@@ -39,7 +39,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "Elewit 5th Venture Client Programme (2025) selected: DeNexus (cyber risk), AssetCool (UK, photonic coatings reducing conductor temp 25%, capacity up 10-30%), Navgar (AI operations platform), Ocean Ecostructures. Themes: cybersecurity, new materials for overhead lines, AI project management, marine ecosystem revitalisation."
+        "text": "Elewit 5th Venture Client Programme (2025) selected DeNexus, AssetCool, Navgar, Ocean Ecostructures across cybersecurity, new materials, AI project management, and marine themes. €13.59B transmission investment 2025-2030. Elewit has made 8 investments to date. Rolling startup pitches accepted."
       },
       "applicationRoute": [
         {
@@ -64,7 +64,7 @@
     {
       "label": "Iberdrola PERSEO",
       "hint": "€200M+ invested in startup portfolio",
-      "text": "<span class='section-label'>What it does</span>International startup programme with €200M+ invested in AI, renewable integration, and grid management portfolio. Equity and strategic partnership model. Explicit focus on next-generation grid technologies.<span class='section-label'>Why it matters</span>Direct access to Europe's largest utility (81M customers). Iberdola operates in Spain, Portugal, UK, US, Mexico, and Brazil.<div class='links-row'><a class='link-box' href='https://www.iberdrola.com/innovation/international-startup-program-perseo' target='_blank'>Iberdrola PERSEO</a></div>",
+      "text": "<span class='section-label'>What it does</span>International startup programme with €200M+ invested in AI, renewable integration, and grid management portfolio. Equity and strategic partnership model. Explicit focus on next-generation grid technologies.<span class='section-label'>Why it matters</span>Direct access to Europe's largest utility (81M customers). Iberdola operates in Spain, Portugal, UK, US, Mexico, and Brazil.<div class='links-row'><a class='link-box' href='https://www.iberdrola.com/about-us/our-innovation-model/international-startup-program-perseo' target='_blank'>Iberdrola PERSEO</a></div>",
       "budget": "€200M+ portfolio (equity model)",
       "programmeType": "Corporate VC / Accelerator",
       "deadline": "Rolling — multiple active challenges open on iberdrola.com including grid resilience, wind measurement, and solar plant inspection. No fixed annual deadline.",
@@ -75,12 +75,12 @@
       },
       "relevance": {
         "level": "high",
-        "text": "Current open challenges include Electricity Network Resilience (advanced computing for distribution resilience during extreme weather) and Sustainable Materials for Grids. Past challenges: PV inspection, solar generation technologies, underwater inspections. Winners sign pilot agreements with Iberdrola covering costs and providing real-site access."
+        "text": "€200M+ invested, 6 challenges/year, ~25 pilots/PoCs. Current open challenges include Electricity Network Resilience (advanced computing for distribution resilience during extreme weather). Strategic area 'Grid of the future' seeks smart, digital, flexible grid tech. Winners sign pilot agreements with costs covered and real-site access."
       },
       "applicationRoute": [
         {
           "step": "Submit application via PERSEO portal",
-          "detail": "iberdrola.com/innovation/international-startup-program-perseo"
+          "detail": "iberdrola.com/about-us/our-innovation-model/international-startup-program-perseo"
         },
         {
           "step": "Present pitch deck with product demo",
@@ -147,7 +147,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "Current calls: Innovative Renewable Energy & Storage 2nd call (€202.5M, closed Feb 2026), RENOVAL II (€355M renewables manufacturing), PORT-EOLMAR (€212M floating offshore wind). Over €1.3B in active calls. Demand-side management equipment call expected 2026. Highly oversubscribed (€6B requests vs €700M allocated)."
+        "text": "Over €1.3B in active calls including Innovative Renewable Energy & Storage (€202.5M), RENOVAL II (€355M), PORT-EOLMAR (€212M). Highly oversubscribed (€6B requests vs €700M allocated). Demand-side management equipment call expected 2026. Grid AI eligible under innovation category."
       },
       "applicationRoute": [
         {
@@ -240,42 +240,6 @@
         }
       ],
       "gridLevel": "distribution"
-    },
-    {
-      "label": "Horizon Europe (via Spain)",
-      "hint": "€95.5B EU programme, single entity eligible",
-      "text": "<span class='section-label'>What it does</span>UK companies can participate post-Brexit as Associated Country. Spain routes some funding via Spanish tech clusters. EIC Accelerator grants (€2.5M) available for Spanish-led consortia.<div class='links-row'><a class='link-box' href='https://ec.europa.eu/info/funding-tenders/opportunities/portal/' target='_blank'>EU Funding Portal</a></div>",
-      "budget": "Up to €2.5M EIC grant",
-      "programmeType": "EU Innovation Grant",
-      "deadline": "EIC Accelerator bimonthly cut-offs: 7 Jan, 4 Mar, 6 May, 8 Jul, 2 Sep, 4 Nov 2026. Next: 6 May 2026.",
-      "budgetIsEstimate": false,
-      "eligibility": {
-        "status": "eligible",
-        "text": "Grid Agents can apply as a single UK entity (Associated Country since January 2024). Grant-only access up to €2.5M. Clean energy and AI are eligible topics. Can also pursue via Spanish consortium route."
-      },
-      "relevance": {
-        "level": "medium",
-        "text": "2026 EIC Accelerator challenge topics include 'Deep Tech for Climate Adaptation' (€50M). Open track (€414M) accepts any deep tech topic. Bimonthly cut-offs. Grid Agents can apply as single UK entity via Open track or Climate Adaptation challenge. Can also pursue via Spanish consortium route."
-      },
-      "applicationRoute": [
-        {
-          "step": "Register on EU Funding Portal",
-          "detail": "ec.europa.eu/info/funding-tenders"
-        },
-        {
-          "step": "Identify relevant call or Spanish consortium",
-          "detail": "Grid innovation or clean energy topics"
-        },
-        {
-          "step": "Submit application",
-          "detail": "Single entity for EIC or consortium for collaborative calls"
-        },
-        {
-          "step": "EU evaluation",
-          "detail": "Competitive assessment across member states"
-        }
-      ],
-      "gridLevel": "both"
     },
     {
       "label": "i-DE Redes Eléctricas (Iberdrola Distribution)",

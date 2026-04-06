@@ -10,7 +10,7 @@
   "badgeColor": "#E8ECFF",
   "badgeText": "#001B75",
   "badge": "€5B+ Energy R&D",
-  "badge2": "7 Programmes",
+  "badge2": "6 Programmes",
   "tags": [
     "europe"
   ],
@@ -40,7 +40,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "R&D Roadmap 2025-2028 ('CAP R&D'): €50M+/yr, ~200 engineers, 9 research programmes. Key themes: digital substations, asset monitoring (drones, aging simulation), grid-forming technology (hybrid storage demonstrator at Castelet), offshore wind cable R&D, and climate resilience. Also runs RTE Smart Innovation Challenge via Agorize."
+        "text": "R&D Roadmap 2025-2028 ('CAP R&D'): €50M+/yr, ~200 engineers, 9 research programmes. Key themes: digital substations, asset monitoring, grid-forming technology, offshore wind cable R&D, and climate resilience. Also runs RTE Smart Innovation Challenge via Agorize. 100+ active startup partnerships."
       },
       "applicationRoute": [
         {
@@ -76,7 +76,7 @@
       },
       "relevance": {
         "level": "medium",
-        "text": "2026 edition (applications closed Dec 2025, Grand Final June 2026). Five categories: Health-Safety, Electrification, Energy Flexibility, Operational Efficiency, Environmental Adaptability. €15K per winner plus EDF Pulse Connect support (lab testing, business model, end-user access)."
+        "text": "2026 edition applications closed Dec 2025, Grand Final June 2026. Five categories: Health-Safety, Electrification, Energy Flexibility, Operational Efficiency, Environmental Adaptability. €15K per winner plus EDF Pulse Connect support (lab testing, business model, end-user access). Access to 180M customers."
       },
       "applicationRoute": [
         {
@@ -112,7 +112,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "AI Pioneers call open — next deadline 10 March 2026, final closing 9 June 2026. First 23 laureates unveiled Feb 2026. Backed by €10M public funding. Bpifrance has deployed €10B for AI ecosystem. Ecological transition is an explicitly named sector. Grid Agents' AI fits the criteria."
+        "text": "AI Pioneers call open — Phase 1 deadline 2 June 2026, Phase 2 deadline 9 June 2026. First 23 laureates unveiled Feb 2026. Backed by €10M public funding. Bpifrance has deployed €10B for AI ecosystem. Ecological transition is an explicitly named sector."
       },
       "applicationRoute": [
         {
@@ -148,7 +148,7 @@
       },
       "relevance": {
         "level": "high",
-        "text": "Active with 30 ongoing projects (May 2025 progress report). Notable: Reflex Project making 600-800 MW capacity available without waiting for connection plans across ~50 source stations (2025-2027 generalisation). V2G experiments with Renault/The Mobility House. Rolling applications since Nov 2022."
+        "text": "Active with 30 ongoing projects (May 2025). Notable: Reflex Project making 600-800 MW capacity available without waiting for connection plans across ~50 source stations (2025-2027). Rolling applications since Nov 2022. AI-assisted grid connection review is exactly the type of innovation this sandbox supports."
       },
       "applicationRoute": [
         {
@@ -184,7 +184,7 @@
       },
       "relevance": {
         "level": "medium",
-        "text": "Current open calls include: local electricity production & consumption (deadline Dec 2026), hydrogen production (~1 GW target), 2026 thesis call, and building innovation (SEPAC). Broader France 2030 calls cover decarbonisation, renewables, and sustainable cities. Grid digitalisation eligible."
+        "text": "Current open calls include local electricity production & consumption (deadline Dec 2026), hydrogen production, and building innovation. Broader France 2030 calls cover decarbonisation and renewables. Grid digitalisation eligible but ADEME's focus is broader energy transitions, not specifically grid connection queues."
       },
       "applicationRoute": [
         {
@@ -207,42 +207,6 @@
       "gridLevel": "both"
     },
     {
-      "label": "France 2030 (Broader Programme)",
-      "hint": "€300B sovereign investment plan",
-      "text": "<span class='section-label'>What it does</span>France 2030 is the national strategic investment plan (€300B total). Energy transition is a core pillar with €50B+ allocated. Administered through Bpifrance, local government, and sector agencies.<div class='links-row'><a class='link-box' href='https://www.info.gouv.fr/grand-dossier/france-2030-en/understanding-france-2030' target='_blank'>France 2030 Overview</a></div>",
-      "budget": "€50B+ energy pillar (€300B total plan)",
-      "programmeType": "National Investment Programme",
-      "deadline": "Access via specific Bpifrance calls and sector agency programmes. Multiple windows throughout year.",
-      "budgetIsEstimate": false,
-      "eligibility": {
-        "status": "partial",
-        "text": "Grid Agents would need a French entity or partnership. Access primarily through Bpifrance calls. Should target specific France 2030 Deep-Tech AI calls rather than the broader programme."
-      },
-      "relevance": {
-        "level": "medium",
-        "text": "Massive national investment plan with energy transition as core pillar. Access primarily through Bpifrance AI Pioneers call or ADEME-specific calls. Grid Agents should target the AI Pioneers programme directly rather than broader France 2030."
-      },
-      "applicationRoute": [
-        {
-          "step": "Identify relevant Bpifrance call",
-          "detail": "France 2030 administered through multiple agencies"
-        },
-        {
-          "step": "Apply via designated portal",
-          "detail": "Bpifrance or sector agency depending on call"
-        },
-        {
-          "step": "Multi-stage evaluation",
-          "detail": "Technical, commercial, and strategic assessment"
-        },
-        {
-          "step": "Funded project",
-          "detail": "Scale varies by specific programme within France 2030"
-        }
-      ],
-      "gridLevel": "both"
-    },
-    {
       "label": "Enedis Innovation (France's Primary DSO)",
       "hint": "95% of French distribution, 35M Linky meters",
       "text": "<span class='section-label'>What it does</span>Enedis manages 95% of France's electricity distribution network. Runs dedicated R&D and innovation programme. 35M Linky smart meters deployed providing grid data. 46 MW of local flexibility services across 30 departments. Innovation themes: smart grid/IoT, digital grid observability, fraud detection, capacity assessment, and SF6-free equipment (no new SF6 24kV switchboards since 2021).<span class='section-label'>Why it matters</span>Overwhelmingly dominant French DSO. Major programmes include the €250M Marseille Network programme for urban grid resilience.<div class='links-row'><a class='link-box' href='https://www.enedis.fr/sites/default/files/documents/pdf/enedis-rd-and-innovation-programme.pdf' target='_blank'>Enedis R&D Programme</a></div>",
@@ -258,7 +222,7 @@
       "gridLevel": "distribution",
       "relevance": {
         "level": "high",
-        "text": "35M Linky smart meters, 46 MW flexibility services across 30 departments, €250M Marseille Network programme. Innovation focus on digital grid observability, capacity assessment, and fraud detection aligns with Grid Agents' AI document processing capabilities."
+        "text": "35M Linky smart meters deployed, 46 MW flexibility services across 30 departments, €250M Marseille Network programme. Innovation focus on digital grid observability, capacity assessment, and fraud detection. 95% of French distribution — overwhelmingly dominant DSO with dedicated R&D programme."
       },
       "applicationRoute": [
         {
@@ -286,8 +250,8 @@
       "a": "Yes. RTE operates 100+ startup partnerships with no nationality restriction on direct vendor partnerships. However, you'll need French representation/contact for engagement."
     },
     {
-      "q": "How different is France 2030 from standard Bpifrance grants?",
-      "a": "France 2030 is the broader €300B national plan; Bpifrance administers the implementation. For startups, apply to Bpifrance's specific France 2030 Deep-Tech fund (€300M/yr)."
+      "q": "How does France 2030 relate to Bpifrance grants?",
+      "a": "France 2030 is the broader €300B national plan; Bpifrance administers the implementation. For startups, apply directly to Bpifrance's AI Pioneers call (France 2030 Deep-Tech fund, €300M/yr)."
     },
     {
       "q": "What's the CRE regulatory sandbox approval timeline?",
@@ -302,5 +266,5 @@
       "a": "No — you can partner with a French company and apply as a consortium, or register a French entity. Both routes are acceptable."
     }
   ],
-  "note": "France offers €5B+ in energy R&D funding with the lowest company registration barrier in Europe (€500 SARL). RTE + EDF partnerships don't require local entity. Bpifrance France 2030 (€300M/yr) unlocks massive Deep-Tech funding."
+  "note": "France offers €5B+ in energy R&D funding with the lowest company registration barrier in Europe (€500 SARL). RTE + EDF partnerships don't require local entity. Bpifrance AI Pioneers (€300M/yr Deep-Tech fund) unlocks massive AI and ClimaTech funding."
 }

@@ -10,7 +10,7 @@
   "badgeColor": "#E8ECFF",
   "badgeText": "#001B5F",
   "badge": "11 CRI Reforms",
-  "badge2": "7 Programmes",
+  "badge2": "8 Programmes",
   "tags": ["apac"],
   "sub": "AEMO's Connections Reform Initiative (11 reforms across 4 areas) creates urgent market demand for queue management. ARENA funds $100M+ clean energy projects. 310+ EnergyLab alumni across 7+ programmes. Network operators actively seek technology partnerships.",
   "cardTags": ["AEMO", "ARENA", "EnergyLab", "Network Operators", "R&D Tax"],
@@ -31,7 +31,7 @@
       "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "11 reforms across 4 areas: Access (automatic access standards), Information & Modelling (pre-application support, hosting capacity), Batching (quarterly coordinated assessment), Investment Certainty (commissioning guideline, Early Access Framework). Multiple guidelines published December 2025-January 2026. Pre-application Support Services now live."
+        "text": "11 reforms across 4 areas now in implementation phase. Pre-application Support Services now live. Draft EAF Guideline published Jan 2026. Multiple guidelines published Dec 2025-Jan 2026. Australia's 350+ GW interconnection backlog creates direct demand for Grid Agents' AI queue management."
       },
       "applicationRoute": [
         { "step": "Contact AEMO Connections Reform team", "detail": "Direct pitch for queue management and automation" },
@@ -55,7 +55,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Currently open: Solar Sunshot R2 ($150M, EOI closes 30 April 2026), Industrial Transformation R3 ($180M, ongoing until exhausted). ARENA explicitly funds grid automation, forecasting, and demand-side management innovation."
+        "text": "Currently open: Solar Sunshot R2 ($150M, EOI closes 30 April 2026), Industrial Transformation R3 ($180M, ongoing). ARENA explicitly funds grid automation, forecasting, and demand-side management innovation. Advancing Renewables Program ongoing until funds exhausted."
       },
       "applicationRoute": [
         { "step": "Register Australian entity", "detail": "$200 AUD online registration takes 1-2 days" },
@@ -103,7 +103,7 @@
       "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Current programmes: Energy Scaleup (Jun-Oct 2026, connects startups with network operators for pilots), Climate Solutions Accelerator (Aug-Dec 2026), Climate Tech Ignite (starts Aug 2026). Direct access to AusNet, Ausgrid, Energex, Transgrid, and SA Power Networks."
+        "text": "Current programmes: Energy Scaleup (Jun-Oct 2026), Climate Solutions Accelerator (Aug-Dec 2026), Climate Tech Ignite (starts Aug 2026). Direct access to AusNet, Ausgrid, Energex, Transgrid, SA Power Networks. 310+ alumni across 7+ programmes. Equity-free."
       },
       "applicationRoute": [
         { "step": "Apply to relevant EnergyLab programme", "detail": "Seed Growth Scale or Corporate-in-Residence" },
@@ -185,6 +185,31 @@
         { "step": "Submit to CEFC", "detail": "cefc.com.au" },
         { "step": "Financial and technical assessment", "detail": "Evaluated on energy impact and financial viability" },
         { "step": "Concessional financing agreement", "detail": "Below-market interest rates for qualifying projects" }
+      ]
+    },
+    {
+      "label": "SA Power Networks Innovation (Future Energy)",
+      "hint": "Highest DER penetration in NEM",
+      "text": "<span class='section-label'>What it does</span>SA Power Networks serves South Australia — the highest DER penetration in Australia's NEM (39% of customers with solar PV, 370,000 systems connected). Future Energy programme seeks technology partners for DER integration, demand flexibility, and grid management. ARENA-funded Electrification and Demand Flexibility project running.<span class='section-label'>Why it matters</span>SA is at the frontier of managing bidirectional power flows and DER connection challenges. Connection management is directly relevant to their operational challenges.<div class='links-row'><a class='link-box' href='https://www.sapowernetworks.com.au/future-energy/' target='_blank'>SA Power Networks Future Energy</a></div>",
+      "budget": "Est. A$200K–A$1M per pilot (ARENA co-funded + DMIA allowance)",
+      "programmeType": "DNSP Innovation Partnership",
+      "deadline": "Rolling — technology partnerships accepted year-round. ARENA co-funded projects active.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "SA Power Networks does not publish per-pilot budgets. Estimated from ARENA co-funding scales and AER-approved DMIA allowance.",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can approach directly — no entity required. SA Power Networks' DER connection challenges (39% solar penetration) create direct demand for AI-powered connection management tools."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "Highest DER penetration in Australia's NEM — 39% of customers have solar PV (370,000 systems). At the frontier of managing bidirectional power flows and DER connection challenges. Advanced VPP Grid Integration Trial running. Senior Manager of Enterprise Innovation actively engaging with industry."
+      },
+      "applicationRoute": [
+        { "step": "Contact SA Power Networks Future Energy team", "detail": "sapowernetworks.com.au/future-energy" },
+        { "step": "Present AI grid connection management solution", "detail": "Focus on DER integration and connection processing" },
+        { "step": "Technical evaluation", "detail": "Assessment against operational challenges" },
+        { "step": "Pilot partnership", "detail": "Access to SA's high-DER distribution network" }
       ]
     }
   ],
