@@ -282,14 +282,6 @@
   "dsoTerm": "DSO (Distribuidora)",
   "dsoPartners": [
     {
-      "name": "i-DE Redes Eléctricas",
-      "parent": "Iberdrola Group",
-      "customers": "~11M",
-      "region": "10 autonomous communities",
-      "engagement": "S2F Sandbox for distribution flexibility. BeFlexible EU project (12 pilots). Global Smart Grids Innovation Hub (100+ companies, 120 projects, €110M). Access via PERSEO.",
-      "innovationUrl": "https://www.i-de.es/about-us/digitalization-and-innovation"
-    },
-    {
       "name": "e-distribución",
       "parent": "Endesa / Enel Group",
       "customers": "~12M",

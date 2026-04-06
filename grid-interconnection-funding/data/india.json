@@ -11,9 +11,16 @@
   "badgeText": "#CC6600",
   "badge": "1.4B People",
   "badge2": "4 Programmes",
-  "tags": ["apac"],
+  "tags": [
+    "apac"
+  ],
   "sub": "India targets 250M smart meters by 2030 and invests $4B+ in grid modernisation. Smart Grid Mission drives automation. Social Alpha accelerates 50+ cleantech startups/yr. PowerGrid and Grid-India offer direct partnerships.",
-  "cardTags": ["Smart Grid", "Social Alpha", "PowerGrid", "Grid-India"],
+  "cardTags": [
+    "Smart Grid",
+    "Social Alpha",
+    "PowerGrid",
+    "Grid-India"
+  ],
   "desc": "India is deploying 250M smart meters by 2030 and investing $4B+ in grid modernisation. The National Smart Grid Mission (NSGM) coordinates grid automation across 13 states. Social Alpha's Techtonic platform accelerates 50+ cleantech startups annually through CEIIC (Climate Emergency Incubator). PowerGrid and Grid-India offer direct technology partnerships. No local entity required for Social Alpha or PowerGrid partnerships.",
   "studies": [
     {
@@ -34,10 +41,22 @@
         "text": "250M smart meter rollout is a hardware/infrastructure programme. Grid Agents' connection application review product would need significant adaptation for Indian grid code. PMU deployment and distribution metering are adjacent but different from connection queue management."
       },
       "applicationRoute": [
-        { "step": "Identify state utility partner", "detail": "13 states participating in NSGM" },
-        { "step": "Contact NSGM coordination office", "detail": "Present AI analytics and forecasting solution" },
-        { "step": "Technical evaluation", "detail": "Assessment against smart grid deployment priorities" },
-        { "step": "Vendor agreement with state utility", "detail": "Technology deployment alongside smart meter rollout" }
+        {
+          "step": "Identify state utility partner",
+          "detail": "13 states participating in NSGM"
+        },
+        {
+          "step": "Contact NSGM coordination office",
+          "detail": "Present AI analytics and forecasting solution"
+        },
+        {
+          "step": "Technical evaluation",
+          "detail": "Assessment against smart grid deployment priorities"
+        },
+        {
+          "step": "Vendor agreement with state utility",
+          "detail": "Technology deployment alongside smart meter rollout"
+        }
       ]
     },
     {
@@ -58,10 +77,22 @@
         "text": "Third edition 'Techtonic — Innovations in Clean Energy' focuses on 4 themes: Energy for Livelihoods, Smart Energy Systems, Energy Storage, Thermal Comfort. Three tracks: R&D, Pilot, and Scale-Up. CEIIC incubation for post-pilot winners."
       },
       "applicationRoute": [
-        { "step": "Apply to Social Alpha Techtonic", "detail": "Quarterly cohort applications via socialalpha.org" },
-        { "step": "Cohort selection and onboarding", "detail": "50+ startups per year across climate-tech" },
-        { "step": "Mentorship programme", "detail": "Access to power utilities grid operators and venture investors" },
-        { "step": "CEIIC growth capital application", "detail": "$100K-$1M+ equity investment for qualifying startups" }
+        {
+          "step": "Apply to Social Alpha Techtonic",
+          "detail": "Quarterly cohort applications via socialalpha.org"
+        },
+        {
+          "step": "Cohort selection and onboarding",
+          "detail": "50+ startups per year across climate-tech"
+        },
+        {
+          "step": "Mentorship programme",
+          "detail": "Access to power utilities grid operators and venture investors"
+        },
+        {
+          "step": "CEIIC growth capital application",
+          "detail": "$100K-$1M+ equity investment for qualifying startups"
+        }
       ]
     },
     {
@@ -83,10 +114,22 @@
         "text": "Current R&D priorities (STATCOMs, WAMS, SFRA analysis, substation robots) are primarily hardware-focused. AI-driven analysis is adjacent but PowerGrid's focus is on transmission infrastructure rather than connection application review. Product adaptation needed."
       },
       "applicationRoute": [
-        { "step": "Contact PowerGrid Technology Development division", "detail": "powergrid.in/en/technology-development-rd" },
-        { "step": "Present AI grid automation solution", "detail": "Focus on load forecasting and congestion management" },
-        { "step": "Technical evaluation by PowerGrid engineers", "detail": "Assessment against R&D priorities" },
-        { "step": "Partnership agreement", "detail": "Access to national transmission grid data and operations" }
+        {
+          "step": "Contact PowerGrid Technology Development division",
+          "detail": "powergrid.in/en/technology-development-rd"
+        },
+        {
+          "step": "Present AI grid automation solution",
+          "detail": "Focus on load forecasting and congestion management"
+        },
+        {
+          "step": "Technical evaluation by PowerGrid engineers",
+          "detail": "Assessment against R&D priorities"
+        },
+        {
+          "step": "Partnership agreement",
+          "detail": "Access to national transmission grid data and operations"
+        }
       ]
     },
     {
@@ -108,23 +151,27 @@
         "text": "Grid-India manages real-time dispatch and frequency control across 13 regional grids — a different domain from connection application review. SCED optimisation and RE forecasting are adjacent capabilities. Product adaptation required for Indian market."
       },
       "applicationRoute": [
-        { "step": "Contact Grid-India partnership team", "detail": "grid-india.in" },
-        { "step": "Present forecasting and congestion management solution", "detail": "Frame around real-time dispatch optimisation" },
-        { "step": "Technical assessment", "detail": "Evaluation against RTC operational requirements" },
-        { "step": "Vendor partnership", "detail": "Integration with real-time energy market operations" }
+        {
+          "step": "Contact Grid-India partnership team",
+          "detail": "grid-india.in"
+        },
+        {
+          "step": "Present forecasting and congestion management solution",
+          "detail": "Frame around real-time dispatch optimisation"
+        },
+        {
+          "step": "Technical assessment",
+          "detail": "Evaluation against RTC operational requirements"
+        },
+        {
+          "step": "Vendor partnership",
+          "detail": "Integration with real-time energy market operations"
+        }
       ]
     }
   ],
   "dsoTerm": "DISCOM (Distribution Company)",
   "dsoPartners": [
-    {
-      "name": "Tata Power Distribution",
-      "parent": "Tata Group",
-      "customers": "~12M",
-      "region": "Mumbai, Delhi, Odisha",
-      "engagement": "CEIIC incubator (with Social Alpha). AutoGrid AI partnership. EnerUni platform with TCS. 70 technology partnerships. Innovation Lab (EIIL) with LSE.",
-      "innovationUrl": "https://www.tatapower.com/innovation"
-    },
     {
       "name": "BSES (Reliance Infrastructure)",
       "parent": "Reliance Infrastructure",
@@ -143,11 +190,26 @@
     }
   ],
   "faq": [
-    { "q": "Do I need an Indian entity to access funding?", "a": "For Social Alpha accelerators, NO entity needed. PowerGrid and Grid-India partnerships also don't require formal incorporation — open to international technology vendors." },
-    { "q": "How many smart meters is India targeting?", "a": "250M smart meters by 2030 as part of the Smart Grid Mission. This is the largest smart metering rollout globally and creates massive grid data opportunities." },
-    { "q": "Who manages India's grid real-time operations?", "a": "Grid-India manages the national real-time energy market. 13 Regional Load Dispatch Centres (RTCs) manage state grids. Both are open to technology partnerships for forecasting and congestion management." },
-    { "q": "What's the difference between Social Alpha Techtonic and CEIIC?", "a": "Techtonic is the accelerator programme (quarterly cohorts, mentorship). CEIIC is the climate-focused growth capital fund (£100K-$1M+). Both are administered by Social Alpha but serve different stages." },
-    { "q": "Can non-Indians access World Bank or ADB energy funding?", "a": "Yes, with an Indian partner. World Bank and ADB fund large infrastructure projects in India with concessional rates. International technology providers can participate as vendors." }
+    {
+      "q": "Do I need an Indian entity to access funding?",
+      "a": "For Social Alpha accelerators, NO entity needed. PowerGrid and Grid-India partnerships also don't require formal incorporation — open to international technology vendors."
+    },
+    {
+      "q": "How many smart meters is India targeting?",
+      "a": "250M smart meters by 2030 as part of the Smart Grid Mission. This is the largest smart metering rollout globally and creates massive grid data opportunities."
+    },
+    {
+      "q": "Who manages India's grid real-time operations?",
+      "a": "Grid-India manages the national real-time energy market. 13 Regional Load Dispatch Centres (RTCs) manage state grids. Both are open to technology partnerships for forecasting and congestion management."
+    },
+    {
+      "q": "What's the difference between Social Alpha Techtonic and CEIIC?",
+      "a": "Techtonic is the accelerator programme (quarterly cohorts, mentorship). CEIIC is the climate-focused growth capital fund (£100K-$1M+). Both are administered by Social Alpha but serve different stages."
+    },
+    {
+      "q": "Can non-Indians access World Bank or ADB energy funding?",
+      "a": "Yes, with an Indian partner. World Bank and ADB fund large infrastructure projects in India with concessional rates. International technology providers can participate as vendors."
+    }
   ],
   "note": "India is the world's fastest-growing electricity market. 250M smart meters by 2030 + $4B grid modernisation = massive opportunity. No Indian entity needed for Social Alpha or PowerGrid partnerships."
 }

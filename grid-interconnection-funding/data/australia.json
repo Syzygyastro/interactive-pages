@@ -324,40 +324,7 @@
     }
   ],
   "dsoTerm": "DNSP (Distribution Network Service Provider)",
-  "dsoPartners": [
-    {
-      "name": "Ausgrid",
-      "parent": "IFM Investors / AustralianSuper",
-      "customers": "~1.8M",
-      "region": "Sydney, Central Coast, Hunter",
-      "engagement": "Innovation Portfolio with 10+ active trials (STATCOM, smart meters, microgrids). AER DMIA funding. Network Innovation Advisory Committee.",
-      "innovationUrl": "https://www.ausgrid.com.au/About-Us/Future-Grid/Innovation-Portfolio"
-    },
-    {
-      "name": "AusNet Services",
-      "parent": "Brookfield Asset Management",
-      "customers": "~760K electricity",
-      "region": "Eastern Victoria",
-      "engagement": "Both T&D operator. Innovation partnerships for DER, demand management, and automation. Contact via projects-and-innovation page.",
-      "innovationUrl": "https://www.ausnetservices.com.au/projects-and-innovation"
-    },
-    {
-      "name": "Energex / Ergon Energy",
-      "parent": "Energy Queensland",
-      "customers": "~2.3M (Energex ~1.5M, Ergon ~760K)",
-      "region": "Queensland",
-      "engagement": "AER-approved DMIA funding for external partnerships. 9 innovation case studies published. Contact: demandmanagement@energex.com.au",
-      "innovationUrl": "https://www.energex.com.au/manage-your-energy/managing-electricity-demand/demand-management-innovation-allowance-mechanism"
-    },
-    {
-      "name": "SA Power Networks",
-      "parent": "CKI/Spark Infrastructure",
-      "customers": "~900K",
-      "region": "South Australia",
-      "engagement": "Highest DER penetration in NEM (39% solar). Future Energy programme. ARENA co-funded trials. Advanced VPP Grid Integration.",
-      "innovationUrl": "https://www.sapowernetworks.com.au/future-energy/"
-    }
-  ],
+  "dsoPartners": [],
   "faq": [
     {
       "q": "What are AEMO's 11 Connections Reform initiatives?",

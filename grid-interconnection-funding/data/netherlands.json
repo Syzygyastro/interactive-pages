@@ -251,14 +251,6 @@
   "dsoTerm": "DSO (Netbeheerder)",
   "dsoPartners": [
     {
-      "name": "Alliander / Liander",
-      "parent": "Alliander N.V.",
-      "customers": "~3.3M",
-      "region": "Amsterdam, North Holland, Gelderland, Flevoland",
-      "engagement": "Powered startup programme (10 startups per cohort). Next Grid CVC arm. AI for Energy Grid Lab with 5 universities. Joint LV-NExT challenge.",
-      "innovationUrl": "https://www.alliander.com/en/organisation/powered/"
-    },
-    {
       "name": "Stedin",
       "parent": "Stedin Group",
       "customers": "~2.3M",

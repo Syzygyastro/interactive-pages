@@ -4,30 +4,36 @@
   "full": "Kenya — RECs, KOSAP & Climate Finance Growth",
   "vendor": "Kenya Power · CIF · AECF",
   "type": "East Africa Growth",
-  "icon": "\ud83c\uddf0\ud83c\uddea",
+  "icon": "🇰🇪",
   "accentColor": "#CE1126",
   "accentBg": "#FFE6E6",
   "badgeColor": "#FFE6E6",
   "badgeText": "#8B0A1A",
   "badge": "East Africa Hub",
   "badge2": "3 Programmes",
-  "tags": ["africa"],
+  "tags": [
+    "africa"
+  ],
   "sub": "Kenya has Africa's 2nd fastest growing electricity market (7% CAGR). Kenya Power seeks grid modernisation. AECF and CIF provide concessional finance. Grid challenges differ significantly from UK-style connection queue backlogs.",
-  "cardTags": ["Kenya Power", "CIF", "AECF"],
+  "cardTags": [
+    "Kenya Power",
+    "CIF",
+    "AECF"
+  ],
   "desc": "Kenya targets 100% renewable electricity by 2030 (vs. 40% today) with $5B+ investment. Kenya Power (national utility) explicitly seeks grid automation and demand-side management technologies. AECF (Africa Enterprise Challenge Fund) provides matching grants. CIF delivers concessional capital. No local entity required for CIF; optional for Kenya Power partnerships.",
   "studies": [
     {
       "label": "Kenya Power Innovation & Partnerships",
       "hint": "National utility, 8M+ customers",
       "text": "<span class='section-label'>What it does</span>Kenya Power operates the national grid and explicitly seeks technology partnerships for grid modernisation, demand-side management, and renewable integration. 8M+ customers provide massive data opportunity. Direct vendor partnerships, no entity required.<span class='section-label'>Why it matters</span>Access to national utility. Grid connectivity data and real-time operations visibility.<div class='links-row'><a class='link-box' href='https://innovations.kplcinstitute.ac.ke/' target='_blank'>Kenya Power Innovation Institute</a></div>",
-      "budget": "Est. $50K\u2013$200K per pilot (Kenya Power innovation budget)",
+      "budget": "Est. $50K–$200K per pilot (Kenya Power innovation budget)",
       "programmeType": "Utility Innovation Partnership",
-      "deadline": "Rolling \u2014 direct vendor approaches accepted year-round via Kenya Power Innovation Institute.",
+      "deadline": "Rolling — direct vendor approaches accepted year-round via Kenya Power Innovation Institute.",
       "budgetIsEstimate": true,
       "budgetBasis": "Kenya Power does not publish innovation budgets. Estimated from Kenya Power's capital expenditure programme, comparable East African utility pilot scales, and World Bank-funded grid modernisation project components.",
       "eligibility": {
         "status": "eligible",
-        "text": "Grid Agents can approach directly \u2014 no entity required. Kenya Power's grid modernisation needs are real but focused on demand-side management and renewable integration rather than connection application review."
+        "text": "Grid Agents can approach directly — no entity required. Kenya Power's grid modernisation needs are real but focused on demand-side management and renewable integration rather than connection application review."
       },
       "gridLevel": "both",
       "relevance": {
@@ -35,10 +41,22 @@
         "text": "Kenya Power handles both T&D (9.6M+ customers) though KETRACO is taking over bulk transmission. Grid modernisation is a priority but Kenya's challenges (demand management, rural connections) differ significantly from UK-style connection queue backlogs. Product adaptation essential."
       },
       "applicationRoute": [
-        { "step": "Contact Kenya Power Innovation Institute", "detail": "innovations.kplcinstitute.ac.ke" },
-        { "step": "Present grid automation solution", "detail": "Focus on demand management and renewable integration" },
-        { "step": "Technical assessment", "detail": "Evaluated against grid modernisation priorities" },
-        { "step": "Vendor partnership", "detail": "Technology deployment across Kenya Power grid" }
+        {
+          "step": "Contact Kenya Power Innovation Institute",
+          "detail": "innovations.kplcinstitute.ac.ke"
+        },
+        {
+          "step": "Present grid automation solution",
+          "detail": "Focus on demand management and renewable integration"
+        },
+        {
+          "step": "Technical assessment",
+          "detail": "Evaluated against grid modernisation priorities"
+        },
+        {
+          "step": "Vendor partnership",
+          "detail": "Technology deployment across Kenya Power grid"
+        }
       ]
     },
     {
@@ -47,35 +65,47 @@
       "text": "<span class='section-label'>What it does</span>CIF provides concessional finance ($600M+ across Africa including Kenya) for climate and energy projects. Loans (1-2% interest) and grants for renewable infrastructure, grid modernisation, energy efficiency. Kenya is explicit priority country.<div class='links-row'><a class='link-box' href='https://www.cif.org/country/kenya' target='_blank'>CIF Kenya</a></div>",
       "budget": "$600M+ pan-Africa (1-2% interest)",
       "programmeType": "Multilateral Climate Finance",
-      "deadline": "Rolling \u2014 project financing via AfDB and World Bank. Kenya is explicit priority country.",
+      "deadline": "Rolling — project financing via AfDB and World Bank. Kenya is explicit priority country.",
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Grid Agents would access CIF indirectly via utility partnerships. Concessional infrastructure finance \u2014 not suited to early-stage AI startups. Grid Agents would need to partner with a project developer."
+        "text": "Grid Agents would access CIF indirectly via utility partnerships. Concessional infrastructure finance — not suited to early-stage AI startups. Grid Agents would need to partner with a project developer."
       },
       "gridLevel": "both",
       "relevance": {
         "level": "low",
-        "text": "Large concessional infrastructure finance (1-2% loans) through development banks. Not suited to early-stage AI startups. Grid Agents would access indirectly through utility partnerships only \u2014 no realistic direct path."
+        "text": "Large concessional infrastructure finance (1-2% loans) through development banks. Not suited to early-stage AI startups. Grid Agents would access indirectly through utility partnerships only — no realistic direct path."
       },
       "applicationRoute": [
-        { "step": "Identify CIF-funded project in Kenya", "detail": "Via AfDB or World Bank" },
-        { "step": "Partner with project developer", "detail": "Technology vendor role" },
-        { "step": "Indirect financing through project", "detail": "Technology costs in project budget" },
-        { "step": "Grid modernisation deployment", "detail": "Within CIF-funded infrastructure" }
+        {
+          "step": "Identify CIF-funded project in Kenya",
+          "detail": "Via AfDB or World Bank"
+        },
+        {
+          "step": "Partner with project developer",
+          "detail": "Technology vendor role"
+        },
+        {
+          "step": "Indirect financing through project",
+          "detail": "Technology costs in project budget"
+        },
+        {
+          "step": "Grid modernisation deployment",
+          "detail": "Within CIF-funded infrastructure"
+        }
       ]
     },
     {
       "label": "AECF (Africa Enterprise Challenge Fund)",
-      "hint": "\u20ac300M+ grants, 24 African countries",
-      "text": "<span class='section-label'>What it does</span>AECF provides matching grants (\u20ac50K-\u20ac1M) for businesses operating across 24 African countries. Energy and clean-tech explicitly prioritised. 50% grant + 50% investor match. Kenya is core market.<div class='links-row'><a class='link-box' href='https://www.aecfafrica.org/' target='_blank'>AECF</a></div>",
-      "budget": "\u20ac50K\u2013\u20ac1M matching grants (50% grant + 50% investor match)",
+      "hint": "€300M+ grants, 24 African countries",
+      "text": "<span class='section-label'>What it does</span>AECF provides matching grants (€50K-€1M) for businesses operating across 24 African countries. Energy and clean-tech explicitly prioritised. 50% grant + 50% investor match. Kenya is core market.<div class='links-row'><a class='link-box' href='https://www.aecfafrica.org/' target='_blank'>AECF</a></div>",
+      "budget": "€50K–€1M matching grants (50% grant + 50% investor match)",
       "programmeType": "Challenge Fund Grant",
-      "deadline": "Periodic challenge windows \u2014 check aecfafrica.org for current open calls. Energy and clean-tech windows typically 1-2 per year.",
+      "deadline": "Periodic challenge windows — check aecfafrica.org for current open calls. Energy and clean-tech windows typically 1-2 per year.",
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Grid Agents can apply \u2014 open to businesses in 24 African countries. Matching grant structure (50% grant + 50% investor match) requires co-investment. Grid Agents would need to demonstrate Kenya market presence or plan."
+        "text": "Grid Agents can apply — open to businesses in 24 African countries. Matching grant structure (50% grant + 50% investor match) requires co-investment. Grid Agents would need to demonstrate Kenya market presence or plan."
       },
       "gridLevel": "both",
       "relevance": {
@@ -83,29 +113,44 @@
         "text": "REACT 2.0 DIFEC (2026-2028) targets digital solutions for clean energy access. Matching grant structure (50% grant + 50% co-investment). Energy and clean-tech eligible but broad focus not grid-interconnection-specific. Grid Agents would need Kenya market presence."
       },
       "applicationRoute": [
-        { "step": "Submit application via AECF portal", "detail": "aecfafrica.org" },
-        { "step": "Project proposal", "detail": "Energy or clean-tech focus in Kenya" },
-        { "step": "AECF assessment", "detail": "Competitive evaluation" },
-        { "step": "Matching grant agreement", "detail": "50% grant + 50% investor match required" }
+        {
+          "step": "Submit application via AECF portal",
+          "detail": "aecfafrica.org"
+        },
+        {
+          "step": "Project proposal",
+          "detail": "Energy or clean-tech focus in Kenya"
+        },
+        {
+          "step": "AECF assessment",
+          "detail": "Competitive evaluation"
+        },
+        {
+          "step": "Matching grant agreement",
+          "detail": "50% grant + 50% investor match required"
+        }
       ]
     }
   ],
   "dsoTerm": "National Utility",
-  "dsoPartners": [
-    {
-      "name": "Kenya Power (KPLC)",
-      "parent": "Government of Kenya (majority)",
-      "customers": "~9.6M",
-      "region": "All Kenya",
-      "engagement": "Innovation Hub platform with AI categorization. 310,618 km of distribution lines. Grid modernisation priority. Direct vendor approaches accepted year-round.",
-      "innovationUrl": "https://innovations.kplcinstitute.ac.ke/"
-    }
-  ],
+  "dsoPartners": [],
   "faq": [
-    { "q": "What is Kenya's renewable energy target?", "a": "100% renewable electricity by 2030 (vs. 40% today). $5B+ investment required. Kenya has Africa's 2nd fastest electricity market growth at 7% CAGR." },
-    { "q": "Can we approach Kenya Power without a local entity?", "a": "Yes. Kenya Power explicitly seeks technology partnerships for grid modernisation. No local incorporation required for initial engagement. Kenya Power Innovation Institute is the primary contact." },
-    { "q": "How much does AECF grant?", "a": "\u20ac50K-\u20ac1M matching grants. 50% grant + 50% investor match structure. Non-dilutive capital." },
-    { "q": "Can CIF funding be accessed directly?", "a": "CIF works through regional development banks (World Bank, AfDB). Technology partners typically access via project financing through utility or renewable developer partnerships." }
+    {
+      "q": "What is Kenya's renewable energy target?",
+      "a": "100% renewable electricity by 2030 (vs. 40% today). $5B+ investment required. Kenya has Africa's 2nd fastest electricity market growth at 7% CAGR."
+    },
+    {
+      "q": "Can we approach Kenya Power without a local entity?",
+      "a": "Yes. Kenya Power explicitly seeks technology partnerships for grid modernisation. No local incorporation required for initial engagement. Kenya Power Innovation Institute is the primary contact."
+    },
+    {
+      "q": "How much does AECF grant?",
+      "a": "€50K-€1M matching grants. 50% grant + 50% investor match structure. Non-dilutive capital."
+    },
+    {
+      "q": "Can CIF funding be accessed directly?",
+      "a": "CIF works through regional development banks (World Bank, AfDB). Technology partners typically access via project financing through utility or renewable developer partnerships."
+    }
   ],
   "note": "Kenya targets 100% renewables by 2030 with $5B+ investment. Kenya Power (9.6M+ customers) seeks grid modernisation tech. AECF provides matching grants. CIF provides concessional finance but not suited to early-stage startups. No local entity required for most routes."
 }

@@ -408,22 +408,6 @@
   "dsoTerm": "IOU (Investor-Owned Utility)",
   "dsoPartners": [
     {
-      "name": "PG&E",
-      "parent": "PG&E Corporation",
-      "customers": "~5.5M electric",
-      "region": "Northern & Central California",
-      "engagement": "GRiD programme with ~130 R&D experts and ~70 priority challenges. Annual Innovation Summit (800+ attendees). 2024 R&D Strategy Report. Contact: innovation@pge.com",
-      "innovationUrl": "https://www.pge.com/en/about/pge-systems/research-and-development.html"
-    },
-    {
-      "name": "Duke Energy",
-      "parent": "Duke Energy Corp",
-      "customers": "~8M",
-      "region": "Southeast US (6 states)",
-      "engagement": "Emerging Technology Office (est. 2007). Mount Holly Innovation Lab with 1.5-mile test distribution feeder. Direct technology partnerships.",
-      "innovationUrl": "https://illumination.duke-energy.com/articles/take-a-virtual-tour-of-duke-energy-s-innovation-lab"
-    },
-    {
       "name": "Con Edison",
       "parent": "Consolidated Edison",
       "customers": "~3.4M electric",
@@ -454,14 +438,6 @@
       "region": "Southeast US (GA, AL, MS)",
       "engagement": "New Ventures division + co-founder of Energy Impact Partners ($4B+ VC). Techstars Energy accelerator partner. Most engaged utility LP in EIP. Direct pilot pathway.",
       "innovationUrl": "https://www.southerncompany.com/innovation/new-ventures.html"
-    },
-    {
-      "name": "Dominion Energy",
-      "parent": "Dominion Energy Inc.",
-      "customers": "~3.6M",
-      "region": "Virginia, Carolinas",
-      "engagement": "DEIC Accelerate (11-week virtual accelerator with paid pilot exploration). Hyperscaled track for data center energy. Global applications welcomed.",
-      "innovationUrl": "https://dominnovation.com/energy/deic-accelerate/"
     }
   ],
   "faq": [

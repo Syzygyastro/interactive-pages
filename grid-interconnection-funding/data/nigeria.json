@@ -4,16 +4,22 @@
   "full": "Nigeria — TCN, NISO & Startup Acceleration",
   "vendor": "TCN · NISO · Catalyst Fund",
   "type": "West Africa Growth",
-  "icon": "\ud83c\uddf3\ud83c\uddec",
+  "icon": "🇳🇬",
   "accentColor": "#007A5E",
   "accentBg": "#E6F5F0",
   "badgeColor": "#E6F5F0",
   "badgeText": "#004D3A",
   "badge": "Africa's Largest",
   "badge2": "3 Programmes",
-  "tags": ["africa"],
+  "tags": [
+    "africa"
+  ],
   "sub": "Nigeria is Africa's largest electricity market (200M+ population) with $12B+ investment potential. TCN operates 30,000+ km transmission. NISO coordinates generation. Catalyst Fund supports climate-tech startups. Grid challenges differ fundamentally from UK connection queue backlogs.",
-  "cardTags": ["TCN", "NISO", "DRE Fund"],
+  "cardTags": [
+    "TCN",
+    "NISO",
+    "DRE Fund"
+  ],
   "desc": "Nigeria's grid challenges (8,700 MW wheeling vs 20,000 MW demand) are fundamentally different from UK connection queue backlogs. TCN operates 30,000+ km transmission. NISO (unbundled from TCN 2023) coordinates 26 GW generation dispatch. Catalyst Fund and DRE-Nigeria Fund provide climate-tech capital. No local entity required for pitching; optional for TCN/NISO partnerships.",
   "studies": [
     {
@@ -22,11 +28,11 @@
       "text": "<span class='section-label'>What it does</span>TCN operates 30,000+ km of high-voltage transmission across Nigeria. Energy Transition Strategy (2023) mandates grid modernisation with explicit focus on congestion management and real-time operations. Direct technology partnerships available; no nationality restriction.<span class='section-label'>Why it matters</span>Africa's largest electricity market (200M+ population). $12B+ investment to 2030. TCN controls grid access for all generation and distribution.<div class='links-row'><a class='link-box' href='https://tcn.org.ng/' target='_blank'>TCN</a></div>",
       "budget": "$12B+ investment to 2030 (partnership model)",
       "programmeType": "National Utility Partnership",
-      "deadline": "Ongoing \u2014 Energy Transition Strategy (2023) mandates grid modernisation. World Bank TREP programme active. Direct approaches accepted.",
+      "deadline": "Ongoing — Energy Transition Strategy (2023) mandates grid modernisation. World Bank TREP programme active. Direct approaches accepted.",
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Grid Agents can approach directly \u2014 no nationality restriction. TCN's Energy Transition Strategy mandates grid modernisation but Nigeria's grid challenges differ significantly from UK-style connection queue backlogs."
+        "text": "Grid Agents can approach directly — no nationality restriction. TCN's Energy Transition Strategy mandates grid modernisation but Nigeria's grid challenges differ significantly from UK-style connection queue backlogs."
       },
       "gridLevel": "transmission",
       "relevance": {
@@ -34,42 +40,66 @@
         "text": "TCN is transmission-only (wheeling capacity 8,700 MW). NISO unbundled as independent system operator in 2023. 11 DisCos handle distribution. Nigeria's grid challenges (8,700 MW wheeling vs 20,000 MW demand) are fundamentally different from UK connection queue backlogs."
       },
       "applicationRoute": [
-        { "step": "Contact TCN partnerships team", "detail": "tcn.org.ng" },
-        { "step": "Present grid automation solution", "detail": "Focus on congestion management and real-time operations" },
-        { "step": "Technical evaluation", "detail": "Assessment against modernisation mandate" },
-        { "step": "Partnership agreement", "detail": "Technology deployment across Nigerian transmission" }
+        {
+          "step": "Contact TCN partnerships team",
+          "detail": "tcn.org.ng"
+        },
+        {
+          "step": "Present grid automation solution",
+          "detail": "Focus on congestion management and real-time operations"
+        },
+        {
+          "step": "Technical evaluation",
+          "detail": "Assessment against modernisation mandate"
+        },
+        {
+          "step": "Partnership agreement",
+          "detail": "Technology deployment across Nigerian transmission"
+        }
       ]
     },
     {
       "label": "NISO (Nigerian Electricity System Operator)",
       "hint": "26 GW capacity coordination",
       "text": "<span class='section-label'>What it does</span>NISO (spun off from TCN, 2023) coordinates 26 GW total generation capacity. Manages real-time dispatch, grid balance, and renewable integration. Technology partnerships for forecasting, demand-side response, and congestion management. Open to vendor partnerships.<div class='links-row'><a class='link-box' href='https://www.niso.org.ng/' target='_blank'>NISO</a></div>",
-      "budget": "Est. $100K\u2013$300K per vendor engagement (new operator, established 2023)",
+      "budget": "Est. $100K–$300K per vendor engagement (new operator, established 2023)",
       "programmeType": "System Operator Partnership",
-      "deadline": "Rolling \u2014 vendor partnerships accepted year-round. NISO established 2023, actively building technology partnerships.",
+      "deadline": "Rolling — vendor partnerships accepted year-round. NISO established 2023, actively building technology partnerships.",
       "budgetIsEstimate": true,
       "budgetBasis": "NISO is newly established (2023) and does not publish engagement budgets. Estimated from comparable African system operator technology procurement and NISO's 26 GW coordination scope.",
       "eligibility": {
         "status": "eligible",
-        "text": "Grid Agents can engage as a vendor \u2014 open to partnerships. NISO's real-time dispatch and renewable integration needs are adjacent to but different from connection application review and queue management."
+        "text": "Grid Agents can engage as a vendor — open to partnerships. NISO's real-time dispatch and renewable integration needs are adjacent to but different from connection application review and queue management."
       },
       "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "NISO established 2023 by unbundling from TCN. Board inaugurated 2025. Responsible for generation dispatch and market oversight \u2014 a different domain from connection application review. Real-time dispatch across 26 GW capacity."
+        "text": "NISO established 2023 by unbundling from TCN. Board inaugurated 2025. Responsible for generation dispatch and market oversight — a different domain from connection application review. Real-time dispatch across 26 GW capacity."
       },
       "applicationRoute": [
-        { "step": "Contact NISO", "detail": "niso.org.ng" },
-        { "step": "Present forecasting and dispatch solution", "detail": "Real-time grid balance and renewable integration" },
-        { "step": "Technical assessment", "detail": "Evaluated against operational requirements" },
-        { "step": "Vendor partnership", "detail": "Integration with national dispatch operations" }
+        {
+          "step": "Contact NISO",
+          "detail": "niso.org.ng"
+        },
+        {
+          "step": "Present forecasting and dispatch solution",
+          "detail": "Real-time grid balance and renewable integration"
+        },
+        {
+          "step": "Technical assessment",
+          "detail": "Evaluated against operational requirements"
+        },
+        {
+          "step": "Vendor partnership",
+          "detail": "Integration with national dispatch operations"
+        }
       ]
     },
     {
       "label": "Catalyst Fund & DRE-Nigeria Fund",
       "hint": "$100M+ VC for climate tech startups",
-      "text": "<span class='section-label'>What it does</span>Catalyst Fund is pan-African VC ($100M+ AUM) with Nigeria focus. DRE-Nigeria Fund (NSIA partnership, $500M+) funds decentralised renewable energy projects. Both invest in climate-tech and energy startups. Equity model; \u20ac100K-\u20ac2M typical cheques.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a><a class='link-box' href='https://www.seforall.org/news/nsia-seforall-isa-and-africa50-unveil-us500-million-dre-nigeria-fund' target='_blank'>DRE-Nigeria Fund</a></div>",
-      "budget": "\u20ac100K\u2013\u20ac2M equity + $500M DRE fund",
+      "text": "<span class='section-label'>What it does</span>Catalyst Fund is pan-African VC ($100M+ AUM) with Nigeria focus. DRE-Nigeria Fund (NSIA partnership, $500M+) funds decentralised renewable energy projects. Both invest in climate-tech and energy startups. Equity model; €100K-€2M typical cheques.<div class='links-row'><a class='link-box' href='https://www.thecatalystfund.com/' target='_blank'>Catalyst Fund</a><a class='link-box' href='https://www.seforall.org/news/nsia-seforall-isa-and-africa50-unveil-us500-million-dre-nigeria-fund' target='_blank'>DRE-Nigeria Fund</a></div>",
+      "budget": "€100K–€2M equity + $500M DRE fund",
       "programmeType": "Pan-African Climate VC + DRE Fund",
       "deadline": "Catalyst Fund: rolling pitches year-round. DRE-Nigeria Fund: project-level engagement via NSIA.",
       "budgetIsEstimate": false,
@@ -80,13 +110,25 @@
       "gridLevel": "both",
       "relevance": {
         "level": "low",
-        "text": "DRE Fund ($500M) targets mini-grids, solar home systems, and rural electrification \u2014 not grid connection review. Catalyst Fund is general climate VC ($100K-$2M). Neither is targeted at grid interconnection queue management."
+        "text": "DRE Fund ($500M) targets mini-grids, solar home systems, and rural electrification — not grid connection review. Catalyst Fund is general climate VC ($100K-$2M). Neither is targeted at grid interconnection queue management."
       },
       "applicationRoute": [
-        { "step": "Pitch to Catalyst Fund", "detail": "thecatalystfund.com" },
-        { "step": "Initial screening and due diligence", "detail": "Climate impact and scalability assessment" },
-        { "step": "Equity investment", "detail": "\u20ac100K\u2013\u20ac2M from Catalyst Fund" },
-        { "step": "Explore DRE-Nigeria for distribution projects", "detail": "$500M+ for decentralised renewable energy" }
+        {
+          "step": "Pitch to Catalyst Fund",
+          "detail": "thecatalystfund.com"
+        },
+        {
+          "step": "Initial screening and due diligence",
+          "detail": "Climate impact and scalability assessment"
+        },
+        {
+          "step": "Equity investment",
+          "detail": "€100K–€2M from Catalyst Fund"
+        },
+        {
+          "step": "Explore DRE-Nigeria for distribution projects",
+          "detail": "$500M+ for decentralised renewable energy"
+        }
       ]
     }
   ],
@@ -99,29 +141,25 @@
       "region": "Lagos (North)",
       "engagement": "Newly licensed (2025/2026). Deploying innovative solutions. Building operational capabilities. Early engagement opportunity.",
       "innovationUrl": "https://www.ikejaelectric.com/"
-    },
-    {
-      "name": "Excel Distribution Company",
-      "parent": "New licensee (2025)",
-      "customers": "~3M (formerly Eko Electricity territory)",
-      "region": "Lagos (South & Islands)",
-      "engagement": "Newly licensed (2025/2026). Competition-driven service delivery. Building technology stack. Early engagement opportunity.",
-      "innovationUrl": ""
-    },
-    {
-      "name": "Abuja Electricity Distribution",
-      "parent": "AEDC",
-      "customers": "~2M",
-      "region": "Abuja (FCT), Niger, Kogi, Nassarawa",
-      "engagement": "One of the top-performing DisCos. Smart meter deployment. Technology partnerships for loss reduction and grid management.",
-      "innovationUrl": ""
     }
   ],
   "faq": [
-    { "q": "What is Nigeria's energy transition target?", "a": "40% renewable electricity by 2030 (vs. 16% today). $500M+ public + private investment. Africa's largest market (200M+ population) with 26 GW generation capacity." },
-    { "q": "Can we pitch to TCN/NISO without a local entity?", "a": "Yes. TCN and NISO explicitly seek technology partnerships for grid modernisation. No local incorporation required for initial engagement." },
-    { "q": "How much does Catalyst Fund invest per company?", "a": "\u20ac100K-\u20ac2M typical equity cheques. Pan-African focus with Nigeria as priority." },
-    { "q": "What is the DRE-Nigeria Fund?", "a": "$500M+ decentralised renewable energy fund (NSIA partnership). Targets rural electrification and distributed generation projects. Technology partners can participate via project financing." }
+    {
+      "q": "What is Nigeria's energy transition target?",
+      "a": "40% renewable electricity by 2030 (vs. 16% today). $500M+ public + private investment. Africa's largest market (200M+ population) with 26 GW generation capacity."
+    },
+    {
+      "q": "Can we pitch to TCN/NISO without a local entity?",
+      "a": "Yes. TCN and NISO explicitly seek technology partnerships for grid modernisation. No local incorporation required for initial engagement."
+    },
+    {
+      "q": "How much does Catalyst Fund invest per company?",
+      "a": "€100K-€2M typical equity cheques. Pan-African focus with Nigeria as priority."
+    },
+    {
+      "q": "What is the DRE-Nigeria Fund?",
+      "a": "$500M+ decentralised renewable energy fund (NSIA partnership). Targets rural electrification and distributed generation projects. Technology partners can participate via project financing."
+    }
   ],
   "note": "Nigeria is Africa's largest electricity market (200M+ population, 26 GW generation). TCN/NISO seek grid modernisation tech but Nigeria's challenges differ fundamentally from UK connection queue backlogs. Catalyst Fund provides climate-tech capital. No local entity required for pitching."
 }
