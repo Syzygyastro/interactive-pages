@@ -133,7 +133,7 @@
     {
       "label": "TransnetBW — TransNEXT Innovation",
       "hint": "Innoloft platform, NEXTLab facility",
-      "text": "<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://transnetbw.innoloft.com/' target='_blank'>TransnetBW Innoloft</a></div>",
+      "text": "<span class='section-label'>What it does</span>TransnetBW runs TransNEXT via the Innoloft platform with a dedicated NEXTLab innovation campus in Wendlingen. Design Thinking methodology. No nationality restriction stated.<div class='links-row'><a class='link-box' href='https://www.transnetbw.de/de/unternehmen/portraet/innovationen/transnext' target='_blank'>TransnetBW TransNEXT</a></div>",
       "budget": "Est. €50K–€200K per pilot (smallest of 4 German TSOs)",
       "programmeType": "TSO Innovation Partnership",
       "deadline": "Rolling via Innoloft platform. NEXTLab campus in Wendlingen available for Design Thinking workshops.",
@@ -149,7 +149,7 @@
       },
       "applicationRoute": [
         {
-          "step": "Register on TransnetBW Innoloft platform",
+          "step": "Submit innovation proposal via TransnetBW website",
           "detail": "Create profile and browse challenges"
         },
         {
@@ -203,7 +203,7 @@
     {
       "label": "Westnetz/E.ON — Grid Innovation",
       "hint": "Germany's largest DSO",
-      "text": "<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.gridx.ai/success-stories/westnetz-smart-grid-control-dso' target='_blank'>gridX/Westnetz Case Study</a></div>",
+      "text": "<span class='section-label'>What it does</span>Westnetz (E.ON subsidiary) is Germany's largest DSO. Grid Operation 4.0 deployed smart metering across 100+ local grids. XENON platform (gridX) for automated congestion resolution. Commercial vendor partnerships with no nationality restriction.<div class='links-row'><a class='link-box' href='https://www.eon.com/en/innovation/innovation-frontline/innovation-news/gsc-finale-2025.html' target='_blank'>E.ON Grid Startup Challenge</a></div>",
       "budget": "Est. €200K–€1M per deployment (E.ON innovation budget)",
       "programmeType": "DSO Vendor Partnership",
       "deadline": "Rolling — commercial vendor partnerships negotiated on individual basis.",

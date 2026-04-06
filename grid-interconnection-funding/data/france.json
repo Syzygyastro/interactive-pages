@@ -137,7 +137,7 @@
     {
       "label": "CRE Regulatory Sandbox",
       "hint": "No funding — regulatory cover for AI pilots",
-      "text": "<span class='section-label'>What it does</span>French energy regulator (CRE) operates regulatory sandbox for AI-assisted grid operations testing. Provides comfort letters and derogations. Identical to UK Ofgem sandbox in principle. Open to international companies with French partner.<div class='links-row'><a class='link-box' href='https://www.demarches-simplifiees.fr/commencer/dispositif-d-experimentation-reglementaire' target='_blank'>CRE Regulatory Sandbox</a></div>",
+      "text": "<span class='section-label'>What it does</span>French energy regulator (CRE) operates regulatory sandbox for AI-assisted grid operations testing. Provides comfort letters and derogations. Identical to UK Ofgem sandbox in principle. Open to international companies with French partner.<div class='links-row'><a class='link-box' href='https://demarche.numerique.gouv.fr/commencer/dispositif-d-experimentation-reglementaire' target='_blank'>CRE Regulatory Sandbox</a></div>",
       "budget": "No direct funding — regulatory cover",
       "programmeType": "Regulatory Sandbox",
       "deadline": "Rolling — submit via demarches-simplifiees.fr. 6-8 week initial assessment. Pilots run 12-24 months.",
@@ -209,7 +209,7 @@
     {
       "label": "Enedis Innovation (France's Primary DSO)",
       "hint": "95% of French distribution, 35M Linky meters",
-      "text": "<span class='section-label'>What it does</span>Enedis manages 95% of France's electricity distribution network. Runs dedicated R&D and innovation programme. 35M Linky smart meters deployed providing grid data. 46 MW of local flexibility services across 30 departments. Innovation themes: smart grid/IoT, digital grid observability, fraud detection, capacity assessment, and SF6-free equipment (no new SF6 24kV switchboards since 2021).<span class='section-label'>Why it matters</span>Overwhelmingly dominant French DSO. Major programmes include the €250M Marseille Network programme for urban grid resilience.<div class='links-row'><a class='link-box' href='https://www.enedis.fr/sites/default/files/documents/pdf/enedis-rd-and-innovation-programme.pdf' target='_blank'>Enedis R&D Programme</a></div>",
+      "text": "<span class='section-label'>What it does</span>Enedis manages 95% of France's electricity distribution network. Runs dedicated R&D and innovation programme. 35M Linky smart meters deployed providing grid data. 46 MW of local flexibility services across 30 departments. Innovation themes: smart grid/IoT, digital grid observability, fraud detection, capacity assessment, and SF6-free equipment (no new SF6 24kV switchboards since 2021).<span class='section-label'>Why it matters</span>Overwhelmingly dominant French DSO. Major programmes include the €250M Marseille Network programme for urban grid resilience.<div class='links-row'><a class='link-box' href='https://www.enedis.fr/open-innovation' target='_blank'>Enedis Open Innovation</a></div>",
       "budget": "Est. €100K–€1M per innovation partnership",
       "programmeType": "DSO Innovation Partnership",
       "deadline": "Rolling — innovation partnerships negotiated on individual basis.",

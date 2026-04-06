@@ -11,9 +11,17 @@
   "badgeText": "#001B5F",
   "badge": "11 CRI Reforms",
   "badge2": "8 Programmes",
-  "tags": ["apac"],
+  "tags": [
+    "apac"
+  ],
   "sub": "AEMO's Connections Reform Initiative (11 reforms across 4 areas) creates urgent market demand for queue management. ARENA funds $100M+ clean energy projects. 310+ EnergyLab alumni across 7+ programmes. Network operators actively seek technology partnerships.",
-  "cardTags": ["AEMO", "ARENA", "EnergyLab", "Network Operators", "R&D Tax"],
+  "cardTags": [
+    "AEMO",
+    "ARENA",
+    "EnergyLab",
+    "Network Operators",
+    "R&D Tax"
+  ],
   "desc": "AEMO manages the National Electricity Market and has launched 11 reforms across 4 priority areas specifically to address the interconnection queue crisis. ARENA (Australian Renewable Energy Agency) funds $100M+ projects with explicit grid automation focus. EnergyLab has graduated 310+ cleantech startups across 7 programmes. Australia's R&D Tax Incentive provides 43.5% cash rebates on R&D spend. Network operators (AusNet, Ausgrid, Transgrid, Energex) actively seek technology partnerships. No local entity required for accelerators; optional for ARENA/tax credits.",
   "studies": [
     {
@@ -34,16 +42,28 @@
         "text": "11 reforms across 4 areas now in implementation phase. Pre-application Support Services now live. Draft EAF Guideline published Jan 2026. Multiple guidelines published Dec 2025-Jan 2026. Australia's 350+ GW interconnection backlog creates direct demand for Grid Agents' AI queue management."
       },
       "applicationRoute": [
-        { "step": "Contact AEMO Connections Reform team", "detail": "Direct pitch for queue management and automation" },
-        { "step": "Present solution aligned to CRI priority areas", "detail": "Staged generator setup improved connections enhanced network support streamlined processes" },
-        { "step": "Technical evaluation by AEMO", "detail": "Assessment against specific reform implementation needs" },
-        { "step": "Partnership with AEMO or network operator", "detail": "Technology deployment supporting CRI reforms" }
+        {
+          "step": "Contact AEMO Connections Reform team",
+          "detail": "Direct pitch for queue management and automation"
+        },
+        {
+          "step": "Present solution aligned to CRI priority areas",
+          "detail": "Staged generator setup improved connections enhanced network support streamlined processes"
+        },
+        {
+          "step": "Technical evaluation by AEMO",
+          "detail": "Assessment against specific reform implementation needs"
+        },
+        {
+          "step": "Partnership with AEMO or network operator",
+          "detail": "Technology deployment supporting CRI reforms"
+        }
       ]
     },
     {
       "label": "ARENA (Australian Renewable Energy Agency)",
       "hint": "$100M+ project funding",
-      "text": "<span class='section-label'>What it does</span>ARENA funds renewable energy projects including grid modernisation, storage, and AI for operations. $100M+ active portfolio. Grants and concessional loans (2-5% interest). Explicit support for interconnection automation, forecasting, and demand-side management.<span class='section-label'>How to apply</span>Australian entity required (easy setup, $200 AUD). Annual funding rounds. 4-6 week decision cycle.<div class='links-row'><a class='link-box' href='https://arena.gov.au/funding/future-made-in-australia-innovation-fund/' target='_blank'>ARENA Funding</a></div>",
+      "text": "<span class='section-label'>What it does</span>ARENA funds renewable energy projects including grid modernisation, storage, and AI for operations. $100M+ active portfolio. Grants and concessional loans (2-5% interest). Explicit support for interconnection automation, forecasting, and demand-side management.<span class='section-label'>How to apply</span>Australian entity required (easy setup, $200 AUD). Annual funding rounds. 4-6 week decision cycle.<div class='links-row'><a class='link-box' href='https://arena.gov.au/funding/advancing-renewables-program/' target='_blank'>ARENA Funding</a></div>",
       "budget": "$100M+ active portfolio (Advancing Renewables Program ongoing)",
       "programmeType": "Government Innovation Grant",
       "deadline": "Advancing Renewables Program: open and ongoing until funds exhausted. Solar Sunshot R2 EOI closes 30 April 2026. Industrial Transformation R3 open and ongoing.",
@@ -58,10 +78,22 @@
         "text": "Currently open: Solar Sunshot R2 ($150M, EOI closes 30 April 2026), Industrial Transformation R3 ($180M, ongoing). ARENA explicitly funds grid automation, forecasting, and demand-side management innovation. Advancing Renewables Program ongoing until funds exhausted."
       },
       "applicationRoute": [
-        { "step": "Register Australian entity", "detail": "$200 AUD online registration takes 1-2 days" },
-        { "step": "Apply during annual funding round", "detail": "arena.gov.au" },
-        { "step": "ARENA assessment", "detail": "4-6 week decision cycle" },
-        { "step": "Funded project", "detail": "Grants or concessional loans for grid innovation" }
+        {
+          "step": "Register Australian entity",
+          "detail": "$200 AUD online registration takes 1-2 days"
+        },
+        {
+          "step": "Apply during annual funding round",
+          "detail": "arena.gov.au"
+        },
+        {
+          "step": "ARENA assessment",
+          "detail": "4-6 week decision cycle"
+        },
+        {
+          "step": "Funded project",
+          "detail": "Grants or concessional loans for grid innovation"
+        }
       ]
     },
     {
@@ -82,10 +114,22 @@
         "text": "Non-dilutive funding covering 43.5% of all R&D expenditure. Every Australian entity building AI grid software should claim this. Immediate cash benefit."
       },
       "applicationRoute": [
-        { "step": "Register Australian entity", "detail": "$200 AUD if not already established" },
-        { "step": "Conduct qualifying R&D activities", "detail": "AI and grid software development fully eligible" },
-        { "step": "Submit annual claim to ATO", "detail": "Document R&D activities and expenditure" },
-        { "step": "Receive 43.5% cash rebate", "detail": "Rebates processed within 1-2 months of claim" }
+        {
+          "step": "Register Australian entity",
+          "detail": "$200 AUD if not already established"
+        },
+        {
+          "step": "Conduct qualifying R&D activities",
+          "detail": "AI and grid software development fully eligible"
+        },
+        {
+          "step": "Submit annual claim to ATO",
+          "detail": "Document R&D activities and expenditure"
+        },
+        {
+          "step": "Receive 43.5% cash rebate",
+          "detail": "Rebates processed within 1-2 months of claim"
+        }
       ]
     },
     {
@@ -106,10 +150,22 @@
         "text": "Current programmes: Energy Scaleup (Jun-Oct 2026), Climate Solutions Accelerator (Aug-Dec 2026), Climate Tech Ignite (starts Aug 2026). Direct access to AusNet, Ausgrid, Energex, Transgrid, SA Power Networks. 310+ alumni across 7+ programmes. Equity-free."
       },
       "applicationRoute": [
-        { "step": "Apply to relevant EnergyLab programme", "detail": "Seed Growth Scale or Corporate-in-Residence" },
-        { "step": "Selection and cohort onboarding", "detail": "Cohort-based mentorship programme" },
-        { "step": "Utility introductions", "detail": "Direct access to AusNet Ausgrid Transgrid and other operators" },
-        { "step": "Capital introductions", "detail": "Connections to Australian and international investors" }
+        {
+          "step": "Apply to relevant EnergyLab programme",
+          "detail": "Seed Growth Scale or Corporate-in-Residence"
+        },
+        {
+          "step": "Selection and cohort onboarding",
+          "detail": "Cohort-based mentorship programme"
+        },
+        {
+          "step": "Utility introductions",
+          "detail": "Direct access to AusNet Ausgrid Transgrid and other operators"
+        },
+        {
+          "step": "Capital introductions",
+          "detail": "Connections to Australian and international investors"
+        }
       ]
     },
     {
@@ -131,10 +187,22 @@
         "text": "Ausgrid (~1.8M customers, largest Australian network) and AusNet (both T&D) are transitioning to DSO models. Transgrid (transmission-only, NSW) has dedicated innovation budget. Multiple DNSPs participated in evolve DER project. DNSP Community of Practice established July 2025."
       },
       "applicationRoute": [
-        { "step": "Identify target network operator", "detail": "AusNet and Ausgrid most active followed by Transgrid" },
-        { "step": "Contact innovation team directly", "detail": "Via operator website or EnergyLab introduction" },
-        { "step": "Present grid automation solution", "detail": "Focus on demand management forecasting or congestion" },
-        { "step": "Pilot agreement", "detail": "Commercial terms for technology deployment and testing" }
+        {
+          "step": "Identify target network operator",
+          "detail": "AusNet and Ausgrid most active followed by Transgrid"
+        },
+        {
+          "step": "Contact innovation team directly",
+          "detail": "Via operator website or EnergyLab introduction"
+        },
+        {
+          "step": "Present grid automation solution",
+          "detail": "Focus on demand management forecasting or congestion"
+        },
+        {
+          "step": "Pilot agreement",
+          "detail": "Commercial terms for technology deployment and testing"
+        }
       ]
     },
     {
@@ -155,11 +223,26 @@
         "text": "Collaborative research fund not specifically targeted at grid interconnection. Grid automation and AI eligible but requires academic partnership."
       },
       "applicationRoute": [
-        { "step": "Establish Australian entity", "detail": "Required for CRC-P participation" },
-        { "step": "Identify Australian university partner", "detail": "Energy or engineering research group" },
-        { "step": "Develop collaborative R&D proposal", "detail": "Joint application with industry and academic partners" },
-        { "step": "Submit to CRC-P", "detail": "business.gov.au competitive assessment" },
-        { "step": "3-5 year funded project", "detail": "Up to $1M for collaborative research" }
+        {
+          "step": "Establish Australian entity",
+          "detail": "Required for CRC-P participation"
+        },
+        {
+          "step": "Identify Australian university partner",
+          "detail": "Energy or engineering research group"
+        },
+        {
+          "step": "Develop collaborative R&D proposal",
+          "detail": "Joint application with industry and academic partners"
+        },
+        {
+          "step": "Submit to CRC-P",
+          "detail": "business.gov.au competitive assessment"
+        },
+        {
+          "step": "3-5 year funded project",
+          "detail": "Up to $1M for collaborative research"
+        }
       ]
     },
     {
@@ -180,11 +263,26 @@
         "text": "Large-scale project finance not early-stage innovation funding. More relevant for scaling deployed solutions than for R&D. Grid modernisation is eligible category."
       },
       "applicationRoute": [
-        { "step": "Establish Australian entity", "detail": "Required for CEFC financing" },
-        { "step": "Prepare investment proposal", "detail": "Demonstrable clean energy impact required" },
-        { "step": "Submit to CEFC", "detail": "cefc.com.au" },
-        { "step": "Financial and technical assessment", "detail": "Evaluated on energy impact and financial viability" },
-        { "step": "Concessional financing agreement", "detail": "Below-market interest rates for qualifying projects" }
+        {
+          "step": "Establish Australian entity",
+          "detail": "Required for CEFC financing"
+        },
+        {
+          "step": "Prepare investment proposal",
+          "detail": "Demonstrable clean energy impact required"
+        },
+        {
+          "step": "Submit to CEFC",
+          "detail": "cefc.com.au"
+        },
+        {
+          "step": "Financial and technical assessment",
+          "detail": "Evaluated on energy impact and financial viability"
+        },
+        {
+          "step": "Concessional financing agreement",
+          "detail": "Below-market interest rates for qualifying projects"
+        }
       ]
     },
     {
@@ -206,19 +304,46 @@
         "text": "Highest DER penetration in Australia's NEM — 39% of customers have solar PV (370,000 systems). At the frontier of managing bidirectional power flows and DER connection challenges. Advanced VPP Grid Integration Trial running. Senior Manager of Enterprise Innovation actively engaging with industry."
       },
       "applicationRoute": [
-        { "step": "Contact SA Power Networks Future Energy team", "detail": "sapowernetworks.com.au/future-energy" },
-        { "step": "Present AI grid connection management solution", "detail": "Focus on DER integration and connection processing" },
-        { "step": "Technical evaluation", "detail": "Assessment against operational challenges" },
-        { "step": "Pilot partnership", "detail": "Access to SA's high-DER distribution network" }
+        {
+          "step": "Contact SA Power Networks Future Energy team",
+          "detail": "sapowernetworks.com.au/future-energy"
+        },
+        {
+          "step": "Present AI grid connection management solution",
+          "detail": "Focus on DER integration and connection processing"
+        },
+        {
+          "step": "Technical evaluation",
+          "detail": "Assessment against operational challenges"
+        },
+        {
+          "step": "Pilot partnership",
+          "detail": "Access to SA's high-DER distribution network"
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "What are AEMO's 11 Connections Reform initiatives?", "a": "Four priority areas: (1) Staged generator setup, (2) Improved connection requirements, (3) Enhanced network support, (4) Streamlined processes. Each reform creates specific software/AI automation needs. Implementation ongoing through 2026+." },
-    { "q": "Do I need an Australian entity for ARENA funding?", "a": "Yes, but registration costs only $200 AUD and takes 1-2 days online. Highly recommend establishing one for ARENA, R&D Tax Incentive access, and network operator partnerships." },
-    { "q": "How does the R&D Tax Incentive work?", "a": "Claim 43.5% cash rebate on all R&D spend. No size limits. Tech companies building AI/grid software are fully eligible. Submit annual claims to ATO; rebates arrive in 1-2 months." },
-    { "q": "Which network operators should I approach first?", "a": "AusNet and Ausgrid have the most active innovation budgets and explicit demand management focus. Transgrid (NSW transmission) also invests in automation. EnergyLab provides introductions to all three." },
-    { "q": "How many startups has EnergyLab graduated?", "a": "310+ alumni across 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence, etc.). Direct alumni network includes all major Australian utilities." }
+    {
+      "q": "What are AEMO's 11 Connections Reform initiatives?",
+      "a": "Four priority areas: (1) Staged generator setup, (2) Improved connection requirements, (3) Enhanced network support, (4) Streamlined processes. Each reform creates specific software/AI automation needs. Implementation ongoing through 2026+."
+    },
+    {
+      "q": "Do I need an Australian entity for ARENA funding?",
+      "a": "Yes, but registration costs only $200 AUD and takes 1-2 days online. Highly recommend establishing one for ARENA, R&D Tax Incentive access, and network operator partnerships."
+    },
+    {
+      "q": "How does the R&D Tax Incentive work?",
+      "a": "Claim 43.5% cash rebate on all R&D spend. No size limits. Tech companies building AI/grid software are fully eligible. Submit annual claims to ATO; rebates arrive in 1-2 months."
+    },
+    {
+      "q": "Which network operators should I approach first?",
+      "a": "AusNet and Ausgrid have the most active innovation budgets and explicit demand management focus. Transgrid (NSW transmission) also invests in automation. EnergyLab provides introductions to all three."
+    },
+    {
+      "q": "How many startups has EnergyLab graduated?",
+      "a": "310+ alumni across 7+ programmes (Seed, Growth, Scale, Corporate-in-Residence, etc.). Direct alumni network includes all major Australian utilities."
+    }
   ],
   "note": "Australia combines regulatory urgency (AEMO 11 reforms), massive funding (ARENA $100M+, CEFC $20B+), and strong accelerators (EnergyLab 310+ alumni). R&D Tax Incentive (43.5% rebate) is non-dilutive and available immediately. Minimal entity setup required."
 }

@@ -208,7 +208,7 @@
     {
       "label": "Endesa Innovation (Enel Group)",
       "hint": "€150M+ portfolio, 2,000+ employees R&D",
-      "text": "<span class='section-label'>What it does</span>Enel Group's Spanish utility Endesa runs open innovation with vendor partnerships. €150M+ portfolio. Joint ventures with startups in grid automation and forecasting.<div class='links-row'><a class='link-box' href='https://www.endesa.com/en/our-commitment/innovation/open-innovation' target='_blank'>Endesa Innovation</a></div>",
+      "text": "<span class='section-label'>What it does</span>Enel Group's Spanish utility Endesa runs open innovation with vendor partnerships. €150M+ portfolio. Joint ventures with startups in grid automation and forecasting.<div class='links-row'><a class='link-box' href='https://openinnovability.enel.com/challenges' target='_blank'>Enel Open Innovability</a></div>",
       "budget": "€150M+ portfolio (partnership model)",
       "programmeType": "Utility Vendor Partnership",
       "deadline": "Rolling — open innovation partnerships negotiated on individual basis.",
@@ -224,7 +224,7 @@
       "applicationRoute": [
         {
           "step": "Contact Endesa open innovation team",
-          "detail": "endesa.com/innovation/open-innovation"
+          "detail": "openinnovability.enel.com/challenges"
         },
         {
           "step": "Present grid automation solution",
