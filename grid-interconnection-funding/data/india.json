@@ -26,11 +26,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Direct partnership opportunities with state utilities and IPPs. Foreign companies typically need Indian partner or local presence for MNRE engagement."
+        "text": "Grid Agents would need an Indian partner or local presence for MNRE engagement. Grid automation is a core MNRE priority but Grid Agents' connection application review focus would need adaptation for Indian grid code and processes."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "India's renewable expansion to 280+ GW creates massive demand for AI grid automation. Grid management forecasting and congestion automation are core MNRE priorities."
+        "text": "GEC Phase 2 targets 20 GW RE integration through 10,750 ckm of transmission lines across 7 states. Rajasthan, Karnataka, and Tamil Nadu have completed implementation. Phase 3 and 4 now planned to address continued transmission bottlenecks."
       },
       "applicationRoute": [
         { "step": "Identify Indian utility or IPP partner", "detail": "State utilities or independent power producers" },
@@ -49,11 +50,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Vendor partnerships available but formal participation typically requires Indian entity or local partner. 250M smart meter rollout creates massive data opportunity."
+        "text": "Grid Agents would need an Indian entity or local partner. 250M smart meter rollout is a different problem domain from connection application review — Grid Agents' core product would need significant adaptation."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Largest smart metering rollout globally across 13 states. Real-time grid operations data creates direct opportunities for AI-driven queue management and automation."
+        "text": "22 crore smart meters sanctioned, ~2.77 crore installed (April 2025). 1,093 PMUs on 400kV lines for transmission monitoring (URTDSM project). Phase I (through 2026) targets 50% coverage of distribution transformer and feeder metering."
       },
       "applicationRoute": [
         { "step": "Identify state utility partner", "detail": "13 states participating in NSGM" },
@@ -72,8 +74,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires registered Indian startup entity (₹100 fee ~$1.20). Foreign founders can register but must have Indian entity. Deep Tech vertical supports AI and energy."
+        "text": "Grid Agents would need a registered Indian entity (₹100 fee). Small grants (£10K-£100K) aimed at early-stage Indian startups. Grant size may not justify the effort of establishing Indian operations for Grid Agents."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "low",
         "text": "Small grants aimed at early-stage Indian startups. Not targeted at grid interconnection specifically. More useful for establishing Indian market presence than for core R&D funding."
@@ -95,11 +98,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "No Indian entity required. International startups welcome. Quarterly cohorts with 50+ startups per year."
+        "text": "Grid Agents can apply directly — no Indian entity required, international startups welcome. AI-powered grid technology fits Social Alpha's climate-tech focus. Access to PowerGrid and state utilities through CEIIC."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Direct access to PowerGrid state utilities and international climate investors. CEIIC provides growth capital specifically for climate and energy technology startups."
+        "text": "Third edition 'Techtonic — Innovations in Clean Energy' focuses on 4 themes: Energy for Livelihoods, Smart Energy Systems, Energy Storage, Thermal Comfort. Three tracks: R&D, Pilot, and Scale-Up. CEIIC incubation for post-pilot winners."
       },
       "applicationRoute": [
         { "step": "Apply to Social Alpha Techtonic", "detail": "Quarterly cohort applications via socialalpha.org" },
@@ -119,11 +123,12 @@
       "budgetBasis": "PowerGrid does not publish per-partnership budgets. Estimated from PowerGrid's annual R&D expenditure (~$50M/yr reported in annual reports) and typical Indian utility technology partnership scales.",
       "eligibility": {
         "status": "eligible",
-        "text": "Direct partnerships with technology providers — no nationality restriction. PowerGrid is India's central transmission utility."
+        "text": "Grid Agents can approach directly — no nationality restriction. PowerGrid's AI roadmap for load forecasting and outage prediction is adjacent to Grid Agents' connection queue management. Product adaptation needed for Indian operations."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Controls India's backbone transmission. AI for load forecasting dynamic line rating and outage prediction directly addresses PowerGrid's stated technology roadmap."
+        "text": "Current R&D priorities: STATCOMs at solar evacuation stations (600 MVAR), WAMS at scale, AI-driven SFRA analysis, PALMS (Asset Life Management System), VSC-HVDC for congestion, substation inspection robots (with IIT Kanpur). Natural ester transformer deployed March 2025."
       },
       "applicationRoute": [
         { "step": "Contact PowerGrid Technology Development division", "detail": "powergrid.in/en/technology-development-rd" },
@@ -143,11 +148,12 @@
       "budgetBasis": "Grid-India does not publish per-vendor engagement budgets. Estimated from comparable Indian system operator technology procurement scales and Grid-India's operational scope.",
       "eligibility": {
         "status": "eligible",
-        "text": "Open to vendor partnerships. Grid-India manages ~200 GW national real-time energy market."
+        "text": "Grid Agents can engage as a vendor — open to partnerships. Grid-India's real-time dispatch and forecasting needs are adjacent to but different from connection application review. Product adaptation required."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Real-time dispatch operator managing 13 regional grids. Forecasting and congestion management are core operational needs — direct product fit."
+        "text": "Current focus: Frequency Response Obligation assessment, Security Constrained Economic Dispatch (SCED) optimisation, Regional Energy Management Centres (REMCs) for RE forecasting, and Automatic Generation Control. Real-time dispatch across 13 regional grids."
       },
       "applicationRoute": [
         { "step": "Contact Grid-India partnership team", "detail": "grid-india.in" },

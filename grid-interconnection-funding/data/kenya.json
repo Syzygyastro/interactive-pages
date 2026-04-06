@@ -26,11 +26,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "No funding directly but regulatory pathway access is critical. Direct engagement for grid integration licensing and standards."
+        "text": "Grid Agents can engage directly for regulatory pathway. No direct funding. Grid Agents' connection queue management is relevant but Kenya's grid integration challenges differ significantly from UK-style connection backlogs."
       },
+      "gridLevel": "distribution",
       "relevance": {
         "level": "medium",
-        "text": "Coordinates Kenya's 100% renewable target but primarily regulatory not technology-procurement. Useful for understanding grid integration requirements."
+        "text": "75% of rural regions now have electricity connections. 29+ rural electrification projects commissioned since mid-2025. Focus is last-mile distribution and mini-grids, including Wasini Island Solar Power Mini-Grid. Seeking Sh14.5B to connect 690,000 additional rural households."
       },
       "applicationRoute": [
         { "step": "Contact REREC", "detail": "rerec.co.ke" },
@@ -50,11 +51,12 @@
       "budgetBasis": "Kenya Power does not publish innovation budgets. Estimated from Kenya Power's capital expenditure programme, comparable East African utility pilot scales, and World Bank-funded grid modernisation project components.",
       "eligibility": {
         "status": "eligible",
-        "text": "Direct vendor partnerships \u2014 no entity required. Kenya Power explicitly seeks grid modernisation technology."
+        "text": "Grid Agents can approach directly \u2014 no entity required. Kenya Power's grid modernisation needs are real but focused on demand-side management and renewable integration rather than connection application review."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "National utility with 8M+ customers explicitly seeking grid modernisation demand-side management and renewable integration technologies. Direct operational need."
+        "text": "Kenya Power handles both T&D (9.6M+ customers, 310,618 km of lines) though KETRACO (est. 2008) is taking over bulk transmission (132kV+, ~4,660 km). Transfer of ~Sh20B of KPLC transmission assets to KETRACO underway. Grid modernisation is an active priority."
       },
       "applicationRoute": [
         { "step": "Contact Kenya Power Innovation Institute", "detail": "innovations.kplcinstitute.ac.ke" },
@@ -73,8 +75,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Works through AfDB and World Bank. Technology partners access via project financing not direct application. Kenya is explicit priority country."
+        "text": "Grid Agents would access CIF indirectly via utility partnerships. Concessional infrastructure finance \u2014 not suited to early-stage AI startups. Grid Agents would need to partner with a project developer."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Concessional infrastructure finance. Technology startups participate indirectly via utility partnerships."
@@ -96,8 +99,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Open to businesses operating in 24 African countries. Energy and clean-tech explicitly prioritised. Kenya is core market."
+        "text": "Grid Agents can apply \u2014 open to businesses in 24 African countries. Matching grant structure (50% grant + 50% investor match) requires co-investment. Grid Agents would need to demonstrate Kenya market presence or plan."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Matching grant structure requires co-investment. Energy and clean-tech eligible but broad focus not grid-interconnection-specific."
@@ -119,8 +123,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Non-dilutive grants. Kenya is a priority country. 6-month decision cycle."
+        "text": "Grid Agents can apply \u2014 non-dilutive grants, Kenya is a priority. However, 30-50% co-financing required and Grid Agents' connection queue management focus may not directly match EEP's broader energy access priorities."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "EU-African partnership supporting grid modernisation and digitalisation. Broad focus but grid innovation eligible."

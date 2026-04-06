@@ -26,11 +26,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Direct technology partnerships available \u2014 no nationality restriction. TCN controls grid access for all generation and distribution."
+        "text": "Grid Agents can approach directly \u2014 no nationality restriction. TCN's Energy Transition Strategy mandates grid modernisation but Nigeria's grid challenges differ significantly from UK-style connection queue backlogs."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Africa's largest electricity market with 30000+ km transmission. Energy Transition Strategy mandates grid modernisation with explicit focus on congestion management."
+        "text": "TCN is transmission-only (wheeling capacity 8,700 MW). NISO was unbundled from TCN in 2023 as independent system operator. Distribution handled by 11 DisCos (Ikeja, Eko, Abuja top performers). Energy Transition Strategy mandates grid modernisation."
       },
       "applicationRoute": [
         { "step": "Contact TCN partnerships team", "detail": "tcn.org.ng" },
@@ -50,11 +51,12 @@
       "budgetBasis": "NISO is newly established (2023) and does not publish engagement budgets. Estimated from comparable African system operator technology procurement and NISO's 26 GW coordination scope.",
       "eligibility": {
         "status": "eligible",
-        "text": "Open to vendor partnerships. NISO manages real-time dispatch and renewable integration across Nigeria."
+        "text": "Grid Agents can engage as a vendor \u2014 open to partnerships. NISO's real-time dispatch and renewable integration needs are adjacent to but different from connection application review and queue management."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Real-time dispatch operator coordinating 26 GW generation. Forecasting demand-side response and congestion management are core operational needs."
+        "text": "NISO established under Electricity Act 2023 by unbundling from TCN. Board inaugurated 2025. Responsible for generation dispatch, grid coordination, and market oversight. Real-time dispatch across 26 GW capacity."
       },
       "applicationRoute": [
         { "step": "Contact NISO", "detail": "niso.org.ng" },
@@ -73,8 +75,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Technology partners funded indirectly through project financing. Government-coordinated programme."
+        "text": "Grid Agents would access indirectly through project financing. Government-coordinated programme with indirect technology partner funding. Not suited to early-stage startups like Grid Agents."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Coordinates investment but funding flows through government channels and project developers. Technology startups access indirectly."
@@ -96,8 +99,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "No entity required for initial pitch. Two-month cohorts 3x per year. Energy and climate tech explicitly supported."
+        "text": "Grid Agents can apply \u2014 no entity required. However, programme has a Nigeria focus and Grid Agents' UK grid connection focus may not demonstrate sufficient African market commitment for selection."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "General startup accelerator with Nigeria focus. Capital introductions and mentorship valuable for African market entry but not grid-interconnection-specific."
@@ -119,8 +123,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "No local entity required to pitch Catalyst Fund. DRE-Nigeria Fund targets decentralised energy projects."
+        "text": "Grid Agents can pitch without local entity. Pan-African VC with climate-tech focus. Grid Agents would need to demonstrate African market relevance beyond UK grid connection application review."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "General climate-tech VC and decentralised energy fund. Grid interconnection is adjacent but DRE fund focuses on rural electrification not transmission."

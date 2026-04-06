@@ -10,10 +10,19 @@
   "badgeColor": "#FFFAEB",
   "badgeText": "#CC9900",
   "badge": "€13.59B Transmission",
-  "badge2": "7 Programmes",
-  "tags": ["europe"],
+  "badge2": "8 Programmes",
+  "tags": [
+    "europe"
+  ],
   "sub": "Spain is Europe's largest renewable energy producer and grid operator, with Red Eléctrica investing €13.59B in transmission networks 2025-2030. Iberdrola PERSEO has invested €200M+ in AI portfolio. CDTI and IDAE provide €300M+ annually.",
-  "cardTags": ["Red Eléctrica", "Iberdrola", "CDTI", "IDAE", "Elewit Ventures"],
+  "cardTags": [
+    "Red Eléctrica",
+    "Iberdrola",
+    "CDTI",
+    "IDAE",
+    "Elewit Ventures",
+    "i-DE"
+  ],
   "desc": "Red Eléctrica (REE) operates Spain's high-voltage grid and is investing €13.59B across 2025-2030 specifically for renewable integration. Elewit Ventures is REE's corporate venture arm. Iberdrola PERSEO international startup program has invested €200M+ with explicit AI focus. CDTI (national R&D agency) and IDAE (energy agency) provide €300M+ annually in grants. Spanish company registration takes 2-4 weeks.",
   "studies": [
     {
@@ -26,18 +35,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Direct vendor partnerships for grid automation — no nationality restriction. Elewit Ventures (REE corporate venture) actively invests in energy-tech startups."
+        "text": "Grid Agents can approach directly — no nationality restriction. Red Eléctrica's €13.59B transmission investment and AI/digitalisation roadmap align with Grid Agents' connection queue management. Elewit Ventures provides a CVC route."
       },
       "relevance": {
         "level": "high",
-        "text": "Red Eléctrica operates 48,000+ km grid with explicit AI and digitalisation roadmap. Congestion management and renewable integration are stated priorities."
+        "text": "Elewit 5th Venture Client Programme (2025) selected: DeNexus (cyber risk), AssetCool (UK, photonic coatings reducing conductor temp 25%, capacity up 10-30%), Navgar (AI operations platform), Ocean Ecostructures. Themes: cybersecurity, new materials for overhead lines, AI project management, marine ecosystem revitalisation."
       },
       "applicationRoute": [
-        { "step": "Direct approach to REE Innovation team", "detail": "Or pitch to Elewit Ventures as VC deal" },
-        { "step": "Present grid automation solution", "detail": "Focus on congestion management and queue optimisation" },
-        { "step": "Technical evaluation", "detail": "Assessment against REE digitalisation roadmap" },
-        { "step": "Vendor partnership or Elewit investment", "detail": "Commercial terms or equity deal via corporate venture" }
-      ]
+        {
+          "step": "Direct approach to REE Innovation team",
+          "detail": "Or pitch to Elewit Ventures as VC deal"
+        },
+        {
+          "step": "Present grid automation solution",
+          "detail": "Focus on congestion management and queue optimisation"
+        },
+        {
+          "step": "Technical evaluation",
+          "detail": "Assessment against REE digitalisation roadmap"
+        },
+        {
+          "step": "Vendor partnership or Elewit investment",
+          "detail": "Commercial terms or equity deal via corporate venture"
+        }
+      ],
+      "gridLevel": "transmission"
     },
     {
       "label": "Iberdrola PERSEO",
@@ -49,18 +71,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "International startup programme — no nationality restriction. Equity and strategic partnership model."
+        "text": "Grid Agents can apply internationally — no nationality restriction. PERSEO's €200M+ portfolio and explicit focus on next-generation grid technologies directly aligns with Grid Agents' AI platform. Multi-market access (Spain, UK, US, Brazil)."
       },
       "relevance": {
         "level": "high",
-        "text": "Explicitly focuses on next-generation grid technologies. Iberdrola operates in Spain, Portugal, UK, US, Mexico, and Brazil — multi-market access."
+        "text": "Current open challenges include Electricity Network Resilience (advanced computing for distribution resilience during extreme weather) and Sustainable Materials for Grids. Past challenges: PV inspection, solar generation technologies, underwater inspections. Winners sign pilot agreements with Iberdrola covering costs and providing real-site access."
       },
       "applicationRoute": [
-        { "step": "Submit application via PERSEO portal", "detail": "iberdrola.com/innovation/international-startup-program-perseo" },
-        { "step": "Present pitch deck with product demo", "detail": "Equity deal — standard VC metrics expected" },
-        { "step": "Due diligence and technical assessment", "detail": "Evaluated by Iberdrola grid technology experts" },
-        { "step": "Strategic partnership with equity investment", "detail": "Access to 81M customers across 6 countries" }
-      ]
+        {
+          "step": "Submit application via PERSEO portal",
+          "detail": "iberdrola.com/innovation/international-startup-program-perseo"
+        },
+        {
+          "step": "Present pitch deck with product demo",
+          "detail": "Equity deal — standard VC metrics expected"
+        },
+        {
+          "step": "Due diligence and technical assessment",
+          "detail": "Evaluated by Iberdrola grid technology experts"
+        },
+        {
+          "step": "Strategic partnership with equity investment",
+          "detail": "Access to 81M customers across 6 countries"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "CDTI R&D Funding (NEOTEC 2025+)",
@@ -72,18 +107,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Spanish company registration (SL or SLU). 2-4 weeks setup at €3-5K. Rolling applications."
+        "text": "Grid Agents would need a Spanish company (SL/SLU, 2-4 weeks, €3-5K). AI and energy innovation fits NEOTEC criteria. Note: companies must have been founded between May 2022 and November 2024 — check Grid Agents' founding date eligibility."
       },
       "relevance": {
         "level": "medium",
-        "text": "General R&D funding across AI, climate, and energy. Not grid-specific but energy innovation is eligible."
+        "text": "NEOTEC 2026 expected to open April-May 2026. Grants up to €325K (85% subsidy). NEOTEC 2025 was most competitive ever — only applications scoring 79+/100 funded. Eligibility: small enterprises, 6 months to 3 years old, proprietary technology. Check Grid Agents' founding date eligibility."
       },
       "applicationRoute": [
-        { "step": "Register Spanish SL or SLU", "detail": "2-4 weeks and €3-5K legal fees" },
-        { "step": "Register on CDTI portal", "detail": "sede.cdti.gob.es" },
-        { "step": "Submit rolling application", "detail": "NEOTEC programme for innovative companies" },
-        { "step": "CDTI assessment", "detail": "40-75% of eligible costs covered if approved" }
-      ]
+        {
+          "step": "Register Spanish SL or SLU",
+          "detail": "2-4 weeks and €3-5K legal fees"
+        },
+        {
+          "step": "Register on CDTI portal",
+          "detail": "sede.cdti.gob.es"
+        },
+        {
+          "step": "Submit rolling application",
+          "detail": "NEOTEC programme for innovative companies"
+        },
+        {
+          "step": "CDTI assessment",
+          "detail": "40-75% of eligible costs covered if approved"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "IDAE Energy Innovation Grants",
@@ -95,18 +143,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Spanish entity. Dedicated to energy innovation including grid modernisation and AI integration."
+        "text": "Grid Agents would need a Spanish entity. AI grid automation fits IDAE's grid modernisation and AI integration focus. Worth pursuing if establishing Spanish entity for Red Eléctrica or Iberdrola partnerships."
       },
       "relevance": {
         "level": "high",
-        "text": "Dedicated innovation budget for grid modernisation, distributed energy, and AI integration — directly relevant to grid interconnection tools."
+        "text": "Current calls: Innovative Renewable Energy & Storage 2nd call (€202.5M, closed Feb 2026), RENOVAL II (€355M renewables manufacturing), PORT-EOLMAR (€212M floating offshore wind). Over €1.3B in active calls. Demand-side management equipment call expected 2026. Highly oversubscribed (€6B requests vs €700M allocated)."
       },
       "applicationRoute": [
-        { "step": "Establish Spanish entity if not already", "detail": "Required for IDAE applications" },
-        { "step": "Submit via IDAE portal", "detail": "sede.idae.gob.es" },
-        { "step": "IDAE technical assessment", "detail": "Evaluated against energy innovation priorities" },
-        { "step": "Funded project", "detail": "50-75% of eligible costs covered" }
-      ]
+        {
+          "step": "Establish Spanish entity if not already",
+          "detail": "Required for IDAE applications"
+        },
+        {
+          "step": "Submit via IDAE portal",
+          "detail": "sede.idae.gob.es"
+        },
+        {
+          "step": "IDAE technical assessment",
+          "detail": "Evaluated against energy innovation priorities"
+        },
+        {
+          "step": "Funded project",
+          "detail": "50-75% of eligible costs covered"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "ENISA (SME Growth Support)",
@@ -118,18 +179,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Spanish entity. No interest during growth phase. DeepTech and ClimaTech explicitly supported."
+        "text": "Grid Agents would need a Spanish entity. Quasi-equity loans (€300K-€1.5M) with no interest during growth phase. Could support Spanish market expansion if entity is established for Iberdrola or Red Eléctrica work."
       },
       "relevance": {
         "level": "medium",
-        "text": "General SME growth financing, not grid-specific. Useful for scaling Spanish operations but not targeted at interconnection."
+        "text": "€303M total budget (€200M 2025, €103M 2026). New 'Startups and SMEs' funding line since August 2025. For transactions under €300K, ENISA may grant first tranche with pre-approved second tranche on milestones. €40M EIF guarantee agreement supporting Spanish startups."
       },
       "applicationRoute": [
-        { "step": "Establish Spanish entity", "detail": "Required for ENISA applications" },
-        { "step": "Submit via ENISA portal", "detail": "portaldelcliente.enisa.es" },
-        { "step": "Financial assessment", "detail": "Evaluated on growth potential and technology" },
-        { "step": "Quasi-equity loan agreement", "detail": "No interest during growth phase; repayment later" }
-      ]
+        {
+          "step": "Establish Spanish entity",
+          "detail": "Required for ENISA applications"
+        },
+        {
+          "step": "Submit via ENISA portal",
+          "detail": "portaldelcliente.enisa.es"
+        },
+        {
+          "step": "Financial assessment",
+          "detail": "Evaluated on growth potential and technology"
+        },
+        {
+          "step": "Quasi-equity loan agreement",
+          "detail": "No interest during growth phase; repayment later"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "Endesa Innovation (Enel Group)",
@@ -141,18 +215,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Open innovation with vendor partnerships — no nationality restriction. Enel Group subsidiary."
+        "text": "Grid Agents can approach directly — no nationality restriction. Endesa's grid automation and forecasting focus aligns with Grid Agents' AI platform for connection processing at distribution level."
       },
       "relevance": {
         "level": "medium",
-        "text": "Grid automation and forecasting are relevant themes. Endesa is distribution-focused, which is adjacent to but not directly interconnection."
+        "text": "2026-2028 Strategic Plan: 50%+ of €10.6B capex targeting grid infrastructure. €5.5B allocated to Spain. Innovation Hubs in Madrid (TheCube: IoT, Data Science, AI) and Barcelona. e-distribución deploys LV Supervisor devices, IoT digital twins, and fraud detection. Open Innovability platform for startup challenges."
       },
       "applicationRoute": [
-        { "step": "Contact Endesa open innovation team", "detail": "endesa.com/innovation/open-innovation" },
-        { "step": "Present grid automation solution", "detail": "Joint venture or vendor partnership model" },
-        { "step": "Technical and commercial evaluation", "detail": "Assessed by Endesa R&D team" },
-        { "step": "Vendor partnership if selected", "detail": "Access to Endesa distribution network" }
-      ]
+        {
+          "step": "Contact Endesa open innovation team",
+          "detail": "endesa.com/innovation/open-innovation"
+        },
+        {
+          "step": "Present grid automation solution",
+          "detail": "Joint venture or vendor partnership model"
+        },
+        {
+          "step": "Technical and commercial evaluation",
+          "detail": "Assessed by Endesa R&D team"
+        },
+        {
+          "step": "Vendor partnership if selected",
+          "detail": "Access to Endesa distribution network"
+        }
+      ],
+      "gridLevel": "distribution"
     },
     {
       "label": "Horizon Europe (via Spain)",
@@ -164,26 +251,91 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "UK companies can participate as Associated Country since January 2024. Grant-only for UK entities."
+        "text": "Grid Agents can apply as a single UK entity (Associated Country since January 2024). Grant-only access up to €2.5M. Clean energy and AI are eligible topics. Can also pursue via Spanish consortium route."
       },
       "relevance": {
         "level": "medium",
-        "text": "Competitive EU-wide programme. Not grid-specific but clean energy and AI are eligible. Spanish tech clusters can provide consortium routes."
+        "text": "2026 EIC Accelerator challenge topics include 'Deep Tech for Climate Adaptation' (€50M). Open track (€414M) accepts any deep tech topic. Bimonthly cut-offs. Grid Agents can apply as single UK entity via Open track or Climate Adaptation challenge. Can also pursue via Spanish consortium route."
       },
       "applicationRoute": [
-        { "step": "Register on EU Funding Portal", "detail": "ec.europa.eu/info/funding-tenders" },
-        { "step": "Identify relevant call or Spanish consortium", "detail": "Grid innovation or clean energy topics" },
-        { "step": "Submit application", "detail": "Single entity for EIC or consortium for collaborative calls" },
-        { "step": "EU evaluation", "detail": "Competitive assessment across member states" }
+        {
+          "step": "Register on EU Funding Portal",
+          "detail": "ec.europa.eu/info/funding-tenders"
+        },
+        {
+          "step": "Identify relevant call or Spanish consortium",
+          "detail": "Grid innovation or clean energy topics"
+        },
+        {
+          "step": "Submit application",
+          "detail": "Single entity for EIC or consortium for collaborative calls"
+        },
+        {
+          "step": "EU evaluation",
+          "detail": "Competitive assessment across member states"
+        }
+      ],
+      "gridLevel": "both"
+    },
+    {
+      "label": "i-DE Redes Eléctricas (Iberdrola Distribution)",
+      "hint": "11M+ customers, S2F Sandbox, BeFlexible",
+      "text": "<span class='section-label'>What it does</span>i-DE (Iberdrola Group) is Spain's largest DSO with 11M+ customers across 10 autonomous communities. Runs the S2F Sandbox (regulatory innovation for flexibility in distribution networks) involving most Spanish distribution companies. Partner in BeFlexible (EU-funded, 12 pilots across Italy/Sweden/Spain/France promoting prosumer flexibility). CoordiNet follow-on tested local flexibility markets in Spanish demo.<span class='section-label'>Why it matters</span>Spain's largest DSO with active innovation in distribution flexibility and AI for grid management.<div class='links-row'><a class='link-box' href='https://www.i-de.es/about-us/digitalization-and-innovation' target='_blank'>i-DE Innovation</a><a class='link-box' href='https://beflexible.eu/consortium/' target='_blank'>BeFlexible Project</a></div>",
+      "budget": "Est. €100K–€500K per innovation partnership",
+      "programmeType": "DSO Innovation Partnership",
+      "deadline": "Rolling — innovation partnerships and S2F Sandbox projects ongoing.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "i-DE does not publish per-partnership budgets. Estimated from S2F Sandbox scope and comparable European DSO innovation programmes.",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can approach directly via Iberdrola/PERSEO route. i-DE's S2F Sandbox and BeFlexible projects create multiple engagement points for AI grid technology."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "S2F Sandbox involves most Spanish distribution companies in regulatory innovation for distribution flexibility. BeFlexible runs 12 pilots promoting prosumer flexibility coordinated with Red Eléctrica (TSO) and OMIE (market operator). Distribution-level grid management directly relevant."
+      },
+      "applicationRoute": [
+        {
+          "step": "Contact i-DE via Iberdrola innovation channels",
+          "detail": "i-de.es or via PERSEO programme"
+        },
+        {
+          "step": "Present AI distribution grid solution",
+          "detail": "Focus on flexibility management or connection processing"
+        },
+        {
+          "step": "S2F Sandbox or BeFlexible integration",
+          "detail": "Participate in ongoing regulatory innovation projects"
+        },
+        {
+          "step": "Technology partnership",
+          "detail": "Access to 11M+ customer distribution network"
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "What is Red Eléctrica's €13.59B investment targeting?", "a": "Transmission network modernisation 2025-2030, with explicit focus on renewable integration, AI automation, and congestion management. This is the single largest grid infrastructure investment in Southern Europe." },
-    { "q": "How much has Iberdrola PERSEO invested to date?", "a": "€200M+ in portfolio across AI, renewable integration, and grid tech startups. PERSEO explicitly positions grid interconnection queue management as a priority." },
-    { "q": "How quickly can I register a Spanish company?", "a": "2-4 weeks for SL (Ltd) or SLU (limited liability sole trader). Costs €3-5K for legal registration. This unlocks access to CDTI (€300M), IDAE (€200M), and ENISA funding." },
-    { "q": "What's the difference between CDTI and IDAE grants?", "a": "CDTI focuses on R&D and technology development (40-75% subsidy). IDAE focuses on energy innovation and deployment (50-75% subsidy). Both are worth applying to in parallel." },
-    { "q": "Can we pitch to multiple Spanish utilities?", "a": "Yes. Red Eléctrica, Endesa, Iberdrola, and regional utilities all have independent innovation partnerships. They typically don't have exclusivity clauses for technology partnerships." }
+    {
+      "q": "What is Red Eléctrica's €13.59B investment targeting?",
+      "a": "Transmission network modernisation 2025-2030, with explicit focus on renewable integration, AI automation, and congestion management. This is the single largest grid infrastructure investment in Southern Europe."
+    },
+    {
+      "q": "How much has Iberdrola PERSEO invested to date?",
+      "a": "€200M+ in portfolio across AI, renewable integration, and grid tech startups. PERSEO explicitly positions grid interconnection queue management as a priority."
+    },
+    {
+      "q": "How quickly can I register a Spanish company?",
+      "a": "2-4 weeks for SL (Ltd) or SLU (limited liability sole trader). Costs €3-5K for legal registration. This unlocks access to CDTI (€300M), IDAE (€200M), and ENISA funding."
+    },
+    {
+      "q": "What's the difference between CDTI and IDAE grants?",
+      "a": "CDTI focuses on R&D and technology development (40-75% subsidy). IDAE focuses on energy innovation and deployment (50-75% subsidy). Both are worth applying to in parallel."
+    },
+    {
+      "q": "Can we pitch to multiple Spanish utilities?",
+      "a": "Yes. Red Eléctrica, Endesa, Iberdrola, and regional utilities all have independent innovation partnerships. They typically don't have exclusivity clauses for technology partnerships."
+    }
   ],
   "note": "Spain is Europe's renewable energy leader with €13.59B transmission investment 2025-2030. Elewit Ventures (REE) and Iberdrola PERSEO offer immediate VC access. Spanish registration (2-4 weeks) unlocks €500M+ in government grants (CDTI, IDAE, ENISA)."
 }

@@ -10,10 +10,18 @@
   "badgeColor": "#FFF4E6",
   "badgeText": "#CC5500",
   "badge": "Grid Flexibility",
-  "badge2": "5 Programmes",
-  "tags": ["europe"],
+  "badge2": "6 Programmes",
+  "tags": [
+    "europe"
+  ],
   "sub": "Netherlands leads Europe in grid flexibility procurement and demand-side response. TenneT's 12,000+ queue drives congestion solutions. RVO funds €350M+ in innovation. Alliander scales AI to 2,500+ smart contracts in 2025.",
-  "cardTags": ["TenneT", "RVO", "Flex-e", "Alliander", "LV-NExT"],
+  "cardTags": [
+    "TenneT",
+    "RVO",
+    "Flex-e",
+    "Alliander",
+    "LV-NExT"
+  ],
   "desc": "TenneT operates both Dutch and German grids. Its congestion management service (take-and-feed) actively engages technology partners. RVO (Netherlands Enterprise Agency) runs €350M+ innovation portfolio across MOOI, Flex-e, and DEI+. Alliander, largest Dutch DSO, deployed gridX AI across 100+ local grids and is scaling XENON platform to 2,500 smart contracts in 2025. No local entity required for TenneT or Alliander partnerships.",
   "studies": [
     {
@@ -27,18 +35,31 @@
       "budgetBasis": "TenneT NL does not publish per-contract values. Estimated from congestion management service procurement scales and comparable European TSO technology contracts.",
       "eligibility": {
         "status": "eligible",
-        "text": "Commercial partnerships with tech providers — no nationality restriction. TenneT has explicit AI integration roadmap."
+        "text": "Grid Agents can engage directly — no nationality restriction. TenneT's 12,000+ MW queue and take-and-feed congestion management service create direct demand for Grid Agents' AI queue management technology."
       },
       "relevance": {
         "level": "high",
-        "text": "TenneT operates 12,000+ MW interconnection queue. Take-and-feed service directly procures congestion management solutions — exact fit for AI queue management."
+        "text": "TenneT invested €14.8B in grid infrastructure in 2025 (€4.9B in NL). 2026 Regional Flexibility Tenders: Liander, Enexis, Stedin + TenneT each issuing at least one flexibility tender targeting €500M/yr additional flexibility. Redispatch costs rising from €17.1M (2024) to €31M (2025). Direct demand for congestion management."
       },
       "applicationRoute": [
-        { "step": "Contact TenneT NL commercial team", "detail": "Direct partnership approach for congestion solutions" },
-        { "step": "Present AI congestion management solution", "detail": "Frame around take-and-feed service and queue reduction" },
-        { "step": "Technical evaluation by TenneT", "detail": "Assessment against current congestion challenges" },
-        { "step": "Commercial agreement", "detail": "Procurement-style engagement for technology deployment" }
-      ]
+        {
+          "step": "Contact TenneT NL commercial team",
+          "detail": "Direct partnership approach for congestion solutions"
+        },
+        {
+          "step": "Present AI congestion management solution",
+          "detail": "Frame around take-and-feed service and queue reduction"
+        },
+        {
+          "step": "Technical evaluation by TenneT",
+          "detail": "Assessment against current congestion challenges"
+        },
+        {
+          "step": "Commercial agreement",
+          "detail": "Procurement-style engagement for technology deployment"
+        }
+      ],
+      "gridLevel": "transmission"
     },
     {
       "label": "RVO MOOI (Modernisation of Electricity Supply)",
@@ -50,19 +71,35 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Dutch partner entity in consortium. Annual calls with 6-8 week decision cycle."
+        "text": "Grid Agents would need a Dutch partner entity in a consortium of 3+ companies. AI grid automation fits MOOI's congestion management and predictive analytics focus. Need to identify Dutch consortium partners."
       },
       "relevance": {
         "level": "high",
-        "text": "Specifically targets electricity grid modernisation including congestion management, predictive analytics, and AI integration."
+        "text": "2026 MOOI Electricity call: €20M, up to €4M per project. Pre-applications 17 March - 16 April 2026. Full proposals 2 June - 3 September 2026. Themes: onshore/offshore wind and solar, flexibility markets, integration technologies, better use of grid and generation assets. Consortia of 3+ required."
       },
       "applicationRoute": [
-        { "step": "Identify Dutch consortium partner", "detail": "University, utility, or research institute" },
-        { "step": "Form consortium and develop proposal", "detail": "UK startup as technology partner" },
-        { "step": "Submit during annual call", "detail": "Via rvo.nl portal" },
-        { "step": "RVO assessment", "detail": "6-8 week decision cycle" },
-        { "step": "3-year funded project", "detail": "Up to €4M for grid modernisation research" }
-      ]
+        {
+          "step": "Identify Dutch consortium partner",
+          "detail": "University, utility, or research institute"
+        },
+        {
+          "step": "Form consortium and develop proposal",
+          "detail": "UK startup as technology partner"
+        },
+        {
+          "step": "Submit during annual call",
+          "detail": "Via rvo.nl portal"
+        },
+        {
+          "step": "RVO assessment",
+          "detail": "6-8 week decision cycle"
+        },
+        {
+          "step": "3-year funded project",
+          "detail": "Up to €4M for grid modernisation research"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "LV-NExT (Low Voltage Network Exploration & Experimentation Toolkit)",
@@ -75,18 +112,31 @@
       "budgetBasis": "Consortium does not publish per-partner budgets. Estimated from 4-year programme scope and typical Dutch DSO innovation partnership scales.",
       "eligibility": {
         "status": "eligible",
-        "text": "Open to technology partnerships. No entity requirement for partnership participation."
+        "text": "Grid Agents can join as a technology partner — no entity requirement. LV-NExT's demand forecasting and congestion prediction focus is adjacent to Grid Agents' connection queue management capabilities."
       },
       "relevance": {
         "level": "high",
-        "text": "Deploying smart metering and AI forecasting across Dutch low-voltage networks. Demand forecasting and congestion prediction directly relevant."
+        "text": "Joint challenge by Enexis, Stedin, and Alliander to expand LV grid 10x faster (100→1,000 neighbourhoods/yr). Simulation street opened November 2025. Invites solutions from non-energy sectors (automotive, defence, shipping). Prysmian won related 'Quick & Simple Substation' challenge."
       },
       "applicationRoute": [
-        { "step": "Register on LV-NExT platform", "detail": "lvnext.nl" },
-        { "step": "Express interest in technology partnership", "detail": "Aligned to demand forecasting or congestion prediction" },
-        { "step": "Technical assessment by consortium", "detail": "Evaluation of solution fit for LV network challenges" },
-        { "step": "Integration into consortium programme", "detail": "Access to DSO test beds and smart metering data" }
-      ]
+        {
+          "step": "Register on LV-NExT platform",
+          "detail": "lvnext.nl"
+        },
+        {
+          "step": "Express interest in technology partnership",
+          "detail": "Aligned to demand forecasting or congestion prediction"
+        },
+        {
+          "step": "Technical assessment by consortium",
+          "detail": "Evaluation of solution fit for LV network challenges"
+        },
+        {
+          "step": "Integration into consortium programme",
+          "detail": "Access to DSO test beds and smart metering data"
+        }
+      ],
+      "gridLevel": "distribution"
     },
     {
       "label": "RVO Flex-e (Flexibility Innovation)",
@@ -98,18 +148,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Dutch partner or entity. Rolling applications with fast decision cycle."
+        "text": "Grid Agents would need a Dutch partner or entity. AI capabilities are relevant to Flex-e's load forecasting and automated curtailment focus, though connection queue management is a distinct problem domain."
       },
       "relevance": {
         "level": "high",
-        "text": "Dedicated to flexibility and demand response innovation. Explicit support for AI load forecasting and automated curtailment."
+        "text": "2026 call: applications open 6 May - 15 October 2026. €13.56M per year. Three modules: Flexibility Scan, Feasibility Study, and Implementation. Eligible: businesses with 100+ kW contracted capacity. Focused on behind-the-meter flexibility rather than grid-level connection management."
       },
       "applicationRoute": [
-        { "step": "Identify Dutch partner if needed", "detail": "DSO or energy company" },
-        { "step": "Submit rolling application via RVO", "detail": "rvo.nl/subsidies-financiering/flex-e" },
-        { "step": "RVO fast-track assessment", "detail": "6-8 week decision cycle" },
-        { "step": "Project begins if approved", "detail": "€100K-€500K for flexibility innovation" }
-      ]
+        {
+          "step": "Identify Dutch partner if needed",
+          "detail": "DSO or energy company"
+        },
+        {
+          "step": "Submit rolling application via RVO",
+          "detail": "rvo.nl/subsidies-financiering/flex-e"
+        },
+        {
+          "step": "RVO fast-track assessment",
+          "detail": "6-8 week decision cycle"
+        },
+        {
+          "step": "Project begins if approved",
+          "detail": "€100K-€500K for flexibility innovation"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "RVO DEI+ (Energy & Climate Innovation)",
@@ -121,25 +184,87 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Consortia-based — requires Dutch lead partner. Larger scale than Flex-e."
+        "text": "Grid Agents would need a Dutch lead partner in a consortium. Broader energy innovation focus — Grid Agents should prioritise MOOI or Flex-e over DEI+ for grid-specific funding."
       },
       "relevance": {
         "level": "medium",
-        "text": "Broader energy innovation fund covering grid digitalisation and system integration. Less targeted than MOOI or Flex-e for specific grid interconnection."
+        "text": "Current call open 27 January - 30 July 2026. Funds pilot/demonstration projects: innovative CO2-reducing techniques, sustainable buildings, hydrogen/green chemistry. Broader energy innovation — Grid Agents should prioritise MOOI or TenneT NL over DEI+ for grid-specific funding."
       },
       "applicationRoute": [
-        { "step": "Form consortium with Dutch lead partner", "detail": "University, utility, or research institute" },
-        { "step": "Develop system-level project proposal", "detail": "Cross-sector energy integration focus" },
-        { "step": "Submit via RVO DEI+ portal", "detail": "rvo.nl" },
-        { "step": "Multi-partner funded project", "detail": "Larger scale, longer duration than Flex-e" }
+        {
+          "step": "Form consortium with Dutch lead partner",
+          "detail": "University, utility, or research institute"
+        },
+        {
+          "step": "Develop system-level project proposal",
+          "detail": "Cross-sector energy integration focus"
+        },
+        {
+          "step": "Submit via RVO DEI+ portal",
+          "detail": "rvo.nl"
+        },
+        {
+          "step": "Multi-partner funded project",
+          "detail": "Larger scale, longer duration than Flex-e"
+        }
+      ],
+      "gridLevel": "both"
+    },
+    {
+      "label": "Alliander/Liander Innovation (Netherlands' Largest DSO)",
+      "hint": "~3.3M connections, LV-NExT co-founder",
+      "text": "<span class='section-label'>What it does</span>Alliander (via Liander) is the Netherlands' largest DSO with ~3.3M electricity connections. Co-founded LV-NExT challenge with Stedin and Enexis. Jointly running 2026 Regional Flexibility Tenders with TenneT. Over 10 collaborative IT projects with Dutch DSOs including shared smart meter software. Focus: asset monitoring, smart grid digitisation, and congestion management.<span class='section-label'>Why it matters</span>Part of the PA Consulting collaboration framework producing joint innovation solutions with Stedin and Enexis. All three DSOs issue flexibility tenders together.<div class='links-row'><a class='link-box' href='https://www.alliander.com/en/innovation/' target='_blank'>Alliander Innovation</a></div>",
+      "budget": "Est. €100K–€500K per technology partnership",
+      "programmeType": "DSO Innovation Partnership",
+      "deadline": "Rolling — technology partnerships accepted year-round. 2026 Regional Flexibility Tenders launching.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Alliander does not publish per-partnership budgets. Estimated from Dutch DSO innovation scales and collaborative programme scope.",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can approach directly — no entity required for initial partnership discussions. Alliander actively seeks technology partners for grid digitisation and congestion management."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "Co-founded LV-NExT (10x faster LV grid expansion) and Quick & Simple Substation challenge. 2026 Regional Flexibility Tenders with TenneT targeting €500M/yr additional flexibility. Over 10 collaborative IT projects with Stedin and Enexis."
+      },
+      "applicationRoute": [
+        {
+          "step": "Contact Alliander innovation team",
+          "detail": "alliander.com/en/innovation"
+        },
+        {
+          "step": "Present AI grid technology",
+          "detail": "Focus on congestion management, asset monitoring, or grid digitisation"
+        },
+        {
+          "step": "Joint evaluation with Alliander engineers",
+          "detail": "Assessment against current grid challenges"
+        },
+        {
+          "step": "Technology partnership or LV-NExT integration",
+          "detail": "Access to Alliander's 3.3M connection network"
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "Can we access RVO funding without a Dutch entity?", "a": "You need at least one Dutch partner in the consortium. RVO-funded projects must be led by or include a Dutch organisation. Alliander and TenneT partnerships don't require this." },
-    { "q": "How active is TenneT in technology partnerships?", "a": "Very active. They operate 12,000+ MW queue and explicitly use commercial technology partners for congestion management. The take-and-feed service (2024) is their primary commercial engagement vehicle." },
-    { "q": "What's the difference between Flex-e and MOOI?", "a": "Flex-e targets flexibility/demand-response (€70M), with smaller projects and faster decisions. MOOI focuses on grid modernisation (€90M), with larger multiyear projects. Both are RVO-administered." },
-    { "q": "How many smart contracts is Alliander aiming to deploy?", "a": "Alliander is scaling XENON (gridX AI) from 100+ contracts in 2024 to 2,500+ contracts in 2025. This represents exponential expansion of the addressable market." }
+    {
+      "q": "Can we access RVO funding without a Dutch entity?",
+      "a": "You need at least one Dutch partner in the consortium. RVO-funded projects must be led by or include a Dutch organisation. Alliander and TenneT partnerships don't require this."
+    },
+    {
+      "q": "How active is TenneT in technology partnerships?",
+      "a": "Very active. They operate 12,000+ MW queue and explicitly use commercial technology partners for congestion management. The take-and-feed service (2024) is their primary commercial engagement vehicle."
+    },
+    {
+      "q": "What's the difference between Flex-e and MOOI?",
+      "a": "Flex-e targets flexibility/demand-response (€70M), with smaller projects and faster decisions. MOOI focuses on grid modernisation (€90M), with larger multiyear projects. Both are RVO-administered."
+    },
+    {
+      "q": "How many smart contracts is Alliander aiming to deploy?",
+      "a": "Alliander is scaling XENON (gridX AI) from 100+ contracts in 2024 to 2,500+ contracts in 2025. This represents exponential expansion of the addressable market."
+    }
   ],
   "note": "Netherlands is Europe's leading flexibility market. TenneT and Alliander partnerships don't require local entity. RVO funds (Flex-e, MOOI, DEI+) offer €240M+ but require Dutch partner."
 }

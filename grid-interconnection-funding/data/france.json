@@ -10,10 +10,19 @@
   "badgeColor": "#E8ECFF",
   "badgeText": "#001B75",
   "badge": "€5B+ Energy R&D",
-  "badge2": "6 Programmes",
-  "tags": ["europe"],
+  "badge2": "7 Programmes",
+  "tags": [
+    "europe"
+  ],
   "sub": "France invests €5B+ annually in energy R&D through Bpifrance. RTE and EDF partner with 100+ startups. CRE regulatory sandbox accelerates AI pilots. France 2030 supports €300M/yr in climate-tech deeptech.",
-  "cardTags": ["RTE", "EDF", "Bpifrance", "CRE", "France 2030"],
+  "cardTags": [
+    "RTE",
+    "EDF",
+    "Bpifrance",
+    "CRE",
+    "France 2030",
+    "Enedis"
+  ],
   "desc": "RTE operates 100,000+ km of transmission with explicit AI/forecasting roadmap. EDF Pulse Awards fund 50+ startups/yr across innovation areas. Bpifrance manages €300M/yr France 2030 Deep-Tech fund explicitly targeting AI, DeepTech, and ClimaTech. CRE (energy regulator) runs regulatory sandbox for AI pilots. ADEME provides €400M+ annually for energy transitions.",
   "studies": [
     {
@@ -27,18 +36,31 @@
       "budgetBasis": "RTE does not publish per-startup pilot budgets. Estimated from RTE's €5.5B annual capex, 100+ active startup partnerships, and comparable European TSO pilot engagement scales.",
       "eligibility": {
         "status": "eligible",
-        "text": "100+ active startup partnerships with no nationality restriction on direct vendor partnerships."
+        "text": "Grid Agents can engage directly — no nationality restriction. RTE's 100+ startup partnerships and explicit AI congestion forecasting priority align well with Grid Agents' queue management technology."
       },
       "relevance": {
         "level": "high",
-        "text": "Largest European grid operator by capex. AI for congestion forecasting is a named priority. Operates 100,000+ km French transmission."
+        "text": "R&D Roadmap 2025-2028 ('CAP R&D'): €50M+/yr, ~200 engineers, 9 research programmes. Key themes: digital substations, asset monitoring (drones, aging simulation), grid-forming technology (hybrid storage demonstrator at Castelet), offshore wind cable R&D, and climate resilience. Also runs RTE Smart Innovation Challenge via Agorize."
       },
       "applicationRoute": [
-        { "step": "Contact RTE Innovation team", "detail": "rte-france.com or via industry events" },
-        { "step": "Present grid automation and forecasting solution", "detail": "Focus on congestion management and queue optimisation" },
-        { "step": "Technical evaluation by RTE engineers", "detail": "Assessment against RTE innovation priorities" },
-        { "step": "Vendor partnership", "detail": "Direct commercial engagement with technology deployment pathway" }
-      ]
+        {
+          "step": "Contact RTE Innovation team",
+          "detail": "rte-france.com or via industry events"
+        },
+        {
+          "step": "Present grid automation and forecasting solution",
+          "detail": "Focus on congestion management and queue optimisation"
+        },
+        {
+          "step": "Technical evaluation by RTE engineers",
+          "detail": "Assessment against RTE innovation priorities"
+        },
+        {
+          "step": "Vendor partnership",
+          "detail": "Direct commercial engagement with technology deployment pathway"
+        }
+      ],
+      "gridLevel": "transmission"
     },
     {
       "label": "EDF Pulse Awards",
@@ -50,18 +72,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "International startup programme — no nationality restriction. 50+ startups funded annually."
+        "text": "Grid Agents can apply internationally — no nationality restriction. AI-powered grid automation platform is relevant to EDF's grid modernisation themes. 50+ startups funded annually."
       },
       "relevance": {
         "level": "medium",
-        "text": "Broad innovation focus including grid modernisation, AI, and renewable integration. Not exclusively grid interconnection but relevant themes included."
+        "text": "2026 edition (applications closed Dec 2025, Grand Final June 2026). Five categories: Health-Safety, Electrification, Energy Flexibility, Operational Efficiency, Environmental Adaptability. €15K per winner plus EDF Pulse Connect support (lab testing, business model, end-user access)."
       },
       "applicationRoute": [
-        { "step": "Apply via EDF Pulse Awards portal", "detail": "edf.fr/en/pulse/edf-pulse-awards" },
-        { "step": "Submit innovation pitch", "detail": "Evaluated on innovation impact and scalability" },
-        { "step": "Selection process", "detail": "50+ startups selected annually" },
-        { "step": "Strategic partnership or equity investment", "detail": "Access to 180M customers across 10 countries" }
-      ]
+        {
+          "step": "Apply via EDF Pulse Awards portal",
+          "detail": "edf.fr/en/pulse/edf-pulse-awards"
+        },
+        {
+          "step": "Submit innovation pitch",
+          "detail": "Evaluated on innovation impact and scalability"
+        },
+        {
+          "step": "Selection process",
+          "detail": "50+ startups selected annually"
+        },
+        {
+          "step": "Strategic partnership or equity investment",
+          "detail": "Access to 180M customers across 10 countries"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "Bpifrance France 2030 Deep-Tech",
@@ -73,18 +108,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires French company (SARL/SAS, €500 + 2-3 weeks) or partnership with French company."
+        "text": "Grid Agents would need a French entity (SARL/SAS, €500 + 2-3 weeks) or French partner. AI and ClimaTech positioning fits France 2030 Deep-Tech criteria. Phase 1 deadline 2 June 2026."
       },
       "relevance": {
         "level": "high",
-        "text": "AI and ClimaTech are explicitly named priorities. Two-tier support: early-stage €200K-€500K and scale-up €5M+."
+        "text": "AI Pioneers call open — next deadline 10 March 2026, final closing 9 June 2026. First 23 laureates unveiled Feb 2026. Backed by €10M public funding. Bpifrance has deployed €10B for AI ecosystem. Ecological transition is an explicitly named sector. Grid Agents' AI fits the criteria."
       },
       "applicationRoute": [
-        { "step": "Register French SARL or SAS", "detail": "€500 registration + 2-3 weeks — or identify French partner" },
-        { "step": "Apply via Bpifrance AI Pioneers call", "detail": "bpifrance.fr" },
-        { "step": "Bpifrance evaluation", "detail": "Technical and commercial assessment" },
-        { "step": "Grant or equity financing", "detail": "Early-stage €200K-€500K or scale-up €5M+" }
-      ]
+        {
+          "step": "Register French SARL or SAS",
+          "detail": "€500 registration + 2-3 weeks — or identify French partner"
+        },
+        {
+          "step": "Apply via Bpifrance AI Pioneers call",
+          "detail": "bpifrance.fr"
+        },
+        {
+          "step": "Bpifrance evaluation",
+          "detail": "Technical and commercial assessment"
+        },
+        {
+          "step": "Grant or equity financing",
+          "detail": "Early-stage €200K-€500K or scale-up €5M+"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "CRE Regulatory Sandbox",
@@ -96,18 +144,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Open to international companies with French partner. Provides comfort letters and derogations for AI pilots."
+        "text": "Grid Agents would need a French partner (e.g. RTE or EDF). AI-assisted connection application review would benefit from regulatory sandbox cover for French market entry. Similar to Ofgem sandbox approach."
       },
       "relevance": {
         "level": "high",
-        "text": "Enables testing AI-assisted grid operations within regulated French energy market. Critical for demonstrating compliance in European context."
+        "text": "Active with 30 ongoing projects (May 2025 progress report). Notable: Reflex Project making 600-800 MW capacity available without waiting for connection plans across ~50 source stations (2025-2027 generalisation). V2G experiments with Renault/The Mobility House. Rolling applications since Nov 2022."
       },
       "applicationRoute": [
-        { "step": "Identify French utility partner", "detail": "RTE, EDF, or regional DSO" },
-        { "step": "Submit sandbox application to CRE", "detail": "demarches-simplifiees.fr" },
-        { "step": "CRE assessment", "detail": "6-8 weeks for initial evaluation" },
-        { "step": "Regulatory cover granted", "detail": "Comfort letters and derogations for 12-24 month pilot" }
-      ]
+        {
+          "step": "Identify French utility partner",
+          "detail": "RTE, EDF, or regional DSO"
+        },
+        {
+          "step": "Submit sandbox application to CRE",
+          "detail": "demarches-simplifiees.fr"
+        },
+        {
+          "step": "CRE assessment",
+          "detail": "6-8 weeks for initial evaluation"
+        },
+        {
+          "step": "Regulatory cover granted",
+          "detail": "Comfort letters and derogations for 12-24 month pilot"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "ADEME Energy Transition Funding",
@@ -119,18 +180,31 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires French entity or significant French presence. Grants and low-interest loans available."
+        "text": "Grid Agents would need a French entity or significant French presence. AI grid automation is eligible but ADEME's focus is broader energy transitions, not specifically grid connection queues."
       },
       "relevance": {
         "level": "medium",
-        "text": "Broad energy transition funding including grid modernisation. Not specifically targeted at interconnection but grid digitalisation eligible."
+        "text": "Current open calls include: local electricity production & consumption (deadline Dec 2026), hydrogen production (~1 GW target), 2026 thesis call, and building innovation (SEPAC). Broader France 2030 calls cover decarbonisation, renewables, and sustainable cities. Grid digitalisation eligible."
       },
       "applicationRoute": [
-        { "step": "Establish French presence", "detail": "Entity or partnership with French organisation" },
-        { "step": "Submit via ADEME funding portal", "detail": "ademe.fr" },
-        { "step": "Technical review", "detail": "Evaluated against energy transition priorities" },
-        { "step": "Grant or loan agreement", "detail": "50-80% of eligible costs covered" }
-      ]
+        {
+          "step": "Establish French presence",
+          "detail": "Entity or partnership with French organisation"
+        },
+        {
+          "step": "Submit via ADEME funding portal",
+          "detail": "ademe.fr"
+        },
+        {
+          "step": "Technical review",
+          "detail": "Evaluated against energy transition priorities"
+        },
+        {
+          "step": "Grant or loan agreement",
+          "detail": "50-80% of eligible costs covered"
+        }
+      ],
+      "gridLevel": "both"
     },
     {
       "label": "France 2030 (Broader Programme)",
@@ -142,26 +216,91 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires French entity or partnership. Administered through Bpifrance and sector agencies."
+        "text": "Grid Agents would need a French entity or partnership. Access primarily through Bpifrance calls. Should target specific France 2030 Deep-Tech AI calls rather than the broader programme."
       },
       "relevance": {
         "level": "medium",
-        "text": "Massive national investment plan with energy transition as core pillar. Access primarily through Bpifrance-specific calls rather than directly."
+        "text": "Massive national investment plan with energy transition as core pillar. Access primarily through Bpifrance AI Pioneers call or ADEME-specific calls. Grid Agents should target the AI Pioneers programme directly rather than broader France 2030."
       },
       "applicationRoute": [
-        { "step": "Identify relevant Bpifrance call", "detail": "France 2030 administered through multiple agencies" },
-        { "step": "Apply via designated portal", "detail": "Bpifrance or sector agency depending on call" },
-        { "step": "Multi-stage evaluation", "detail": "Technical, commercial, and strategic assessment" },
-        { "step": "Funded project", "detail": "Scale varies by specific programme within France 2030" }
+        {
+          "step": "Identify relevant Bpifrance call",
+          "detail": "France 2030 administered through multiple agencies"
+        },
+        {
+          "step": "Apply via designated portal",
+          "detail": "Bpifrance or sector agency depending on call"
+        },
+        {
+          "step": "Multi-stage evaluation",
+          "detail": "Technical, commercial, and strategic assessment"
+        },
+        {
+          "step": "Funded project",
+          "detail": "Scale varies by specific programme within France 2030"
+        }
+      ],
+      "gridLevel": "both"
+    },
+    {
+      "label": "Enedis Innovation (France's Primary DSO)",
+      "hint": "95% of French distribution, 35M Linky meters",
+      "text": "<span class='section-label'>What it does</span>Enedis manages 95% of France's electricity distribution network. Runs dedicated R&D and innovation programme. 35M Linky smart meters deployed providing grid data. 46 MW of local flexibility services across 30 departments. Innovation themes: smart grid/IoT, digital grid observability, fraud detection, capacity assessment, and SF6-free equipment (no new SF6 24kV switchboards since 2021).<span class='section-label'>Why it matters</span>Overwhelmingly dominant French DSO. Major programmes include the €250M Marseille Network programme for urban grid resilience.<div class='links-row'><a class='link-box' href='https://www.enedis.fr/sites/default/files/documents/pdf/enedis-rd-and-innovation-programme.pdf' target='_blank'>Enedis R&D Programme</a></div>",
+      "budget": "Est. €100K–€1M per innovation partnership",
+      "programmeType": "DSO Innovation Partnership",
+      "deadline": "Rolling — innovation partnerships negotiated on individual basis.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Enedis does not publish per-partnership budgets. Estimated from Enedis R&D programme scope and comparable European DSO innovation partnerships.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would likely need French presence or partnership for Enedis engagement. Enedis manages 95% of French distribution — dominant DSO with dedicated innovation programme."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "35M Linky smart meters, 46 MW flexibility services across 30 departments, €250M Marseille Network programme. Innovation focus on digital grid observability, capacity assessment, and fraud detection aligns with Grid Agents' AI document processing capabilities."
+      },
+      "applicationRoute": [
+        {
+          "step": "Contact Enedis innovation team",
+          "detail": "Via Enedis R&D programme or industry events"
+        },
+        {
+          "step": "Present AI grid automation solution",
+          "detail": "Focus on digital observability, capacity assessment, or connection processing"
+        },
+        {
+          "step": "Technical evaluation",
+          "detail": "Assessment against Enedis innovation priorities"
+        },
+        {
+          "step": "Partnership agreement",
+          "detail": "Technology deployment across French distribution network"
+        }
       ]
     }
   ],
   "faq": [
-    { "q": "Can we approach RTE without a French entity?", "a": "Yes. RTE operates 100+ startup partnerships with no nationality restriction on direct vendor partnerships. However, you'll need French representation/contact for engagement." },
-    { "q": "How different is France 2030 from standard Bpifrance grants?", "a": "France 2030 is the broader €300B national plan; Bpifrance administers the implementation. For startups, apply to Bpifrance's specific France 2030 Deep-Tech fund (€300M/yr)." },
-    { "q": "What's the CRE regulatory sandbox approval timeline?", "a": "6-8 weeks for initial assessment. Once approved, pilots can run 12-24 months with regulatory cover and derogation letters." },
-    { "q": "How much capital does it cost to register a French SARL?", "a": "€500 registration cost + 2-3 weeks. Minimum capital: €1 (symbolic). Much simpler than German GmbH or Spanish setup." },
-    { "q": "Does Bpifrance require French incorporation?", "a": "No — you can partner with a French company and apply as a consortium, or register a French entity. Both routes are acceptable." }
+    {
+      "q": "Can we approach RTE without a French entity?",
+      "a": "Yes. RTE operates 100+ startup partnerships with no nationality restriction on direct vendor partnerships. However, you'll need French representation/contact for engagement."
+    },
+    {
+      "q": "How different is France 2030 from standard Bpifrance grants?",
+      "a": "France 2030 is the broader €300B national plan; Bpifrance administers the implementation. For startups, apply to Bpifrance's specific France 2030 Deep-Tech fund (€300M/yr)."
+    },
+    {
+      "q": "What's the CRE regulatory sandbox approval timeline?",
+      "a": "6-8 weeks for initial assessment. Once approved, pilots can run 12-24 months with regulatory cover and derogation letters."
+    },
+    {
+      "q": "How much capital does it cost to register a French SARL?",
+      "a": "€500 registration cost + 2-3 weeks. Minimum capital: €1 (symbolic). Much simpler than German GmbH or Spanish setup."
+    },
+    {
+      "q": "Does Bpifrance require French incorporation?",
+      "a": "No — you can partner with a French company and apply as a consortium, or register a French entity. Both routes are acceptable."
+    }
   ],
   "note": "France offers €5B+ in energy R&D funding with the lowest company registration barrier in Europe (€500 SARL). RTE + EDF partnerships don't require local entity. Bpifrance France 2030 (€300M/yr) unlocks massive Deep-Tech funding."
 }

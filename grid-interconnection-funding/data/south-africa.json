@@ -27,11 +27,12 @@
       "budgetBasis": "Eskom does not disclose per-technology-partner budgets. Estimated from REOP programme scope (291MW initial, 2GW by 2026) and comparable South African utility technology procurement contracts.",
       "eligibility": {
         "status": "eligible",
-        "text": "First-ever technology partnerships opened via renewable energy offtake programme 2024. No local entity required for initial engagement."
+        "text": "Grid Agents can approach directly \u2014 no entity required. Eskom's energy crisis drives demand for grid automation but the core need is supply optimisation rather than connection application review."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Eskom controls 95% of South African grid and faces chronic supply shortages. Grid automation demand response and forecasting are urgent operational priorities."
+        "text": "Eskom handles both T&D (~95% of SA electricity) but is being unbundled: NTCSA (National Transmission Company) established as independent subsidiary; NEDCSA (distribution) planned next. Municipal distributors (City Power, Cape Town, eThekwini) buy bulk from Eskom. Grid automation urgently needed."
       },
       "applicationRoute": [
         { "step": "Contact Eskom Technology Partnerships", "detail": "Pitch grid automation and demand response solution" },
@@ -50,8 +51,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Technology partners support IPPs through EPC and operational phases. Indirect participation \u2014 requires partnership with participating IPP or EPC contractor."
+        "text": "Grid Agents would participate indirectly via IPP partnerships. Technology vendor role within REIPPPP projects. Funding flows through project developers, not directly to tech startups like Grid Agents."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "medium",
         "text": "Largest renewable procurement programme in Africa. Technology partners support IPPs but funding flows through project developers not directly to tech startups."
@@ -73,8 +75,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Works through AfDB and World Bank. Technology partners financed indirectly through project financing structures."
+        "text": "Grid Agents would access indirectly through utility partnerships. Concessional infrastructure finance not suited to early-stage AI startups like Grid Agents. Requires project developer partnership."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Concessional climate finance for infrastructure projects. Technology startups access indirectly via utility or developer partnerships not as direct applicants."
@@ -96,11 +99,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Non-dilutive grants for energy projects across 13 African countries including South Africa. 6-month decision cycle. Open to international applicants."
+        "text": "Grid Agents can apply \u2014 non-dilutive grants, open to international applicants. However, South Africa's 2026 call is limited to e-waste management from clean energy sector, significantly reducing relevance for Grid Agents."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
-        "text": "EU-African energy partnership with broad focus on renewable integration and grid modernisation. Not grid-interconnection-specific but digitalisation is eligible."
+        "text": "EU-African energy partnership with broad focus. Note: South Africa's 2026 call is limited to e-waste management from clean energy sector — significantly reduces relevance for Grid Agents this cycle."
       },
       "applicationRoute": [
         { "step": "Submit application via EEP Africa portal", "detail": "eepafrica.org" },
@@ -119,8 +123,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "No entity required for pitching. Pan-African VC with explicit focus on energy access and climate tech."
+        "text": "Grid Agents can pitch without local entity. Pan-African VC. Grid Agents would need to demonstrate South African market relevance for grid connection queue management technology."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "General climate-tech VC not specifically grid interconnection. Useful for African market entry and growth capital but not targeted at queue management tools."
@@ -142,8 +147,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Administered through World Bank and AfDB. Technology partners participate indirectly via project financing. Not direct startup funding."
+        "text": "Grid Agents would access indirectly through development bank project financing. Massive $8B commitment but flows through government channels, not directly to early-stage startups like Grid Agents."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Massive G7 commitment but flows through development banks and government channels. Technology startups access via utility partnerships not as direct recipients."

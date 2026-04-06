@@ -26,11 +26,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Direct technology partnerships with AEMO and network operators. No nationality restriction for vendor engagement."
+        "text": "Grid Agents can engage directly with AEMO — no nationality restriction. AI-powered connection queue management directly addresses CRI's 11 reforms tackling Australia's 350+ GW interconnection backlog."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "11 reforms across 4 priority areas specifically addressing interconnection queue crisis. Australia's renewable queue is 2nd largest globally at 350+ GW pending. Regulatory mandate creates urgent demand."
+        "text": "11 reforms across 4 areas: Access (automatic access standards), Information & Modelling (pre-application support, hosting capacity), Batching (quarterly coordinated assessment), Investment Certainty (commissioning guideline, Early Access Framework). Multiple guidelines published December 2025-January 2026. Pre-application Support Services now live."
       },
       "applicationRoute": [
         { "step": "Contact AEMO Connections Reform team", "detail": "Direct pitch for queue management and automation" },
@@ -49,11 +50,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Australian entity ($200 AUD setup 1-2 days online). Grants and concessional loans at 2-5% interest."
+        "text": "Grid Agents would need an Australian entity ($200 AUD, 1-2 days online). AI grid automation is directly relevant to ARENA's interconnection automation focus. Minimal entity setup barrier."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Explicit support for interconnection automation forecasting and demand-side management. Australia's primary renewable energy innovation funding body."
+        "text": "Currently open: Solar Sunshot R2 ($150M, EOI closes 30 April 2026), Industrial Transformation R3 ($180M, ongoing until exhausted). ARENA explicitly funds grid automation, forecasting, and demand-side management innovation."
       },
       "applicationRoute": [
         { "step": "Register Australian entity", "detail": "$200 AUD online registration takes 1-2 days" },
@@ -72,8 +74,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Australian company registration ($200 AUD). Can be claimed retroactively for past 2 years. No size limits on R&D spend."
+        "text": "Grid Agents would need Australian company registration ($200 AUD). AI R&D spend on grid connection automation would qualify for 43.5% cash rebate. Worth pursuing if establishing Australian entity for ARENA or operator partnerships."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
         "text": "Non-dilutive funding covering 43.5% of all R&D expenditure. Every Australian entity building AI grid software should claim this. Immediate cash benefit."
@@ -95,11 +98,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "No entity required for application. 310+ alumni across 7 programmes. International startups welcome."
+        "text": "Grid Agents can apply directly — no entity required, international startups welcome. AI-powered grid connection platform is a strong fit for EnergyLab's cleantech focus. Direct access to AusNet, Ausgrid, and Transgrid."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Direct access to every major Australian network operator including AusNet Ausgrid Energex Transgrid and SA Power Networks. Strongest cleantech accelerator in APAC."
+        "text": "Current programmes: Energy Scaleup (Jun-Oct 2026, connects startups with network operators for pilots), Climate Solutions Accelerator (Aug-Dec 2026), Climate Tech Ignite (starts Aug 2026). Direct access to AusNet, Ausgrid, Energex, Transgrid, and SA Power Networks."
       },
       "applicationRoute": [
         { "step": "Apply to relevant EnergyLab programme", "detail": "Seed Growth Scale or Corporate-in-Residence" },
@@ -119,11 +123,12 @@
       "budgetBasis": "Network operators do not publish per-pilot budgets. Estimated from AusNet and Ausgrid innovation budget disclosures in annual regulatory filings and comparable Australian DNSP innovation project scales.",
       "eligibility": {
         "status": "eligible",
-        "text": "Open to technology partnerships with no entity requirement. Each operator has independent innovation budget."
+        "text": "Grid Agents can approach AusNet, Ausgrid, and Transgrid directly — no entity required. AI connection queue management addresses their stated demand management and automation priorities."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "AusNet and Ausgrid explicitly focus on demand management forecasting and automation. Transgrid has dedicated innovation budget for transmission solutions."
+        "text": "Ausgrid (~1.8M customers, largest Australian network) and AusNet (both T&D) are transitioning to DSO models. Transgrid (transmission-only, NSW) has dedicated innovation budget. Multiple DNSPs participated in evolve DER project. DNSP Community of Practice established July 2025."
       },
       "applicationRoute": [
         { "step": "Identify target network operator", "detail": "AusNet and Ausgrid most active followed by Transgrid" },
@@ -142,8 +147,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Australian entity and university partnership. Collaborative R&D model with 3-5 year project durations."
+        "text": "Grid Agents would need an Australian entity and university partnership. AI for grid queue management is eligible but 3-5 year duration may not suit Grid Agents' current pre-pilot stage. Lower priority."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Collaborative research fund not specifically targeted at grid interconnection. Grid automation and AI eligible but requires academic partnership."
@@ -166,8 +172,9 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires Australian entity. Concessional debt and equity for clean energy projects. Grid modernisation and storage prioritised."
+        "text": "Grid Agents would need an Australian entity. Large-scale concessional finance more suited to scaling deployed solutions than Grid Agents' current pre-pilot stage. May become relevant post-pilot."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "medium",
         "text": "Large-scale project finance not early-stage innovation funding. More relevant for scaling deployed solutions than for R&D. Grid modernisation is eligible category."

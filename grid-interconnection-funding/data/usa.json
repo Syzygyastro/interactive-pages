@@ -10,7 +10,7 @@
   "badgeColor": "#FDE8EA",
   "badgeText": "#8B1A28",
   "badge": "$62B+ Federal",
-  "badge2": "6 Programmes",
+  "badge2": "8 Programmes",
   "tags": ["americas"],
   "sub": "The US has the largest grid modernisation budget globally, with $62B+ in federal funding through BIL and IRA. FERC Order 2023 creates urgent demand for interconnection automation.",
   "cardTags": ["DOE Grid", "ARPA-E", "SBIR", "FERC 2023", "IRA/BIL"],
@@ -26,11 +26,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires US-based entity. UK startup needs Delaware LLC or C-Corp ($1.5-3K setup, 1-2 weeks). Must partner with US utility."
+        "text": "Grid Agents would need a US entity (Delaware LLC, $1.5-3K, 1-2 weeks) plus a US utility partner. AI-powered grid automation directly fits the Smart Grid Grants track. SPARK Round 3 concept papers due 2 April 2026 — immediate opportunity."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "Smart Grid Grants track specifically funds AI-powered grid management, predictive analytics, and automation. Largest grid modernisation programme in US history."
+        "text": "SPARK Round 3 ($1.9B) has 3 tracks: Grid Resilience ($427M, reconductoring/ATTs), Smart Grid ($614M, software tools for real-time monitoring and optimisation), and Grid Innovation ($862M, transmission expansion for large loads). Smart Grid track directly funds AI-powered grid management software — strongest fit for Grid Agents."
       },
       "applicationRoute": [
         { "step": "Establish US subsidiary", "detail": "Delaware LLC or C-Corp, $1.5-3K setup" },
@@ -50,11 +51,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires US entity. ~3% success rate. High-risk high-reward mandate. Must demonstrate transformative potential."
+        "text": "Grid Agents would need a US entity. ~3% success rate but $1M-$10M awards. Grid Agents' AI for automating connection application review fits ARPA-E's transformative mandate — step-change from months to hours."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "AI-powered grid automation fits ARPA-E's transformative mandate. PERFORM programme directly targets grid reliability analytics."
+        "text": "Current FOA: GRADIENTS ($30M) targets grid reliability under high renewable penetration — inverter-based resources providing inertia and frequency regulation. PERFORM (completed) applied financial risk management to grid operations. Grid Agents' AI for connection automation fits ARPA-E's transformative mandate."
       },
       "applicationRoute": [
         { "step": "Establish US entity if not already", "detail": "Required for application" },
@@ -74,11 +76,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires US small business entity. DOE SBIR alone awards ~$300M+ annually. Clear pathway from concept to commercialisation."
+        "text": "Grid Agents would need a US small business entity (51%+ US-owned or controlled — structuring required). DOE SBIR topics include grid modernisation and AI for energy. Non-dilutive Phase I/II/III pathway."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "DOE topics frequently include grid modernisation and AI for energy. Non-dilutive funding with Phase I/II/III commercialisation pathway."
+        "text": "DOE SBIR FY2026 R1 topics expected to include grid modernisation, energy storage, and grid security. Non-dilutive Phase I ($275K) / Phase II ($1.1M) / Phase III pathway. AI for grid connection processing fits DOE grid modernisation topics."
       },
       "applicationRoute": [
         { "step": "Establish US small business", "detail": "Must be 51%+ US-owned or controlled" },
@@ -98,11 +101,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "eligible",
-        "text": "Market demand driver — no application needed. Creates commercial opportunity as RTOs/ISOs seek automation solutions."
+        "text": "No application needed — regulatory mandate creating commercial demand. Grid Agents' connection queue management directly addresses FERC Order 2023's cluster study automation needs across all RTOs/ISOs."
       },
+      "gridLevel": "transmission",
       "relevance": {
         "level": "high",
-        "text": "Single biggest market driver for AI grid interconnection products. Mandates cluster studies creating massive computational demand across all RTOs/ISOs. ~2000 GW queue backlog."
+        "text": "Mandates cluster study process (replacing serial 'first come, first served'), financial penalties ($1K-$2.5K/business day for delays), interconnection heatmaps, and Alternative Transmission Technology consideration. Creates massive computational demand for AI automation of study processes — direct product fit for Grid Agents."
       },
       "applicationRoute": [
         { "step": "Contact RTO/ISO innovation teams directly", "detail": "PJM, MISO, CAISO are highest priority" },
@@ -121,11 +125,12 @@
       "budgetIsEstimate": false,
       "eligibility": {
         "status": "partial",
-        "text": "Requires US entity. Software companies building AI infrastructure for grid management may qualify but primary focus is manufacturing."
+        "text": "Grid Agents as a SaaS AI platform is unlikely to qualify — programme primarily targets manufacturing facilities, not software. $10B fully allocated with no Round 3 announced. Low priority for Grid Agents."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "low",
-        "text": "Primarily targets manufacturing facilities, not software. May qualify if building physical AI infrastructure but not a natural fit for SaaS grid tools."
+        "text": "$10B fully allocated across Rounds 1-2. No Round 3 — the One Big Beautiful Bill Act (July 2025) eliminated replenishment. Primarily targeted manufacturing, not software. IRA clean energy credits are being phased out: production/investment tax credits end for projects placed in service after December 2027."
       },
       "applicationRoute": [
         { "step": "Confirm eligibility with tax adviser", "detail": "Software-only companies may not qualify" },
@@ -145,17 +150,68 @@
       "budgetBasis": "Based on typical DOE CRADA agreements which range $200K-$2M over 2-3 years. NREL and PNNL published partnership reports show this range for industry collaborations.",
       "eligibility": {
         "status": "eligible",
-        "text": "CRADAs available to international companies, though US companies have statutory preference. No US entity strictly required."
+        "text": "Grid Agents can pursue CRADAs without a US entity (though US companies have statutory preference). NREL and PNNL's power systems AI expertise could validate and strengthen Grid Agents' connection review technology."
       },
+      "gridLevel": "both",
       "relevance": {
         "level": "high",
-        "text": "NREL and PNNL have deep expertise in power systems modelling and AI for grid operations. Collaboration validates technology with credible institutions."
+        "text": "Current priorities include interregional transmission planning (joint NREL/PNNL study), grid-forming inverter standards, renewable integration modelling, and dynamic line rating. NREL/PNNL collaboration validates technology with credible institutions and strengthens federal grant applications."
       },
       "applicationRoute": [
         { "step": "Contact NREL or PNNL Technology Transfer Office", "detail": "Identify relevant research division and point of contact" },
         { "step": "Propose collaboration scope", "detail": "CRADA, licensing, or Work-for-Others agreement" },
         { "step": "Negotiate agreement terms", "detail": "US companies have preference but international participation possible" },
         { "step": "Joint research programme", "detail": "Access to lab facilities, data, and domain expertise" }
+      ]
+    },
+    {
+      "label": "PG&E GRiD (Grid Research, Innovation & Development)",
+      "hint": "~5.5M customers, ~130 R&D experts",
+      "text": "<span class='section-label'>What it does</span>PG&E (~5.5M electric customers, California) runs the GRiD programme and Advanced Technology Services Campus with ~130 R&D experts. R&D Strategy identifies ~70 priority energy challenges. Recent projects include Dynamic Line Rating and Asset Health Monitoring demonstrations.<span class='section-label'>Why it matters</span>California's largest utility with massive renewable integration challenges. Direct vendor partnerships for grid automation and AI technologies.<div class='links-row'><a class='link-box' href='https://www.pge.com/en/about/pge-systems/research-and-development.html' target='_blank'>PG&E R&D</a></div>",
+      "budget": "Est. $500K–$5M per R&D partnership",
+      "programmeType": "Utility Innovation Partnership",
+      "deadline": "Rolling — direct R&D partnership approaches accepted year-round.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "PG&E does not publish per-partnership budgets. Estimated from ~130 R&D staff campus scale and ~70 priority challenge areas.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would need a US entity for formal R&D partnership. PG&E's ~130 R&D experts and ~70 priority energy challenges create multiple engagement points for AI grid automation."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "~70 priority energy challenges identified in R&D Strategy. Dynamic Line Rating and Asset Health Monitoring demonstrations show appetite for AI-driven grid tools. California's renewable integration challenges create direct demand."
+      },
+      "applicationRoute": [
+        { "step": "Contact PG&E Advanced Technology Services", "detail": "pge.com R&D division" },
+        { "step": "Present AI grid automation solution", "detail": "Focus on connection processing and queue management" },
+        { "step": "Technical evaluation by GRiD team", "detail": "Assessment against ~70 priority challenges" },
+        { "step": "R&D partnership if selected", "detail": "Access to PG&E grid data and test environments" }
+      ]
+    },
+    {
+      "label": "Duke Energy Emerging Technology Office",
+      "hint": "~8M customers, Mount Holly Innovation Lab",
+      "text": "<span class='section-label'>What it does</span>Duke Energy (~8M customers across 6 states) operates the Mount Holly Innovation Lab near Charlotte, NC with a 1.5-mile test distribution feeder and real-time digital simulation test-bed. The Emerging Technology Office (ETO, est. 2007) evaluates and deploys new grid technologies. Also runs the Duke Energy Smart Grid Laboratory at UNC Charlotte.<span class='section-label'>Why it matters</span>Largest US utility by customer count with dedicated innovation infrastructure. Multi-state operations across Southeast US.<div class='links-row'><a class='link-box' href='https://illumination.duke-energy.com/articles/take-a-virtual-tour-of-duke-energy-s-innovation-lab' target='_blank'>Duke Innovation Lab</a></div>",
+      "budget": "Est. $500K–$5M per technology partnership",
+      "programmeType": "Utility Innovation Partnership",
+      "deadline": "Rolling — ETO accepts technology partnership approaches year-round.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Duke Energy does not publish per-partnership budgets. Estimated from Emerging Technology Office scope and comparable US utility innovation scales.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would need a US entity. Duke Energy's Emerging Technology Office and Mount Holly Innovation Lab provide dedicated test infrastructure for grid automation solutions."
+      },
+      "gridLevel": "distribution",
+      "relevance": {
+        "level": "high",
+        "text": "Mount Holly Innovation Lab has 1.5-mile test distribution feeder and real-time digital simulation test-bed. ETO (est. 2007) has 19 years of technology evaluation experience. Multi-state distribution operations create scale opportunity."
+      },
+      "applicationRoute": [
+        { "step": "Contact Duke Energy Emerging Technology Office", "detail": "ETO based in Charlotte, NC" },
+        { "step": "Present AI grid technology", "detail": "Connection processing and queue management for distribution" },
+        { "step": "Mount Holly Lab evaluation", "detail": "Testing on 1.5-mile distribution feeder and simulation test-bed" },
+        { "step": "Technology partnership if validated", "detail": "Deployment across 6-state service territory" }
       ]
     }
   ],
