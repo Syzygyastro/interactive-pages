@@ -276,6 +276,95 @@ function copyMarkdown(e) {
   });
 }
 
+// ── Global Markdown Export ──
+
+function buildFullMarkdown() {
+  const strip = html => (html || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+  let md = `# AI Grid Interconnection Funding Landscape 2026\n\n`;
+  md += `> ${DATA.length} countries | ${DATA.reduce((a, c) => a + c.studies.length, 0)} programmes | Compiled for Grid Agents — AI-powered grid connection application review, validation, and prioritisation.\n\n`;
+  md += `---\n\n`;
+
+  DATA.forEach(c => {
+    md += `## ${c.icon} ${c.full}\n\n`;
+    md += `**Type:** ${c.type} | **Organisations:** ${c.vendor}\n\n`;
+    md += `${c.desc}\n\n`;
+
+    // Programmes
+    c.studies.forEach(s => {
+      const el = s.eligibility || {};
+      const rl = s.relevance || {};
+      const elStatus = el.status === 'eligible' ? '✓ Eligible' : el.status === 'partial' ? '◐ Conditional' : '✗ Not Eligible';
+      const rlLevel = (rl.level || 'unknown').charAt(0).toUpperCase() + (rl.level || 'unknown').slice(1);
+
+      md += `### ${s.label}\n`;
+      md += `_${s.hint}_\n\n`;
+      md += `| Field | Value |\n|---|---|\n`;
+      md += `| Budget | ${s.budget || 'N/A'}${s.budgetIsEstimate ? ' (estimated)' : ''} |\n`;
+      md += `| Type | ${s.programmeType || 'N/A'} |\n`;
+      md += `| Grid Level | ${s.gridLevel || 'N/A'} |\n`;
+      md += `| Eligibility | ${elStatus} |\n`;
+      md += `| Relevance | ${rlLevel} |\n`;
+      if (s.deadline) md += `| Deadline | ${s.deadline} |\n`;
+      md += `\n`;
+
+      md += `**Eligibility detail:** ${el.text || 'N/A'}\n\n`;
+      md += `**Relevance detail:** ${rl.text || 'N/A'}\n\n`;
+
+      const desc = strip(s.text);
+      if (desc) md += `${desc}\n\n`;
+
+      if (s.applicationRoute && s.applicationRoute.length) {
+        md += `**Application Route:**\n`;
+        s.applicationRoute.forEach((r, i) => {
+          md += `${i + 1}. **${r.step}** — ${r.detail}\n`;
+        });
+        md += `\n`;
+      }
+    });
+
+    // DSO Partners
+    const dso = c.dsoPartners || [];
+    if (dso.length) {
+      const term = c.dsoTerm || 'Distribution Network Operator';
+      md += `### Distribution Partners (${term}s)\n\n`;
+      md += `| Entity | Parent | Customers | Region | Engagement |\n`;
+      md += `|---|---|---|---|---|\n`;
+      dso.forEach(d => {
+        md += `| ${d.name} | ${d.parent || '—'} | ${d.customers} | ${d.region || '—'} | ${d.engagement.substring(0, 120)}${d.engagement.length > 120 ? '...' : ''} |\n`;
+      });
+      md += `\n`;
+    }
+
+    // FAQ
+    if (c.faq && c.faq.length) {
+      md += `### FAQ\n\n`;
+      c.faq.forEach(f => {
+        md += `**Q: ${f.q}**\n${f.a}\n\n`;
+      });
+    }
+
+    // Strategy Note
+    if (c.note) {
+      md += `### Strategy Note\n${c.note}\n\n`;
+    }
+
+    md += `---\n\n`;
+  });
+
+  return md;
+}
+
+function copyAllMarkdown(e) {
+  const md = buildFullMarkdown();
+  navigator.clipboard.writeText(md).then(() => {
+    const btn = e.target;
+    const chars = md.length;
+    btn.textContent = `Copied! (${Math.round(chars / 1000)}K chars)`;
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy All as Markdown'; btn.classList.remove('copied'); }, 3000);
+  });
+}
+
 // ── Init ──
 
 document.addEventListener('DOMContentLoaded', loadData);
