@@ -1,0 +1,194 @@
+{
+  "id": "taiwan",
+  "name": "Taiwan",
+  "full": "Taiwan — ITRI, MODA AI Fund & Grid Connection Bottleneck",
+  "vendor": "ITRI · MODA · Taipower · SMEA",
+  "type": "Advanced Market",
+  "icon": "\ud83c\uddf9\ud83c\uddfc",
+  "accentColor": "#0055A4",
+  "accentBg": "#E6F0FF",
+  "badgeColor": "#E6F0FF",
+  "badgeText": "#003D7A",
+  "badge": "Smart Grid #2 Globally",
+  "badge2": "4 Programmes",
+  "tags": [
+    "apac"
+  ],
+  "sub": "Taiwan's grid connections take 3-5 years. NT$10B AI startup fund launched 2025. ITRI has a UK office and leads grid digitalisation R&D. Taiwan ranks 2nd globally in Smart Grid Index. InnoVEX 2026 connects startups with Taiwanese corporates.",
+  "cardTags": [
+    "ITRI",
+    "MODA",
+    "Taipower",
+    "InnoVEX"
+  ],
+  "desc": "Taiwan's grid connections take 3-5 years, creating a severe bottleneck for energy projects and data centres. Taipower's Grid Resilience Plan (NT$564.5B) deploys smart grid across 17 measures but the application review process remains manual. MODA's NT$10B AI Startup Investment Program (launched March 2025) funds AI companies with strong technical foundations. ITRI has a UK office and leads grid digitalisation R&D including AI/ML inertia forecasting. InnoVEX 2026 (June) connects 450+ startups from 24 countries with Taiwanese corporates. MOEA's SBIR programme funds innovative SMEs.",
+  "studies": [
+    {
+      "label": "ITRI Grid Digitalisation R&D — UK Office",
+      "hint": "Direct UK collaboration, AI/ML grid technology",
+      "text": "<span class='section-label'>What it does</span>ITRI (Industrial Technology Research Institute) leads Taiwan's grid technology R&D through its Grid Management and Modernization Strategy Office (est. 2018). Current AI/ML projects include grid inertia forecasting, advanced distribution management, and smart dispatching. ITRI has international offices in the US, UK, Germany, Japan, and Thailand. ITRI bridges government R&D funding with Taipower commercial deployment — it has incubated companies including TSMC.<span class='section-label'>Why it matters for Grid Agents</span>ITRI's UK office provides a direct, accessible collaboration pathway. ITRI's grid digitalisation work (AI/ML forecasting, smart dispatching, grid management) is adjacent to Grid Agents' application review technology. ITRI can facilitate Taipower introductions and joint R&D proposals. No Taiwanese entity required for initial R&D collaboration.<div class='links-row'><a class='link-box' href='https://www.itri.org.tw/english/' target='_blank'>ITRI</a></div>",
+      "budget": "Est. NT$50M\u2013200M per project (ITRI energy division)",
+      "programmeType": "Government Research Institute Partnership",
+      "deadline": "Rolling \u2014 ITRI accepts collaboration proposals year-round via UK office.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "ITRI does not publish individual project budgets. Estimated from ITRI's energy division allocation and comparable Taiwan government R&D project scales.",
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents can approach ITRI directly via their UK office. No Taiwanese entity required for initial R&D collaboration. ITRI's Grid Management and Modernization Strategy Office is the ideal internal contact. Joint R&D can be proposed year-round."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "ITRI's UK office is the most accessible entry point for Grid Agents into Taiwan. Grid digitalisation R&D (AI/ML forecasting, smart dispatching) is directly adjacent to Grid Agents' technology. ITRI can bridge Grid Agents to Taipower — where 3-5 year connection timelines create the same application review bottleneck Grid Agents solves."
+      },
+      "applicationRoute": [
+        {
+          "step": "Contact ITRI UK office",
+          "detail": "Direct approach for collaboration discussion"
+        },
+        {
+          "step": "Engage Grid Management and Modernization Strategy Office",
+          "detail": "Present AI application review technology"
+        },
+        {
+          "step": "Joint R&D proposal development",
+          "detail": "AI grid connection application review for Taiwanese grid"
+        },
+        {
+          "step": "ITRI-facilitated Taipower introduction and pilot",
+          "detail": "Technology demonstration with real applications"
+        }
+      ]
+    },
+    {
+      "label": "MODA NT$10B AI Startup Investment Program",
+      "hint": "NT$10B ($342M) over 10 years, AI focus",
+      "text": "<span class='section-label'>What it does</span>Taiwan's Ministry of Digital Affairs (MODA) launched the 'Enhanced AI Startup Investment Program' in March 2025, allocating NT$10 billion (~$342M) from the National Development Fund over 10 years. Targets AI startups with solid technical foundations and initial market validation. Covers cybersecurity, digital transformation, and AI applications. Investment briefings and matchmaking events running throughout 2025-2026.<span class='section-label'>Why it matters for Grid Agents</span>Substantial AI-specific investment fund. Grid Agents' AI technology for document review, compliance checking, and automated feedback fits within 'AI applications' scope. If Grid Agents establishes Taiwanese presence (via ITRI partnership or local entity), this fund could provide growth capital. Taiwan's T$100B+ allocation to AI signals strong ecosystem support.<div class='links-row'><a class='link-box' href='https://moda.gov.tw/en/press/press-releases/15428' target='_blank'>MODA AI Initiative</a><a class='link-box' href='https://moda.gov.tw/en/ADI/news/latest-news/15758' target='_blank'>10B AI Startup Investment Launch</a></div>",
+      "budget": "NT$10B ($342M) total fund over 10 years",
+      "programmeType": "Government AI Investment Fund",
+      "deadline": "Applications open from March 31, 2025. Ongoing — 6 briefings and 4 matchmaking events in 2025.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "partial",
+        "text": "Programme targets 'domestic AI startups and digital economy-related industries'. Grid Agents would likely need a Taiwanese entity or ITRI partnership to access. Investment briefings and matchmaking events may accept international participation. Contact investai.org.tw for foreign company eligibility."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "medium",
+        "text": "Large AI-specific fund with energy/digital transformation scope. Grid Agents' AI document review and compliance checking fits technically. However, likely requires Taiwanese presence. Best pursued after establishing ITRI collaboration and local market validation."
+      },
+      "applicationRoute": [
+        {
+          "step": "Attend MODA investment briefings or matchmaking events",
+          "detail": "6 briefings, 4 matchmaking events in 2025-2026"
+        },
+        {
+          "step": "Establish Taiwanese presence via ITRI partnership",
+          "detail": "Required for investment eligibility"
+        },
+        {
+          "step": "Apply via investai.org.tw",
+          "detail": "Demonstrate AI technology and market validation"
+        },
+        {
+          "step": "Investment for product localisation and scaling",
+          "detail": "Korean grid code adaptation, Taipower deployment"
+        }
+      ]
+    },
+    {
+      "label": "InnoVEX 2026 at COMPUTEX",
+      "hint": "450+ startups from 24 countries, June 2-5 2026",
+      "text": "<span class='section-label'>What it does</span>InnoVEX is Asia's leading startup exhibition, co-located with COMPUTEX in Taipei. 450+ startups from 24 countries participate. Features pitch contests, corporate matching, and national pavilions. UK startups have participated through Garage+ showcases. AI, ESG, and smart manufacturing are priority sectors for 2026.<span class='section-label'>Why it matters for Grid Agents</span>Direct access to Taiwanese energy corporates and investors. UK participation (via Garage+) is established. Pitch contest provides visibility. Can complement ITRI collaboration with investor and corporate network. AI and ESG are priority sectors — Grid Agents fits both.<div class='links-row'><a class='link-box' href='https://www.innovex.com.tw/en/index.html' target='_blank'>InnoVEX 2026</a><a class='link-box' href='https://www.intralinkgroup.com/latest/intralink-insights/may-2025/taiwans-innovation-powerhouse-innovex-2025' target='_blank'>InnoVEX Overview</a></div>",
+      "budget": "Registration fee: US$1,300 for foreign teams. Pitch contest prizes available.",
+      "programmeType": "Startup Exhibition & Pitch Contest",
+      "deadline": "InnoVEX 2026: June 2-5, 2026. Early bird registration opened September 2025.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents is directly eligible. Open to international startups — 24 countries represented in 2025. UK startups participate through Garage+ or independently. US$1,300 registration fee. AI and ESG are priority sectors."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "medium",
+        "text": "Not a funding programme but a valuable visibility and corporate matching opportunity in Taiwan. Complements ITRI collaboration. AI and ESG sectors are priorities. Pitch contest provides exposure to Taiwanese investors. UK participation established through Garage+ programme."
+      },
+      "applicationRoute": [
+        {
+          "step": "Register for InnoVEX 2026 via innovex.com.tw",
+          "detail": "Early bird registration open — US$1,300 fee"
+        },
+        {
+          "step": "Apply for Garage+ UK showcase if available",
+          "detail": "Curated international startup programme"
+        },
+        {
+          "step": "Enter pitch contest",
+          "detail": "AI and ESG categories"
+        },
+        {
+          "step": "Corporate matching and meetings",
+          "detail": "Meet Taiwanese energy companies and investors"
+        }
+      ]
+    },
+    {
+      "label": "Taipower Grid Connection Bottleneck — Market Opportunity",
+      "hint": "3-5 year connection timelines, manual review",
+      "text": "<span class='section-label'>What it does</span>Grid interconnection in Taiwan takes 3-5 years. Taipower manages the entire process as the sole national utility. Key grid equipment (transformers, gas turbines) faces global shortages with lead times doubled to 7-8 years. Despite ranking 2nd globally in Smart Grid Index, Taipower's application review process remains heavily manual. Taipower's Grid Resilience Plan (NT$564.5B) includes 'grid management' and 'demand-side management' as priority areas but has not yet deployed AI for application screening.<span class='section-label'>Why it matters for Grid Agents</span>Taiwan's 3-5 year grid connection timeline creates the same bottleneck as the UK — with Taipower as the single buyer. While hardware constraints (transformer shortages) can't be solved by software, the application review and completeness validation stage can be dramatically accelerated. Taipower's 17 smart grid measures include digitalisation but lack AI application review.<div class='links-row'><a class='link-box' href='https://service.taipower.com.tw/smartgrid/DERIntegration/Index' target='_blank'>Taipower DER Integration</a><a class='link-box' href='https://service.taipower.com.tw/csr/en/esg/leader/smart-grid' target='_blank'>Taipower Smart Grid</a></div>",
+      "budget": "No direct funding — commercial market opportunity within NT$564.5B grid plan",
+      "programmeType": "Utility Modernisation (Market Opportunity)",
+      "deadline": "Ongoing — Taipower Grid Resilience Plan is a 10-year rolling programme.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Not a funding programme. Taipower procurement budgets for application processing tools are within the NT$564.5B grid plan but not separately published.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would approach Taipower via ITRI collaboration. Taipower is the sole national utility — single buyer market. Foreign technology vendors typically access through ITRI introduction or local integrator partnership."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Taiwan's 3-5 year grid connection timeline is a direct product-market fit. Taipower is a single buyer (sole national utility) — simpler go-to-market than fragmented markets. ITRI collaboration is the bridge to Taipower. Application review automation has not been addressed by Taiwan's smart grid investments."
+      },
+      "applicationRoute": [
+        {
+          "step": "Establish ITRI collaboration first",
+          "detail": "Via UK office — prerequisite for Taipower access"
+        },
+        {
+          "step": "ITRI facilitates Taipower introduction",
+          "detail": "Present AI application review for connection queue"
+        },
+        {
+          "step": "Adapt platform for Taiwanese grid code",
+          "detail": "Mandarin language, local document formats"
+        },
+        {
+          "step": "Pilot with Taipower using historical applications",
+          "detail": "Demonstrate review time reduction"
+        }
+      ]
+    }
+  ],
+  "dsoTerm": "National Utility",
+  "dsoPartners": [],
+  "faq": [
+    {
+      "q": "Does Taiwan have a grid connection backlog?",
+      "a": "Yes — severe. Grid interconnection takes 3-5 years. Transformer shortages have doubled equipment lead times to 7-8 years. Despite ranking 2nd globally in Smart Grid Index, application review remains heavily manual."
+    },
+    {
+      "q": "How does Grid Agents access Taipower?",
+      "a": "Through ITRI. ITRI's UK office provides direct collaboration. ITRI's Grid Management and Modernization Strategy Office leads grid digitalisation. ITRI bridges international R&D with Taipower deployment — it's the standard pathway for foreign technology into Taipower."
+    },
+    {
+      "q": "Is Taiwan's AI funding accessible to UK companies?",
+      "a": "Partially. MODA's NT$10B AI fund targets domestic startups — Taiwanese presence likely required. ITRI collaboration is the most accessible route (UK office, no entity required). InnoVEX provides visibility and corporate matching for US$1,300."
+    },
+    {
+      "q": "Why is Taiwan's single-utility market an advantage?",
+      "a": "Taipower is the sole national utility. One buyer means one relationship, one grid code, one deployment. Simpler go-to-market than Japan (10 utilities) or Korea (KEPCO subsidiaries). ITRI is the single bridge to Taipower for foreign technology."
+    }
+  ],
+  "note": "Taiwan's 3-5 year grid connection times are a direct product-market fit. ITRI UK office is the recommended entry point — rolling, no entity required, direct path to Taipower. MODA NT$10B AI fund available if Taiwanese presence established. InnoVEX 2026 (June) provides visibility. Single-utility market (Taipower) simplifies go-to-market."
+}

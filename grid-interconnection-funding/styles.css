@@ -24,6 +24,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px; }
 .country-card { background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); overflow: hidden; cursor: pointer; transition: all 0.2s; border-left: 5px solid #ccc; }
 .country-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); transform: translateY(-2px); }
+.load-error { grid-column: 1 / -1; background: #fff7ed; border: 1px solid #fdba74; color: #9a3412; border-radius: 10px; padding: 18px; }
+.load-error-title { font-weight: 700; margin-bottom: 4px; }
+.load-error-body { font-size: 0.9em; line-height: 1.5; }
 
 .card-header { padding: 16px; display: flex; align-items: flex-start; gap: 12px; }
 .card-icon { font-size: 2.2em; flex-shrink: 0; }

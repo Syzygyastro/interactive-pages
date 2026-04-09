@@ -1,0 +1,159 @@
+{
+  "id": "china",
+  "name": "China",
+  "full": "China — AI+Energy Policy & Grid Digitalisation Demand",
+  "vendor": "NDRC · NEA · SGCC · CSG",
+  "type": "Largest Energy Market",
+  "icon": "\ud83c\udde8\ud83c\uddf3",
+  "accentColor": "#DE2910",
+  "accentBg": "#FFF0E6",
+  "badgeColor": "#FFF0E6",
+  "badgeText": "#A31D0C",
+  "badge": "World's Largest Grid",
+  "badge2": "3 Programmes",
+  "tags": [
+    "apac"
+  ],
+  "sub": "China's AI+Energy policy mandates AI integration across power grids with 10+ demonstration projects by 2027. SGCC built a trillion-parameter AI grid model. The market is enormous but access barriers are high: JV required, data sovereignty constraints, geopolitical risks. CSG's Greater Bay Area offers the most accessible entry point.",
+  "cardTags": [
+    "NDRC",
+    "NEA",
+    "SGCC",
+    "CSG"
+  ],
+  "desc": "China's NDRC/NEA 'AI+Energy' policy (September 2025) mandates AI integration across the power sector — targeting 10+ demonstration projects by 2027, 5+ specialised large AI models, and global leadership by 2030. Eight application areas explicitly include power grids. However, both SGCC and CSG are developing significant internal AI capabilities (SGCC's 'Guangming' trillion-parameter model, CSG's value-chain AI). Access barriers for UK companies are the highest in Asia: JV or technology licensing typically required, data sovereignty regulations limit foreign access to grid data, and geopolitical considerations affect UK-China technology collaboration. CSG's Greater Bay Area (Hong Kong gateway) and MOST bilateral R&D are the most realistic pathways.",
+  "studies": [
+    {
+      "label": "NDRC/NEA AI+Energy Policy — Market Signal",
+      "hint": "10+ demos by 2027, national mandate for AI in grids",
+      "text": "<span class='section-label'>What it does</span>In September 2025, NDRC and NEA jointly issued 'Implementation Opinions on Promoting AI+ in Energy'. The plan mandates: by 2027, establish AI-energy innovation systems, launch 10+ replicable demonstration projects, deploy 100+ application scenarios, and develop 5+ specialised large AI models for energy. By 2030, achieve global leadership. Eight application areas include power grids, new energy, and new business models.<span class='section-label'>Why it matters for Grid Agents</span>This is the strongest national policy signal for AI in grid operations globally. However, both SGCC and CSG are building internal AI capability (SGCC's Guangming model is trillion-parameter). The opportunity for foreign companies is in niche areas where Chinese utilities lack capability — like cross-document compliance checking against international standards. The policy creates demand but access is difficult.<div class='links-row'><a class='link-box' href='https://cset.georgetown.edu/publication/china_ai_plus_energy_opinions_2025/' target='_blank'>AI+Energy Policy (CSET Translation)</a><a class='link-box' href='https://english.www.gov.cn/news/202509/08/content_WS68be8c3ec6d0868f4e8f566d.html' target='_blank'>Gov.cn Announcement</a><a class='link-box' href='https://triviumchina.com/2025/09/12/deep-dive-chinas-ai-energy-plan/' target='_blank'>Trivium Deep Dive</a></div>",
+      "budget": "Part of $88B+ annual grid investment; AI-specific budget TBD in 15th FYP",
+      "programmeType": "National Policy Mandate (Market Signal)",
+      "deadline": "Demonstration projects being selected through 2027. 15th Five-Year Plan (expected 2026) will detail funding.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "AI+Energy policy does not specify standalone budget. Funding flows through SGCC/CSG investment and MOST R&D grants. The $88B in grid investment (2025) is the overall envelope but AI-specific allocation is unclear.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Significant barriers for UK companies. JV or technology licensing typically required. Data sovereignty regulations (Cybersecurity Law, Data Security Law) limit foreign access to grid operational data. Both SGCC and CSG develop strong internal AI capability. Geopolitical considerations affect UK-China technology collaboration."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "low",
+        "text": "Despite the strong policy signal, Grid Agents faces high barriers: SGCC/CSG build AI internally, data sovereignty limits foreign data access (critical for Grid Agents' document review model), JV required for commercial participation, and geopolitical risks are significant. Other Asian markets (Japan, Korea, Taiwan) offer better risk-adjusted opportunities."
+      },
+      "applicationRoute": [
+        {
+          "step": "Assess risk-reward vs. Japan/Korea/Taiwan",
+          "detail": "China offers scale but highest barriers"
+        },
+        {
+          "step": "If proceeding: explore MOST bilateral R&D channels",
+          "detail": "UK-China science cooperation (scope varies with geopolitics)"
+        },
+        {
+          "step": "Identify Chinese research partner for joint R&D",
+          "detail": "University or research institute, not grid operator directly"
+        },
+        {
+          "step": "Technology licensing or JV if commercialising",
+          "detail": "Required for grid operator engagement"
+        }
+      ]
+    },
+    {
+      "label": "CSG Greater Bay Area — Hong Kong Gateway",
+      "hint": "Most accessible entry point, PolyU partnership model",
+      "text": "<span class='section-label'>What it does</span>China Southern Power Grid (CSG) operates across Guangdong, Guangxi, Yunnan, Guizhou, and Hainan — covering the Greater Bay Area (GBA). CSG signed a 2024 MOU with Hong Kong Polytechnic University for energy innovation including AI-powered grid systems. CSG showcased 'Empowering Every kWh with AI' at WAIC 2025. The GBA has more international connectivity than mainland SGCC regions — Hong Kong serves as a bridge for foreign technology partnerships.<span class='section-label'>Why it matters for Grid Agents</span>The GBA/Hong Kong route is the most accessible path into China's grid sector for a UK company. The PolyU-CSG partnership provides a model: academic collaboration bridging to utility deployment. Hong Kong's legal framework is more familiar to UK companies. However, CSG also builds significant internal AI capability and the core Grid Agents product (English-language document review) requires fundamental adaptation for Chinese applications.<div class='links-row'><a class='link-box' href='https://www.polyu.edu.hk/media/media-releases/2024/1209_polyu-and-china-southern-power-grid-collaborate-to-advance-innovation-in-the-energy-sector/' target='_blank'>CSG-PolyU Partnership</a><a class='link-box' href='https://www.prnewswire.com/news-releases/china-southern-power-grid-showcases-multiple-ai-achievements-at-2025-world-artificial-intelligence-conference-302516883.html' target='_blank'>CSG at WAIC 2025</a></div>",
+      "budget": "No direct funding — partnership/commercial opportunity",
+      "programmeType": "Utility Innovation Partnership (Market Opportunity)",
+      "deadline": "Ongoing — CSG actively pursues AI partnerships.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "CSG does not publish innovation budgets separately. Partnership opportunities are commercial rather than funded programmes.",
+      "eligibility": {
+        "status": "partial",
+        "text": "More accessible than SGCC but still requires Chinese JV or Hong Kong entity. PolyU-CSG partnership model shows academic collaboration as an entry route. Hong Kong legal framework is more familiar to UK companies but grid operations are mainland-regulated."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "low",
+        "text": "Most accessible China entry point but still high-barrier. Grid Agents' core product (English document review, UK grid code compliance) requires near-complete rewrite for Chinese grid applications. CSG builds strong internal AI. Better as a long-term option after establishing in Japan/Korea/Taiwan."
+      },
+      "applicationRoute": [
+        {
+          "step": "Explore Hong Kong academic partnership",
+          "detail": "PolyU model — joint research on AI grid applications"
+        },
+        {
+          "step": "Leverage academic collaboration for CSG introduction",
+          "detail": "University bridges to utility"
+        },
+        {
+          "step": "Adapt core technology for Chinese grid code and language",
+          "detail": "Fundamental product adaptation required"
+        },
+        {
+          "step": "Pilot within GBA grid operations",
+          "detail": "Demonstration project under AI+Energy framework"
+        }
+      ]
+    },
+    {
+      "label": "MOST Bilateral R&D — UK-China Science Cooperation",
+      "hint": "$4-6B annual clean energy R&D, bilateral route",
+      "text": "<span class='section-label'>What it does</span>Ministry of Science and Technology invests $4-6B annually in clean energy R&D. Bilateral science cooperation programmes with the UK exist (through UKRI), though scope and accessibility fluctuate with geopolitical dynamics. Joint R&D for AI grid technology is theoretically possible through these channels. Chinese research partner (university or CAS institute) required as co-applicant.<span class='section-label'>Why it matters for Grid Agents</span>The most structured pathway for UK-China energy technology collaboration. R&D focus (not commercial deployment) sidesteps some data sovereignty barriers. However, current UK-China geopolitical dynamics significantly constrain the scope and appetite for bilateral energy technology cooperation.<div class='links-row'><a class='link-box' href='https://chineseclimatepolicy.oxfordenergy.org/book-content/domestic-policies/clean-energy-rd/' target='_blank'>China Clean Energy R&D</a></div>",
+      "budget": "Varies by bilateral programme — typically \u00a3200K-\u00a31M per joint project",
+      "programmeType": "Government Bilateral R&D Funding",
+      "deadline": "Periodic — check UKRI international opportunities. 15th Five-Year Plan (2026) will shape priorities.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Bilateral project sizes vary. UK-China joint R&D has historically ranged from \u00a3200K to \u00a31M per project, but programme availability fluctuates with geopolitical dynamics.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents can access via UKRI bilateral calls. Chinese research partner required. Geopolitical dynamics significantly affect programme availability and scope. R&D collaboration is more feasible than commercial deployment in current environment."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "low",
+        "text": "Structured pathway but heavily constrained by geopolitics. Current UK-China relations limit appetite for energy technology cooperation. R&D results may not translate to commercial access given data sovereignty and JV requirements. Lower priority than Japan, Korea, and Taiwan opportunities."
+      },
+      "applicationRoute": [
+        {
+          "step": "Monitor UKRI for UK-China bilateral calls",
+          "detail": "Availability varies — check ukri.org international"
+        },
+        {
+          "step": "Identify Chinese research partner",
+          "detail": "University or CAS institute"
+        },
+        {
+          "step": "Co-develop R&D proposal for AI grid technology",
+          "detail": "Scope to avoid data sovereignty issues"
+        },
+        {
+          "step": "Submit through UKRI and Chinese counterpart",
+          "detail": "Both sides funded independently"
+        }
+      ]
+    }
+  ],
+  "dsoTerm": "Grid Corporation",
+  "dsoPartners": [],
+  "faq": [
+    {
+      "q": "Should Grid Agents prioritise China?",
+      "a": "No. Despite having the world's largest grid and strongest AI+Energy policy, China presents the highest barriers: JV requirements, data sovereignty (critical for Grid Agents' document-review model), internal AI development by SGCC/CSG, and geopolitical risks. Japan, Korea, and Taiwan offer better risk-adjusted opportunities."
+    },
+    {
+      "q": "What's the most accessible China entry point?",
+      "a": "CSG's Greater Bay Area via Hong Kong. The PolyU-CSG partnership model shows academic collaboration bridging to utility deployment. However, even this route requires significant product adaptation and Chinese entity formation."
+    },
+    {
+      "q": "Does China's AI+Energy policy create opportunity for foreign AI companies?",
+      "a": "Limited. Both SGCC and CSG are building strong internal AI (SGCC's Guangming is a trillion-parameter model). Data sovereignty regulations restrict foreign access to grid operational data. The policy creates domestic demand but foreign access is constrained."
+    },
+    {
+      "q": "Are there UK-China bilateral R&D programmes?",
+      "a": "Yes, through UKRI and MOST. However, programme scope and availability fluctuate significantly with geopolitical dynamics. Currently more constrained than UK-Japan (JETRO) or UK-Korea (KETEP) bilateral pathways."
+    }
+  ],
+  "note": "China has the world's largest grid ($89B investment in 2025) and strongest AI+Energy policy, but Grid Agents faces the highest barriers here: JV/technology licensing required, data sovereignty constraints, internal AI development by SGCC/CSG, and geopolitical risks. CSG Greater Bay Area (Hong Kong) is the most accessible entry but still high-barrier. Deprioritise vs. Japan, Korea, and Taiwan."
+}

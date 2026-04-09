@@ -1,0 +1,193 @@
+{
+  "id": "south-korea",
+  "name": "South Korea",
+  "full": "South Korea — K-Startup, KETEP & Utility Digitalisation",
+  "vendor": "MSS · KETEP · KEPCO KDN · K-Startup",
+  "type": "Advanced Market",
+  "icon": "\ud83c\uddf0\ud83c\uddf7",
+  "accentColor": "#003478",
+  "accentBg": "#E6F0FF",
+  "badgeColor": "#E6F0FF",
+  "badgeText": "#002255",
+  "badge": "Smart Grid Leader",
+  "badge2": "4 Programmes",
+  "tags": [
+    "apac"
+  ],
+  "sub": "Korea offers the strongest foreign startup support in Asia: K-Startup Grand Challenge provides equity-free funding up to KRW 80M. KEPCO's grid connection processing now takes 12 months (was 2-3). KETEP funds UK-Korea bilateral R&D up to \u00a3900K. ABB-KDN partnership signals utility digitalisation demand.",
+  "cardTags": [
+    "K-Startup",
+    "KETEP",
+    "KEPCO KDN",
+    "MSS"
+  ],
+  "desc": "South Korea has the most accessible foreign startup programmes in Asia. The K-Startup Grand Challenge and Global Startup Commercialization Program provide equity-free funding, English-language support, workspace, and corporate introductions to foreign founders — with AI and clean energy as priority sectors. Korea's grid connection processing has slowed to 12 months (from 2-3 months previously), and KEPCO has restricted new connections in Seoul. ABB and KEPCO KDN signed a 2025 partnership for AI-based grid digitalisation. KETEP funds UK-Korea bilateral energy R&D up to \u00a3900K.",
+  "studies": [
+    {
+      "label": "K-Startup Grand Challenge",
+      "hint": "Equity-free funding for foreign startups, AI & clean energy priority",
+      "text": "<span class='section-label'>What it does</span>Korea's flagship programme for foreign startups. Provides equity-free government funding (up to KRW 950M total support across programme), free workspace at Pangyo Global Startup Campus, mentorship, demo day with Korean investors and corporates, and visa support. AI and clean energy are explicit priority sectors. The entire process runs in English.<span class='section-label'>Why it matters for Grid Agents</span>Equity-free funding and direct access to Korean energy corporates including KEPCO ecosystem companies. Korea's grid connection slowdown (12 months, was 2-3) creates the same problem Grid Agents solves. The programme provides a low-risk way to validate Korean market demand.<span class='section-label'>How to apply</span>Applications typically open in spring via k-startupgc.org. Selection based on innovation, scalability, and market fit.<div class='links-row'><a class='link-box' href='https://www.k-startupgc.org/' target='_blank'>K-Startup Grand Challenge</a><a class='link-box' href='https://www.startcompanykorea.com/posts/korea-startup-ecosystem-2026-government-support-foreign-founders' target='_blank'>Korea Foreign Founder Guide 2026</a></div>",
+      "budget": "Equity-free funding (living stipend, workspace, mentorship, corporate matching)",
+      "programmeType": "Government Startup Accelerator",
+      "deadline": "Applications typically open spring 2026. Watch k-startupgc.org.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents is directly eligible. K-Startup Grand Challenge is specifically designed for foreign startups. AI and clean energy are priority sectors. Founding team led by non-Korean nationals required. Company under 7 years (up to 10 for new industries). Working prototype strengthens application. Entire process runs in English."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Equity-free, English-language programme with AI and clean energy as priority sectors — direct fit for Grid Agents. Provides corporate introductions to KEPCO ecosystem. Korea's grid connection processing slowdown (12 months) creates demand for application automation. Low-risk market validation opportunity."
+      },
+      "applicationRoute": [
+        {
+          "step": "Monitor k-startupgc.org for 2026 application opening",
+          "detail": "Typically spring — full process in English"
+        },
+        {
+          "step": "Submit application highlighting AI grid connection review",
+          "detail": "AI and clean energy are priority sectors"
+        },
+        {
+          "step": "Pitch and selection process",
+          "detail": "Innovation, scalability, and market fit criteria"
+        },
+        {
+          "step": "3-month programme at Pangyo Global Startup Campus",
+          "detail": "Mentorship, corporate matching, demo day"
+        }
+      ]
+    },
+    {
+      "label": "Global Startup Commercialization Program",
+      "hint": "Up to KRW 80M ($54K) equity-free for foreign founders",
+      "text": "<span class='section-label'>What it does</span>Ministry of SMEs and Startups programme providing direct equity-free grants to foreign founders establishing ventures in Korea. 2026 capacity expanded to 15 startups (from 10). Average grants KRW 50M (~$34K), maximum KRW 80M (~$54K). Covers product development, market localisation, IP acquisition, and marketing. Full Global Startup Center (GSC) network access: workspace, legal advisory, investor introductions, Korean corporate partner connections.<span class='section-label'>Why it matters for Grid Agents</span>Direct cash grant for product localisation — could fund Korean grid code adaptation, Korean-language interface development, and initial KEPCO ecosystem engagement. Unlike K-Startup GC (accelerator format), this is a grant for active commercialisation work.<div class='links-row'><a class='link-box' href='https://entrepreneurloop.com/korea-startup-funding-for-foreigners-2026-program/' target='_blank'>2026 Programme Details</a><a class='link-box' href='https://koreatechdesk.com/korea-foreign-startup-support-global-startup-program-2026' target='_blank'>Foreign Startup Support 2026</a></div>",
+      "budget": "Up to KRW 80M ($54K) equity-free grant",
+      "programmeType": "Government Commercialisation Grant",
+      "deadline": "2026 applications: March 18 — April 10 via Global Startup Center platform.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents is directly eligible. Programme is specifically for foreign founders commercialising in Korea. AI and clean energy are national priority sectors. Non-Korean nationals must lead the company. Under 7 years old (10 for new industries). Working prototype strengthens application."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Direct equity-free grant for Korean market entry and product localisation. KRW 80M could fund Korean grid code adaptation and KEPCO ecosystem engagement. Application window is tight (March 18 — April 10, 2026) so preparation should start early. Full English process."
+      },
+      "applicationRoute": [
+        {
+          "step": "Prepare application before March 18, 2026",
+          "detail": "Via Global Startup Center platform — full English process"
+        },
+        {
+          "step": "Submit during March 18 — April 10 window",
+          "detail": "Highlight AI grid connection review product"
+        },
+        {
+          "step": "Review and selection",
+          "detail": "Innovation and commercialisation potential assessed"
+        },
+        {
+          "step": "Grant funding and GSC support",
+          "detail": "Up to KRW 80M for localisation, IP, marketing"
+        }
+      ]
+    },
+    {
+      "label": "KETEP UK-Korea Bilateral Energy R&D",
+      "hint": "Up to \u00a3900K per collaborative project",
+      "text": "<span class='section-label'>What it does</span>Korea Institute of Energy Technology Evaluation and Planning (KETEP) manages bilateral energy R&D collaboration with the UK. Projects funded up to \u00a3900K. Focus areas include smart grid, grid digitalisation, energy technology innovation. UK entity applies via Innovate UK; Korean partner co-applies via KETEP. Joint R&D and demonstration.<span class='section-label'>Why it matters for Grid Agents</span>The largest direct funding available for Grid Agents' product adaptation to Korean market. \u00a3900K is substantial for an AI software company. Smart grid and grid digitalisation are explicit focus areas. Bilateral format means Grid Agents stays UK-based while collaborating with Korean research partners.<div class='links-row'><a class='link-box' href='https://www.ketep.re.kr/eng' target='_blank'>KETEP</a><a class='link-box' href='https://ketep.re.kr/board?menuId=MENU003050000000000&boardId=BOARD00675' target='_blank'>KETEP International Cooperation</a></div>",
+      "budget": "Up to \u00a3900K per UK-Korea project",
+      "programmeType": "Government Bilateral R&D Funding",
+      "deadline": "Periodic calls — check ketep.re.kr and Innovate UK for current opportunities. Typically annual.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents is eligible as a UK-registered company. Apply via Innovate UK side of bilateral call. Korean research partner (e.g. KERI, KEPRI) co-applies via KETEP. No Korean entity required for Grid Agents. Grid digitalisation is an explicit focus area."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Largest direct funding opportunity for Grid Agents in Korea. \u00a3900K for AI grid application review R&D is substantial. Bilateral format lets Grid Agents stay UK-based. Smart grid and digitalisation are explicit KETEP focus areas. Korean research partner (KERI, KEPRI) provides grid code expertise for product adaptation."
+      },
+      "applicationRoute": [
+        {
+          "step": "Identify Korean research partner",
+          "detail": "KERI (Korea Electrotechnology Research Institute) or KEPRI (KEPCO Research Institute)"
+        },
+        {
+          "step": "Monitor Innovate UK and KETEP for bilateral call",
+          "detail": "Annual cycles — check both portals"
+        },
+        {
+          "step": "Co-develop R&D proposal",
+          "detail": "AI-powered grid connection application review for Korean grid"
+        },
+        {
+          "step": "Submit — UK side via Innovate UK, Korean side via KETEP",
+          "detail": "Joint application, both sides funded independently"
+        }
+      ]
+    },
+    {
+      "label": "KEPCO KDN Grid Digitalisation — Market Opportunity",
+      "hint": "ABB partnership 2025, 12-month connection delays",
+      "text": "<span class='section-label'>What it does</span>KEPCO KDN (Korea Electric Power Data Network) manages KEPCO's digital infrastructure. In May 2025, ABB and KDN signed a strategic partnership for AI-based grid digitalisation including digital twin technology and predictive analytics. KEPCO has built its K-ECP cloud platform using Red Hat. Grid connection processing now takes 12 months (was 2-3 months). KEPCO has restricted new connections in Seoul.<span class='section-label'>Why it matters for Grid Agents</span>KEPCO's 12-month connection processing delay is the same problem Grid Agents solves in the UK. The ABB-KDN partnership shows KEPCO is actively seeking AI/digital solutions for grid operations. KEPCO KDN is the technology procurement arm — the right entry point for AI software vendors. K-ECP cloud platform suggests API-first integration is possible.<div class='links-row'><a class='link-box' href='https://new.abb.com/news/detail/126223/abb-kdn-strategic-partnership-accelerates-koreas-energy-digital-transformation' target='_blank'>ABB-KDN Partnership</a></div>",
+      "budget": "No direct funding — commercial market opportunity",
+      "programmeType": "Utility Digitalisation (Market Opportunity)",
+      "deadline": "Ongoing — KEPCO KDN actively seeking digital/AI technology partners.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Not a funding programme. KEPCO KDN procurement budgets are not published, but the 12-month connection processing backlog and ABB partnership signal active spending on digitalisation solutions.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents would approach KEPCO KDN as a technology vendor. Korean partner or local representative likely needed for procurement. K-Startup or Global Startup Commercialization programs can provide the initial Korean market presence and corporate introductions needed."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "KEPCO's 12-month grid connection processing delay is identical to the UK problem Grid Agents solves. ABB-KDN partnership proves KEPCO is buying AI/digital solutions. KEPCO KDN is the right buyer for Grid Agents' software. Access best established through K-Startup GC or KETEP bilateral programme first."
+      },
+      "applicationRoute": [
+        {
+          "step": "Establish Korean presence via K-Startup GC or Global Commercialization",
+          "detail": "Corporate introductions to KEPCO ecosystem"
+        },
+        {
+          "step": "Approach KEPCO KDN with AI application review demo",
+          "detail": "Position alongside ABB digital twin initiative"
+        },
+        {
+          "step": "Adapt platform for Korean grid code and KEPCO workflows",
+          "detail": "Korean-language, K-ECP cloud integration"
+        },
+        {
+          "step": "Pilot with KEPCO using historical connection applications",
+          "detail": "Demonstrate review time reduction from 12 months"
+        }
+      ]
+    }
+  ],
+  "dsoTerm": "Distribution System Operator",
+  "dsoPartners": [],
+  "faq": [
+    {
+      "q": "Does Korea have a grid connection backlog?",
+      "a": "Yes. KEPCO's grid connection processing now takes 12 months (was 2-3). KEPCO has restricted new connections in Seoul. The ABB-KDN partnership (May 2025) shows KEPCO is actively seeking AI/digital solutions."
+    },
+    {
+      "q": "Can Grid Agents get funded in Korea without a local entity?",
+      "a": "Yes. K-Startup Grand Challenge and Global Startup Commercialization Program are both designed for foreign founders and provide equity-free funding in English. KETEP bilateral R&D lets Grid Agents stay UK-based with a Korean research partner."
+    },
+    {
+      "q": "Which programme should Grid Agents apply to first?",
+      "a": "Global Startup Commercialization (deadline: March 18 — April 10, 2026) is the most immediate. K-Startup GC (spring 2026) provides deeper immersion. KETEP bilateral is the largest funding (\u00a3900K) but requires a Korean research partner. All three can be pursued in parallel."
+    },
+    {
+      "q": "Is AI a priority sector in Korea's startup programmes?",
+      "a": "Yes — explicitly. AI, big data, and eco-friendly energy are named as priority sectors across K-Startup GC, Super-Gap Startup Project, and MOTIE-MSS R&D framework. Korea allocated KRW 140B for 'AX Sprint' AI fast-track financing in 2026."
+    }
+  ],
+  "note": "Korea offers the best foreign startup access in Asia: K-Startup GC (equity-free, English, AI/cleantech priority), Global Commercialization (KRW 80M grant, March-April 2026), and KETEP bilateral (\u00a3900K). KEPCO's 12-month connection delays mirror Grid Agents' UK problem. ABB-KDN partnership proves digitalisation spend. All programmes accept foreign founders."
+}

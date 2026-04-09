@@ -1,0 +1,193 @@
+{
+  "id": "japan",
+  "name": "Japan",
+  "full": "Japan — JETRO Market Entry & Grid Connection Reform",
+  "vendor": "JETRO · METI · OCCTO · NEDO",
+  "type": "Advanced Market",
+  "icon": "\ud83c\uddef\ud83c\uddf5",
+  "accentColor": "#BC002D",
+  "accentBg": "#FFF0F0",
+  "badgeColor": "#FFF0F0",
+  "badgeText": "#8B0020",
+  "badge": "3rd Largest Economy",
+  "badge2": "4 Programmes",
+  "tags": [
+    "apac"
+  ],
+  "sub": "Japan faces a 6x surge in grid connection applications (9,544 in FY2024) with severe processing backlogs. METI is tightening application rules from 2025-2026 — creating direct demand for AI-powered application screening. JETRO actively recruits foreign cleantech startups.",
+  "cardTags": [
+    "JETRO",
+    "METI",
+    "OCCTO",
+    "NEDO"
+  ],
+  "desc": "Japan's grid connection queue is in crisis: applications surged 6x in FY2024 to 9,544, with contract applications reaching 2,400 GW by September 2025 (3.9x year-on-year). METI is responding with progressive tightening — increased deposits, mandatory business plans, application caps from April 2026 — but the core processing bottleneck remains manual. JETRO's Japan Entry Acceleration Program explicitly recruits foreign decarbonisation startups with free market entry support. J-Bridge CleanTech Connector provides rolling business matching. NEDO's Green Innovation Fund can support AI grid technology through Japanese consortium partnerships.",
+  "studies": [
+    {
+      "label": "JETRO Japan Entry Acceleration Program (JEAP)",
+      "hint": "Free market entry for foreign cleantech startups",
+      "text": "<span class='section-label'>What it does</span>JETRO's Japan Entry Acceleration Program specifically recruits foreign decarbonisation and cleantech startups to enter the Japanese market. Selected startups receive tailored mentorship, direct introductions to major Japanese energy companies ('challenge owners' including ENEOS, Niterra, and utilities), and support to accelerate market entry and co-creation. The programme is free.<span class='section-label'>Why it matters for Grid Agents</span>Japan's 6x surge in grid connection applications creates an urgent, real problem identical to the UK backlog. JEAP provides direct introductions to Japanese utilities who are drowning in applications — exactly the buyer persona for Grid Agents' AI review platform. No local entity required for the programme itself.<span class='section-label'>How to apply</span>Applications via JETRO portal. 2025 deadline was October 31. 2026 programme expected mid-2026. Contact JETRO London office for early engagement.<div class='links-row'><a class='link-box' href='https://www.jetro.go.jp/en/invest/newsroom/2025/129a51c481aa0612.html' target='_blank'>JEAP Decarbonization 2025</a><a class='link-box' href='https://www.jetro.go.jp/en/startup/acceleration/' target='_blank'>JETRO Acceleration Programs</a><a class='link-box' href='https://www.jetro.go.jp/uk/Invest_in_Japan/_488885.html' target='_blank'>JETRO UK — Global Acceleration Hub</a></div>",
+      "budget": "Free programme (mentorship, market entry support, business matching)",
+      "programmeType": "Government Market Entry Accelerator",
+      "deadline": "Annual cycle. 2025 applications closed Oct 31. 2026 programme expected mid-2026.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents is directly eligible as a UK decarbonisation startup. JEAP explicitly targets foreign cleantech companies. No local entity required. Free programme with direct introductions to Japanese energy companies and utilities."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Japan's grid connection application backlog (6x surge to 9,544 in FY2024) mirrors the UK problem Grid Agents solves. JEAP provides direct introductions to Japanese utilities who face the same manual review bottleneck. METI's 2025-2026 reforms (mandatory business plans, application caps) increase complexity per application — making AI-powered screening even more valuable."
+      },
+      "applicationRoute": [
+        {
+          "step": "Contact JETRO London office for early engagement",
+          "detail": "UK Global Acceleration Hub"
+        },
+        {
+          "step": "Apply to JEAP decarbonisation track when 2026 round opens",
+          "detail": "Expected mid-2026"
+        },
+        {
+          "step": "Business matching with Japanese utilities",
+          "detail": "Direct introductions to TEPCO, Kansai Electric, etc."
+        },
+        {
+          "step": "Pilot discussion with utility partner",
+          "detail": "AI application review for Japanese grid connection queue"
+        }
+      ]
+    },
+    {
+      "label": "J-Bridge CleanTech Connector",
+      "hint": "Rolling business matching with Japanese corporates",
+      "text": "<span class='section-label'>What it does</span>J-Bridge CleanTech Connector matches cleantech startups with Japanese firms seeking technology partnerships. Provides tailored introductions to Japanese companies in energy and clean technology. Operated through JETRO with GX Acceleration Agency and EU's InnoEnergy (MOU signed 2025 for Japan-EU decarbonisation collaboration).<span class='section-label'>Why it matters for Grid Agents</span>Rolling applications (unlike JEAP's annual cycle) mean Grid Agents can engage immediately. The 2025 GX-InnoEnergy-JETRO MOU strengthens EU/UK-Japan collaboration pathways for cleantech. Business matching can surface utility partners for pilots before JEAP opens.<div class='links-row'><a class='link-box' href='https://www.fedtech.io/accelerators/j-bridge-cleantech-connector' target='_blank'>J-Bridge CleanTech Connector</a><a class='link-box' href='https://www.jetro.go.jp/en/news/announcement/2025/0555c053816e09a3.html' target='_blank'>GX-InnoEnergy-JETRO MOU</a></div>",
+      "budget": "Free programme (business matching and introductions)",
+      "programmeType": "Government Business Matching",
+      "deadline": "Rolling — applications accepted year-round.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "eligible",
+        "text": "Grid Agents is eligible as a UK cleantech startup. No local entity required. Rolling applications — can engage immediately while waiting for JEAP 2026 cycle."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Immediate action possible via rolling applications. Business matching can identify utility partners facing connection application backlogs. Can serve as a precursor to JEAP participation or direct utility partnerships."
+      },
+      "applicationRoute": [
+        {
+          "step": "Apply via J-Bridge / JETRO portal",
+          "detail": "Rolling — can apply immediately"
+        },
+        {
+          "step": "Profile matching with Japanese utilities and energy companies",
+          "detail": "Tailored introductions"
+        },
+        {
+          "step": "Business meetings and pilot exploration",
+          "detail": "Present AI application review solution"
+        },
+        {
+          "step": "Partnership or pilot agreement",
+          "detail": "Technology deployment with Japanese utility"
+        }
+      ]
+    },
+    {
+      "label": "METI Grid Connection Reform — Technology Demand",
+      "hint": "9,544 applications in FY2024, 6x surge",
+      "text": "<span class='section-label'>What it does</span>METI is implementing progressive reforms to manage the grid connection application crisis: security deposit increases (2-3x) from April 2025, mandatory business plan and land rights submissions from October 2025, upper limits on applications per operator from April 2026. These reforms massively increase the documentation complexity per application — but METI has not yet deployed AI tools to handle the processing burden.<span class='section-label'>Why it matters for Grid Agents</span>This is the exact problem Grid Agents solves. Japan's grid connection queue has the same symptoms as the UK: surging applications, manual review, incomplete submissions, months of back-and-forth. METI's reforms add new mandatory documents (business plans, land rights proof, funding plans) — making each application more complex to review manually. AI-powered completeness validation, compliance checking, and developer feedback are directly applicable.<span class='section-label'>Market context</span>Grid-scale battery contract applications reached ~2,400 GW by September 2025 (3.9x year-on-year). OCCTO and utilities are overwhelmed. No AI solution for application screening exists in Japan.<div class='links-row'><a class='link-box' href='https://practiceguides.chambers.com/practice-guides/power-generation-transmission-distribution-2025/japan/trends-and-developments' target='_blank'>Japan Grid Trends 2025</a><a class='link-box' href='https://www.orrick.com/en/Insights/2025/02/Japan-Renewables-Alert-69' target='_blank'>Japan Renewables Alert 69</a><a class='link-box' href='https://www.occto.or.jp/en/about_occto/about_occto.html' target='_blank'>OCCTO</a></div>",
+      "budget": "No direct funding — market opportunity. Utility procurement budgets.",
+      "programmeType": "Regulatory Reform (Market Opportunity)",
+      "deadline": "Reforms rolling out April 2025 → October 2025 → April 2026. Increasing urgency.",
+      "budgetIsEstimate": true,
+      "budgetBasis": "Not a funding programme. This is a market opportunity created by regulatory reform. Utility procurement budgets for application processing tools are not published but the scale of the backlog (9,544 applications, 6x surge) implies significant spend on manual processing.",
+      "eligibility": {
+        "status": "partial",
+        "text": "Not a funding programme — a market opportunity. Grid Agents would sell directly to Japanese utilities (TEPCO, Kansai, Chubu, OCCTO) via partnerships established through JETRO/JEAP. Local partner or representative likely needed for utility procurement."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "high",
+        "text": "Exact product-market fit. Japan's grid connection application crisis mirrors the UK problem: surging volumes, manual review, incomplete submissions, multi-month delays. METI's 2025-2026 reforms add new mandatory documents per application, increasing the per-application review burden. No AI solution exists in Japan for this."
+      },
+      "applicationRoute": [
+        {
+          "step": "Use JETRO JEAP/J-Bridge to identify utility partners",
+          "detail": "TEPCO, Kansai Electric, Chubu Electric, Hokkaido Electric"
+        },
+        {
+          "step": "Present AI application review solution to utility",
+          "detail": "Focus on completeness validation and compliance checking"
+        },
+        {
+          "step": "Adapt platform for Japanese grid code and document formats",
+          "detail": "Business plans, land rights, technical studies in Japanese"
+        },
+        {
+          "step": "Pilot with utility using historical applications",
+          "detail": "Demonstrate review time reduction and accuracy"
+        }
+      ]
+    },
+    {
+      "label": "NEDO Green Innovation Fund — AI Grid Technology",
+      "hint": "\u00a52 trillion fund, consortium-based",
+      "text": "<span class='section-label'>What it does</span>NEDO's Green Innovation Fund (\u00a52 trillion) provides up to 10-year continuous support for R&D through to social implementation. Grid-related themes include next-generation digital infrastructure, AI-driven grid management, and power network optimisation. Foreign companies can participate as consortium members with a Japanese lead entity.<span class='section-label'>Why it matters for Grid Agents</span>Potential long-term R&D funding for adapting Grid Agents' AI technology to Japanese grid code and connection processes. The consortium requirement means this is best pursued after establishing a utility relationship through JETRO — a utility partner could lead a GIF application with Grid Agents as the AI technology provider.<div class='links-row'><a class='link-box' href='https://green-innovation.nedo.go.jp/en/' target='_blank'>NEDO GIF Portal</a><a class='link-box' href='https://www.meti.go.jp/english/policy/energy_environment/global_warming/gifund/index.html' target='_blank'>METI GIF Overview</a></div>",
+      "budget": "\u00a52 trillion total (\u00a520B+ per project)",
+      "programmeType": "Government Innovation Fund",
+      "deadline": "Project calls issued periodically. Check green-innovation.nedo.go.jp.",
+      "budgetIsEstimate": false,
+      "eligibility": {
+        "status": "partial",
+        "text": "Grid Agents cannot apply directly. Requires a Japanese consortium lead (utility or technology company). Best pursued after establishing a utility partnership through JETRO. Project scale (\u00a520B+) requires consortium approach — Grid Agents would be the AI technology delivery partner."
+      },
+      "gridLevel": "both",
+      "relevance": {
+        "level": "medium",
+        "text": "Large-scale, long-term funding opportunity but requires significant Japanese partnership. Best pursued as a follow-on after JETRO-facilitated utility relationships are established. Grid Agents' AI application review technology could be positioned within a broader 'next-generation grid connection management' consortium project."
+      },
+      "applicationRoute": [
+        {
+          "step": "Establish utility relationship via JETRO first",
+          "detail": "JEAP or J-Bridge"
+        },
+        {
+          "step": "Utility leads NEDO GIF consortium application",
+          "detail": "Grid Agents as AI technology delivery partner"
+        },
+        {
+          "step": "Register on e-Rad system",
+          "detail": "Required for NEDO applications"
+        },
+        {
+          "step": "Submit consortium proposal when call opens",
+          "detail": "Grid connection AI within digital infrastructure theme"
+        }
+      ]
+    }
+  ],
+  "dsoTerm": "Transmission Operator",
+  "dsoPartners": [],
+  "faq": [
+    {
+      "q": "Does Japan have a grid connection application backlog like the UK?",
+      "a": "Yes — worse. Grid connection applications surged 6x in FY2024 to 9,544. Battery contract applications reached ~2,400 GW by September 2025. METI is adding new mandatory documents (business plans, land rights) from 2025, increasing per-application complexity. No AI screening tools exist."
+    },
+    {
+      "q": "What's the fastest route for Grid Agents to enter Japan?",
+      "a": "JETRO J-Bridge (rolling applications, immediate) followed by JEAP decarbonisation track (annual, expected mid-2026). Both are free and provide direct introductions to Japanese utilities. JETRO London office can facilitate early engagement."
+    },
+    {
+      "q": "Does Grid Agents need a Japanese entity?",
+      "a": "Not for JETRO programmes. For utility procurement, a local partner or representative is likely needed. JETRO programmes are designed to help establish these relationships before requiring local incorporation."
+    },
+    {
+      "q": "Is Grid Agents' product relevant to Japan's grid?",
+      "a": "Directly. Japan faces the same problem: surging applications, manual review, incomplete submissions, months of back-and-forth. METI's 2025-2026 reforms add mandatory business plans and land rights documentation — making AI-powered completeness validation even more valuable. Adaptation for Japanese grid code and language required."
+    }
+  ],
+  "note": "Japan's grid connection application backlog (6x surge to 9,544 in FY2024) is a direct product-market fit for Grid Agents. JETRO J-Bridge (rolling) and JEAP (annual, mid-2026) are the best entry routes — free, no entity required, direct utility introductions. METI reforms add document complexity from 2025-2026, increasing demand for AI screening. NEDO GIF is a longer-term consortium funding path."
+}

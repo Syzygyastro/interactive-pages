@@ -1,11 +1,5 @@
 /* Grid Interconnection Funding Landscape — app.js */
 
-const DATA_FILES = [
-  'data/uk.json','data/usa.json','data/germany.json','data/netherlands.json',
-  'data/spain.json','data/france.json','data/india.json','data/australia.json',
-  'data/south-africa.json','data/kenya.json','data/nigeria.json'
-];
-
 let DATA = [];
 let currentCountry = null;
 let openProgrammes = new Set();
@@ -16,8 +10,44 @@ let currentRegionFilter = 'all';
 // ── Data Loading ──
 
 async function loadData() {
-  DATA = await Promise.all(DATA_FILES.map(f => fetch(f).then(r => r.json())));
-  renderCards();
+  try {
+    if (Array.isArray(window.GRID_DATA) && window.GRID_DATA.length) {
+      DATA = window.GRID_DATA;
+    } else {
+      const manifest = await fetch('data/manifest.json').then(r => {
+        if (!r.ok) throw new Error(`Manifest load failed: ${r.status}`);
+        return r.json();
+      });
+
+      DATA = await Promise.all((manifest.files || []).map(async file => {
+        const response = await fetch(`data/${file}`);
+        if (!response.ok) throw new Error(`Data load failed for ${file}: ${response.status}`);
+        return response.json();
+      }));
+    }
+
+    updateHeroStats();
+    renderCards();
+  } catch (error) {
+    console.error(error);
+    renderLoadError(error);
+  }
+}
+
+function updateHeroStats() {
+  const countriesEl = document.getElementById('heroCountries');
+  const programmesEl = document.getElementById('heroProgrammes');
+  if (countriesEl) countriesEl.textContent = `${DATA.length} Countries`;
+  if (programmesEl) programmesEl.textContent = `${DATA.reduce((sum, country) => sum + country.studies.length, 0)} Programmes`;
+}
+
+function renderLoadError(error) {
+  const grid = document.getElementById('cardsGrid');
+  grid.innerHTML = `
+    <div class="load-error">
+      <div class="load-error-title">Funding data failed to load</div>
+      <div class="load-error-body">${error.message}</div>
+    </div>`;
 }
 
 // ── Cards ──
