@@ -1,0 +1,655 @@
+{
+  "id": "spain",
+  "name": "Spain",
+  "full": "Spain — Grid Interconnection Process",
+  "type": "Post-Blackout Reform",
+  "icon": "🇪🇸",
+  "accentColor": "#8B1A1A",
+  "accentBg": "#FDE8E8",
+  "badgeColor": "#FDE8E8",
+  "badgeText": "#8B1A1A",
+  "badge": "April 2025 Blackout Response",
+  "badge2": "75% Grid Saturated",
+  "tags": ["europe"],
+  "sub": "Spain's grid interconnection process was fundamentally reshaped after the April 2025 Iberian blackout, with 75% of transmission nodes saturated and 165 GW of capacity locked across 386 reserved nodes.",
+  "cardTags": ["Red Eléctrica", "CNMC", "MITECO", "RD 1183/2020", "Autoconsumo", "RDL 7/2025"],
+  "desc": "Spain operates a dual-permit interconnection model — Permiso de Acceso (network capacity) and Permiso de Conexión (physical connection) — unified under Real Decreto 1183/2020 into a single joint application. Red Eléctrica de España (Redeia) is the sole transmission system operator managing the 220 kV and 400 kV networks, while five distribution companies handle everything below 220 kV. The system faces extreme congestion: 129 GW of renewables, 16 GW of storage, and 19 GW of demand hold permits, with 75% of nodes saturated (88.3% for demand connections). In 2025, of 40 GW requested, only 4.5 GW was approved and 25 GW was rejected outright. The April 28, 2025 Iberian blackout — a complete grid collapse lasting 10–20 hours — triggered a wave of emergency reforms including RDL 7/2025 (storage as public utility), RD 997/2025 (grid-forming inverters), and RDL 7/2026 (Renewable Acceleration Zones). The CNMC regulates access methodology, while MITECO handles administrative authorizations for large projects.",
+  "transmission": {
+    "title": "Transmission Connection (Red de Transporte)",
+    "voltageLevel": "≥220 kV",
+    "overview": "Transmission connections in Spain are managed exclusively by Red Eléctrica de España (part of the Redeia group), the sole TSO operating the 220 kV and 400 kV networks. Under Real Decreto 1183/2020, applicants submit a single joint application for both the Permiso de Acceso (capacity right at a network node) and the Permiso de Conexión (physical connection authorization). The process involves a financial guarantee of €40/kW (only 80% recoverable), and the developer bears all costs for evacuation infrastructure. The CNMC (Comisión Nacional de los Mercados y la Competencia) sets the access methodology and regulates tariffs, while MITECO (Ministerio para la Transición Ecológica) handles administrative authorizations and environmental impact assessments for large-scale projects. The system is severely congested: 386 nodes are reserved with 165,457 MW of capacity locked, and 75% of all nodes are saturated.",
+    "typicalTimeline": "3–5 years",
+    "timelineDetail": "Permits and studies: 6–12 months. Administrative authorizations + EIA: 12–24 months. Construction: 12–24 months.",
+    "costRange": "€40/kW guarantee + infrastructure",
+    "costDetail": "Financial guarantee of €40/kW (only 80% recoverable upon commissioning). Developer bears full cost of evacuation infrastructure (línea de evacuación). Administrative fees for MITECO authorizations. EIA costs. Grid Code compliance testing.",
+    "queueSize": "129 GW renewables + 16 GW storage",
+    "queueDetail": "129 GW renewables, 16 GW storage, and 19 GW demand with active permits. 386 nodes reserved, 165,457 MW locked. 75% node saturation (88.3% for demand). In 2025: 40 GW requested, 4.5 GW approved, 25 GW rejected.",
+    "keyBodies": [
+      {
+        "name": "Red Eléctrica (Redeia)",
+        "fullName": "Red Eléctrica de España, S.A.U.",
+        "role": "Sole TSO; processes access and connection permits for the 220 kV and 400 kV transmission network, conducts technical studies, and manages node capacity allocation",
+        "url": "https://www.ree.es"
+      },
+      {
+        "name": "CNMC",
+        "fullName": "Comisión Nacional de los Mercados y la Competencia",
+        "role": "Energy regulator; sets access methodology (including Circular 1/2024 for demand/storage), regulates tariffs, and oversees competition in the electricity sector",
+        "url": "https://www.cnmc.es"
+      },
+      {
+        "name": "MITECO",
+        "fullName": "Ministerio para la Transición Ecológica y el Reto Demográfico",
+        "role": "Government ministry; issues administrative authorizations (Autorización Administrativa Previa and de Construcción) and oversees Environmental Impact Assessments for projects >50 MW",
+        "url": "https://www.miteco.gob.es"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Permiso de Acceso (Access Permit)",
+        "detail": "The developer submits a joint application to Red Eléctrica under RD 1183/2020 for access capacity at a specific transmission node. A financial guarantee of €40/kW must be deposited (only 80% is recoverable upon project commissioning). Red Eléctrica evaluates available capacity at the requested node, considering existing reservations and saturation levels. With 75% of nodes already saturated, securing access at a viable node is the primary bottleneck.",
+        "timeline": "2 months"
+      },
+      {
+        "name": "Permiso de Conexión — ICCTC + IVCTC",
+        "detail": "Once access is granted, Red Eléctrica issues the Informe de Cumplimiento de Condiciones Técnicas de Conexión (ICCTC) confirming the installation meets technical connection requirements (~1 month), followed by the Informe de Viabilidad de Condiciones Técnicas de Conexión (IVCTC) confirming viability of the physical connection design (~1 month). The developer must present detailed engineering designs for the connection and evacuation infrastructure.",
+        "timeline": "2 months (1 + 1)"
+      },
+      {
+        "name": "CTA Signing (Contrato Técnico de Acceso)",
+        "detail": "The developer and Red Eléctrica sign the Contrato Técnico de Acceso, the formal technical access contract that fixes the connection terms, capacity allocation, and technical specifications. This contract locks the developer's position at the node and triggers the administrative authorization phase.",
+        "timeline": "1 month"
+      },
+      {
+        "name": "Administrative Authorizations (MITECO)",
+        "detail": "For large-scale projects (>50 MW or cross-regional), MITECO issues the Autorización Administrativa Previa (preliminary authorization) and Autorización Administrativa de Construcción (construction authorization). This involves public consultation, technical review, and coordination with autonomous communities. Projects under regional thresholds are authorized by the relevant Comunidad Autónoma.",
+        "timeline": "12–24 months"
+      },
+      {
+        "name": "Environmental Impact Assessment (EIA)",
+        "detail": "Projects above regulatory thresholds require a full Declaración de Impacto Ambiental (DIA). The EIA process runs in parallel with administrative authorizations and involves environmental baseline studies, public consultation, and assessment of impacts on protected areas (Red Natura 2000, ZEPAs). The process is managed by MITECO or the autonomous community depending on project jurisdiction.",
+        "timeline": "12–24 months"
+      },
+      {
+        "name": "Construction of Evacuation Infrastructure",
+        "detail": "The developer designs and constructs the línea de evacuación (evacuation line) and associated infrastructure to connect the generation facility to the assigned transmission node. All costs are borne by the developer. Construction must comply with Red Eléctrica's technical specifications and relevant P.O. (Procedimientos de Operación) standards.",
+        "timeline": "12–24 months"
+      },
+      {
+        "name": "Puesta en Servicio (Commissioning)",
+        "detail": "Red Eléctrica conducts final technical inspections and compliance verification. The installation is synchronized with the grid and enters commercial operation. Upon successful commissioning, 80% of the €40/kW financial guarantee is returned. The facility must comply with all applicable P.O. requirements including reactive power, fault ride-through, and communications protocols. RDL 23/2020 milestone deadlines (hitos) must have been met throughout the process to avoid permit revocation.",
+        "timeline": ""
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "st_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "st_application",
+          "type": "step",
+          "label": "Joint Access + Connection Application",
+          "row": 1,
+          "col": 1,
+          "timeline": "1\u20132 weeks to prepare",
+          "timelineBasis": "assumption",
+          "detail": "Developer submits a single joint application to Red El\u00e9ctrica under RD 1183/2020 for both the Permiso de Acceso (capacity right at a node) and the Permiso de Conexi\u00f3n (physical connection). A financial guarantee of \u20ac40/kW must be deposited (only 80% recoverable upon commissioning). Applications are processed by temporal priority.",
+          "sources": [
+            {"label": "RD 1183/2020 Analysis (Clifford Chance)", "url": "https://www.cliffordchance.com/briefings/2021/01/key-elements-of-the-spanish-royal-decree-on-access-and-connectio.html"},
+            {"label": "RD 1183/2020 (Lexology)", "url": "https://www.lexology.com/library/detail.aspx?g=dd197e39-fafc-46b9-9e56-605de9eec220"},
+            {"label": "EU Islands: Spain Grid Permits", "url": "https://clean-energy-islands.ec.europa.eu/countries/spain/legal/res-permits-and-authorisation-processes/grid-connection-permit-process"}
+          ]
+        },
+        {
+          "id": "st_node_check",
+          "type": "decision",
+          "label": "Node capacity available?",
+          "row": 2,
+          "col": 1,
+          "detail": "Red El\u00e9ctrica evaluates available capacity at the requested transmission node. With 75% of nodes saturated (88.3% for demand), 386 nodes reserved with 165,457 MW locked, this is the primary bottleneck. In 2025, of 40 GW requested, only 4.5 GW was approved and 25 GW rejected outright (62.5% rejection rate). REE published the first demand access-capacity maps on 20 February 2026.",
+          "sources": [
+            {"label": "Spain Grid Access Rules 2026", "url": "https://strategicenergy.eu/spain-approves-new-grid-access-rules-for-demand-and-bess-as-ree-plans-capacity-map-for-february-2026/"},
+            {"label": "BESS Headroom Analysis (Modo)", "url": "https://modoenergy.com/research/en/connecting-to-spains-transmission-grid-bess-has-dedicated-headroom"}
+          ]
+        },
+        {
+          "id": "st_rejected",
+          "type": "step",
+          "label": "Rejected / Auction queue",
+          "row": 2,
+          "col": 2,
+          "timeline": "Indefinite",
+          "timelineBasis": "assumption",
+          "detail": "If the node is saturated, the application is rejected outright or placed in an auction queue. 25 GW was rejected in 2025 alone. Projects may need to identify an alternative node or wait for capacity to be freed by milestone enforcement (RDL 23/2020 hitos)."
+        },
+        {
+          "id": "st_acceso",
+          "type": "step",
+          "label": "Permiso de Acceso granted",
+          "row": 3,
+          "col": 1,
+          "timeline": "2 months",
+          "timelineBasis": "evidence",
+          "detail": "Red El\u00e9ctrica grants the Permiso de Acceso \u2014 the right to use capacity at the assigned transmission node. This is Hito 1 of the RDL 23/2020 milestone system. The \u20ac40/kW financial guarantee is locked.",
+          "sources": [
+            {"label": "RDL 23/2020 Hitos (WFW)", "url": "https://www.wfw.com/articles/impact-of-rd-law-23-2020-on-projects-under-development/"},
+            {"label": "RDL 23/2020 Analysis (CMS)", "url": "https://cms.law/en/media/local/cms-asl/files/publications/publications/analysis-of-royal-decree-law-23-2020"}
+          ]
+        },
+        {
+          "id": "st_icctc",
+          "type": "step",
+          "label": "ICCTC (Technical Compliance)",
+          "row": 4,
+          "col": 1,
+          "timeline": "1 month",
+          "timelineBasis": "evidence",
+          "detail": "Red El\u00e9ctrica issues the Informe de Cumplimiento de Condiciones T\u00e9cnicas de Conexi\u00f3n (ICCTC) confirming the installation meets technical connection requirements. Developer must present detailed engineering designs."
+        },
+        {
+          "id": "st_ivctc",
+          "type": "step",
+          "label": "IVCTC (Connection Viability)",
+          "row": 5,
+          "col": 1,
+          "timeline": "1 month",
+          "timelineBasis": "evidence",
+          "detail": "Red El\u00e9ctrica issues the Informe de Viabilidad de Condiciones T\u00e9cnicas de Conexi\u00f3n (IVCTC) confirming the physical connection design is viable. This completes the Permiso de Conexi\u00f3n (Hito 2)."
+        },
+        {
+          "id": "st_cta",
+          "type": "step",
+          "label": "CTA Signing",
+          "row": 6,
+          "col": 1,
+          "timeline": "1 month",
+          "timelineBasis": "evidence",
+          "detail": "Developer and Red El\u00e9ctrica sign the Contrato T\u00e9cnico de Acceso (CTA) \u2014 the formal technical access contract fixing connection terms, capacity allocation, and specifications. Triggers the administrative authorization phase."
+        },
+        {
+          "id": "st_size_check",
+          "type": "decision",
+          "label": ">50 MW?",
+          "row": 7,
+          "col": 1,
+          "detail": "Projects exceeding 50 MW or crossing autonomous community boundaries are authorized by MITECO at the national level. Smaller projects are authorized by the relevant Comunidad Aut\u00f3noma. This determines which administrative track applies.",
+          "sources": [
+            {"label": "MITECO Installation Processing", "url": "https://www.miteco.gob.es/en/energia/energia-electrica/electricidad/tramitacion-instalaciones.html"},
+            {"label": "MITECO FAQ Access & Connection", "url": "https://www.miteco.gob.es/en/energia/energia-electrica/electricidad/preguntas-frecuentes-acceso-conexion.html"}
+          ]
+        },
+        {
+          "id": "st_fork_parallel",
+          "type": "fork",
+          "label": "",
+          "row": 8,
+          "col": 1
+        },
+        {
+          "id": "st_aap",
+          "type": "step",
+          "label": "Admin Authorizations (AAP/AAC)",
+          "row": 9,
+          "col": 0,
+          "timeline": "12\u201324 months",
+          "timelineBasis": "evidence",
+          "detail": "MITECO (>50 MW) or Comunidad Aut\u00f3noma (<50 MW) issues the Autorizaci\u00f3n Administrativa Previa (AAP) and Autorizaci\u00f3n Administrativa de Construcci\u00f3n (AAC). Involves public consultation, technical review, and coordination between authorities. This is Hito 3 (AAP) and Hito 4 (AAC) of RDL 23/2020.",
+          "sources": [
+            {"label": "MITECO Sede Electr\u00f3nica", "url": "https://sede.miteco.gob.es/portal/site/seMITECO/ficha-procedimiento?procedure_id=593&procedure_suborg_responsable=198&by=theme"}
+          ]
+        },
+        {
+          "id": "st_eia",
+          "type": "step",
+          "label": "EIA (Declaraci\u00f3n de Impacto)",
+          "row": 9,
+          "col": 2,
+          "timeline": "12\u201324 months",
+          "timelineBasis": "evidence",
+          "detail": "Full Declaraci\u00f3n de Impacto Ambiental (DIA) for projects above regulatory thresholds. Runs IN PARALLEL with admin authorizations. Includes environmental baseline studies, public consultation, and Red Natura 2000/ZEPA impact assessment. Managed by MITECO or autonomous community depending on jurisdiction."
+        },
+        {
+          "id": "st_zar_check",
+          "type": "decision",
+          "label": "In a ZAR zone?",
+          "row": 10,
+          "col": 2,
+          "detail": "RDL 7/2026 (March 2026) introduced Zonas de Aceleraci\u00f3n de Renovables (ZARs) \u2014 designated areas where renewable projects enjoy streamlined permitting with reduced EIA requirements. ZARs cannot be in protected areas (national parks, Natura 2000). They prioritize industrial, degraded, or artificial land. Autonomous communities delimit concrete boundaries. Projects in ZARs can shave 12\u201318 months off timelines.",
+          "sources": [
+            {"label": "RDL 7/2026 (Osborne Clarke)", "url": "https://www.osborneclarke.com/insights/royal-decree-law-72026-new-regulatory-and-fiscal-framework-energy-spain"},
+            {"label": "RDL 7/2026 Impact (Cuatrecasas)", "url": "https://www.cuatrecasas.com/es/spain/eventos/impacto-del-rdl-7-2026-sobre-los-proyectos-renovables-vision-general"},
+            {"label": "MITECO ZAR Public Consultation", "url": "https://www.miteco.gob.es/es/energia/participacion/2026/detalle-participacion-publica-k-819.html"},
+            {"label": "RDL 7/2026 Analysis (Fieldfisher)", "url": "https://www.fieldfisher.com/es-es/locations/espana/actualidad/nuevo-paquete-regulatorio-energias-renovables"}
+          ]
+        },
+        {
+          "id": "st_join_parallel",
+          "type": "join",
+          "label": "",
+          "row": 11,
+          "col": 1
+        },
+        {
+          "id": "st_hybrid_check",
+          "type": "decision",
+          "label": "Hybridization?",
+          "row": 12,
+          "col": 1,
+          "detail": "Existing renewable facility adding storage or a different renewable source? Under RDL 23/2020, hybridization uses the same connection point and feed-in capacity \u2014 no new access permit required, only an update. Milestone timelines are calculated separately for the hybrid portion from the date of access permit update.",
+          "sources": [
+            {"label": "Hybridization (Magnus)", "url": "https://magnuscmd.com/renewable-hybridization/"},
+            {"label": "RDL 23/2020 Hybridization (HSF)", "url": "https://www.hsfkramer.com/insights/2020-06/catalyst-%E2%80%93-analysis-of-royal-decree-law-232020-of-23-june-its-impact-on-renewable"}
+          ]
+        },
+        {
+          "id": "st_hybrid_path",
+          "type": "step",
+          "label": "Simplified: Update access permit",
+          "row": 12,
+          "col": 2,
+          "timeline": "2\u20134 months",
+          "timelineBasis": "assumption",
+          "detail": "For hybridization, only an update to the existing access permit is needed. No new Permiso de Acceso application required. The hybrid facility must meet technical requirements and use the same connection point. Milestone deadlines run separately for the new portion."
+        },
+        {
+          "id": "st_construction",
+          "type": "step",
+          "label": "Construction (L\u00ednea de Evacuaci\u00f3n)",
+          "row": 13,
+          "col": 1,
+          "timeline": "12\u201324 months",
+          "timelineBasis": "evidence",
+          "detail": "Developer designs and constructs the l\u00ednea de evacuaci\u00f3n and all connection infrastructure at own cost. Must comply with Red El\u00e9ctrica P.O. standards. RD 997/2025 now mandates grid-forming inverters (15\u201325% more expensive) for new renewable installations.",
+          "sources": [
+            {"label": "RD 997/2025 Impact (Freshfields)", "url": "https://www.freshfields.com/en/our-thinking/briefings/2025/11/after-the-blackout-the-impact-of-rd-9972025-on-spains-energy-future"}
+          ]
+        },
+        {
+          "id": "st_hitos_check",
+          "type": "decision",
+          "label": "Hitos met? (RDL 23/2020)",
+          "row": 14,
+          "col": 1,
+          "detail": "RDL 23/2020 mandates 5 milestones (hitos): (1) Permiso de Acceso, (2) Permiso de Conexi\u00f3n, (3) AAP, (4) AAC, (5) Puesta en Servicio. Missing any hito triggers automatic permit revocation and forfeiture of the \u20ac40/kW guarantee. Deadlines extended to December 2030 under RDL 7/2026.",
+          "sources": [
+            {"label": "RDL 23/2020 (Mariscal)", "url": "https://www.mariscal-abogados.com/promotion-of-the-energy-reform-in-spain-the-royal-decree-law-23-2020/"},
+            {"label": "RDL 23/2020 (AleaSoft)", "url": "https://aleasoft.com/royal-decree-law-23-2020-good-news-spanish-renewable-energy-sector/"}
+          ]
+        },
+        {
+          "id": "st_permit_revoked",
+          "type": "step",
+          "label": "Permit revoked + guarantee lost",
+          "row": 14,
+          "col": 2,
+          "detail": "Automatic revocation of access and connection permits. The \u20ac40/kW financial guarantee is forfeited in full. The developer loses all progress and must reapply from scratch at an available node."
+        },
+        {
+          "id": "st_commissioning",
+          "type": "step",
+          "label": "Puesta en Servicio (Commissioning)",
+          "row": 15,
+          "col": 1,
+          "timeline": "1\u20132 months",
+          "timelineBasis": "assumption",
+          "detail": "Red El\u00e9ctrica conducts final technical inspections. Installation synchronized with the grid. 80% of the \u20ac40/kW guarantee returned upon successful commissioning (20% = \u20ac8/kW permanently lost). Must comply with all P.O. requirements including reactive power, fault ride-through (RD 997/2025 grid-forming mandate), and communications. This is Hito 5."
+        },
+        {
+          "id": "st_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 16,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {"from": "st_start", "to": "st_application"},
+        {"from": "st_application", "to": "st_node_check"},
+        {"from": "st_node_check", "to": "st_rejected", "label": "Saturated", "type": "conditional"},
+        {"from": "st_node_check", "to": "st_acceso", "label": "Available"},
+        {"from": "st_acceso", "to": "st_icctc"},
+        {"from": "st_icctc", "to": "st_ivctc"},
+        {"from": "st_ivctc", "to": "st_cta"},
+        {"from": "st_cta", "to": "st_size_check"},
+        {"from": "st_size_check", "to": "st_fork_parallel", "label": ">50MW: MITECO"},
+        {"from": "st_size_check", "to": "st_fork_parallel", "label": "<50MW: Aut. Comm.", "type": "conditional"},
+        {"from": "st_fork_parallel", "to": "st_aap", "type": "parallel"},
+        {"from": "st_fork_parallel", "to": "st_eia", "type": "parallel"},
+        {"from": "st_aap", "to": "st_join_parallel"},
+        {"from": "st_eia", "to": "st_zar_check"},
+        {"from": "st_zar_check", "to": "st_join_parallel", "label": "Yes: Simplified EIA", "type": "conditional"},
+        {"from": "st_zar_check", "to": "st_join_parallel", "label": "No: Full EIA"},
+        {"from": "st_join_parallel", "to": "st_hybrid_check"},
+        {"from": "st_hybrid_check", "to": "st_hybrid_path", "label": "Yes", "type": "conditional"},
+        {"from": "st_hybrid_check", "to": "st_construction", "label": "No (new project)"},
+        {"from": "st_hybrid_path", "to": "st_construction"},
+        {"from": "st_construction", "to": "st_hitos_check"},
+        {"from": "st_hitos_check", "to": "st_permit_revoked", "label": "Missed", "type": "conditional"},
+        {"from": "st_hitos_check", "to": "st_commissioning", "label": "On track"},
+        {"from": "st_commissioning", "to": "st_end"}
+      ]
+    },
+    "challenges": "<strong>Extreme node saturation:</strong> 75% of transmission nodes are fully reserved (88.3% for demand connections), with 165,457 MW locked across 386 nodes. Finding an available node with viable capacity is the single greatest obstacle for new projects.<br><br><strong>Massive rejection rate:</strong> In 2025, of 40 GW of access requests submitted, only 4.5 GW was approved and 25 GW was rejected outright — a 62.5% rejection rate reflecting the depth of grid congestion.<br><br><strong>Speculative hoarding:</strong> Despite the RDL 23/2020 milestone system (5 mandatory hitos), significant capacity remains locked by projects with no genuine intent or ability to build. The milestone system is being tightened under RDL 7/2026 with extensions to December 2030.<br><br><strong>Post-blackout regulatory uncertainty:</strong> The April 2025 Iberian blackout triggered rapid regulatory changes (RDL 7/2025, RD 997/2025, RDL 7/2026), creating an evolving compliance landscape where technical requirements — particularly for grid-forming inverters and reactive power — are still being finalized.<br><br><strong>Non-recoverable guarantee costs:</strong> The €40/kW financial guarantee is only 80% recoverable, meaning developers permanently lose 20% (€8/kW) regardless of project success. For a 100 MW project, this is a non-recoverable cost of €800,000."
+  },
+  "distribution": {
+    "title": "Distribution Connection (Red de Distribución)",
+    "voltageLevel": "<220 kV",
+    "overview": "Distribution connections in Spain are managed by five DSOs: i-DE (Iberdrola, ~11 million customers), e-distribución (Endesa/Enel, ~12 million customers), UFD Distribución (Naturgy, ~3.8 million customers), Viesgo (~0.7 million customers), and EDP (~0.6 million customers). The same RD 1183/2020 framework applies, with applications processed by the relevant DSO. For consumer connections, the process follows: solicitud (application), condiciones técnicas (technical conditions), presupuesto (budget/quotation), ejecución (construction), and activación (activation). Self-consumption installations (autoconsumo) benefit from a simplified regime under RD 244/2019: installations without surplus require no permits, those under 15 kW are exempt from most requirements, 15–100 kW follow a simplified process, and only installations above 100 kW require the full connection procedure. Collective self-consumption has been significantly expanded, with the proximity radius increased from 2 km to 5 km, minimum permanence reduced to 1 month, and a new gestor de autoconsumo (self-consumption manager) role established.",
+    "typicalTimeline": "1 month–3 years",
+    "timelineDetail": "Self-consumption <15 kW: ~1 month. Standard 15–100 kW: 3–6 months. Large >100 kW: 6–18 months. Complex HV: 1–3 years.",
+    "costRange": "€9–€17/kW + connection fees",
+    "costDetail": "Derechos de enganche (connection rights): €9.04 fixed. Derechos de extensión (extension rights): €17.37/kW. Self-consumption <15 kW: minimal cost (exempt from most fees). Developer bears network extension costs where applicable.",
+    "queueSize": null,
+    "queueDetail": null,
+    "keyBodies": [
+      {
+        "name": "i-DE",
+        "fullName": "i-DE Redes Eléctricas (Iberdrola Group)",
+        "role": "Spain's largest DSO by coverage area; serves ~11 million customers across 10 autonomous communities",
+        "url": "https://www.i-de.es"
+      },
+      {
+        "name": "e-distribución",
+        "fullName": "e-distribución (Endesa / Enel Group)",
+        "role": "Spain's largest DSO by customer count; serves ~12 million customers in Southern, Eastern Spain, Canaries, and Balearics",
+        "url": "https://www.edistribucion.com"
+      },
+      {
+        "name": "UFD",
+        "fullName": "UFD Distribución (Naturgy Group)",
+        "role": "Third-largest DSO; serves ~3.8 million customers primarily in Madrid, Catalonia, and Galicia",
+        "url": "https://www.ufd.es"
+      },
+      {
+        "name": "Viesgo",
+        "fullName": "Viesgo Distribución",
+        "role": "Regional DSO serving ~0.7 million customers in Cantabria, Asturias, and parts of Galicia",
+        "url": "https://www.viesgodistribucion.com"
+      },
+      {
+        "name": "EDP",
+        "fullName": "EDP España Distribución",
+        "role": "Regional DSO serving ~0.6 million customers in Asturias and parts of northern Spain",
+        "url": "https://www.edpenergia.es"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Solicitud (Application)",
+        "detail": "The developer or consumer submits a connection application to the relevant DSO (i-DE, e-distribución, UFD, Viesgo, or EDP) based on the geographic location of the installation. For self-consumption installations under 15 kW, this step is greatly simplified — only basic notification is required under RD 244/2019. For installations without surplus, no permit application is needed at all. Applications above 100 kW follow the full RD 1183/2020 procedure including access and connection permits.",
+        "timeline": "1–4 weeks"
+      },
+      {
+        "name": "Condiciones Técnicas (Technical Conditions)",
+        "detail": "The DSO evaluates the application and issues technical conditions specifying the point of connection, required equipment, protection schemes, metering configuration, and any network modifications needed. For self-consumption 15–100 kW, a simplified technical assessment applies. For larger installations, the DSO conducts network studies including load flow, short circuit, and protection coordination analyses.",
+        "timeline": "1–3 months"
+      },
+      {
+        "name": "Presupuesto (Budget/Quotation)",
+        "detail": "The DSO issues a formal cost quotation covering derechos de enganche (connection rights, €9.04 fixed fee), derechos de extensión (extension rights, €17.37/kW), and any network reinforcement or extension works required. The applicant must accept the quotation and make payment to proceed. For collective self-consumption installations, costs may be shared among participants according to agreed coefficients.",
+        "timeline": "1–2 months"
+      },
+      {
+        "name": "Ejecución (Construction/Installation)",
+        "detail": "The DSO or approved contractor carries out the connection works — installing cables, transformers, switchgear, and metering equipment. The developer installs their own generation or demand equipment to the agreed specification. For self-consumption installations, an authorized installer carries out the work and ensures compliance with RD 244/2019 technical requirements and the applicable ITC-BT regulations.",
+        "timeline": "1–6 months"
+      },
+      {
+        "name": "Activación (Activation & Commissioning)",
+        "detail": "The DSO inspects the completed installation, verifies compliance with the issued technical conditions, configures metering, and energizes the connection. For self-consumption with surplus, the DSO registers the installation in the RAIPRE (Registro Administrativo de Instalaciones de Producción de Energía Eléctrica) and configures the surplus compensation mechanism. For collective self-consumption, the gestor de autoconsumo coordinates participant registration and energy allocation coefficients.",
+        "timeline": "2–4 weeks"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "sd_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "sd_type_check",
+          "type": "decision",
+          "label": "Self-consumption?",
+          "row": 1,
+          "col": 1,
+          "detail": "First decision: is this a self-consumption (autoconsumo) installation under RD 244/2019, or a standard consumer/generator connection? Self-consumption installations benefit from a simplified regime, especially below 100 kW.",
+          "sources": [
+            {"label": "RD 244/2019 Guide (UNEF)", "url": "https://autoconsumo.unef.es/real-decreto-244-2019/"},
+            {"label": "IDAE Tramitaci\u00f3n Guide", "url": "https://www.idae.es/sites/default/files/documentos/publicaciones_idae/20240709_Guia_Profesional_Tramitacion_autoconsumo_v.6.pdf"}
+          ]
+        },
+        {
+          "id": "sd_surplus_check",
+          "type": "decision",
+          "label": "With surplus?",
+          "row": 2,
+          "col": 0,
+          "detail": "Self-consumption installations are divided into two categories: without surplus (sin excedentes) \u2014 no export to grid, no permits needed; and with surplus (con excedentes) \u2014 export allowed, follows tiered procedure based on size.",
+          "sources": [
+            {"label": "Autoconsumo Normativa", "url": "https://energanova.es/claves-de-la-normativa-de-autoconsumo-fotovoltaico-en-espana-real-decreto-244-2019/"},
+            {"label": "InformeSolar RD 244", "url": "https://informesolar.es/normativa-del-autoconsumo-en-espana-explicada-facil-real-decreto-244-2019/"}
+          ]
+        },
+        {
+          "id": "sd_no_surplus",
+          "type": "step",
+          "label": "Sin excedentes: No permits needed",
+          "row": 3,
+          "col": 0,
+          "timeline": "Immediate",
+          "timelineBasis": "evidence",
+          "detail": "Self-consumption without surplus requires NO connection permits. Install an anti-export device and you are done. The installation does not interact with the grid for export purposes."
+        },
+        {
+          "id": "sd_size_check",
+          "type": "decision",
+          "label": "Installation size?",
+          "row": 3,
+          "col": 1,
+          "detail": "Self-consumption with surplus is tiered: <15 kW (exempt from most requirements), 15\u2013100 kW (simplified procedure), >100 kW (full RD 1183/2020 procedure with access and connection permits)."
+        },
+        {
+          "id": "sd_under15",
+          "type": "step",
+          "label": "<15kW: Exempt (notification only)",
+          "row": 4,
+          "col": 0,
+          "timeline": "~1 month",
+          "timelineBasis": "evidence",
+          "detail": "Installations under 15 kW with surplus are exempt from most administrative requirements. Only basic notification to the DSO is required. Minimal cost (\u20ac9.04 connection rights). This is the fastest path to grid-connected self-consumption in Spain."
+        },
+        {
+          "id": "sd_15to100",
+          "type": "step",
+          "label": "15\u2013100kW: Simplified procedure",
+          "row": 4,
+          "col": 1,
+          "timeline": "3\u20136 months",
+          "timelineBasis": "evidence",
+          "detail": "Simplified technical assessment by the DSO. Reduced documentation requirements compared to full procedure. DSO issues technical conditions and quotation within 1\u20132 months."
+        },
+        {
+          "id": "sd_over100",
+          "type": "step",
+          "label": ">100kW: Full RD 1183/2020",
+          "row": 4,
+          "col": 2,
+          "timeline": "6\u201318 months",
+          "timelineBasis": "evidence",
+          "detail": "Installations above 100 kW require the full connection procedure under RD 1183/2020 including access and connection permits, technical studies, and potentially administrative authorizations."
+        },
+        {
+          "id": "sd_collective_check",
+          "type": "decision",
+          "label": "Collective?",
+          "row": 5,
+          "col": 1,
+          "detail": "Is this a collective self-consumption scheme (autoconsumo colectivo)? If so, additional governance requirements apply: participant agreements, allocation coefficients, and appointment of a gestor de autoconsumo. Proximity radius expanded from 2 km to 5 km. Minimum permanence reduced to 1 month. Monthly coefficient changes now allowed.",
+          "sources": [
+            {"label": "Autoconsumo Colectivo (Colmena Solar)", "url": "https://www.colmenasolar.com/normativa-autoconsumo-colectivo/"},
+            {"label": "RD 244 Update Feb 2025", "url": "https://www.energias-renovables.com/autoconsumo/autoconsumo-colectivo-clave-en-la-actualizacion-del-20250226"}
+          ]
+        },
+        {
+          "id": "sd_collective_setup",
+          "type": "step",
+          "label": "Gestor de autoconsumo + agreements",
+          "row": 6,
+          "col": 2,
+          "timeline": "1\u20133 months",
+          "timelineBasis": "assumption",
+          "detail": "Appoint a gestor de autoconsumo (natural or legal person) to represent participants. Establish participant agreements with energy allocation coefficients. Register shared surplus compensation mechanism. Coefficients can now be changed monthly instead of every several months."
+        },
+        {
+          "id": "sd_solicitud",
+          "type": "step",
+          "label": "Solicitud (Application to DSO)",
+          "row": 7,
+          "col": 1,
+          "timeline": "1\u20134 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Submit connection application to the relevant DSO based on geographic location: i-DE (Iberdrola, ~11M customers), e-distribuci\u00f3n (Endesa, ~12M), UFD (Naturgy, ~3.8M), Viesgo (~0.7M), or EDP (~0.6M). Each DSO has its own portal and process."
+        },
+        {
+          "id": "sd_condiciones",
+          "type": "step",
+          "label": "Condiciones T\u00e9cnicas",
+          "row": 8,
+          "col": 1,
+          "timeline": "1\u20133 months",
+          "timelineBasis": "evidence",
+          "detail": "DSO evaluates the application and issues technical conditions: point of connection, required equipment, protection schemes, metering configuration, and network modifications. For 15\u2013100 kW, simplified assessment. For larger installations, full load flow and short circuit studies."
+        },
+        {
+          "id": "sd_presupuesto",
+          "type": "step",
+          "label": "Presupuesto (Quotation)",
+          "row": 9,
+          "col": 1,
+          "timeline": "1\u20132 months",
+          "timelineBasis": "evidence",
+          "detail": "DSO issues cost quotation covering: derechos de enganche (\u20ac9.04 fixed), derechos de extensi\u00f3n (\u20ac17.37/kW), and any network reinforcement. For collective installations, costs shared among participants per agreed coefficients."
+        },
+        {
+          "id": "sd_obras",
+          "type": "step",
+          "label": "Ejecuci\u00f3n (Installation)",
+          "row": 10,
+          "col": 1,
+          "timeline": "1\u20136 months",
+          "timelineBasis": "evidence",
+          "detail": "DSO or approved contractor carries out connection works. Developer installs generation equipment per RD 244/2019 technical requirements and ITC-BT regulations. RD 997/2025 mandates grid-forming inverter capabilities for new installations, adding 15\u201325% to equipment costs."
+        },
+        {
+          "id": "sd_activacion",
+          "type": "step",
+          "label": "Activaci\u00f3n (Commissioning)",
+          "row": 11,
+          "col": 1,
+          "timeline": "2\u20134 weeks",
+          "timelineBasis": "evidence",
+          "detail": "DSO inspects installation, verifies compliance with technical conditions, configures metering. For surplus self-consumption, DSO registers in RAIPRE and configures surplus compensation. For collective schemes, gestor coordinates participant registration and energy allocation."
+        },
+        {
+          "id": "sd_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 12,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {"from": "sd_start", "to": "sd_type_check"},
+        {"from": "sd_type_check", "to": "sd_surplus_check", "label": "Self-consumption", "type": "conditional"},
+        {"from": "sd_type_check", "to": "sd_solicitud", "label": "Standard consumer"},
+        {"from": "sd_surplus_check", "to": "sd_no_surplus", "label": "No surplus", "type": "conditional"},
+        {"from": "sd_surplus_check", "to": "sd_size_check", "label": "With surplus"},
+        {"from": "sd_no_surplus", "to": "sd_end"},
+        {"from": "sd_size_check", "to": "sd_under15", "label": "<15kW", "type": "conditional"},
+        {"from": "sd_size_check", "to": "sd_15to100", "label": "15\u2013100kW"},
+        {"from": "sd_size_check", "to": "sd_over100", "label": ">100kW", "type": "conditional"},
+        {"from": "sd_under15", "to": "sd_collective_check"},
+        {"from": "sd_15to100", "to": "sd_collective_check"},
+        {"from": "sd_over100", "to": "sd_collective_check"},
+        {"from": "sd_collective_check", "to": "sd_collective_setup", "label": "Yes", "type": "conditional"},
+        {"from": "sd_collective_check", "to": "sd_solicitud", "label": "Individual"},
+        {"from": "sd_collective_setup", "to": "sd_solicitud"},
+        {"from": "sd_solicitud", "to": "sd_condiciones"},
+        {"from": "sd_condiciones", "to": "sd_presupuesto"},
+        {"from": "sd_presupuesto", "to": "sd_obras"},
+        {"from": "sd_obras", "to": "sd_activacion"},
+        {"from": "sd_activacion", "to": "sd_end"}
+      ]
+    },
+    "challenges": "<strong>DSO fragmentation:</strong> Five different DSOs with different portals, processes, and response times create inconsistency for developers operating across multiple regions of Spain.<br><br><strong>Self-consumption complexity:</strong> Despite simplification under RD 244/2019, the tiered system (<15 kW, 15–100 kW, >100 kW) and distinction between with/without surplus creates administrative complexity, particularly for collective self-consumption schemes.<br><br><strong>Collective self-consumption barriers:</strong> While the proximity radius was expanded from 2 km to 5 km, the coordination requirements — participant agreements, allocation coefficients, gestor de autoconsumo appointment — remain a barrier for larger community energy projects.<br><br><strong>Grid saturation at distribution level:</strong> In urban areas and regions with high renewable penetration, distribution networks are increasingly congested, leading to longer connection times and more expensive reinforcement requirements.<br><br><strong>Post-blackout technical requirements:</strong> RD 997/2025 mandates grid-forming inverter capabilities for new installations, increasing equipment costs and requiring inverter firmware upgrades even for smaller distribution-connected projects."
+  },
+  "reforms": [
+    {
+      "title": "April 28, 2025 Iberian Blackout",
+      "year": "2025",
+      "level": "both",
+      "description": "On April 28, 2025, the Iberian Peninsula experienced a <strong>complete grid collapse</strong> — the largest blackout in European history. The entire Spanish and Portuguese electricity systems went down simultaneously, with restoration taking between 10 and 20 hours depending on region. The blackout exposed critical vulnerabilities in a grid increasingly dominated by inverter-based resources (solar and wind) with insufficient synchronous inertia and inadequate reactive power support. This event became the catalyst for all subsequent emergency reforms and fundamentally changed Spain's approach to grid interconnection requirements, particularly around grid-forming inverter mandates and storage obligations."
+    },
+    {
+      "title": "RDL 7/2025 — Storage as Public Utility & Reactive Power",
+      "year": "2025",
+      "level": "both",
+      "description": "Enacted in June 2025 as a direct response to the April blackout, Real Decreto-ley 7/2025 declared <strong>energy storage a public utility</strong> (utilidad pública) for the first time in Spanish law, setting a national target of <strong>22.5 GW of storage capacity</strong>. The decree also mandated <strong>reactive power provision from solar PV installations</strong>, requiring both new and existing solar plants to provide voltage support services that had previously been supplied primarily by synchronous generators. This reform created a new category of grid services that solar developers must factor into interconnection requirements and equipment specifications."
+    },
+    {
+      "title": "RD 997/2025 — Permanent Grid Resilience Measures",
+      "year": "2025",
+      "level": "both",
+      "description": "Published in November 2025, Real Decreto 997/2025 established <strong>permanent grid resilience requirements</strong> that go beyond the emergency measures of RDL 7/2025. The centrepiece is the mandatory deployment of <strong>grid-forming inverters</strong> for new renewable installations connecting to the transmission and distribution networks. Grid-forming inverters can create their own voltage reference and provide synthetic inertia, unlike conventional grid-following inverters that require an existing grid signal. This requirement significantly impacts project economics — grid-forming inverter technology is approximately 15–25% more expensive than grid-following alternatives and requires different protection coordination approaches."
+    },
+    {
+      "title": "RDL 7/2026 — Renewable Acceleration Zones (ZARs) & Milestone Extensions",
+      "year": "2026",
+      "level": "both",
+      "description": "Enacted in March 2026, Real Decreto-ley 7/2026 introduced <strong>Zonas de Aceleración de Renovables (ZARs)</strong> — designated geographic zones where renewable project permitting is streamlined with reduced environmental assessment requirements and accelerated administrative timelines. The decree also introduced <strong>capacity reservation fees for demand connections</strong> to prevent speculative demand hoarding, and extended the RDL 23/2020 milestone deadlines to <strong>December 2030</strong>, giving existing permit holders additional time to meet construction hitos. This extension was controversial, as critics argued it rewards speculative developers who had failed to meet original deadlines."
+    },
+    {
+      "title": "RDL 23/2020 Milestone System (Hitos)",
+      "year": "2020",
+      "level": "transmission",
+      "description": "Real Decreto-ley 23/2020 established <strong>5 mandatory milestones (hitos)</strong> that all transmission-connected renewable projects must meet to retain their access and connection permits: (1) Permiso de Acceso, (2) Permiso de Conexión, (3) Autorización Administrativa, (4) Autorización de Construcción, and (5) Puesta en Servicio. Missing any milestone triggers automatic permit revocation and loss of the €40/kW financial guarantee. The system was designed to prevent speculative capacity hoarding — a major problem in Spain where developers reserved nodes with no genuine intent to build. Deadlines have since been extended under RDL 7/2026 to December 2030."
+    },
+    {
+      "title": "CNMC Circular 1/2024 — Demand & Storage Access Methodology",
+      "year": "2024",
+      "level": "both",
+      "description": "Published by the CNMC in 2024, Circular 1/2024 established the first dedicated <strong>access methodology for demand connections and energy storage</strong>, recognizing that the existing framework was designed primarily for generation. The circular introduced the distinction between <strong>firm capacity</strong> (guaranteed, non-curtailable access) and <strong>flexible capacity</strong> (access subject to curtailment during network constraints), allowing demand and storage projects to connect faster by accepting flexible terms. This methodology is particularly relevant for data centres, industrial electrification, and battery storage projects seeking grid access in saturated areas."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between Permiso de Acceso and Permiso de Conexión?",
+      "a": "Permiso de Acceso grants the right to use capacity at a specific network node — it is essentially a capacity reservation. Permiso de Conexión authorizes the physical connection infrastructure. Under RD 1183/2020, both are applied for jointly in a single application, but they remain legally distinct permits. The access permit is the bottleneck, as it depends on available node capacity (75% of nodes are saturated). The connection permit is a technical assessment of whether the proposed physical connection design meets Red Eléctrica's specifications."
+    },
+    {
+      "q": "What happened during the April 2025 blackout and how does it affect grid connections?",
+      "a": "On April 28, 2025, the entire Iberian Peninsula lost power in a complete grid collapse lasting 10–20 hours. The blackout was attributed to insufficient grid inertia and reactive power as synchronous generators were displaced by inverter-based renewables. The aftermath produced three major regulatory changes affecting all new connections: RDL 7/2025 mandated reactive power from solar installations and declared storage a public utility (22.5 GW target), RD 997/2025 requires grid-forming inverters for new connections, and equipment costs have risen 15–25% as a result."
+    },
+    {
+      "q": "How does self-consumption (autoconsumo) work in Spain?",
+      "a": "Under RD 244/2019, self-consumption installations follow a tiered regime: installations without surplus require no permits whatsoever; installations under 15 kW are exempt from most administrative requirements; 15–100 kW follow a simplified process; and only above 100 kW is the full connection procedure required. Collective self-consumption allows multiple consumers to share a single installation within a 5 km radius (expanded from 2 km), with a minimum permanence of just 1 month and a gestor de autoconsumo role to coordinate energy allocation among participants."
+    },
+    {
+      "q": "Why is 75% of Spain's grid saturated and what does it mean for new projects?",
+      "a": "Spain experienced a massive wave of renewable access permit applications from 2019–2022, with many speculative developers reserving node capacity using the €40/kW guarantee without genuine intent to build. This resulted in 386 nodes being reserved with 165,457 MW of capacity locked, saturating 75% of all transmission nodes (88.3% for demand). For new projects, this means most desirable connection points are unavailable. In 2025, of 40 GW of access requests, only 4.5 GW was approved and 25 GW was outright rejected. The RDL 23/2020 milestone system aims to free capacity from stalled projects, but progress has been slow."
+    },
+    {
+      "q": "What are ZARs (Zonas de Aceleración de Renovables) and how do they help?",
+      "a": "Introduced by RDL 7/2026 in March 2026, ZARs are designated geographic zones where renewable projects benefit from streamlined permitting: reduced environmental assessment requirements, accelerated administrative timelines, and prioritized grid access. ZARs are designed to channel new renewable development to areas with available grid capacity and lower environmental sensitivity, addressing the dual bottleneck of grid saturation and lengthy EIA processes. Projects in ZARs can potentially shave 12–18 months off the typical 3–5 year interconnection timeline."
+    }
+  ],
+  "note": "Spain's grid interconnection process is defined by two colliding forces: extreme node saturation from speculative permit hoarding (75% of nodes locked, 165 GW reserved) and a post-blackout regulatory overhaul that is fundamentally changing what it means to connect to the Spanish grid. The April 2025 Iberian blackout was a watershed moment — grid-forming inverters, reactive power from solar, and 22.5 GW of storage are no longer optional aspirations but regulatory mandates. For developers, the strategic calculus is: (1) securing access at a viable node is the critical path constraint, not the technical process; (2) the €40/kW guarantee with only 80% recovery means significant at-risk capital before any construction begins; (3) self-consumption under 15 kW remains the fastest and simplest route to grid connection; and (4) ZARs introduced in 2026 may open new corridors but their geographic designations and capacity allocations are still being defined. The RDL 23/2020 milestone system and its December 2030 extension will determine whether locked capacity is freed or further entrenched."
+}

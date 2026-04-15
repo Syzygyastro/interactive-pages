@@ -1,0 +1,962 @@
+{
+  "id": "usa",
+  "name": "United States",
+  "full": "United States — Grid Interconnection Process",
+  "type": "Federal-State Dual Jurisdiction",
+  "icon": "🇺🇸",
+  "accentColor": "#1A3A5C",
+  "accentBg": "#E8EEF4",
+  "badgeColor": "#E8EEF4",
+  "badgeText": "#1A3A5C",
+  "badge": "FERC Order 2023 Reform",
+  "badge2": "~2,300 GW Queue",
+  "tags": ["americas"],
+  "sub": "The US operates a dual-jurisdiction interconnection regime: FERC regulates transmission via ISOs/RTOs under Order 2023's new cluster-study framework, while 50 state PUCs govern distribution-level DER connections under varying rules modelled on IEEE 1547.",
+  "cardTags": ["FERC", "PJM", "MISO", "CAISO", "ERCOT", "IEEE 1547", "Order 2023"],
+  "desc": "The United States has the world's largest interconnection queue at approximately 2,300 GW across ~10,300 projects, though only 13% historically reach commercial operation. At the federal level, FERC Order 2023 (July 2023) replaced the legacy serial first-come-first-served process with mandatory cluster studies, commercial readiness deposits, and financial penalties for both withdrawing developers and late transmission providers. Seven ISOs/RTOs — PJM, MISO, CAISO, SPP, ERCOT, NYISO, and ISO-NE — administer the transmission queue under FERC's Large Generator Interconnection Procedures (LGIP), with ERCOT operating outside FERC jurisdiction under Texas's 'connect-and-manage' model. At the distribution level, each state's Public Utility Commission sets its own interconnection rules, typically following FERC's Small Generator Interconnection Procedures (SGIP) model and the IEEE 1547-2018 DER technical standard. California's Rule 21 and New York's Standardized Interconnection Requirements are the most developed state-level frameworks. FERC Order 1920 (2024) adds long-term regional transmission planning, while Order 2222 (2020) enables DER aggregation in wholesale markets.",
+  "transmission": {
+    "title": "Transmission Interconnection (FERC/ISO-RTO)",
+    "voltageLevel": "69 kV+",
+    "overview": "Transmission interconnection in the US is governed by FERC's Large Generator Interconnection Procedures (LGIP), as reformed by <strong>Order 2023</strong> (July 2023). Seven ISOs/RTOs administer the process: PJM, MISO, CAISO, SPP, ERCOT, NYISO, and ISO-NE. Order 2023 replaced the serial first-come-first-served queue with a mandatory cluster study process, imposed commercial readiness requirements through escalating deposits, introduced financial penalties for speculative withdrawals, and set transmission provider penalties of $1,000–$2,500 per day for late study completion. ERCOT, operating under Texas jurisdiction rather than FERC, uses a faster 'connect-and-manage' approach outside this federal framework.",
+    "typicalTimeline": "3–5+ years",
+    "timelineDetail": "The LGIP cluster study process spans approximately 615 days from application to interconnection agreement, but the median time from queue entry to commercial operation is 5 years. ERCOT projects can complete in 1–2 years due to the simpler connect-and-manage model.",
+    "costRange": "$5K–$250K+ deposits; network upgrades avg $240/kW",
+    "costDetail": "Initial interconnection request fees start at $5,000 plus site-control deposits ranging from $35,000 to $250,000 depending on project size. Under Order 2023, deposits escalate through study phases up to 20% of estimated network upgrade costs. PJM's average network upgrade cost has reached $240/kW — a 728% increase over earlier years. Developers must also fund any required transmission system upgrades, which can run into tens of millions of dollars for large projects.",
+    "queueSize": "~2,300 GW (2024)",
+    "queueDetail": "The US transmission queue holds approximately 2,300 GW across ~10,300 active projects — the first decline in a decade, down from ~2,600 GW, driven by Order 2023 withdrawal penalties and PJM's transition cycle clearing speculative entries. Only about 13% of queued projects historically reach commercial operation, with solar and storage comprising the majority of new requests.",
+    "keyBodies": [
+      {
+        "name": "FERC",
+        "fullName": "Federal Energy Regulatory Commission",
+        "role": "Sets interconnection rules for interstate transmission (Orders 2023, 2222, 1920). Regulates all ISOs/RTOs except ERCOT.",
+        "url": "https://www.ferc.gov"
+      },
+      {
+        "name": "PJM",
+        "fullName": "PJM Interconnection",
+        "role": "Largest US ISO by capacity. Manages 13-state mid-Atlantic/Midwest grid. ~63 GW queue remaining after Transition Cycle 1 cleared speculative projects from ~200 GW.",
+        "url": "https://www.pjm.com"
+      },
+      {
+        "name": "MISO",
+        "fullName": "Midcontinent Independent System Operator",
+        "role": "Operates 15-state central US grid. Processes large renewable and storage interconnection volumes across the wind belt.",
+        "url": "https://www.misoenergy.org"
+      },
+      {
+        "name": "CAISO",
+        "fullName": "California Independent System Operator",
+        "role": "Manages California's grid with ~126 GW in its interconnection queue, dominated by solar and battery storage projects.",
+        "url": "https://www.caiso.com"
+      },
+      {
+        "name": "ERCOT",
+        "fullName": "Electric Reliability Council of Texas",
+        "role": "Operates Texas's independent grid outside FERC jurisdiction. Uses a faster 'connect-and-manage' model with shorter timelines and no federal cluster study requirements.",
+        "url": "https://www.ercot.com"
+      },
+      {
+        "name": "SPP",
+        "fullName": "Southwest Power Pool",
+        "role": "Manages the central US grid spanning 14 states. Significant wind generation interconnection activity.",
+        "url": "https://www.spp.org"
+      },
+      {
+        "name": "NYISO",
+        "fullName": "New York Independent System Operator",
+        "role": "Operates New York's grid with ~27 GW in queue. Administers Class Year studies for transmission interconnection.",
+        "url": "https://www.nyiso.com"
+      },
+      {
+        "name": "ISO-NE",
+        "fullName": "ISO New England",
+        "role": "Manages the six-state New England grid with ~4 GW in queue. Smallest of the US ISOs by interconnection volume.",
+        "url": "https://www.iso-ne.com"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Pre-Application & Heatmap Review",
+        "detail": "Developer reviews publicly posted interconnection heatmaps (interactive visual representations of available capacity, required by Order 2023) and capacity data to select a viable point of interconnection. Optional informational discussions with the transmission provider may occur but are not mandatory. Developer secures 90% site control and selects ERIS (Energy Resource Interconnection Service, lower cost but curtailment risk) or NRIS (Network Resource Interconnection Service, firm delivery but higher upgrades).",
+        "timeline": "Pre-window (variable)"
+      },
+      {
+        "name": "Cluster Request Window & Application",
+        "detail": "Developer submits interconnection request during a 45-calendar-day cluster window. Requires: non-refundable $5,000 application fee, study deposit of $55,000-$250,000 (varies by project size), demonstration of 90% site control, and commercial readiness deposit equal to 2x the study deposit. Application must include technical specifications, proposed point of interconnection, and ERIS/NRIS service level selection.",
+        "timeline": "45 calendar days"
+      },
+      {
+        "name": "Deficiency Review",
+        "detail": "Transmission provider reviews each application for completeness. If deficiencies are found, the interconnection customer has 10 business days to cure. If deficiencies are not cured, the application is rejected and the customer must reapply in the next cluster window.",
+        "timeline": "10 business days to cure"
+      },
+      {
+        "name": "Customer Engagement Window",
+        "detail": "60-calendar-day period following the close of the cluster request window. The transmission provider posts cluster details within 10 business days of the window opening. Scoping meetings are held with all participating customers to discuss study assumptions, preliminary cost estimates, and study methodology. Customers may withdraw without penalty during this window.",
+        "timeline": "60 calendar days"
+      },
+      {
+        "name": "Cluster Study",
+        "detail": "The transmission provider performs a combined system impact study for the entire cluster, evaluating thermal, voltage, short-circuit, and stability impacts. Projects requesting ERIS are studied under energy-only dispatch assumptions; NRIS projects are modeled as network resources with firm delivery. Results include identification of required network upgrades and cost allocation among clustered projects on a per-capita (10-50%) and pro-rata MW (50-90%) basis. Affected system studies run in parallel on a separate track with the same deadline.",
+        "timeline": "150 calendar days"
+      },
+      {
+        "name": "Cluster Study Results — Decision Point",
+        "detail": "Developer reviews cluster study results and cost allocation. Decision: proceed to restudy/facilities study, or withdraw. Withdrawal triggers penalties if it materially impacts other customers in the cluster. Penalty exemptions apply for 'significant, unanticipated increases' — defined as 25%+ cost increase in the cluster study phase. Withdrawal penalties cannot exceed total deposits collected and are distributed pro rata to remaining customers.",
+        "timeline": "30 calendar days to decide"
+      },
+      {
+        "name": "Cluster Restudy (if triggered)",
+        "detail": "Triggered only when withdrawals or permitted modifications by higher- or equally-queued customers materially change cost allocations. The restudy re-evaluates the remaining cluster with updated assumptions. Commercial readiness deposit increases to 5% of identified network upgrade costs. FERC declined to limit the number of allowable restudies. Transmission provider faces $2,000/business-day penalty for late completion.",
+        "timeline": "150 calendar days"
+      },
+      {
+        "name": "Facilities Study",
+        "detail": "Detailed engineering study to design specific interconnection facilities and network upgrades. Produces precise cost estimates, engineering drawings, and construction schedules. Developer must demonstrate 100% site control by facilities study agreement execution. Commercial readiness deposit increases to 10% of network upgrade costs. Transmission provider faces $2,500/business-day penalty for late completion — the highest penalty tier reflecting the greater harm from late-stage delays.",
+        "timeline": "150 calendar days"
+      },
+      {
+        "name": "LGIA Negotiation",
+        "detail": "Developer and transmission provider negotiate the Large Generator Interconnection Agreement (LGIA) specifying technical requirements, cost responsibilities, milestone schedules, and operational obligations. If parties cannot reach agreement within 60 days, either party may request FERC to resolve the dispute by filing an unexecuted LGIA. Upon LGIA execution, the commercial readiness deposit increases to 20% of estimated network upgrade costs.",
+        "timeline": "60 calendar days"
+      },
+      {
+        "name": "Construction & Commissioning",
+        "detail": "Developer constructs generator and interconnection facilities per LGIA specifications. Transmission provider constructs network upgrades. Developer must achieve 100% site control within 180 days of LGIA effective date or LGIA may be terminated. Upon completion, commissioning tests verify compliance with NERC reliability standards, IEEE 1547 (if applicable), and LGIA technical requirements. Commercial Operation Date (COD) is achieved upon successful commissioning.",
+        "timeline": "12-36 months (varies)"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "tx_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "id": "tx_jurisdiction",
+          "type": "decision",
+          "label": "FERC or ERCOT?",
+          "row": 1,
+          "col": 2,
+          "detail": "The first critical decision: is the project interconnecting within a FERC-jurisdictional ISO/RTO (PJM, MISO, CAISO, SPP, NYISO, ISO-NE) or within ERCOT (Texas)? ERCOT operates outside FERC jurisdiction and uses a fundamentally different 'connect-and-manage' process. All other ISOs/RTOs follow FERC Order 2023's cluster study framework.",
+          "sources": [
+            {"label": "FERC Order 2023 Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule"},
+            {"label": "ERCOT Resource Integration", "url": "https://www.ercot.com/services/rq/integration"}
+          ]
+        },
+        {
+          "id": "tx_ercot_ginr",
+          "type": "step",
+          "label": "ERCOT: GINR Application & Screening Study",
+          "row": 2,
+          "col": 4,
+          "timeline": "60-90 days",
+          "timelineBasis": "evidence",
+          "detail": "Developer submits a Generation Interconnection or Change Request (GINR) to ERCOT for projects adding 10 MW+ at the point of interconnect. ERCOT conducts a screening study evaluating steady-state power flow and transfer analysis, and assesses subsynchronous resonance (SSR) risk. ERCOT's 'connect-and-manage' model does not require developers to fund network upgrades before connecting — generators connect and accept curtailment risk if the system is constrained. This is equivalent to ERIS-only service.",
+          "sources": [
+            {"label": "ERCOT Interconnection Guide", "url": "https://www.ercot.com/files/docs/2013/02/08/guide_to_the_interconnection_process_v1_1_draft_02072012.doc"},
+            {"label": "Utility Dive: ERCOT Connect-and-Manage", "url": "https://www.utilitydive.com/news/connect-and-manage-grid-interconnection-ferc-ercot-transmission-planning/698949/"}
+          ]
+        },
+        {
+          "id": "tx_ercot_fis",
+          "type": "step",
+          "label": "ERCOT: Full Interconnection Study (FIS)",
+          "row": 3,
+          "col": 4,
+          "timeline": "6-12 months",
+          "timelineBasis": "evidence",
+          "detail": "If the screening study indicates the project can proceed, the developer submits a Full Interconnection Study (FIS) request to the host Transmission/Distribution Service Provider (TDSP) within 180 days of screening study completion (or the GINR is cancelled). The FIS includes steady-state, short-circuit, stability, and facility studies performed by the TDSP. A 60-day scoping period begins at the FIS kick-off meeting to agree on study scope; if no agreement is reached within 60 days, ERCOT mediates or the GINR may be terminated.",
+          "sources": [
+            {"label": "ERCOT Resource Interconnection Handbook", "url": "https://www.ercot.com/files/docs/2014/12/02/05.__interconnection_handbook_12_02_14.pdf"}
+          ]
+        },
+        {
+          "id": "tx_ercot_sgia",
+          "type": "step",
+          "label": "ERCOT: SGIA & Registration",
+          "row": 4,
+          "col": 4,
+          "timeline": "2-4 months",
+          "timelineBasis": "assumption",
+          "detail": "Upon FIS completion, the developer executes a Standard Generation Interconnection Agreement (SGIA) with the host TDSP. The developer transitions from Interconnecting Entity (IE) to Resource Entity (RE) and registers in ERCOT's systems. ERCOT issues a Provisional Resource Entity Code. Quarterly Stability Assessments (QSA) evaluate system impacts of all planned large generators every 3 months.",
+          "sources": [
+            {"label": "ERCOT Integration Process", "url": "https://www.ercot.com/services/rq/integration"}
+          ]
+        },
+        {
+          "id": "tx_ercot_commission",
+          "type": "step",
+          "label": "ERCOT: Testing & COD",
+          "row": 5,
+          "col": 4,
+          "timeline": "2-6 months",
+          "timelineBasis": "assumption",
+          "detail": "Prior to energization, IBRs must undergo field testing including Ride-Through Verification to demonstrate fault ride-through per ERCOT/NERC requirements. The developer achieves an approved Production Load Date (PLD) — the earliest point at which the facility may be energized. Total ERCOT timeline: 1-2 years from GINR to COD, vs. 3-5+ years for FERC-jurisdictional ISOs.",
+          "sources": [
+            {"label": "PSC Consulting: ERCOT Process", "url": "https://www.pscconsulting.com/navigating-ercot-interconnection-with-confidence-a-clear-path-from-application-to-approval/"}
+          ]
+        },
+        {
+          "id": "tx_ercot_end",
+          "type": "end",
+          "label": "ERCOT: Connected",
+          "row": 6,
+          "col": 4
+        },
+        {
+          "id": "tx_preapp",
+          "type": "step",
+          "label": "Pre-Application: Heatmap & Site Selection",
+          "row": 2,
+          "col": 2,
+          "timeline": "Variable",
+          "timelineBasis": "assumption",
+          "detail": "Developer reviews the transmission provider's publicly posted interconnection heatmap — an interactive visual representation of available capacity that must be updated within 30 days of each cluster study completion (required by Order 2023). Developer secures 90% exclusive site control, selects ERIS or NRIS service level, and prepares technical specifications. ERIS provides energy-only injection rights with lower upgrade costs but curtailment risk; NRIS provides firm network resource delivery but triggers full deliverability study and higher network upgrade costs.",
+          "sources": [
+            {"label": "FERC Order 2023 Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule"},
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"}
+          ]
+        },
+        {
+          "id": "tx_cluster_window",
+          "type": "step",
+          "label": "Cluster Request Window (45 days)",
+          "row": 3,
+          "col": 2,
+          "timeline": "45 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "Annual 45-calendar-day window during which all interconnection requests are submitted simultaneously. Required financial commitments: non-refundable $5,000 application fee, study deposit of $55,000-$250,000 (based on project MW size), and commercial readiness deposit equal to 2x the study deposit (cash, irrevocable letter of credit, or surety bond). Must demonstrate 90% exclusive site control. Application specifies ERIS or NRIS service level, proposed point of interconnection, and full technical data.",
+          "sources": [
+            {"label": "FERC Order 2023 Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule"},
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"},
+            {"label": "Hunton: Order 2023 Analysis", "url": "https://www.hunton.com/insights/legal/ferc-order-2023-aims-at-improving-expediting-the-generator-interconnection-process"}
+          ]
+        },
+        {
+          "id": "tx_deficiency",
+          "type": "decision",
+          "label": "Application complete?",
+          "row": 4,
+          "col": 2,
+          "detail": "Transmission provider reviews each application for completeness within the cluster window. If deficiencies are found (missing data, insufficient deposit, inadequate site control documentation), the customer receives a deficiency notice and has exactly 10 business days to cure. Applications not cured within 10 business days are rejected; the customer must reapply in the next annual cluster window, losing up to a full year.",
+          "sources": [
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"}
+          ]
+        },
+        {
+          "id": "tx_deficiency_cure",
+          "type": "step",
+          "label": "Cure Deficiency (10 bus. days)",
+          "row": 4,
+          "col": 3,
+          "timeline": "10 business days",
+          "timelineBasis": "evidence",
+          "detail": "Developer has 10 business days from receipt of deficiency notice to provide the missing information or documentation. If successfully cured, the application re-enters the cluster. If not cured, the application is rejected.",
+          "sources": [
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"}
+          ]
+        },
+        {
+          "id": "tx_rejected",
+          "type": "end",
+          "label": "Rejected (reapply next cycle)",
+          "row": 5,
+          "col": 3
+        },
+        {
+          "id": "tx_engagement",
+          "type": "step",
+          "label": "Customer Engagement Window",
+          "row": 5,
+          "col": 2,
+          "timeline": "60 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "60-calendar-day period following the close of the cluster request window. The transmission provider publishes cluster details within 10 business days of the window opening. Scoping meetings are held with all participating customers to discuss study assumptions, cost methodologies, and preliminary system conditions. Customers may withdraw during this window without financial penalty. The engagement window was extended from 30 days (as proposed in the NOPR) to 60 days in the final rule.",
+          "sources": [
+            {"label": "FERC Order 2023 Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule"},
+            {"label": "Advanced Energy United: Order 2023 101", "url": "https://advancedenergyunited.org/blog/ferc_order_2023_101/"}
+          ]
+        },
+        {
+          "id": "tx_cluster_study",
+          "type": "step",
+          "label": "Cluster Study (150 days)",
+          "row": 6,
+          "col": 2,
+          "timeline": "150 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "Transmission provider performs a single-phase combined system impact study for the entire cluster. Evaluates thermal overloads, voltage violations, short-circuit contributions, and transient stability for all projects simultaneously. ERIS projects are studied under energy-only dispatch assumptions; NRIS projects are modeled as firm network resources. Identifies required network upgrades and allocates costs: 10-50% on per-capita basis and 50-90% pro-rata by MW. Affected system studies run on a parallel track with the same 150-day deadline. Late completion triggers $1,000/business-day penalty (after 10 business day grace period). Penalty relief: no penalties until the third cluster cycle; deadlines extendable by up to 30 business days by mutual agreement.",
+          "sources": [
+            {"label": "FERC Order 2023 Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule"},
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"},
+            {"label": "Climate Solutions Law: Study Penalties", "url": "https://www.climatesolutionslaw.com/2024/03/generator-interconnection-rule-ferc-provides-clarification-and-tweaks-to-order-no-2023/"}
+          ]
+        },
+        {
+          "id": "tx_affected_system",
+          "type": "step",
+          "label": "Affected System Study (parallel)",
+          "row": 6,
+          "col": 0,
+          "timeline": "150 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "Runs in parallel with the cluster study. When a proposed interconnection may impact a neighboring transmission provider's system, the affected system operator must respond in writing within 20 business days of receiving notice from the host provider. Uses ERIS modeling standard. Standardized pro forma agreements are required. Subject to $2,000/business-day late penalty. Affected system operators must provide cost and schedule estimates to the host provider under firm deadlines.",
+          "sources": [
+            {"label": "FERC Order 2023-A Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule-2023-A"},
+            {"label": "Troutman: Order 2023 Summary", "url": "https://www.troutman.com/insights/troutman-pepper-summary-of-ferc-order-no-2023-on-generator-interconnection-reform/"}
+          ]
+        },
+        {
+          "id": "tx_study_results",
+          "type": "decision",
+          "label": "Proceed or withdraw?",
+          "row": 7,
+          "col": 2,
+          "detail": "After receiving cluster study results and cost allocation, the developer must decide: proceed (posting increased deposits) or withdraw. Withdrawal triggers financial penalties if it materially impacts other customers in the cluster. Penalty exemption: if network upgrade costs increased by 25%+ vs. the cluster study estimate, or if the withdrawal has no material impact on other requests. Withdrawal penalties cannot exceed total deposits collected; proceeds are distributed pro rata to remaining customers to offset cost increases. Penalty amounts escalate progressively through study phases.",
+          "sources": [
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"},
+            {"label": "FERC Order 2023-A Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule-2023-A"}
+          ]
+        },
+        {
+          "id": "tx_withdraw",
+          "type": "end",
+          "label": "Withdraw (penalties may apply)",
+          "row": 7,
+          "col": 0
+        },
+        {
+          "id": "tx_restudy_check",
+          "type": "decision",
+          "label": "Withdrawals trigger restudy?",
+          "row": 8,
+          "col": 2,
+          "detail": "If withdrawals or permitted modifications by higher- or equally-queued customers materially change cost allocations or system conditions, a cluster restudy is triggered. FERC declined to set limits on the number of allowable restudies — meaning multiple restudies are theoretically possible if successive withdrawals occur. If no material changes result, the process proceeds directly to the facilities study.",
+          "sources": [
+            {"label": "Troutman: Order 2023 Summary", "url": "https://www.troutman.com/insights/troutman-pepper-summary-of-ferc-order-no-2023-on-generator-interconnection-reform/"}
+          ]
+        },
+        {
+          "id": "tx_restudy",
+          "type": "step",
+          "label": "Cluster Restudy (150 days)",
+          "row": 9,
+          "col": 1,
+          "timeline": "150 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "Re-evaluates the remaining cluster with updated system conditions and reallocated costs. Commercial readiness deposit increases to 5% of identified network upgrade costs. Late completion triggers $2,000/business-day penalty (doubled from cluster study penalty, reflecting greater late-stage harm). After 10 business day grace period. Developer must decide again whether to proceed or withdraw based on restudy results.",
+          "sources": [
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"},
+            {"label": "Hunton: Order 2023 Analysis", "url": "https://www.hunton.com/insights/legal/ferc-order-2023-aims-at-improving-expediting-the-generator-interconnection-process"}
+          ]
+        },
+        {
+          "id": "tx_restudy_decision",
+          "type": "decision",
+          "label": "Proceed after restudy?",
+          "row": 10,
+          "col": 1,
+          "detail": "Developer reviews restudy results. If network upgrade costs increased by 100%+ vs. the original cluster study estimate, the developer may withdraw without penalty. Otherwise, withdrawal triggers escalated penalties. Proceeding requires posting the increased 5% commercial readiness deposit based on updated network upgrade costs.",
+          "sources": [
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"}
+          ]
+        },
+        {
+          "id": "tx_withdraw2",
+          "type": "end",
+          "label": "Withdraw (escalated penalties)",
+          "row": 10,
+          "col": 0
+        },
+        {
+          "id": "tx_facilities",
+          "type": "step",
+          "label": "Facilities Study (150 days)",
+          "row": 11,
+          "col": 2,
+          "timeline": "150 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "Individual detailed engineering study to design specific interconnection facilities and network upgrades. Produces precise cost estimates, engineering drawings, and construction schedules. Developer must demonstrate 100% site control by facilities study agreement execution. Commercial readiness deposit increases to 10% of network upgrade costs. Transmission provider faces $2,500/business-day penalty for late completion — the highest penalty tier. Output reductions of up to 60% before cluster study return, or an additional 15% before executed facilities study return, are not considered material modifications.",
+          "sources": [
+            {"label": "FERC Order 2023 Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule"},
+            {"label": "Foley Hoag: Order 2023-A Guide", "url": "https://foleyhoag.com/news-and-insights/publications/alerts-and-updates/2024/march/a-complete-guide-to-order-no-2023a-fercs-interconnection-reform-rehearing-order/"}
+          ]
+        },
+        {
+          "id": "tx_lgia",
+          "type": "step",
+          "label": "LGIA Negotiation (60 days)",
+          "row": 12,
+          "col": 2,
+          "timeline": "60 calendar days",
+          "timelineBasis": "evidence",
+          "detail": "Developer and transmission provider negotiate the Large Generator Interconnection Agreement (LGIA). Upon LGIA execution or request for filing of an unexecuted LGIA, the commercial readiness deposit increases to 20% of estimated network upgrade costs (the maximum tier). If parties cannot agree within 60 days, either party may request FERC to resolve the dispute by filing an unexecuted LGIA. The 30-calendar-day procedural deadline begins after all cluster customers have either executed agreements, withdrawn, or requested unexecuted filings.",
+          "sources": [
+            {"label": "K&L Gates: Order 2023 Summary", "url": "https://www.klgates.com/Order-No-2023-Interconnection-Reform-is-Finally-Here-9-7-2023"},
+            {"label": "FERC Order 2023-A Explainer", "url": "https://www.ferc.gov/explainer-interconnection-final-rule-2023-A"}
+          ]
+        },
+        {
+          "id": "tx_lgia_dispute",
+          "type": "decision",
+          "label": "LGIA agreed?",
+          "row": 13,
+          "col": 2,
+          "detail": "If the developer and transmission provider reach agreement, the executed LGIA is filed with FERC. If they disagree on terms, either party may file an unexecuted LGIA with FERC for resolution. FERC then determines the disputed terms. Filing an unexecuted LGIA does not stop the project from progressing — construction may begin while FERC resolves the dispute.",
+          "sources": [
+            {"label": "Hunton: Order 2023 Analysis", "url": "https://www.hunton.com/insights/legal/ferc-order-2023-aims-at-improving-expediting-the-generator-interconnection-process"}
+          ]
+        },
+        {
+          "id": "tx_ferc_filing",
+          "type": "step",
+          "label": "Unexecuted LGIA filed with FERC",
+          "row": 13,
+          "col": 0,
+          "timeline": "Variable (months)",
+          "timelineBasis": "assumption",
+          "detail": "Either party files the unexecuted LGIA with FERC, along with documentation of the disputed terms. FERC issues an order resolving the disputes. This parallel process does not necessarily block construction from beginning.",
+          "sources": [
+            {"label": "FERC LGIA Procedures", "url": "https://www.ferc.gov/electric-transmission/generator-interconnection/final-rules-establishing-and-revising-standard"}
+          ]
+        },
+        {
+          "id": "tx_construction",
+          "type": "step",
+          "label": "Construction & Network Upgrades",
+          "row": 14,
+          "col": 2,
+          "timeline": "12-36 months",
+          "timelineBasis": "assumption",
+          "detail": "Developer constructs the generating facility and interconnection equipment per LGIA specifications. The transmission provider constructs required network upgrades funded by the developer (costs may be refundable through transmission credits over time). Developer must achieve 100% site control within 180 calendar days of the LGIA effective date, or the LGIA may be terminated. For NRIS service, all network upgrades must be completed before commercial operation; for ERIS service, the generator may operate with curtailment while upgrades are completed.",
+          "sources": [
+            {"label": "Blank Rome: Order 2023 Analysis", "url": "https://www.blankrome.com/publications/order-no-2023-ferc-takes-step-reforming-transmission-grid-policies-enacting-generator"}
+          ]
+        },
+        {
+          "id": "tx_commission",
+          "type": "step",
+          "label": "Commissioning & COD",
+          "row": 15,
+          "col": 2,
+          "timeline": "1-3 months",
+          "timelineBasis": "assumption",
+          "detail": "Commissioning tests verify compliance with NERC reliability standards, the LGIA's technical requirements, and applicable grid codes. Tests include real and reactive power output verification, protective relay coordination, SCADA/telemetry, and (for IBRs) ride-through capability under abnormal frequency/voltage conditions. Successful commissioning achieves the Commercial Operation Date (COD). The entire FERC-jurisdictional process from application to COD typically spans 3-5+ years; the median is approximately 5 years.",
+          "sources": [
+            {"label": "Troutman: Order 2023 Summary", "url": "https://www.troutman.com/insights/troutman-pepper-summary-of-ferc-order-no-2023-on-generator-interconnection-reform/"}
+          ]
+        },
+        {
+          "id": "tx_end",
+          "type": "end",
+          "label": "Commercial Operation",
+          "row": 16,
+          "col": 2
+        }
+      ],
+      "edges": [
+        {"from": "tx_start", "to": "tx_jurisdiction"},
+        {"from": "tx_jurisdiction", "to": "tx_ercot_ginr", "label": "ERCOT (Texas)", "type": "conditional"},
+        {"from": "tx_ercot_ginr", "to": "tx_ercot_fis"},
+        {"from": "tx_ercot_fis", "to": "tx_ercot_sgia"},
+        {"from": "tx_ercot_sgia", "to": "tx_ercot_commission"},
+        {"from": "tx_ercot_commission", "to": "tx_ercot_end"},
+        {"from": "tx_jurisdiction", "to": "tx_preapp", "label": "FERC ISO/RTO"},
+        {"from": "tx_preapp", "to": "tx_cluster_window"},
+        {"from": "tx_cluster_window", "to": "tx_deficiency"},
+        {"from": "tx_deficiency", "to": "tx_deficiency_cure", "label": "Deficient", "type": "conditional"},
+        {"from": "tx_deficiency_cure", "to": "tx_deficiency", "label": "Cured", "type": "conditional"},
+        {"from": "tx_deficiency_cure", "to": "tx_rejected", "label": "Not cured", "type": "conditional"},
+        {"from": "tx_deficiency", "to": "tx_engagement", "label": "Complete"},
+        {"from": "tx_engagement", "to": "tx_cluster_study"},
+        {"from": "tx_cluster_study", "to": "tx_affected_system", "label": "Parallel", "type": "parallel"},
+        {"from": "tx_cluster_study", "to": "tx_study_results"},
+        {"from": "tx_affected_system", "to": "tx_study_results", "type": "parallel"},
+        {"from": "tx_study_results", "to": "tx_withdraw", "label": "Withdraw", "type": "conditional"},
+        {"from": "tx_study_results", "to": "tx_restudy_check", "label": "Proceed"},
+        {"from": "tx_restudy_check", "to": "tx_restudy", "label": "Yes", "type": "conditional"},
+        {"from": "tx_restudy_check", "to": "tx_facilities", "label": "No (skip)"},
+        {"from": "tx_restudy", "to": "tx_restudy_decision"},
+        {"from": "tx_restudy_decision", "to": "tx_withdraw2", "label": "Withdraw", "type": "conditional"},
+        {"from": "tx_restudy_decision", "to": "tx_facilities", "label": "Proceed"},
+        {"from": "tx_facilities", "to": "tx_lgia"},
+        {"from": "tx_lgia", "to": "tx_lgia_dispute"},
+        {"from": "tx_lgia_dispute", "to": "tx_ferc_filing", "label": "Disagree", "type": "conditional"},
+        {"from": "tx_ferc_filing", "to": "tx_construction"},
+        {"from": "tx_lgia_dispute", "to": "tx_construction", "label": "Agree"},
+        {"from": "tx_construction", "to": "tx_commission"},
+        {"from": "tx_commission", "to": "tx_end"}
+      ]
+    },
+    "challenges": "The US transmission queue faces a historic backlog of ~2,300 GW — roughly double installed US generation capacity — with only a 13% completion rate and a median 5-year wait to commercial operation. <strong>Cost escalation</strong> is severe: PJM network upgrade costs have increased 728% to an average of $240/kW, with late-stage cost re-allocation triggering cascading withdrawals. <strong>Order 2023 implementation</strong> varies by ISO, with transition timelines extending through 2025-2026, creating temporary uncertainty for developers. <strong>Interconnection-transmission planning disconnect</strong> means individual projects bear costs for system-wide upgrades, though FERC Order 1920 aims to address this through proactive regional planning. <strong>ERCOT fragmentation</strong> creates a two-tier US market: Texas projects connect in 1-2 years while projects in FERC-jurisdictional ISOs face 3-5+ year timelines. <strong>Speculative entries</strong> have been reduced by Order 2023's deposit requirements, but the queue remains historically large. <strong>Study delay penalties</strong> of $1,000-$2,500/business-day incentivize timely study completion but do not take effect until the third cluster cycle, meaning early cycles face continued risk of delays. <strong>ERIS vs NRIS complexity</strong>: most developers request NRIS for firm delivery, but the higher network upgrade costs drive some toward ERIS with curtailment risk, creating a two-tier outcome even within the same cluster."
+  },
+  "distribution": {
+    "title": "Distribution Interconnection (State PUC/Utility)",
+    "voltageLevel": "<69 kV",
+    "overview": "Distribution-level interconnection in the US is regulated by individual state Public Utility Commissions (PUCs), not FERC, creating a patchwork of 50+ distinct regulatory frameworks. Most states model their rules on FERC's <strong>Small Generator Interconnection Procedures (SGIP)</strong>, which defines three tiers: Level 1 (simplified for systems under 10 kW), Level 2 (fast-track for systems up to 2 MW on certain feeders), and Level 3 (full study for larger or more complex projects). The foundational technical standard is <strong>IEEE 1547-2018</strong>, which governs DER voltage and frequency ride-through, anti-islanding protection, and grid-support functions. California's Rule 21 and New York's Standardized Interconnection Requirements (SIR) are the most developed state frameworks. As of Q1 2025, 47 states had taken distributed solar policy action, reflecting broad national momentum toward DER deployment.",
+    "typicalTimeline": "2 weeks – 24+ months",
+    "timelineDetail": "Timelines vary dramatically by project size and state: residential systems under 10 kW typically complete in 2–4 weeks through simplified or automated review. Projects of 2–10 MW require 6–18 months with supplemental or detailed studies. Larger DER projects of 10–20 MW can take 12–24+ months, approaching transmission-level complexity. State-specific procedures and utility staffing levels create significant variation.",
+    "costRange": "$0–$1K (residential) to $50K+ (commercial study fees)",
+    "costDetail": "Residential systems under 10 kW often face minimal or no application fees beyond standard utility charges. Level 2 fast-track reviews typically cost $1,000–$5,000 in application and processing fees. Level 3 full interconnection studies for larger DER projects can cost $10,000–$50,000+ in study deposits, plus developer-funded distribution system upgrades for hosting capacity constraints. Costs vary significantly by utility and state.",
+    "queueSize": "Varies by utility",
+    "queueDetail": "Distribution queues are managed individually by each utility and are generally not aggregated nationally. Major utilities in solar-heavy states (California, Texas, New York, Massachusetts) report growing DER application volumes. California utilities process tens of thousands of Rule 21 applications annually. National DER capacity exceeded 165 GW installed by end of 2024.",
+    "keyBodies": [
+      {
+        "name": "State PUCs",
+        "fullName": "State Public Utility Commissions",
+        "role": "Each state's PUC sets distribution interconnection rules, tariffs, timelines, and technical requirements. 50+ distinct regulatory frameworks across the US.",
+        "url": "https://www.naruc.org"
+      },
+      {
+        "name": "CPUC",
+        "fullName": "California Public Utilities Commission",
+        "role": "Administers Rule 21 interconnection for California's three investor-owned utilities. Launched R.25-08-004 modernization rulemaking in August 2025 to streamline DER interconnection.",
+        "url": "https://www.cpuc.ca.gov"
+      },
+      {
+        "name": "NYPSC",
+        "fullName": "New York Public Service Commission",
+        "role": "Oversees the Standardized Interconnection Requirements (SIR) with 6-step (<50 kW) and 11-step (50 kW–5 MW) procedures for distributed generation.",
+        "url": "https://www.dps.ny.gov"
+      },
+      {
+        "name": "IEEE",
+        "fullName": "Institute of Electrical and Electronics Engineers",
+        "role": "Publishes IEEE 1547-2018, the foundational DER interconnection technical standard adopted by reference in most US state rules. Covers voltage/frequency ride-through, anti-islanding, and grid-support functions.",
+        "url": "https://www.ieee.org"
+      },
+      {
+        "name": "Utilities (IOUs/Munis/Co-ops)",
+        "fullName": "Investor-Owned Utilities, Municipal Utilities, and Cooperatives",
+        "role": "Process individual interconnection applications, perform technical studies, approve DER connections, and manage distribution hosting capacity. Over 3,000 utilities operate in the US.",
+        "url": null
+      },
+      {
+        "name": "IREC",
+        "fullName": "Interstate Renewable Energy Council",
+        "role": "Develops model interconnection procedures and publishes annual scorecards rating state interconnection policies. Key resource for best-practice standards.",
+        "url": "https://irecusa.org"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Application & Size Classification",
+        "detail": "Developer submits interconnection application to the utility specifying project type, size (kW/MW), location, equipment certifications, and whether the project is net-metered or non-net-metered. The utility classifies the project into one of three review levels based on size and type: Level 1 (under 10 kW, certified inverter-based), Level 2 (up to 5 MW, fast-track eligible), or Level 3 (all others up to 20 MW). The utility must notify the customer within 10 business days whether the application is complete or incomplete.",
+        "timeline": "10 business days (completeness review)"
+      },
+      {
+        "name": "Level 1 — Simplified/Inverter Process",
+        "detail": "For certified inverter-based systems under 10 kW (residential solar). Uses the same technical screens as Level 2 but with a simplified timeline. Key screens include: certified equipment (UL 1741/IEEE 1547), aggregate generation below 15% of feeder peak load, adequate short-circuit capacity, and no construction of utility facilities required. If all screens pass, the utility provides an executable interconnection agreement within 5 business days. Net-metered systems follow the same screening but with additional metering requirements.",
+        "timeline": "15 business days (screening) + 5 days (agreement)"
+      },
+      {
+        "name": "Level 2 — Fast Track Screening",
+        "detail": "For eligible generators up to 5 MW (raised from 2 MW by FERC Order 792). The utility performs an initial technical review within 15 business days against 10 screens defined in SGIP Section 2.2.1, including: (1) 15% of peak load aggregate generation screen, (2) voltage regulation impact, (3) short-circuit current contribution ratio, (4) line configuration requirements, (5) certified equipment, (6) no construction of utility facilities, and others. California Rule 21 uses lettered screens A through M including: networked secondary check, certified equipment, starting voltage drop, transformer/conductor rating, single-phase imbalance, short-circuit contribution ratio, and short-circuit interrupting capability.",
+        "timeline": "15 business days"
+      },
+      {
+        "name": "Level 2 Results — All Screens Pass",
+        "detail": "If the project passes all technical screens, the utility provides an executable Small Generator Interconnection Agreement (SGIA) within 5 business days. The developer signs and returns the agreement, then proceeds directly to installation, inspection, and permission to operate. No further study is needed.",
+        "timeline": "5 business days (agreement)"
+      },
+      {
+        "name": "Supplemental Review (screen failure path)",
+        "detail": "If a project fails one or more Fast Track screens, the utility offers a customer options meeting within 10 business days to discuss the failure and available options. The developer may then elect a supplemental review, which applies three additional screens: (1) minimum load screen (aggregate generation below 100% of minimum load), (2) power quality and voltage screen, and (3) safety and reliability screen. Supplemental review must be completed within 30 business days of deposit receipt. In California Rule 21, supplemental review costs $2,500 and must be completed within 20 business days.",
+        "timeline": "30 business days (SGIP) / 20 business days (Rule 21)"
+      },
+      {
+        "name": "Level 3 — Full Study Process",
+        "detail": "For projects that fail supplemental review, exceed fast-track size thresholds, or are above 5 MW (up to 20 MW under SGIP). The process includes: (1) Scoping Meeting within 10 business days to agree on study scope, (2) optional Feasibility Study, (3) System Impact Study evaluating thermal, voltage, protection, and power quality effects on the distribution feeder (typically 30-45 business days), and (4) Facilities Study to design and cost required upgrades (typically 30 business days). Developer pays study deposits for each phase. In California Rule 21, this is the 'Detailed Study' path with system impact and facilities study phases.",
+        "timeline": "4-12 months total"
+      },
+      {
+        "name": "IEEE 1547-2018 Compliance & Interconnection Agreement",
+        "detail": "All interconnected DER systems must comply with IEEE 1547-2018, covering: voltage/frequency ride-through, anti-islanding protection, power quality (harmonics, flicker), and grid-support functions (voltage regulation, frequency response). The developer and utility execute an interconnection agreement (SGIA for SGIP, or utility-specific form for state procedures). Net-metering systems require additional bi-directional metering arrangements. Non-net-metering / non-export systems require reverse power protection devices.",
+        "timeline": "2-6 weeks"
+      },
+      {
+        "name": "Installation, Inspection & Permission to Operate",
+        "detail": "Developer installs and commissions the DER system per the interconnection agreement. The utility inspects for compliance with IEEE 1547-2018, UL 1741 SA, applicable state/local electrical codes, and agreement terms. Upon successful inspection, the utility issues Permission to Operate (PTO). Net metering or net billing arrangements activate upon PTO. In California Rule 21, installation of a Net Generation Output Meter (NGOM) takes 40 business days (20 design + 20 construction). Distribution upgrades (if required) take up to 120 business days (60 design + 60 construction).",
+        "timeline": "1-4 weeks (simple) / 40-120 business days (with upgrades)"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "dx_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 2
+        },
+        {
+          "id": "dx_application",
+          "type": "step",
+          "label": "Application to Utility",
+          "row": 1,
+          "col": 2,
+          "timeline": "10 business days",
+          "timelineBasis": "evidence",
+          "detail": "Developer submits interconnection application to the utility. The utility must notify the customer within 10 business days whether the application is complete or requires additional information. Application specifies: project size, type, location, equipment certifications, and whether the project will be net-metered, non-export, or full-export. Fee varies by utility and state ($0-$1,000 for residential, $1,000-$5,000 for commercial).",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"},
+            {"label": "IREC Model Procedures", "url": "https://www.nrel.gov/grid/ieee-standard-1547/model-interconnection-procedures"}
+          ]
+        },
+        {
+          "id": "dx_size_check",
+          "type": "decision",
+          "label": "Project size?",
+          "row": 2,
+          "col": 2,
+          "detail": "The utility classifies the project into one of three SGIP review levels based on size, technology, and feeder characteristics. Level 1: certified inverter-based systems under 10 kW. Level 2: eligible generators up to 5 MW (threshold raised from 2 MW by FERC Order 792). Level 3: all other systems up to 20 MW, or projects that fail Level 1/2 screens. California Rule 21 uses a parallel classification: Fast Track (Initial Review + optional Supplemental Review) or Detailed Study.",
+          "sources": [
+            {"label": "FERC Order 792 (SGIP Reform)", "url": "https://www.federalregister.gov/documents/2013/12/05/2013-28515/small-generator-interconnection-agreements-and-procedures"},
+            {"label": "CPUC Rule 21", "url": "https://www.cpuc.ca.gov/Rule21/"}
+          ]
+        },
+        {
+          "id": "dx_level1",
+          "type": "step",
+          "label": "Level 1: Simplified (<10 kW)",
+          "row": 3,
+          "col": 0,
+          "timeline": "15 business days",
+          "timelineBasis": "evidence",
+          "detail": "For certified inverter-based systems under 10 kW (residential solar/storage). The utility performs an initial technical review within 15 business days using the same screens as Fast Track Level 2. Key screens: (1) certified equipment per UL 1741/IEEE 1547, (2) aggregate generation does not exceed 15% of line section annual peak load, (3) no adverse impact on voltage regulation, (4) adequate short-circuit capability, (5) no construction of utility facilities required. If all screens pass, an executable interconnection agreement is issued within 5 business days.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_level1_pass",
+          "type": "decision",
+          "label": "Screens pass?",
+          "row": 4,
+          "col": 0,
+          "detail": "If all screens pass, the project is approved and an interconnection agreement is issued within 5 business days. If any screen fails, the project is reclassified to Level 2 Fast Track or Level 3 Study Process depending on the nature of the failure."
+        },
+        {
+          "id": "dx_level1_approve",
+          "type": "step",
+          "label": "Agreement issued (5 bus. days)",
+          "row": 5,
+          "col": 0,
+          "timeline": "5 business days",
+          "timelineBasis": "evidence",
+          "detail": "Utility provides an executable interconnection agreement within 5 business days of passing all screens. Developer signs and returns the agreement. For net-metered systems, the utility also configures bidirectional metering.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_level2",
+          "type": "step",
+          "label": "Level 2: Fast Track (up to 5 MW)",
+          "row": 3,
+          "col": 2,
+          "timeline": "15 business days",
+          "timelineBasis": "evidence",
+          "detail": "The utility performs an initial technical review within 15 business days of confirming a complete application. Ten screens are applied (SGIP Section 2.2.1): aggregate generation vs 15% of peak load (the critical '15% screen'), voltage regulation impact, short-circuit current contribution ratio, line configuration, certified equipment, no utility construction required, and others. In California Rule 21, this is the 'Initial Review' using Screens A-M: (A) networked secondary check, (B) certified equipment, (C) starting voltage drop, (D) transformer/conductor rating, (E) single-phase imbalance, (F) short-circuit contribution ratio, (G) short-circuit interrupting capability, and additional screens through M.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"},
+            {"label": "Solar ABCs: FERC Screens Report", "url": "http://www.solarabcs.org/about/publications/reports/ferc-screens/pdfs/ABCS-FERC_studyreport.pdf"},
+            {"label": "SCE Rule 21 Guide", "url": "https://www.sce.com/business/smart-energy-solar/solar-for-business/grid-interconnections/interconnecting-generation-under-rule-21"}
+          ]
+        },
+        {
+          "id": "dx_level2_result",
+          "type": "decision",
+          "label": "All screens pass?",
+          "row": 4,
+          "col": 2,
+          "detail": "If all screens pass, the project qualifies for expedited approval without further study — the utility issues an executable interconnection agreement within 5 business days. If one or more screens fail, the utility schedules a customer options meeting within 10 business days to discuss the failure and available paths: supplemental review, full study process, or project modification to pass the screens.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_ft_approve",
+          "type": "step",
+          "label": "Fast Track Approval",
+          "row": 5,
+          "col": 2,
+          "timeline": "5 business days",
+          "timelineBasis": "evidence",
+          "detail": "Project passes all screens. Utility provides an executable SGIA within 5 business days. Developer signs and returns. No further study is required.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_options_meeting",
+          "type": "step",
+          "label": "Customer Options Meeting",
+          "row": 5,
+          "col": 3,
+          "timeline": "10 business days",
+          "timelineBasis": "evidence",
+          "detail": "Following screen failure, the utility schedules a customer options meeting within 10 business days to discuss which screens failed and why, and to present available paths: (1) supplemental review, (2) proceed directly to full study process, or (3) modify the project to pass the screens and re-enter Fast Track.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_supp_review",
+          "type": "step",
+          "label": "Supplemental Review",
+          "row": 6,
+          "col": 3,
+          "timeline": "30 business days",
+          "timelineBasis": "evidence",
+          "detail": "If the developer elects supplemental review, three additional screens are applied: (1) Minimum Load Screen: aggregate generation (including proposed facility) is less than 100% of minimum load on the line section; (2) Power Quality and Voltage Screen: the facility will not cause voltage or power quality issues; (3) Safety and Reliability Screen: the facility will not adversely affect safety or reliability. Supplemental review must be completed within 30 business days of deposit receipt (SGIP) or 20 business days (California Rule 21, with $2,500 fee). If the project passes, it is approved. If it fails, it must enter the full study process.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"},
+            {"label": "SCE Rule 21 FAQ", "url": "https://www.sce.com/sites/default/files/inline-files/Rule%2021%20FAQ%20final%20ver%202019-08-29.pdf"}
+          ]
+        },
+        {
+          "id": "dx_supp_result",
+          "type": "decision",
+          "label": "Supplemental pass?",
+          "row": 7,
+          "col": 3,
+          "detail": "If the project passes all three supplemental review screens, it is approved for interconnection. If it fails any supplemental screen, it must enter the Level 3 full study process (System Impact Study followed by Facilities Study)."
+        },
+        {
+          "id": "dx_supp_approve",
+          "type": "step",
+          "label": "Supplemental Approval",
+          "row": 8,
+          "col": 3,
+          "timeline": "5 business days",
+          "timelineBasis": "evidence",
+          "detail": "Project passes supplemental review. Utility provides an executable SGIA within 5 business days.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_level3",
+          "type": "step",
+          "label": "Level 3: Full Study (>5 MW / failed)",
+          "row": 3,
+          "col": 4,
+          "timeline": "Scoping: 10 bus. days",
+          "timelineBasis": "evidence",
+          "detail": "For projects above 5 MW (up to 20 MW under SGIP), or projects that failed Level 1/2 screens and supplemental review. The process begins with a scoping meeting within 10 business days to agree on study methodology and scope. In California Rule 21, this is the 'Detailed Study' path. Developer pays study deposits for each phase.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"},
+            {"label": "CPUC Rule 21", "url": "https://www.cpuc.ca.gov/Rule21/"}
+          ]
+        },
+        {
+          "id": "dx_feasibility",
+          "type": "decision",
+          "label": "Feasibility study needed?",
+          "row": 4,
+          "col": 4,
+          "detail": "The scoping meeting determines whether a separate feasibility study is needed before the system impact study. If the parties agree to skip the feasibility study, the utility provides a system impact study agreement within 5 business days of the scoping meeting. If a feasibility study is needed, it evaluates preliminary grid impacts before the detailed system impact study.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_sis",
+          "type": "step",
+          "label": "System Impact Study",
+          "row": 5,
+          "col": 4,
+          "timeline": "30-45 business days",
+          "timelineBasis": "evidence",
+          "detail": "Detailed analysis of the project's impact on the distribution system: thermal loading, voltage regulation, protection coordination, power quality (harmonics, flicker), and fault current contribution. Evaluates IEEE 1547-2018 compliance including voltage/frequency ride-through capabilities and anti-islanding protection. Identifies required distribution system upgrades. Developer pays a study deposit (typically $1,000-$10,000).",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"},
+            {"label": "BPA SGIP", "url": "https://www.bpa.gov/energy-and-services/transmission/interconnection/small-generator"}
+          ]
+        },
+        {
+          "id": "dx_facilities",
+          "type": "step",
+          "label": "Facilities Study",
+          "row": 6,
+          "col": 4,
+          "timeline": "30 business days",
+          "timelineBasis": "evidence",
+          "detail": "Detailed engineering study to design any required distribution system upgrades (transformer replacements, reconductoring, protection system modifications, voltage regulators). Produces precise cost estimates and construction schedules. Developer funds all required upgrades. In California Rule 21, distribution upgrade timelines are standardized: 60 business days for design and 60 business days for construction (120 business days total).",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"},
+            {"label": "Energy Toolbase: Rule 21 Timelines", "url": "https://www.energytoolbase.com/blog/policyupdate/californias-rule-21/"}
+          ]
+        },
+        {
+          "id": "dx_l3_agreement",
+          "type": "step",
+          "label": "Interconnection Agreement (SGIA)",
+          "row": 7,
+          "col": 4,
+          "timeline": "5 business days",
+          "timelineBasis": "evidence",
+          "detail": "Upon completion of all required studies, the utility provides an executable Small Generator Interconnection Agreement (SGIA) within 5 business days. The agreement specifies: technical requirements, metering, insurance, system upgrades, milestone schedules, and operational obligations.",
+          "sources": [
+            {"label": "FERC Pro Forma SGIP", "url": "https://www.ferc.gov/sites/default/files/2020-04/sm-gen-procedures.pdf"}
+          ]
+        },
+        {
+          "id": "dx_ieee1547",
+          "type": "step",
+          "label": "IEEE 1547-2018 Compliance Testing",
+          "row": 8,
+          "col": 2,
+          "timeline": "Concurrent with installation",
+          "timelineBasis": "assumption",
+          "detail": "All DER systems must demonstrate compliance with IEEE 1547-2018, the foundational technical standard adopted by most US states. Requirements include: Category I/II/III voltage ride-through, frequency ride-through (including mandatory trip settings), anti-islanding protection (must cease energization within 2 seconds of island formation), power quality limits (harmonics per IEEE 519), and advanced grid-support functions (voltage regulation, frequency-watt, volt-watt, volt-var). Equipment must be listed to UL 1741 Supplement SA. State adoption varies: some states have fully adopted IEEE 1547-2018; others remain on the older 2003 standard.",
+          "sources": [
+            {"label": "IEEE 1547-2018 Resources (NREL)", "url": "https://www.nrel.gov/grid/ieee-standard-1547/model-interconnection-procedures"},
+            {"label": "IREC: IEEE 1547-2018 Decision Matrix", "url": "https://irecusa.org/wp-content/uploads/2022/10/Decision-Options-Matrix-for-IEEE-1547-2018-Adoption.pdf"}
+          ]
+        },
+        {
+          "id": "dx_nm_check",
+          "type": "decision",
+          "label": "Net metering?",
+          "row": 9,
+          "col": 2,
+          "detail": "The interconnection path differs based on the compensation mechanism. Net-metered systems (NEM) require bidirectional metering, allow export of excess generation, and receive bill credits at retail or avoided-cost rates (varies by state; California NEM 3.0 uses time-of-use net billing). Non-net-metered / non-export systems require reverse-power protection devices to prevent export and do not need bidirectional metering. Some states have reached net metering caps, after which new systems interconnect without NEM credits. The interconnection process itself is largely the same, but metering and protection requirements differ.",
+          "sources": [
+            {"label": "EPA: Interconnection & Net Metering", "url": "https://www.epa.gov/statelocalenergy/energy-and-environment-guide-action-chapter-73-interconnection-and-net-metering"},
+            {"label": "CPUC: NEM & Net Billing", "url": "https://www.cpuc.ca.gov/industries-and-topics/electrical-energy/demand-side-management/customer-generation/net-energy-metering-and-net-billing"}
+          ]
+        },
+        {
+          "id": "dx_install",
+          "type": "step",
+          "label": "Installation & Inspection",
+          "row": 10,
+          "col": 2,
+          "timeline": "1-4 weeks (simple) / 120 bus. days (upgrades)",
+          "timelineBasis": "evidence",
+          "detail": "Developer installs and commissions the DER system per the interconnection agreement. The utility inspects for compliance with the agreement, IEEE 1547-2018, UL 1741 SA, and applicable state/local electrical codes. For projects requiring distribution upgrades: California Rule 21 standardizes 120 business days (60 design + 60 construction) for distribution upgrades, and 40 business days (20 design + 20 construction) for NGOM meter installation. Simple residential systems may require only a visual inspection and meter swap.",
+          "sources": [
+            {"label": "Energy Toolbase: Rule 21 Timelines", "url": "https://www.energytoolbase.com/blog/policyupdate/californias-rule-21/"}
+          ]
+        },
+        {
+          "id": "dx_pto",
+          "type": "step",
+          "label": "Permission to Operate (PTO)",
+          "row": 11,
+          "col": 2,
+          "timeline": "1-10 business days",
+          "timelineBasis": "assumption",
+          "detail": "Upon successful inspection and meter configuration, the utility issues Permission to Operate (PTO). The DER system is authorized to energize and begin injecting power. Net metering, net billing, or feed-in tariff billing arrangements activate upon PTO issuance. The system must not export power until PTO is granted.",
+          "sources": [
+            {"label": "CPUC Rule 21", "url": "https://www.cpuc.ca.gov/Rule21/"}
+          ]
+        },
+        {
+          "id": "dx_end",
+          "type": "end",
+          "label": "Connected & Operating",
+          "row": 12,
+          "col": 2
+        }
+      ],
+      "edges": [
+        {"from": "dx_start", "to": "dx_application"},
+        {"from": "dx_application", "to": "dx_size_check"},
+        {"from": "dx_size_check", "to": "dx_level1", "label": "<10 kW", "type": "conditional"},
+        {"from": "dx_size_check", "to": "dx_level2", "label": "10 kW - 5 MW"},
+        {"from": "dx_size_check", "to": "dx_level3", "label": ">5 MW", "type": "conditional"},
+        {"from": "dx_level1", "to": "dx_level1_pass"},
+        {"from": "dx_level1_pass", "to": "dx_level1_approve", "label": "Pass"},
+        {"from": "dx_level1_pass", "to": "dx_level2", "label": "Fail", "type": "conditional"},
+        {"from": "dx_level1_approve", "to": "dx_ieee1547"},
+        {"from": "dx_level2", "to": "dx_level2_result"},
+        {"from": "dx_level2_result", "to": "dx_ft_approve", "label": "All pass"},
+        {"from": "dx_level2_result", "to": "dx_options_meeting", "label": "Screen fails", "type": "conditional"},
+        {"from": "dx_ft_approve", "to": "dx_ieee1547"},
+        {"from": "dx_options_meeting", "to": "dx_supp_review"},
+        {"from": "dx_supp_review", "to": "dx_supp_result"},
+        {"from": "dx_supp_result", "to": "dx_supp_approve", "label": "Pass"},
+        {"from": "dx_supp_result", "to": "dx_sis", "label": "Fail", "type": "conditional"},
+        {"from": "dx_supp_approve", "to": "dx_ieee1547"},
+        {"from": "dx_level3", "to": "dx_feasibility"},
+        {"from": "dx_feasibility", "to": "dx_sis", "label": "Skip / Complete"},
+        {"from": "dx_sis", "to": "dx_facilities"},
+        {"from": "dx_facilities", "to": "dx_l3_agreement"},
+        {"from": "dx_l3_agreement", "to": "dx_ieee1547"},
+        {"from": "dx_ieee1547", "to": "dx_nm_check"},
+        {"from": "dx_nm_check", "to": "dx_install", "label": "NEM or Non-export"},
+        {"from": "dx_install", "to": "dx_pto"},
+        {"from": "dx_pto", "to": "dx_end"}
+      ]
+    },
+    "challenges": "The <strong>patchwork of 50+ state regulations</strong> creates enormous complexity for developers operating across multiple states, with widely varying application requirements, timelines, technical standards adoption, and hosting capacity transparency. <strong>Hosting capacity limitations</strong> on older distribution feeders are increasingly constraining new DER deployments, requiring expensive upgrades that are often allocated entirely to the interconnecting developer. <strong>Utility processing backlogs</strong> in high-solar states like California and Massachusetts cause significant delays, particularly for commercial-scale projects. <strong>IEEE 1547-2018 adoption</strong> remains uneven -- while the standard is published, not all states have fully incorporated its advanced grid-support functions (smart inverter requirements) into their interconnection rules. <strong>Cost transparency</strong> is poor: developers often cannot estimate upgrade costs until deep into the study process, creating financial uncertainty. <strong>Net metering policy changes</strong> in states like California (NEM 3.0 / net billing) affect the economics that drive DER interconnection volumes. <strong>Fast Track screen limitations</strong>: the 15% of peak load screen is the most common failure point, particularly on feeders with existing solar penetration, forcing otherwise straightforward projects into lengthy supplemental or full study processes."
+  },
+  "reforms": [
+    {
+      "title": "FERC Order 2023 — Interconnection Queue Reform",
+      "year": "2023",
+      "level": "transmission",
+      "description": "The most significant US interconnection reform in two decades. Order 2023 replaced the serial first-come-first-served study process with mandatory <strong>cluster studies</strong>, where all projects filed within a 45-day window are evaluated together. It introduced <strong>commercial readiness requirements</strong> through escalating financial deposits (up to 20% of network upgrade costs), <strong>withdrawal penalties</strong> to deter speculative queue entries, and <strong>transmission provider penalties</strong> of $1,000–$2,500 per day for late study completion. All FERC-jurisdictional ISOs/RTOs must implement these reforms, with transition plans filed in 2024–2025."
+    },
+    {
+      "title": "FERC Order 2222 — DER Aggregation in Wholesale Markets",
+      "year": "2020",
+      "level": "both",
+      "description": "Order 2222 requires all ISOs/RTOs to allow <strong>distributed energy resource aggregations</strong> to participate in wholesale electricity markets on equal footing with traditional generators. This enables aggregated rooftop solar, batteries, EVs, and demand response to provide capacity, energy, and ancillary services. Implementation has been phased across ISOs, with compliance filings extending through 2024–2025. The order bridges the transmission-distribution boundary by allowing distribution-connected resources to participate in transmission-level markets."
+    },
+    {
+      "title": "FERC Order 1920 — Long-Term Regional Transmission Planning",
+      "year": "2024",
+      "level": "transmission",
+      "description": "Order 1920 requires transmission providers to conduct <strong>long-term regional transmission planning</strong> over a 20-year horizon, factoring in anticipated generation changes, load growth, and public policy requirements. It addresses the historical disconnect between interconnection queues and transmission expansion by requiring proactive planning for the transmission infrastructure needed to connect anticipated new generation. Includes reformed cost allocation methodologies to spread network upgrade costs more equitably across beneficiaries rather than assigning them solely to interconnecting generators."
+    },
+    {
+      "title": "DOE Section 403 — Large Load Interconnection Rulemaking",
+      "year": "2025",
+      "level": "transmission",
+      "description": "Initiated in October 2025 by the Department of Energy, this rulemaking addresses the growing challenge of <strong>large load interconnections</strong> from data centres, hydrogen electrolysers, and industrial facilities. These loads — some exceeding 1 GW — are increasingly competing for transmission capacity alongside generation projects. The rulemaking examines whether new procedures are needed to manage load-side interconnection requests and their system impact."
+    },
+    {
+      "title": "PJM Transition Cycle 1 — Queue Cleanup",
+      "year": "2025",
+      "level": "transmission",
+      "description": "PJM's implementation of Order 2023 included a <strong>Transition Cycle</strong> that required existing queued projects to meet new commercial readiness and deposit requirements. The result was dramatic: PJM's queue shrank from approximately 200 GW to ~63 GW as speculative and unviable projects withdrew rather than posting escalated deposits. This represents the most significant single queue reduction in US history and is expected to substantially reduce study timelines for remaining projects."
+    },
+    {
+      "title": "CPUC Rule 21 Modernisation (R.25-08-004)",
+      "year": "2025",
+      "level": "distribution",
+      "description": "The California Public Utilities Commission opened rulemaking R.25-08-004 in August 2025 to <strong>modernise Rule 21</strong>, California's distribution-level interconnection standard. The proceeding addresses streamlining the three-track review process (Initial, Supplemental, Detailed), improving hosting capacity analysis, reducing processing timelines for behind-the-meter storage, and incorporating advanced smart inverter grid-support functions. California processes more DER interconnection applications than any other US state."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is FERC Order 2023 and why does it matter?",
+      "a": "FERC Order 2023, issued in July 2023, is the most significant reform to US transmission interconnection procedures in two decades. It replaced the serial 'first-come-first-served' study process — which had created a massive speculative backlog — with mandatory cluster studies where all projects in a 45-day window are evaluated together. It also introduced escalating commercial readiness deposits (up to 20% of network upgrade costs), financial penalties for developers who withdraw after studies begin, and penalties of $1,000–$2,500/day for transmission providers that deliver late study results. The goal is to clear the ~2,300 GW backlog and reduce the median 5-year wait for interconnection."
+    },
+    {
+      "q": "How do cluster studies work under the new process?",
+      "a": "Under Order 2023, transmission providers open a 45-day cluster window during which all interconnection requests are filed simultaneously. All projects in the cluster are then studied together in a combined system impact and facilities analysis over 150 days. This approach evaluates the cumulative grid impact of all projects at once, identifies shared network upgrades, and allocates costs proportionally — rather than studying each project serially and assigning all upgrade costs to whichever project 'triggered' the need. If projects withdraw after the initial cluster study, a 150-day restudy reallocates costs among remaining projects. The entire process from application to interconnection agreement takes approximately 615 days."
+    },
+    {
+      "q": "Why is the US interconnection queue so large, and is it shrinking?",
+      "a": "The US queue grew to ~2,600 GW — roughly double total installed US generation capacity — due to years of speculative filings under the old serial process, where developers could reserve queue positions with minimal financial commitment. Many projects were filed speculatively with no realistic path to construction. The queue has begun shrinking for the first time in a decade, declining to ~2,300 GW, driven by Order 2023's withdrawal penalties and PJM's Transition Cycle 1, which reduced PJM's queue alone from ~200 GW to ~63 GW. However, the 13% historical completion rate means the vast majority of queued capacity will never be built."
+    },
+    {
+      "q": "What is the difference between FERC jurisdiction and state PUC jurisdiction?",
+      "a": "FERC (Federal Energy Regulatory Commission) has jurisdiction over interstate transmission and wholesale electricity markets. It sets the interconnection rules for generators connecting to the high-voltage transmission system (generally 69 kV and above) through the ISOs/RTOs. State Public Utility Commissions (PUCs) regulate distribution-level interconnection — the lower-voltage network that delivers power to homes and businesses. Each of the 50 states sets its own distribution interconnection rules, timelines, and technical requirements, though most are modelled on FERC's Small Generator Interconnection Procedures (SGIP) and reference IEEE 1547-2018. This dual jurisdiction means a single developer may face entirely different regulatory regimes depending on whether they are connecting at transmission or distribution level."
+    },
+    {
+      "q": "How is ERCOT's interconnection process different from the rest of the US?",
+      "a": "ERCOT (Electric Reliability Council of Texas) operates the Texas grid independently and is not subject to FERC jurisdiction because the Texas grid has minimal interconnections with other states. This means ERCOT does not need to comply with FERC Order 2023's cluster study requirements. Instead, ERCOT uses a 'connect-and-manage' approach where generators can interconnect more quickly — typically in 1–2 years rather than the 3–5+ years common in FERC-jurisdictional ISOs. The trade-off is that ERCOT-connected generators may face curtailment risk if the transmission system cannot fully accommodate their output, whereas FERC-jurisdictional processes require network upgrades to be completed before a generator can operate. This has made Texas one of the fastest-growing states for new generation capacity."
+    }
+  ],
+  "note": "The US grid interconnection landscape is undergoing its most significant transformation in decades. FERC Order 2023's cluster study reforms, combined with aggressive queue cleanup at PJM and other ISOs, are beginning to clear the historic ~2,300 GW backlog — but implementation is uneven and transition timelines extend through 2025–2026. Developers must navigate a dual-jurisdiction system where transmission interconnection is federally regulated while distribution interconnection varies across 50+ state frameworks. ERCOT's separate Texas market offers a faster alternative but with curtailment risk. Key strategic considerations include: early engagement with ISO-specific transition timelines, realistic deposit budgeting (PJM network upgrades averaging $240/kW), monitoring FERC Order 1920's impact on cost allocation, and tracking state-level DER reforms (particularly California's Rule 21 modernisation and New York's SIR updates). The completion of PJM Transition Cycle 1 — which reduced its queue from ~200 GW to ~63 GW — offers a preview of what other ISOs may experience as Order 2023 implementation matures."
+}

@@ -1,0 +1,660 @@
+{
+  "id": "uk",
+  "name": "United Kingdom",
+  "full": "United Kingdom — Grid Interconnection Process",
+  "type": "Mature Liberalised Market",
+  "icon": "🇬🇧",
+  "accentColor": "#1B4D7A",
+  "accentBg": "#E6F1FB",
+  "badgeColor": "#E6F1FB",
+  "badgeText": "#0C447C",
+  "badge": "Major Reform Underway",
+  "badge2": "739 GW Queue → 283 GW",
+  "tags": ["europe"],
+  "sub": "The UK has undergone the largest grid queue reform in history, cutting its transmission queue from 739 GW to 283 GW through the TMO4+ process while transitioning to a publicly owned system operator (NESO).",
+  "cardTags": ["NESO", "Ofgem", "UKPN", "SSEN", "NGET", "G98/G99", "TMO4+"],
+  "desc": "The UK's grid interconnection landscape is defined by two parallel transformations: a wholesale overhaul of the transmission connections queue under NESO's TMO4+ reform, and a shift to fully shallow connection charging at distribution level. At transmission, the newly public NESO (acquired from National Grid for £630M in October 2024) now manages all connection offers under a \"first ready, first needed, first connected\" framework that replaced the historic first-come-first-served queue — cutting it from over 700 GW to 283 GW of generation and storage plus 99 GW of demand. At distribution, six DNO groups handle connections under the G98 (≤3.68 kW) and G99 (>3.68 kW) standards, with flexible connections and DERMS rollout since April 2023. Ofgem's Connections End-to-End Review and Demand Connections Reform are reshaping both levels simultaneously.",
+  "transmission": {
+    "title": "Transmission Connection Process",
+    "voltageLevel": "132 kV+",
+    "overview": "Transmission connections in the UK are managed by NESO (National Energy System Operator), publicly owned since October 2024 after being transferred from National Grid for £630M. NESO is designated as the Independent System Operator and Planner (ISOP) under the Energy Act 2023. Three regional Transmission Owners — NGET (England & Wales), SPT (Central/Southern Scotland), and SHET (Northern Scotland) — own and maintain the physical network. Since the TMO4+ reform, all new applicants enter a gate-based system that prioritises projects by readiness, need, and grid location rather than by queue date.",
+    "typicalTimeline": "4–15 years",
+    "timelineDetail": "Historically 8–15 years; post-TMO4+ reform target is 4–7 years for ready projects",
+    "costRange": "£100K–£10M+",
+    "costDetail": "Application fee £5,600–£13,600. Shallow connection £100K–£2M. Deep reinforcement works can exceed £10M. Grid Code compliance testing £10K–£50K/MW. New Progression Commitment Fee of £2,500/MW rising to £10,000/MW.",
+    "queueSize": "283 GW",
+    "queueDetail": "283 GW generation + storage and 99 GW demand after TMO4+ reform (Dec 2025). Queue was previously 739 GW — the largest in Europe.",
+    "keyBodies": [
+      {
+        "name": "NESO",
+        "fullName": "National Energy System Operator",
+        "role": "Publicly owned TSO and ISOP; manages the connections queue, conducts network studies, and issues connection offers",
+        "url": "https://www.neso.energy"
+      },
+      {
+        "name": "NGET",
+        "fullName": "National Grid Electricity Transmission",
+        "role": "Transmission Owner for England & Wales; builds and maintains transmission assets",
+        "url": "https://www.nationalgrid.com/electricity-transmission"
+      },
+      {
+        "name": "SPT",
+        "fullName": "SP Transmission",
+        "role": "Transmission Owner for Central and Southern Scotland",
+        "url": "https://www.spenergynetworks.co.uk"
+      },
+      {
+        "name": "SHET",
+        "fullName": "SHE Transmission (SSEN Transmission)",
+        "role": "Transmission Owner for Northern Scotland and island groups",
+        "url": "https://www.ssen-transmission.co.uk"
+      },
+      {
+        "name": "Ofgem",
+        "fullName": "Office of Gas and Electricity Markets",
+        "role": "Energy regulator; sets connection charging policy, licence conditions, and oversees NESO's performance",
+        "url": "https://www.ofgem.gov.uk"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Pre-application Meeting with NESO",
+        "detail": "Developers engage early with NESO to discuss project scope, preferred connection point, and technical feasibility. NESO provides initial guidance on available capacity, likely reinforcement requirements, and estimated timelines. This step is strongly encouraged but not mandatory.",
+        "timeline": "2–4 weeks"
+      },
+      {
+        "name": "Formal Application via NESO Connections Portal",
+        "detail": "Submit a formal connection application through the NESO online portal. Since March 2024, applicants must include a Letter of Authority (LoA) confirming legal control of the project site. Application fees range from £5,600 to £13,600 depending on project type and complexity. Detailed technical specifications, a site plan, and evidence of planning progress are required.",
+        "timeline": "Application fee £5,600–£13,600"
+      },
+      {
+        "name": "Connection Offer Issued",
+        "detail": "NESO conducts network studies and issues a formal Connection Offer specifying the connection point, required works, costs, milestones, and target energisation date. Under TMO4+, offers are now staged into Gate 1 (conditional) and Gate 2 (confirmed) based on project readiness. The applicant has 90 calendar days to accept or reject the offer.",
+        "timeline": "90 days to accept"
+      },
+      {
+        "name": "Contract Signing & Securities",
+        "detail": "Upon acceptance, the applicant enters into a Bilateral Connection Agreement with NESO and the relevant Transmission Owner. Security deposits must be posted as a percentage of construction costs. The new Progression Commitment Fee (£2,500/MW, rising to £10,000/MW) must also be paid to prevent queue hoarding.",
+        "timeline": ""
+      },
+      {
+        "name": "Construction & Reinforcement Works",
+        "detail": "The Transmission Owner designs and constructs the physical connection assets (substation bays, cables, transformers) and any required network reinforcement. The developer builds their side of the connection to the agreed specification. This is typically the longest phase, with duration depending on the scale of reinforcement needed.",
+        "timeline": "2–7+ years"
+      },
+      {
+        "name": "Grid Code Compliance Testing",
+        "detail": "Approximately 12 months before the target energisation date, the developer must demonstrate that their plant meets all applicable Grid Code requirements. This includes power quality, fault ride-through, reactive power capability, and communications/control system testing. NESO and the TO review compliance evidence and may require on-site witnessed tests.",
+        "timeline": "~12 months before energisation"
+      },
+      {
+        "name": "Energisation & Operational Notifications",
+        "detail": "Once construction is complete and compliance is confirmed, NESO issues Operational Notifications authorising the connection to be energised. The plant is then commissioned, synchronised with the grid, and enters commercial operation. Ongoing obligations under the Grid Code and Connection Agreement apply from this point forward.",
+        "timeline": ""
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "start",
+          "type": "start",
+          "label": "Begin",
+          "detail": "",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "pre-app",
+          "type": "step",
+          "label": "Pre-application Meeting",
+          "detail": "Developers engage early with NESO to discuss project scope, preferred connection point, and technical feasibility. NESO provides initial guidance on available capacity, likely reinforcement requirements, and estimated timelines. This step is strongly encouraged but not mandatory.",
+          "timeline": "2-4 weeks",
+          "timelineBasis": "assumption",
+          "sources": [
+            {
+              "label": "NESO Connections Journey",
+              "url": "https://www.neso.energy/industry-information/connections/your-connections-journey"
+            }
+          ],
+          "row": 1,
+          "col": 1
+        },
+        {
+          "id": "application",
+          "type": "step",
+          "label": "Formal Application via NESO Portal",
+          "detail": "Submit through the NESO online portal with a Letter of Authority (LoA) confirming legal control of the project site, DRC data, site plan, and application fee of £5,600–£13,600 depending on project type and complexity. Applications are accepted in biannual windows.",
+          "timeline": "Biannual window",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "CMP434",
+              "url": "https://www.neso.energy/industry-information/codes/cusc/modifications/cmp434-implementing-connections-reform"
+            }
+          ],
+          "row": 2,
+          "col": 1
+        },
+        {
+          "id": "gate-decision",
+          "type": "decision",
+          "label": "Gate Assessment",
+          "detail": "Projects are assessed against Ready and Needed criteria under the TMO4+ gate system. This determines whether a project receives a confirmed or conditional connection offer.",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "id": "ready-check",
+          "type": "decision",
+          "label": "Ready Criteria?",
+          "detail": "Projects must demonstrate readiness through one of two routes: the Land Route (100% acreage secured per the Energy Density Table) or the Planning Route (validated DCO application submitted). Projects must also meet system need criteria based on alignment with network development plans.",
+          "sources": [
+            {
+              "label": "NESO Design Documents",
+              "url": "https://www.neso.energy/industry-information/connections-reform/connections-reform-design-documents-and-methodologies"
+            }
+          ],
+          "row": 4,
+          "col": 1
+        },
+        {
+          "id": "gate2-offer",
+          "type": "step",
+          "label": "Gate 2 Connection Offer",
+          "detail": "Confirmed connection offer issued to projects that pass both Ready and Needed criteria. Includes a confirmed connection date, connection location, required reinforcement works, and detailed cost breakdown.",
+          "timeline": "3 months from clock start",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "CUSC Section 2",
+              "url": "https://www.neso.energy/document/91351/download"
+            }
+          ],
+          "row": 5,
+          "col": 1
+        },
+        {
+          "id": "gate1-offer",
+          "type": "step",
+          "label": "Gate 1 Offer (Conditional)",
+          "detail": "Indicative connection offer for projects that do not yet meet full readiness or need criteria. No securities are required at this stage. The project enters a waiting queue and can reapply in a future biannual application window once readiness criteria are met.",
+          "timeline": "3 months",
+          "timelineBasis": "evidence",
+          "row": 5,
+          "col": 2
+        },
+        {
+          "id": "acceptance",
+          "type": "step",
+          "label": "Offer Acceptance",
+          "detail": "The applicant has 90 calendar days to accept, let lapse, or refer the offer to Ofgem for determination. Failure to respond within 90 days results in the offer lapsing and the queue position being lost.",
+          "timeline": "90 days",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "CUSC Section 2",
+              "url": "https://www.neso.energy/document/91351/download"
+            }
+          ],
+          "row": 6,
+          "col": 1
+        },
+        {
+          "id": "contract",
+          "type": "step",
+          "label": "Contract & Securities",
+          "detail": "Upon acceptance, the applicant enters into a Bilateral Connection Agreement and Construction Agreement with NESO and the relevant Transmission Owner. The Progression Commitment Fee of £2,500/MW (rising to £10,000/MW as the project advances) must be paid to prevent queue hoarding.",
+          "timeline": "Immediate",
+          "timelineBasis": "assumption",
+          "sources": [
+            {
+              "label": "Norton Rose Fulbright",
+              "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/0101e3b9/tmo4-connection-reform-proposals-receive-stamp-of-approval"
+            }
+          ],
+          "row": 7,
+          "col": 1
+        },
+        {
+          "id": "construction",
+          "type": "step",
+          "label": "Construction & Reinforcement",
+          "detail": "The Transmission Owner designs and constructs the physical connection assets (substation bays, cables, transformers) and any required network reinforcement. The developer builds their side of the connection in parallel to the agreed specification. This is typically the longest phase.",
+          "timeline": "2-7+ years",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "Regen / EN Commissioner",
+              "url": "https://www.regen.co.uk/insights/government-publishes-plans-to-half-the-lead-time-for-major-transmission-construction"
+            }
+          ],
+          "row": 8,
+          "col": 1
+        },
+        {
+          "id": "compliance",
+          "type": "step",
+          "label": "Grid Code Compliance",
+          "detail": "Approximately 18–24 months before the target energisation date, the developer must begin demonstrating that their plant meets all applicable Grid Code requirements, including power quality, fault ride-through, reactive power capability, and communications/control system testing.",
+          "timeline": "Starts 18-24 months before energisation",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "NESO Compliance Process",
+              "url": "https://www.neso.energy/industry-information/connections/compliance-process"
+            }
+          ],
+          "row": 9,
+          "col": 1
+        },
+        {
+          "id": "energisation",
+          "type": "step",
+          "label": "Energisation & ION",
+          "detail": "Once construction is complete and compliance is confirmed, NESO issues an Energisation Operational Notification (EON), followed by an Interim Operational Notification (ION) for initial export with a 24-month validity period. The plant is commissioned, synchronised with the grid, and begins operating.",
+          "timeline": "24 months ION period",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "NESO Compliance Process",
+              "url": "https://www.neso.energy/industry-information/connections/compliance-process"
+            }
+          ],
+          "row": 10,
+          "col": 1
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "label": "Commercial Operation (FON)",
+          "detail": "",
+          "row": 11,
+          "col": 1
+        }
+      ],
+      "edges": [
+        { "from": "start", "to": "pre-app", "label": "", "type": "normal" },
+        { "from": "pre-app", "to": "application", "label": "", "type": "normal" },
+        { "from": "application", "to": "gate-decision", "label": "", "type": "normal" },
+        { "from": "gate-decision", "to": "ready-check", "label": "TMO4+ Assessment", "type": "normal" },
+        { "from": "ready-check", "to": "gate2-offer", "label": "Ready + Needed", "type": "conditional" },
+        { "from": "ready-check", "to": "gate1-offer", "label": "Not ready/needed", "type": "conditional" },
+        { "from": "gate1-offer", "to": "application", "label": "Reapply next window", "type": "conditional" },
+        { "from": "gate2-offer", "to": "acceptance", "label": "", "type": "normal" },
+        { "from": "acceptance", "to": "contract", "label": "Accept within 90 days", "type": "normal" },
+        { "from": "contract", "to": "construction", "label": "", "type": "normal" },
+        { "from": "construction", "to": "compliance", "label": "", "type": "normal" },
+        { "from": "compliance", "to": "energisation", "label": "", "type": "normal" },
+        { "from": "energisation", "to": "end", "label": "", "type": "normal" }
+      ]
+    },
+    "challenges": "<strong>Queue congestion:</strong> Even after TMO4+ reduced the queue from 739 GW to 283 GW, the remaining pipeline is still several times larger than peak demand (~60 GW), meaning competition for connection dates remains intense.<br><br><strong>Reinforcement bottlenecks:</strong> Many connection offers are contingent on major network reinforcement projects (e.g., new subsea cables to Scotland, Eastern HVDC links) that have multi-year construction timescales.<br><br><strong>Speculative projects:</strong> Despite the Progression Commitment Fee, some projects may still hold capacity without genuine intent to build. The gate system aims to weed these out but is still bedding in.<br><br><strong>Planning permission delays:</strong> Nationally Significant Infrastructure Projects (NSIPs) can take 3–5 years through the planning system, creating misalignment with connection offer timelines.<br><br><strong>Cost uncertainty:</strong> Deep reinforcement costs are difficult to predict at application stage and can change substantially as network studies progress."
+  },
+  "distribution": {
+    "title": "Distribution Connection Process",
+    "voltageLevel": "<132 kV",
+    "overview": "Distribution connections are managed by six DNO groups across Great Britain: UKPN (South East, East, London), National Grid Electricity Distribution (West Midlands, South West, South Wales), SSEN Distribution (North of Scotland, Central Southern), SPEN (South Scotland, Merseyside/North Wales), Northern Powergrid (North East, Yorkshire), and ENWL (North West). Small installations (≤3.68 kW) use the G98 'Fit and Inform' standard, while larger systems (>3.68 kW) require G99 pre-approval. Since April 2023, 'fully shallow' connection charging means customers only pay for extension assets, not upstream reinforcement. Flexible connections via DERMS (Distributed Energy Resource Management Systems) have also been available since April 2023, allowing faster connections with managed curtailment.",
+    "typicalTimeline": "3 months–5 years",
+    "timelineDetail": "Simple G98: ~4 weeks. Standard G99: 6–18 months. Complex/EHV: 2–5 years.",
+    "costRange": "£1K–£2M+",
+    "costDetail": "LV connections £1K–£5K. HV connections £5K–£100K+. EHV connections £50K–£500K+. 132 kV distribution connections £200K–£2M+. G98 (≤3.68 kW) is typically free.",
+    "queueSize": null,
+    "queueDetail": null,
+    "keyBodies": [
+      {
+        "name": "UKPN",
+        "fullName": "UK Power Networks",
+        "role": "DNO for South East England, East England, and London — the UK's largest DNO by customer numbers",
+        "url": "https://www.ukpowernetworks.co.uk"
+      },
+      {
+        "name": "NGED",
+        "fullName": "National Grid Electricity Distribution",
+        "role": "DNO for West Midlands, South West England, and South Wales (formerly Western Power Distribution)",
+        "url": "https://www.nationalgrid.co.uk"
+      },
+      {
+        "name": "SSEN Distribution",
+        "fullName": "Scottish and Southern Electricity Networks Distribution",
+        "role": "DNO for North of Scotland and Central Southern England",
+        "url": "https://www.ssen.co.uk"
+      },
+      {
+        "name": "SPEN",
+        "fullName": "SP Energy Networks",
+        "role": "DNO for South Scotland, Merseyside, and North Wales",
+        "url": "https://www.spenergynetworks.co.uk"
+      },
+      {
+        "name": "Northern Powergrid",
+        "fullName": "Northern Powergrid",
+        "role": "DNO for North East England and Yorkshire",
+        "url": "https://www.northernpowergrid.com"
+      },
+      {
+        "name": "ENWL",
+        "fullName": "Electricity North West Limited",
+        "role": "DNO for North West England",
+        "url": "https://www.enwl.co.uk"
+      },
+      {
+        "name": "Ofgem",
+        "fullName": "Office of Gas and Electricity Markets",
+        "role": "Regulator; sets distribution connection standards, charging methodology, and guaranteed standards of performance",
+        "url": "https://www.ofgem.gov.uk"
+      }
+    ],
+    "steps": [
+      {
+        "name": "G98 'Fit and Inform' (≤3.68 kW only)",
+        "detail": "For small installations up to 3.68 kW (e.g., single-phase residential solar), the installer simply fits the equipment and notifies the DNO within 28 days using the ENA's online notification form. No pre-approval is required. The installation must comply with the G98 engineering standard and be carried out by an MCS-accredited installer. This route is free of charge.",
+        "timeline": "~4 weeks"
+      },
+      {
+        "name": "Pre-application / Feasibility Request",
+        "detail": "For G99 installations (>3.68 kW), applicants can submit a pre-application enquiry to the DNO to get an indication of available capacity, likely connection costs, and any constraints at the proposed location. DNOs must respond within 10 working days (simple) to 20 working days (complex). This step is optional but strongly recommended to avoid wasted application fees.",
+        "timeline": "10–20 working days"
+      },
+      {
+        "name": "Formal Connection Application",
+        "detail": "Submit a formal application to the relevant DNO with full technical details: proposed capacity (kW/MW), technology type, single-line diagram, site plan, and project timeline. Different DNOs use different portals. Application fees vary by voltage level and DNO but are typically £0–£8K+.",
+        "timeline": "Fee £0–£8K+"
+      },
+      {
+        "name": "Connection Offer / Quotation",
+        "detail": "The DNO conducts a technical assessment and issues a formal Connection Offer or Budget Estimate. This specifies the point of connection, required works, costs (now fully shallow — extension assets only), and a target energisation date. Under the Electricity Act, DNOs must issue offers within 45 working days (LV/HV) or 65 working days (EHV/132 kV).",
+        "timeline": "45–65 working days"
+      },
+      {
+        "name": "Offer Acceptance & Payment",
+        "detail": "The applicant reviews the offer and accepts within the validity period (typically 30–90 days). An initial payment or deposit is made to secure the connection date. Applicants may negotiate terms or request an alternative design. Once accepted, the DNO schedules the works.",
+        "timeline": "30–90 days validity"
+      },
+      {
+        "name": "Construction & Installation",
+        "detail": "The DNO (or their approved contractor) carries out the connection works: laying cables, installing switchgear, upgrading substations if needed. The developer installs their own generation or demand equipment to the agreed specification. Duration depends on the complexity: a simple LV connection may take weeks; EHV connections involving new primary substations can take 1–2 years.",
+        "timeline": "6–24 months"
+      },
+      {
+        "name": "Commissioning & Energisation",
+        "detail": "The DNO inspects and tests the completed connection. The G99 protection settings are configured and witnessed. Once all tests pass, the DNO energises the connection and the site enters commercial operation. Export and import limits are set as specified in the connection agreement, with flexible connections potentially subject to Active Network Management curtailment.",
+        "timeline": ""
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "start",
+          "type": "start",
+          "label": "Begin",
+          "detail": "",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "size-decision",
+          "type": "decision",
+          "label": "System Size?",
+          "detail": "The threshold is 16A per phase (3.68 kW single-phase). Systems at or below this threshold use the simplified G98 'Fit and Inform' process. Systems above this threshold require formal G99 pre-approval from the DNO.",
+          "sources": [
+            {
+              "label": "ENA G98/G99",
+              "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+            }
+          ],
+          "row": 1,
+          "col": 1
+        },
+        {
+          "id": "g98-install",
+          "type": "step",
+          "label": "Install System (G98)",
+          "detail": "For small installations up to 3.68 kW, the installer fits the equipment first with no DNO pre-approval needed. The installation must be carried out by an MCS-accredited installer and comply with the G98 engineering standard.",
+          "timeline": "1-5 days",
+          "timelineBasis": "assumption",
+          "row": 2,
+          "col": 0
+        },
+        {
+          "id": "g98-notify",
+          "type": "step",
+          "label": "Notify DNO",
+          "detail": "The installer notifies the DNO within 28 days of commissioning using the ENA's online notification form. This is a post-installation notification, not a request for permission.",
+          "timeline": "Within 28 days",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "Capture Energy",
+              "url": "https://www.capture.energy/blog/g98-and-g99-applications-for-solar-and-battery-storage"
+            }
+          ],
+          "row": 3,
+          "col": 0
+        },
+        {
+          "id": "g98-assess",
+          "type": "step",
+          "label": "DNO Compliance Check",
+          "detail": "The DNO reviews the notification and may conduct a compliance check to ensure the installation meets G98 requirements and does not adversely affect the local network.",
+          "timeline": "Up to 4 weeks",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "Capture Energy",
+              "url": "https://www.capture.energy/blog/g98-and-g99-applications-for-solar-and-battery-storage"
+            }
+          ],
+          "row": 4,
+          "col": 0
+        },
+        {
+          "id": "g99-preapp",
+          "type": "step",
+          "label": "Pre-application (Optional)",
+          "detail": "For G99 installations (>3.68 kW), applicants can submit a pre-application enquiry to the DNO to get an indication of available capacity, likely connection costs, and any constraints at the proposed location. This step is optional but strongly recommended to avoid wasted application fees.",
+          "timeline": "10-20 working days",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "NGED GSOP",
+              "url": "https://connections.nationalgrid.co.uk/connection-guaranteed-standards-of-performance"
+            }
+          ],
+          "row": 2,
+          "col": 1
+        },
+        {
+          "id": "g99-apply",
+          "type": "step",
+          "label": "Formal G99 Application",
+          "detail": "Submit a Statement of Application Form (SAF) to the relevant DNO with full technical details: proposed capacity, technology type, single-line diagram, site plan, and project timeline. Application fees vary by voltage level and DNO, typically ranging from £0 to £8,000+.",
+          "timeline": "Varies by voltage",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "SolarGridCheck",
+              "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+            }
+          ],
+          "row": 3,
+          "col": 1
+        },
+        {
+          "id": "g99-assess",
+          "type": "step",
+          "label": "DNO Assessment & Offer",
+          "detail": "The DNO conducts a network impact assessment and issues a formal connection offer specifying the point of connection, required works, and costs. Since April 2023, charging is fully shallow — customers only pay for extension assets. DNOs must issue offers within 45 working days (LV/HV) or 65 working days (EHV/132 kV).",
+          "timeline": "LV: 45 days, HV: 65 days",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "NGED GSOP",
+              "url": "https://connections.nationalgrid.co.uk/connection-guaranteed-standards-of-performance"
+            }
+          ],
+          "row": 4,
+          "col": 1
+        },
+        {
+          "id": "reinforce-decision",
+          "type": "decision",
+          "label": "Reinforcement needed?",
+          "detail": "The DNO assessment determines whether the existing network can accommodate the new connection or if reinforcement works are required. In constrained areas, a flexible connection may be offered as an alternative to waiting for reinforcement.",
+          "sources": [
+            {
+              "label": "SolarGridCheck",
+              "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+            }
+          ],
+          "row": 5,
+          "col": 1
+        },
+        {
+          "id": "g99-accept",
+          "type": "step",
+          "label": "Accept Offer & Pay",
+          "detail": "The applicant reviews the connection offer and accepts within the validity period (typically 30–90 days). An initial payment or deposit is made to secure the connection date. Once accepted, the DNO schedules the connection works.",
+          "timeline": "30-90 days",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "SolarGridCheck",
+              "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+            }
+          ],
+          "row": 6,
+          "col": 1
+        },
+        {
+          "id": "flex-route",
+          "type": "step",
+          "label": "Flexible Connection (DERMS)",
+          "detail": "In constrained areas, developers can accept a flexible (curtailable) connection via Active Network Management, exchanging some curtailment for a faster connection without waiting for reinforcement. Available from all six DNOs since April 2023 via DERMS.",
+          "timeline": "Same timelines",
+          "timelineBasis": "assumption",
+          "sources": [
+            {
+              "label": "UKPN Flexible Connections",
+              "url": "https://www.ukpowernetworks.co.uk/new-electricity-connections/distributed-energy-resources-der-generation/flexible-connections"
+            }
+          ],
+          "row": 6,
+          "col": 2
+        },
+        {
+          "id": "construction",
+          "type": "step",
+          "label": "Construction & Installation",
+          "detail": "The DNO (or their approved Independent Connection Provider) carries out the connection works: laying cables, installing switchgear, upgrading substations if needed. The developer installs their own generation or demand equipment to the agreed specification.",
+          "timeline": "6-24 months",
+          "timelineBasis": "evidence",
+          "sources": [
+            {
+              "label": "SolarGridCheck",
+              "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+            }
+          ],
+          "row": 7,
+          "col": 1
+        },
+        {
+          "id": "commission",
+          "type": "step",
+          "label": "Commissioning & Witness Test",
+          "detail": "The DNO inspects and tests the completed connection. G99 protection settings are configured and a witness test is conducted. Once all tests pass, the DNO energises the connection and export/import limits are set as specified in the connection agreement.",
+          "timeline": "~1 day test",
+          "timelineBasis": "assumption",
+          "sources": [
+            {
+              "label": "G99 Issue 2",
+              "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+            }
+          ],
+          "row": 8,
+          "col": 1
+        },
+        {
+          "id": "end",
+          "type": "end",
+          "label": "Operational",
+          "detail": "",
+          "row": 9,
+          "col": 1
+        }
+      ],
+      "edges": [
+        { "from": "start", "to": "size-decision", "label": "", "type": "normal" },
+        { "from": "size-decision", "to": "g98-install", "label": "\u22643.68 kW (G98)", "type": "conditional" },
+        { "from": "size-decision", "to": "g99-preapp", "label": ">3.68 kW (G99)", "type": "conditional" },
+        { "from": "g98-install", "to": "g98-notify", "label": "", "type": "normal" },
+        { "from": "g98-notify", "to": "g98-assess", "label": "", "type": "normal" },
+        { "from": "g98-assess", "to": "end", "label": "Approved", "type": "normal" },
+        { "from": "g99-preapp", "to": "g99-apply", "label": "Optional step", "type": "normal" },
+        { "from": "g99-apply", "to": "g99-assess", "label": "", "type": "normal" },
+        { "from": "g99-assess", "to": "reinforce-decision", "label": "", "type": "normal" },
+        { "from": "reinforce-decision", "to": "g99-accept", "label": "Standard offer", "type": "conditional" },
+        { "from": "reinforce-decision", "to": "flex-route", "label": "Constrained area", "type": "conditional" },
+        { "from": "flex-route", "to": "g99-accept", "label": "Accept curtailment", "type": "normal" },
+        { "from": "g99-accept", "to": "construction", "label": "", "type": "normal" },
+        { "from": "construction", "to": "commission", "label": "", "type": "normal" },
+        { "from": "commission", "to": "end", "label": "", "type": "normal" }
+      ]
+    },
+    "challenges": "<strong>Capacity constraints:</strong> Many urban and suburban networks are approaching thermal or voltage limits, meaning even relatively small connections can trigger expensive reinforcement — though since April 2023, reinforcement costs are no longer charged to the connecting customer.<br><br><strong>DNO inconsistency:</strong> The six DNO groups use different application portals, fee structures, and timescales, creating confusion for developers operating across multiple regions.<br><br><strong>Data centre demand surge:</strong> Over 50 GW of new data centre demand has entered the queue, overwhelming some DNO areas — particularly in the London and South East regions served by UKPN.<br><br><strong>Flexible connection limitations:</strong> While flexible/curtailable connections offer a faster route, the level of curtailment can be unpredictable and may undermine project economics for some technologies.<br><br><strong>EHV/132 kV complexity:</strong> Larger distribution connections at EHV and 132 kV require coordination with NESO and the transmission network, adding complexity and time."
+  },
+  "reforms": [
+    {
+      "title": "TMO4+ Queue Reform — 'First Ready, First Needed, First Connected'",
+      "year": "2025",
+      "level": "transmission",
+      "description": "The Transmission Milestones and Obligations (TMO4+) reform, implemented from April 2025, represents the most significant overhaul of the UK's transmission connections process in decades. It replaced the historic first-come-first-served queue with a merit-based system that prioritises projects by <strong>readiness</strong> (planning permission, financing, land rights), <strong>system need</strong> (alignment with network development plans), and <strong>location</strong> (proximity to available capacity). The reform introduced a two-gate system: <strong>Gate 1</strong> issues conditional offers to projects that meet readiness criteria, and <strong>Gate 2</strong> confirms connection dates for fully ready projects. By December 2025, the queue was cut from over 700 GW to 283 GW of generation and storage plus 99 GW of demand — removing approximately 450 GW of speculative or stalled projects."
+    },
+    {
+      "title": "Ofgem Connections End-to-End Review",
+      "year": "2025",
+      "level": "both",
+      "description": "Published in December 2025, Ofgem's comprehensive review of the full customer connection journey covers both transmission and distribution. It introduces <strong>enforceable licence conditions</strong> requiring network operators to meet defined service standards for connection timelines and communication. Key measures include mandatory <strong>real-time capacity data</strong> publication by all DNOs and TOs, standardised application processes across regions, and new penalties for operators that fail to meet guaranteed standards of performance. The review aims to address long-standing complaints about inconsistent customer experience across the six DNO groups and the transmission network."
+    },
+    {
+      "title": "Demand Connections Reform",
+      "year": "2026",
+      "level": "both",
+      "description": "Announced in February 2026 in response to over <strong>50 GW of data centre demand</strong> applications flooding the connections queue, this reform establishes a three-pillar framework: <strong>Curate</strong> (screening applications for credibility and readiness), <strong>Plan</strong> (strategic network planning to accommodate large demand clusters), and <strong>Connect</strong> (streamlined process for approved projects). The reform recognises that the existing connections framework was designed primarily for generation and is not fit for purpose in an era of hyperscale demand growth from AI data centres, electrification of transport, and heat pumps."
+    },
+    {
+      "title": "Progression Commitment Fee",
+      "year": "2026",
+      "level": "transmission",
+      "description": "A new financial commitment mechanism requiring transmission connection applicants to pay <strong>£2,500 per MW</strong> at the initial stage, rising to <strong>£10,000 per MW</strong> as the project progresses through the gate system. Designed to prevent speculative queue hoarding by ensuring that only developers with genuine financial commitment retain their place in the connections pipeline. For a typical 100 MW project, this means an initial commitment of £250,000 rising to £1,000,000 — a significant deterrent against holding capacity without intent to build. Fees are refundable if the project proceeds to energisation on schedule."
+    },
+    {
+      "title": "Fully Shallow Connection Charging (Distribution)",
+      "year": "2023",
+      "level": "distribution",
+      "description": "Implemented from April 2023 under Ofgem's Access and Forward-Looking Charges Significant Code Review, this reform means distribution-connected customers now <strong>only pay for extension assets</strong> (the cable, switchgear, and metering from their site to the existing network) and are no longer liable for the cost of upstream reinforcement. Reinforcement costs are instead socialised through Distribution Use of System (DUoS) charges. This significantly reduced upfront connection costs for many projects, particularly at HV and EHV levels where reinforcement had previously been the dominant cost component."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is TMO4+ and how does it change the connections process?",
+      "a": "TMO4+ (Transmission Milestones and Obligations 4+) is NESO's major queue reform implemented from April 2025. It replaced the old first-come-first-served queue with a 'first ready, first needed, first connected' approach. Projects are now assessed on their readiness (planning permission, financing, land rights), their alignment with system needs, and their grid location. A two-gate system issues conditional offers (Gate 1) and confirmed connection dates (Gate 2). The reform cut the queue from over 700 GW to 283 GW generation/storage plus 99 GW demand by removing speculative and stalled projects."
+    },
+    {
+      "q": "What is the difference between G98 and G99?",
+      "a": "G98 and G99 are the Engineering Recommendations that govern how generation equipment connects to the distribution network. G98 applies to small installations up to 3.68 kW per phase (typically single residential solar panels or small batteries) and uses a 'Fit and Inform' process — the installer connects first and notifies the DNO within 28 days, with no pre-approval or fee required. G99 applies to all installations above 3.68 kW and requires formal pre-approval from the DNO before connection, including technical assessment, a connection offer, and potentially significant fees depending on scale and voltage level."
+    },
+    {
+      "q": "How long does a transmission connection take in the UK?",
+      "a": "Historically, transmission connections in the UK have taken 8–15 years from initial application to energisation, making the UK one of the slowest in Europe for grid connections. This was largely due to the enormous queue backlog (peaking at 739 GW) and the need for major network reinforcement projects. Following the TMO4+ reform, NESO's target is to reduce this to 4–7 years for projects that meet readiness criteria and are aligned with system needs. However, projects requiring significant network reinforcement — such as those in Scotland awaiting new subsea HVDC links — may still face longer timescales."
+    },
+    {
+      "q": "What changed with the queue reform and how big is the current queue?",
+      "a": "Before the TMO4+ reform, the UK transmission queue had grown to approximately 739 GW — more than 12 times the system's peak demand of around 60 GW. Much of this was speculative: developers secured queue positions early without firm plans to build. The TMO4+ reform required all projects to demonstrate readiness through evidence of planning permission, financing, and land rights. Projects that could not meet these criteria were removed. By December 2025, the queue stood at 283 GW of generation and storage plus 99 GW of demand — still large, but far more realistic."
+    },
+    {
+      "q": "What are flexible connections and how do they work?",
+      "a": "Flexible connections (also called curtailable or Active Network Management connections) allow generators or large demand customers to connect to the distribution network faster and at lower cost by accepting that their export or import may be temporarily curtailed during periods of network constraint. Available from all six DNOs since April 2023 via DERMS (Distributed Energy Resource Management Systems), they are particularly useful in areas where the network is near capacity but reinforcement would take years. The trade-off is that the connected party may lose some revenue during curtailment periods, so the economics depend on the expected frequency and duration of curtailment at that specific location."
+    }
+  ],
+  "note": "The UK grid connections landscape is in the midst of its most significant transformation in decades. The creation of NESO as a publicly owned system operator, the TMO4+ queue reform, and Ofgem's End-to-End Review collectively signal a shift from a reactive, first-come-first-served model to a strategically planned, merit-based connections framework. For developers, the key implications are: (1) readiness is now the primary currency — projects with planning, financing, and land in place will be prioritised; (2) speculative queue positions are being eliminated through financial commitments and gate reviews; (3) distribution connections are becoming simpler through shallow charging and flexible connections; and (4) the 50 GW+ data centre demand wave is prompting entirely new frameworks. The next 2–3 years will determine whether these reforms succeed in clearing the backlog and restoring investor confidence in UK grid connections."
+}

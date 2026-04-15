@@ -1,0 +1,1045 @@
+{
+  "id": "netherlands",
+  "name": "Netherlands",
+  "full": "Netherlands — Grid Interconnection Process",
+  "type": "Severe Congestion Crisis",
+  "icon": "🇳🇱",
+  "accentColor": "#E65100",
+  "accentBg": "#FFF3E0",
+  "badgeColor": "#FFF3E0",
+  "badgeText": "#E65100",
+  "badge": "Grid Congestion Crisis",
+  "badge2": "14,000+ on Waiting Lists",
+  "tags": [
+    "europe"
+  ],
+  "sub": "The Netherlands faces the most severe grid congestion crisis in Europe, with 14,000+ businesses on waiting lists and transport scarcity declared in virtually all provinces. Queue times for new connections in congested areas now reach 3–10+ years.",
+  "cardTags": [
+    "TenneT",
+    "Liander",
+    "Stedin",
+    "Enexis",
+    "ACM",
+    "GOPACS",
+    "Energiewet"
+  ],
+  "desc": "The Dutch grid is under unprecedented strain. TenneT's transmission queue holds 212 requests totalling ~38 GW, plus 60 GW of battery storage applications. At the distribution level, 6 publicly owned DSOs collectively face 14,000+ businesses on waiting lists, with 90% of businesses reporting impacts from grid congestion. Landmark reforms — the Energiewet (effective January 2026), Time-Dependent Transmission Rights (TDTR), cable pooling expansion, and non-firm ATR85 connections — aim to unlock capacity, but physical grid expansion remains a multi-year bottleneck. The LAN Action Programme coordinates 100+ measures across government, grid operators, and regulators to address the crisis.",
+  "transmission": {
+    "title": "Transmission Connection (Hoogspanning)",
+    "voltageLevel": "110–380 kV",
+    "overview": "TenneT TSO B.V. is the sole Dutch transmission system operator, responsible for the national high-voltage grid (110 kV and above). TenneT invested €14.8B in 2025 and has €43B planned for 2025–2029 across ~1,000 grid expansion projects. The transmission queue currently holds 212 requests totalling ~38 GW, plus an additional 60 GW in battery storage applications. Time-Dependent Transmission Rights (TDTR) have unlocked 9.1 GW of capacity for 57 companies by allowing flexible usage during off-peak hours.",
+    "keyBodies": [
+      {
+        "name": "TenneT TSO B.V.",
+        "fullName": "TenneT Transmission System Operator",
+        "role": "Sole Dutch TSO. Operates and expands the national high-voltage grid (110–380 kV). Invested €14.8B in 2025; €43B planned 2025–2029 across ~1,000 expansion projects. Manages the transmission connection queue (212 requests, ~38 GW + 60 GW batteries).",
+        "url": "https://www.tennet.eu"
+      },
+      {
+        "name": "ACM",
+        "fullName": "Autoriteit Consument & Markt",
+        "role": "Independent regulator for energy, competition, and consumer protection. Sets network tariffs, enforces grid codes, administers the Prioritisation Framework for connection queues, and oversees compliance with the Energiewet.",
+        "url": "https://www.acm.nl"
+      },
+      {
+        "name": "Ministry of EZK",
+        "fullName": "Ministerie van Economische Zaken en Klimaat",
+        "role": "Sets energy policy, drafted the Energiewet, coordinates the LAN Action Programme (100+ measures), and issues parliamentary letters on grid congestion policy.",
+        "url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-economische-zaken-en-klimaat"
+      }
+    ],
+    "typicalTimeline": "12–18 months (standard)",
+    "timelineDetail": "Standard connections take 12–18 months from contract to commissioning. In congested areas, the full process from application to energisation can take up to 10 years due to grid expansion lead times and queue backlogs.",
+    "costRange": "€1.5M – €3M+",
+    "costDetail": "110/150 kV connections ~€1.5M; 220/380 kV connections ~€3M. Additional ongoing costs include an annual periodic tariff (capacity-based) and a transport tariff (usage-based). TDTR users can receive up to 65% tariff discount for flexible usage.",
+    "queueSize": "~38 GW (212 requests) + 60 GW batteries",
+    "queueDetail": "TenneT's transmission queue holds 212 connection requests totalling approximately 38 GW of capacity, plus an additional 60 GW in battery storage applications. TDTR has unlocked 9.1 GW for 57 companies, but physical grid constraints remain severe across most provinces.",
+    "steps": [
+      {
+        "name": "Aanvraag + Korte Analyse (Application & Short Analysis)",
+        "detail": "The applicant submits a formal connection request to TenneT specifying location, capacity, and connection voltage. TenneT performs an initial assessment of grid availability, technical feasibility, and whether transport scarcity applies in the relevant area. If transport scarcity is declared ('vol = vol'), the applicant may be offered a waiting list position, TDTR (non-firm), or directed to cable pooling alternatives.",
+        "timeline": "2–4 weeks"
+      },
+      {
+        "name": "Basisontwerp (Basic Design)",
+        "detail": "TenneT prepares a basic engineering design for the connection, including substation layout, protection schemes, metering requirements, and any necessary grid reinforcements. The applicant receives a detailed technical specification and indicative cost estimate. All applicable aspects are made transparent and conditions established to bring risks to manageable levels.",
+        "timeline": "2–6 months"
+      },
+      {
+        "name": "Realisatieovereenkomst (Realisation Agreement)",
+        "detail": "Both parties sign a binding contract covering scope, cost allocation, timelines, and technical standards. The agreement triggers TenneT's obligation to construct and the applicant's obligation to pay. In congested areas, a queue position is assigned; TDTR or non-firm ATR85 options may be offered as alternatives to waiting. The definitive planning and costs are set out in this agreement.",
+        "timeline": "1–3 months"
+      },
+      {
+        "name": "Realisatie (Construction & Grid Reinforcement)",
+        "detail": "TenneT (or its contractors) constructs the physical connection infrastructure: cable routes, transformer bays, switchgear, protection systems, and any required grid reinforcements. This phase includes permitting, civil works, and equipment procurement. In congested zones, upstream grid expansion may be required first. High-voltage substations can take up to 10 years to construct.",
+        "timeline": "12–18 months (standard); up to 10 years (congested)"
+      },
+      {
+        "name": "ATO + Inbedrijfstelling (Commissioning & Transport Agreement)",
+        "detail": "The completed connection undergoes testing and commissioning. Upon successful energisation, the Aansluit- en Transportovereenkomst (ATO — Connection and Transport Agreement) is activated, enabling the customer to inject or withdraw electricity. Under the Energiewet (January 2026), the ATO replaces the former separate connection and transport agreements. Ongoing transport tariffs begin.",
+        "timeline": "2–6 weeks"
+      }
+    ],
+    "challenges": "Transport scarcity has been declared in virtually all Dutch provinces, with Noord-Holland facing no additional grid capacity for the next decade. The 'vol = vol' (full is full) declarations mean new applicants in congested zones face multi-year waits. TenneT's €43B investment programme through 2029 will expand capacity, but construction lead times (10+ years for new HV substations), permitting delays, and labour shortages constrain the pace. TDTR has unlocked 9.1 GW for 57 companies, but these are non-firm rights that can be curtailed during 15% of hours. The Energiewet (January 2026) replaces the fixed 18-week statutory connection deadline with a 'reasonable timeframe' standard, giving ACM discretion but removing a hard enforcement lever.",
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "nt_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "nt_aanvraag",
+          "type": "step",
+          "label": "Aanvraag (Application to TenneT)",
+          "row": 1,
+          "col": 1,
+          "timeline": "1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "The applicant submits a formal connection request to TenneT specifying location, required capacity, connection voltage (110–380 kV), and intended use. TenneT discusses possibilities and explores the best connection option.",
+          "sources": [
+            {
+              "label": "TenneT: Procedure & Lead Time",
+              "url": "https://www.tennet.eu/nl-en/grids-and-markets/connecting-dutch-high-voltage-grid/procedure-and-lead-time"
+            },
+            {
+              "label": "TenneT: Which Connection",
+              "url": "https://www.tennet.eu/nl-en/markets/connecting-grid/which-connection"
+            }
+          ]
+        },
+        {
+          "id": "nt_capacity_check",
+          "type": "decision",
+          "label": "Transport capacity?",
+          "row": 2,
+          "col": 1,
+          "detail": "Does TenneT have available transport capacity in the requested area? Transport scarcity ('transportschaarste') has been declared in virtually all Dutch provinces. If capacity is available, the standard path proceeds. If not, the applicant faces a waiting list (3–10+ years) or can pursue alternative routes: TDTR (time-dependent), cable pooling, or GOPACS participation.",
+          "sources": [
+            {
+              "label": "TenneT: Congestion Map",
+              "url": "https://www.tennet.eu/news/no-extra-space-electricity-grid-large-part-noord-holland-next-decade"
+            },
+            {
+              "label": "NL Times: Waiting Lists",
+              "url": "https://nltimes.nl/2025/10/06/14000-businesses-waiting-list-connect-congested-power-grid"
+            }
+          ]
+        },
+        {
+          "id": "nt_korte_analyse",
+          "type": "step",
+          "label": "Korte Analyse (Short Analysis)",
+          "row": 3,
+          "col": 1,
+          "timeline": "2–4 weeks",
+          "timelineBasis": "evidence",
+          "detail": "TenneT performs a short analysis of grid availability, identifies the substation, provides a rough timeline, and estimates total costs. This initial assessment determines whether the standard path is feasible or alternatives are needed.",
+          "sources": [
+            {
+              "label": "TenneT: Procedure",
+              "url": "https://www.tennet.eu/nl-en/grids-and-markets/connecting-dutch-high-voltage-grid/procedure-and-lead-time"
+            }
+          ]
+        },
+        {
+          "id": "nt_alt_decision",
+          "type": "decision",
+          "label": "Which route?",
+          "row": 3,
+          "col": 2,
+          "detail": "When capacity is unavailable, applicants must choose between: (1) Waiting list — first-come-first-served, potentially 3–10+ years; (2) TDTR — time-dependent transmission rights with 85% availability and up to 65% tariff discount; (3) Cable pooling — share an existing connection with up to 4 parties (threshold lowered to 100 kVA under Energiewet). The ACM Prioritisation Framework (revised Dec 2025) determines queue priority for waiting list positions.",
+          "sources": [
+            {
+              "label": "TenneT: TDTR",
+              "url": "https://www.tennet.eu/nl-en/time-dependent-transport-rights-tdtr"
+            },
+            {
+              "label": "ACM: Cable Pooling",
+              "url": "https://www.acm.nl/en/publications/acm-already-gives-green-light-cable-pooling"
+            },
+            {
+              "label": "Stibbe: Prioritisation Framework",
+              "url": "https://www.stibbe.com/publications-and-insights/parliamentary-letter-on-grid-congestion-eight-measures-for-better"
+            }
+          ]
+        },
+        {
+          "id": "nt_waiting_list",
+          "type": "step",
+          "label": "Waiting List (3–10+ years)",
+          "row": 4,
+          "col": 2,
+          "timeline": "3–10+ years",
+          "timelineBasis": "evidence",
+          "detail": "The applicant is placed on TenneT's waiting list, prioritised by the ACM Prioritisation Framework (revised December 2025). Priority categories include societal urgency (hospitals, emergency services), energy transition projects (renewables, charging infra), and economic significance. In Noord-Holland, no additional capacity is expected for at least a decade. TenneT's €43B investment programme (2025–2029) will expand capacity, but construction lead times constrain pace.",
+          "sources": [
+            {
+              "label": "TenneT: Noord-Holland Capacity",
+              "url": "https://www.tennet.eu/news/no-extra-space-electricity-grid-large-part-noord-holland-next-decade"
+            },
+            {
+              "label": "Wattstor: 10-Year Wait",
+              "url": "https://wattstor.com/insight/grid-congestion-holland/"
+            },
+            {
+              "label": "Strategic Energy: LAN Programme",
+              "url": "https://strategicenergy.eu/the-netherlands-grid-congestion/"
+            }
+          ]
+        },
+        {
+          "id": "nt_tdtr",
+          "type": "step",
+          "label": "TDTR: 85% availability, 65% discount",
+          "row": 5,
+          "col": 2,
+          "timeline": "Weeks–months (faster access)",
+          "timelineBasis": "evidence",
+          "detail": "Time-Dependent Transmission Rights (TDTR) grant access during at least 85% of annual hours. TenneT can limit transport during the remaining 15% (up to ~1,314 hours/year), with at least 24-hour advance notice (announced by 08:30 the day before). Combined with time-dependent tariffs, flexible users save up to 65% on grid fees. As of 2025, TDTR has unlocked 9.1 GW for 57 companies. Allocation is first-come-first-served with social priority considerations. Particularly attractive for BESS, electrolysers, and flexible industrial loads.",
+          "sources": [
+            {
+              "label": "TenneT: TDTR",
+              "url": "https://www.tennet.eu/nl-en/time-dependent-transport-rights-tdtr"
+            },
+            {
+              "label": "GOPACS: TDTR Flex Products",
+              "url": "https://www.gopacs.eu/en/products/tdtr/"
+            },
+            {
+              "label": "NL Times: Off-Peak Contracts",
+              "url": "https://nltimes.nl/2025/04/07/companies-offered-peak-energy-contracts-discounted-rate-free-power-grid-space"
+            },
+            {
+              "label": "Energy Storage NL: TDTR FAQ",
+              "url": "https://www.energystoragenl.nl/en/2025/05/01/tennet-beantwoordt-tdtr-vragen-uit-de-sector/"
+            },
+            {
+              "label": "ESS News: 9 GW Unlocked",
+              "url": "https://www.ess-news.com/2025/04/14/battery-developers-race-for-dutch-grid-access-as-tennet-unlocks-9-gw-capacity/"
+            }
+          ]
+        },
+        {
+          "id": "nt_cable_pool_t",
+          "type": "step",
+          "label": "Cable Pooling (shared connection)",
+          "row": 6,
+          "col": 2,
+          "timeline": "Variable",
+          "timelineBasis": "evidence",
+          "detail": "Cable pooling allows multiple parties to share a single high-voltage connection. Under the Energiewet (January 2026): threshold lowered from 1 MVA to 100 kVA, consumers (not just producers) can participate, storage assets can join, and up to 4 parties per connection. Particularly valuable for co-located solar + battery or wind + electrolyser projects with complementary profiles. Market participants must notify ACM.",
+          "sources": [
+            {
+              "label": "ACM: Cable Pooling Green Light",
+              "url": "https://www.acm.nl/en/publications/acm-already-gives-green-light-cable-pooling"
+            },
+            {
+              "label": "Fruytier: Cable Pooling Opportunity",
+              "url": "https://www.flib.nl/en/news/cable-pooling-a-golden-opportunity/"
+            },
+            {
+              "label": "CMS: Cable Pooling for Batteries",
+              "url": "https://cms.law/en/nld/publication/dutch-energy-regulator-to-tolerate-cable-pooling-for-batteries"
+            },
+            {
+              "label": "Invest-NL: Cable Pooling 2.0",
+              "url": "https://www.invest-nl.nl/en/insights-and-publications/cable-pooling-agreement-20"
+            }
+          ]
+        },
+        {
+          "id": "nt_basisontwerp",
+          "type": "step",
+          "label": "Basisontwerp (Basic Design)",
+          "row": 4,
+          "col": 1,
+          "timeline": "2–6 months",
+          "timelineBasis": "evidence",
+          "detail": "TenneT prepares a basic engineering design: substation layout, protection schemes, metering requirements, grid reinforcements. The preferred variant is elaborated in the basic design where all applicable aspects are made transparent and conditions established to bring risks to manageable levels. The applicant receives a detailed technical specification and indicative cost estimate for approval.",
+          "sources": [
+            {
+              "label": "TenneT: Procedure",
+              "url": "https://www.tennet.eu/nl-en/grids-and-markets/connecting-dutch-high-voltage-grid/procedure-and-lead-time"
+            }
+          ]
+        },
+        {
+          "id": "nt_realisatie_ovk",
+          "type": "step",
+          "label": "Realisatieovereenkomst (Realisation Agreement)",
+          "row": 5,
+          "col": 1,
+          "timeline": "1–3 months",
+          "timelineBasis": "evidence",
+          "detail": "Both parties sign a binding realisation agreement covering scope, cost allocation, definitive planning, timelines, and technical standards. The agreement triggers TenneT's construction obligation and the applicant's payment obligation. This is the key commercial milestone — the definitive costs and planning are set out in this agreement.",
+          "sources": [
+            {
+              "label": "TenneT: Procedure",
+              "url": "https://www.tennet.eu/nl-en/grids-and-markets/connecting-dutch-high-voltage-grid/procedure-and-lead-time"
+            }
+          ]
+        },
+        {
+          "id": "nt_construction",
+          "type": "step",
+          "label": "Realisatie (Construction)",
+          "row": 6,
+          "col": 1,
+          "timeline": "12–18 months (std); up to 10 yrs (congested)",
+          "timelineBasis": "evidence",
+          "detail": "TenneT constructs the physical connection infrastructure: cable routes, transformer bays, switchgear, protection systems, and grid reinforcements. Standard timeline is 12–18 months from contract signing, provided no major station modifications are needed. In congested zones, upstream grid expansion can extend timelines to 10+ years. TenneT invested €14.8B in 2025, with €43B planned 2025–2029.",
+          "sources": [
+            {
+              "label": "TenneT: Procedure & Lead Time",
+              "url": "https://www.tennet.eu/nl-en/grids-and-markets/connecting-dutch-high-voltage-grid/procedure-and-lead-time"
+            },
+            {
+              "label": "Strategic Energy: LAN Programme",
+              "url": "https://strategicenergy.eu/the-netherlands-grid-congestion/"
+            }
+          ]
+        },
+        {
+          "id": "nt_gopacs",
+          "type": "step",
+          "label": "GOPACS Congestion Participation (optional)",
+          "row": 7,
+          "col": 2,
+          "timeline": "Ongoing from commissioning",
+          "timelineBasis": "evidence",
+          "detail": "Connected parties can participate in GOPACS (Grid Operators Platform for Congestion Solutions), the joint platform of all Dutch grid operators. Market participants submit flexibility bids to help resolve local congestion in exchange for financial compensation. Three channels: direct participation (day-ahead capacity restriction contracts), via trading platforms (EPEX SPOT, ETPA, Nord Pool), or via Congestion Service Providers (CSPs, mandatory for intraday). Products include redispatch, bidding obligation contracts, and capacity limitation contracts. First Nord Pool activations expected 2026.",
+          "sources": [
+            {
+              "label": "GOPACS: How It Works",
+              "url": "https://www.gopacs.eu/en/how-does-gopacs-work/"
+            },
+            {
+              "label": "GOPACS: About Congestion Management",
+              "url": "https://www.gopacs.eu/en/about-congestion-management/"
+            },
+            {
+              "label": "Enlit: GOPACS + Nord Pool",
+              "url": "https://www.enlit.world/library/gopacs-and-nord-pool-enhance-access-to-electricity-flexibility"
+            }
+          ]
+        },
+        {
+          "id": "nt_ato",
+          "type": "step",
+          "label": "ATO + Commissioning",
+          "row": 7,
+          "col": 1,
+          "timeline": "2–6 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Completed connection undergoes testing and commissioning. The Aansluit- en Transportovereenkomst (ATO) is activated upon successful energisation. Under the Energiewet (Jan 2026), the ATO replaces formerly separate connection and transport agreements. System managers must complete connections 'within a reasonable term' (replacing the former fixed 18-week statutory deadline). Ongoing transport tariffs begin.",
+          "sources": [
+            {
+              "label": "KVDL: Energiewet Changes 2026",
+              "url": "https://kvdl.com/en/articles/de-energiewet-wat-verandert-er-vanaf-2026"
+            },
+            {
+              "label": "Loyens & Loeff: Connection Period",
+              "url": "https://www.loyensloeff.com/insights/news--events/news/the-connection-period-from-a-strict-deadline-to-a-reasonable-timeframe/"
+            }
+          ]
+        },
+        {
+          "id": "nt_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 8,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "nt_start",
+          "to": "nt_aanvraag"
+        },
+        {
+          "from": "nt_aanvraag",
+          "to": "nt_capacity_check"
+        },
+        {
+          "from": "nt_capacity_check",
+          "to": "nt_korte_analyse",
+          "label": "Available"
+        },
+        {
+          "from": "nt_capacity_check",
+          "to": "nt_alt_decision",
+          "label": "Congested",
+          "type": "conditional"
+        },
+        {
+          "from": "nt_alt_decision",
+          "to": "nt_waiting_list",
+          "label": "Wait (firm)",
+          "type": "conditional"
+        },
+        {
+          "from": "nt_alt_decision",
+          "to": "nt_tdtr",
+          "label": "TDTR (non-firm)",
+          "type": "conditional"
+        },
+        {
+          "from": "nt_alt_decision",
+          "to": "nt_cable_pool_t",
+          "label": "Cable pooling",
+          "type": "conditional"
+        },
+        {
+          "from": "nt_waiting_list",
+          "to": "nt_korte_analyse",
+          "label": "Capacity freed"
+        },
+        {
+          "from": "nt_tdtr",
+          "to": "nt_basisontwerp",
+          "label": "TDTR contract"
+        },
+        {
+          "from": "nt_cable_pool_t",
+          "to": "nt_basisontwerp",
+          "label": "Pooling agreed"
+        },
+        {
+          "from": "nt_korte_analyse",
+          "to": "nt_basisontwerp"
+        },
+        {
+          "from": "nt_basisontwerp",
+          "to": "nt_realisatie_ovk"
+        },
+        {
+          "from": "nt_realisatie_ovk",
+          "to": "nt_construction"
+        },
+        {
+          "from": "nt_construction",
+          "to": "nt_ato"
+        },
+        {
+          "from": "nt_ato",
+          "to": "nt_gopacs",
+          "label": "Optional flex",
+          "type": "conditional"
+        },
+        {
+          "from": "nt_ato",
+          "to": "nt_end"
+        },
+        {
+          "from": "nt_gopacs",
+          "to": "nt_end"
+        }
+      ]
+    }
+  },
+  "distribution": {
+    "title": "Distribution Connection (Laagspanning / Middenspanning)",
+    "voltageLevel": "< 110 kV",
+    "overview": "Six publicly owned DSOs operate the Dutch distribution networks below 110 kV: Liander (Alliander), Stedin, Enexis, Westland Infra, Coteq, and Rendo. Together they serve all Dutch households and businesses. Kleinverbruik (small consumer, ≤3×80A) connections are generally automatic with an 18-week statutory deadline. Grootverbruik (large consumer, >3×80A) connections require a separate ATO and face severe congestion — 14,000+ businesses are on waiting lists, with 90% of businesses reporting impacts from grid scarcity. DSOs collectively invested billions (Enexis €1.9B, Liander €1.7B in 2025) but capacity remains critically constrained.",
+    "keyBodies": [
+      {
+        "name": "Liander",
+        "fullName": "Liander N.V. (Alliander group)",
+        "role": "Largest Dutch DSO. Serves ~3.2 million customers across Noord-Holland, Gelderland, Flevoland, and parts of Zuid-Holland and Friesland. Invested €1.7B in grid expansion in 2025.",
+        "url": "https://www.liander.nl"
+      },
+      {
+        "name": "Stedin",
+        "fullName": "Stedin Netbeheer B.V.",
+        "role": "Second-largest DSO. Serves ~2.3 million customers in Zuid-Holland, Utrecht, and Zeeland. Major investments in urban congestion zones around Rotterdam and The Hague.",
+        "url": "https://www.stedin.net"
+      },
+      {
+        "name": "Enexis",
+        "fullName": "Enexis Netbeheer B.V.",
+        "role": "Third-largest DSO. Serves ~2.9 million customers across the northern and southern provinces (Groningen, Drenthe, Overijssel, Noord-Brabant, Limburg). Invested €1.9B in 2025.",
+        "url": "https://www.enexis.nl"
+      },
+      {
+        "name": "Westland Infra",
+        "fullName": "Westland Infra Netbeheer B.V.",
+        "role": "Regional DSO serving the Westland greenhouse district. Specialises in high-density horticultural energy connections.",
+        "url": "https://www.westlandinfra.nl"
+      },
+      {
+        "name": "Coteq",
+        "fullName": "Coteq Netbeheer B.V.",
+        "role": "Regional DSO serving parts of Overijssel and Gelderland (Twente and Achterhoek regions).",
+        "url": "https://www.coteq.nl"
+      },
+      {
+        "name": "Rendo",
+        "fullName": "Rendo Netbeheer B.V.",
+        "role": "Smallest regional DSO serving parts of Drenthe and Overijssel (Meppel, Hoogeveen, Coevorden).",
+        "url": "https://www.rendo.nl"
+      },
+      {
+        "name": "ACM",
+        "fullName": "Autoriteit Consument & Markt",
+        "role": "Regulates DSO tariffs, enforces quality standards, administers the Prioritisation Framework for distribution queues, and monitors statutory connection deadlines.",
+        "url": "https://www.acm.nl"
+      }
+    ],
+    "typicalTimeline": "18 weeks (kleinverbruik) / 3–10+ years (grootverbruik, congested)",
+    "timelineDetail": "Kleinverbruik connections (≤3×80A) have an 18-week statutory deadline and are generally fulfilled automatically. Grootverbruik connections (>3×80A) in congested areas face 3–10+ year waits. In non-congested areas, grootverbruik connections may take 6–18 months.",
+    "costRange": "DSO-specific; 2026 tariff increase 3.38%",
+    "costDetail": "Connection and transport costs are set by each DSO under ACM regulation. Kleinverbruik connections have standardised fees. Grootverbruik costs are project-specific based on capacity, distance, and required infrastructure. A 3.38% tariff increase takes effect in 2026 across all DSOs.",
+    "queueSize": "14,000+ businesses on waiting lists",
+    "queueDetail": "Over 14,000 businesses are on DSO waiting lists across the Netherlands, with 90% of all businesses reporting impacts from grid congestion. Congestion is most severe in Noord-Holland, parts of Zuid-Holland, and industrial zones. Some areas have received 'vol = vol' declarations where no new connections are available at all.",
+    "steps": [
+      {
+        "name": "Aanvraag (Application)",
+        "detail": "The applicant submits a connection request to the relevant DSO (Liander, Stedin, Enexis, Westland Infra, Coteq, or Rendo), specifying address, requested capacity, and connection type. For kleinverbruik (≤3×80A, ~55 kW), this can often be done online with a former statutory 18-week deadline (now 'reasonable term' under Energiewet 2026). For grootverbruik (>3×80A), a detailed project description and load profile are required.",
+        "timeline": "1–2 weeks"
+      },
+      {
+        "name": "Offerte (Quotation)",
+        "detail": "The DSO assesses grid availability and prepares a formal quotation including connection costs, timeline, and any required grid reinforcements. In congested areas, the DSO may issue a 'vol = vol' rejection or offer a waiting list position. Alternative routes may be proposed: cable pooling, Group Transport Agreement (GTO), non-firm ATR85 connection, or GOPACS congestion participation.",
+        "timeline": "4–8 weeks (kleinverbruik) / months (grootverbruik)"
+      },
+      {
+        "name": "Overeenkomst (Contract)",
+        "detail": "The applicant accepts the quotation and both parties sign the connection agreement. For grootverbruik, this is a binding contract specifying capacity, costs, timeline, and technical specifications. Under the Energiewet, this is structured as an Aansluit- en Transportovereenkomst (ATO).",
+        "timeline": "2–4 weeks"
+      },
+      {
+        "name": "Realisatie (Construction)",
+        "detail": "The DSO constructs the physical connection: cable laying, transformer installation (if needed), metering equipment, and switchgear. For kleinverbruik, this is a standard installation. For grootverbruik, it may involve dedicated transformers, medium-voltage connections, and upstream reinforcements. The Buurtaanpak (neighbourhood approach) targets 135 upgrades in 2025 and 182 in 2026.",
+        "timeline": "6–18 weeks (kleinverbruik) / 6 months–10+ years (grootverbruik, congested)"
+      },
+      {
+        "name": "Inbedrijfstelling (Commissioning)",
+        "detail": "The completed connection is tested, energised, and metering is activated. For kleinverbruik, the smart meter is installed and activated. For grootverbruik, commissioning includes protection testing, load testing, and verification of agreed capacity limits.",
+        "timeline": "1–2 weeks"
+      },
+      {
+        "name": "Transportovereenkomst (Transport Agreement)",
+        "detail": "A transport agreement is activated enabling electricity injection or withdrawal. For kleinverbruik, this is bundled into the energy supplier contract. For grootverbruik, it is a separate ATO with the DSO specifying capacity rights, curtailment conditions, and tariffs. Under the Energiewet (2026), system managers must disclose current and expected transportation capacity and connection timelines.",
+        "timeline": "Concurrent with commissioning"
+      }
+    ],
+    "challenges": "Distribution congestion is the primary bottleneck affecting Dutch businesses. Over 14,000 businesses are on DSO waiting lists, with 90% reporting impacts from grid congestion. Congestion is most severe in Noord-Holland, parts of Zuid-Holland, and industrial zones. DSOs face a severe shortage of qualified technicians and electrical engineers, constraining installation capacity even where grid space exists. Cable pooling and GTOs offer partial relief by sharing existing capacity among multiple parties, but cannot resolve fundamental transformer and cable shortfalls. The Energiewet (January 2026) replaces the fixed 18-week kleinverbruik deadline with a 'reasonable term' — a weaker enforcement lever. The 2026 tariff increase of 3.38% reflects escalating investment costs. DSOs will not be required to offer GTOs until January 2027.",
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "nd_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "nd_size_decision",
+          "type": "decision",
+          "label": "Connection size?",
+          "row": 1,
+          "col": 1,
+          "detail": "The connection process diverges fundamentally based on size. Kleinverbruik (≤3×80A, ~55 kW): covers most households and small businesses; generally automatic with a former 18-week statutory deadline (now 'reasonable term' under Energiewet 2026). Grootverbruik (>3×80A): requires a separate ATO; faces severe congestion queues of 3–10+ years in most provinces.",
+          "sources": [
+            {
+              "label": "Clairfort: ACM Connection Deadlines",
+              "url": "https://clairfort.nl/de-acm-komt-met-duidelijkheid-netbeheerders-moeten-een-kleinverbruikers-binnen-12-of-18-weken-aansluiten-op-het-elektriciteitsnet/"
+            },
+            {
+              "label": "Loyens & Loeff: Connection Period",
+              "url": "https://www.loyensloeff.com/insights/news--events/news/the-connection-period-from-a-strict-deadline-to-a-reasonable-timeframe/"
+            }
+          ]
+        },
+        {
+          "id": "nd_klein_app",
+          "type": "step",
+          "label": "Kleinverbruik Application (≤3×80A)",
+          "row": 2,
+          "col": 0,
+          "timeline": "Online, 1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Small consumer connection requests (≤3×80A / ~55 kW). Can typically be submitted online to the DSO. The Elektriciteitswet mandated an 18-week connection deadline (Art 23(4)); under the Energiewet (Jan 2026), this shifts to a 'reasonable term' determined by ACM. Network operators reserve a portion of local capacity for kleinverbruik so applicants generally do not face congestion waits.",
+          "sources": [
+            {
+              "label": "Loyens & Loeff: Connection Period",
+              "url": "https://www.loyensloeff.com/insights/news--events/news/the-connection-period-from-a-strict-deadline-to-a-reasonable-timeframe/"
+            },
+            {
+              "label": "KVDL: Energiewet 2026",
+              "url": "https://kvdl.com/en/articles/de-energiewet-wat-verandert-er-vanaf-2026"
+            }
+          ]
+        },
+        {
+          "id": "nd_groot_app",
+          "type": "step",
+          "label": "Grootverbruik Application (>3×80A)",
+          "row": 2,
+          "col": 2,
+          "timeline": "1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Large consumer connection requests (>3×80A) require a detailed project description, load profile, and technical specifications. The DSO assesses grid availability and may immediately indicate congestion constraints.",
+          "sources": [
+            {
+              "label": "ABN AMRO: Grid Congestion 2026",
+              "url": "https://www.abnamro.com/en/news/grid-congestion-gets-companies-negotiating-with-grid-operators"
+            },
+            {
+              "label": "NL Times: 14,000 Businesses Waiting",
+              "url": "https://nltimes.nl/2025/10/06/14000-businesses-waiting-list-connect-congested-power-grid"
+            }
+          ]
+        },
+        {
+          "id": "nd_klein_process",
+          "type": "step",
+          "label": "DSO Quotation + Construction (18 weeks)",
+          "row": 3,
+          "col": 0,
+          "timeline": "18 weeks total (statutory)",
+          "timelineBasis": "evidence",
+          "detail": "For kleinverbruik, the DSO prepares a quotation, schedules construction, installs the connection (cable, meter, switchgear), and commissions — all within the former 18-week statutory period. Smart meter (slimme meter) is installed and activated. Under the Energiewet, the fixed 18-week deadline is replaced by a 'reasonable term' set by ACM.",
+          "sources": [
+            {
+              "label": "Clairfort: ACM Deadlines",
+              "url": "https://clairfort.nl/de-acm-komt-met-duidelijkheid-netbeheerders-moeten-een-kleinverbruikers-binnen-12-of-18-weken-aansluiten-op-het-elektriciteitsnet/"
+            },
+            {
+              "label": "Loyens & Loeff: Connection Period",
+              "url": "https://www.loyensloeff.com/insights/news--events/news/the-connection-period-from-a-strict-deadline-to-a-reasonable-timeframe/"
+            }
+          ]
+        },
+        {
+          "id": "nd_groot_congestion",
+          "type": "decision",
+          "label": "Grid congested?",
+          "row": 3,
+          "col": 2,
+          "detail": "Is the requested area subject to transport scarcity ('transportschaarste')? As of 2026, congestion affects virtually all Dutch provinces. Over 14,000 businesses are on waiting lists. The DSO must demonstrate it has exhausted all available congestion management measures before refusing a transport request. If congested, multiple alternative routes exist.",
+          "sources": [
+            {
+              "label": "NL Times: 14,000+ Waiting",
+              "url": "https://nltimes.nl/2025/10/06/14000-businesses-waiting-list-connect-congested-power-grid"
+            },
+            {
+              "label": "Business.gov.nl: Solutions for Congestion",
+              "url": "https://business.gov.nl/sustainable-business/energy/possible-solutions-for-grid-congestion/"
+            },
+            {
+              "label": "Enlit: NL Grid Congestion",
+              "url": "https://www.enlit.world/library/grid-congestion-in-the-netherlands-and-why-we-must-heed-the-warning"
+            }
+          ]
+        },
+        {
+          "id": "nd_standard_offerte",
+          "type": "step",
+          "label": "Standard Offerte (Quotation)",
+          "row": 4,
+          "col": 1,
+          "timeline": "4–8 weeks",
+          "timelineBasis": "evidence",
+          "detail": "In non-congested areas, the DSO prepares a standard quotation covering connection costs, timeline, required infrastructure, and technical specifications. The applicant reviews and accepts.",
+          "sources": [
+            {
+              "label": "Fieldfisher: NL Energy Act",
+              "url": "https://www.fieldfisher.com/en/insights/the-new-dutch-energy-act-a-new-legislative-framewo"
+            }
+          ]
+        },
+        {
+          "id": "nd_alt_route",
+          "type": "decision",
+          "label": "Which alternative?",
+          "row": 4,
+          "col": 2,
+          "detail": "When grootverbruik grid capacity is unavailable, applicants must choose between: (1) Waiting list — 3–10+ years, prioritised by ACM framework; (2) ATR85 non-firm — 85% availability, 50% fee discount; (3) Cable pooling — share connection with up to 4 parties; (4) GTO (Group Transport Agreement) — collective capacity management on industrial estates; (5) GOPACS flex participation — earn revenue by providing congestion management services.",
+          "sources": [
+            {
+              "label": "Business.gov.nl: Congestion Solutions",
+              "url": "https://business.gov.nl/sustainable-business/energy/possible-solutions-for-grid-congestion/"
+            },
+            {
+              "label": "Strategic Energy: 100 Measures",
+              "url": "https://strategicenergy.eu/the-netherlands-grid-congestion/"
+            },
+            {
+              "label": "Van Doorne: ATR85 & Flex Rights",
+              "url": "https://www.vandoorne.com/en/artikelen/alternative-and-flexible-transmission-capacity-rights-a-step-closer-to-a-more-efficient-use-of-the-electricity-grid-in-the-netherlands/"
+            }
+          ]
+        },
+        {
+          "id": "nd_waiting",
+          "type": "step",
+          "label": "Waiting List (3–10+ years)",
+          "row": 5,
+          "col": 2,
+          "timeline": "3–10+ years",
+          "timelineBasis": "evidence",
+          "detail": "The applicant joins the DSO's waiting list, prioritised under the ACM Prioritisation Framework (revised Dec 2025). In some provinces, no capacity is expected for a decade. The Energiewet now permits 'null connections' — physically connected but with (temporarily) no transport capacity. Over 14,000 businesses are on waiting lists totalling ~9 GW.",
+          "sources": [
+            {
+              "label": "NL Times: 14,000 Waiting",
+              "url": "https://nltimes.nl/2025/10/06/14000-businesses-waiting-list-connect-congested-power-grid"
+            },
+            {
+              "label": "Wattstor: 10-Year Wait",
+              "url": "https://wattstor.com/insight/grid-congestion-holland/"
+            }
+          ]
+        },
+        {
+          "id": "nd_atr85",
+          "type": "step",
+          "label": "ATR85: 85% availability, 50% discount",
+          "row": 5,
+          "col": 1,
+          "timeline": "Faster access (expected April 2026)",
+          "timelineBasis": "evidence",
+          "detail": "ATR85 offers a non-firm connection product: customers accept curtailment during up to 15% of annual hours (~1,314 hours) in exchange for faster grid access and a 50% fee discount on grid tariffs. Combined with time-weighted rates, total savings can reach up to 67%. At least 24-hour advance notice of curtailment periods. Particularly attractive for flexible loads (EV charging, heat pumps, electrolysers) and battery storage. Could double BESS deployments from <1 GW to >2 GW by 2030.",
+          "sources": [
+            {
+              "label": "Energy-Storage.news: ATR85 for BESS",
+              "url": "https://www.energy-storage.news/netherlands-non-firm-grid-connections-and-lower-fees-could-double-bess-deployments/"
+            },
+            {
+              "label": "Strategic Energy: LAN Measures",
+              "url": "https://strategicenergy.eu/the-netherlands-grid-congestion/"
+            },
+            {
+              "label": "Energie-Nederland: Non-firm Draft",
+              "url": "https://www.energie-nederland.nl/en/energie-nederland-responds-to-draft-decision-on-non-firm-transport-agreement/"
+            }
+          ]
+        },
+        {
+          "id": "nd_cable_pool",
+          "type": "step",
+          "label": "Cable Pooling (up to 4 parties)",
+          "row": 6,
+          "col": 2,
+          "timeline": "Variable",
+          "timelineBasis": "evidence",
+          "detail": "Under the Energiewet (Jan 2026), cable pooling rules are significantly expanded: threshold lowered from 1 MVA to 100 kVA, consumers (not just producers) can participate, storage assets can join, and up to 4 parties per connection. Market participants must notify ACM. Shared parties act as a single connected entity. Particularly valuable for co-located solar + battery, wind + electrolyser, or complementary industrial loads.",
+          "sources": [
+            {
+              "label": "ACM: Cable Pooling",
+              "url": "https://www.acm.nl/en/publications/acm-already-gives-green-light-cable-pooling"
+            },
+            {
+              "label": "Invest-NL: Cable Pooling 2.0",
+              "url": "https://www.invest-nl.nl/en/insights-and-publications/cable-pooling-agreement-20"
+            },
+            {
+              "label": "CMS: Cable Pooling for Batteries",
+              "url": "https://cms.law/en/nld/publication/dutch-energy-regulator-to-tolerate-cable-pooling-for-batteries"
+            }
+          ]
+        },
+        {
+          "id": "nd_gto",
+          "type": "step",
+          "label": "GTO (Group Transport Agreement)",
+          "row": 6,
+          "col": 1,
+          "timeline": "Months (setup)",
+          "timelineBasis": "evidence",
+          "detail": "A Groepstransportovereenkomst (GTO) allows multiple businesses (connections >60 kVA) on an industrial estate to collectively manage grid capacity under a single transport agreement. Members retain individual connection agreements but jointly contract for one transport capacity. Individual reserves shift to a single collective reserve. From January 2027, grid operators are required to offer GTOs if qualifying conditions are met. First GTO signed: Pannenweg II industrial park (14 companies, Enexis, November 2025).",
+          "sources": [
+            {
+              "label": "ACM: GTO for Energy Hubs",
+              "url": "https://www.acm.nl/en/publications/acm-energy-hubs-can-file-requests-group-transport-agreements-their-system-operators"
+            },
+            {
+              "label": "WithTheGrid: Pannenweg II GTO",
+              "url": "https://withthegrid.com/how-pannenweg-ii-implements-gto/"
+            },
+            {
+              "label": "New Energy Coalition: GTO Analysis",
+              "url": "https://www.newenergycoalition.org/en/is-de-gto-de-heilige-graal-voor-het-oplossen-van-netcongestie/"
+            },
+            {
+              "label": "Green Grid Solutions: GTO Deep Dive",
+              "url": "https://greengridsolutions.nl/2025/12/20/groepstransportovereenkomst-gto-systeemoplossing-met-scherpe-randen/"
+            }
+          ]
+        },
+        {
+          "id": "nd_gopacs_dist",
+          "type": "step",
+          "label": "GOPACS Flex Participation",
+          "row": 7,
+          "col": 2,
+          "timeline": "Ongoing from commissioning",
+          "timelineBasis": "evidence",
+          "detail": "Connected parties can participate in GOPACS congestion management to earn revenue from flexibility. Three channels: direct (day-ahead capacity restriction contracts), via trading platforms (EPEX SPOT, ETPA, Nord Pool), or via CSPs (mandatory for intraday). Products: redispatch bids, bidding obligation contracts, capacity limitation contracts. In 2026, each of Liander, Enexis, Stedin, and TenneT will issue at least one regional flexibility tender.",
+          "sources": [
+            {
+              "label": "GOPACS: How It Works",
+              "url": "https://www.gopacs.eu/en/how-does-gopacs-work/"
+            },
+            {
+              "label": "GOPACS: Congestion Management",
+              "url": "https://www.gopacs.eu/en/about-congestion-management/"
+            },
+            {
+              "label": "Strategic Energy: Flex Tenders 2026",
+              "url": "https://strategicenergy.eu/the-netherlands-grid-congestion/"
+            }
+          ]
+        },
+        {
+          "id": "nd_contract",
+          "type": "step",
+          "label": "Overeenkomst (ATO Contract)",
+          "row": 7,
+          "col": 1,
+          "timeline": "2–4 weeks",
+          "timelineBasis": "evidence",
+          "detail": "The applicant accepts the quotation and signs the Aansluit- en Transportovereenkomst (ATO). Under the Energiewet (2026), system managers must disclose current and expected transport capacity. The ATO specifies capacity rights, curtailment conditions, tariffs, and technical requirements.",
+          "sources": [
+            {
+              "label": "KVDL: Energiewet 2026",
+              "url": "https://kvdl.com/en/articles/de-energiewet-wat-verandert-er-vanaf-2026"
+            },
+            {
+              "label": "Fieldfisher: NL Energy Act",
+              "url": "https://www.fieldfisher.com/en/insights/the-new-dutch-energy-act-a-new-legislative-framewo"
+            }
+          ]
+        },
+        {
+          "id": "nd_construction",
+          "type": "step",
+          "label": "Realisatie (Construction)",
+          "row": 8,
+          "col": 1,
+          "timeline": "6 months–10+ years",
+          "timelineBasis": "evidence",
+          "detail": "DSO constructs the physical connection: cable laying, transformer installation, metering, and switchgear. For grootverbruik, may involve dedicated transformers and MV connections. The Buurtaanpak targets 135 neighbourhood upgrades in 2025 and 182 in 2026 to reduce connection times by 3–6 months per area. DSOs invested heavily: Enexis €1.9B, Liander €1.7B in 2025. 50,000 new transformers planned nationally.",
+          "sources": [
+            {
+              "label": "Strategic Energy: Buurtaanpak",
+              "url": "https://strategicenergy.eu/the-netherlands-grid-congestion/"
+            },
+            {
+              "label": "Enlit: NL Grid Congestion",
+              "url": "https://www.enlit.world/library/grid-congestion-in-the-netherlands-and-why-we-must-heed-the-warning"
+            }
+          ]
+        },
+        {
+          "id": "nd_commissioning",
+          "type": "step",
+          "label": "Inbedrijfstelling (Commissioning)",
+          "row": 9,
+          "col": 1,
+          "timeline": "1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Completed connection undergoes testing, energisation, and metering activation. For kleinverbruik: smart meter installed and activated. For grootverbruik: protection testing, load testing, and verification of capacity limits. Transport agreement activated; ongoing tariffs begin.",
+          "sources": [
+            {
+              "label": "KVDL: Energiewet 2026",
+              "url": "https://kvdl.com/en/articles/de-energiewet-wat-verandert-er-vanaf-2026"
+            }
+          ]
+        },
+        {
+          "id": "nd_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 10,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "nd_start",
+          "to": "nd_size_decision"
+        },
+        {
+          "from": "nd_size_decision",
+          "to": "nd_klein_app",
+          "label": "≤3×80A (klein)",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_size_decision",
+          "to": "nd_groot_app",
+          "label": ">3×80A (groot)"
+        },
+        {
+          "from": "nd_klein_app",
+          "to": "nd_klein_process"
+        },
+        {
+          "from": "nd_klein_process",
+          "to": "nd_commissioning",
+          "label": "Direct"
+        },
+        {
+          "from": "nd_groot_app",
+          "to": "nd_groot_congestion"
+        },
+        {
+          "from": "nd_groot_congestion",
+          "to": "nd_standard_offerte",
+          "label": "Not congested"
+        },
+        {
+          "from": "nd_groot_congestion",
+          "to": "nd_alt_route",
+          "label": "Congested",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_alt_route",
+          "to": "nd_waiting",
+          "label": "Waiting list",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_alt_route",
+          "to": "nd_atr85",
+          "label": "ATR85 (non-firm)",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_alt_route",
+          "to": "nd_cable_pool",
+          "label": "Cable pooling",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_alt_route",
+          "to": "nd_gto",
+          "label": "GTO (group)",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_waiting",
+          "to": "nd_standard_offerte",
+          "label": "Capacity freed"
+        },
+        {
+          "from": "nd_atr85",
+          "to": "nd_contract"
+        },
+        {
+          "from": "nd_cable_pool",
+          "to": "nd_contract"
+        },
+        {
+          "from": "nd_gto",
+          "to": "nd_contract"
+        },
+        {
+          "from": "nd_standard_offerte",
+          "to": "nd_contract"
+        },
+        {
+          "from": "nd_contract",
+          "to": "nd_construction"
+        },
+        {
+          "from": "nd_construction",
+          "to": "nd_commissioning"
+        },
+        {
+          "from": "nd_commissioning",
+          "to": "nd_gopacs_dist",
+          "label": "Optional flex",
+          "type": "conditional"
+        },
+        {
+          "from": "nd_commissioning",
+          "to": "nd_end"
+        },
+        {
+          "from": "nd_gopacs_dist",
+          "to": "nd_end"
+        }
+      ]
+    }
+  },
+  "reforms": [
+    {
+      "title": "Energiewet (Energy Act)",
+      "year": "January 2026",
+      "level": "both",
+      "description": "The Energiewet replaces both the Elektriciteitswet 1998 and the Gaswet, creating a single integrated energy law. Key grid provisions include: expanded cable pooling rules (consumers, producers, and storage can share a connection; threshold lowered to 100 kVA; up to 4 parties per connection), legal basis for non-firm connections, Group Transport Agreements (GTOs), and stronger powers for ACM to regulate queue management and prioritisation. The law also modernises the regulatory framework for energy communities, flexibility markets, and data sharing."
+    },
+    {
+      "title": "Time-Dependent Transmission Rights (TDTR)",
+      "year": "2025",
+      "level": "transmission",
+      "description": "TenneT introduced TDTR to unlock stranded grid capacity during off-peak hours. As of 2025, TDTR has enabled 9.1 GW of additional capacity for 57 companies. Users receive up to 65% tariff discount in exchange for restricting usage to times when the grid has available capacity. This mechanism allows businesses to connect years earlier than they would under the standard queue, making productive use of grid capacity that would otherwise sit idle during low-demand periods."
+    },
+    {
+      "title": "Cable Pooling Expansion",
+      "year": "2025–2026",
+      "level": "distribution",
+      "description": "Cable pooling allows multiple parties to share a single grid connection, reducing the total number of connections needed. Under the Energiewet, cable pooling rules are significantly expanded: the threshold is lowered from 1 MVA to 100 kVA, consumers (not just producers) can participate, storage assets can be included, and up to 4 parties can share one connection. This is particularly valuable for co-located solar parks, wind farms, and battery storage installations that have complementary generation and consumption profiles."
+    },
+    {
+      "title": "ACM Prioritisation Framework",
+      "year": "Revised December 2025",
+      "level": "both",
+      "description": "The ACM developed a framework to prioritise connection requests when grid capacity is scarce. The original April 2024 version was annulled by a Dutch court. A revised framework was published in December 2025, establishing criteria for which projects receive priority access to limited grid capacity. Prioritisation categories include societal urgency (hospitals, emergency services), energy transition projects (renewables, charging infrastructure), and economic significance. The framework applies to both transmission and distribution queues."
+    },
+    {
+      "title": "ATR85 Non-Firm Connections",
+      "year": "Expected April 2026",
+      "level": "both",
+      "description": "ATR85 offers a non-firm connection product where customers accept curtailment during up to 15% of annual hours (approximately 1,314 hours/year) in exchange for faster grid access and a 50% fee discount. This allows grid operators to connect more customers by managing peak-period congestion through contractual curtailment rights. Particularly attractive for flexible loads (EV charging, heat pumps, electrolysers) and storage operators that can shift consumption to uncongested periods."
+    },
+    {
+      "title": "Group Transport Agreements (GTO)",
+      "year": "December 2025",
+      "level": "distribution",
+      "description": "GTOs allow multiple businesses on an industrial estate or business park to collectively manage their grid capacity under a single transport agreement. Members coordinate their peak demand to stay within the group's allocated capacity, enabling more connections within existing grid constraints. GTOs were introduced in December 2025 and are expected to unlock significant capacity in areas where individual connections face long waits but collective demand management is feasible."
+    },
+    {
+      "title": "GOPACS Congestion Management Platform",
+      "year": "Operational",
+      "level": "both",
+      "description": "GOPACS (Grid Operators Platform for Congestion Solutions) is a joint platform operated by TenneT and the Dutch DSOs for market-based congestion management. Market participants submit flexibility bids (increase/decrease generation or consumption), enabling grid operators to resolve local congestion without curtailment. Instruments include redispatch, Congestion Limiting Contracts (CLCs), and intraday flex bids. GOPACS increasingly handles distribution-level congestion alongside transmission."
+    },
+    {
+      "title": "LAN Action Programme & Parliamentary Letter",
+      "year": "2025–2026",
+      "level": "both",
+      "description": "The Landelijk Actieprogramma Netcongestie (LAN — National Action Programme on Grid Congestion) coordinates 100+ measures across three pillars: Faster Construction, Better Utilisation, and Smarter Insight. A February 2026 parliamentary letter added 8 additional measures. Key actions include accelerated permitting for grid infrastructure, standardisation of grid components, expanded use of TDTR and non-firm connections, digitalisation of grid planning, and mandatory congestion data sharing by grid operators."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why are Dutch grid waiting times so much longer than other European countries?",
+      "a": "The Netherlands faces a unique combination of factors: rapid growth in renewable energy connections, data centre expansion, industrial electrification, and EV charging infrastructure — all concentrated in a small, densely populated country. Grid investment was historically sized for gas-based energy, not distributed electricity. The result is that demand for new connections has vastly outpaced grid expansion capacity, leading to 'vol = vol' declarations in virtually all provinces and 14,000+ businesses on waiting lists."
+    },
+    {
+      "q": "What is the difference between kleinverbruik and grootverbruik connections?",
+      "a": "Kleinverbruik (small consumer) connections are rated at ≤3×80A (roughly ≤55 kW) and cover most households and small businesses. These have an 18-week statutory connection deadline and are generally fulfilled automatically. Grootverbruik (large consumer) connections are >3×80A and require a separate ATO (connection and transport agreement). These face the severe congestion queues, with waits of 3–10+ years in congested areas."
+    },
+    {
+      "q": "How do TDTR and ATR85 help with grid congestion?",
+      "a": "TDTR (Time-Dependent Transmission Rights) grants access to transmission grid capacity during off-peak hours, with up to 65% tariff discount — already unlocking 9.1 GW for 57 companies. ATR85 (expected April 2026) is a non-firm connection product allowing curtailment during up to 15% of annual hours in exchange for faster access and a 50% fee discount. Both mechanisms allow more connections by using the grid more efficiently, though neither increases physical capacity."
+    },
+    {
+      "q": "What is cable pooling and who can use it?",
+      "a": "Cable pooling allows multiple parties to share a single grid connection. Under the Energiewet (January 2026), the rules expand significantly: the threshold drops from 1 MVA to 100 kVA, consumers (not just producers) can participate, storage assets can join, and up to 4 parties can share one connection. This is ideal for co-located projects like solar parks with battery storage, or industrial estates with complementary demand profiles."
+    },
+    {
+      "q": "Are all Dutch DSOs publicly owned?",
+      "a": "Yes. All 6 Dutch DSOs — Liander (Alliander), Stedin, Enexis, Westland Infra, Coteq, and Rendo — are publicly owned by provinces and municipalities. This was mandated by the Wet Onafhankelijk Netbeheer (Unbundling Act). Public ownership means DSOs cannot raise private equity capital, which some argue constrains their ability to accelerate grid investment at the pace required by the energy transition."
+    }
+  ],
+  "note": "The Netherlands represents the most acute grid congestion crisis in Europe, making it a critical test case for innovative queue management and capacity allocation solutions. The combination of TDTR, cable pooling, GTOs, non-firm connections (ATR85), and GOPACS flexibility markets creates a uniquely complex but innovation-friendly regulatory environment. TenneT's dual role in the Netherlands and Germany provides cross-border opportunities. Any company targeting Dutch grid interconnection should prepare for multi-year timelines, engage early with both TenneT (transmission) and the relevant DSO (distribution), and explore all available congestion workarounds — TDTR for transmission, cable pooling and GTOs for distribution, and GOPACS flexibility bids for both levels."
+}

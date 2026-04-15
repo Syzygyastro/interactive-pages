@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Interconnection Process — Global Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>Grid Interconnection Process</h1>
+  <div class="hero-sub">How generators and loads connect to the grid — transmission &amp; distribution</div>
+  <div class="hero-stats">
+    <span class="hero-stat" id="statCountries">7 Countries</span>
+    <span class="hero-sep">&middot;</span>
+    <span class="hero-stat" id="statProcesses">14 Processes</span>
+    <span class="hero-sep">&middot;</span>
+    <span class="hero-stat">Transmission &amp; Distribution</span>
+  </div>
+  <button class="hero-copy-btn" onclick="copyAllMarkdown(event)">Copy All as Markdown</button>
+</div>
+
+<div class="filter-bar">
+  <div class="filter-container">
+    <span class="filter-label">Region:</span>
+    <div class="filter-buttons">
+      <button class="filter-btn active" onclick="filterRegion('all', this)">All</button>
+      <button class="filter-btn" onclick="filterRegion('europe', this)">Europe</button>
+      <button class="filter-btn" onclick="filterRegion('americas', this)">Americas</button>
+      <button class="filter-btn" onclick="filterRegion('africa', this)">Africa</button>
+    </div>
+    <span class="filter-label" style="margin-left:16px">Level:</span>
+    <div class="filter-buttons">
+      <button class="filter-btn level-btn active" onclick="filterLevel('all', this)">All</button>
+      <button class="filter-btn level-btn" onclick="filterLevel('transmission', this)">⚡ Transmission</button>
+      <button class="filter-btn level-btn" onclick="filterLevel('distribution', this)">🔌 Distribution</button>
+    </div>
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="cards-grid" id="cardsGrid"></div>
+</div>
+
+<div class="detail-section" id="detailSection" style="display:none">
+  <div class="detail-box" id="detailBox"></div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

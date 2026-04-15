@@ -1,0 +1,627 @@
+{
+  "id": "kenya",
+  "name": "Kenya",
+  "full": "Kenya — Grid Interconnection Process",
+  "type": "Emerging Market in Transition",
+  "icon": "🇰🇪",
+  "accentColor": "#006B3F",
+  "accentBg": "#E6F5ED",
+  "badgeColor": "#E6F5ED",
+  "badgeText": "#006B3F",
+  "badge": "~90% Renewable Mix",
+  "badge2": "FiT → Auction Transition",
+  "tags": ["africa"],
+  "sub": "Kenya is transitioning from a feed-in tariff regime to competitive auctions while restructuring its grid operator landscape — KETRACO is assuming the independent system operator role as the country maintains one of Africa's highest renewable generation shares at approximately 90%.",
+  "cardTags": ["KETRACO", "Kenya Power", "EPRA", "KenGen", "Net Metering", "LCPDP"],
+  "desc": "Kenya's grid interconnection process is shaped by an ongoing institutional transition: KETRACO, the 100% state-owned transmission company, was designated as the Independent System Operator by EPRA in January 2022 and is building a National System Control Centre (€82.7M, completion February 2028) to assume full system operations from Kenya Power. At the generation level, the country's 3,840.8 MW installed capacity is approximately 90% renewable — led by geothermal (25.9%), hydro (24%), solar (14%), and wind (12%) — but operates with a critically narrow 2.3% reserve margin. The single-buyer model persists, with Kenya Power as the sole off-taker for all IPP generation under take-or-pay PPAs now capped at USD 0.07/kWh by Parliament. A PPA moratorium lifted in November 2025 is opening the door to new projects, while a transition from feed-in tariffs to competitive auctions modelled on South Africa's REIPPPP is targeted for completion by November 2026. At distribution, Kenya Power serves approximately 95% of customers across 10.04 million grid connections, with net metering regulations introduced in June 2024 allowing up to 1 MW of renewable export at a 50% credit rate. The Ethiopia-Kenya 500 kV HVDC interconnector (2,000 MW), operational since December 2023, has added a cross-border dimension to the grid.",
+  "transmission": {
+    "title": "Transmission Connection Process",
+    "voltageLevel": "132–400 kV",
+    "overview": "Transmission connections in Kenya are governed by a single-buyer model undergoing structural reform. KETRACO, the 100% state-owned Kenya Electricity Transmission Company, was designated as the Independent System Operator (ISO) by EPRA in January 2022 and is constructing a National System Control Centre (€82.7M, completion February 2028) to fully assume system operations from Kenya Power. All generation projects must be included in the Least Cost Power Development Plan (LCPDP) and negotiate power purchase agreements with Kenya Power as the sole off-taker. Kenya's installed capacity of 3,840.8 MW is approximately 90% renewable, but the system operates with a critically narrow 2.3% reserve margin. The country is transitioning from feed-in tariffs to competitive auctions modelled on South Africa's REIPPPP, targeted for completion by November 2026. The Ethiopia-Kenya HVDC interconnector (500 kV, 2,000 MW), operational since December 2023, marks Kenya's first major cross-border transmission link.",
+    "typicalTimeline": "3–7 years",
+    "timelineDetail": "3–5 years for projects with LCPDP inclusion and straightforward grid access; 5–7+ years for projects requiring significant transmission reinforcement or complex PPA negotiations",
+    "costRange": "KES 10,000–Millions USD",
+    "costDetail": "EPRA generation licence: KES 10,000 application fee + KES 10,000/MW grant fee (60-day processing, 25-year term). Grid Impact Study costs vary by project scale. PPA-related costs depend on capacity and technology. Transmission connection and substation works can run into millions of USD for large projects.",
+    "queueSize": null,
+    "queueDetail": "Kenya does not operate a formal public interconnection queue. Project sequencing is determined through inclusion in the LCPDP and bilateral negotiations with KETRACO and Kenya Power.",
+    "keyBodies": [
+      {
+        "name": "KETRACO",
+        "fullName": "Kenya Electricity Transmission Company",
+        "role": "100% state-owned transmission company and designated ISO (since January 2022); owns, builds, and operates the transmission network; constructing the National System Control Centre (€82.7M, completion February 2028)",
+        "url": "https://www.ketraco.co.ke"
+      },
+      {
+        "name": "Kenya Power",
+        "fullName": "Kenya Power and Lighting Company (KPLC)",
+        "role": "Dominant distribution utility (~95% of sales), historical system operator (role being transferred to KETRACO), and single buyer/off-taker for all IPP generation under take-or-pay PPAs",
+        "url": "https://www.kplc.co.ke"
+      },
+      {
+        "name": "EPRA",
+        "fullName": "Energy and Petroleum Regulatory Authority",
+        "role": "Energy sector regulator; issues generation licences, sets tariffs, designated KETRACO as ISO, and oversees market conduct",
+        "url": "https://www.epra.go.ke"
+      },
+      {
+        "name": "KenGen",
+        "fullName": "Kenya Electricity Generating Company",
+        "role": "Largest generator (~70% of installed capacity); state-controlled (70% government-owned) utility-scale geothermal, hydro, wind, and thermal operator",
+        "url": "https://www.kengen.co.ke"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Project Inclusion in LCPDP",
+        "detail": "All new generation projects must be identified in Kenya's Least Cost Power Development Plan (LCPDP), which is updated periodically by the Ministry of Energy in coordination with Kenya Power, KETRACO, and other stakeholders. The LCPDP determines the generation mix, timing, and scale of new capacity additions based on demand forecasts and least-cost optimisation. Inclusion in the plan is a prerequisite for obtaining a generation licence and negotiating a PPA.",
+        "timeline": "Variable — dependent on planning cycle"
+      },
+      {
+        "name": "EPRA Generation Licence Application",
+        "detail": "Developers apply to EPRA for a generation licence. The application fee is KES 10,000, with a grant fee of KES 10,000 per MW of installed capacity. EPRA targets a 60-day processing period. Licences are issued for a 25-year term and specify the technology, capacity, and location. Environmental and social impact assessments must be completed as part of the application process.",
+        "timeline": "60 days processing; 25-year licence term"
+      },
+      {
+        "name": "Grid Impact Study with KETRACO",
+        "detail": "KETRACO conducts a grid impact study to assess the effect of the proposed generation project on the transmission network. The study evaluates power flow, stability, fault levels, and voltage impacts, and identifies any transmission reinforcement or new infrastructure required to accommodate the project. Study duration varies from 3 to 12 months depending on project complexity and location.",
+        "timeline": "3–12 months"
+      },
+      {
+        "name": "PPA Negotiation with Kenya Power",
+        "detail": "Developers negotiate a power purchase agreement with Kenya Power, the sole off-taker under Kenya's single-buyer model. PPAs are structured as take-or-pay contracts. Parliament has imposed a tariff cap of USD 0.07/kWh for new IPP contracts and requires full disclosure of IPP ownership structures. The PPA moratorium was lifted in November 2025, reopening negotiations after a prolonged freeze. The country is transitioning to competitive auctions (modelled on South Africa's REIPPPP) by November 2026, which will replace bilateral PPA negotiations for new projects.",
+        "timeline": "6–18 months"
+      },
+      {
+        "name": "Connection Agreement with KETRACO",
+        "detail": "Once the grid impact study is complete and the PPA is signed, the developer enters into a formal connection agreement with KETRACO specifying the point of connection, technical requirements, construction responsibilities, and timeline. KETRACO may need to construct new transmission lines or substation bays to accommodate the project, which can add significant time and cost.",
+        "timeline": "3–6 months"
+      },
+      {
+        "name": "Construction & Grid Infrastructure Build-out",
+        "detail": "The developer constructs the generation facility while KETRACO (or its contractors) builds the required transmission connection assets. For projects requiring new transmission lines, KETRACO may pursue public-private partnership models — such as the $311M KETRACO-Africa50 PPP signed in December 2025. Construction timelines depend on project scale, technology, and transmission infrastructure requirements.",
+        "timeline": "12–36 months"
+      },
+      {
+        "name": "Commissioning & Commercial Operation",
+        "detail": "The completed plant undergoes commissioning tests to verify compliance with grid code requirements, including power quality, protection settings, and control system integration. KETRACO and Kenya Power witness the tests and authorise synchronisation with the grid. The project enters commercial operation under the terms of the PPA and connection agreement.",
+        "timeline": "1–3 months"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "kt_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "kt_route_check",
+          "type": "decision",
+          "label": "Procurement route?",
+          "row": 1,
+          "col": 1,
+          "detail": "Three routes to transmission connection: (1) Feed-in Tariff (FiT) \u2014 bilateral PPA at predetermined rates (being phased out); (2) Competitive auction \u2014 modelled on South Africa's REIPPPP (targeted November 2026); (3) Bilateral PPA negotiation \u2014 subject to USD 0.07/kWh tariff cap and full IPP ownership disclosure. The PPA moratorium was lifted November 2025.",
+          "sources": [
+            {"label": "PPA Moratorium Lifted (Bowmans)", "url": "https://bowmanslaw.com/insights/kenya-turns-the-lights-back-on-power-purchase-agreements-moratorium-lifted/"},
+            {"label": "Kenya Parliament PPA Reform", "url": "https://abren.org/2025/11/15/kenya-parliament-ends-ppa-freeze-orders-full-disclosure-of-ipp-ownership-in-major-energy-sector-overhaul/"},
+            {"label": "Chambers: Kenya Power 2025", "url": "https://practiceguides.chambers.com/practice-guides/power-generation-transmission-distribution-2025/kenya"}
+          ]
+        },
+        {
+          "id": "kt_fit_path",
+          "type": "step",
+          "label": "FiT route (being phased out)",
+          "row": 2,
+          "col": 0,
+          "timeline": "Closing by Nov 2026",
+          "timelineBasis": "evidence",
+          "detail": "Feed-in tariff regime with predetermined rates by technology. Being phased out in favour of competitive auctions. Remaining FiT projects must negotiate PPAs before the transition completes."
+        },
+        {
+          "id": "kt_auction_path",
+          "type": "step",
+          "label": "Competitive auction route",
+          "row": 2,
+          "col": 2,
+          "timeline": "Operational by Nov 2026",
+          "timelineBasis": "evidence",
+          "detail": "Competitive auctions modelled on South Africa's REIPPPP. Developers compete on price for predetermined capacity allocations by technology and location. The auction framework must be operationalised within 12 months of the 2025 Committee Report adoption. Expected to drive down tariffs and increase transparency.",
+          "sources": [
+            {"label": "Kenya PPA Reform (Green Building Africa)", "url": "https://www.greenbuildingafrica.co.za/kenya-parliament-ends-ppa-freeze-orders-full-disclosure-of-ipp-ownership-in-major-energy-sector-overhaul/"}
+          ]
+        },
+        {
+          "id": "kt_lcpdp",
+          "type": "step",
+          "label": "LCPDP Inclusion",
+          "row": 3,
+          "col": 1,
+          "timeline": "Variable (planning cycle)",
+          "timelineBasis": "assumption",
+          "detail": "All new generation projects must be identified in Kenya's Least Cost Power Development Plan (LCPDP), updated periodically by the Ministry of Energy with Kenya Power, KETRACO, and stakeholders. LCPDP determines generation mix, timing, and scale based on demand forecasts and least-cost optimisation. Inclusion is a prerequisite for EPRA licensing and PPA negotiation.",
+          "sources": [
+            {"label": "EPRA License Application", "url": "https://www.epra.go.ke/license-application"},
+            {"label": "Chambers Guide: Kenya 2025", "url": "https://practiceguides.chambers.com/practice-guides/power-generation-transmission-distribution-2025/kenya"}
+          ]
+        },
+        {
+          "id": "kt_epra",
+          "type": "step",
+          "label": "EPRA Generation Licence",
+          "row": 4,
+          "col": 1,
+          "timeline": "60 days processing",
+          "timelineBasis": "evidence",
+          "detail": "Apply to EPRA for a generation licence. Application fee: KES 10,000. Grant fee: KES 10,000/MW. 60-day processing target. 25-year licence term. Requires ESIA approval, feasibility study, and detailed engineer's report. Projects >3 MW need a full licence; 1\u20133 MW need an Electricity Permit; <1 MW are exempt from EPRA clearance. Must publish notice in newspaper 15 days prior to submission.",
+          "sources": [
+            {"label": "EPRA Licence Application Page", "url": "https://www.epra.go.ke/license-application"},
+            {"label": "EPRA Licence Guide (PDF)", "url": "https://www.epra.go.ke/sites/default/files/Documents/Elecetricity-and-Renewable-Energy-License-Application-Guide.pdf"},
+            {"label": "eProcedures: Generation Licence", "url": "https://eprocedures.investkenya.go.ke/procedure/233?l=en"}
+          ]
+        },
+        {
+          "id": "kt_epra_check",
+          "type": "decision",
+          "label": "EPRA approves?",
+          "row": 5,
+          "col": 1,
+          "detail": "If EPRA rejects the licence, the applicant can: (1) Appeal to the Energy and Petroleum Tribunal within 60 days of the decision; (2) Further appeal to the High Court within 30 days of the Tribunal's decision; (3) Address deficiencies and reapply. Rejection reasons typically include incomplete documentation, ESIA issues, or project not aligned with LCPDP.",
+          "sources": [
+            {"label": "Draft Licensing Regulations 2024", "url": "https://www.epra.go.ke/sites/default/files/Documents/Draft-Energy-Electric-Power-Undertaking-Licensing-Regulations-2024_.pdf"}
+          ]
+        },
+        {
+          "id": "kt_epra_reject",
+          "type": "step",
+          "label": "Appeal (60 days) or reapply",
+          "row": 5,
+          "col": 2,
+          "timeline": "60 days (appeal window)",
+          "timelineBasis": "evidence",
+          "detail": "Appeal to Energy and Petroleum Tribunal within 60 days. Further appeal to High Court within 30 days of Tribunal decision. Alternatively, address deficiencies identified by EPRA and submit a fresh application."
+        },
+        {
+          "id": "kt_grid_study",
+          "type": "step",
+          "label": "Grid Impact Study (KETRACO)",
+          "row": 6,
+          "col": 1,
+          "timeline": "3\u201312 months",
+          "timelineBasis": "evidence",
+          "detail": "KETRACO conducts a grid impact study assessing power flow, stability, fault levels, and voltage impacts. Identifies transmission reinforcement or new infrastructure required. Duration depends on project complexity, location, and whether new transmission lines are needed. Grid interconnection study report is a mandatory document for the licence.",
+          "sources": [
+            {"label": "KETRACO", "url": "https://www.ketraco.co.ke"},
+            {"label": "Kenya Grid Code Part 1", "url": "https://www.epra.go.ke/sites/default/files/2025-03/The%20Grid%20Code%20Part%201%20(KNTGC).pdf"}
+          ]
+        },
+        {
+          "id": "kt_grid_check",
+          "type": "decision",
+          "label": "Study favourable?",
+          "row": 7,
+          "col": 1,
+          "detail": "If the grid impact study reveals unfavourable results (e.g., stability issues, excessive reinforcement costs), the developer may need to redesign the project (reduced capacity, different technology, or alternative connection point) and resubmit for study."
+        },
+        {
+          "id": "kt_redesign",
+          "type": "step",
+          "label": "Project redesign + re-study",
+          "row": 7,
+          "col": 2,
+          "timeline": "3\u20136 months",
+          "timelineBasis": "assumption",
+          "detail": "Developer redesigns the project to address grid impact concerns: may involve reducing capacity, changing connection point, adjusting technology mix, or accepting curtailment conditions. Revised study submitted to KETRACO."
+        },
+        {
+          "id": "kt_ppa",
+          "type": "step",
+          "label": "PPA Negotiation (Kenya Power)",
+          "row": 8,
+          "col": 1,
+          "timeline": "6\u201318 months",
+          "timelineBasis": "evidence",
+          "detail": "Negotiate a power purchase agreement with Kenya Power, the sole off-taker under the single-buyer model. PPAs are take-or-pay contracts capped at USD 0.07/kWh by Parliament. Full IPP ownership disclosure is now mandatory. The Attorney General must review all PPA amendments within 30 days. The PPA moratorium was lifted November 2025.",
+          "sources": [
+            {"label": "PPA Moratorium Analysis (Bowmans)", "url": "https://bowmanslaw.com/insights/kenya-turns-the-lights-back-on-power-purchase-agreements-moratorium-lifted/"},
+            {"label": "Kenya PPA Tighter Oversight (Ecofin)", "url": "https://www.ecofinagency.com/news-industry/2511-50823-kenya-tightens-legal-oversight-of-private-power-contracts"},
+            {"label": "AG Review Requirement", "url": "https://www.africa-legal.com/opinion/kenya-turning-the-lights-back-on-as-power-purchase-agreement-moratorium-is-lifted/124731"}
+          ]
+        },
+        {
+          "id": "kt_ag_review",
+          "type": "step",
+          "label": "Attorney General PPA Review",
+          "row": 9,
+          "col": 1,
+          "timeline": "30 days",
+          "timelineBasis": "evidence",
+          "detail": "All PPA amendments and variations now undergo mandatory review by the Attorney General, who must deliver legal advice within 30 days. This requirement was introduced as part of the November 2025 Parliamentary reforms to close loopholes allowing renegotiations without proper oversight. The AG's office should be integrated from the outset of commercial discussions.",
+          "sources": [
+            {"label": "AG PPA Review (MMC Asafo)", "url": "https://mmcasafo.com/news/kenya-power-legal-and-commercial-considerations-in-varying-power-purchase-agreements/"},
+            {"label": "Kenya Tightens PPA Oversight", "url": "https://www.ecofinagency.com/news-industry/2511-50823-kenya-tightens-legal-oversight-of-private-power-contracts"}
+          ]
+        },
+        {
+          "id": "kt_connection",
+          "type": "step",
+          "label": "Connection Agreement (KETRACO)",
+          "row": 10,
+          "col": 1,
+          "timeline": "3\u20136 months",
+          "timelineBasis": "evidence",
+          "detail": "Developer enters formal connection agreement with KETRACO specifying connection point, technical requirements, construction responsibilities, and timeline. KETRACO may need to construct new transmission lines or substation bays, potentially via PPP models (e.g., the $311M KETRACO\u2013Africa50 PPP signed December 2025).",
+          "sources": [
+            {"label": "KETRACO\u2013Africa50 PPP", "url": "https://www.ketraco.co.ke"}
+          ]
+        },
+        {
+          "id": "kt_construction",
+          "type": "step",
+          "label": "Construction & Grid Build-out",
+          "row": 11,
+          "col": 1,
+          "timeline": "12\u201336 months",
+          "timelineBasis": "evidence",
+          "detail": "Developer constructs the generation facility while KETRACO builds required transmission connection assets. For projects requiring new transmission lines, KETRACO may use PPP models. Ethiopia-Kenya HVDC interconnector (500 kV, 2,000 MW, operational December 2023) has added cross-border capacity options."
+        },
+        {
+          "id": "kt_commissioning",
+          "type": "step",
+          "label": "Commissioning & COD",
+          "row": 12,
+          "col": 1,
+          "timeline": "1\u20133 months",
+          "timelineBasis": "evidence",
+          "detail": "Completed plant undergoes commissioning tests to verify grid code compliance: power quality, protection settings, and control system integration. KETRACO and Kenya Power witness tests and authorise synchronisation. Commercial operation date (COD) triggers PPA payment obligations."
+        },
+        {
+          "id": "kt_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 13,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {"from": "kt_start", "to": "kt_route_check"},
+        {"from": "kt_route_check", "to": "kt_fit_path", "label": "FiT (closing)", "type": "conditional"},
+        {"from": "kt_route_check", "to": "kt_auction_path", "label": "Auction (2026)", "type": "conditional"},
+        {"from": "kt_route_check", "to": "kt_lcpdp", "label": "Bilateral PPA"},
+        {"from": "kt_fit_path", "to": "kt_lcpdp"},
+        {"from": "kt_auction_path", "to": "kt_lcpdp"},
+        {"from": "kt_lcpdp", "to": "kt_epra"},
+        {"from": "kt_epra", "to": "kt_epra_check"},
+        {"from": "kt_epra_check", "to": "kt_epra_reject", "label": "Rejected", "type": "conditional"},
+        {"from": "kt_epra_reject", "to": "kt_epra", "label": "Reapply", "type": "conditional"},
+        {"from": "kt_epra_check", "to": "kt_grid_study", "label": "Approved"},
+        {"from": "kt_grid_study", "to": "kt_grid_check"},
+        {"from": "kt_grid_check", "to": "kt_redesign", "label": "Unfavourable", "type": "conditional"},
+        {"from": "kt_redesign", "to": "kt_grid_study", "label": "Re-study", "type": "conditional"},
+        {"from": "kt_grid_check", "to": "kt_ppa", "label": "Favourable"},
+        {"from": "kt_ppa", "to": "kt_ag_review"},
+        {"from": "kt_ag_review", "to": "kt_connection"},
+        {"from": "kt_connection", "to": "kt_construction"},
+        {"from": "kt_construction", "to": "kt_commissioning"},
+        {"from": "kt_commissioning", "to": "kt_end"}
+      ]
+    },
+    "challenges": "<strong>Critically narrow reserve margin:</strong> At just 2.3%, Kenya's reserve margin leaves almost no buffer for unplanned outages or demand spikes, creating urgency for new capacity but also heightening the risk of grid instability from new connections.<br><br><strong>Single-buyer model constraints:</strong> Kenya Power's role as sole off-taker means all IPP revenues depend on its financial health. The company has historically faced financial difficulties, raising bankability concerns for new projects.<br><br><strong>PPA tariff cap:</strong> Parliament's USD 0.07/kWh cap on new IPP tariffs, combined with full ownership disclosure requirements, may deter some investors — particularly for capital-intensive technologies like geothermal.<br><br><strong>Transition uncertainty:</strong> The shift from feed-in tariffs to competitive auctions is still in progress (target November 2026), creating a period of regulatory uncertainty for developers unsure whether to negotiate bilateral PPAs or wait for the auction framework.<br><br><strong>Transmission infrastructure gaps:</strong> Despite KETRACO's construction programme, many high-resource areas (particularly for wind and geothermal in the Rift Valley and northern Kenya) lack adequate transmission infrastructure, requiring costly and time-consuming line extensions."
+  },
+  "distribution": {
+    "title": "Distribution Connection Process",
+    "voltageLevel": "33 kV / 11 kV / 415 V / 240 V",
+    "overview": "Distribution connections in Kenya are dominated by Kenya Power (KPLC), which handles approximately 95% of all electricity sales and manages 10.04 million grid connections with 401,848 new connections added in FY2025. Customers are categorised by demand: below 25 kVA (standard domestic/small commercial), 25–999 kVA (premium commercial/industrial), and above 1,000 kVA (premium large industrial). The Rural Electrification and Renewable Energy Corporation (REREC) handles off-grid and last-mile connections in remote areas. Net metering regulations introduced in June 2024 allow renewable generators up to 1 MW to export surplus power at a 50% credit rate, with a 100 MW national aggregate cap. Distribution losses remain a major challenge at 23.36% against a regulatory target of 17.5%.",
+    "typicalTimeline": "2 weeks–2 months",
+    "timelineDetail": "Kenya Power targets 2 months from application to energisation. Simple last-mile connections can be faster; large commercial/industrial connections at higher voltages may take longer.",
+    "costRange": "KES 15,000–75,000 (~$117–$580)",
+    "costDetail": "Last Mile programme: KES 15,000 (~$117). Standard single-phase connection: KES 35,000–40,000 (~$270–$310). Three-phase connection: up to KES 75,000 (~$580). Costs vary based on distance from nearest transformer and required infrastructure.",
+    "queueSize": null,
+    "queueDetail": null,
+    "keyBodies": [
+      {
+        "name": "Kenya Power",
+        "fullName": "Kenya Power and Lighting Company (KPLC)",
+        "role": "Dominant distribution utility serving ~95% of customers; manages 10.04 million grid connections; handles all distribution connection applications, metering, and billing",
+        "url": "https://www.kplc.co.ke"
+      },
+      {
+        "name": "EPRA",
+        "fullName": "Energy and Petroleum Regulatory Authority",
+        "role": "Regulator; sets distribution service standards, approves tariffs, and oversees net metering regulations",
+        "url": "https://www.epra.go.ke"
+      },
+      {
+        "name": "REREC",
+        "fullName": "Rural Electrification and Renewable Energy Corporation",
+        "role": "Manages rural electrification programmes, last-mile connections, and off-grid renewable energy systems in underserved areas",
+        "url": "https://www.rerec.co.ke"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Application Submission",
+        "detail": "Customers apply for a new connection through Kenya Power's online self-service portal or at a local Kenya Power office. The application must include proof of land ownership or tenancy, a copy of the national ID or company registration, and the location details of the premises to be connected. Applications can be tracked online through Kenya Power's system.",
+        "timeline": "1–2 days"
+      },
+      {
+        "name": "Site Survey & Assessment",
+        "detail": "Kenya Power dispatches a survey team to assess the premises, determine the nearest connection point, evaluate the required infrastructure (poles, cables, transformer capacity), and confirm the technical feasibility of the connection. The survey must be completed within 8 working days of the application.",
+        "timeline": "8 working days"
+      },
+      {
+        "name": "Quotation Issued",
+        "detail": "Based on the site survey, Kenya Power issues a formal quotation specifying the connection costs, required works, and any customer contributions. The quotation is valid for 90 days. Costs range from KES 15,000 under the Last Mile programme to KES 75,000 for a three-phase connection, depending on the distance from the nearest transformer and the infrastructure required.",
+        "timeline": "Quotation valid for 90 days"
+      },
+      {
+        "name": "Payment",
+        "detail": "The customer pays the quoted amount through one of several channels: M-Pesa mobile money, Real Time Gross Settlement (RTGS) bank transfer, or cheque. Kenya Power's systems are integrated with M-Pesa for instant payment confirmation. Payment triggers the scheduling of connection works.",
+        "timeline": "Immediate upon payment"
+      },
+      {
+        "name": "Electrical Installation by Licensed Contractor",
+        "detail": "The customer engages a licensed electrical contractor to complete the internal wiring of the premises to Kenya Power's standards. The contractor must hold a valid licence from EPRA. Upon completion, the contractor issues a wiring certificate which is submitted to Kenya Power as proof that the premises are ready for connection.",
+        "timeline": "1–2 weeks"
+      },
+      {
+        "name": "Connection Works & Energisation",
+        "detail": "Kenya Power carries out the external connection works — erecting poles, stringing conductors, installing the meter, and connecting the premises to the distribution network. Once the works are complete and the wiring certificate has been verified, the connection is energised and the customer begins receiving power. Kenya Power targets completing the full process within 2 months of the original application.",
+        "timeline": "1–4 weeks"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "kd_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "kd_type_check",
+          "type": "decision",
+          "label": "Connection type?",
+          "row": 1,
+          "col": 1,
+          "detail": "Three customer categories determine the process: below 25 kVA (standard domestic/small commercial), 25\u2013999 kVA (premium commercial/industrial), and above 1,000 kVA (premium large industrial, requires Class A1/B contractor). Additionally, the Last Mile Connectivity Programme offers subsidized connections at KES 15,000.",
+          "sources": [
+            {"label": "Kenya Power: New Connections FAQ", "url": "https://kplc.co.ke/faq/new-connections"},
+            {"label": "Kenya Distribution Grid Code", "url": "https://www.epra.go.ke/sites/default/files/Documents/Kenya1-National-Distribution-Grid-Code-KNDC-March-2024-.pdf"}
+          ]
+        },
+        {
+          "id": "kd_lastmile_check",
+          "type": "decision",
+          "label": "Last Mile eligible?",
+          "row": 2,
+          "col": 0,
+          "detail": "The Last Mile Connectivity Programme (LMCP) lowers connection cost from KES 35,000 to KES 15,000 per household with subsidies. Eligibility: must be within 600 meters of an earmarked transformer and require a single-phase connection. Phase VI (funded by AfDB) targets 150,000 customers across 45 counties (excluding Nairobi and Mombasa). The KES 15,000 fee can be advanced as a loan with no upfront payment.",
+          "sources": [
+            {"label": "Kenya Power Last Mile FAQ", "url": "https://kplc.co.ke/faq/last-mile-connectivity"},
+            {"label": "Kenya Power Last Mile", "url": "https://www.kplc.co.ke/last-mile-connectivity"},
+            {"label": "LMCP Phase VI (150K target)", "url": "https://www.the-star.co.ke/news/2025-04-08-kplc-targets-150000-customers-in-last-mile-connectivity-project"},
+            {"label": "LMCP JICA Grant", "url": "https://techweez.com/2024/07/29/jica-lmcp-expansion-grant/"}
+          ]
+        },
+        {
+          "id": "kd_lastmile_path",
+          "type": "step",
+          "label": "Last Mile: KES 15,000 connection",
+          "row": 3,
+          "col": 0,
+          "timeline": "2\u20134 weeks",
+          "timelineBasis": "assumption",
+          "detail": "Visit a Kenya Power office to confirm your area is covered by the project. Business development officers advise on eligible transformers. KES 15,000 connection fee (can be advanced as loan). Single-phase connection within 600m of project transformer."
+        },
+        {
+          "id": "kd_standard",
+          "type": "step",
+          "label": "<25kVA: Standard application",
+          "row": 2,
+          "col": 1,
+          "timeline": "1\u20132 days",
+          "timelineBasis": "evidence",
+          "detail": "Standard domestic and small commercial customers below 25 kVA apply online through Kenya Power's self-service portal or at a local office. Requires proof of land ownership/tenancy, national ID or company registration, and location details. Single-phase: KES 35,000\u201340,000. Three-phase: up to KES 75,000."
+        },
+        {
+          "id": "kd_premium",
+          "type": "step",
+          "label": "25\u2013999kVA: Premium application",
+          "row": 2,
+          "col": 2,
+          "timeline": "1\u20132 days",
+          "timelineBasis": "evidence",
+          "detail": "Premium commercial/industrial customers (25\u2013999 kVA) must provide a scaled site plan (preferably AutoCAD/DWG) and load schedule details in addition to standard documentation."
+        },
+        {
+          "id": "kd_large",
+          "type": "step",
+          "label": ">1000kVA: Premium large",
+          "row": 3,
+          "col": 2,
+          "timeline": "1\u20132 days",
+          "timelineBasis": "evidence",
+          "detail": "Premium large industrial customers above 1,000 kVA require licensed and registered Class A1 or Class B electrical contractors as per EPRA regulations. More extensive documentation and site planning required."
+        },
+        {
+          "id": "kd_survey",
+          "type": "step",
+          "label": "Site Survey & Assessment",
+          "row": 4,
+          "col": 1,
+          "timeline": "8 working days",
+          "timelineBasis": "evidence",
+          "detail": "Kenya Power dispatches a survey team to assess the premises, determine the nearest connection point, evaluate required infrastructure (poles, cables, transformer capacity), and confirm technical feasibility. Must be completed within 8 working days of application.",
+          "sources": [
+            {"label": "Kenya Power New Connections", "url": "https://kplc.co.ke/faq/new-connections"}
+          ]
+        },
+        {
+          "id": "kd_quotation",
+          "type": "step",
+          "label": "Quotation (valid 90 days)",
+          "row": 5,
+          "col": 1,
+          "timeline": "90 days validity",
+          "timelineBasis": "evidence",
+          "detail": "Kenya Power issues a formal quotation specifying connection costs, required works, and customer contributions. Valid for 90 days. Costs: Last Mile KES 15,000; standard single-phase KES 35,000\u201340,000; three-phase up to KES 75,000. Varies by distance from nearest transformer."
+        },
+        {
+          "id": "kd_payment",
+          "type": "step",
+          "label": "Payment (M-Pesa / RTGS)",
+          "row": 6,
+          "col": 1,
+          "timeline": "Immediate",
+          "timelineBasis": "evidence",
+          "detail": "Customer pays via M-Pesa mobile money (integrated for instant confirmation), Real Time Gross Settlement (RTGS) bank transfer, or cheque. Payment triggers scheduling of connection works."
+        },
+        {
+          "id": "kd_wiring",
+          "type": "step",
+          "label": "Internal Wiring (Licensed Contractor)",
+          "row": 7,
+          "col": 1,
+          "timeline": "1\u20132 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Customer engages a licensed electrical contractor (EPRA-registered) to complete internal wiring to Kenya Power standards. Contractor issues a wiring certificate submitted to Kenya Power as proof of readiness. >1,000 kVA requires Class A1 or B contractors."
+        },
+        {
+          "id": "kd_netmeter_check",
+          "type": "decision",
+          "label": "Net metering?",
+          "row": 8,
+          "col": 1,
+          "detail": "Does the customer want to install renewable generation with net metering? Under the Energy (Net Metering) Regulations 2024/2025, customers with renewable systems up to 1 MW can export surplus at 50% credit rate. Domestic: 4\u201310 kW. Commercial: up to 1 MW. National aggregate cap: 100 MW. As of early 2026: only 62 pilot applications (17 MW) received.",
+          "sources": [
+            {"label": "EPRA Net Metering Regulations 2025", "url": "https://www.epra.go.ke/energy-net-metering-regulations-2025"},
+            {"label": "Net Metering Analysis (Lexology)", "url": "https://www.lexology.com/library/detail.aspx?g=00d0d5b9-bdae-4bf1-9865-1a633ccaffc7"},
+            {"label": "Net Metering Overview (AMG)", "url": "https://www.amgadvocates.com/post/the-energy-net-metering-regulations-2024-a-comprehensive-overview"}
+          ]
+        },
+        {
+          "id": "kd_netmeter_reg",
+          "type": "step",
+          "label": "EPRA Net Metering Registration",
+          "row": 9,
+          "col": 2,
+          "timeline": "1\u20132 months",
+          "timelineBasis": "assumption",
+          "detail": "Apply to EPRA for net metering approval. Application includes technical details of generation facility, proof of ownership, and interconnection agreement with Kenya Power. 50% credit rate on exported energy. Domestic max 4\u201310 kW, commercial max 1 MW. 100 MW national cap.",
+          "sources": [
+            {"label": "Kenya Net Metering (ESI Africa)", "url": "https://www.esi-africa.com/news/kenya-green-light-for-excess-energy-generated-to-be-sold-via-net-metering/"}
+          ]
+        },
+        {
+          "id": "kd_connection",
+          "type": "step",
+          "label": "Connection Works & Energisation",
+          "row": 9,
+          "col": 1,
+          "timeline": "1\u20134 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Kenya Power carries out external connection works: erecting poles, stringing conductors, installing meter, connecting to distribution network. Once works are complete and wiring certificate verified, connection is energised. Kenya Power targets completing the full process within 2 months of application. 401,848 new connections added in FY2025."
+        },
+        {
+          "id": "kd_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 10,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {"from": "kd_start", "to": "kd_type_check"},
+        {"from": "kd_type_check", "to": "kd_lastmile_check", "label": "<25kVA", "type": "conditional"},
+        {"from": "kd_type_check", "to": "kd_standard", "label": "<25kVA standard"},
+        {"from": "kd_type_check", "to": "kd_premium", "label": "25\u2013999kVA", "type": "conditional"},
+        {"from": "kd_type_check", "to": "kd_large", "label": ">1000kVA", "type": "conditional"},
+        {"from": "kd_lastmile_check", "to": "kd_lastmile_path", "label": "Eligible", "type": "conditional"},
+        {"from": "kd_lastmile_check", "to": "kd_standard", "label": "Not eligible"},
+        {"from": "kd_lastmile_path", "to": "kd_connection"},
+        {"from": "kd_standard", "to": "kd_survey"},
+        {"from": "kd_premium", "to": "kd_survey"},
+        {"from": "kd_large", "to": "kd_survey"},
+        {"from": "kd_survey", "to": "kd_quotation"},
+        {"from": "kd_quotation", "to": "kd_payment"},
+        {"from": "kd_payment", "to": "kd_wiring"},
+        {"from": "kd_wiring", "to": "kd_netmeter_check"},
+        {"from": "kd_netmeter_check", "to": "kd_netmeter_reg", "label": "Yes (<1MW)", "type": "conditional"},
+        {"from": "kd_netmeter_check", "to": "kd_connection", "label": "No"},
+        {"from": "kd_netmeter_reg", "to": "kd_connection"},
+        {"from": "kd_connection", "to": "kd_end"}
+      ]
+    },
+    "challenges": "<strong>High distribution losses:</strong> At 23.36%, Kenya Power's distribution losses are well above the 17.5% regulatory target, driven by a combination of technical losses (ageing infrastructure, long rural feeders) and non-technical losses (theft, metering errors). This erodes revenue and delays network investment.<br><br><strong>Net metering adoption:</strong> Despite regulations introduced in June 2024, uptake has been slow — only 62 pilot applications totalling 17 MW against a 100 MW aggregate cap. The 50% export credit rate and administrative complexity deter many potential participants.<br><br><strong>Last-mile challenges:</strong> While Kenya has made significant progress on electrification (10.04 million connections), reaching the remaining unconnected population in remote and sparsely populated areas requires increasingly expensive per-connection infrastructure investment.<br><br><strong>Kenya Power financial health:</strong> As the dominant DSO, Kenya Power's financial performance directly affects its ability to invest in network upgrades, reduce losses, and process new connections efficiently. The company has faced periods of financial strain that have slowed capital expenditure.<br><br><strong>Demand category complexity:</strong> The three-tier customer categorisation (below 25 kVA, 25–999 kVA, above 1,000 kVA) creates different processes and cost structures that can be confusing for commercial and industrial customers seeking connections."
+  },
+  "reforms": [
+    {
+      "title": "PPA Moratorium Lifted",
+      "year": "2025",
+      "level": "transmission",
+      "description": "In November 2025, the Kenyan government lifted a longstanding moratorium on new power purchase agreements, reopening the path for independent power producers to negotiate off-take contracts with Kenya Power. The moratorium had been imposed amid concerns about excess contracted capacity, high take-or-pay obligations, and the financial burden on Kenya Power. Its removal is expected to unlock a pipeline of renewable energy projects that had been stalled, though new PPAs are subject to Parliament's <strong>USD 0.07/kWh tariff cap</strong> and full IPP ownership disclosure requirements."
+    },
+    {
+      "title": "Transition from FiT to Competitive Auctions",
+      "year": "2026",
+      "level": "transmission",
+      "description": "Kenya is phasing out its feed-in tariff (FiT) regime in favour of competitive auctions for new generation capacity, modelled on South Africa's successful Renewable Energy Independent Power Producer Procurement Programme (REIPPPP). The transition is targeted for completion by <strong>November 2026</strong>. Under the auction framework, developers will compete on price for predetermined capacity allocations by technology and location, replacing the bilateral PPA negotiation process. This is expected to drive down tariffs, increase transparency, and attract a broader range of investors."
+    },
+    {
+      "title": "Net Metering Regulations",
+      "year": "2024",
+      "level": "distribution",
+      "description": "EPRA introduced net metering regulations in <strong>June 2024</strong>, allowing grid-connected customers with renewable generation up to 1 MW to export surplus electricity. Domestic customers can install systems of 4–10 kW, while commercial and industrial customers can install up to 1 MW. Exported energy receives a <strong>50% credit</strong> against consumption charges. A national aggregate cap of 100 MW applies. As of early 2026, 62 pilot applications totalling 17 MW have been received — well below the cap, indicating that uptake barriers (administrative complexity, credit rate, awareness) remain significant."
+    },
+    {
+      "title": "KETRACO Designated as Independent System Operator",
+      "year": "2022",
+      "level": "transmission",
+      "description": "In <strong>January 2022</strong>, EPRA formally designated KETRACO as Kenya's Independent System Operator (ISO), beginning the transfer of system operation functions from Kenya Power. This structural reform separates transmission system operation from distribution and off-take activities, aligning Kenya with international best practices for unbundled electricity markets. KETRACO is constructing a <strong>National System Control Centre (NSCC)</strong> at a cost of €82.7M, with completion targeted for February 2028, which will serve as the nerve centre for real-time grid management."
+    },
+    {
+      "title": "KETRACO–Africa50 Public-Private Partnership",
+      "year": "2025",
+      "level": "transmission",
+      "description": "In <strong>December 2025</strong>, KETRACO signed a <strong>$311 million</strong> public-private partnership with Africa50, a pan-African infrastructure investment platform, to accelerate transmission infrastructure development. The PPP covers the financing, construction, and operation of priority transmission lines needed to evacuate power from renewable energy zones and strengthen the national grid. This represents one of Kenya's largest transmission PPP deals and signals a shift toward private capital participation in traditionally state-funded transmission infrastructure."
+    },
+    {
+      "title": "National Energy Policy 2025–2034",
+      "year": "2025",
+      "level": "both",
+      "description": "The National Energy Policy 2025–2034 sets an ambitious target of <strong>85% renewable energy</strong> in Kenya's generation mix over the planning period, building on the country's existing ~90% renewable share. The policy emphasises geothermal expansion, solar and wind scale-up, regional interconnection (building on the Ethiopia-Kenya HVDC link), energy storage deployment, and grid modernisation. It provides the strategic framework within which the LCPDP, generation licensing, and transmission planning operate."
+    },
+    {
+      "title": "Parliamentary Tariff Cap & IPP Disclosure Requirements",
+      "year": "2025",
+      "level": "transmission",
+      "description": "Parliament imposed a <strong>USD 0.07/kWh cap</strong> on tariffs in new IPP power purchase agreements, alongside requirements for <strong>full disclosure of IPP ownership structures</strong>. These measures respond to public concerns about the cost of independent power and allegations of opaque ownership arrangements in some existing IPP contracts. While intended to protect consumers and improve transparency, the tariff cap may constrain the commercial viability of certain capital-intensive generation technologies, particularly geothermal."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the LCPDP and why is it important for new generation projects?",
+      "a": "The Least Cost Power Development Plan (LCPDP) is Kenya's master plan for generation capacity additions, updated periodically by the Ministry of Energy in coordination with Kenya Power, KETRACO, and other stakeholders. It determines which new power projects are needed, their technology, scale, and timing based on demand forecasts and least-cost optimisation. Inclusion in the LCPDP is effectively a prerequisite for obtaining a generation licence from EPRA and negotiating a PPA with Kenya Power. Projects not reflected in the plan face significant barriers to securing regulatory approvals and off-take agreements."
+    },
+    {
+      "q": "How does net metering work in Kenya?",
+      "a": "Net metering regulations introduced by EPRA in June 2024 allow grid-connected customers with renewable generation systems up to 1 MW to export surplus electricity to the grid. Domestic customers can install systems of 4–10 kW, while commercial and industrial customers can install up to 1 MW. Exported energy receives a 50% credit against consumption charges — meaning for every unit exported, the customer offsets half a unit of their consumption bill. A national aggregate cap of 100 MW applies. Applications are submitted through Kenya Power, and as of early 2026, 62 pilot applications totalling 17 MW have been received."
+    },
+    {
+      "q": "What is KETRACO's role and how is it changing?",
+      "a": "KETRACO (Kenya Electricity Transmission Company) is a 100% state-owned company responsible for building, owning, and operating Kenya's high-voltage transmission network (132–400 kV). In January 2022, EPRA designated KETRACO as the Independent System Operator (ISO), beginning the transfer of real-time system operation functions from Kenya Power. KETRACO is building a National System Control Centre (NSCC) at a cost of €82.7M, with completion targeted for February 2028, to fully assume this role. KETRACO also conducts grid impact studies for new generation projects and enters into connection agreements with developers."
+    },
+    {
+      "q": "What does the transition from feed-in tariffs to competitive auctions mean for developers?",
+      "a": "Kenya is replacing its feed-in tariff (FiT) regime with competitive auctions modelled on South Africa's REIPPPP, targeted for completion by November 2026. Under the FiT system, developers negotiated bilateral PPAs with Kenya Power at predetermined tariff rates. Under the auction system, developers will compete on price for predetermined capacity allocations by technology and location. This means developers will need to be more cost-competitive, but the process should be more transparent and predictable. The PPA moratorium was lifted in November 2025, so bilateral negotiations remain possible in the interim, subject to the USD 0.07/kWh tariff cap."
+    },
+    {
+      "q": "How much does a distribution connection cost and how long does it take?",
+      "a": "Kenya Power targets completing new distribution connections within 2 months of application. Costs depend on the connection type: the Last Mile programme offers connections at KES 15,000 (~$117), a standard single-phase connection costs KES 35,000–40,000 (~$270–$310), and a three-phase connection can cost up to KES 75,000 (~$580). The process involves applying online or at a Kenya Power office, a site survey within 8 working days, receiving a quotation valid for 90 days, payment via M-Pesa or bank transfer, internal wiring by a licensed contractor, and then connection works and energisation by Kenya Power."
+    }
+  ],
+  "note": "Kenya's grid interconnection landscape is defined by institutional transition and a renewable-heavy generation mix. The designation of KETRACO as ISO, the shift from feed-in tariffs to competitive auctions, and the lifting of the PPA moratorium collectively signal a maturing electricity market — but one still navigating the complexities of structural reform. For developers, the key considerations are: (1) the LCPDP remains the gatekeeper for new generation projects; (2) the USD 0.07/kWh tariff cap and ownership disclosure requirements set firm boundaries on PPA economics; (3) the competitive auction framework (by November 2026) will fundamentally change how new capacity is procured; (4) a 2.3% reserve margin creates urgency for new capacity but also grid stability risks; and (5) at distribution level, net metering is available but uptake remains nascent. The Ethiopia-Kenya HVDC link (2,000 MW, operational since December 2023) and the KETRACO–Africa50 PPP ($311M) point toward an increasingly interconnected and privately financed transmission future."
+}

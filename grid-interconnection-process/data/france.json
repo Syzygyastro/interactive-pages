@@ -1,0 +1,675 @@
+{
+  "id": "france",
+  "name": "France",
+  "full": "France — Grid Interconnection Process",
+  "type": "Centralized Single-TSO/DSO Model",
+  "icon": "\ud83c\uddeb\ud83c\uddf7",
+  "accentColor": "#1E3A5F",
+  "accentBg": "#E8F0FA",
+  "badgeColor": "#E8F0FA",
+  "badgeText": "#1E3A5F",
+  "badge": "\u20ac200B Grid Investment",
+  "badge2": "PPE3 Published Feb 2026",
+  "tags": ["europe"],
+  "sub": "RTE manages all transmission (100,000+ km) while Enedis controls 95% of distribution, creating a centralized two-tier model regulated by CRE with ambitious \u20ac100B investment through 2040.",
+  "cardTags": ["RTE", "Enedis", "CRE", "TURPE 7", "S3REnR", "Linky", "PPE3"],
+  "desc": "France operates a centralized grid interconnection model with RTE as the sole transmission system operator (100,000+ km, subsidiary of EDF) and Enedis as the dominant distribution system operator (95% coverage, 35M Linky smart meters). The Commission de R\u00e9gulation de l'\u00c9nergie (CRE) regulates tariffs, connection costs, and queue management. RTE has announced a \u20ac100B investment plan for 2025\u20132040, while PPE3 (published February 2026) targets 48 GW solar and 31 GW onshore wind by 2030. The S3REnR regional renewable integration schemes allocate network capacity and determine cost-sharing (quote-part) for generators connecting to the grid.",
+  "transmission": {
+    "title": "Transmission Connection (R\u00e9seau de Transport)",
+    "voltageLevel": "63\u2013400 kV",
+    "overview": "RTE is the sole TSO, operating 100,000+ km of high-voltage lines as a subsidiary of EDF. All transmission connections follow a structured 10-step process beginning with a <em>Demande de raccordement</em> (Form D1) and culminating in commissioning (<em>mise en service</em>). The key commercial milestone is the PTF \u2014 Proposition Technique et Financi\u00e8re \u2014 which costs \u20ac50,400 and sets out the technical solution and financial contribution. RTE has introduced a fast-track pathway for 400 kV data center connections at 5 designated sites, reducing timelines by 30% to 3\u20134 years.",
+    "keyBodies": [
+      {
+        "name": "RTE",
+        "fullName": "R\u00e9seau de Transport d'\u00c9lectricit\u00e9",
+        "role": "Sole TSO; operates 100,000+ km of 63\u2013400 kV lines; processes all transmission connection requests; subsidiary of EDF with \u20ac100B investment plan 2025\u20132040",
+        "url": "https://www.rte-france.com"
+      },
+      {
+        "name": "CRE",
+        "fullName": "Commission de R\u00e9gulation de l'\u00c9nergie",
+        "role": "Independent energy regulator; sets TURPE network tariffs, approves PTF methodology, oversees S3REnR cost allocation, and resolves connection disputes",
+        "url": "https://www.cre.fr"
+      }
+    ],
+    "typicalTimeline": "3\u20135 years (standard); 5\u20138 years (new substation)",
+    "timelineDetail": "Fast-track for 400 kV data centers: 3\u20134 years at 5 designated sites (e.g. Escaudain 700 MW, Fouju 700 MW). Standard projects: PTF issued in 3\u20136 months, construction 2\u20135 years. New substation builds extend to 5\u20138 years due to planning and environmental reviews.",
+    "costRange": "\u20ac50,400 PTF + S3REnR quote-part (~\u20ac77\u201382K/MW)",
+    "costDetail": "The PTF (Proposition Technique et Financi\u00e8re) study fee is \u20ac50,400. The S3REnR quote-part for renewable generators is approximately \u20ac77\u201382K per MW installed. A <em>r\u00e9faction tarifaire</em> (tariff discount) applies but declines with project size. Construction costs for grid reinforcement are shared between the developer and RTE according to the S3REnR allocation.",
+    "queueSize": "Significant backlog",
+    "queueDetail": "PPE3 targets 48 GW solar and 31 GW onshore wind by 2030. S3REnR revision acceleration (decree July 2024) aims to clear regional capacity bottlenecks. CRE approved fast-track 400 kV sites in May 2025 to address data center demand.",
+    "steps": [
+      {
+        "name": "Demande de raccordement (Connection Request)",
+        "detail": "Submit Form D1 to RTE with project specifications. RTE performs a completeness check within 8 business days. Incomplete applications are returned with a request for additional information.",
+        "timeline": "8 business days (completeness check)"
+      },
+      {
+        "name": "\u00c9tude exploratoire (Exploratory Study)",
+        "detail": "Optional preliminary study to assess grid capacity and identify potential connection points. Free of charge. Useful for large or complex projects to understand feasibility before committing to the formal PTF process.",
+        "timeline": "6 weeks"
+      },
+      {
+        "name": "Confirmation of previous study",
+        "detail": "Optional step to confirm the findings and assumptions of the exploratory study remain valid. Relevant when there has been a delay between the exploratory study and the formal PTF application.",
+        "timeline": "15 days"
+      },
+      {
+        "name": "PTF \u2014 Proposition Technique et Financi\u00e8re",
+        "detail": "RTE issues a binding technical and financial offer detailing the connection solution, reinforcement works, cost allocation, and timeline. The PTF study fee is \u20ac50,400. This is the critical commercial milestone in the process.",
+        "timeline": "3\u20136 months"
+      },
+      {
+        "name": "PTF Acceptance",
+        "detail": "The developer reviews and accepts the PTF within 3 months. Acceptance triggers the formal contractual phase. Failure to accept within the deadline results in the PTF lapsing.",
+        "timeline": "3 months (acceptance window)"
+      },
+      {
+        "name": "\u00c9tudes compl\u00e9mentaires & Convention (Detailed Studies & Agreement)",
+        "detail": "RTE conducts detailed engineering studies and drafts the connection convention (<em>convention de raccordement</em>) specifying technical requirements, milestones, and financial obligations.",
+        "timeline": "6 months"
+      },
+      {
+        "name": "Convention Acceptance",
+        "detail": "The developer signs the connection convention. This formally commits both parties to the project timeline, technical specifications, and cost-sharing arrangements.",
+        "timeline": "3 months (acceptance window)"
+      },
+      {
+        "name": "Sp\u00e9cifications techniques d\u00e9taill\u00e9es (Detailed Technical Specifications)",
+        "detail": "RTE finalizes detailed technical specifications for the connection works including protection settings, metering, and SCADA integration requirements.",
+        "timeline": "6 months"
+      },
+      {
+        "name": "Travaux (Construction Works)",
+        "detail": "Physical construction of connection assets, grid reinforcements, and substation modifications. The developer builds their own connection equipment to RTE specifications while RTE delivers network-side infrastructure.",
+        "timeline": "2\u20135 years"
+      },
+      {
+        "name": "Essais & Mise en service (Testing & Commissioning)",
+        "detail": "Comprehensive testing of protection systems, metering, and communication equipment. Successful completion leads to energization and commercial operation. RTE issues the <em>attestation de conformit\u00e9</em> (compliance certificate).",
+        "timeline": "2\u20136 months"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "ft_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "ft_demande",
+          "type": "step",
+          "label": "Demande de raccordement (Form D1)",
+          "row": 1,
+          "col": 1,
+          "timeline": "8 business days",
+          "timelineBasis": "evidence",
+          "detail": "Submit Form D1 to RTE with project specifications. RTE performs a completeness check within 8 business days. Incomplete applications are returned with a request for additional information.",
+          "sources": [
+            {"label": "RTE Services Portal", "url": "https://www.services-rte.com/en/learn-more-about-our-services/connecting-a-generation-facility.html"},
+            {"label": "CRE Procedure (2026)", "url": "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260204_2026-32_Procedure_raccordement_RTE_annexe.pdf"}
+          ]
+        },
+        {
+          "id": "ft_s3renr_check",
+          "type": "decision",
+          "label": "S3REnR capacity?",
+          "row": 2,
+          "col": 1,
+          "detail": "Check whether the regional S3REnR renewable integration scheme has available capacity at the requested connection point. If the allocated MW in your region are exhausted, new connections are blocked until scheme revision. Quote-part costs range from \u20ac73\u2013\u20ac91K/MW depending on region (e.g. \u00cele-de-France \u20ac1.84/kW vs Nouvelle-Aquitaine \u20ac90.84/kW as of Feb 2025).",
+          "sources": [
+            {"label": "S3REnR Quote-parts (Feb 2025)", "url": "https://www.photovoltaique.info/fr/actualites/detail/s3renr-mise-a-jour-des-montants-des-quotes-parts-fevrier-2025/"},
+            {"label": "S3REnR Grand Est 2025", "url": "https://assets.rte-france.com/prod/public/2025-03/2025-03-05-s3renr-grand-est.pdf"}
+          ]
+        },
+        {
+          "id": "ft_wait_revision",
+          "type": "step",
+          "label": "Wait for S3REnR revision",
+          "row": 2,
+          "col": 2,
+          "timeline": "Variable (months\u2013years)",
+          "timelineBasis": "assumption",
+          "detail": "If S3REnR capacity is saturated, the project must wait for a scheme revision to free capacity. The July 2024 decree accelerated the revision cycle from 5\u20136 years to a faster process, but delays remain common in high-renewable regions like Occitanie, Nouvelle-Aquitaine, and PACA.",
+          "sources": [
+            {"label": "S3REnR Occitanie 2024", "url": "https://assets.rte-france.com/prod/public/2025-06/2025-06-19-etats-techniques-financiers-2024-s3renr-occitanie.pdf"}
+          ]
+        },
+        {
+          "id": "ft_fast_track_check",
+          "type": "decision",
+          "label": "Fast-track 400kV site?",
+          "row": 3,
+          "col": 1,
+          "detail": "Is this a designated fast-track 400 kV data center site? CRE approved 5 sites in May 2025: Escaudain (700 MW), Fouju (700 MW), Bosquel, Grand Port Maritime de Dunkerque, and Montereau. These offer 3\u20134 year timelines with 30% cost reduction. Campus IA signed the first accelerated connection contract at Fouju for 240 MW by end-2027 and 700 MW by end-2029.",
+          "sources": [
+            {"label": "CRE Fast-Track Approval", "url": "https://www.cre.fr/actualites/toute-lactualite/la-cre-approuve-la-procedure-de-raccordement-fast-track-pour-raccorder-les-sites-de-consommation-de-grande-puissance-au-reseau-tres-haute-tension-400-kv-de-rte.html"},
+            {"label": "RTE Pre-reservation Sites", "url": "https://www.services-rte.com/en/news/pre-reservation-of-capacity-on-four-suitable-sites.html"},
+            {"label": "Campus IA + RTE Contract", "url": "https://www.rte-france.com/actualites/campus-ia-rte-signent-contrat-raccordement-accelere-campus-infrastructures-numeriques"}
+          ]
+        },
+        {
+          "id": "ft_fast_track_path",
+          "type": "step",
+          "label": "Accelerated PTF + works (fast-track)",
+          "row": 3,
+          "col": 2,
+          "timeline": "3\u20134 years total",
+          "timelineBasis": "evidence",
+          "detail": "Designated 400 kV fast-track sites bypass the standard queue. RTE pre-reserves 700 MW+ of capacity and provides accelerated PTF processing, streamlined construction, and 30% cost reduction. The first implementation at Fouju delivers 240 MW by end-2027.",
+          "sources": [
+            {"label": "Bracewell: Data Centers in France", "url": "https://www.bracewell.com/resources/building-data-centers-in-france-navigating-regulatory-hurdles-and-unlocking-growth/"},
+            {"label": "26 Secured DC Sites (2025)", "url": "https://www.usine-digitale.fr/intelligence-artificielle/souverainete-numerique-26-sites-ont-ete-securises-pour-la-construction-de-data-centers-ia-en-france.CEWDRJNI4NGRTHKKTBXSQ4EVMA.html"}
+          ]
+        },
+        {
+          "id": "ft_optional_check",
+          "type": "decision",
+          "label": "Optional studies?",
+          "row": 4,
+          "col": 1,
+          "detail": "Steps 2 and 3 (exploratory study and confirmation) are OPTIONAL. Developers of large or complex projects may request them to assess grid capacity and feasibility before committing to the \u20ac50,400 PTF fee. Smaller or straightforward projects typically bypass these steps and proceed directly to PTF."
+        },
+        {
+          "id": "ft_etude_exploratoire",
+          "type": "step",
+          "label": "\u00c9tude exploratoire (optional)",
+          "row": 5,
+          "col": 0,
+          "timeline": "6 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Optional preliminary study providing a non-binding feasibility assessment. Free of charge. RTE provides results within 6 weeks. Assesses grid capacity at the requested node and estimates connection cost and timeline. Useful for large or complex projects.",
+          "sources": [
+            {"label": "RTE Connection Procedure Art 1.2.2", "url": "https://www.services-rte.com/files/live/sites/services-rte/files/documentsLibrary/Art_1.2.2_2585_fr"},
+            {"label": "RTE Generation Connection Guide", "url": "https://www.services-rte.com/en/learn-more-about-our-services/connecting-a-generation-facility.html"}
+          ]
+        },
+        {
+          "id": "ft_confirmation",
+          "type": "step",
+          "label": "Confirmation of study (optional)",
+          "row": 6,
+          "col": 0,
+          "timeline": "15 days",
+          "timelineBasis": "evidence",
+          "detail": "Optional step to confirm the exploratory study findings remain valid if time has elapsed. RTE responds within 15 days.",
+          "sources": [
+            {"label": "RTE DTR Art 1.2.2", "url": "https://www.cre.fr/fileadmin/Documents/Deliberations/2026/260204_2026-32_Procedure_raccordement_RTE_annexe.pdf"}
+          ]
+        },
+        {
+          "id": "ft_ptf",
+          "type": "step",
+          "label": "PTF (\u20ac50,400 study fee)",
+          "row": 7,
+          "col": 1,
+          "timeline": "3\u20136 months",
+          "timelineBasis": "evidence",
+          "detail": "RTE issues the Proposition Technique et Financi\u00e8re (PTF) \u2014 a binding technical and financial offer. Standard deadline is 3 months from complete data; may be extended for complex requests. The \u20ac50,400 study fee is non-refundable. The PTF details the connection solution, reinforcement works, cost allocation (including S3REnR quote-part), and construction timeline. R\u00e9faction tarifaire (tariff discount) applies: 60% for \u2264500 kW installations (raised from 40% by March 2022 arr\u00eat\u00e9), declining for larger projects up to 5 MW, and no discount above 5 MW.",
+          "sources": [
+            {"label": "RTE PTF Template", "url": "https://www.services-rte.com/files/live/sites/services-rte/files/documentsLibrary/ARTICLE_8.1.1_-_TRAME_TYPE_DE_PTF_PRODUCTEUR_CONDITIONS_GENERALES_ET_PARTICULI%C3%88RES_6015_fr"},
+            {"label": "R\u00e9faction Tarifaire Arr\u00eat\u00e9", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000045410554"},
+            {"label": "R\u00e9faction Rates Guide", "url": "https://www.optima-energie.fr/blog/conseil-energie/taux-de-refaction/"}
+          ]
+        },
+        {
+          "id": "ft_ptf_accept",
+          "type": "step",
+          "label": "PTF Acceptance (enter queue)",
+          "row": 8,
+          "col": 1,
+          "timeline": "3 months (acceptance window)",
+          "timelineBasis": "evidence",
+          "detail": "Developer must accept the PTF within 3 months (extendable by 3 months with RTE agreement). Acceptance requires a signed copy with no reservations plus required supporting documents. Acceptance adds the project to the File d'Attente (queue). Failure to accept causes the PTF to lapse.",
+          "sources": [
+            {"label": "RTE Connection Process (EN)", "url": "https://www.services-rte.com/en/learn-more-about-our-services/connect-an-installation-to-the-public-transmission-network.html"}
+          ]
+        },
+        {
+          "id": "ft_convention",
+          "type": "step",
+          "label": "\u00c9tudes + Convention de raccordement",
+          "row": 9,
+          "col": 1,
+          "timeline": "6 months",
+          "timelineBasis": "evidence",
+          "detail": "RTE conducts detailed engineering studies and drafts the connection convention (convention de raccordement). Within 3 months of PTF acceptance, RTE sends constructive capacity specifications. Within 6 months, RTE sends protection/metering/SCADA specifications.",
+          "sources": [
+            {"label": "RTE Post-Acceptance Timeline", "url": "https://www.services-rte.com/en/learn-more-about-our-services/connect-an-installation-to-the-public-transmission-network.html"}
+          ]
+        },
+        {
+          "id": "ft_conv_accept",
+          "type": "step",
+          "label": "Convention Acceptance",
+          "row": 10,
+          "col": 1,
+          "timeline": "3 months (window)",
+          "timelineBasis": "evidence",
+          "detail": "Developer signs the connection convention, formally committing both parties to the project timeline, technical specifications, and cost-sharing."
+        },
+        {
+          "id": "ft_specs",
+          "type": "step",
+          "label": "Detailed Technical Specs",
+          "row": 11,
+          "col": 1,
+          "timeline": "6 months",
+          "timelineBasis": "evidence",
+          "detail": "RTE finalizes detailed technical specifications for the connection works including protection settings, metering, and SCADA integration requirements."
+        },
+        {
+          "id": "ft_travaux",
+          "type": "step",
+          "label": "Travaux (Construction)",
+          "row": 12,
+          "col": 1,
+          "timeline": "2\u20135 years",
+          "timelineBasis": "evidence",
+          "detail": "Physical construction of connection assets, grid reinforcements, and substation modifications. The developer builds their own connection equipment to RTE specifications while RTE delivers network-side infrastructure. New substation builds can extend to 5\u20138 years."
+        },
+        {
+          "id": "ft_mise_en_service",
+          "type": "step",
+          "label": "Essais & Mise en service",
+          "row": 13,
+          "col": 1,
+          "timeline": "2\u20136 months",
+          "timelineBasis": "evidence",
+          "detail": "Comprehensive testing of protection systems, metering, and communications. RTE issues the attestation de conformit\u00e9. Successful completion leads to energization and commercial operation."
+        },
+        {
+          "id": "ft_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 14,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {"from": "ft_start", "to": "ft_demande"},
+        {"from": "ft_demande", "to": "ft_s3renr_check"},
+        {"from": "ft_s3renr_check", "to": "ft_wait_revision", "label": "Saturated", "type": "conditional"},
+        {"from": "ft_wait_revision", "to": "ft_s3renr_check", "label": "Re-check", "type": "conditional"},
+        {"from": "ft_s3renr_check", "to": "ft_fast_track_check", "label": "Available"},
+        {"from": "ft_fast_track_check", "to": "ft_fast_track_path", "label": "Yes (400kV DC)", "type": "conditional"},
+        {"from": "ft_fast_track_path", "to": "ft_mise_en_service", "label": "Accelerated", "type": "conditional"},
+        {"from": "ft_fast_track_check", "to": "ft_optional_check", "label": "Standard"},
+        {"from": "ft_optional_check", "to": "ft_etude_exploratoire", "label": "Yes", "type": "conditional"},
+        {"from": "ft_optional_check", "to": "ft_ptf", "label": "No (bypass)"},
+        {"from": "ft_etude_exploratoire", "to": "ft_confirmation"},
+        {"from": "ft_confirmation", "to": "ft_ptf"},
+        {"from": "ft_ptf", "to": "ft_ptf_accept"},
+        {"from": "ft_ptf_accept", "to": "ft_convention"},
+        {"from": "ft_convention", "to": "ft_conv_accept"},
+        {"from": "ft_conv_accept", "to": "ft_specs"},
+        {"from": "ft_specs", "to": "ft_travaux"},
+        {"from": "ft_travaux", "to": "ft_mise_en_service"},
+        {"from": "ft_mise_en_service", "to": "ft_end"}
+      ]
+    },
+    "challenges": "The S3REnR regional schemes can create capacity bottlenecks where allocated MW are exhausted, blocking new connections until scheme revision. New substation projects face 5\u20138 year timelines due to environmental permitting and land acquisition. The \u20ac50,400 PTF fee is non-refundable and can be a barrier for smaller projects. Queue congestion in high-renewable regions (e.g. Occitanie, Nouvelle-Aquitaine) leads to extended waiting times."
+  },
+  "distribution": {
+    "title": "Distribution Connection (R\u00e9seau de Distribution)",
+    "voltageLevel": "HTA (20 kV) / BT (400/230 V)",
+    "overview": "Enedis manages 95% of French electricity distribution, with approximately 150 <em>Entreprises Locales de Distribution</em> (ELDs) covering the remainder and EDF SEI serving overseas territories. All standard connections are managed through the <strong>Enedis Connect</strong> portal (connect-racco.enedis.fr). France has deployed 35 million Linky smart meters enabling remote activation and real-time grid monitoring. Since October 2024, <strong>ORI (Offres de Raccordement Intelligentes)</strong> allow generators to accept \u22645% curtailment in exchange for faster connection with a guaranteed \u226570% injection rate.",
+    "keyBodies": [
+      {
+        "name": "Enedis",
+        "fullName": "Enedis (formerly ERDF)",
+        "role": "Primary DSO covering 95% of France; operates Enedis Connect portal; manages 35M Linky smart meters; processes all standard distribution connection requests",
+        "url": "https://www.enedis.fr"
+      },
+      {
+        "name": "ELDs",
+        "fullName": "Entreprises Locales de Distribution",
+        "role": "~150 local distribution companies covering 5% of France; each operates independently with own connection processes (e.g. Strasbourg \u00c9lectricit\u00e9, R\u00e9gie d'Electricit\u00e9 de Grenoble)",
+        "url": null
+      },
+      {
+        "name": "CRE",
+        "fullName": "Commission de R\u00e9gulation de l'\u00c9nergie",
+        "role": "Regulates distribution tariffs (TURPE), approves connection cost methodologies, oversees Enedis service quality, and arbitrates disputes",
+        "url": "https://www.cre.fr"
+      }
+    ],
+    "typicalTimeline": "1\u20132 days (Linky remote) to 6+ months (HTA)",
+    "timelineDetail": "Small connections \u226436 kVA: PTF in 10 days to 6 weeks, works 30\u201360 days, Linky remote activation in 1\u20132 days. Standard 36 kVA\u2013250 kW: PTF in 1\u20133 months. HTA connections >250 kW: detailed study 1\u20133 months, S3REnR quote-part applies, total timeline 3\u20136+ months.",
+    "costRange": "\u20ac50.10 (self-consumption) to \u20ac100K+ (HTA)",
+    "costDetail": "Individual self-consumption with Linky: \u20ac50.10. Serviced plot (BT): \u20ac420\u2013\u20ac1,685. HTA connections (>250 kW): \u20ac10K\u2013\u20ac100K+ depending on reinforcement requirements. S3REnR quote-part (~\u20ac77\u201382K/MW) applies to renewable generators on HTA. Collective self-consumption: PMO structure, 2\u201320 km range, 5 MW limit (raised from 3 MW).",
+    "queueSize": "Growing backlog in high-solar regions",
+    "queueDetail": "ORI (Intelligent Connection Offers) introduced October 2024 to ease congestion: developers accept \u22645% curtailment for faster connection with guaranteed \u226570% injection. PPE3 targets 48 GW solar by 2030, requiring massive distribution-level integration. Connection power reform (August 2025) introduces automatic readjustment of contracted capacity.",
+    "steps": [
+      {
+        "name": "Application via Enedis Connect",
+        "detail": "Submit connection request through the Enedis Connect portal (connect-racco.enedis.fr) specifying project type, power level, location, and technical requirements. For ELD zones, apply directly to the relevant local distributor.",
+        "timeline": "Immediate submission"
+      },
+      {
+        "name": "Completeness Check & Classification",
+        "detail": "Enedis verifies the application is complete and classifies the project: small (\u226436 kVA, simplified track), standard (36 kVA\u2013250 kW), or HTA (>250 kW, detailed study). Incomplete files are returned within 10 business days.",
+        "timeline": "10 business days"
+      },
+      {
+        "name": "PTF (Proposition Technique et Financi\u00e8re)",
+        "detail": "Enedis issues a technical and financial proposal. Timelines vary by classification: \u226436 kVA in 10 days to 6 weeks; 36 kVA\u2013250 kW in 1\u20133 months; >250 kW HTA includes a detailed grid study taking 1\u20133 months. For HTA projects the S3REnR quote-part is included.",
+        "timeline": "10 days\u20133 months (varies by size)"
+      },
+      {
+        "name": "PTF Acceptance & Payment",
+        "detail": "Developer accepts the PTF and pays the connection contribution. For small connections, acceptance triggers immediate scheduling of works. For HTA, a formal connection convention may be required.",
+        "timeline": "Typically within 3 months"
+      },
+      {
+        "name": "ORI Assessment (if applicable)",
+        "detail": "Since October 2024, generators can opt for an <em>Offre de Raccordement Intelligente</em> (ORI) \u2014 accepting \u22645% curtailment in exchange for faster connection. ORI guarantees \u226570% injection capacity and avoids waiting for full reinforcement.",
+        "timeline": "Assessed during PTF phase"
+      },
+      {
+        "name": "Travaux (Connection Works)",
+        "detail": "Physical connection works by Enedis or approved contractor. Small BT connections: 30\u201360 days. HTA connections: several months for cable runs, transformer installation, and protection equipment. Developer is responsible for internal installations.",
+        "timeline": "30 days\u20136+ months"
+      },
+      {
+        "name": "Consuel Inspection",
+        "detail": "Mandatory electrical safety inspection by Consuel (Comit\u00e9 National pour la S\u00e9curit\u00e9 des Usagers de l'\u00c9lectricit\u00e9). A <em>certificat de conformit\u00e9</em> is required before Enedis can energize the connection.",
+        "timeline": "1\u20134 weeks"
+      },
+      {
+        "name": "Mise en service (Commissioning)",
+        "detail": "Enedis activates the connection. For Linky-equipped sites (\u226436 kVA), remote activation is possible within 1\u20132 days. For larger connections, a technician visit is required for metering setup, protection testing, and energization.",
+        "timeline": "1\u20132 days (Linky) to 2\u20134 weeks"
+      }
+    ],
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "fd_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "fd_apply",
+          "type": "step",
+          "label": "Application via Enedis Connect",
+          "row": 1,
+          "col": 1,
+          "timeline": "Immediate",
+          "timelineBasis": "evidence",
+          "detail": "Submit connection request through the Enedis Connect portal (connect-racco.enedis.fr) specifying project type, power level, location, and technical requirements. For ELD zones (~5% of France), apply directly to the relevant local distributor instead.",
+          "sources": [
+            {"label": "Enedis Connect Portal", "url": "https://connect-racco.enedis.fr"},
+            {"label": "Enedis Raccordement Guide 2025", "url": "https://www.e-raccordement.net/blog/actualit%C3%A9s/raccordement-enedis-guide-complet-2025-d%C3%A9marches-prix-et-d%C3%A9lais"}
+          ]
+        },
+        {
+          "id": "fd_classify",
+          "type": "decision",
+          "label": "Power classification?",
+          "row": 2,
+          "col": 1,
+          "detail": "Enedis verifies completeness (10 business days) and classifies the project into one of three tracks based on power demand: small (\u226436 kVA, simplified), standard (36 kVA\u2013250 kW), or HTA (>250 kW, detailed study with S3REnR quote-part).",
+          "sources": [
+            {"label": "Enedis Raccordement D\u00e9lais", "url": "https://www.hellowatt.fr/suivi-consommation-energie/compteur-electricite/enedis-raccordement"}
+          ]
+        },
+        {
+          "id": "fd_small",
+          "type": "step",
+          "label": "\u226436kVA: Simplified PTF",
+          "row": 3,
+          "col": 0,
+          "timeline": "10 days\u20136 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Small connections \u226436 kVA follow a simplified track. PTF issued in 10 days to 6 weeks. Works typically 30\u201360 days. Linky remote activation possible in 1\u20132 days for equipped sites. Cost: \u20ac50.10 for individual self-consumption, \u20ac420\u2013\u20ac1,685 for serviced plot.",
+          "sources": [
+            {"label": "Enedis Catalogue Prestations", "url": "https://catalogue-prestations.enedis.fr/"}
+          ]
+        },
+        {
+          "id": "fd_standard",
+          "type": "step",
+          "label": "36kVA\u2013250kW: Standard PTF",
+          "row": 3,
+          "col": 1,
+          "timeline": "1\u20133 months",
+          "timelineBasis": "evidence",
+          "detail": "Standard connections between 36 kVA and 250 kW. PTF issued in 1\u20133 months after grid study. R\u00e9faction tarifaire of 60% applies for \u2264500 kW installations (March 2022 arr\u00eat\u00e9). Connection may require minor network extensions."
+        },
+        {
+          "id": "fd_hta",
+          "type": "step",
+          "label": ">250kW HTA: Full Study",
+          "row": 3,
+          "col": 2,
+          "timeline": "1\u20133 months",
+          "timelineBasis": "evidence",
+          "detail": "HTA connections >250 kW require a detailed grid study (1\u20133 months) including load flow and protection coordination. S3REnR quote-part applies (~\u20ac77\u201382K/MW). A formal convention de raccordement may be required. Total timeline 3\u20136+ months.",
+          "sources": [
+            {"label": "Installations >250kVA & S3REnR", "url": "https://www.photovoltaique.info/fr/tarifs-dachat-et-autoconsommation/couts-reglementaires/couts-de-raccordement-au-reseau/installations-250-kva-et-s3renr/"}
+          ]
+        },
+        {
+          "id": "fd_self_consumption",
+          "type": "decision",
+          "label": "Self-consumption?",
+          "row": 4,
+          "col": 1,
+          "detail": "Is this a self-consumption installation? Two paths exist: individual self-consumption (single site) or collective self-consumption (multiple sites sharing generation via a PMO). Collective projects require a Personne Morale Organisatrice, operate within 2\u201320 km radius, and are capped at 5 MW (raised from 3 MW in Feb 2025).",
+          "sources": [
+            {"label": "Enedis Autoconsommation Collective", "url": "https://www.enedis.fr/comment-monter-un-projet-dautoconsommation-collective"},
+            {"label": "Enedis ACC Guide", "url": "https://www.enedis.fr/produire-consommer-son-electricite"}
+          ]
+        },
+        {
+          "id": "fd_collective",
+          "type": "step",
+          "label": "Collective: PMO setup + convention",
+          "row": 5,
+          "col": 2,
+          "timeline": "1\u20133 months",
+          "timelineBasis": "assumption",
+          "detail": "Collective self-consumption requires creating a PMO (association, cooperative, SCIC, etc.), collecting participant consent, defining energy sharing coefficients (constant, dynamic, or Enedis-calculated), and concluding a convention with Enedis. As of June 2025: 1,111 active operations, 161 MW installed, 10,644 consumers. Max 5 MW standard, 10 MW for municipal projects.",
+          "sources": [
+            {"label": "Enedis PMO Convention", "url": "https://www.enedis.fr/media/2070/download"},
+            {"label": "ACC R\u00e9glementation", "url": "https://www.les-energies-renouvelables.eu/conseils/autoconsommation/autoconsommation-collective-energie-panneau-solaire-photovoltaique/la-reglementation-complete-sur-lautoconsommation-collective/"}
+          ]
+        },
+        {
+          "id": "fd_ori_check",
+          "type": "decision",
+          "label": "ORI offer? (HTA)",
+          "row": 5,
+          "col": 0,
+          "detail": "Since October 2024, HTA generators can opt for an Offre de Raccordement Intelligente (ORI) \u2014 now called ORA (Offre de Raccordement Alternative). Accepting \u22645% annual curtailment guarantees \u226570% injection capacity and avoids waiting for full network reinforcement. In 2024, 630 installations (191 MW) used early connection. Available for all HTA users by August 2027 under TURPE 7.",
+          "sources": [
+            {"label": "Enedis ORI Press Release", "url": "https://www.enedis.fr/presse/offres-de-raccordement-intelligentes"},
+            {"label": "Enedis ORI PDF", "url": "https://www.enedis.fr/sites/default/files/documents/pdf/communique-presse-enedis-facilite-le-raccordement-des-enr-avec-les-ori.pdf"},
+            {"label": "ORA R\u00e9glementation", "url": "https://www.photovoltaique.info/fr/actualites/detail/raccordement-publication-de-larrete-offre-de-raccordement-alternatives-ora/"}
+          ]
+        },
+        {
+          "id": "fd_ori_path",
+          "type": "step",
+          "label": "ORI: Accept \u22645% curtailment",
+          "row": 6,
+          "col": 0,
+          "timeline": "Faster (skip reinforcement)",
+          "timelineBasis": "evidence",
+          "detail": "Developer accepts curtailment of up to 5% of annual generation. Enedis connects the installation without waiting for full network reinforcement. Guaranteed minimum 70% injection rate. Reduces connection timeline and avoids S3REnR queue delays in congested regions."
+        },
+        {
+          "id": "fd_ptf_accept",
+          "type": "step",
+          "label": "PTF Acceptance & Payment",
+          "row": 6,
+          "col": 1,
+          "timeline": "Within 3 months",
+          "timelineBasis": "evidence",
+          "detail": "Developer accepts the PTF and pays the connection contribution. For small connections, acceptance triggers immediate scheduling of works. For HTA, a formal connection convention may follow."
+        },
+        {
+          "id": "fd_travaux",
+          "type": "step",
+          "label": "Travaux (Connection Works)",
+          "row": 7,
+          "col": 1,
+          "timeline": "30 days\u20136+ months",
+          "timelineBasis": "evidence",
+          "detail": "Physical connection works by Enedis or approved contractor. Small BT: 30\u201360 days. HTA: several months for cable runs, transformer installation, and protection equipment. Developer responsible for internal installations."
+        },
+        {
+          "id": "fd_consuel",
+          "type": "step",
+          "label": "Consuel Inspection",
+          "row": 8,
+          "col": 1,
+          "timeline": "1\u20134 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Mandatory electrical safety inspection by Consuel (Comit\u00e9 National pour la S\u00e9curit\u00e9 des Usagers de l'\u00c9lectricit\u00e9). A certificat de conformit\u00e9 is required before Enedis can energize. Since January 2025, Consuel transmits the attestation directly to Enedis. Non-professional installations require a systematic site visit within 15 days.",
+          "sources": [
+            {"label": "Consuel Process (4 Steps)", "url": "https://www.consuel.com/consuel-en-4-etapes/"},
+            {"label": "Consuel 2025 Guide", "url": "https://elecineris.fr/consuel-electrique-2025-le-guide-complet-pour-obtenir-votre-attestation/"},
+            {"label": "Enedis Consuel Attestation", "url": "https://www.enedis.fr/media/2199/download"}
+          ]
+        },
+        {
+          "id": "fd_consuel_fail",
+          "type": "decision",
+          "label": "Consuel pass?",
+          "row": 9,
+          "col": 1,
+          "detail": "If the electrical installation is not compliant, the Consuel inspector draws up a list of non-conformities. The installer must correct all issues and, for certain anomalies, pay for a re-inspection (\u20ac226.69 TTC). Once non-conformities are resolved, a new attestation is issued.",
+          "sources": [
+            {"label": "Consuel Failure Process", "url": "https://www.vattenfall.fr/le-mag-energie/tout-savoir-consuel-electrique"},
+            {"label": "EDF Consuel Guide", "url": "https://particulier.edf.fr/fr/accueil/guide-energie/electricite/consuel.html"}
+          ]
+        },
+        {
+          "id": "fd_rework",
+          "type": "step",
+          "label": "Rework non-conformities",
+          "row": 9,
+          "col": 2,
+          "timeline": "1\u20134 weeks",
+          "timelineBasis": "assumption",
+          "detail": "Licensed electrician corrects all non-conformities identified by Consuel. Certain anomalies require a paid re-inspection (\u20ac226.69 TTC). The electrician must declare the corrective work and request a second appointment."
+        },
+        {
+          "id": "fd_mise_en_service",
+          "type": "step",
+          "label": "Mise en service (Commissioning)",
+          "row": 10,
+          "col": 1,
+          "timeline": "1\u20132 days (Linky) to 2\u20134 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Enedis activates the connection. For Linky-equipped sites (\u226436 kVA), remote activation in 1\u20132 days. For larger connections, a technician visit is required for metering setup, protection testing, and energization."
+        },
+        {
+          "id": "fd_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 11,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {"from": "fd_start", "to": "fd_apply"},
+        {"from": "fd_apply", "to": "fd_classify"},
+        {"from": "fd_classify", "to": "fd_small", "label": "\u226436kVA", "type": "conditional"},
+        {"from": "fd_classify", "to": "fd_standard", "label": "36kVA\u2013250kW"},
+        {"from": "fd_classify", "to": "fd_hta", "label": ">250kW HTA", "type": "conditional"},
+        {"from": "fd_small", "to": "fd_self_consumption"},
+        {"from": "fd_standard", "to": "fd_self_consumption"},
+        {"from": "fd_hta", "to": "fd_ori_check"},
+        {"from": "fd_ori_check", "to": "fd_ori_path", "label": "Accept ORI", "type": "conditional"},
+        {"from": "fd_ori_check", "to": "fd_self_consumption", "label": "Standard"},
+        {"from": "fd_ori_path", "to": "fd_ptf_accept"},
+        {"from": "fd_self_consumption", "to": "fd_collective", "label": "Collective (PMO)", "type": "conditional"},
+        {"from": "fd_self_consumption", "to": "fd_ptf_accept", "label": "Individual / No"},
+        {"from": "fd_collective", "to": "fd_ptf_accept"},
+        {"from": "fd_ptf_accept", "to": "fd_travaux"},
+        {"from": "fd_travaux", "to": "fd_consuel"},
+        {"from": "fd_consuel", "to": "fd_consuel_fail"},
+        {"from": "fd_consuel_fail", "to": "fd_rework", "label": "Fail", "type": "conditional"},
+        {"from": "fd_rework", "to": "fd_consuel", "label": "Re-inspect", "type": "conditional"},
+        {"from": "fd_consuel_fail", "to": "fd_mise_en_service", "label": "Pass"},
+        {"from": "fd_mise_en_service", "to": "fd_end"}
+      ]
+    },
+    "challenges": "The 95%/5% split between Enedis and ELDs creates process fragmentation for developers operating across multiple zones. S3REnR capacity exhaustion in high-solar regions (e.g. Occitanie, PACA) causes delays for new renewable connections. HTA connections requiring grid reinforcement can face 6\u201312 month delays. The ORI curtailment mechanism, while faster, introduces revenue uncertainty for generators. Collective self-consumption projects face complex PMO (Personne Morale Organisatrice) governance requirements."
+  },
+  "reforms": [
+    {
+      "title": "PPE3 \u2014 Programmation Pluriannuelle de l'\u00c9nergie",
+      "year": "Feb 2026",
+      "level": "both",
+      "description": "France's third multi-year energy programme sets binding targets of <strong>48 GW solar</strong> and <strong>31 GW onshore wind</strong> by 2030, requiring massive acceleration of grid connections at both transmission and distribution levels. PPE3 mandates coordinated planning between RTE and Enedis to ensure network capacity aligns with renewable deployment trajectories."
+    },
+    {
+      "title": "TURPE 7 \u2014 New Network Tariff Framework",
+      "year": "Aug 2025 (effective Aug 2026)",
+      "level": "both",
+      "description": "CRE's new TURPE 7 tariff framework introduces a reformed <strong>injection-withdrawal tariff structure</strong> replacing the previous TURPE 6 regime from August 2026. The new tariff better reflects the costs of bidirectional flows from distributed generation and aims to incentivize efficient network use through time-of-use and location-based pricing signals."
+    },
+    {
+      "title": "Loi APER \u2014 Acceleration of Renewable Energy Production",
+      "year": "March 2023",
+      "level": "both",
+      "description": "Shortened statutory connection periods, introduced <strong>acceleration zones</strong> where planning and connection processes are streamlined, and simplified environmental impact assessments for renewable projects. The law also enhanced CRE's powers to impose penalties for connection delays and mandated improved transparency of queue data."
+    },
+    {
+      "title": "S3REnR Revision Acceleration",
+      "year": "July 2024 (decree)",
+      "level": "both",
+      "description": "Decree accelerating the revision of <strong>S3REnR regional renewable integration schemes</strong>, enabling faster reallocation of grid capacity as existing allocations are exhausted. Reduces the revision cycle from 5\u20136 years to a more responsive process, allowing new capacity to be made available without waiting for full scheme renewal."
+    },
+    {
+      "title": "ORI \u2014 Offres de Raccordement Intelligentes (Intelligent Connections)",
+      "year": "Oct 2024",
+      "level": "distribution",
+      "description": "New connection offer type allowing generators to accept <strong>\u22645% curtailment</strong> in exchange for faster grid access with a guaranteed <strong>\u226570% injection rate</strong>. Avoids waiting for full network reinforcement. Modelled on similar flexible connection schemes in the UK and Ireland. Applicable primarily to distribution-connected renewable generators."
+    },
+    {
+      "title": "Connection Power Reform",
+      "year": "Aug 2025",
+      "level": "distribution",
+      "description": "Introduces <strong>automatic readjustment of contracted connection capacity</strong> based on actual measured usage. Aims to free up unused contracted capacity on the distribution network, reducing the gap between allocated and utilized capacity and making room for new connections."
+    },
+    {
+      "title": "Fast-Track 400 kV Data Center Sites",
+      "year": "May 2025 (CRE approval)",
+      "level": "transmission",
+      "description": "CRE approved RTE's proposal for <strong>5 designated fast-track 400 kV connection sites</strong> for data centers, including Escaudain (700 MW), Fouju (700 MW), and 3 others. Offers 3\u20134 year connection timelines with 30% cost reduction versus standard process. Responds to France's strategic priority for digital infrastructure sovereignty."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the S3REnR and how does it affect my connection costs?",
+      "a": "The S3REnR (Sch\u00e9ma R\u00e9gional de Raccordement au R\u00e9seau des \u00c9nergies Renouvelables) is a regional renewable integration plan that allocates grid capacity and determines the cost-sharing (quote-part) for generators connecting to the network. The quote-part is approximately \u20ac77\u201382K per MW installed. If the allocated capacity in your region is exhausted, you may need to wait for a scheme revision or fund additional reinforcement works."
+    },
+    {
+      "q": "How does the ORI (intelligent connection) differ from a standard connection?",
+      "a": "An ORI allows you to connect faster by accepting up to 5% annual curtailment of your generation output. In return, you are guaranteed at least 70% injection capacity and avoid waiting for full grid reinforcement. This is particularly useful in congested distribution zones where standard connections face long delays due to S3REnR capacity limits."
+    },
+    {
+      "q": "What is the difference between connecting via RTE and via Enedis?",
+      "a": "RTE handles transmission connections at 63\u2013400 kV for large projects (typically >12 MW or >50 MW depending on voltage level). Enedis handles distribution connections at HTA (20 kV) and BT (400/230 V). The RTE process involves a \u20ac50,400 PTF study fee and takes 3\u20135 years. Enedis connections range from 1\u20132 days (Linky remote activation for small sites) to 6+ months for HTA connections."
+    },
+    {
+      "q": "Can I connect in an ELD zone rather than Enedis?",
+      "a": "Yes, approximately 150 Entreprises Locales de Distribution (ELDs) cover 5% of France. If your project is in an ELD zone (e.g. Strasbourg \u00c9lectricit\u00e9, R\u00e9gie de Grenoble), you must apply directly to that distributor. Each ELD has its own connection process and portal, though the regulatory framework (CRE oversight, TURPE tariffs) is the same."
+    },
+    {
+      "q": "What changed with the Loi APER and PPE3 for grid connections?",
+      "a": "Loi APER (March 2023) shortened statutory connection periods, created acceleration zones with streamlined planning, and gave CRE stronger enforcement powers. PPE3 (February 2026) sets targets of 48 GW solar and 31 GW onshore wind by 2030, mandating coordinated RTE-Enedis planning to ensure network capacity matches deployment. Together, they represent France's most significant grid acceleration framework."
+    }
+  ],
+  "note": "France's centralized TSO/DSO structure (RTE + Enedis) creates a relatively streamlined two-tier process compared to multi-TSO markets. The \u20ac50,400 PTF fee and S3REnR quote-part (~\u20ac77\u201382K/MW) are well-defined costs. Key acceleration levers include the ORI intelligent connections (Oct 2024) for faster distribution access, the 5 fast-track 400 kV data center sites (CRE May 2025), and the S3REnR revision decree (July 2024). PPE3's targets of 48 GW solar and 31 GW onshore wind by 2030 will require sustained acceleration of both transmission and distribution connections. The 35M Linky smart meter rollout and Enedis Connect portal provide strong digital infrastructure for distribution-level processes."
+}

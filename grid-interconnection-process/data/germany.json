@@ -1,0 +1,1123 @@
+{
+  "id": "germany",
+  "name": "Germany",
+  "full": "Germany — Grid Interconnection Process",
+  "type": "Energiewende Pioneer",
+  "icon": "🇩🇪",
+  "accentColor": "#2D5F2D",
+  "accentBg": "#E8F5E8",
+  "badgeColor": "#E8F5E8",
+  "badgeText": "#2D5F2D",
+  "badge": "New Maturity Procedure",
+  "badge2": "~860 DSOs",
+  "tags": [
+    "europe"
+  ],
+  "sub": "Germany's grid interconnection landscape features 4 TSOs and ~860 DSOs, with a landmark shift from 'first come, first served' to a maturity-based 'first ready, first served' queue at the transmission level from April 2026.",
+  "cardTags": [
+    "TenneT",
+    "50Hertz",
+    "Amprion",
+    "TransnetBW",
+    "BNetzA",
+    "VDE-AR-N",
+    "EEG"
+  ],
+  "desc": "Germany operates Europe's largest electricity grid through four transmission system operators (TenneT, 50Hertz, Amprion, TransnetBW) and approximately 860 distribution system operators. A massive backlog of ~270 GW in transmission connection requests (717 applications) and 720+ GW of battery storage requests has driven a fundamental reform: the new Reifegradverfahren (Maturity Evaluation Procedure) launching April 2026 replaces first-come-first-served queuing with a readiness-based scoring system for 100 MW+ non-EEG facilities. At the distribution level, Solarpaket I has dramatically simplified connections below 30 kW with deemed approval mechanisms, while 569 GW of capacity applications are pending across DSO networks. Redispatch 2.0 costs reached €2.2B in just nine months of 2025, underscoring the urgency of grid modernisation.",
+  "transmission": {
+    "title": "Transmission Connection (Höchstspannung)",
+    "voltageLevel": "220kV / 380kV",
+    "overview": "Germany's extra-high-voltage transmission grid is operated by four TSOs: TenneT (~10,700 km), 50Hertz (~10,000 km), Amprion (~11,000 km), and TransnetBW (~3,200 km). From April 2026, the new Maturity Evaluation Procedure (Reifegradverfahren) replaces the traditional first-come-first-served approach with a 'first ready, first served' system for 100 MW+ non-EEG facilities including batteries, data centres, and electrolysers. The queue currently holds 717 applications totalling ~270 GW, plus 720+ GW of battery storage requests.",
+    "typicalTimeline": "3–7+ years",
+    "timelineDetail": "Varies significantly by TSO region, grid reinforcement needs, and project readiness. The new maturity procedure aims to accelerate ready projects.",
+    "costRange": "€50K application + €1,500/MW deposit",
+    "costDetail": "Traditional KraftNAV process: €1,000/MW deposit. New maturity procedure: €50,000 application fee + €1,500/MW binding reservation deposit. Grid reinforcement costs are socialised across all network users.",
+    "queueSize": "~270 GW (717 applications)",
+    "queueDetail": "717 transmission connection applications totalling ~270 GW, plus 720+ GW of battery storage requests. The maturity procedure is designed to prioritise shovel-ready projects and clear speculative applications.",
+    "keyBodies": [
+      {
+        "name": "BNetzA",
+        "fullName": "Bundesnetzagentur",
+        "role": "Federal network regulator overseeing TSOs, approving grid development plans (NEP), and enforcing connection timelines.",
+        "url": "https://www.bundesnetzagentur.de"
+      },
+      {
+        "name": "TenneT",
+        "fullName": "TenneT TSO GmbH",
+        "role": "Operates ~10,700 km of extra-high-voltage grid across northern and central Germany (also active in the Netherlands).",
+        "url": "https://www.tennet.eu"
+      },
+      {
+        "name": "50Hertz",
+        "fullName": "50Hertz Transmission GmbH",
+        "role": "Operates ~10,000 km of grid in eastern Germany, part of the Elia Group. Serves 18 million people.",
+        "url": "https://www.50hertz.com"
+      },
+      {
+        "name": "Amprion",
+        "fullName": "Amprion GmbH",
+        "role": "Operates ~11,000 km of grid across western Germany. Investment plan of €27.5B through 2028.",
+        "url": "https://www.amprion.net"
+      },
+      {
+        "name": "TransnetBW",
+        "fullName": "TransnetBW GmbH",
+        "role": "Operates ~3,200 km of grid in Baden-Württemberg. Smallest of the four German TSOs.",
+        "url": "https://www.transnetbw.de"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Application Window (Reifegradverfahren Phase 1)",
+        "detail": "Annual application window opens for 100 MW+ non-EEG facilities. Applicants submit a connection request (Netzanschlussbegehren) with a €50,000 non-refundable application fee. Optional completeness check available until 6 weeks before phase end. Under the traditional EEG process, applications are submitted directly to the relevant TSO on a rolling basis with priority connection rights under §8 EEG.",
+        "timeline": "3 months (new) / Rolling (EEG traditional)"
+      },
+      {
+        "name": "Cluster Study & Maturity Scoring (Phase 2)",
+        "detail": "The TSO conducts a cluster-based grid compatibility study (Netzverträglichkeitsprüfung) grouping applications by grid region. Each project is scored across four equally weighted categories: (A) land availability & permits, (B) technical plant & connection concept, (C) economic viability, (D) grid & system value. Between 1–3 points per subcriterion. If sufficient capacity exists, meeting minimum requirements alone secures a reservation. Under oversubscription, projects are ranked by accumulated maturity points. Rejected projects may roll over to the next cycle free of charge.",
+        "timeline": "5 months"
+      },
+      {
+        "name": "Binding Offer & Deposit (Phase 3)",
+        "detail": "Successful applicants receive a binding grid connection offer. Acceptance requires paying a project implementation security deposit of €1,500/MW within one month. The deposit is credited against subsequent construction cost subsidies (Baukostenzuschuss) and is forfeited only if the project fails for reasons within the applicant's control. If negotiation fails, the TSO issues a unilateral schedule; the applicant must accept within 14 days.",
+        "timeline": "2 months (+ 1 month acceptance)"
+      },
+      {
+        "name": "Grid Connection Commitment (Netzanschlusszusage)",
+        "detail": "The TSO issues a formal grid connection commitment specifying the connection point, voltage level, maximum capacity, and any required grid reinforcements. This is a binding technical and commercial offer. For EEG-renewable projects, the TSO must offer the economically best grid access point under §8 EEG, or provide compensation for a more distant connection.",
+        "timeline": "3–6 months"
+      },
+      {
+        "name": "Connection Agreement (Netzanschlussvertrag)",
+        "detail": "Developer and TSO negotiate and execute the connection agreement covering technical specifications (VDE-AR-N 4120 for HV), cost allocation, construction responsibilities, and commissioning timeline. Grid reinforcement costs are socialised through network tariffs. Under the Grid Package draft (January 2026), Baukostenzuschuss may extend to generation facilities.",
+        "timeline": "2–4 months"
+      },
+      {
+        "name": "Construction & Grid Reinforcement",
+        "detail": "Physical construction of the connection assets (substation, transformer, lines) and any required grid reinforcements. The TSO manages grid-side works while the developer builds customer-side assets to VDE-AR-N 4120 (HV) standards. Flexible Connection Agreements (available since January 2025) may allow connection at reduced firm capacity to avoid grid reinforcement delays. Redispatch 2.0 registration (§13 EnWG) must be completed for all systems ≥100 kW before commissioning.",
+        "timeline": "1–4 years"
+      },
+      {
+        "name": "Energisation & Commissioning",
+        "detail": "Final testing, protection system commissioning, and energisation of the connection. The facility is registered in the Marktstammdatenregister (MaStR) within 1 month of commissioning. Redispatch 2.0 obligations (§13 EnWG) apply from first energisation for all systems ≥100 kW, with TR/SR IDs assigned for data communication.",
+        "timeline": "1–3 months"
+      }
+    ],
+    "challenges": "The transmission queue backlog (~270 GW across 717 applications, plus 720+ GW battery requests) has overwhelmed TSO processing capacity. Redispatch 2.0 costs reached €2.2B in nine months of 2025, signalling severe congestion. The new maturity procedure aims to filter speculative applications, but its first cycle (April 2026) will be a critical test. The Grid Package draft (January 2026) introduces capacity-limited grid areas where new renewables must waive redispatch compensation (Redispatchvorbehalt) for up to 10 years. Grid reinforcement timelines of 5–10+ years for new lines remain a fundamental bottleneck, and north-south power transfer capacity is structurally insufficient for the Energiewende transition.",
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "gt_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "gt_project_type",
+          "type": "decision",
+          "label": "EEG renewable?",
+          "row": 1,
+          "col": 1,
+          "detail": "Is this an EEG-renewable project (wind, solar, biomass) with priority connection rights under §8 EEG, or a non-EEG facility (battery storage, data centre, electrolyser, large consumer) subject to the new Reifegradverfahren for ≥100 MW?",
+          "sources": [
+            {
+              "label": "Baker McKenzie: Maturity Procedure",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            },
+            {
+              "label": "CMS: German Electricity Law",
+              "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-electricity/germany"
+            }
+          ]
+        },
+        {
+          "id": "gt_eeg_application",
+          "type": "step",
+          "label": "EEG Connection Request (§8 EEG)",
+          "row": 2,
+          "col": 0,
+          "timeline": "Rolling (priority)",
+          "timelineBasis": "evidence",
+          "detail": "EEG-renewable projects have a statutory priority connection right (Einspeisevorrang) under §8 EEG. The TSO must immediately and as a priority connect installations generating electricity from renewable sources. Applications are submitted on a rolling basis — no application window or fee. The TSO must offer the economically best grid access point.",
+          "sources": [
+            {
+              "label": "EEG Priority Connection",
+              "url": "https://en.wikipedia.org/wiki/German_Renewable_Energy_Sources_Act"
+            },
+            {
+              "label": "Clean Energy Islands: DE Grid",
+              "url": "https://clean-energy-islands.ec.europa.eu/countries/germany/legal/res-permits-and-authorisation-processes/grid-connection-permit-process"
+            }
+          ]
+        },
+        {
+          "id": "gt_size_check",
+          "type": "decision",
+          "label": "≥100 MW?",
+          "row": 2,
+          "col": 2,
+          "detail": "The new Reifegradverfahren applies exclusively to plants/consumers with a required grid connection capacity of 100 MW and above. Smaller non-EEG projects follow the traditional §17 EnWG rolling application process.",
+          "sources": [
+            {
+              "label": "Taylor Wessing: Reifegradverfahren",
+              "url": "https://www.taylorwessing.com/en/insights-and-events/insights/2026/02/unb-stellen-netzanschlussvergabe-auf-reifegradverfahren-um"
+            },
+            {
+              "label": "Gleiss Lutz: Maturity Model",
+              "url": "https://www.gleisslutz.com/en/know-how/new-award-procedure-transmission-grid-connections-maturity-model-replace-first-come-first-served"
+            }
+          ]
+        },
+        {
+          "id": "gt_traditional_app",
+          "type": "step",
+          "label": "Traditional §17 EnWG Application",
+          "row": 3,
+          "col": 2,
+          "timeline": "Rolling",
+          "timelineBasis": "evidence",
+          "detail": "Non-EEG projects below 100 MW submit a Netzanschlussbegehren to the relevant TSO under §17(1) EnWG. Applications are processed on a rolling first-come-first-served basis. No application fee required.",
+          "sources": [
+            {
+              "label": "Baker McKenzie: Maturity Procedure",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            }
+          ]
+        },
+        {
+          "id": "gt_reife_phase1",
+          "type": "step",
+          "label": "Phase 1: Application Window (€50K fee)",
+          "row": 3,
+          "col": 1,
+          "timeline": "3 months",
+          "timelineBasis": "evidence",
+          "detail": "Annual application window for the Reifegradverfahren. First cycle launched April 1, 2026. Applicants submit a connection request with a non-refundable €50,000 fee. Optional completeness check available until 6 weeks before phase end. Applies to BESS, data centres, electrolysers, large heat pumps, EV charging infrastructure, and other non-EEG consumers ≥100 MW.",
+          "sources": [
+            {
+              "label": "Gleiss Lutz: Maturity Model",
+              "url": "https://www.gleisslutz.com/en/know-how/new-award-procedure-transmission-grid-connections-maturity-model-replace-first-come-first-served"
+            },
+            {
+              "label": "Baker McKenzie: Maturity Procedure",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            }
+          ]
+        },
+        {
+          "id": "gt_reife_phase2",
+          "type": "step",
+          "label": "Phase 2: Maturity Scoring (5 months)",
+          "row": 4,
+          "col": 1,
+          "timeline": "5 months",
+          "timelineBasis": "evidence",
+          "detail": "TSO conducts eligibility verification, maturity scoring, capacity allocation, and grid analysis. Four equally weighted criteria (1–3 pts per subcriterion): (A) Land availability & permits — site control, permitting strategy; (B) Technical design — documentation, site plans, routing; (C) Economic viability — min: company verification + inventory + investment volume; 1pt: supplier quotations + credit report; 3pts: signed purchase contracts + demonstrated financing; (D) Grid & system value — technology colocation, generation overbuild potential. If sufficient capacity: minimum requirements alone secure reservation. If oversubscribed: ranked by total maturity points.",
+          "sources": [
+            {
+              "label": "Gleiss Lutz: Scoring Details",
+              "url": "https://www.gleisslutz.com/en/know-how/new-award-procedure-transmission-grid-connections-maturity-model-replace-first-come-first-served"
+            },
+            {
+              "label": "Baker McKenzie: Criteria",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            }
+          ]
+        },
+        {
+          "id": "gt_capacity_check",
+          "type": "decision",
+          "label": "Capacity available?",
+          "row": 5,
+          "col": 1,
+          "detail": "Does sufficient grid capacity exist at the proposed connection point? If oversubscribed, projects are ranked by maturity points and lower-scoring projects are rejected. Rejected projects may roll over to the next annual cycle free of charge. If the grid compatibility study fails, an alternative connection point may be proposed.",
+          "sources": [
+            {
+              "label": "Baker McKenzie: Maturity Procedure",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            }
+          ]
+        },
+        {
+          "id": "gt_rollover",
+          "type": "step",
+          "label": "Roll over to next cycle (free)",
+          "row": 5,
+          "col": 2,
+          "timeline": "~12 months",
+          "timelineBasis": "evidence",
+          "detail": "Projects rejected due to capacity constraints (not eligibility failures) may transfer to the subsequent annual cycle free of charge. The €50,000 application fee from the original cycle is credited. Projects may also withdraw and receive refunds of prior payments.",
+          "sources": [
+            {
+              "label": "Baker McKenzie: Transition Rules",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            }
+          ]
+        },
+        {
+          "id": "gt_reife_phase3",
+          "type": "step",
+          "label": "Phase 3: Offer + €1,500/MW Deposit",
+          "row": 6,
+          "col": 1,
+          "timeline": "2 months (+ 1 month acceptance)",
+          "timelineBasis": "evidence",
+          "detail": "Successful applicants receive a binding grid connection offer. Acceptance requires paying a project implementation deposit of €1,500/MW within one month. Deposit is credited against subsequent Baukostenzuschuss and forfeited only if the project fails for reasons within the applicant's control. If negotiation fails, TSO issues unilateral schedule; applicant must accept within 14 days.",
+          "sources": [
+            {
+              "label": "Baker McKenzie: Deposit Terms",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-maturity-evaluation-procedure-for-transmission-grid-connections"
+            },
+            {
+              "label": "Gleiss Lutz: Offer Phase",
+              "url": "https://www.gleisslutz.com/en/know-how/new-award-procedure-transmission-grid-connections-maturity-model-replace-first-come-first-served"
+            }
+          ]
+        },
+        {
+          "id": "gt_compat_study",
+          "type": "step",
+          "label": "Grid Compatibility Study (8 weeks)",
+          "row": 4,
+          "col": 0,
+          "timeline": "8 weeks (statutory)",
+          "timelineBasis": "evidence",
+          "detail": "For EEG and traditional §17 routes: the TSO conducts a grid compatibility test (Netzverträglichkeitsprüfung), chooses the access point, and must inform the plant operator within 8 weeks (statutory deadline). Assesses whether the grid can accommodate the connection without reinforcement.",
+          "sources": [
+            {
+              "label": "Clean Energy Islands: DE Grid",
+              "url": "https://clean-energy-islands.ec.europa.eu/countries/germany/legal/res-permits-and-authorisation-processes/grid-connection-permit-process"
+            },
+            {
+              "label": "BNetzA: Grid Connection",
+              "url": "https://www.bundesnetzagentur.de/EN/Areas/Energy/NetworkAccess_Metering/GridConnection/start.html"
+            }
+          ]
+        },
+        {
+          "id": "gt_compat_result",
+          "type": "decision",
+          "label": "Study passes?",
+          "row": 5,
+          "col": 0,
+          "detail": "Does the grid compatibility study confirm the connection can proceed? If not, the TSO must propose an alternative connection point (which may increase costs) or the project enters a queue for grid reinforcement.",
+          "sources": [
+            {
+              "label": "Clean Energy Islands: DE Grid",
+              "url": "https://clean-energy-islands.ec.europa.eu/countries/germany/legal/res-permits-and-authorisation-processes/grid-connection-permit-process"
+            }
+          ]
+        },
+        {
+          "id": "gt_alt_point",
+          "type": "step",
+          "label": "Alternative connection point",
+          "row": 6,
+          "col": 0,
+          "timeline": "Additional 4–8 weeks",
+          "timelineBasis": "assumption",
+          "detail": "If the grid compatibility study fails at the proposed point, the TSO must propose the economically best alternative access point. The plant operator may face additional connection costs for the longer distance. If no feasible alternative exists, grid reinforcement must be planned.",
+          "sources": [
+            {
+              "label": "Clean Energy Islands: DE Grid",
+              "url": "https://clean-energy-islands.ec.europa.eu/countries/germany/legal/res-permits-and-authorisation-processes/grid-connection-permit-process"
+            }
+          ]
+        },
+        {
+          "id": "gt_commitment",
+          "type": "step",
+          "label": "Connection Commitment (Netzanschlusszusage)",
+          "row": 7,
+          "col": 1,
+          "timeline": "3–6 months",
+          "timelineBasis": "evidence",
+          "detail": "The TSO issues a formal grid connection commitment specifying the connection point, voltage level, maximum capacity, required reinforcements, and indicative timeline. For EEG-renewables, the plant operator bears connection costs while the TSO bears grid expansion costs.",
+          "sources": [
+            {
+              "label": "CMS: German Electricity Law",
+              "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-electricity/germany"
+            }
+          ]
+        },
+        {
+          "id": "gt_fca_check",
+          "type": "decision",
+          "label": "Flexible Connection?",
+          "row": 8,
+          "col": 1,
+          "detail": "Does the developer opt for a Flexible Connection Agreement (FCA, since January 2025)? FCAs allow overbuilding (Überbauung) and cable pooling, but the TSO can curtail output during congestion. Revenue impact: worst-case ~20% reduction and ~5pp IRR reduction. Legal basis: §8a EEG + §17(2b) EnWG.",
+          "sources": [
+            {
+              "label": "Gridcog: FCA in Germany",
+              "url": "https://www.gridcog.com/blog/how-flexible-connection-agreements-fca-transform-grid-access-for-german-battery-projects"
+            },
+            {
+              "label": "Chatham Partners: FCA Analysis",
+              "url": "https://chatham.partners/insights/flexible-netzanschlussvereinbarungen-booster-fuer-die-stromspeicherindustrie/"
+            },
+            {
+              "label": "Modo Energy: FCA Impact",
+              "url": "https://modoenergy.com/research/en/germany-november-2025-flexible-connection-agreements-fcas-regulatory-reform"
+            }
+          ]
+        },
+        {
+          "id": "gt_fca_path",
+          "type": "step",
+          "label": "FCA: Reduced capacity, faster access",
+          "row": 8,
+          "col": 2,
+          "timeline": "Accelerated (months saved)",
+          "timelineBasis": "evidence",
+          "detail": "Under a Flexible Connection Agreement, the developer accepts contractual limits on max import/export capacity during congestion. Enables earlier grid access and may reduce the Baukostenzuschuss. TSO can enforce static or dynamic limits with at least day-ahead notification. Modelling shows worst-case revenue reduction of ~20%.",
+          "sources": [
+            {
+              "label": "Gridcog: FCA in Germany",
+              "url": "https://www.gridcog.com/blog/how-flexible-connection-agreements-fca-transform-grid-access-for-german-battery-projects"
+            },
+            {
+              "label": "Modo Energy: FCA Revenue Impact",
+              "url": "https://modoenergy.com/research/de/germany-january-2026-flexible-connection-agreement-battergy-energy-storage-grid-access"
+            }
+          ]
+        },
+        {
+          "id": "gt_agreement",
+          "type": "step",
+          "label": "Connection Agreement (Netzanschlussvertrag)",
+          "row": 9,
+          "col": 1,
+          "timeline": "2–4 months",
+          "timelineBasis": "evidence",
+          "detail": "Developer and TSO execute the formal connection agreement covering technical specs (VDE-AR-N 4120 for HV), cost allocation (Baukostenzuschuss), construction responsibilities, and commissioning timeline. Under the Grid Package draft, Baukostenzuschuss may also apply to generation facilities.",
+          "sources": [
+            {
+              "label": "GOERG: Grid Package",
+              "url": "https://www.goerg.de/en/insights/publications/20-02-2026/bmwe-grid-package-overview-of-plans-to-change-grid-connection-procedures"
+            },
+            {
+              "label": "Baker McKenzie: Grid Package",
+              "url": "https://www.bakermckenzie.com/en/insight/publications/2026/03/germany-grid-package-draft"
+            }
+          ]
+        },
+        {
+          "id": "gt_construction",
+          "type": "step",
+          "label": "Construction & Grid Reinforcement",
+          "row": 10,
+          "col": 1,
+          "timeline": "1–4 years",
+          "timelineBasis": "evidence",
+          "detail": "Physical construction of connection assets (substation, transformer, lines) and required grid reinforcements. TSO manages grid-side works; developer builds customer-side assets to VDE-AR-N 4120 standards. Redispatch 2.0 registration (§13 EnWG) must be completed for systems ≥100 kW before commissioning — operators are assigned TR/SR IDs for data communication.",
+          "sources": [
+            {
+              "label": "Kyon Energy: Redispatch 2.0",
+              "url": "https://www.kyon-energy.de/en/glossar/redispatch-redispatch-2-0"
+            },
+            {
+              "label": "Stromnetz Berlin: Redispatch",
+              "url": "https://www.stromnetz.berlin/en/feed-in/redispatch/"
+            }
+          ]
+        },
+        {
+          "id": "gt_redispatch_note",
+          "type": "step",
+          "label": "Redispatch 2.0 Registration (§13 EnWG)",
+          "row": 10,
+          "col": 2,
+          "timeline": "Parallel to construction",
+          "timelineBasis": "evidence",
+          "detail": "All generation systems ≥100 kW must participate in Redispatch 2.0 (in force since Oct 2021). Operators register systems and receive TR/SR IDs. In capacity-limited grid areas (>3% curtailment), the Grid Package draft conditions new connections on waiving financial compensation for congestion curtailment (Redispatchvorbehalt) for up to 10 years.",
+          "sources": [
+            {
+              "label": "Kyon Energy: Redispatch 2.0",
+              "url": "https://www.kyon-energy.de/en/glossar/redispatch-redispatch-2-0"
+            },
+            {
+              "label": "GOERG: Grid Package Redispatch",
+              "url": "https://www.goerg.de/en/insights/publications/20-02-2026/bmwe-grid-package-overview-of-plans-to-change-grid-connection-procedures"
+            },
+            {
+              "label": "Clean Energy Wire: Grid Reform Q&A",
+              "url": "https://www.cleanenergywire.org/factsheets/qa-will-germanys-upcoming-electricity-grid-reform-slow-down-energy-transition"
+            }
+          ]
+        },
+        {
+          "id": "gt_commissioning",
+          "type": "step",
+          "label": "Energisation + MaStR Registration",
+          "row": 11,
+          "col": 1,
+          "timeline": "1–3 months",
+          "timelineBasis": "evidence",
+          "detail": "Final testing, protection system commissioning, and energisation. Facility must be registered in the Marktstammdatenregister (MaStR) within 1 month of commissioning — late registration delays EEG payments and may result in penalties. MaStR number is passed to the grid operator to start EEG payments (first payment within 6–8 weeks).",
+          "sources": [
+            {
+              "label": "BNetzA: MaStR",
+              "url": "https://www.bundesnetzagentur.de/EN/Areas/Energy/CoreEnergyMarketDataRegister/start.html"
+            },
+            {
+              "label": "SurgePV: DE Solar Regulations 2026",
+              "url": "https://www.surgepv.com/hub/solar-business/regulations"
+            }
+          ]
+        },
+        {
+          "id": "gt_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 12,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "gt_start",
+          "to": "gt_project_type"
+        },
+        {
+          "from": "gt_project_type",
+          "to": "gt_eeg_application",
+          "label": "EEG renewable",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_project_type",
+          "to": "gt_size_check",
+          "label": "Non-EEG"
+        },
+        {
+          "from": "gt_size_check",
+          "to": "gt_reife_phase1",
+          "label": "≥100 MW"
+        },
+        {
+          "from": "gt_size_check",
+          "to": "gt_traditional_app",
+          "label": "<100 MW",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_eeg_application",
+          "to": "gt_compat_study"
+        },
+        {
+          "from": "gt_traditional_app",
+          "to": "gt_compat_study"
+        },
+        {
+          "from": "gt_reife_phase1",
+          "to": "gt_reife_phase2"
+        },
+        {
+          "from": "gt_reife_phase2",
+          "to": "gt_capacity_check"
+        },
+        {
+          "from": "gt_capacity_check",
+          "to": "gt_rollover",
+          "label": "Oversubscribed",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_rollover",
+          "to": "gt_reife_phase1",
+          "label": "Next cycle",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_capacity_check",
+          "to": "gt_reife_phase3",
+          "label": "Allocated"
+        },
+        {
+          "from": "gt_reife_phase3",
+          "to": "gt_commitment"
+        },
+        {
+          "from": "gt_compat_study",
+          "to": "gt_compat_result"
+        },
+        {
+          "from": "gt_compat_result",
+          "to": "gt_commitment",
+          "label": "Pass"
+        },
+        {
+          "from": "gt_compat_result",
+          "to": "gt_alt_point",
+          "label": "Fail",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_alt_point",
+          "to": "gt_commitment"
+        },
+        {
+          "from": "gt_commitment",
+          "to": "gt_fca_check"
+        },
+        {
+          "from": "gt_fca_check",
+          "to": "gt_fca_path",
+          "label": "Yes (FCA)",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_fca_check",
+          "to": "gt_agreement",
+          "label": "No (firm)"
+        },
+        {
+          "from": "gt_fca_path",
+          "to": "gt_agreement"
+        },
+        {
+          "from": "gt_agreement",
+          "to": "gt_construction"
+        },
+        {
+          "from": "gt_construction",
+          "to": "gt_redispatch_note",
+          "label": "Parallel",
+          "type": "conditional"
+        },
+        {
+          "from": "gt_construction",
+          "to": "gt_commissioning"
+        },
+        {
+          "from": "gt_redispatch_note",
+          "to": "gt_commissioning"
+        },
+        {
+          "from": "gt_commissioning",
+          "to": "gt_end"
+        }
+      ]
+    }
+  },
+  "distribution": {
+    "title": "Distribution Connection (Mittel-/Niederspannung)",
+    "voltageLevel": "<110kV",
+    "overview": "Germany has approximately 860 distribution system operators managing 1.68 million km of lines, connecting 95% of all renewable energy. Major DSOs include Westnetz (E.ON), Bayernwerk, Netze BW (EnBW), and Stromnetz Berlin. Solarpaket I (May 2024) dramatically simplified connections below 30 kW with deemed approval, and balcony solar systems up to 800 W / 2 kWp now require registration only. Flexible Connection Agreements have been available since January 2025. A BDEW survey from November 2025 found 569 GW of capacity applications pending across distribution grids.",
+    "typicalTimeline": "4 weeks–6 months",
+    "timelineDetail": "Simplified process (<30 kW): 4-week response, 8-week compatibility check with deemed approval. Standard process: 8-week statutory grid compatibility period plus construction time.",
+    "costRange": "Shallow connection charges + grid contribution",
+    "costDetail": "Costs vary by DSO, voltage level, and distance to connection point. Shallow connection charges cover direct connection assets. Grid reinforcement is typically socialised through network tariffs. No system certificates required below 270 kW (Solarpaket I).",
+    "queueSize": "569 GW pending applications",
+    "queueDetail": "BDEW survey (November 2025) found 569 GW of capacity applications across distribution grids. Many DSOs face processing backlogs despite statutory 8-week timelines.",
+    "keyBodies": [
+      {
+        "name": "BNetzA",
+        "fullName": "Bundesnetzagentur",
+        "role": "Federal regulator setting distribution connection rules, VDE standards compliance, and MaStR registration requirements.",
+        "url": "https://www.bundesnetzagentur.de"
+      },
+      {
+        "name": "Westnetz",
+        "fullName": "Westnetz GmbH (E.ON)",
+        "role": "Germany's largest DSO. Operates Grid Operation 4.0 with smart metering across 100+ local grids.",
+        "url": "https://www.westnetz.de"
+      },
+      {
+        "name": "Bayernwerk",
+        "fullName": "Bayernwerk Netz GmbH",
+        "role": "Major DSO serving Bavaria, subsidiary of E.ON. Operates extensive rural distribution network.",
+        "url": "https://www.bayernwerk-netz.de"
+      },
+      {
+        "name": "Netze BW",
+        "fullName": "Netze BW GmbH (EnBW)",
+        "role": "DSO for Baden-Württemberg serving ~5.5 million customers. Runs NETZlabor real-world smart grid test environments.",
+        "url": "https://www.netze-bw.de"
+      },
+      {
+        "name": "VDE FNN",
+        "fullName": "VDE Forum Netztechnik/Netzbetrieb",
+        "role": "Sets technical connection standards: VDE-AR-N 4105 (LV), VDE-AR-N 4110 (MV), VDE-AR-N 4120 (HV).",
+        "url": "https://www.vde.com/fnn"
+      }
+    ],
+    "steps": [
+      {
+        "name": "Connection Request (Netzanschlussbegehren)",
+        "detail": "Developer submits a grid connection request to the local DSO specifying capacity, voltage level, and location. For systems <30 kW (Solarpaket I simplified process), a simple notification to the DSO suffices. Balcony solar <800 W / 2 kWp requires MaStR registration only (no DSO approval). Since Solarpaket I (May 2024), the BNetzA forwards MaStR data to the DSO automatically — separate DSO notification is no longer required for balcony solar.",
+        "timeline": "Immediate (balcony) / 1–2 weeks (standard)"
+      },
+      {
+        "name": "Grid Compatibility Check (Netzverträglichkeitsprüfung)",
+        "detail": "The DSO assesses whether the local grid can accommodate the requested connection without reinforcement. Statutory deadline is 8 weeks. For simplified <30 kW applications, the DSO has 4 weeks to respond; deemed approval applies if no response is received (Solarpaket I provision). For charging equipment >11 kW, the DSO must respond within 2 months under NAV §19.",
+        "timeline": "4–8 weeks (statutory)"
+      },
+      {
+        "name": "Feed-in Commitment (Einspeisezusage)",
+        "detail": "The DSO issues a feed-in commitment confirming the connection point, maximum capacity, and any curtailment conditions. Flexible Connection Agreements (since January 2025) may allow connection at reduced firm capacity to avoid grid reinforcement delays. No system certificates (Anlagenzertifikat) required below 270 kW under Solarpaket I.",
+        "timeline": "2–4 weeks"
+      },
+      {
+        "name": "Connection Agreement (Netzanschlussvertrag)",
+        "detail": "Formal contract between developer and DSO covering technical specifications (per VDE-AR-N 4105/4110/4120), cost allocation including Baukostenzuschuss for connections >30 kW, metering arrangements, and construction responsibilities.",
+        "timeline": "2–4 weeks"
+      },
+      {
+        "name": "Construction & Installation",
+        "detail": "Physical installation of connection assets, inverters, metering equipment, and protection systems. Must comply with applicable VDE-AR-N standards: 4105 (≤30 kW LV), 4110 (30 kW–1 MW MV), 4120 (>1 MW HV). Section 14a EnWG (January 2024) requires controllable consumption devices (heat pumps, EV chargers, battery storage >4.2 kW) to be registered and controllable by the DSO.",
+        "timeline": "2–12 weeks"
+      },
+      {
+        "name": "Commissioning & MaStR Registration",
+        "detail": "Final inspection, protection testing, and commissioning by the DSO. The installation must be registered in the Marktstammdatenregister (MaStR) within 1 month of commissioning. Since Solarpaket I, MaStR registration requires only ~5 data entries (down from ~20). Redispatch 2.0 participation obligations apply for systems ≥100 kW.",
+        "timeline": "1–2 weeks"
+      }
+    ],
+    "challenges": "With ~860 DSOs of vastly different sizes and capabilities, connection experiences vary enormously across Germany. Many smaller DSOs lack digital application portals, leading to paper-based processes and inconsistent timelines. The 569 GW backlog in distribution applications (BDEW November 2025) signals systemic overload. While Solarpaket I has streamlined small-scale connections, medium-voltage projects (1–10 MW) still face complex and lengthy procedures. The Grid Package draft (January 2026) mandates digital portals by 2028, but implementation will take years. The Netzpaket's proposed extension of Baukostenzuschuss to generation facilities (including small PV) could add ~€1,000 per average rooftop system.",
+    "processFlow": {
+      "nodes": [
+        {
+          "id": "gd_start",
+          "type": "start",
+          "label": "Start",
+          "row": 0,
+          "col": 1
+        },
+        {
+          "id": "gd_size_decision",
+          "type": "decision",
+          "label": "System size?",
+          "row": 1,
+          "col": 1,
+          "detail": "The connection process varies significantly by system size: <800 W (balcony solar, Solarpaket I registration-only), <30 kW (simplified notification with deemed approval), 30–270 kW (standard process, no Anlagenzertifikat needed), >270 kW (full process with system certificate). VDE-AR-N standards also vary: 4105 (≤30 kW LV), 4110 (30 kW–1 MW MV), 4120 (>1 MW HV).",
+          "sources": [
+            {
+              "label": "SCU Power: VDE 4105/4110/4120 Guide",
+              "url": "https://www.scupower.com/comprehensive-guide-to-german-grid-compliance-vde-4105-vde-4110-and-vde-4120-certification/"
+            },
+            {
+              "label": "MWE: Solarpaket I Overview",
+              "url": "https://www.mwe.com/insights/solar-package-1-overview-of-the-main-new-solar-regulation-in-germany/"
+            }
+          ]
+        },
+        {
+          "id": "gd_balcony",
+          "type": "step",
+          "label": "Balcony Solar (<800 W): MaStR only",
+          "row": 2,
+          "col": 0,
+          "timeline": "Immediate",
+          "timelineBasis": "evidence",
+          "detail": "Under Solarpaket I (May 2024), balcony solar systems up to 800 W inverter output / 2 kWp panel output require only registration in the Marktstammdatenregister (MaStR). No DSO approval needed. MaStR registration requires ~5 data entries (down from ~20). BNetzA forwards data to DSO automatically. Schuko plugs now permitted (VDE V 0126-95:2025-12 published Dec 2025). Must be registered within 1 month of commissioning.",
+          "sources": [
+            {
+              "label": "balkon.solar: How Plug-in PV Works",
+              "url": "https://balkon.solar/news/2025/03/17/how-does-plug-in-pv-in-germany-work/"
+            },
+            {
+              "label": "Clean Energy Wire: Simplified Registration",
+              "url": "https://www.cleanenergywire.org/news/germany-simplifies-registration-balcony-photovoltaic-units"
+            },
+            {
+              "label": "balkon.solar: New VDE Norm",
+              "url": "https://balkon.solar/news/2025/11/22/what-does-the-new-german-plug-in-pv-norm-say/"
+            }
+          ]
+        },
+        {
+          "id": "gd_simplified",
+          "type": "step",
+          "label": "Simplified Notification (<30 kW)",
+          "row": 2,
+          "col": 2,
+          "timeline": "Notification only",
+          "timelineBasis": "evidence",
+          "detail": "Systems below 30 kW follow the Solarpaket I simplified process. The developer notifies the DSO (since May 2024, BNetzA forwards MaStR data automatically). The DSO has 4 weeks to respond. VDE-AR-N 4105 (low voltage) compliance required. No Anlagenzertifikat (system certificate) needed.",
+          "sources": [
+            {
+              "label": "MWE: Solarpaket I",
+              "url": "https://www.mwe.com/insights/solar-package-1-overview-of-the-main-new-solar-regulation-in-germany/"
+            },
+            {
+              "label": "SCU Power: VDE 4105 Guide",
+              "url": "https://www.scupower.com/comprehensive-guide-to-german-grid-compliance-vde-4105-vde-4110-and-vde-4120-certification/"
+            }
+          ]
+        },
+        {
+          "id": "gd_standard_app",
+          "type": "step",
+          "label": "Standard Application (30–270 kW)",
+          "row": 2,
+          "col": 1,
+          "timeline": "1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Systems between 30–270 kW submit a full Netzanschlussbegehren to the local DSO. VDE-AR-N 4110 (medium voltage) compliance required for >30 kW. No Anlagenzertifikat required below 270 kW under Solarpaket I simplification.",
+          "sources": [
+            {
+              "label": "MWE: Solarpaket I",
+              "url": "https://www.mwe.com/insights/solar-package-1-overview-of-the-main-new-solar-regulation-in-germany/"
+            },
+            {
+              "label": "SCU Power: VDE 4110 Guide",
+              "url": "https://www.scupower.com/comprehensive-guide-to-german-grid-compliance-vde-4105-vde-4110-and-vde-4120-certification/"
+            }
+          ]
+        },
+        {
+          "id": "gd_large_app",
+          "type": "step",
+          "label": "Full Application (>270 kW)",
+          "row": 3,
+          "col": 2,
+          "timeline": "1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Systems above 270 kW require a full Netzanschlussbegehren plus an Anlagenzertifikat (system certificate) from an accredited test lab. VDE-AR-N 4110 (MV, 30 kW–1 MW) or VDE-AR-N 4120 (HV, >1 MW) compliance required. Includes fault ride-through testing, reactive power control, and communication interface certification.",
+          "sources": [
+            {
+              "label": "SCU Power: VDE 4110/4120 Guide",
+              "url": "https://www.scupower.com/comprehensive-guide-to-german-grid-compliance-vde-4105-vde-4110-and-vde-4120-certification/"
+            },
+            {
+              "label": "TÜV NORD: Grid Connection Testing",
+              "url": "https://www.tuev-nord.de/en/dienstleistungen/auditierung-und-zertifizierung/tne-ces/grid-connection/"
+            }
+          ]
+        },
+        {
+          "id": "gd_simplified_response",
+          "type": "decision",
+          "label": "DSO responds in 4 weeks?",
+          "row": 3,
+          "col": 0,
+          "detail": "Under Solarpaket I, the DSO has 4 weeks to respond to a simplified notification for systems <30 kW. If no response is received within 4 weeks, deemed approval applies automatically. The DSO then has an additional 8 weeks for a full grid compatibility check.",
+          "sources": [
+            {
+              "label": "MWE: Solarpaket I",
+              "url": "https://www.mwe.com/insights/solar-package-1-overview-of-the-main-new-solar-regulation-in-germany/"
+            }
+          ]
+        },
+        {
+          "id": "gd_deemed_approval",
+          "type": "step",
+          "label": "Deemed Approval (no response)",
+          "row": 4,
+          "col": 0,
+          "timeline": "Automatic after 4 weeks",
+          "timelineBasis": "evidence",
+          "detail": "If the DSO does not respond to a simplified <30 kW notification within 4 weeks, the connection is deemed approved under Solarpaket I. The developer may proceed with installation. An 8-week grid compatibility check period still applies, but the system can be installed pending the outcome.",
+          "sources": [
+            {
+              "label": "MWE: Solarpaket I",
+              "url": "https://www.mwe.com/insights/solar-package-1-overview-of-the-main-new-solar-regulation-in-germany/"
+            }
+          ]
+        },
+        {
+          "id": "gd_compat_check",
+          "type": "step",
+          "label": "Grid Compatibility Check (8 weeks)",
+          "row": 4,
+          "col": 1,
+          "timeline": "8 weeks (statutory)",
+          "timelineBasis": "evidence",
+          "detail": "The DSO conducts a grid compatibility test (Netzverträglichkeitsprüfung), chooses the access point, and must inform the plant operator within 8 weeks (statutory deadline). The study assesses local grid capacity, voltage levels, and transformer loading.",
+          "sources": [
+            {
+              "label": "Clean Energy Islands: DE Grid",
+              "url": "https://clean-energy-islands.ec.europa.eu/countries/germany/legal/res-permits-and-authorisation-processes/grid-connection-permit-process"
+            },
+            {
+              "label": "BNetzA: Grid Connection",
+              "url": "https://www.bundesnetzagentur.de/EN/Areas/Energy/NetworkAccess_Metering/GridConnection/start.html"
+            }
+          ]
+        },
+        {
+          "id": "gd_feedin",
+          "type": "step",
+          "label": "Feed-in Commitment (Einspeisezusage)",
+          "row": 5,
+          "col": 1,
+          "timeline": "2–4 weeks",
+          "timelineBasis": "evidence",
+          "detail": "The DSO issues a feed-in commitment confirming the connection point, maximum capacity, voltage level, and any curtailment conditions. For systems in congested areas, a Flexible Connection Agreement (FCA) may be offered as an alternative to waiting for grid reinforcement.",
+          "sources": [
+            {
+              "label": "CMS: German Electricity Law",
+              "url": "https://cms.law/en/int/expert-guides/cms-expert-guide-to-electricity/germany"
+            }
+          ]
+        },
+        {
+          "id": "gd_fca_dist_check",
+          "type": "decision",
+          "label": "Flexible Connection?",
+          "row": 6,
+          "col": 1,
+          "detail": "Does the developer opt for a Flexible Connection Agreement (FCA) at the distribution level? Available since January 2025 under §8a EEG + §17(2b) EnWG. The DSO can curtail output during congestion periods in exchange for faster connection. Particularly beneficial for battery storage and solar in grid-constrained areas.",
+          "sources": [
+            {
+              "label": "Chatham Partners: FCA",
+              "url": "https://chatham.partners/insights/flexible-netzanschlussvereinbarungen-booster-fuer-die-stromspeicherindustrie/"
+            },
+            {
+              "label": "em-power: Flexible Grid Contracts",
+              "url": "https://www.em-power.eu/trend-paper/flexible-grid-connection-contracts"
+            }
+          ]
+        },
+        {
+          "id": "gd_fca_dist",
+          "type": "step",
+          "label": "FCA: Reduced capacity, faster access",
+          "row": 6,
+          "col": 2,
+          "timeline": "Accelerated",
+          "timelineBasis": "evidence",
+          "detail": "FCA at distribution level: developer accepts reduced firm capacity in exchange for bypassing grid reinforcement wait. DSO can impose static or dynamic limits on import/export during congestion. Revenue impact for battery storage: up to ~20% reduction in worst case. Baukostenzuschuss may be reduced.",
+          "sources": [
+            {
+              "label": "Gridcog: FCA in Germany",
+              "url": "https://www.gridcog.com/blog/how-flexible-connection-agreements-fca-transform-grid-access-for-german-battery-projects"
+            },
+            {
+              "label": "Modo Energy: FCA",
+              "url": "https://modoenergy.com/research/en/germany-november-2025-flexible-connection-agreements-fcas-regulatory-reform"
+            }
+          ]
+        },
+        {
+          "id": "gd_agreement",
+          "type": "step",
+          "label": "Connection Agreement + VDE Cert",
+          "row": 7,
+          "col": 1,
+          "timeline": "2–4 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Formal contract covering technical specifications per applicable VDE-AR-N standard, cost allocation including Baukostenzuschuss (triggered >30 kW), metering arrangements, and construction responsibilities. Systems >270 kW must provide an Anlagenzertifikat from an accredited lab.",
+          "sources": [
+            {
+              "label": "SCU Power: VDE Certification",
+              "url": "https://www.scupower.com/comprehensive-guide-to-german-grid-compliance-vde-4105-vde-4110-and-vde-4120-certification/"
+            },
+            {
+              "label": "BNetzA: Grid Connection",
+              "url": "https://www.bundesnetzagentur.de/EN/Areas/Energy/NetworkAccess_Metering/GridConnection/start.html"
+            }
+          ]
+        },
+        {
+          "id": "gd_construction",
+          "type": "step",
+          "label": "Construction & Installation",
+          "row": 8,
+          "col": 1,
+          "timeline": "2–12 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Physical installation of connection assets, inverters, metering, and protection systems. §14a EnWG (Jan 2024): controllable devices (heat pumps, EV chargers, battery storage >4.2 kW) must be registered and DSO-controllable. In exchange, operators receive reduced network tariffs.",
+          "sources": [
+            {
+              "label": "gridX: Paragraph 14a",
+              "url": "https://www.gridx.ai/knowledge/paragraph-14a-enwg"
+            },
+            {
+              "label": "ESIG: DE §14a Model",
+              "url": "https://www.esig.energy/germanys-paragraph-14a-enwg/"
+            }
+          ]
+        },
+        {
+          "id": "gd_commissioning",
+          "type": "step",
+          "label": "Commissioning + MaStR Registration",
+          "row": 9,
+          "col": 1,
+          "timeline": "1–2 weeks",
+          "timelineBasis": "evidence",
+          "detail": "Final inspection, protection testing, and commissioning. Registration in MaStR within 1 month (only ~5 data entries since Solarpaket I). MaStR number passed to DSO to activate EEG payments (first payment within 6–8 weeks). Redispatch 2.0 applies for systems ≥100 kW.",
+          "sources": [
+            {
+              "label": "BNetzA: MaStR",
+              "url": "https://www.bundesnetzagentur.de/EN/Areas/Energy/CoreEnergyMarketDataRegister/start.html"
+            },
+            {
+              "label": "SurgePV: DE Regulations",
+              "url": "https://www.surgepv.com/hub/solar-business/regulations"
+            }
+          ]
+        },
+        {
+          "id": "gd_end",
+          "type": "end",
+          "label": "Connected",
+          "row": 10,
+          "col": 1
+        }
+      ],
+      "edges": [
+        {
+          "from": "gd_start",
+          "to": "gd_size_decision"
+        },
+        {
+          "from": "gd_size_decision",
+          "to": "gd_balcony",
+          "label": "<800 W",
+          "type": "conditional"
+        },
+        {
+          "from": "gd_size_decision",
+          "to": "gd_simplified",
+          "label": "<30 kW",
+          "type": "conditional"
+        },
+        {
+          "from": "gd_size_decision",
+          "to": "gd_standard_app",
+          "label": "30–270 kW"
+        },
+        {
+          "from": "gd_size_decision",
+          "to": "gd_large_app",
+          "label": ">270 kW",
+          "type": "conditional"
+        },
+        {
+          "from": "gd_balcony",
+          "to": "gd_commissioning",
+          "label": "Direct",
+          "type": "conditional"
+        },
+        {
+          "from": "gd_simplified",
+          "to": "gd_simplified_response"
+        },
+        {
+          "from": "gd_simplified_response",
+          "to": "gd_deemed_approval",
+          "label": "No response",
+          "type": "conditional"
+        },
+        {
+          "from": "gd_simplified_response",
+          "to": "gd_compat_check",
+          "label": "Responded"
+        },
+        {
+          "from": "gd_deemed_approval",
+          "to": "gd_construction"
+        },
+        {
+          "from": "gd_standard_app",
+          "to": "gd_compat_check"
+        },
+        {
+          "from": "gd_large_app",
+          "to": "gd_compat_check"
+        },
+        {
+          "from": "gd_compat_check",
+          "to": "gd_feedin"
+        },
+        {
+          "from": "gd_feedin",
+          "to": "gd_fca_dist_check"
+        },
+        {
+          "from": "gd_fca_dist_check",
+          "to": "gd_fca_dist",
+          "label": "Yes (FCA)",
+          "type": "conditional"
+        },
+        {
+          "from": "gd_fca_dist_check",
+          "to": "gd_agreement",
+          "label": "No (firm)"
+        },
+        {
+          "from": "gd_fca_dist",
+          "to": "gd_agreement"
+        },
+        {
+          "from": "gd_agreement",
+          "to": "gd_construction"
+        },
+        {
+          "from": "gd_construction",
+          "to": "gd_commissioning"
+        },
+        {
+          "from": "gd_commissioning",
+          "to": "gd_end"
+        }
+      ]
+    }
+  },
+  "reforms": [
+    {
+      "title": "Maturity Evaluation Procedure (Reifegradverfahren)",
+      "year": "April 2026",
+      "level": "transmission",
+      "description": "Replaces first-come-first-served with 'first ready, first served' for transmission connections. Annual application windows with maturity scoring based on land rights, technical design, financial standing, and grid benefits. Applies to 100 MW+ non-EEG facilities (batteries, data centres, electrolysers). €50,000 application fee and €1,500/MW deposit replace the traditional €1,000/MW KraftNAV deposit."
+    },
+    {
+      "title": "Solarpaket I",
+      "year": "May 2024",
+      "level": "distribution",
+      "description": "Dramatically simplified distribution connections for small-scale solar. Systems <30 kW: simplified notification process with 4-week DSO response and deemed approval if no response. Balcony solar <800 W / 2 kWp: registration-only (no DSO approval needed). No system certificates required below 270 kW. Reduced bureaucratic barriers have accelerated rooftop and balcony solar deployment across Germany."
+    },
+    {
+      "title": "Flexible Connection Agreements (FCAs)",
+      "year": "January 2025",
+      "level": "both",
+      "description": "New option for generators and large loads to accept a flexible (non-firm) connection, allowing faster grid access at reduced guaranteed capacity rather than waiting for full grid reinforcement. DSOs can curtail output during congestion periods. Particularly beneficial for battery storage and solar projects in constrained grid areas."
+    },
+    {
+      "title": "Section 14a EnWG — Controllable Consumption Devices",
+      "year": "January 2024",
+      "level": "distribution",
+      "description": "Requires new controllable consumption devices (heat pumps, EV chargers, battery storage, air conditioning >4.2 kW) to be registered with the DSO and accept temporary curtailment in exchange for reduced network tariffs. Enables DSOs to manage distribution-level congestion without expensive grid reinforcement."
+    },
+    {
+      "title": "Grid Package Draft (Netzpaket)",
+      "year": "January 2026",
+      "level": "both",
+      "description": "Comprehensive grid modernisation legislation including: mandatory digital connection portals for all DSOs by 2028, DSO reservation rules for grid capacity, standardised application processes, and streamlined approval procedures. Aims to address the fragmented landscape of ~860 DSOs with inconsistent processes."
+    },
+    {
+      "title": "Feed-in Tariff Phase-Out Begins",
+      "year": "January 2026",
+      "level": "distribution",
+      "description": "The oldest EEG feed-in tariff contracts (20-year term) begin expiring at scale. Affects first-generation wind and solar installations that must transition to market-based revenue models, repowering, or decommissioning. Creates both grid capacity churn and new interconnection requests for repowered facilities."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the new Reifegradverfahren (Maturity Evaluation Procedure)?",
+      "a": "Launching April 2026, the Reifegradverfahren replaces Germany's first-come-first-served transmission queue with a 'first ready, first served' approach. Projects are scored on land rights, technical design maturity, financial standing, and grid benefits during annual application windows. It applies to 100 MW+ non-EEG facilities such as batteries, data centres, and electrolysers. The goal is to clear the speculative backlog of ~270 GW across 717 applications and prioritise genuinely shovel-ready projects."
+    },
+    {
+      "q": "How does the simplified process for small solar (<30 kW) work under Solarpaket I?",
+      "a": "Under Solarpaket I (May 2024), systems below 30 kW follow a simplified notification process: the developer notifies the DSO, which has 4 weeks to respond and 8 weeks for a grid compatibility check. If the DSO does not respond within the statutory period, deemed approval applies automatically. Balcony solar systems below 800 W / 2 kWp require only MaStR registration with no DSO approval. No system certificates are required below 270 kW."
+    },
+    {
+      "q": "How many TSOs and DSOs operate in Germany?",
+      "a": "Germany has 4 transmission system operators (TenneT, 50Hertz, Amprion, TransnetBW) managing the 220kV/380kV extra-high-voltage grid, and approximately 860 distribution system operators managing 1.68 million km of distribution lines at voltages below 110kV. Around 95% of all renewable energy connects at the distribution level."
+    },
+    {
+      "q": "What are Flexible Connection Agreements (FCAs) and when did they start?",
+      "a": "Available since January 2025, Flexible Connection Agreements allow generators and large loads to accept a non-firm grid connection with reduced guaranteed capacity. This enables faster grid access without waiting for full grid reinforcement. The DSO can curtail output during congestion periods. FCAs are particularly beneficial for battery storage and solar projects in grid-constrained areas."
+    },
+    {
+      "q": "What are the VDE-AR-N technical standards for grid connection?",
+      "a": "VDE-AR-N standards define the technical requirements for connecting to different voltage levels: VDE-AR-N 4105 covers low voltage (LV) connections, VDE-AR-N 4110 covers medium voltage (MV) connections, and VDE-AR-N 4120 covers high voltage (HV) connections. These standards specify protection settings, power quality requirements, fault ride-through capabilities, and reactive power provision. Compliance is mandatory for all grid connections in Germany."
+    }
+  ],
+  "note": "Germany's grid interconnection landscape is undergoing its most significant reform in decades. The April 2026 maturity procedure at the transmission level signals a strategic shift from bureaucratic queuing to readiness-based prioritisation, directly addressing the unsustainable ~270 GW backlog. At distribution, Solarpaket I has removed barriers for small-scale solar, but mid-scale projects (1–10 MW) remain bottlenecked across 860 fragmented DSOs. The Grid Package draft (2026) mandating digital portals by 2028 will eventually standardise processes, but near-term interconnection in Germany requires navigating significant regional variation and engaging early with the specific TSO or DSO for your connection area."
+}
