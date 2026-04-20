@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GB Grid Docs — Regulatory & Technical Framework</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>GB Grid Docs</h1>
+  <div class="hero-sub">The regulatory, commercial &amp; technical rulebook for connecting to the Great Britain electricity system</div>
+  <div class="hero-stats">
+    <span class="hero-stat" id="statDocs">14 Documents</span>
+    <span class="hero-sep">&middot;</span>
+    <span class="hero-stat" id="statCategories">5 Categories</span>
+    <span class="hero-sep">&middot;</span>
+    <span class="hero-stat">Legislation → Reform</span>
+  </div>
+  <button class="hero-copy-btn" id="copyAllBtn">Copy All as Markdown</button>
+</div>
+
+<section class="map-section" id="mapSection">
+  <div class="map-inner">
+    <div class="map-title">How the documents fit together</div>
+    <div class="map-sub">Hover or tap any node. Lines show which documents authorise, pair with, or modify which.</div>
+    <div class="map-wrap">
+      <svg id="conceptMap" viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid meet" aria-label="Concept map of GB grid documents"></svg>
+    </div>
+    <div class="map-legend">
+      <span><i class="lg lg-leg"></i>Legislation</span>
+      <span><i class="lg lg-cod"></i>Industry Code</span>
+      <span><i class="lg lg-std"></i>Standard</span>
+      <span><i class="lg lg-ere"></i>Engineering Rec.</span>
+      <span><i class="lg lg-ref"></i>Reform</span>
+      <span class="map-edge-key">— pairs with &nbsp;&nbsp; → modifies</span>
+    </div>
+  </div>
+</section>
+
+<div class="filter-bar">
+  <div class="filter-container">
+    <span class="filter-label">Category:</span>
+    <div class="filter-buttons" id="categoryFilters"></div>
+    <span class="filter-label" style="margin-left:16px">Search:</span>
+    <input type="search" id="searchInput" placeholder="Search name, issuer, content…" class="search-input">
+  </div>
+</div>
+
+<div class="grid-container">
+  <div class="cards-grid" id="cardsGrid"></div>
+</div>
+
+<div class="detail-section" id="detailSection" style="display:none">
+  <div class="detail-box" id="detailBox"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

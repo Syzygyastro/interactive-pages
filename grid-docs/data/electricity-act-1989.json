@@ -1,0 +1,43 @@
+{
+  "id": "electricity-act-1989",
+  "shortName": "Electricity Act 1989",
+  "fullName": "Electricity Act 1989 (c. 29)",
+  "category": "legislation",
+  "icon": "⚖️",
+  "issuer": "UK Parliament",
+  "version": "1989 c. 29 (as amended, consolidated to 2025)",
+  "statusDate": "Updated continuously via amending Acts (most recently Energy Act 2023)",
+  "authority": "Primary legislation (Act of Parliament)",
+  "file": "01 - Legislation/electricity act.pdf",
+  "size": "19.2 MB",
+  "summary": "The foundational statute for Great Britain's electricity industry. Establishes the licensing regime (generation, transmission, distribution, supply, ISOP), creates GEMA/Ofgem's powers, defines the Secretary of State's functions, and sets out duties on licence holders. All of the industry codes below exist because licences issued under this Act require licensees to be party to them.",
+  "scope": [
+    "Licensing: generation, transmission, distribution, supply, interconnector, smart meter, ISOP licences",
+    "Creation and functions of GEMA (Ofgem's board)",
+    "Powers of the Secretary of State (consent for overhead lines, generating stations s.36, compulsory purchase)",
+    "Standard licence conditions and licence modification procedures",
+    "Connection obligations (s.16: duty to connect on request) and charges",
+    "Special administration regime for failing licensees"
+  ],
+  "keyParts": [
+    { "name": "Part I — Reorganisation of the Electricity Industry", "detail": "Licensing regime, the duties of the Secretary of State and GEMA, licensable activities, standard conditions, modifications." },
+    { "name": "Part II — Miscellaneous and Supplemental", "detail": "Consents for overhead lines, wayleaves, compulsory purchase, meters, electrical safety." },
+    { "name": "Schedule 3 — Compulsory acquisition of land by licence holders", "detail": "Used by TOs/DNOs to acquire rights for new substations and lines." },
+    { "name": "Schedule 4 — Other powers of licence holders", "detail": "Street works, wayleaves, felling and lopping trees." }
+  ],
+  "relationships": {
+    "enables": ["grid-code", "cusc", "stc", "dcusa", "d-code", "nets-sqss"],
+    "enabledBy": [],
+    "amendedBy": "Utilities Act 2000, Energy Act 2004, Energy Act 2013, Energy Act 2023 (created ISOP licence → NESO)",
+    "related": ["esqcr-2002"]
+  },
+  "whoCares": ["Licensees (TOs, DNOs, generators, suppliers)", "NESO (ISOP licensee)", "Ofgem/GEMA", "Developers (for s.36 consents)"],
+  "notableSections": [
+    { "s": "s.3A", "name": "Principal objective and general duties of the Secretary of State and GEMA", "detail": "Protect the interests of consumers, including carbon targets and security of supply." },
+    { "s": "s.6",  "name": "Licences authorising supply etc.", "detail": "The six licensable activities." },
+    { "s": "s.9",  "name": "General duties of licence holders", "detail": "Duties to develop and maintain an efficient, coordinated and economical system." },
+    { "s": "s.16", "name": "Duty to connect on request", "detail": "Core basis of distribution connections — the reason DNOs must accept applications." },
+    { "s": "s.36", "name": "Consent for construction etc. of generating stations", "detail": "Required for generating stations above specified thresholds (onshore >50 MW, offshore routed via DCO under Planning Act 2008)." }
+  ],
+  "url": "https://www.legislation.gov.uk/ukpga/1989/29"
+}

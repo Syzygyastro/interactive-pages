@@ -1,0 +1,35 @@
+{
+  "id": "cndm",
+  "shortName": "CNDM",
+  "fullName": "Connections Network Design Methodology",
+  "category": "reform",
+  "icon": "🚀",
+  "issuer": "NESO",
+  "version": "Published methodology",
+  "statusDate": "19 December 2025",
+  "authority": "NESO methodology made under CUSC post-TMO4+ (CMP434); Ofgem-approved",
+  "file": "05 - Connections Reform (TMO4+)/Connections Network Design Methodology (CNDM) - Dec 2025.pdf",
+  "size": "2.0 MB",
+  "summary": "Defines how NESO carries out the network studies that sit behind each connection offer. Replaces the old 'connect-and-manage' design approach with a strategic design process aligned to the Clean Power 2030 plan and the forthcoming Centralised Strategic Network Plan (CSNP). Specifies the models, assumptions, contingencies, and sensitivities to be used when determining what network is needed and when.",
+  "scope": [
+    "Input data: generation and demand scenarios, reinforcement pipeline, NESO Future Energy Scenarios",
+    "Contingency and security standards applied (links directly to NETS SQSS)",
+    "Boundary transfers and constraint modelling",
+    "Use of probabilistic assessment vs deterministic",
+    "How Gate 2 offers are derived from the network design",
+    "Timing for refresh of the design ahead of each application window"
+  ],
+  "keyParts": [
+    { "name": "Design inputs", "detail": "CP2030 backbone, SSEP/CSNP plans, registered generation, strategic reinforcements already committed." },
+    { "name": "Design process", "detail": "Step-by-step: base case → contingency screening → detailed studies → derivation of offer terms." },
+    { "name": "Customer impact", "detail": "Drives what reinforcement works and milestones appear in each Gate 2 offer." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["tmo4-plus"],
+    "modifies": ["cusc"],
+    "related": ["g2cm", "nets-sqss", "further-methodologies"]
+  },
+  "whoCares": ["NESO", "TOs", "Developers needing to understand why their offer looks the way it does"],
+  "url": "https://www.neso.energy/industry-information/connections-reform/connections-reform-design-documents-and-methodologies"
+}

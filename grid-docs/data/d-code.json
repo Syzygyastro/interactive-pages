@@ -1,0 +1,36 @@
+{
+  "id": "d-code",
+  "shortName": "D-Code",
+  "fullName": "Distribution Code",
+  "category": "codes",
+  "icon": "📘",
+  "issuer": "The Distribution Code Review Panel (DCRP); owned collectively by the DNOs",
+  "version": "Issue 58",
+  "statusDate": "10 March 2025 (rolling issues; check DCode website for latest)",
+  "authority": "Industry code; compliance is a condition of the distribution licence",
+  "file": "02 - Industry Codes/dcode-v58.pdf",
+  "size": "3.5 MB",
+  "summary": "The technical rulebook for the GB distribution networks — the distribution equivalent of the Grid Code. Defines technical requirements for DNOs and all parties connected to a distribution network, including embedded generators, IDNOs, and large demand customers. Where G98/G99 specify engineering details, the D-Code sets the overarching framework.",
+  "scope": [
+    "DPC — Distribution Planning and Connection Code (planning standards, design, N-1 rules)",
+    "DOC — Distribution Operating Code (switching, outages, control arrangements)",
+    "DDRC — Distribution Data Registration Code",
+    "Embedded generator technical requirements",
+    "Connection technical standards (voltage, fault level, earthing)",
+    "Interface with transmission (T-D boundary)"
+  ],
+  "keyParts": [
+    { "name": "DPC — Distribution Planning & Connection Code", "detail": "Security of supply standards at distribution (P2/7 replacement), connection design, fault level management." },
+    { "name": "DOC — Distribution Operating Code", "detail": "Switching procedures, outage planning, fault restoration, ANM arrangements." },
+    { "name": "DPC5 — Embedded generation", "detail": "Technical requirements for generators embedded in the distribution network — works with G98/G99." },
+    { "name": "DDRC", "detail": "Data registration and exchange; DNO-held data for network planning." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "pairedWith": "dcusa",
+    "related": ["grid-code", "g99", "esqcr-2002"]
+  },
+  "whoCares": ["DNOs", "IDNOs", "Embedded generators (via G98/G99)", "EHV-connected demand", "DSO functions within DNOs"],
+  "url": "https://www.dcode.org.uk"
+}

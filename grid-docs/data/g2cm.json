@@ -1,0 +1,35 @@
+{
+  "id": "g2cm",
+  "shortName": "G2CM",
+  "fullName": "Gate 2 Criteria Methodology",
+  "category": "reform",
+  "icon": "🚀",
+  "issuer": "NESO",
+  "version": "Published methodology",
+  "statusDate": "19 December 2025",
+  "authority": "NESO methodology made under CUSC post-TMO4+ (CMP434/CMP435); Ofgem-approved",
+  "file": "05 - Connections Reform (TMO4+)/Gate 2 Criteria Methodology (G2CM) - Dec 2025.pdf",
+  "size": "711 KB",
+  "summary": "The definitive document for exactly what a project must demonstrate to progress from Gate 1 (indicative) to Gate 2 (firm offer). Sets out the tests applied under both the Readiness limb and the Strategic Alignment limb, including the Energy Density Table, acceptable evidence types, and the governance around reapplications.",
+  "scope": [
+    "Readiness — Land Route (100% acreage secured per the Energy Density Table)",
+    "Readiness — Planning Route (validated DCO application or equivalent consent submission)",
+    "Strategic Alignment — capacity and technology consistent with the relevant strategic plan",
+    "Evidence standards (documents, timing, third-party verification)",
+    "Treatment of storage, DSR, interconnectors, demand",
+    "Reapplication and re-queueing rules"
+  ],
+  "keyParts": [
+    { "name": "Energy Density Table", "detail": "Technology-specific MW-per-hectare reference values used to size the land required to qualify on the Land Route." },
+    { "name": "Gate 2 assessment window", "detail": "Biannual: projects submit evidence in a defined window, are assessed as a cohort, and receive offers together." },
+    { "name": "Strategic Alignment mapping", "detail": "How NESO maps applications to the CP2030 technology/location envelope and the future SSEP/CSNP." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["tmo4-plus"],
+    "modifies": ["cusc"],
+    "related": ["cndm", "further-methodologies"]
+  },
+  "whoCares": ["All transmission-connection applicants", "NESO", "Ofgem", "Investors (diligence)"],
+  "url": "https://www.neso.energy/industry-information/connections-reform/connections-reform-design-documents-and-methodologies"
+}

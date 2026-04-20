@@ -1,0 +1,33 @@
+{
+  "id": "further-methodologies",
+  "shortName": "Further Methodologies Update",
+  "fullName": "Further Connections Methodologies Update",
+  "category": "reform",
+  "icon": "🚀",
+  "issuer": "NESO",
+  "version": "December 2025 update",
+  "statusDate": "December 2025",
+  "authority": "NESO industry update on additional methodologies being developed post-TMO4+",
+  "file": "05 - Connections Reform (TMO4+)/Further Connections Methodologies Update - Dec 2025.pdf",
+  "size": "150 KB",
+  "summary": "NESO's update on the further methodologies that sit alongside G2CM and CNDM to complete the TMO4+ reform package. Covers the Project Designation Methodology (how individual projects are identified as strategically aligned), arrangements for technologies not covered cleanly by G2CM (long-duration storage, hybrids, interconnectors), and the roadmap for future iterations of the methodology set.",
+  "scope": [
+    "Project Designation Methodology — how projects are mapped onto strategic plans",
+    "Treatment of mixed-technology / hybrid sites",
+    "Interconnector treatment",
+    "Demand-side designation (feeds into Demand Connections reform)",
+    "Governance: how methodologies are reviewed and updated"
+  ],
+  "keyParts": [
+    { "name": "Designation process", "detail": "The flow from strategic plan to named project cohorts eligible for Gate 2." },
+    { "name": "Hybrid technology rules", "detail": "Solar+BESS, wind+BESS — how the MW and land thresholds combine." },
+    { "name": "Roadmap", "detail": "Planned iterations through 2026 and beyond as CP2030, SSEP and CSNP mature." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["tmo4-plus"],
+    "related": ["g2cm", "cndm", "demand-connections-cfi"]
+  },
+  "whoCares": ["Hybrid project developers", "Interconnector developers", "Demand-side applicants", "NESO governance stakeholders"],
+  "url": "https://www.neso.energy/industry-information/connections-reform/connections-reform-design-documents-and-methodologies"
+}

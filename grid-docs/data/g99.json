@@ -1,0 +1,37 @@
+{
+  "id": "g99",
+  "shortName": "EREC G99",
+  "fullName": "Engineering Recommendation G99: Requirements for the connection of generation equipment in parallel with public distribution networks",
+  "category": "erec",
+  "icon": "🔧",
+  "issuer": "Energy Networks Association (ENA)",
+  "version": "Guidance Document (Issue 1 Amdt 9 lineage; check ENA for current issue)",
+  "statusDate": "Guidance published January 2023; G99 itself amended subsequently — always refer to latest ENA published issue",
+  "authority": "Engineering Recommendation; referenced by the Distribution Code and gives effect to ENTSO-E Network Code RfG in GB",
+  "file": "04 - Engineering Recommendations/G99 Guidance Document Jan 23.pdf",
+  "size": "978 KB",
+  "summary": "The technical rulebook for connecting generation greater than 3.68 kW per phase to the GB distribution network. Covers the full range from rooftop solar through to utility-scale wind and battery storage connected at HV or EHV. Defines protection settings, fault ride-through, witness testing, and DNO application procedures. G98 is the sister document covering installations ≤3.68 kW per phase (Type A 'Fit and Inform').",
+  "scope": [
+    "Type A (800 W – 1 MW): simple generators",
+    "Type B (1 MW – 10 MW): medium generators",
+    "Type C (10 MW – 50 MW): large generators",
+    "Type D (≥50 MW or connected at ≥110 kV): transmission-like requirements",
+    "LoM (Loss of Mains) protection — RoCoF and Vector Shift settings",
+    "Witness testing and commissioning"
+  ],
+  "keyParts": [
+    { "name": "Form A1 — Application (Pre-connection)", "detail": "DNO pre-approval application; submitted before connection." },
+    { "name": "Form A2 — Commissioning Confirmation", "detail": "Confirmation that protection settings meet requirements." },
+    { "name": "Form A3 — Witness Test", "detail": "DNO-witnessed commissioning of the protection system." },
+    { "name": "Type A settings", "detail": "Over/under voltage, over/under frequency, RoCoF, vector shift." },
+    { "name": "Fault ride-through (Type B+)", "detail": "Voltage profile curve during and after grid faults." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989", "esqcr-2002"],
+    "pairedWith": "d-code",
+    "related": ["grid-code", "dcusa"]
+  },
+  "whoCares": ["DNOs", "Distributed generators (solar, wind, CHP, BESS)", "MCS-accredited installers", "Aggregators"],
+  "url": "https://www.energynetworks.org/industry-hub/resource-library/?filter=publications&search=G99"
+}

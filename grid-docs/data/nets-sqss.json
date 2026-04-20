@@ -1,0 +1,36 @@
+{
+  "id": "nets-sqss",
+  "shortName": "NETS SQSS",
+  "fullName": "National Electricity Transmission System Security and Quality of Supply Standard",
+  "category": "standards",
+  "icon": "📐",
+  "issuer": "NESO (on behalf of the SQSS Review Group)",
+  "version": "v2.11",
+  "statusDate": "13 March 2026",
+  "authority": "Referenced by the Grid Code and TO licences; the design standard for the GB transmission system",
+  "file": "03 - Standards/NETS Security and Quality of Supply Standards v2.11.pdf",
+  "size": "1.3 MB",
+  "summary": "The planning and design standard for the GB transmission network. Specifies the security of supply criteria (how much redundancy the network must have), voltage and frequency performance, fault level limits, and design criteria for transmission reinforcements. It is what NESO and TOs use when deciding if the network can accommodate a new connection and, if not, what reinforcement is needed.",
+  "scope": [
+    "Chapter 2 — Planning criteria for generation connections",
+    "Chapter 3 — Planning criteria for demand connections",
+    "Chapter 4 — Planning criteria for transmission-transmission interfaces",
+    "Chapter 5 — Operational criteria (steady-state, voltage, frequency, reserve)",
+    "Chapter 6 — Quality of supply (power quality)",
+    "Chapter 7 — Black start capability"
+  ],
+  "keyParts": [
+    { "name": "Generation secured capacity", "detail": "The 'year-round' and 'peak' security criteria that determine how much generation the network must be designed to export or import." },
+    { "name": "N-1 / N-1-1 criteria", "detail": "Core transmission design rule: the system must withstand specified contingencies without loss of supply." },
+    { "name": "Reactive and voltage criteria", "detail": "Design voltage windows; MVAr planning for system stability." },
+    { "name": "Fault level limits", "detail": "Design fault levels at each substation; critical for switchgear ratings." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "related": ["grid-code", "cusc", "stc", "cndm"],
+    "usedBy": ["cndm"]
+  },
+  "whoCares": ["NESO (planning)", "TOs (design)", "Large transmission-connected customers (to understand likely reinforcement)"],
+  "url": "https://www.neso.energy/industry-information/codes/nets-sqss"
+}

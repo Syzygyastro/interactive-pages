@@ -1,0 +1,37 @@
+{
+  "id": "tmo4-plus",
+  "shortName": "TMO4+ Decision",
+  "fullName": "TMO4+ Summary Decision Document — Connections Reform",
+  "category": "reform",
+  "icon": "🚀",
+  "issuer": "Ofgem",
+  "version": "Final decision document",
+  "statusDate": "15 April 2025",
+  "authority": "Ofgem decision approving CUSC modifications CMP434 and CMP435 (plus Grid Code GC0166)",
+  "file": "05 - Connections Reform (TMO4+)/TMO4+ Summary Decision Document - April 2025.pdf",
+  "size": "759 KB",
+  "summary": "Ofgem's formal decision approving the most significant overhaul of GB transmission connections in decades. Moves the system from first-come-first-served to 'first ready, first needed, first connected'. Replaces a 739 GW queue of predominantly speculative projects with a gate-based framework in which only projects that meet Readiness and Strategic Alignment criteria proceed to firm offers.",
+  "scope": [
+    "Approval of CMP434 / CMP435 (CUSC) implementing the reformed Application Rules",
+    "Two-gate system: Gate 1 (indicative offers) and Gate 2 (firm offers with fixed connection dates)",
+    "Biannual application windows replacing the previous open-door",
+    "Strategic Alignment with Clean Power 2030 / SSEP / CSNP",
+    "New Progression Commitment Fee (£2,500 → £10,000 per MW)",
+    "Transitional arrangements for existing queue holders"
+  ],
+  "keyParts": [
+    { "name": "Ready Criteria", "detail": "Land Route (acreage secured to Energy Density Table) or Planning Route (validated DCO / TCPA submission)." },
+    { "name": "Needed Criteria (Strategic Alignment)", "detail": "Capacity and technology aligned to a Strategic Planning document (SSEP, CSNP, or Clean Power Plan 2030)." },
+    { "name": "Gate 2 offer", "detail": "Firm connection date, location, costs — the 'real' offer." },
+    { "name": "Gate 1 offer", "detail": "Indicative; no securities; project can reapply at next biannual window." },
+    { "name": "Transitional queue re-sort", "detail": "Existing ~739 GW queue re-assessed against Gate 2 criteria; ~450 GW removed; queue now ~283 GW gen+storage + 99 GW demand." }
+  ],
+  "relationships": {
+    "enables": ["cndm", "g2cm", "further-methodologies"],
+    "enabledBy": [],
+    "modifies": ["cusc", "grid-code"],
+    "related": ["demand-connections-cfi"]
+  },
+  "whoCares": ["Ofgem", "NESO", "All transmission-connection applicants (existing and new)", "DNOs at the T-D boundary"],
+  "url": "https://www.ofgem.gov.uk/publications/decision-our-minded-position-connections-reform-cmp434-cmp435-and-gc0166"
+}

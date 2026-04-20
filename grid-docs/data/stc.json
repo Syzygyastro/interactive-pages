@@ -1,0 +1,36 @@
+{
+  "id": "stc",
+  "shortName": "STC",
+  "fullName": "System Operator — Transmission Owner Code",
+  "category": "codes",
+  "icon": "📘",
+  "issuer": "NESO and the three GB TOs (NGET, SPT, SHET)",
+  "version": "v26",
+  "statusDate": "01 April 2026",
+  "authority": "Multiparty agreement; compliance is a licence condition for NESO and the TOs",
+  "file": "02 - Industry Codes/Complete STC - 01 April 2026 (2).pdf",
+  "size": "3.9 MB",
+  "summary": "Defines the operational, commercial, and procedural interface between NESO (as system operator) and the three transmission owners (NGET, SPT, SHET). Covers how NESO instructs TOs to build/modify/outage the network, how outages are planned, how real-time switching occurs, and how costs are settled between SO and TO.",
+  "scope": [
+    "Section A — Outage planning and real-time operations at the SO/TO interface",
+    "Section C — Commercial arrangements and charges between SO and TOs",
+    "Section D — Safety from the System, safety rules at the SO/TO boundary",
+    "Section F — Construction, energisation, commissioning processes",
+    "Section K — SO-TO Code modifications governance",
+    "Section L — Network planning and design coordination"
+  ],
+  "keyParts": [
+    { "name": "Outage Planning Procedure", "detail": "Year-ahead and week-ahead outage plans, NESO's 'Transmission Access' decisions." },
+    { "name": "Construction Agreement interface", "detail": "How TOs deliver what NESO commits to customers under CUSC." },
+    { "name": "Bilateral Connection process", "detail": "Roles of SO vs TO when a customer connects: SO does offer and queue, TO designs and builds." },
+    { "name": "Data exchange", "detail": "Network model, ratings, protection settings, real-time telemetry." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "pairedWith": "cusc",
+    "related": ["grid-code", "nets-sqss"]
+  },
+  "whoCares": ["NESO", "TOs only (does not bind generators directly)"],
+  "url": "https://www.neso.energy/industry-information/codes/stc"
+}

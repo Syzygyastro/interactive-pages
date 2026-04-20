@@ -1,0 +1,42 @@
+{
+  "id": "esqcr-2002",
+  "shortName": "ESQCR 2002",
+  "fullName": "Electricity Safety, Quality and Continuity Regulations 2002",
+  "category": "legislation",
+  "icon": "⚖️",
+  "issuer": "UK Government (Statutory Instrument)",
+  "version": "SI 2002 No. 2665 (as amended 2006, 2009)",
+  "statusDate": "In force; amended most recently by SI 2009/639",
+  "authority": "Secondary legislation made under the Electricity Act 1989",
+  "file": "01 - Legislation/ESQCR.pdf",
+  "size": "665 KB",
+  "summary": "Statutory safety rules for generators, network operators, and meter operators. Sets mandatory requirements for the protection of persons and property from electrical hazards, the quality of supply (voltage/frequency), and continuity of supply. Enforced by the Health and Safety Executive (HSE) via the Department for Business and Trade.",
+  "scope": [
+    "Duties on generators, TOs, DNOs, IDNOs, and meter operators",
+    "Protection of the public from electrical hazards",
+    "Earthing and bonding requirements",
+    "Statutory supply voltage tolerances (230 V ±10%, 400 V 3-phase)",
+    "Duty to investigate and report interruptions, overvoltage events, and fatalities",
+    "Minimum clearances for overhead lines, cables, and substations"
+  ],
+  "keyParts": [
+    { "name": "Part II — General Provisions", "detail": "Safety duties of generators and distributors, protection equipment, earthing." },
+    { "name": "Part III — Generation", "detail": "Requirements specific to generators including embedded generation." },
+    { "name": "Part IV — Distribution and Transmission", "detail": "Overhead line clearances, underground cables, substations, voltage and frequency tolerances." },
+    { "name": "Part V — Supply to Consumers' Installations", "detail": "Connection of consumer installations; the interface between the distributor and the consumer." },
+    { "name": "Part VI — Supplementary", "detail": "Offences, defences, and reporting obligations." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "related": ["d-code", "g99", "nets-sqss"]
+  },
+  "whoCares": ["DNOs/TOs", "Generators (including G98/G99 installers)", "HSE", "Consumer installation designers"],
+  "notableSections": [
+    { "s": "Reg 24", "name": "Generators", "detail": "Generator's installation must not cause danger, interference with supply quality, or damage to equipment of others." },
+    { "s": "Reg 26", "name": "Generation set to be connected in parallel", "detail": "Fundamental basis for G98/G99 protection settings." },
+    { "s": "Reg 27", "name": "Standards of performance — voltage", "detail": "230 V phase-neutral, ±10% / +10% -6% transitional." },
+    { "s": "Reg 30", "name": "Notification of fatal and non-fatal accidents", "detail": "Mandatory reporting to the Secretary of State." }
+  ],
+  "url": "https://www.legislation.gov.uk/uksi/2002/2665"
+}

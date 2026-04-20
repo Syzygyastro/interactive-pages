@@ -1,0 +1,38 @@
+{
+  "id": "grid-code",
+  "shortName": "Grid Code",
+  "fullName": "The Grid Code",
+  "category": "codes",
+  "icon": "📘",
+  "issuer": "NESO (National Energy System Operator)",
+  "version": "Issue 6, Revision 37",
+  "statusDate": "13 April 2026",
+  "authority": "Industry code; compliance is a condition of the generation, transmission, interconnector and distribution licences",
+  "file": "02 - Industry Codes/00_The_Full_Grid_Code.pdf",
+  "size": "13.9 MB",
+  "summary": "The technical rulebook for the GB transmission system and all parties connected to or operating with it. Governs the day-to-day planning, operation, and connection of the national electricity transmission system. All TOs, large generators (≥100 MW in E&W / lower thresholds elsewhere), interconnector operators, large demand customers, and DSOs must comply.",
+  "scope": [
+    "Connection Conditions (CC) — technical requirements to connect to the transmission system",
+    "Planning Code (PC) — long-term planning data exchange",
+    "Operating Code (OC) — real-time operations, testing, outage planning, BM instructions",
+    "Balancing Code (BC) — balancing services, frequency control, reserve",
+    "Data Registration Code (DRC) — what data must be submitted and when",
+    "European Connection Conditions (ECC) — aligned with EU Network Codes for Grid Connection (RfG, DCC, HVDC)"
+  ],
+  "keyParts": [
+    { "name": "CC — Connection Conditions", "detail": "Fault ride-through, reactive capability, frequency range, voltage control, power quality, communications." },
+    { "name": "PC — Planning Code", "detail": "Week 24 (W24) data submissions; long-term outage and operational planning data." },
+    { "name": "OC1–OC11 — Operating Code", "detail": "Outage planning, demand forecasting, black start, system test procedures, monitoring & control." },
+    { "name": "BC1–BC3 — Balancing Code", "detail": "Gate closure, Balancing Mechanism, imbalance data, final physical notifications." },
+    { "name": "CUSC / Bilateral Agreement interface", "detail": "Works alongside CUSC: Grid Code = technical; CUSC = commercial." },
+    { "name": "Modification process", "detail": "Grid Code Review Panel — changes proposed via GC modifications, decided by Ofgem." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "pairedWith": "cusc",
+    "related": ["nets-sqss", "stc", "g99", "tmo4-plus"]
+  },
+  "whoCares": ["NESO", "TOs (NGET, SPT, SHET)", "All transmission-connected generators", "Interconnector operators", "DNOs at the T-D interface", "Large transmission-connected demand"],
+  "url": "https://www.neso.energy/industry-information/codes/grid-code"
+}

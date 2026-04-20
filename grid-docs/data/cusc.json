@@ -1,0 +1,39 @@
+{
+  "id": "cusc",
+  "shortName": "CUSC",
+  "fullName": "Connection and Use of System Code",
+  "category": "codes",
+  "icon": "📘",
+  "issuer": "NESO",
+  "version": "v1.19",
+  "statusDate": "01 April 2026",
+  "authority": "Multiparty contract; compliance is a licence condition for NESO, TOs, and users of the transmission system",
+  "file": "02 - Industry Codes/CUSC - 01 April 2026.pdf",
+  "size": "15.7 MB",
+  "summary": "The commercial and contractual framework for connecting to, and using, the GB national electricity transmission system. CUSC defines how connection offers are made, what gets charged (TNUoS, BSUoS), how Bilateral Connection Agreements work, and — crucially — how the TMO4+ connections reform is implemented through modifications CMP434/CMP435.",
+  "scope": [
+    "Section 2 — Connection process and the CUSC Application Rules",
+    "Section 3 — Use of System: TNUoS and BSUoS charging methodologies",
+    "Section 4 — Construction Agreement, Bilateral Connection Agreement, Bilateral Embedded Generation Agreement",
+    "Section 6 — Balancing Services agreements and MSA (Master Services Agreement)",
+    "Section 8 — Modification process, CUSC Panel governance",
+    "Section 15 — Securities and credit arrangements"
+  ],
+  "keyParts": [
+    { "name": "Section 2 — Connection", "detail": "Application windows, Gate 1 / Gate 2 offers, securities, acceptance windows (90 days), modification of existing offers." },
+    { "name": "Section 3 — TNUoS / BSUoS", "detail": "Zonal transmission charging, locational signals, Balancing Services Use of System socialised recovery." },
+    { "name": "Section 4 — Construction and Connection Agreements", "detail": "The bilateral contracts between NESO, the relevant TO and the user." },
+    { "name": "Section 11 — Governance", "detail": "CUSC Panel, voting, modification decisions by Ofgem." },
+    { "name": "CMP434 / CMP435", "detail": "Implementing TMO4+ — new Application Rules, Gate 1/Gate 2, biannual windows, Ready and Needed criteria." },
+    { "name": "CMP422 / CMP423", "detail": "Earlier queue management reforms that preceded TMO4+." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "pairedWith": "grid-code",
+    "modifiedBy": ["tmo4-plus", "cndm", "g2cm"],
+    "related": ["stc", "nets-sqss"]
+  },
+  "whoCares": ["Transmission-connected users", "NESO", "TOs", "Ofgem (approves modifications)"],
+  "url": "https://www.neso.energy/industry-information/codes/cusc"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "dcusa",
+  "shortName": "DCUSA",
+  "fullName": "Distribution Connection and Use of System Agreement",
+  "category": "codes",
+  "icon": "📘",
+  "issuer": "DCUSA Ltd (the six DNO groups + IDNOs + suppliers)",
+  "version": "v18.1",
+  "statusDate": "Latest published version (rolling modifications)",
+  "authority": "Multiparty industry agreement; compliance is a condition of the distribution and supply licences",
+  "file": "02 - Industry Codes/DCUSA-v18.1.pdf",
+  "size": "8.1 MB",
+  "summary": "The commercial and charging framework for the distribution network — the distribution-level equivalent of CUSC. Sets out connection charging (fully shallow since April 2023), Distribution Use of System (DUoS) charging, the common connection charging methodology, and terms between DNOs, IDNOs, and suppliers.",
+  "scope": [
+    "Schedule 2 — Common Connection Charging Methodology (CCCM)",
+    "Schedule 18 — Common Distribution Charging Methodology (CDCM) for LV/HV DUoS",
+    "Schedule 22 — EHV Distribution Charging Methodology (EDCM) for EHV DUoS",
+    "Schedule 32 — Disconnection and de-energisation procedures",
+    "Supplier/DNO commercial terms (metering, data exchange, credit)",
+    "IDNO adoption and connection arrangements"
+  ],
+  "keyParts": [
+    { "name": "CCCM (Sch 2)", "detail": "Since April 2023: fully shallow charging — the connecting customer pays only for sole-use extension assets; reinforcement is socialised via DUoS." },
+    { "name": "CDCM (Sch 18)", "detail": "Cost-reflective DUoS for sub-EHV connections (LV and HV)." },
+    { "name": "EDCM (Sch 22)", "detail": "Forward-looking charges for EHV-connected demand and generation." },
+    { "name": "Modification process", "detail": "DCUSA Panel; Ofgem decides material modifications (DCP)." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": ["electricity-act-1989"],
+    "pairedWith": "d-code",
+    "related": ["cusc", "g99"]
+  },
+  "whoCares": ["DNOs and IDNOs", "Suppliers", "Distribution-connected customers (indirectly via their supplier/installer)"],
+  "url": "https://www.dcusa.co.uk"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "demand-connections-cfi",
+  "shortName": "Demand Connections CfI",
+  "fullName": "Demand Connections — Call for Input",
+  "category": "reform",
+  "icon": "🚀",
+  "issuer": "Ofgem",
+  "version": "Call for Input",
+  "statusDate": "13 February 2026",
+  "authority": "Ofgem policy consultation — precursor to a Demand Connections Reform decision",
+  "file": "05 - Connections Reform (TMO4+)/Demand Connections Call for Input - Feb 2026.pdf",
+  "size": "274 KB",
+  "summary": "Ofgem's consultation responding to the surge of large demand connection requests — over 50 GW of data centre and electrification demand in the queue. Proposes a three-pillar framework (Curate, Plan, Connect) modelled loosely on TMO4+: screen applications for credibility, plan the network strategically for demand clusters, and streamline the connection process for approved projects.",
+  "scope": [
+    "Scale of the demand queue (50 GW+ data centre; heat/EV electrification)",
+    "Curate — credibility screening for large demand applications",
+    "Plan — strategic network planning at transmission and distribution for demand clusters",
+    "Connect — streamlined delivery for designated projects",
+    "Interaction with the (now live) generation TMO4+ regime",
+    "Consultation questions to industry"
+  ],
+  "keyParts": [
+    { "name": "Curate pillar", "detail": "Analogous to Ready criteria: screening tests for whether a demand applicant actually has land, planning, finance, and load profile credibility." },
+    { "name": "Plan pillar", "detail": "DNO/TSO-coordinated Strategic Planning for demand clusters — likely via the SSEP/CSNP." },
+    { "name": "Connect pillar", "detail": "Designated demand projects get coordinated, firm offers similar to Gate 2." },
+    { "name": "Distribution integration", "detail": "Recognises most demand growth hits DNOs, not transmission, so the reform must extend to the distribution level." }
+  ],
+  "relationships": {
+    "enables": [],
+    "enabledBy": [],
+    "complementsGenerationReform": "tmo4-plus",
+    "related": ["cusc", "dcusa", "d-code", "tmo4-plus"]
+  },
+  "whoCares": ["Data centre developers", "DNOs", "NESO", "Large demand customers (industry, EV charging, heat networks)", "Ofgem"],
+  "url": "https://www.ofgem.gov.uk/publications/demand-connections-call-input"
+}

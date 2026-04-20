@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-04-20",
+  "sourceFolder": "~/Documents/Grid Docs/",
+  "categories": [
+    { "id": "legislation",   "name": "Legislation",             "icon": "⚖️", "color": "#7c2d12", "bg": "#fef3c7", "order": 1 },
+    { "id": "codes",         "name": "Industry Codes",          "icon": "📘", "color": "#1e3a8a", "bg": "#dbeafe", "order": 2 },
+    { "id": "standards",     "name": "Standards",               "icon": "📐", "color": "#6b21a8", "bg": "#f3e8ff", "order": 3 },
+    { "id": "erec",          "name": "Engineering Recommendations", "icon": "🔧", "color": "#065f46", "bg": "#d1fae5", "order": 4 },
+    { "id": "reform",        "name": "Connections Reform (TMO4+)",  "icon": "🚀", "color": "#9a3412", "bg": "#ffedd5", "order": 5 }
+  ],
+  "documents": [
+    "electricity-act-1989",
+    "esqcr-2002",
+    "grid-code",
+    "cusc",
+    "stc",
+    "dcusa",
+    "d-code",
+    "nets-sqss",
+    "g99",
+    "tmo4-plus",
+    "cndm",
+    "g2cm",
+    "further-methodologies",
+    "demand-connections-cfi"
+  ]
+}
