@@ -27,9 +27,9 @@
   ],
   "relationships": {
     "enables": [],
-    "enabledBy": ["electricity-act-1989"],
+    "enabledBy": ["electricity-act-1989", "esqcr-2002"],
     "pairedWith": "dcusa",
-    "related": ["grid-code", "g99", "esqcr-2002"]
+    "related": ["grid-code", "g99"]
   },
   "whoCares": ["DNOs", "IDNOs", "Embedded generators (via G98/G99)", "EHV-connected demand", "DSO functions within DNOs"],
   "url": "https://www.dcode.org.uk"

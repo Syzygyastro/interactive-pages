@@ -244,38 +244,52 @@ function renderRelationships(d) {
 
 // ── Concept map (SVG) ───────────────────────────────────────
 // Node layout — manually tuned for a clear visual hierarchy.
+// Canvas is 1200 x 620.
 const MAP_LAYOUT = {
-  'electricity-act-1989': { x:  80, y:  40, w: 200, h: 44 },
-  'esqcr-2002':           { x: 720, y:  40, w: 200, h: 44 },
+  // Row 1 — Statutory (top)
+  'electricity-act-1989': { x:  80, y:  30, w: 230, h: 46 },
+  'esqcr-2002':           { x: 880, y:  30, w: 230, h: 46 },
 
-  'grid-code':            { x:  40, y: 170, w: 150, h: 54 },
-  'cusc':                 { x: 210, y: 170, w: 150, h: 54 },
-  'stc':                  { x: 380, y: 170, w: 150, h: 54 },
-  'nets-sqss':            { x: 550, y: 170, w: 170, h: 54 },
-  'dcusa':                { x: 740, y: 170, w: 150, h: 54 },
-  'd-code':               { x: 740, y: 240, w: 150, h: 54 },
+  // Row 2 — Industry codes & standard (middle)
+  'grid-code':            { x:  30, y: 180, w: 150, h: 58 },
+  'cusc':                 { x: 200, y: 180, w: 150, h: 58 },
+  'stc':                  { x: 370, y: 180, w: 150, h: 58 },
+  'nets-sqss':            { x: 540, y: 180, w: 160, h: 58 },
+  'dcusa':                { x: 720, y: 180, w: 150, h: 58 },
+  'd-code':               { x: 890, y: 180, w: 150, h: 58 },
 
-  'g99':                  { x: 740, y: 330, w: 150, h: 44 },
+  // G99 — engineering recommendation, paired with D-Code
+  'g99':                  { x: 1060, y: 184, w: 120, h: 50 },
 
-  'tmo4-plus':            { x: 100, y: 330, w: 180, h: 54 },
-  'g2cm':                 { x:  40, y: 430, w: 150, h: 44 },
-  'cndm':                 { x: 210, y: 430, w: 150, h: 44 },
-  'further-methodologies':{ x: 380, y: 430, w: 200, h: 44 },
-  'demand-connections-cfi':{ x: 540, y: 430, w: 180, h: 54 }
+  // Row 3 — Reform package (lower)
+  'tmo4-plus':            { x: 200, y: 340, w: 200, h: 58 },
+  'demand-connections-cfi': { x: 720, y: 340, w: 220, h: 58 },
+
+  // Row 4 — Methodologies under TMO4+
+  'g2cm':                 { x:  30, y: 480, w: 150, h: 50 },
+  'cndm':                 { x: 200, y: 480, w: 150, h: 50 },
+  'further-methodologies':{ x: 370, y: 480, w: 220, h: 50 }
 };
 
 const MAP_EDGES = [
-  // Electricity Act enables the industry codes
+  // Electricity Act 1989 enables the licence-required industry codes & standards
   { from: 'electricity-act-1989', to: 'grid-code',  type: 'enable' },
   { from: 'electricity-act-1989', to: 'cusc',       type: 'enable' },
   { from: 'electricity-act-1989', to: 'stc',        type: 'enable' },
   { from: 'electricity-act-1989', to: 'nets-sqss',  type: 'enable' },
   { from: 'electricity-act-1989', to: 'dcusa',      type: 'enable' },
-  { from: 'esqcr-2002',           to: 'd-code',     type: 'enable' },
-  { from: 'esqcr-2002',           to: 'g99',        type: 'enable' },
+  { from: 'electricity-act-1989', to: 'd-code',     type: 'enable' },
 
-  // Pairings
-  { from: 'grid-code', to: 'cusc',  type: 'pair' },
+  // ESQCR 2002 (statutory safety SI) applies to all licensees;
+  // shown via the codes/recommendations that give effect to its rules.
+  { from: 'esqcr-2002', to: 'grid-code', type: 'enable' },
+  { from: 'esqcr-2002', to: 'nets-sqss', type: 'enable' },
+  { from: 'esqcr-2002', to: 'dcusa',     type: 'enable' },
+  { from: 'esqcr-2002', to: 'd-code',    type: 'enable' },
+  { from: 'esqcr-2002', to: 'g99',       type: 'enable' },
+
+  // Pairings (commercial code paired with technical code)
+  { from: 'grid-code', to: 'cusc',   type: 'pair' },
   { from: 'dcusa',     to: 'd-code', type: 'pair' },
   { from: 'd-code',    to: 'g99',    type: 'pair' },
 
@@ -285,7 +299,7 @@ const MAP_EDGES = [
   { from: 'tmo4-plus', to: 'cndm',                  type: 'enable' },
   { from: 'tmo4-plus', to: 'further-methodologies', type: 'enable' },
 
-  // Demand reform relates to CUSC and DCUSA
+  // Demand Connections CfI proposes to modify CUSC and DCUSA
   { from: 'demand-connections-cfi', to: 'cusc',  type: 'modify' },
   { from: 'demand-connections-cfi', to: 'dcusa', type: 'modify' }
 ];
