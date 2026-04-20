@@ -25,11 +25,23 @@ const FLOW = {
   decisionSize: 38,
   forkW: 100,
   forkH: 6,
-  pillW: 130,
+  pillW: 190,
   pillH: 36,
   pad: { top: 30, right: 50, bottom: 40, left: 50 },
   cornerR: 8
 };
+
+function flowTimelineLabel(text) {
+  if (!text) return '';
+  const compact = text
+    .replace(/calendar days/g, 'days')
+    .replace(/business days/g, 'biz days')
+    .replace(/working days/g, 'work days')
+    .replace(/months/g, 'mo')
+    .replace(/energisation/g, 'energ.')
+    .replace(/connection/g, 'conn.');
+  return compact.length > 28 ? `${compact.slice(0, 25)}...` : compact;
+}
 
 // ── Data Loading ──
 
@@ -275,13 +287,14 @@ function flowNodeSVG(node, level) {
 
     // Timeline badge below node
     if (node.timeline) {
+      const timelineLabel = flowTimelineLabel(node.timeline);
       const basisDot = node.timelineBasis === 'evidence'
         ? `<circle cx="${c.x - 36}" cy="${c.y + FLOW.nodeH/2 + 12}" r="4" class="basis-dot basis-evidence"/>`
         : `<circle cx="${c.x - 36}" cy="${c.y + FLOW.nodeH/2 + 12}" r="4" class="basis-dot basis-assumption"/>`;
       badgeEl = `<g class="node-timeline-badge">
         <rect x="${c.x - FLOW.nodeW/2 + 10}" y="${c.y + FLOW.nodeH/2 + 3}" width="${FLOW.nodeW - 20}" height="18" rx="9" class="timeline-badge-bg" style="fill:${levelColorLight}"/>
         ${basisDot}
-        <text x="${c.x}" y="${c.y + FLOW.nodeH/2 + 15}" class="timeline-badge-text" style="fill:${levelColor}">${node.timeline}</text>
+        <text x="${c.x}" y="${c.y + FLOW.nodeH/2 + 15}" class="timeline-badge-text" style="fill:${levelColor}">${timelineLabel}</text>
       </g>`;
     }
   }
@@ -295,7 +308,8 @@ function flowNodeSVG(node, level) {
 function renderFlowDiagram(processFlow, level) {
   if (!processFlow || !processFlow.nodes || !processFlow.nodes.length) return '';
 
-  const nodes = processFlow.nodes;
+  const minCol = Math.min(...processFlow.nodes.map(n => n.col || 0));
+  const nodes = processFlow.nodes.map(n => ({ ...n, col: (n.col || 0) - minCol }));
   const edges = processFlow.edges || [];
   const nodeMap = {};
   nodes.forEach(n => { nodeMap[n.id] = n; });
@@ -348,7 +362,7 @@ function renderFlowDiagram(processFlow, level) {
   return `
     <div class="flow-diagram-container">
       <div class="flow-diagram-scroll">
-        <svg class="flow-diagram" viewBox="0 0 ${svgW} ${svgH}" preserveAspectRatio="xMidYMin meet">
+        <svg class="flow-diagram" width="${svgW}" height="${svgH}" viewBox="0 0 ${svgW} ${svgH}" preserveAspectRatio="xMidYMin meet">
           <defs>
             <marker id="arrow-${level}" viewBox="0 0 10 8" refX="9" refY="4" markerWidth="8" markerHeight="6" orient="auto-start-reverse">
               <path d="M 0 0 L 10 4 L 0 8 Z" fill="${levelColor}" opacity="0.6"/>
