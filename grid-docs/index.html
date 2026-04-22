@@ -23,39 +23,57 @@
   <button class="hero-copy-btn" id="copyAllBtn">Copy All as Markdown</button>
 </div>
 
-<section class="map-section" id="mapSection">
-  <div class="map-inner">
-    <div class="map-title">How the documents fit together</div>
-    <div class="map-sub">Hover or tap any node. Lines show which documents authorise, pair with, or modify which.</div>
-    <div class="map-wrap">
-      <svg id="conceptMap" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid meet" aria-label="Concept map of GB grid documents"></svg>
-    </div>
-    <div class="map-legend">
-      <span><i class="lg lg-leg"></i>Legislation</span>
-      <span><i class="lg lg-cod"></i>Industry Code</span>
-      <span><i class="lg lg-std"></i>Standard</span>
-      <span><i class="lg lg-ere"></i>Engineering Rec.</span>
-      <span><i class="lg lg-ref"></i>Reform</span>
-      <span class="map-edge-key">— pairs with &nbsp;&nbsp; → modifies</span>
-    </div>
-  </div>
-</section>
-
-<div class="filter-bar">
-  <div class="filter-container">
-    <span class="filter-label">Category:</span>
-    <div class="filter-buttons" id="categoryFilters"></div>
-    <span class="filter-label" style="margin-left:16px">Search:</span>
-    <input type="search" id="searchInput" placeholder="Search name, issuer, content…" class="search-input">
-  </div>
+<div class="top-tabs" id="topTabs">
+  <button class="top-tab active" data-tab="library">Document Library</button>
+  <button class="top-tab" data-tab="process">Process &amp; Documents</button>
 </div>
 
-<div class="grid-container">
-  <div class="cards-grid" id="cardsGrid"></div>
+<!-- ═══ TAB 1: Document Library (existing) ═══ -->
+<div id="tabLibrary">
+
+  <section class="map-section" id="mapSection">
+    <div class="map-inner">
+      <div class="map-title">How the documents fit together</div>
+      <div class="map-sub">Hover or tap any node. Lines show which documents authorise, pair with, or modify which.</div>
+      <div class="map-wrap">
+        <svg id="conceptMap" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid meet" aria-label="Concept map of GB grid documents"></svg>
+      </div>
+      <div class="map-legend">
+        <span><i class="lg lg-leg"></i>Legislation</span>
+        <span><i class="lg lg-cod"></i>Industry Code</span>
+        <span><i class="lg lg-std"></i>Standard</span>
+        <span><i class="lg lg-ere"></i>Engineering Rec.</span>
+        <span><i class="lg lg-ref"></i>Reform</span>
+        <span class="map-edge-key">— pairs with &nbsp;&nbsp; → modifies</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-container">
+      <span class="filter-label">Category:</span>
+      <div class="filter-buttons" id="categoryFilters"></div>
+      <span class="filter-label" style="margin-left:16px">Search:</span>
+      <input type="search" id="searchInput" placeholder="Search name, issuer, content…" class="search-input">
+    </div>
+  </div>
+
+  <div class="grid-container">
+    <div class="cards-grid" id="cardsGrid"></div>
+  </div>
+
+  <div class="detail-section" id="detailSection" style="display:none">
+    <div class="detail-box" id="detailBox"></div>
+  </div>
+
 </div>
 
-<div class="detail-section" id="detailSection" style="display:none">
-  <div class="detail-box" id="detailBox"></div>
+<!-- ═══ TAB 2: Process & Documents ═══ -->
+<div id="tabProcess" style="display:none">
+  <div class="proc-container" id="procContainer"></div>
+  <div class="proc-detail-section" id="procDetailSection" style="display:none">
+    <div class="proc-detail-box" id="procDetailBox"></div>
+  </div>
 </div>
 
 <script src="app.js"></script>

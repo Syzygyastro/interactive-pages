@@ -140,7 +140,156 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helv
 
 .empty-state { text-align: center; padding: 40px; color: #718096; font-size: 0.95em; }
 
+/* ══ TOP-LEVEL TABS ══ */
+.top-tabs { display: flex; background: #fff; border-bottom: 2px solid #e2e8f0; padding: 0 max(20px, calc((100% - 1400px)/2)); }
+.top-tab { padding: 14px 28px; border: none; background: none; cursor: pointer; font-size: 0.95em; font-weight: 600; color: #718096; position: relative; transition: color 0.15s; font-family: inherit; }
+.top-tab:hover { color: #1a1d23; }
+.top-tab.active { color: #1a1d23; }
+.top-tab.active::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 3px; background: #1a1d23; border-radius: 3px 3px 0 0; }
+
+/* ══ PROCESS TAB — CONTAINER ══ */
+.proc-container { max-width: 1400px; margin: 0 auto; padding: 0 20px 30px; }
+
+/* ── Level Tabs (Transmission / Distribution) ── */
+.proc-level-tabs { display: flex; gap: 0; margin-bottom: 0; border-bottom: 2px solid #e2e8f0; background: #fff; border-radius: 10px 10px 0 0; overflow: hidden; margin-top: 24px; }
+.proc-level-tab { flex: 1; padding: 14px 20px; border: none; background: #f8fafc; cursor: pointer; font-size: 0.92em; font-weight: 600; color: #718096; font-family: inherit; transition: all 0.15s; position: relative; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.proc-level-tab:hover { background: #f1f5f9; color: #1a1d23; }
+.proc-level-tab.active { background: #fff; color: #1a1d23; }
+.proc-level-tab.active::after { content: ''; position: absolute; bottom: -2px; left: 16px; right: 16px; height: 3px; border-radius: 3px 3px 0 0; }
+.proc-level-tab.transmission.active::after { background: #dc2626; }
+.proc-level-tab.distribution.active::after { background: #2563eb; }
+.proc-tab-icon { font-size: 1.1em; }
+
+/* ── Overview Section ── */
+.proc-overview-section { background: #fff; padding: 20px 24px; border-bottom: 1px solid #e2e8f0; border-radius: 0 0 10px 10px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.proc-overview-text { font-size: 0.9em; color: #2d3748; line-height: 1.65; margin-bottom: 16px; }
+.proc-stats-row { display: flex; gap: 12px; flex-wrap: wrap; }
+.proc-stat { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 16px; flex: 1; min-width: 140px; }
+.proc-stat-value { font-size: 1.1em; font-weight: 700; color: #1a1d23; }
+.proc-stat-label { font-size: 0.72em; text-transform: uppercase; letter-spacing: 0.5px; color: #718096; font-weight: 600; margin-top: 2px; }
+
+/* ── Path Tabs (G98 / G99) ── */
+.proc-path-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.proc-path-tab { padding: 8px 20px; border: 1px solid #cbd5e0; background: #fff; border-radius: 20px; cursor: pointer; font-size: 0.85em; font-weight: 600; color: #4a5568; transition: all 0.15s; font-family: inherit; }
+.proc-path-tab:hover { border-color: #2563eb; color: #2563eb; }
+.proc-path-tab.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+.proc-path-desc { font-size: 0.88em; color: #4a5568; line-height: 1.55; margin-bottom: 16px; padding: 12px 16px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; }
+
+/* ── Stage Timeline ── */
+.proc-timeline { display: flex; flex-direction: column; gap: 0; }
+@keyframes procStageFadeIn { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: translateX(0); } }
+.proc-stage-card {
+  display: flex; gap: 0; cursor: pointer;
+  opacity: 0; animation: procStageFadeIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--stage-index, 0) * 60ms);
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+.proc-stage-card:hover .proc-stage-content { box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-1px); }
+.proc-stage-card.selected .proc-stage-content { box-shadow: 0 4px 16px rgba(0,0,0,0.12); border-color: #1a1d23; }
+
+/* Connector (number + line) */
+.proc-stage-connector { display: flex; flex-direction: column; align-items: center; width: 44px; flex-shrink: 0; }
+.proc-stage-num { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.82em; font-weight: 700; flex-shrink: 0; z-index: 1; }
+.proc-stage-line { width: 2px; flex: 1; min-height: 20px; }
+
+/* Stage content card */
+.proc-stage-content { flex: 1; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 16px 20px; margin-bottom: 8px; transition: box-shadow 0.2s, transform 0.15s, border-color 0.15s; }
+.proc-stage-header { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.proc-stage-name { font-size: 1.02em; font-weight: 700; color: #1a1d23; }
+.proc-stage-timeline { padding: 3px 10px; border-radius: 10px; font-size: 0.72em; font-weight: 600; white-space: nowrap; }
+.proc-stage-desc { font-size: 0.85em; color: #4a5568; line-height: 1.55; margin-bottom: 12px; }
+
+/* Section labels */
+.proc-stage-section { margin-bottom: 8px; }
+.proc-stage-section:last-child { margin-bottom: 0; }
+.proc-stage-section-label { font-size: 0.68em; text-transform: uppercase; letter-spacing: 0.6px; color: #718096; font-weight: 700; margin-bottom: 6px; }
+
+/* Pills */
+.proc-pills-wrap { display: flex; flex-wrap: wrap; gap: 6px; }
+.proc-doc-pill, .proc-entity-pill {
+  padding: 4px 10px; border-radius: 14px; font-size: 0.75em; font-weight: 600;
+  border: none; cursor: pointer; transition: all 0.15s; white-space: nowrap; font-family: inherit;
+}
+.proc-doc-pill:hover { filter: brightness(0.92); transform: scale(1.04); }
+.proc-entity-pill:hover { filter: brightness(0.92); transform: scale(1.04); }
+
+/* ══ PROCESS DETAIL SECTION ══ */
+.proc-detail-section { max-width: 1400px; margin: 0 auto; padding: 0 20px 40px; }
+@keyframes procDetailSlideIn { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+.proc-detail-box { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; animation: procDetailSlideIn 0.3s ease-out forwards; }
+
+.proc-detail-header { padding: 20px 24px; display: flex; align-items: center; gap: 14px; border-bottom: 1px solid #e2e8f0; }
+.proc-detail-titles { flex: 1; }
+.proc-detail-name { font-size: 1.2em; font-weight: 700; color: #1a1d23; }
+.proc-detail-subtitle { font-size: 0.85em; color: #718096; margin-top: 2px; }
+.proc-detail-timeline-badge { display: inline-block; padding: 3px 12px; border-radius: 10px; font-size: 0.78em; font-weight: 600; margin-top: 4px; }
+.proc-detail-close { background: none; border: 1px solid #e2e8f0; width: 32px; height: 32px; border-radius: 50%; font-size: 1.2em; cursor: pointer; color: #718096; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: all 0.15s; }
+.proc-detail-close:hover { background: #f0f0f0; color: #1a1d23; transform: rotate(90deg); }
+
+.proc-detail-doc-icon-lg { width: 48px; height: 48px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.5em; border: 2px solid; flex-shrink: 0; }
+
+.proc-detail-meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; padding: 16px 24px; background: #f8fafc; border-bottom: 1px solid #e2e8f0; }
+.proc-meta-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; }
+.proc-meta-label { font-size: 0.68em; text-transform: uppercase; letter-spacing: 0.6px; color: #718096; font-weight: 700; margin-bottom: 2px; }
+.proc-meta-value { font-size: 0.85em; font-weight: 600; color: #1a1d23; word-wrap: break-word; }
+
+.proc-detail-description { padding: 18px 24px; font-size: 0.9em; color: #2d3748; line-height: 1.65; border-bottom: 1px solid #e2e8f0; }
+
+.proc-detail-block { padding: 16px 24px; border-bottom: 1px solid #e2e8f0; }
+.proc-detail-block:last-child { border-bottom: none; }
+.proc-detail-block-title { font-size: 0.78em; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: #718096; margin-bottom: 12px; }
+
+/* Document cards in detail */
+.proc-detail-docs-grid { display: flex; flex-direction: column; gap: 12px; }
+.proc-detail-doc { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; }
+.proc-detail-doc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.proc-detail-doc-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; border: 1.5px solid; flex-shrink: 0; }
+.proc-detail-doc-titles { flex: 1; min-width: 0; }
+.proc-detail-doc-name { font-size: 0.92em; font-weight: 700; color: #1a1d23; }
+.proc-detail-doc-sections { font-size: 0.78em; color: #4a5568; margin-top: 1px; }
+.proc-detail-doc-cat { padding: 3px 10px; border-radius: 10px; font-size: 0.7em; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+.proc-detail-doc-relevance { font-size: 0.85em; color: #2d3748; line-height: 1.55; }
+.proc-detail-link { display: inline-block; margin-top: 8px; font-size: 0.82em; color: #1d4ed8; text-decoration: none; font-weight: 600; }
+.proc-detail-link:hover { text-decoration: underline; }
+
+/* Entity cards in detail */
+.proc-detail-entities-grid { display: flex; flex-direction: column; gap: 10px; }
+.proc-detail-entity { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px 16px; }
+.proc-detail-entity-header { margin-bottom: 6px; }
+.proc-detail-entity-name { font-size: 0.95em; font-weight: 700; color: #1a1d23; }
+.proc-detail-entity-full { font-size: 0.78em; color: #718096; }
+.proc-detail-entity-role { font-size: 0.85em; color: #2d3748; line-height: 1.55; }
+
+/* Stage references in doc/entity detail */
+.proc-detail-stages-list { display: flex; flex-direction: column; gap: 8px; }
+.proc-detail-stage-ref { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px 14px; cursor: pointer; transition: all 0.15s; }
+.proc-detail-stage-ref:hover { border-color: #1a1d23; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.proc-detail-stage-ref-name { font-size: 0.88em; font-weight: 700; color: #1a1d23; margin-bottom: 2px; }
+.proc-detail-stage-ref-sections { font-size: 0.78em; color: #4a5568; font-style: italic; margin-bottom: 4px; }
+.proc-detail-stage-ref-why { font-size: 0.82em; color: #2d3748; line-height: 1.5; }
+
+/* Source buttons */
+.proc-detail-sources-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.proc-source-btn { display: inline-block; padding: 8px 16px; background: #1a1d23; color: #fff; border-radius: 8px; font-size: 0.82em; font-weight: 600; text-decoration: none; transition: background 0.15s; }
+.proc-source-btn:hover { background: #333; }
+
+/* ══ RESPONSIVE ══ */
 @media (max-width: 700px) {
   .map-legend .map-edge-key { margin-left: 0; width: 100%; }
   .search-input { min-width: 100%; }
+  .top-tabs { padding: 0 12px; }
+  .top-tab { padding: 12px 16px; font-size: 0.88em; }
+  .proc-level-tabs { flex-direction: column; }
+  .proc-stats-row { flex-direction: column; }
+  .proc-stage-card { flex-direction: column; }
+  .proc-stage-connector { flex-direction: row; width: auto; gap: 8px; margin-bottom: 0; }
+  .proc-stage-line { width: auto; height: 2px; flex: 0; display: none; }
+  .proc-stage-content { margin-bottom: 12px; }
+  .proc-detail-header { flex-wrap: wrap; }
+  .proc-detail-meta-grid { grid-template-columns: 1fr; }
+  .proc-path-tabs { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .proc-stage-card { animation-duration: 0.01ms; }
+  .proc-detail-box { animation-duration: 0.01ms; }
 }

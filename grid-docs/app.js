@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// GB Grid Docs — interactive explorer + concept map
+// GB Grid Docs — interactive explorer + concept map + process
 // ─────────────────────────────────────────────────────────────
 
 let MANIFEST = null;
@@ -9,12 +9,26 @@ let ACTIVE_CATEGORY = 'all';
 let ACTIVE_QUERY = '';
 let ACTIVE_DOC_ID = null;
 
+// Process tab state
+let PROC_DATA = null;
+let PROC_LEVEL = 'transmission';   // transmission | distribution
+let PROC_PATH = 'g99';             // g98 | g99 (for distribution)
+let PROC_SELECTED_STAGE = null;
+let PROC_SELECTED_TYPE = null;     // 'stage' | 'doc' | 'entity'
+let PROC_SELECTED_ID = null;
+let ACTIVE_TAB = 'library';        // library | process
+
 // ── Bootstrap ────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
   try {
-    MANIFEST = await fetch('data/manifest.json').then(r => r.json());
+    const [manifest, procData] = await Promise.all([
+      fetch('data/manifest.json').then(r => r.json()),
+      fetch('data/interconnection-process.json').then(r => r.json())
+    ]);
+    MANIFEST = manifest;
+    PROC_DATA = procData;
     DOCS = await Promise.all(
       MANIFEST.documents.map(id => fetch(`data/${id}.json`).then(r => r.json()))
     );
@@ -33,6 +47,7 @@ async function init() {
   renderConceptMap();
   renderCards();
   wireUI();
+  wireTopTabs();
 }
 
 function wireUI() {
@@ -485,4 +500,407 @@ function escapeHTML(s) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  TOP-LEVEL TABS  (Document Library ↔ Process & Documents)
+// ═══════════════════════════════════════════════════════════════
+
+function wireTopTabs() {
+  document.querySelectorAll('.top-tab').forEach(btn => {
+    btn.addEventListener('click', () => switchTopTab(btn.dataset.tab));
+  });
+  // Support hash-based tab switching (e.g. #process)
+  const hash = location.hash.replace('#', '');
+  if (hash === 'process') switchTopTab('process');
+}
+
+function switchTopTab(tab) {
+  if (tab === ACTIVE_TAB) return;
+  ACTIVE_TAB = tab;
+  document.querySelectorAll('.top-tab').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.getElementById('tabLibrary').style.display = tab === 'library' ? '' : 'none';
+  document.getElementById('tabProcess').style.display  = tab === 'process' ? '' : 'none';
+  if (tab === 'process') renderProcessTab();
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  PROCESS & DOCUMENTS TAB
+// ═══════════════════════════════════════════════════════════════
+
+function renderProcessTab() {
+  if (!PROC_DATA) return;
+  const container = document.getElementById('procContainer');
+
+  const levelData = PROC_LEVEL === 'transmission' ? PROC_DATA.transmission : PROC_DATA.distribution;
+  const stats = levelData.stats;
+
+  // Build stats HTML
+  const statItems = Object.entries(stats).map(([k, v]) => {
+    const label = k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase());
+    return `<div class="proc-stat"><div class="proc-stat-value">${escapeHTML(v)}</div><div class="proc-stat-label">${escapeHTML(label)}</div></div>`;
+  }).join('');
+
+  // Get stages
+  let stages, pathTabsHTML = '';
+  if (PROC_LEVEL === 'transmission') {
+    stages = levelData.stages;
+  } else {
+    const paths = levelData.paths;
+    pathTabsHTML = `
+      <div class="proc-path-tabs">
+        <button class="proc-path-tab ${PROC_PATH === 'g98' ? 'active' : ''}" onclick="switchProcPath('g98')">
+          ${paths.g98.name}
+        </button>
+        <button class="proc-path-tab ${PROC_PATH === 'g99' ? 'active' : ''}" onclick="switchProcPath('g99')">
+          ${paths.g99.name}
+        </button>
+      </div>
+      <div class="proc-path-desc">${escapeHTML(paths[PROC_PATH].description)}</div>`;
+    stages = paths[PROC_PATH].stages;
+  }
+
+  container.innerHTML = `
+    <div class="proc-level-tabs">
+      <button class="proc-level-tab transmission ${PROC_LEVEL === 'transmission' ? 'active' : ''}" onclick="switchProcLevel('transmission')">
+        <span class="proc-tab-icon">&#9889;</span> Transmission (${escapeHTML(PROC_DATA.transmission.voltageLevel)})
+      </button>
+      <button class="proc-level-tab distribution ${PROC_LEVEL === 'distribution' ? 'active' : ''}" onclick="switchProcLevel('distribution')">
+        <span class="proc-tab-icon">&#128268;</span> Distribution (${escapeHTML(PROC_DATA.distribution.voltageLevel)})
+      </button>
+    </div>
+
+    <div class="proc-overview-section">
+      <div class="proc-overview-text">${escapeHTML(levelData.overview)}</div>
+      <div class="proc-stats-row">${statItems}</div>
+    </div>
+
+    ${pathTabsHTML}
+
+    <div class="proc-timeline">
+      ${stages.map((s, i) => renderStageCard(s, i, stages.length)).join('')}
+    </div>
+  `;
+
+  // Wire stage card click handlers
+  container.querySelectorAll('.proc-stage-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const stageId = card.dataset.stageId;
+      openProcStageDetail(stageId);
+    });
+  });
+
+  // Wire doc pill click handlers
+  container.querySelectorAll('.proc-doc-pill[data-doc-id]').forEach(pill => {
+    pill.addEventListener('click', e => {
+      e.stopPropagation();
+      const docId = pill.dataset.docId;
+      const stageId = pill.closest('.proc-stage-card').dataset.stageId;
+      openProcDocDetail(docId, stageId);
+    });
+  });
+
+  // Wire entity pill click handlers
+  container.querySelectorAll('.proc-entity-pill[data-entity-name]').forEach(pill => {
+    pill.addEventListener('click', e => {
+      e.stopPropagation();
+      const entityName = pill.dataset.entityName;
+      const stageId = pill.closest('.proc-stage-card').dataset.stageId;
+      openProcEntityDetail(entityName, stageId);
+    });
+  });
+}
+
+function renderStageCard(stage, index, total) {
+  const levelColor = PROC_LEVEL === 'transmission' ? '#dc2626' : '#2563eb';
+  const levelBg = PROC_LEVEL === 'transmission' ? '#fee2e2' : '#dbeafe';
+  const isSelected = PROC_SELECTED_STAGE === stage.id;
+
+  const docPills = stage.documents.map(d => {
+    const doc = DOC_BY_ID[d.docId];
+    if (!doc) return '';
+    const cat = catMeta(doc.category);
+    return `<button class="proc-doc-pill" data-doc-id="${d.docId}" style="background:${cat.bg};color:${cat.color};border:1px solid ${cat.color}22" title="${escapeHTML(d.sections)}">${doc.icon || '📄'} ${escapeHTML(doc.shortName)}</button>`;
+  }).join('');
+
+  const entityColors = {
+    applicant: { bg: '#f0fdf4', color: '#166534', border: '#16653422' },
+    operator: { bg: '#eff6ff', color: '#1e40af', border: '#1e40af22' },
+    regulator: { bg: '#fefce8', color: '#854d0e', border: '#854d0e22' },
+    builder: { bg: '#fdf4ff', color: '#7e22ce', border: '#7e22ce22' },
+    installer: { bg: '#f0fdfa', color: '#0f766e', border: '#0f766e22' }
+  };
+
+  const entityPills = stage.entities.map(e => {
+    const ec = entityColors[e.type] || entityColors.operator;
+    return `<button class="proc-entity-pill" data-entity-name="${escapeHTML(e.name)}" style="background:${ec.bg};color:${ec.color};border:1px solid ${ec.border}">${escapeHTML(e.name)}</button>`;
+  }).join('');
+
+  return `
+    <div class="proc-stage-card ${isSelected ? 'selected' : ''}" data-stage-id="${stage.id}" style="--stage-index:${index}">
+      <div class="proc-stage-connector">
+        <div class="proc-stage-num" style="background:${levelColor};color:#fff">${index + 1}</div>
+        ${index < total - 1 ? `<div class="proc-stage-line" style="background:${levelColor}20"></div>` : ''}
+      </div>
+      <div class="proc-stage-content">
+        <div class="proc-stage-header">
+          <div class="proc-stage-name">${escapeHTML(stage.name)}</div>
+          ${stage.timeline ? `<span class="proc-stage-timeline" style="background:${levelBg};color:${levelColor}">${escapeHTML(stage.timeline)}</span>` : ''}
+        </div>
+        <div class="proc-stage-desc">${escapeHTML(truncate(stage.description, 180))}</div>
+        <div class="proc-stage-section">
+          <div class="proc-stage-section-label">Documents</div>
+          <div class="proc-pills-wrap">${docPills}</div>
+        </div>
+        <div class="proc-stage-section">
+          <div class="proc-stage-section-label">Entities</div>
+          <div class="proc-pills-wrap">${entityPills}</div>
+        </div>
+      </div>
+    </div>`;
+}
+
+function switchProcLevel(level) {
+  PROC_LEVEL = level;
+  PROC_PATH = 'g99';
+  closeProcDetail();
+  renderProcessTab();
+}
+
+function switchProcPath(path) {
+  PROC_PATH = path;
+  closeProcDetail();
+  renderProcessTab();
+}
+
+// ── Process detail panels ──
+
+function getStagesForCurrentLevel() {
+  if (PROC_LEVEL === 'transmission') return PROC_DATA.transmission.stages;
+  return PROC_DATA.distribution.paths[PROC_PATH].stages;
+}
+
+function openProcStageDetail(stageId) {
+  const stages = getStagesForCurrentLevel();
+  const stage = stages.find(s => s.id === stageId);
+  if (!stage) return;
+
+  if (PROC_SELECTED_TYPE === 'stage' && PROC_SELECTED_ID === stageId) {
+    closeProcDetail();
+    return;
+  }
+
+  PROC_SELECTED_STAGE = stageId;
+  PROC_SELECTED_TYPE = 'stage';
+  PROC_SELECTED_ID = stageId;
+
+  const levelColor = PROC_LEVEL === 'transmission' ? '#dc2626' : '#2563eb';
+  const host = document.getElementById('procDetailBox');
+  const sec = document.getElementById('procDetailSection');
+
+  // Documents detail
+  const docsHTML = stage.documents.map(d => {
+    const doc = DOC_BY_ID[d.docId];
+    if (!doc) return '';
+    const cat = catMeta(doc.category);
+    return `
+      <div class="proc-detail-doc">
+        <div class="proc-detail-doc-header">
+          <span class="proc-detail-doc-icon" style="background:${cat.bg};border-color:${cat.color}">${doc.icon || '📄'}</span>
+          <div class="proc-detail-doc-titles">
+            <div class="proc-detail-doc-name">${escapeHTML(doc.shortName)}</div>
+            <div class="proc-detail-doc-sections">${escapeHTML(d.sections)}</div>
+          </div>
+          <span class="proc-detail-doc-cat" style="background:${cat.bg};color:${cat.color}">${escapeHTML(cat.name)}</span>
+        </div>
+        <div class="proc-detail-doc-relevance">${escapeHTML(d.relevance)}</div>
+        ${doc.url ? `<a class="proc-detail-link" href="${doc.url}" target="_blank" rel="noopener">${escapeHTML(doc.shortName)} official source &#8599;</a>` : ''}
+      </div>`;
+  }).join('');
+
+  // Entities detail
+  const entitiesHTML = stage.entities.map(e => {
+    return `
+      <div class="proc-detail-entity">
+        <div class="proc-detail-entity-header">
+          <div class="proc-detail-entity-name">${escapeHTML(e.name)}</div>
+          ${e.fullName ? `<div class="proc-detail-entity-full">${escapeHTML(e.fullName)}</div>` : ''}
+        </div>
+        <div class="proc-detail-entity-role">${escapeHTML(e.role)}</div>
+        ${e.url ? `<a class="proc-detail-link" href="${e.url}" target="_blank" rel="noopener">${escapeHTML(e.name)} website &#8599;</a>` : ''}
+      </div>`;
+  }).join('');
+
+  // Sources
+  const sourcesHTML = stage.sources && stage.sources.length ? `
+    <div class="proc-detail-block">
+      <div class="proc-detail-block-title">Official Sources</div>
+      <div class="proc-detail-sources-grid">
+        ${stage.sources.map(s => `<a class="proc-source-btn" href="${s.url}" target="_blank" rel="noopener">${escapeHTML(s.label)} &#8599;</a>`).join('')}
+      </div>
+    </div>` : '';
+
+  host.innerHTML = `
+    <div class="proc-detail-header" style="border-left:5px solid ${levelColor}">
+      <div class="proc-detail-titles">
+        <div class="proc-detail-name">${escapeHTML(stage.name)}</div>
+        ${stage.timeline ? `<span class="proc-detail-timeline-badge" style="background:${levelColor}15;color:${levelColor}">${escapeHTML(stage.timeline)}</span>` : ''}
+      </div>
+      <button class="proc-detail-close" onclick="closeProcDetail()">&#215;</button>
+    </div>
+    <div class="proc-detail-description">${escapeHTML(stage.description)}</div>
+    <div class="proc-detail-block">
+      <div class="proc-detail-block-title">Documents Required at This Stage (${stage.documents.length})</div>
+      <div class="proc-detail-docs-grid">${docsHTML}</div>
+    </div>
+    <div class="proc-detail-block">
+      <div class="proc-detail-block-title">Entities Involved (${stage.entities.length})</div>
+      <div class="proc-detail-entities-grid">${entitiesHTML}</div>
+    </div>
+    ${sourcesHTML}
+  `;
+
+  sec.style.display = 'block';
+  highlightStageCard(stageId);
+  setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+}
+
+function openProcDocDetail(docId, stageId) {
+  const doc = DOC_BY_ID[docId];
+  if (!doc) return;
+
+  if (PROC_SELECTED_TYPE === 'doc' && PROC_SELECTED_ID === docId) {
+    closeProcDetail();
+    return;
+  }
+
+  PROC_SELECTED_STAGE = stageId;
+  PROC_SELECTED_TYPE = 'doc';
+  PROC_SELECTED_ID = docId;
+
+  const cat = catMeta(doc.category);
+  const host = document.getElementById('procDetailBox');
+  const sec = document.getElementById('procDetailSection');
+
+  // Find all stages where this document appears
+  const stages = getStagesForCurrentLevel();
+  const appearsIn = stages.filter(s => s.documents.some(d => d.docId === docId));
+
+  const stagesHTML = appearsIn.map(s => {
+    const docRef = s.documents.find(d => d.docId === docId);
+    return `
+      <div class="proc-detail-stage-ref" onclick="openProcStageDetail('${s.id}')">
+        <div class="proc-detail-stage-ref-name">${escapeHTML(s.name)}</div>
+        <div class="proc-detail-stage-ref-sections">${escapeHTML(docRef.sections)}</div>
+        <div class="proc-detail-stage-ref-why">${escapeHTML(docRef.relevance)}</div>
+      </div>`;
+  }).join('');
+
+  host.innerHTML = `
+    <div class="proc-detail-header" style="border-left:5px solid ${cat.color}">
+      <div class="proc-detail-doc-icon-lg" style="background:${cat.bg};border-color:${cat.color}">${doc.icon || '📄'}</div>
+      <div class="proc-detail-titles">
+        <div class="proc-detail-name">${escapeHTML(doc.shortName)}</div>
+        <div class="proc-detail-subtitle">${escapeHTML(doc.fullName)}</div>
+      </div>
+      <button class="proc-detail-close" onclick="closeProcDetail()">&#215;</button>
+    </div>
+
+    <div class="proc-detail-meta-grid">
+      ${procMetaCard('Category', cat.name)}
+      ${procMetaCard('Issuer', doc.issuer)}
+      ${procMetaCard('Version', doc.version)}
+      ${procMetaCard('Authority', doc.authority)}
+    </div>
+
+    <div class="proc-detail-description">${escapeHTML(doc.summary)}</div>
+
+    <div class="proc-detail-block">
+      <div class="proc-detail-block-title">Used in ${appearsIn.length} Stage${appearsIn.length !== 1 ? 's' : ''} of the ${PROC_LEVEL === 'transmission' ? 'Transmission' : 'Distribution'} Process</div>
+      <div class="proc-detail-stages-list">${stagesHTML}</div>
+    </div>
+
+    ${doc.url ? `<div class="proc-detail-block"><a class="proc-source-btn" href="${doc.url}" target="_blank" rel="noopener">Official source: ${escapeHTML(doc.shortName)} &#8599;</a></div>` : ''}
+  `;
+
+  sec.style.display = 'block';
+  highlightStageCard(stageId);
+  setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+}
+
+function openProcEntityDetail(entityName, stageId) {
+  if (PROC_SELECTED_TYPE === 'entity' && PROC_SELECTED_ID === entityName) {
+    closeProcDetail();
+    return;
+  }
+
+  PROC_SELECTED_STAGE = stageId;
+  PROC_SELECTED_TYPE = 'entity';
+  PROC_SELECTED_ID = entityName;
+
+  const stages = getStagesForCurrentLevel();
+  const appearsIn = stages.filter(s => s.entities.some(e => e.name === entityName));
+
+  // Get the entity data from the first occurrence (for url/fullName)
+  let entityData = null;
+  for (const s of stages) {
+    const e = s.entities.find(e => e.name === entityName);
+    if (e) { entityData = e; break; }
+  }
+  if (!entityData) return;
+
+  const levelColor = PROC_LEVEL === 'transmission' ? '#dc2626' : '#2563eb';
+  const host = document.getElementById('procDetailBox');
+  const sec = document.getElementById('procDetailSection');
+
+  const stagesHTML = appearsIn.map(s => {
+    const entRef = s.entities.find(e => e.name === entityName);
+    return `
+      <div class="proc-detail-stage-ref" onclick="openProcStageDetail('${s.id}')">
+        <div class="proc-detail-stage-ref-name">${escapeHTML(s.name)}</div>
+        <div class="proc-detail-stage-ref-why">${escapeHTML(entRef.role)}</div>
+      </div>`;
+  }).join('');
+
+  host.innerHTML = `
+    <div class="proc-detail-header" style="border-left:5px solid ${levelColor}">
+      <div class="proc-detail-titles">
+        <div class="proc-detail-name">${escapeHTML(entityData.name)}</div>
+        ${entityData.fullName ? `<div class="proc-detail-subtitle">${escapeHTML(entityData.fullName)}</div>` : ''}
+      </div>
+      <button class="proc-detail-close" onclick="closeProcDetail()">&#215;</button>
+    </div>
+
+    <div class="proc-detail-description">${escapeHTML(entityData.role)}</div>
+
+    <div class="proc-detail-block">
+      <div class="proc-detail-block-title">Involved in ${appearsIn.length} of ${stages.length} Stages</div>
+      <div class="proc-detail-stages-list">${stagesHTML}</div>
+    </div>
+
+    ${entityData.url ? `<div class="proc-detail-block"><a class="proc-source-btn" href="${entityData.url}" target="_blank" rel="noopener">${escapeHTML(entityData.name)} website &#8599;</a></div>` : ''}
+  `;
+
+  sec.style.display = 'block';
+  highlightStageCard(stageId);
+  setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+}
+
+function closeProcDetail() {
+  document.getElementById('procDetailSection').style.display = 'none';
+  PROC_SELECTED_STAGE = null;
+  PROC_SELECTED_TYPE = null;
+  PROC_SELECTED_ID = null;
+  highlightStageCard(null);
+}
+
+function highlightStageCard(stageId) {
+  document.querySelectorAll('.proc-stage-card').forEach(c => {
+    c.classList.toggle('selected', c.dataset.stageId === stageId);
+  });
+}
+
+function procMetaCard(label, value) {
+  if (!value) return '';
+  return `<div class="proc-meta-card"><div class="proc-meta-label">${escapeHTML(label)}</div><div class="proc-meta-value">${escapeHTML(value)}</div></div>`;
 }

@@ -1,0 +1,935 @@
+{
+  "transmission": {
+    "title": "Transmission Connection Process (132 kV+)",
+    "voltageLevel": "132 kV+",
+    "overview": "Transmission connections in Great Britain are managed by NESO (National Energy System Operator), publicly owned since October 2024. Three regional Transmission Owners (NGET, SPT, SHET) build and maintain the physical network. Since the TMO4+ reform (April 2025), all new applicants enter a gate-based system that prioritises projects by readiness, strategic alignment, and grid location rather than queue date. The process typically takes 4-15 years from pre-application to commercial operation.",
+    "stats": {
+      "typicalTimeline": "4-15 years",
+      "costRange": "\u00a3100K-\u00a310M+",
+      "queueSize": "283 GW (post-TMO4+)"
+    },
+    "stages": [
+      {
+        "id": "t-pre-app",
+        "name": "Pre-application Meeting",
+        "timeline": "2-4 weeks",
+        "description": "Developers engage early with NESO to discuss project scope, preferred connection point, and technical feasibility. NESO provides initial guidance on available capacity, likely reinforcement requirements, and estimated timelines. This step is strongly encouraged but not mandatory.",
+        "documents": [
+          {
+            "docId": "cusc",
+            "sections": "Section 2 \u2014 Application Rules",
+            "relevance": "Developers review CUSC Section 2 to understand the application process, biannual window timing, required documentation, and fee structure before engaging with NESO."
+          },
+          {
+            "docId": "grid-code",
+            "sections": "Planning Code (PC), Data Registration Code (DRC)",
+            "relevance": "Developers review Grid Code planning data requirements to understand what technical data (generation parameters, fault levels, site information) will need to be submitted."
+          },
+          {
+            "docId": "nets-sqss",
+            "sections": "Chapters 2-4 \u2014 Planning criteria",
+            "relevance": "Understanding the transmission security standards helps developers assess whether their preferred connection point can accommodate the project without major reinforcement."
+          }
+        ],
+        "entities": [
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Initiates pre-application engagement; discusses project scope, capacity, technology type, and preferred connection point with NESO."
+          },
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Provides initial guidance on available network capacity, likely reinforcement requirements, estimated timelines, and application process.",
+            "url": "https://www.neso.energy"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NESO Connections Journey",
+            "url": "https://www.neso.energy/industry-information/connections/your-connections-journey"
+          }
+        ]
+      },
+      {
+        "id": "t-application",
+        "name": "Formal Application via NESO Portal",
+        "timeline": "Biannual window",
+        "description": "Submit a formal connection application through the NESO online portal. Since March 2024, applicants must include a Letter of Authority (LoA) confirming legal control of the project site. Application fees range from \u00a35,600 to \u00a313,600 depending on project type. Detailed technical specifications, a site plan, and evidence of planning progress are required. Applications are accepted in biannual windows under TMO4+.",
+        "documents": [
+          {
+            "docId": "cusc",
+            "sections": "Section 2 \u2014 Application Rules (CMP434/CMP435)",
+            "relevance": "Defines the formal application process, biannual window schedule, required documentation (LoA, DRC data, site plan), application fees (\u00a35,600-\u00a313,600), and validation criteria."
+          },
+          {
+            "docId": "grid-code",
+            "sections": "Data Registration Code (DRC)",
+            "relevance": "Specifies the exact technical data that must be submitted with the application: generation parameters, reactive capability, fault contribution data, and protection settings."
+          },
+          {
+            "docId": "electricity-act-1989",
+            "sections": "s.16 (duty to connect), s.36 (generation consents)",
+            "relevance": "s.16 establishes the statutory right to apply for a connection. s.36 requires consent for generating stations above specified thresholds (>50 MW onshore, or DCO under Planning Act 2008)."
+          },
+          {
+            "docId": "tmo4-plus",
+            "sections": "Biannual application window rules",
+            "relevance": "TMO4+ reform introduced biannual application windows (replacing open-door), meaning applications can only be submitted during defined periods aligned with the gate assessment cycle."
+          }
+        ],
+        "entities": [
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Submits the formal application with LoA, technical data, site plan, planning evidence, and application fee through the NESO portal."
+          },
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Receives and validates applications, manages the portal and biannual windows, checks completeness and LoA validity.",
+            "url": "https://www.neso.energy"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NESO CMP434 \u2014 Connections Reform",
+            "url": "https://www.neso.energy/industry-information/codes/cusc/modifications/cmp434-implementing-connections-reform"
+          },
+          {
+            "label": "NESO Connections Portal",
+            "url": "https://www.neso.energy/industry-information/connections"
+          }
+        ]
+      },
+      {
+        "id": "t-gate-assessment",
+        "name": "Gate Assessment (TMO4+)",
+        "timeline": "3-6 months",
+        "description": "Projects are assessed against Readiness and Strategic Alignment criteria under the TMO4+ gate system. NESO uses the G2CM methodology to test readiness (Land Route or Planning Route) and the CNDM to conduct network studies. Projects meeting both criteria proceed to Gate 2 (firm offer); others receive a Gate 1 (conditional) offer or are directed to reapply.",
+        "documents": [
+          {
+            "docId": "tmo4-plus",
+            "sections": "Full decision document",
+            "relevance": "The overarching framework approved by Ofgem that establishes the two-gate system, biannual windows, and \u2018first ready, first needed, first connected\u2019 principle."
+          },
+          {
+            "docId": "g2cm",
+            "sections": "Readiness criteria, Strategic Alignment mapping",
+            "relevance": "The definitive methodology for what a project must demonstrate: Land Route (100% acreage per Energy Density Table) or Planning Route (validated DCO/TCPA submission), plus strategic alignment with CP2030/SSEP/CSNP."
+          },
+          {
+            "docId": "cndm",
+            "sections": "Network design process, contingency screening",
+            "relevance": "Defines how NESO conducts the network studies behind each offer \u2014 the models, assumptions, and security criteria used to determine what reinforcement is needed and when."
+          },
+          {
+            "docId": "further-methodologies",
+            "sections": "Project Designation, hybrid treatment",
+            "relevance": "Covers technologies not cleanly addressed by G2CM: hybrid sites (solar+BESS), long-duration storage, interconnectors, and the project designation process."
+          },
+          {
+            "docId": "nets-sqss",
+            "sections": "Chapters 2-4 \u2014 Security criteria",
+            "relevance": "The security and quality standards used by CNDM network studies to determine whether the network can accommodate the connection and what reinforcement works are required."
+          },
+          {
+            "docId": "cusc",
+            "sections": "CMP434/CMP435 \u2014 Gate system rules",
+            "relevance": "The legal implementation of the TMO4+ gate system within the CUSC code \u2014 the binding rules for how NESO must conduct the assessment and issue offers."
+          }
+        ],
+        "entities": [
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Conducts gate assessment: applies G2CM readiness criteria, runs CNDM network studies, determines Gate 1 vs Gate 2 outcome for each project.",
+            "url": "https://www.neso.energy"
+          },
+          {
+            "name": "Ofgem",
+            "fullName": "Office of Gas and Electricity Markets",
+            "type": "regulator",
+            "role": "Sets the framework, approved TMO4+ decision and methodologies, resolves disputes on gate assessment outcomes.",
+            "url": "https://www.ofgem.gov.uk"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NESO Design Documents & Methodologies",
+            "url": "https://www.neso.energy/industry-information/connections-reform/connections-reform-design-documents-and-methodologies"
+          },
+          {
+            "label": "Ofgem TMO4+ Decision",
+            "url": "https://www.ofgem.gov.uk/publications/decision-our-minded-position-connections-reform-cmp434-cmp435-and-gc0166"
+          }
+        ]
+      },
+      {
+        "id": "t-offer",
+        "name": "Connection Offer (Gate 1 / Gate 2)",
+        "timeline": "3 months from clock start",
+        "description": "NESO issues either a Gate 1 (conditional/indicative) or Gate 2 (confirmed) connection offer. Gate 2 offers include a firm connection date, connection location, required reinforcement works, and detailed cost breakdown. Gate 1 offers are indicative with no securities required \u2014 the project can reapply at the next biannual window. The applicant has 90 calendar days to accept or reject.",
+        "documents": [
+          {
+            "docId": "cusc",
+            "sections": "Section 2 \u2014 Offer terms; Section 4 \u2014 Agreement templates",
+            "relevance": "Section 2 defines the offer terms, 90-day acceptance window, and conditions. Section 4 provides the Bilateral Connection Agreement and Construction Agreement templates that form part of the offer."
+          },
+          {
+            "docId": "cndm",
+            "sections": "Network design outputs",
+            "relevance": "The network design underpinning the offer: connection point, reinforcement works scope, milestone dates, and the technical basis for the connection date in the offer."
+          },
+          {
+            "docId": "grid-code",
+            "sections": "Connection Conditions (CC)",
+            "relevance": "The technical requirements (fault ride-through, reactive capability, power quality, communications) that will be incorporated into the connection offer and bilateral agreement."
+          },
+          {
+            "docId": "stc",
+            "sections": "Section F \u2014 Construction & energisation procedures",
+            "relevance": "Governs how the Transmission Owner will deliver the physical works \u2014 the TO\u2019s construction procedures and timelines feed directly into the offer terms."
+          },
+          {
+            "docId": "nets-sqss",
+            "sections": "Security standards driving reinforcement scope",
+            "relevance": "The security criteria that determine the reinforcement scope in the offer \u2014 N-1/N-1-1 criteria, fault level limits, and voltage standards that drive the required works."
+          }
+        ],
+        "entities": [
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Issues the connection offer (Gate 1 or Gate 2), specifying connection point, works, costs, milestones, and target energisation date.",
+            "url": "https://www.neso.energy"
+          },
+          {
+            "name": "Transmission Owner",
+            "fullName": "NGET / SPT / SHET",
+            "type": "builder",
+            "role": "Provides TO-side cost estimates, construction timelines, and design information that feed into the connection offer terms.",
+            "url": "https://www.nationalgrid.com/electricity-transmission"
+          },
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Receives and evaluates the connection offer; has 90 calendar days to accept, reject, or refer to Ofgem for determination."
+          }
+        ],
+        "sources": [
+          {
+            "label": "CUSC Section 2 (Connection)",
+            "url": "https://www.neso.energy/document/91351/download"
+          },
+          {
+            "label": "NESO Connection Offers",
+            "url": "https://www.neso.energy/industry-information/connections/your-connections-journey"
+          }
+        ]
+      },
+      {
+        "id": "t-contract",
+        "name": "Offer Acceptance & Contract Signing",
+        "timeline": "90 days to accept",
+        "description": "The applicant accepts the offer within 90 calendar days and enters into a Bilateral Connection Agreement (BCA) with NESO and a Construction Agreement (CA) with the relevant Transmission Owner. Security deposits must be posted as a percentage of construction costs. The Progression Commitment Fee (\u00a32,500/MW rising to \u00a310,000/MW) must also be paid to prevent queue hoarding.",
+        "documents": [
+          {
+            "docId": "cusc",
+            "sections": "Section 4 \u2014 BCA & CA; Section 15 \u2014 Securities",
+            "relevance": "Section 4 defines the Bilateral Connection Agreement and Construction Agreement \u2014 the binding contracts between developer, NESO, and TO. Section 15 sets the security deposit requirements and credit arrangements."
+          },
+          {
+            "docId": "grid-code",
+            "sections": "Connection Conditions (CC)",
+            "relevance": "The Grid Code Connection Conditions are incorporated by reference into the Bilateral Connection Agreement \u2014 the technical obligations the developer must meet throughout the life of the connection."
+          },
+          {
+            "docId": "stc",
+            "sections": "Section C \u2014 Commercial arrangements",
+            "relevance": "Governs the commercial relationship between NESO and the TO for delivering the contracted works \u2014 ensures the TO\u2019s obligations align with what NESO has committed to the customer."
+          },
+          {
+            "docId": "electricity-act-1989",
+            "sections": "s.9 (efficient system duty), s.16 (connection rights)",
+            "relevance": "The statutory framework underpinning the binding connection agreement: s.9 imposes a duty on licence holders to develop an efficient system; s.16 establishes the statutory basis for connection rights."
+          }
+        ],
+        "entities": [
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Accepts the connection offer, signs the BCA and CA, posts security deposits, and pays the Progression Commitment Fee (\u00a32,500/MW)."
+          },
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Counter-signs the Bilateral Connection Agreement, manages the connection queue, and monitors milestone compliance.",
+            "url": "https://www.neso.energy"
+          },
+          {
+            "name": "Transmission Owner",
+            "fullName": "NGET / SPT / SHET",
+            "type": "builder",
+            "role": "Signs the Construction Agreement committing to design and build the physical connection and any required reinforcement works.",
+            "url": "https://www.nationalgrid.com/electricity-transmission"
+          }
+        ],
+        "sources": [
+          {
+            "label": "Norton Rose Fulbright \u2014 TMO4+ Analysis",
+            "url": "https://www.nortonrosefulbright.com/en/knowledge/publications/0101e3b9/tmo4-connection-reform-proposals-receive-stamp-of-approval"
+          },
+          {
+            "label": "CUSC Section 4 (Agreements)",
+            "url": "https://www.neso.energy/industry-information/codes/cusc"
+          }
+        ]
+      },
+      {
+        "id": "t-construction",
+        "name": "Construction & Reinforcement Works",
+        "timeline": "2-7+ years",
+        "description": "The Transmission Owner designs and constructs the physical connection assets (substation bays, cables, transformers) and any required network reinforcement. The developer builds their side of the connection in parallel to the agreed specification. This is typically the longest phase, with duration depending on the scale of reinforcement needed and planning consent timescales.",
+        "documents": [
+          {
+            "docId": "stc",
+            "sections": "Section F \u2014 Construction procedures; Section A \u2014 Outage planning",
+            "relevance": "Section F governs the TO\u2019s construction, energisation, and commissioning processes. Section A covers outage planning needed to safely integrate the new connection with the live network."
+          },
+          {
+            "docId": "nets-sqss",
+            "sections": "Chapters 2-4 \u2014 Design standards",
+            "relevance": "The design and security standards that the TO must follow when designing reinforcement works and new connection assets \u2014 N-1 criteria, fault levels, and voltage windows."
+          },
+          {
+            "docId": "grid-code",
+            "sections": "Planning Code (PC); Connection Conditions (CC)",
+            "relevance": "PC governs data updates during construction (Week 24 submissions). CC specifies the technical standards the connection must be built to."
+          },
+          {
+            "docId": "esqcr-2002",
+            "sections": "Part IV \u2014 Distribution and Transmission safety",
+            "relevance": "Statutory safety standards for the construction of transmission assets: overhead line clearances, underground cable standards, substation safety, and earthing requirements."
+          },
+          {
+            "docId": "cusc",
+            "sections": "Section 4 \u2014 Construction Agreement milestones",
+            "relevance": "The Construction Agreement tracks milestone compliance and cost reconciliation during the build phase \u2014 missed milestones can trigger securities forfeiture."
+          }
+        ],
+        "entities": [
+          {
+            "name": "Transmission Owner",
+            "fullName": "NGET / SPT / SHET",
+            "type": "builder",
+            "role": "Designs and builds the connection assets and network reinforcement works to NETS SQSS and ESQCR standards.",
+            "url": "https://www.nationalgrid.com/electricity-transmission"
+          },
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Coordinates construction across multiple projects, plans network outages, and manages the overall programme timeline.",
+            "url": "https://www.neso.energy"
+          },
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Builds their side of the connection (generation plant, cables, switchgear, control systems) to the specification in the bilateral agreement."
+          }
+        ],
+        "sources": [
+          {
+            "label": "Regen \u2014 Transmission Construction Timelines",
+            "url": "https://www.regen.co.uk/insights/government-publishes-plans-to-half-the-lead-time-for-major-transmission-construction"
+          }
+        ]
+      },
+      {
+        "id": "t-compliance",
+        "name": "Grid Code Compliance Testing",
+        "timeline": "Starts 18-24 months before energisation",
+        "description": "Approximately 18-24 months before the target energisation date, the developer must begin demonstrating that their plant meets all applicable Grid Code requirements. This includes power quality, fault ride-through, reactive power capability, frequency response, and communications/control system testing. NESO and the TO review compliance evidence and may require on-site witnessed tests.",
+        "documents": [
+          {
+            "docId": "grid-code",
+            "sections": "Connection Conditions (CC), especially CC.6 \u2014 Compliance process",
+            "relevance": "The definitive technical requirements the plant must meet: fault ride-through curves, reactive capability, power quality limits, frequency response, and the formal compliance testing and reporting process (CC.6)."
+          },
+          {
+            "docId": "nets-sqss",
+            "sections": "Chapters 5-6 \u2014 Operational and quality standards",
+            "relevance": "The operational security and power quality standards the connected plant must satisfy, including voltage performance, frequency range, and fault level contribution."
+          },
+          {
+            "docId": "esqcr-2002",
+            "sections": "Part III \u2014 Generation; Reg 24 & 26",
+            "relevance": "Statutory safety requirements for generators: Reg 24 (generator installations must not cause danger) and Reg 26 (generators connected in parallel must have appropriate protection)."
+          }
+        ],
+        "entities": [
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Conducts compliance testing, prepares evidence packages, and submits compliance reports to NESO. Arranges on-site witnessed tests."
+          },
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Reviews compliance evidence against Grid Code Connection Conditions, may require additional tests or witnessed demonstrations.",
+            "url": "https://www.neso.energy"
+          },
+          {
+            "name": "Transmission Owner",
+            "fullName": "NGET / SPT / SHET",
+            "type": "builder",
+            "role": "Witnesses on-site compliance tests at the connection point and confirms the physical connection meets design specifications.",
+            "url": "https://www.nationalgrid.com/electricity-transmission"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NESO Compliance Process",
+            "url": "https://www.neso.energy/industry-information/connections/compliance-process"
+          }
+        ]
+      },
+      {
+        "id": "t-energisation",
+        "name": "Energisation & Operational Notifications",
+        "timeline": "24-month ION period",
+        "description": "Once construction and compliance are confirmed, NESO issues an Energisation Operational Notification (EON) authorising the connection to be energised. This is followed by an Interim Operational Notification (ION) for initial export, valid for 24 months while final compliance is confirmed. The Final Operational Notification (FON) is then issued for full commercial operation. The plant is commissioned, synchronised with the grid, and enters the Balancing Mechanism.",
+        "documents": [
+          {
+            "docId": "grid-code",
+            "sections": "OC2 \u2014 Operational Notifications; OC5 \u2014 Testing; BC \u2014 Balancing Code",
+            "relevance": "OC2 defines the EON/ION/FON notification process. OC5 covers system testing procedures. BC governs the plant\u2019s entry into the Balancing Mechanism for market participation."
+          },
+          {
+            "docId": "cusc",
+            "sections": "Section 3 \u2014 TNUoS and BSUoS charging",
+            "relevance": "Once energised, the plant becomes liable for Transmission Network Use of System (TNUoS) and Balancing Services Use of System (BSUoS) charges under CUSC Section 3."
+          },
+          {
+            "docId": "stc",
+            "sections": "Section D \u2014 Safety from the System",
+            "relevance": "Governs the safety coordination between NESO and the TO during the energisation process \u2014 switching sequences, safety rules, and isolation procedures."
+          },
+          {
+            "docId": "electricity-act-1989",
+            "sections": "Ongoing licence obligations",
+            "relevance": "The generating station is now an operational licensee with ongoing statutory obligations under its generation licence, including compliance with all industry codes."
+          }
+        ],
+        "entities": [
+          {
+            "name": "NESO",
+            "fullName": "National Energy System Operator",
+            "type": "operator",
+            "role": "Issues EON, ION, and FON; authorises grid synchronisation and Balancing Mechanism entry.",
+            "url": "https://www.neso.energy"
+          },
+          {
+            "name": "Developer / Applicant",
+            "type": "applicant",
+            "role": "Commissions plant, completes final compliance, enters commercial operation and the Balancing Mechanism."
+          },
+          {
+            "name": "Transmission Owner",
+            "fullName": "NGET / SPT / SHET",
+            "type": "builder",
+            "role": "Energises the physical connection under NESO\u2019s instruction, carries out switching operations.",
+            "url": "https://www.nationalgrid.com/electricity-transmission"
+          }
+        ],
+        "sources": [
+          {
+            "label": "NESO Compliance Process (EON/ION/FON)",
+            "url": "https://www.neso.energy/industry-information/connections/compliance-process"
+          },
+          {
+            "label": "Grid Code OC2 \u2014 Operational Notifications",
+            "url": "https://www.neso.energy/industry-information/codes/grid-code"
+          }
+        ]
+      }
+    ]
+  },
+  "distribution": {
+    "title": "Distribution Connection Process (<132 kV)",
+    "voltageLevel": "<132 kV",
+    "overview": "Distribution connections are managed by six DNO groups across Great Britain. Small installations (\u22643.68 kW) use the G98 \u2018Fit and Inform\u2019 standard \u2014 no pre-approval needed. Larger systems (>3.68 kW) require formal G99 pre-approval from the DNO. Since April 2023, \u2018fully shallow\u2019 connection charging means customers only pay for extension assets, not upstream reinforcement. Flexible connections via DERMS have also been available since April 2023.",
+    "stats": {
+      "typicalTimeline": "4 weeks \u2013 5 years",
+      "costRange": "\u00a31K-\u00a32M+",
+      "dnos": "6 DNO groups"
+    },
+    "paths": {
+      "g98": {
+        "name": "G98 Path \u2014 Fit & Inform (\u22643.68 kW)",
+        "description": "For small installations up to 3.68 kW per phase (e.g., single-phase residential solar, small batteries). The installer fits the equipment first and notifies the DNO within 28 days \u2014 no pre-approval is required.",
+        "stages": [
+          {
+            "id": "d-g98-install",
+            "name": "Install System (G98 Fit & Inform)",
+            "timeline": "1-5 days",
+            "description": "For installations up to 3.68 kW per phase, the MCS-accredited installer fits the equipment first with no DNO pre-approval. The system must comply with G98 engineering standards including protection settings (over/under voltage, over/under frequency, Rate of Change of Frequency, vector shift).",
+            "documents": [
+              {
+                "docId": "g99",
+                "sections": "G98 (sister document) \u2014 Type A protection settings",
+                "relevance": "G98 is the Engineering Recommendation governing installations \u22643.68 kW. It specifies the protection settings the installer must configure: over/under voltage, over/under frequency, RoCoF, and vector shift thresholds."
+              },
+              {
+                "docId": "d-code",
+                "sections": "DPC5 \u2014 Embedded generation requirements",
+                "relevance": "The Distribution Code DPC5 sets the overarching technical framework for all embedded generation on the distribution network, including G98 installations."
+              },
+              {
+                "docId": "esqcr-2002",
+                "sections": "Reg 24 (generator safety), Reg 26 (parallel connection)",
+                "relevance": "Reg 24 requires that generator installations must not cause danger or interference with supply quality. Reg 26 sets the fundamental basis for protection settings when generation is connected in parallel with the network."
+              }
+            ],
+            "entities": [
+              {
+                "name": "MCS-accredited Installer",
+                "type": "installer",
+                "role": "Installs the generation equipment (\u22643.68 kW) to G98 standards, configures protection settings, and is responsible for compliance."
+              },
+              {
+                "name": "Customer / Developer",
+                "type": "applicant",
+                "role": "Commissions the installation; responsible for ongoing maintenance and compliance of the connected equipment."
+              }
+            ],
+            "sources": [
+              {
+                "label": "ENA G98/G99 Forms & Guidance",
+                "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+              }
+            ]
+          },
+          {
+            "id": "d-g98-notify",
+            "name": "Notify DNO (within 28 days)",
+            "timeline": "Within 28 days of commissioning",
+            "description": "The installer notifies the DNO within 28 days of commissioning using the ENA\u2019s online notification form. This is a post-installation notification, not a request for permission. The form includes equipment details, protection settings, and installer certification.",
+            "documents": [
+              {
+                "docId": "d-code",
+                "sections": "DDRC \u2014 Distribution Data Registration Code",
+                "relevance": "The DDRC defines the data registration and notification requirements for new embedded generation on the distribution network."
+              },
+              {
+                "docId": "dcusa",
+                "sections": "Notification obligations",
+                "relevance": "DCUSA defines the data exchange obligations between parties connected to the distribution network, including the requirement to notify the DNO of new generation."
+              }
+            ],
+            "entities": [
+              {
+                "name": "MCS-accredited Installer",
+                "type": "installer",
+                "role": "Submits the G98 notification form to the DNO via the ENA online portal within 28 days of commissioning."
+              },
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Receives and processes the notification; updates network records with the new embedded generation data.",
+                "url": "https://www.energynetworks.org"
+              }
+            ],
+            "sources": [
+              {
+                "label": "ENA G98/G99 Notification Forms",
+                "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+              },
+              {
+                "label": "Capture Energy \u2014 G98/G99 Guide",
+                "url": "https://www.capture.energy/blog/g98-and-g99-applications-for-solar-and-battery-storage"
+              }
+            ]
+          },
+          {
+            "id": "d-g98-check",
+            "name": "DNO Compliance Check",
+            "timeline": "Up to 4 weeks",
+            "description": "The DNO reviews the notification and may conduct a compliance check to ensure the installation meets G98 requirements and does not adversely affect the local network. In most cases this is administrative; physical inspection is rare for G98 installations.",
+            "documents": [
+              {
+                "docId": "d-code",
+                "sections": "DPC5 \u2014 Technical standards for embedded generation",
+                "relevance": "The DNO verifies the installation against DPC5 technical standards, particularly voltage impact and fault level contribution at the local network point."
+              },
+              {
+                "docId": "esqcr-2002",
+                "sections": "Part V \u2014 Supply to Consumers\u2019 Installations",
+                "relevance": "Safety compliance verification: the DNO confirms the installation does not breach ESQCR safety standards at the consumer\u2019s point of supply."
+              },
+              {
+                "docId": "dcusa",
+                "sections": "Guaranteed Standards of Performance",
+                "relevance": "DCUSA sets the DNO\u2019s guaranteed standards for processing notifications and responding to connection-related queries within defined timescales."
+              }
+            ],
+            "entities": [
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Reviews the G98 notification for compliance, updates network planning data, and may flag issues if the local network is constrained.",
+                "url": "https://www.energynetworks.org"
+              }
+            ],
+            "sources": [
+              {
+                "label": "Capture Energy \u2014 G98 Compliance",
+                "url": "https://www.capture.energy/blog/g98-and-g99-applications-for-solar-and-battery-storage"
+              }
+            ]
+          }
+        ]
+      },
+      "g99": {
+        "name": "G99 Path \u2014 Formal Application (>3.68 kW)",
+        "description": "For all installations above 3.68 kW per phase, formal pre-approval from the DNO is required before connection. This includes commercial and industrial solar, battery storage, wind, CHP, and large demand connections.",
+        "stages": [
+          {
+            "id": "d-g99-preapp",
+            "name": "Pre-application / Feasibility Request",
+            "timeline": "10-20 working days",
+            "description": "Applicants submit a pre-application enquiry to the DNO to get an indication of available capacity, likely connection costs, and constraints at the proposed location. DNOs must respond within 10 working days (simple) to 20 working days (complex). Optional but strongly recommended to avoid wasted application fees.",
+            "documents": [
+              {
+                "docId": "dcusa",
+                "sections": "Schedule 2 \u2014 CCCM (Common Connection Charging Methodology)",
+                "relevance": "The CCCM helps developers estimate connection costs. Since April 2023, charging is fully shallow \u2014 only extension asset costs, no reinforcement \u2014 which the pre-application response will confirm."
+              },
+              {
+                "docId": "d-code",
+                "sections": "DPC \u2014 Distribution Planning and Connection Code",
+                "relevance": "DPC defines the planning standards and capacity data the DNO uses to provide feasibility information. Developers can review publicly available capacity data."
+              }
+            ],
+            "entities": [
+              {
+                "name": "Developer / Applicant",
+                "type": "applicant",
+                "role": "Submits a pre-application enquiry specifying proposed capacity, technology type, and preferred location."
+              },
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Provides feasibility information including available capacity, likely costs, constraints, and recommended connection voltage level.",
+                "url": "https://www.energynetworks.org"
+              }
+            ],
+            "sources": [
+              {
+                "label": "NGED Guaranteed Standards",
+                "url": "https://connections.nationalgrid.co.uk/connection-guaranteed-standards-of-performance"
+              }
+            ]
+          },
+          {
+            "id": "d-g99-apply",
+            "name": "Formal G99 Application",
+            "timeline": "Application fee \u00a30-\u00a38K+",
+            "description": "Submit a Statement of Application Form (SAF) to the relevant DNO with full technical details: proposed capacity (kW/MW), technology type, single-line diagram, site plan, and project timeline. Application fees vary by voltage level and DNO. The G99 Form A1 must be completed for generation applications.",
+            "documents": [
+              {
+                "docId": "g99",
+                "sections": "Form A1 \u2014 Pre-connection application",
+                "relevance": "The G99 Form A1 is the standard pre-connection application form for all generation >3.68 kW. It captures technical data: capacity, technology, protection settings, fault contribution, and reactive capability."
+              },
+              {
+                "docId": "d-code",
+                "sections": "DPC5 \u2014 Embedded generation technical requirements",
+                "relevance": "DPC5 defines the technical standards the proposed installation must meet. The DNO uses these to assess the application and determine network impact."
+              },
+              {
+                "docId": "dcusa",
+                "sections": "Schedule 2 \u2014 CCCM; application fees",
+                "relevance": "DCUSA Schedule 2 defines the application fee structure and the Common Connection Charging Methodology that determines what the developer will pay."
+              },
+              {
+                "docId": "electricity-act-1989",
+                "sections": "s.16 \u2014 Duty to connect on request",
+                "relevance": "s.16 is the statutory basis for the right to apply for a distribution connection. It imposes a duty on DNOs to offer connection terms to any person requesting them."
+              }
+            ],
+            "entities": [
+              {
+                "name": "Developer / Applicant",
+                "type": "applicant",
+                "role": "Submits the SAF and G99 Form A1 with full technical details, single-line diagram, site plan, and application fee."
+              },
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Receives the formal application, validates completeness, and begins the technical assessment process.",
+                "url": "https://www.energynetworks.org"
+              }
+            ],
+            "sources": [
+              {
+                "label": "SolarGridCheck \u2014 G99 Application Guide",
+                "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+              },
+              {
+                "label": "ENA G99 Forms",
+                "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+              }
+            ]
+          },
+          {
+            "id": "d-g99-assess",
+            "name": "DNO Assessment & Connection Offer",
+            "timeline": "45-65 working days",
+            "description": "The DNO conducts a network impact assessment and issues a formal connection offer specifying the point of connection, required works, and costs. Under the Electricity Act, DNOs must issue offers within 45 working days (LV/HV) or 65 working days (EHV/132 kV). Since April 2023, charging is fully shallow \u2014 customers pay only for extension assets.",
+            "documents": [
+              {
+                "docId": "d-code",
+                "sections": "DPC \u2014 Planning and design standards",
+                "relevance": "The DPC defines the planning standards (security of supply, voltage limits, fault levels) the DNO applies when assessing whether the network can accommodate the new connection."
+              },
+              {
+                "docId": "dcusa",
+                "sections": "Schedule 2 \u2014 CCCM (fully shallow charging)",
+                "relevance": "Since April 2023, the CCCM requires fully shallow charging \u2014 the connecting customer pays only for sole-use extension assets. Reinforcement costs are socialised via DUoS."
+              },
+              {
+                "docId": "nets-sqss",
+                "sections": "Security standards (for EHV/132 kV connections)",
+                "relevance": "For larger connections at EHV or 132 kV distribution level, NETS SQSS security standards apply to the assessment, particularly where the connection interfaces with the transmission system."
+              },
+              {
+                "docId": "esqcr-2002",
+                "sections": "Part IV \u2014 Safety standards for offer design",
+                "relevance": "ESQCR safety standards are incorporated into the connection offer design \u2014 clearances, earthing, and voltage quality requirements that constrain the technical solution."
+              },
+              {
+                "docId": "electricity-act-1989",
+                "sections": "s.16 \u2014 Statutory timescales (45/65 working days)",
+                "relevance": "s.16 sets the statutory obligation on DNOs to issue connection offers within defined timescales, backed by Guaranteed Standards of Performance penalties."
+              }
+            ],
+            "entities": [
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Conducts the network impact assessment (power flow, fault level, voltage studies) and issues the formal connection offer with costs and timescales.",
+                "url": "https://www.energynetworks.org"
+              },
+              {
+                "name": "NESO",
+                "fullName": "National Energy System Operator",
+                "type": "operator",
+                "role": "Consulted for EHV/132 kV connections where the distribution connection interacts with the transmission system (T-D boundary coordination).",
+                "url": "https://www.neso.energy"
+              }
+            ],
+            "sources": [
+              {
+                "label": "NGED Guaranteed Standards of Performance",
+                "url": "https://connections.nationalgrid.co.uk/connection-guaranteed-standards-of-performance"
+              },
+              {
+                "label": "SolarGridCheck \u2014 G99 Assessment",
+                "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+              }
+            ]
+          },
+          {
+            "id": "d-g99-reinforce",
+            "name": "Reinforcement Decision / Flexible Connection",
+            "timeline": "Varies",
+            "description": "The DNO assessment determines whether the existing network can accommodate the new connection or if reinforcement works are required. In constrained areas, a flexible (curtailable) connection may be offered via Active Network Management (DERMS), allowing faster connection with managed curtailment instead of waiting for reinforcement.",
+            "documents": [
+              {
+                "docId": "d-code",
+                "sections": "DOC \u2014 Active Network Management arrangements",
+                "relevance": "The Distribution Operating Code DOC defines the Active Network Management (ANM) arrangements for flexible connections \u2014 how curtailment is managed in real-time by the DNO\u2019s DERMS platform."
+              },
+              {
+                "docId": "dcusa",
+                "sections": "Schedule 2 \u2014 CCCM (reinforcement cost socialisation)",
+                "relevance": "Since April 2023, reinforcement costs are socialised via DUoS under the CCCM. The developer\u2019s choice is between waiting for DNO-funded reinforcement or accepting a flexible connection."
+              }
+            ],
+            "entities": [
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Determines whether reinforcement is needed; offers standard or flexible connection options depending on local network constraints.",
+                "url": "https://www.energynetworks.org"
+              },
+              {
+                "name": "Developer / Applicant",
+                "type": "applicant",
+                "role": "Evaluates the trade-off: waiting for reinforcement (longer timeline, full access) vs. flexible connection (faster, subject to curtailment)."
+              }
+            ],
+            "sources": [
+              {
+                "label": "UKPN Flexible Connections",
+                "url": "https://www.ukpowernetworks.co.uk/new-electricity-connections/distributed-energy-resources-der-generation/flexible-connections"
+              }
+            ]
+          },
+          {
+            "id": "d-g99-accept",
+            "name": "Offer Acceptance & Payment",
+            "timeline": "30-90 days validity",
+            "description": "The applicant reviews the connection offer and accepts within the validity period (typically 30-90 days). An initial payment or deposit is made to secure the connection date. Applicants may negotiate terms or request an alternative design. Once accepted, the DNO schedules the works.",
+            "documents": [
+              {
+                "docId": "dcusa",
+                "sections": "Connection agreement terms; Guaranteed Standards",
+                "relevance": "DCUSA defines the connection agreement terms, payment schedules, and the Guaranteed Standards of Performance the DNO must meet (e.g., connection date commitments)."
+              },
+              {
+                "docId": "d-code",
+                "sections": "Technical terms in the connection agreement",
+                "relevance": "D-Code technical standards are incorporated into the connection agreement \u2014 the specification the installation must meet and the DNO\u2019s obligations for network design."
+              },
+              {
+                "docId": "electricity-act-1989",
+                "sections": "s.16 \u2014 Connection rights and obligations",
+                "relevance": "The statutory framework underpinning the binding connection agreement between the applicant and the DNO, including the right to dispute terms via Ofgem."
+              }
+            ],
+            "entities": [
+              {
+                "name": "Developer / Applicant",
+                "type": "applicant",
+                "role": "Accepts the connection offer within the validity period, pays the initial deposit or full connection charge."
+              },
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Confirms acceptance, schedules the connection works, and commits to the agreed connection date.",
+                "url": "https://www.energynetworks.org"
+              }
+            ],
+            "sources": [
+              {
+                "label": "SolarGridCheck \u2014 Offer Acceptance",
+                "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+              }
+            ]
+          },
+          {
+            "id": "d-g99-construct",
+            "name": "Construction & Installation",
+            "timeline": "6-24 months",
+            "description": "The DNO (or their approved Independent Connection Provider) carries out the connection works: laying cables, installing switchgear, upgrading substations if needed. The developer installs their own generation or demand equipment to the agreed specification. Duration depends on complexity: simple LV connections take weeks; EHV connections involving new primary substations can take 1-2 years.",
+            "documents": [
+              {
+                "docId": "d-code",
+                "sections": "DPC \u2014 Design standards; DOC \u2014 Operational procedures",
+                "relevance": "DPC provides the design standards for the connection works. DOC covers the operational procedures during construction, including safe switching and isolation."
+              },
+              {
+                "docId": "esqcr-2002",
+                "sections": "Part IV \u2014 Safety standards for construction",
+                "relevance": "Statutory safety standards for the construction of distribution assets: cable laying standards, switchgear ratings, earthing requirements, and overhead line clearances."
+              },
+              {
+                "docId": "dcusa",
+                "sections": "ICP/IDNO arrangements",
+                "relevance": "DCUSA defines the arrangements for Independent Connection Providers (ICPs) and IDNOs to carry out connection works as an alternative to the DNO, including adoption standards."
+              },
+              {
+                "docId": "nets-sqss",
+                "sections": "Security standards (if EHV connection)",
+                "relevance": "For larger EHV distribution connections, NETS SQSS security standards apply to the design and construction of the connection assets and any associated reinforcement."
+              }
+            ],
+            "entities": [
+              {
+                "name": "DNO (or ICP)",
+                "fullName": "Distribution Network Operator / Independent Connection Provider",
+                "type": "builder",
+                "role": "Carries out the connection works: cable installation, switchgear, substation construction or upgrades. ICPs may do contestable works.",
+                "url": "https://www.energynetworks.org"
+              },
+              {
+                "name": "Developer / Applicant",
+                "type": "applicant",
+                "role": "Installs their own generation or demand equipment (solar arrays, battery systems, switchgear) to the specification in the connection agreement."
+              }
+            ],
+            "sources": [
+              {
+                "label": "SolarGridCheck \u2014 Construction Phase",
+                "url": "https://solargridcheck.co.uk/blog/g99-application-guide"
+              }
+            ]
+          },
+          {
+            "id": "d-g99-commission",
+            "name": "Commissioning & Witness Test",
+            "timeline": "~1 day witness test",
+            "description": "The DNO inspects and tests the completed connection. G99 protection settings are configured and a formal witness test (Form A3) is conducted to verify compliance. Once all tests pass, the DNO energises the connection and the site enters commercial operation. Export and import limits are set as specified in the connection agreement.",
+            "documents": [
+              {
+                "docId": "g99",
+                "sections": "Form A2 \u2014 Commissioning; Form A3 \u2014 Witness Test",
+                "relevance": "Form A2 confirms the installation meets G99 requirements. Form A3 records the DNO-witnessed commissioning test: protection settings verification, trip testing, and operational checks."
+              },
+              {
+                "docId": "d-code",
+                "sections": "DOC \u2014 Operational commissioning procedures",
+                "relevance": "DOC defines the operational commissioning procedures: switching sequences, safety documentation, and the formal process for energising a new connection."
+              },
+              {
+                "docId": "esqcr-2002",
+                "sections": "Reg 26 \u2014 Parallel connection safety",
+                "relevance": "Reg 26 requires that generation connected in parallel with the distribution network has appropriate protection to prevent danger \u2014 the fundamental basis for the witness test."
+              }
+            ],
+            "entities": [
+              {
+                "name": "DNO",
+                "fullName": "Distribution Network Operator",
+                "type": "operator",
+                "role": "Witnesses the commissioning test (G99 Form A3), verifies protection settings, energises the connection, and sets export/import limits.",
+                "url": "https://www.energynetworks.org"
+              },
+              {
+                "name": "Developer / Applicant",
+                "type": "applicant",
+                "role": "Commissions the generation equipment, demonstrates compliance to the DNO witness, and enters commercial operation."
+              }
+            ],
+            "sources": [
+              {
+                "label": "ENA G99 Forms (A2/A3)",
+                "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+              },
+              {
+                "label": "G99 Issue 2 Guidance",
+                "url": "https://www.energynetworks.org/publications/all-g98-g99-forms"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
