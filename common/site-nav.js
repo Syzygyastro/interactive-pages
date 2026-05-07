@@ -4,6 +4,7 @@
     { label: "Process", href: "grid-interconnection-process/" },
     { label: "Funding", href: "grid-interconnection-funding/" },
     { label: "Docs", href: "grid-docs/" },
+    { label: "RIIO-ED", href: "riio-distribution/" },
     { label: "Studies Map", href: "grid_interconnection_concept_map_v2.html" },
     { label: "Funding Full", href: "AI_Grid_Interconnection_Funding_Landscape_2026.html" }
   ];
