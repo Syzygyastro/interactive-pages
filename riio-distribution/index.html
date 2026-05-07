@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIIO-ED2 &amp; RIIO-ED3 — GB Distribution Price Controls</title>
+<link rel="stylesheet" href="../common/site-nav.css">
+<script src="../common/site-nav.js" defer></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1a1d23;
+    line-height: 1.55;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #fff;
+    padding: 44px 20px 30px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(1.7rem, 4vw, 2.6rem);
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,0.72);
+    max-width: 760px;
+    margin: 0 auto 14px;
+    font-size: 0.96rem;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgba(255,255,255,0.66);
+    font-size: 0.85rem;
+  }
+  .hero-stat {
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+
+  /* ── TIMELINE ── */
+  .timeline-section {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 22px 20px 26px;
+  }
+  .timeline-inner { max-width: 1180px; margin: 0 auto; }
+  .timeline-title { font-size: 0.95rem; font-weight: 700; color: #1a1d23; margin-bottom: 4px; }
+  .timeline-sub { font-size: 0.82rem; color: #64748b; margin-bottom: 16px; }
+  .timeline-bar {
+    position: relative;
+    height: 88px;
+    background: #f1f5f9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .tl-segment {
+    position: absolute;
+    top: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    color: #fff;
+    font-weight: 600;
+    overflow: hidden;
+  }
+  .tl-segment .tl-period { font-size: 0.72rem; opacity: 0.85; font-weight: 500; }
+  .tl-segment.ed1 { background: #475569; left: 0%; width: 30.0%; }
+  .tl-segment.ed2 { background: #0ea5e9; left: 30.0%; width: 33.3%; }
+  .tl-segment.ed3 { background: #6366f1; left: 63.3%; width: 33.3%; }
+  .tl-segment.gap { background: #94a3b8; left: 96.6%; width: 3.4%; }
+  .tl-now {
+    position: absolute;
+    top: -6px; bottom: -6px;
+    width: 2px;
+    background: #ef4444;
+    z-index: 3;
+  }
+  .tl-now::after {
+    content: "Today (2026)";
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ef4444;
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tl-axis {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 0.7rem;
+    color: #94a3b8;
+    font-weight: 600;
+  }
+
+  /* ── TABS ── */
+  .tabs {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 54px;
+    z-index: 50;
+  }
+  .tabs-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+  .tab-btn {
+    background: none;
+    border: 0;
+    padding: 14px 16px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    font-family: inherit;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .tab-btn:hover { color: #1a1d23; }
+  .tab-btn.active { color: #0f172a; border-bottom-color: #0ea5e9; }
+
+  /* ── PANELS ── */
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .panel-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 20px 56px;
+  }
+
+  /* ── COMPARE GRID ── */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 760px) { .compare-grid { grid-template-columns: 1fr; } }
+
+  .control-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.05);
+  }
+  .control-card.ed2 { border-top: 4px solid #0ea5e9; }
+  .control-card.ed3 { border-top: 4px solid #6366f1; }
+  .cc-head { padding: 16px 18px 12px; }
+  .cc-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+  .ed2 .cc-tag { background: #e0f2fe; color: #0369a1; }
+  .ed3 .cc-tag { background: #e0e7ff; color: #4338ca; }
+  .cc-head h2 { font-size: 1.25rem; line-height: 1.2; }
+  .cc-period { font-size: 0.82rem; color: #64748b; margin-top: 2px; }
+  .cc-status { font-size: 0.78rem; margin-top: 6px; font-weight: 600; }
+  .ed2 .cc-status { color: #0369a1; }
+  .ed3 .cc-status { color: #4338ca; }
+
+  .cc-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 12px;
+    padding: 10px 18px;
+    border-top: 1px solid #f1f5f9;
+    font-size: 0.88rem;
+  }
+  .cc-row__label {
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .cc-row__value { color: #1a1d23; }
+  .cc-row__value strong { color: #0f172a; }
+  .cc-row__value .dim { color: #64748b; font-size: 0.82rem; }
+
+  /* ── KEY METRICS ── */
+  .metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+  .metric-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .metric-card .m-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #64748b;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .metric-card .m-value {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+  }
+  .metric-card .m-sub {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin-top: 3px;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .section-head {
+    margin-bottom: 12px;
+  }
+  .section-head h2 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+  .section-head p {
+    color: #64748b;
+    font-size: 0.9rem;
+  }
+  .panel-block { margin-top: 32px; }
+  .panel-block:first-child { margin-top: 0; }
+
+  /* ── DNO TABLE ── */
+  .dno-controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .filter-pill {
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 0.83rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .filter-pill:hover { border-color: #0f172a; color: #0f172a; }
+  .filter-pill.active { background: #0f172a; color: #fff; border-color: #0f172a; }
+
+  .dno-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+  }
+  .dno-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    border-left: 4px solid #94a3b8;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .dno-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(15,23,42,0.08);
+  }
+  .dno-card[data-group="UKPN"]  { border-left-color: #ef4444; }
+  .dno-card[data-group="NGED"]  { border-left-color: #f59e0b; }
+  .dno-card[data-group="SSEN"]  { border-left-color: #10b981; }
+  .dno-card[data-group="SPEN"]  { border-left-color: #3b82f6; }
+  .dno-card[data-group="ENWL"]  { border-left-color: #8b5cf6; }
+  .dno-card[data-group="NPg"]   { border-left-color: #ec4899; }
+  .dno-name { font-size: 1rem; font-weight: 700; }
+  .dno-area { font-size: 0.82rem; color: #64748b; margin-top: 2px; }
+  .dno-meta {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+    font-size: 0.78rem;
+    color: #475569;
+    flex-wrap: wrap;
+  }
+  .dno-meta b { color: #0f172a; }
+  .dno-tag {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #f1f5f9;
+    color: #475569;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+
+  /* ── OUTPUTS / FRAMEWORK ── */
+  .framework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+  }
+  .fw-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .fw-card h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .fw-card .fw-badge {
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: #0ea5e9;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 4px;
+  }
+  .fw-card p { font-size: 0.86rem; color: #4a5568; margin-bottom: 8px; }
+  .fw-card ul { padding-left: 16px; font-size: 0.84rem; color: #475569; }
+  .fw-card ul li { margin-bottom: 3px; }
+
+  /* ── INNOVATION ── */
+  .innov-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 14px;
+  }
+  .innov-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .innov-card .ic-name { font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
+  .innov-card .ic-amt {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0369a1;
+    letter-spacing: -0.5px;
+  }
+  .innov-card .ic-period { font-size: 0.78rem; color: #64748b; margin-bottom: 8px; }
+  .innov-card .ic-desc { font-size: 0.84rem; color: #475569; }
+
+  /* ── GA CALLOUT ── */
+  .ga-callout {
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+    border: 1px solid #f59e0b;
+    border-left: 4px solid #d97706;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-top: 14px;
+    font-size: 0.88rem;
+    color: #78350f;
+  }
+  .ga-callout strong {
+    display: block;
+    color: #7c2d12;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  /* ── CONNECTION REFORMS ── */
+  .reform-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .reform-item {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 18px;
+    border-left: 4px solid #0ea5e9;
+  }
+  .reform-item.ed3 { border-left-color: #6366f1; }
+  .reform-item h3 { font-size: 1rem; margin-bottom: 4px; }
+  .reform-item .reform-when {
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0369a1;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .reform-item.ed3 .reform-when { color: #4338ca; }
+  .reform-item p { font-size: 0.88rem; color: #4a5568; }
+
+  /* ── REFS ── */
+  .refs {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+  .refs h3 { font-size: 0.95rem; margin-bottom: 8px; }
+  .refs ul { list-style: none; }
+  .refs li { padding: 6px 0; font-size: 0.86rem; border-top: 1px solid #f1f5f9; }
+  .refs li:first-child { border-top: 0; }
+  .refs a { color: #0369a1; text-decoration: none; font-weight: 500; }
+  .refs a:hover { text-decoration: underline; }
+  .refs .ref-meta { color: #94a3b8; font-size: 0.78rem; margin-left: 8px; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px 32px;
+    color: #94a3b8;
+    font-size: 0.78rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 640px) {
+    .tabs { top: 0; position: relative; }
+    .cc-row { grid-template-columns: 1fr; gap: 2px; padding: 10px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>RIIO-ED2 &amp; RIIO-ED3</h1>
+  <div class="hero-sub">
+    Ofgem's price-control regime for the 14 GB electricity Distribution Network Operator (DNO)
+    licences. ED2 sets revenues and outputs through 2028; ED3 is being designed now and runs to 2033.
+  </div>
+  <div class="hero-stats">
+    <span class="hero-stat">14 DNO licences</span>
+    <span class="hero-stat">6 ownership groups</span>
+    <span class="hero-stat">~£22.2 bn ED2 totex</span>
+    <span class="hero-stat">~30 m connections</span>
+  </div>
+</header>
+
+<section class="timeline-section">
+  <div class="timeline-inner">
+    <div class="timeline-title">Distribution price-control timeline</div>
+    <div class="timeline-sub">Each control sets allowed revenue, outputs and incentives for a fixed period. ED3 design is in flight today.</div>
+    <div class="timeline-bar">
+      <div class="tl-segment ed1">RIIO-ED1<span class="tl-period">2015 – 2023 (8 yrs)</span></div>
+      <div class="tl-segment ed2">RIIO-ED2<span class="tl-period">2023 – 2028 (5 yrs)</span></div>
+      <div class="tl-segment ed3">RIIO-ED3<span class="tl-period">2028 – 2033 (proposed 5 yrs)</span></div>
+      <div class="tl-segment gap" style="left:96.6%; width:3.4%; font-size:0.7rem;">→</div>
+      <div class="tl-now" id="tlNow"></div>
+    </div>
+    <div class="tl-axis">
+      <span>2015</span><span>2019</span><span>2023</span><span>2026</span><span>2028</span><span>2033</span>
+    </div>
+  </div>
+</section>
+
+<nav class="tabs" aria-label="Sections">
+  <div class="tabs-inner" id="tabs">
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="compare">ED2 vs ED3</button>
+    <button class="tab-btn" data-tab="dnos">DNO Licensees</button>
+    <button class="tab-btn" data-tab="framework">Outputs &amp; Incentives</button>
+    <button class="tab-btn" data-tab="innovation">Innovation Funding</button>
+    <button class="tab-btn" data-tab="connections">Connection Reforms</button>
+    <button class="tab-btn" data-tab="ga-angle">Grid Agents Angle</button>
+    <button class="tab-btn" data-tab="refs">Sources</button>
+  </div>
+</nav>
+
+<!-- ═══ OVERVIEW ═══ -->
+<section class="panel active" id="panel-overview">
+  <div class="panel-inner">
+    <div class="metrics">
+      <div class="metric-card">
+        <div class="m-label">ED2 totex allowance</div>
+        <div class="m-value">£22.2 bn</div>
+        <div class="m-sub">Final Determinations, Nov 2022</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-label">ED2 baseline cost of equity</div>
+        <div class="m-value">4.75%</div>
+        <div class="m-sub">CPIH-real, notional gearing 60%</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-label">DNO customers</div>
+        <div class="m-value">~30 m</div>
+        <div class="m-sub">across England, Wales &amp; Scotland</div>
+      </div>
+      <div class="metric-card">
+        <div class="m-label">ED3 SSMD due</div>
+        <div class="m-value">2026</div>
+        <div class="m-sub">Sector-Specific Methodology Decision</div>
+      </div>
+    </div>
+
+    <div class="panel-block">
+      <div class="section-head">
+        <h2>What is RIIO?</h2>
+        <p>The framework Ofgem uses to set what monopoly network companies are allowed to earn — and what they have to deliver in return.</p>
+      </div>
+      <p style="font-size:0.95rem; color:#475569; max-width: 860px;">
+        <strong>RIIO</strong> stands for <em>Revenue = Incentives + Innovation + Outputs</em>. Each price-control period
+        (typically 5 years for ED2/ED3) Ofgem agrees with each DNO a <strong>totex</strong> allowance, a set of
+        <strong>outputs</strong> the DNO must deliver, and a package of <strong>incentives</strong> (financial and
+        reputational) that flex revenue up or down based on performance. The current control for distribution is
+        <strong>RIIO-ED2</strong>; the next is <strong>RIIO-ED3</strong>, which Ofgem is designing now.
+      </p>
+      <div class="ga-callout">
+        <strong>Why this matters to Grid Agents</strong>
+        Every DNO connection process, study workflow, system design choice, and innovation budget the team
+        sees referenced in the field is shaped by the active RIIO control. ED3 is the window where the
+        regulatory framing for AI-driven planning, automated curtailment, and anticipatory investment is
+        actually being written.
+      </div>
+    </div>
+
+    <div class="panel-block">
+      <div class="section-head">
+        <h2>Where the two controls stand today (May 2026)</h2>
+      </div>
+      <div class="compare-grid">
+        <div class="control-card ed2">
+          <div class="cc-head">
+            <span class="cc-tag">In force</span>
+            <h2>RIIO-ED2</h2>
+            <div class="cc-period">1 April 2023 → 31 March 2028</div>
+            <div class="cc-status">~38 % through delivery</div>
+          </div>
+          <div class="cc-row"><div class="cc-row__label">Stage</div>
+            <div class="cc-row__value">Mid-control. Annual Iteration Process (AIP) live; Use-it-or-lose-it (UIOLI) re-openers active for net-zero load growth.</div>
+          </div>
+          <div class="cc-row"><div class="cc-row__label">Big themes</div>
+            <div class="cc-row__value">Net-zero readiness, flexibility-first, digitalisation, resilience, vulnerable-customer outcomes.</div>
+          </div>
+        </div>
+
+        <div class="control-card ed3">
+          <div class="cc-head">
+            <span class="cc-tag">In design</span>
+            <h2>RIIO-ED3</h2>
+            <div class="cc-period">1 April 2028 → 31 March 2033 (proposed)</div>
+            <div class="cc-status">SSMC consulted 2025 · SSMD due 2026</div>
+          </div>
+          <div class="cc-row"><div class="cc-row__label">Stage</div>
+            <div class="cc-row__value">Methodology stage. Business Plans expected late 2026; Draft Determinations 2027; Final Determinations late 2027.</div>
+          </div>
+          <div class="cc-row"><div class="cc-row__label">Big themes</div>
+            <div class="cc-row__value">Anticipatory investment, Regional Energy Strategic Plans (RESP) integration, connection-reform alignment, AI / data-centre demand, whole-system planning.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPARE ═══ -->
+<section class="panel" id="panel-compare">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>RIIO-ED2 vs RIIO-ED3 — side by side</h2>
+      <p>How the two controls differ on scope, financial framework, allowances, and emphasis. ED3 figures are indicative — the final shape is being set in 2026–27.</p>
+    </div>
+    <div class="compare-grid" id="compareGrid"></div>
+  </div>
+</section>
+
+<!-- ═══ DNOs ═══ -->
+<section class="panel" id="panel-dnos">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>The 14 GB DNO licences</h2>
+      <p>14 distribution licences operated by 6 ownership groups. Each negotiates its own RIIO-ED business plan and totex allowance.</p>
+    </div>
+    <div class="dno-controls" id="dnoFilters"></div>
+    <div class="dno-grid" id="dnoGrid"></div>
+  </div>
+</section>
+
+<!-- ═══ FRAMEWORK ═══ -->
+<section class="panel" id="panel-framework">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>Outputs &amp; incentives — how DNOs are held to account</h2>
+      <p>Each control is built from a stack of obligations, deliverables, and incentives. These are the levers that change DNO behaviour.</p>
+    </div>
+    <div class="framework-grid" id="fwGrid"></div>
+    <div class="ga-callout">
+      <strong>Grid Agents angle</strong>
+      Most ODI-Fs that touch connection customers (TTC, ICE, customer-satisfaction surveys, complaints metrics)
+      are exactly the metrics an AI-assisted connection workflow can move. That is the financial case
+      a DNO sponsor needs to bring an external tool through procurement.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INNOVATION ═══ -->
+<section class="panel" id="panel-innovation">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>Innovation funding under ED2</h2>
+      <p>The two main mechanisms DNOs use to fund partner work — both already cited across our funding-landscape page.</p>
+    </div>
+    <div class="innov-grid" id="innovGrid"></div>
+
+    <div class="panel-block">
+      <div class="section-head">
+        <h2>What's likely to change in ED3</h2>
+      </div>
+      <div class="framework-grid" id="ed3InnovGrid"></div>
+    </div>
+
+    <div class="ga-callout">
+      <strong>Grid Agents angle</strong>
+      For a startup, NIA is the lowest-friction entry — DNO-led, rolling, &lt;£2 m typical project size, partners
+      keep IP. SIF Discovery → Alpha → Beta gives you a path to scaled deployment funding. The funding-landscape page
+      already maps the DNOs with the largest budgets and the fewest active partners.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONNECTIONS ═══ -->
+<section class="panel" id="panel-connections">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>Connection-relevant provisions</h2>
+      <p>What ED2 changed for distribution connections, and where ED3 is heading.</p>
+    </div>
+    <div class="reform-list" id="reformList"></div>
+  </div>
+</section>
+
+<!-- ═══ GA ANGLE ═══ -->
+<section class="panel" id="panel-ga-angle">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>Why both controls matter to Grid Agents</h2>
+      <p>Concrete hooks for AI-assisted connection workflows.</p>
+    </div>
+    <div class="framework-grid" id="gaGrid"></div>
+  </div>
+</section>
+
+<!-- ═══ REFERENCES ═══ -->
+<section class="panel" id="panel-refs">
+  <div class="panel-inner">
+    <div class="section-head">
+      <h2>Primary sources</h2>
+      <p>Direct links to the Ofgem documents that define each control.</p>
+    </div>
+    <div class="refs">
+      <ul>
+        <li><a href="https://www.ofgem.gov.uk/publications/riio-ed2-final-determinations" target="_blank" rel="noopener">RIIO-ED2 Final Determinations</a><span class="ref-meta">Ofgem · Nov 2022</span></li>
+        <li><a href="https://www.ofgem.gov.uk/publications/riio-ed2-final-determinations-core-methodology" target="_blank" rel="noopener">RIIO-ED2 Final Determinations — Core Methodology Document</a><span class="ref-meta">Ofgem · Nov 2022</span></li>
+        <li><a href="https://www.ofgem.gov.uk/publications/decision-riio-ed2-business-plan-incentive" target="_blank" rel="noopener">RIIO-ED2 Annual Iteration Process &amp; UIOLI re-opener guidance</a><span class="ref-meta">Ofgem · ongoing</span></li>
+        <li><a href="https://www.ofgem.gov.uk/publications/riio-ed3-sector-specific-methodology-consultation-ssmc" target="_blank" rel="noopener">RIIO-ED3 Sector-Specific Methodology Consultation (SSMC)</a><span class="ref-meta">Ofgem · 2025</span></li>
+        <li><a href="https://www.ofgem.gov.uk/publications/riio-ed3-framework-decision" target="_blank" rel="noopener">RIIO-ED3 Framework Decision</a><span class="ref-meta">Ofgem · 2025</span></li>
+        <li><a href="https://www.ofgem.gov.uk/energy-policy-and-regulation/policy-and-regulatory-programmes/network-price-controls-2021-onwards-riio-2" target="_blank" rel="noopener">Ofgem RIIO-2 programme hub</a><span class="ref-meta">Ofgem · ongoing</span></li>
+        <li><a href="https://www.ofgem.gov.uk/publications/strategic-innovation-fund-sif" target="_blank" rel="noopener">Strategic Innovation Fund (SIF) — programme page</a><span class="ref-meta">Ofgem · UKRI</span></li>
+        <li><a href="https://smarter.energynetworks.org/" target="_blank" rel="noopener">ENA Smarter Networks Portal — innovation project register</a><span class="ref-meta">Energy Networks Association</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">
+  Indicative figures synthesised from public Ofgem documents (RIIO-ED2 Final Determinations Nov 2022; RIIO-ED3 SSMC 2025).
+  Annual Iteration adjustments, indexation and re-openers will move ED2 numbers; ED3 figures are pre-Final Determination.
+</div>
+
+<script>
+(function () {
+  // ── TABS ──────────────────────────────────────────────
+  const tabsRoot = document.getElementById("tabs");
+  tabsRoot.addEventListener("click", function (e) {
+    const btn = e.target.closest(".tab-btn");
+    if (!btn) return;
+    const tab = btn.dataset.tab;
+    tabsRoot.querySelectorAll(".tab-btn").forEach(b => b.classList.toggle("active", b === btn));
+    document.querySelectorAll(".panel").forEach(p => {
+      p.classList.toggle("active", p.id === "panel-" + tab);
+    });
+  });
+
+  // ── TIMELINE NOW MARKER ───────────────────────────────
+  // Timeline runs 2015 → 2034 (19 years). Today (May 2026) → ~58.0%
+  const start = 2015, end = 2034;
+  const today = new Date();
+  const yrs = today.getUTCFullYear() + (today.getUTCMonth() / 12);
+  const pct = Math.max(0, Math.min(100, ((yrs - start) / (end - start)) * 100));
+  const nowEl = document.getElementById("tlNow");
+  if (nowEl) nowEl.style.left = pct.toFixed(1) + "%";
+
+  // ── COMPARE GRID DATA ─────────────────────────────────
+  const compareRows = [
+    { label: "Period",            ed2: "1 Apr 2023 → 31 Mar 2028 (5 yrs)", ed3: "1 Apr 2028 → 31 Mar 2033 (proposed 5 yrs)" },
+    { label: "Status",            ed2: "<strong>In force</strong> · mid-control",      ed3: "<strong>In design</strong> · SSMC consulted 2025, SSMD due 2026" },
+    { label: "Total totex",       ed2: "<strong>~£22.2 bn</strong> baseline allowance", ed3: "<span class='dim'>TBD — expected materially higher to fund anticipatory load investment</span>" },
+    { label: "Cost of equity",    ed2: "4.75 % (CPIH-real, baseline)",                  ed3: "<span class='dim'>Open question; SSMC seeks views on indexation &amp; CAPM parameters</span>" },
+    { label: "Cost of debt",      ed2: "Calibrated trailing-average index (iBoxx-based)", ed3: "<span class='dim'>Likely refined indexation methodology</span>" },
+    { label: "Notional gearing",  ed2: "60 %",                                          ed3: "<span class='dim'>Under review</span>" },
+    { label: "Totex sharing factor", ed2: "Differentiated by DNO (~50 % typical)",      ed3: "<span class='dim'>Under review — anticipatory investment likely needs higher protection</span>" },
+    { label: "Innovation funding",ed2: "NIA (DNO-led) + SIF (Ofgem/UKRI) · est. £450 m+", ed3: "NIA + SIF expected to continue; SIF challenges set against ED3 strategic priorities" },
+    { label: "Outputs framework", ed2: "Licence Obligations · ODI-F · ODI-R · PCDs · CVP", ed3: "Likely simpler, fewer but more strategic outputs aligned with RESP" },
+    { label: "Planning hook",     ed2: "DFES per DNO; pre-RESP",                        ed3: "<strong>RESP integration mandatory</strong> — NESO Regional Energy Strategic Plans drive needs case" },
+    { label: "Connection link",   ed2: "Pre-CMP434/435 connection regime; queue-management early days", ed3: "<strong>Post-Connections-Reform</strong> — gate-2/queue rules and TMO4+-era allocation methodology baked in" },
+    { label: "Digitalisation",    ed2: "DSAP &amp; data-best-practice obligations",     ed3: "<span class='dim'>SSMC signals deeper data-sharing &amp; AI-readiness expectations</span>" }
+  ];
+
+  const cg = document.getElementById("compareGrid");
+  cg.innerHTML = `
+    <div class="control-card ed2">
+      <div class="cc-head"><span class="cc-tag">RIIO-ED2</span><h2>Current control</h2><div class="cc-period">In force 2023 – 2028</div></div>
+      ${compareRows.map(r => `
+        <div class="cc-row">
+          <div class="cc-row__label">${r.label}</div>
+          <div class="cc-row__value">${r.ed2}</div>
+        </div>`).join("")}
+    </div>
+    <div class="control-card ed3">
+      <div class="cc-head"><span class="cc-tag">RIIO-ED3</span><h2>Next control</h2><div class="cc-period">Proposed 2028 – 2033</div></div>
+      ${compareRows.map(r => `
+        <div class="cc-row">
+          <div class="cc-row__label">${r.label}</div>
+          <div class="cc-row__value">${r.ed3}</div>
+        </div>`).join("")}
+    </div>
+  `;
+
+  // ── DNO DATA ──────────────────────────────────────────
+  const dnos = [
+    { lic: "EPN",   name: "Eastern Power Networks",                area: "East England (north of Thames, incl. Essex, Cambridgeshire)", group: "UKPN", customers: "3.7 m", note: "Largest UKPN licence by network length." },
+    { lic: "LPN",   name: "London Power Networks",                 area: "Greater London",                                              group: "UKPN", customers: "2.3 m", note: "Highest urban density on GB system." },
+    { lic: "SPN",   name: "South Eastern Power Networks",          area: "Kent, Sussex, parts of Surrey & SE London",                   group: "UKPN", customers: "2.3 m", note: "Heavy DG and EV growth on coast." },
+    { lic: "WMID",  name: "West Midlands",                         area: "Birmingham, Black Country, Staffordshire",                    group: "NGED", customers: "2.6 m", note: "NGED ex-WPD; CMA-precedent operator." },
+    { lic: "EMID",  name: "East Midlands",                         area: "Leicestershire, Nottinghamshire, Derbyshire, Lincolnshire",   group: "NGED", customers: "2.7 m", note: "Major embedded generation." },
+    { lic: "SWALES",name: "South Wales",                           area: "South Wales",                                                 group: "NGED", customers: "1.1 m", note: "Heavy industrial decarb pipeline." },
+    { lic: "SWEST", name: "South West",                            area: "Cornwall, Devon, Somerset, Bristol",                          group: "NGED", customers: "1.6 m", note: "DSO innovation leader (Cornwall)." },
+    { lic: "SHEPD", name: "Scottish Hydro Electric Power Distribution", area: "North Scotland, Highlands &amp; Islands",                group: "SSEN", customers: "0.8 m", note: "Largest geographic footprint; islanded networks." },
+    { lic: "SEPD",  name: "Southern Electric Power Distribution",  area: "Central Southern England (Berks, Hants, Oxford, S Coast)",    group: "SSEN", customers: "3.0 m", note: "AI/data-centre cluster in Slough &amp; Thames Valley." },
+    { lic: "SPD",   name: "SP Distribution",                       area: "Central &amp; Southern Scotland",                             group: "SPEN", customers: "2.0 m", note: "Glasgow/Edinburgh load centre." },
+    { lic: "SPMW",  name: "SP Manweb",                             area: "Merseyside, Cheshire, North &amp; Mid Wales",                 group: "SPEN", customers: "1.5 m", note: "Heavy offshore-wind connection volume." },
+    { lic: "ENWL",  name: "Electricity North West",                area: "Greater Manchester, Lancashire, Cumbria, Cheshire",           group: "ENWL", customers: "2.4 m", note: "Independent DNO; QUEST AI-optimisation flagship." },
+    { lic: "NPgY",  name: "Northern Powergrid (Yorkshire)",        area: "Yorkshire",                                                   group: "NPg",  customers: "2.4 m", note: "Berkshire Hathaway owned." },
+    { lic: "NPgNE", name: "Northern Powergrid (North East)",       area: "Tyne &amp; Wear, Durham, Northumberland",                     group: "NPg",  customers: "1.6 m", note: "Industrial decarbonisation hub (Teesside)." }
+  ];
+  const groupNames = {
+    UKPN: "UK Power Networks",
+    NGED: "National Grid Electricity Distribution",
+    SSEN: "SSEN Distribution",
+    SPEN: "SP Energy Networks",
+    ENWL: "Electricity North West",
+    NPg:  "Northern Powergrid"
+  };
+  const dnoFilters = document.getElementById("dnoFilters");
+  const dnoGrid = document.getElementById("dnoGrid");
+  const groupKeys = ["ALL"].concat(Object.keys(groupNames));
+  dnoFilters.innerHTML = groupKeys.map(g =>
+    `<button class="filter-pill ${g === "ALL" ? "active" : ""}" data-group="${g}">${g === "ALL" ? "All groups" : groupNames[g]}</button>`
+  ).join("");
+
+  function renderDnos(group) {
+    const list = group === "ALL" ? dnos : dnos.filter(d => d.group === group);
+    dnoGrid.innerHTML = list.map(d => `
+      <div class="dno-card" data-group="${d.group}">
+        <div class="dno-name">${d.name}</div>
+        <div class="dno-area">${d.area}</div>
+        <div class="dno-meta"><span><b>${d.customers}</b> customers</span><span>Licence: <b>${d.lic}</b></span></div>
+        <span class="dno-tag">${groupNames[d.group]}</span>
+        <p style="font-size:0.82rem; color:#475569; margin-top:8px">${d.note}</p>
+      </div>
+    `).join("");
+  }
+  dnoFilters.addEventListener("click", e => {
+    const btn = e.target.closest(".filter-pill"); if (!btn) return;
+    dnoFilters.querySelectorAll(".filter-pill").forEach(b => b.classList.toggle("active", b === btn));
+    renderDnos(btn.dataset.group);
+  });
+  renderDnos("ALL");
+
+  // ── OUTPUTS FRAMEWORK ─────────────────────────────────
+  const fw = [
+    { tag: "LO",     title: "Licence Obligations",
+      desc: "Hard rules in the licence. Must be met — no financial reward for compliance, but breach risks enforcement.",
+      items: ["Connection offers within statutory timescales", "Network performance &amp; safety", "Vulnerable-customer obligations", "Data-best-practice &amp; digitalisation"] },
+    { tag: "PCD",    title: "Price Control Deliverables",
+      desc: "Specific outputs tied to specific allowances. If you took the money, you must deliver — or hand it back.",
+      items: ["LV-monitoring rollout", "Smart-meter use-case integration", "Cyber resilience uplifts", "Specific reinforcement schemes"] },
+    { tag: "ODI-F",  title: "Output Delivery Incentives — Financial",
+      desc: "Performance metrics with cash up-side and down-side. The metrics that move DNO behaviour week-to-week.",
+      items: ["Customer Interruptions (CI) &amp; Customer Minutes Lost (CML)", "Time to Connect (TTC)", "Incentive on Connections Engagement (ICE)", "Customer Satisfaction Survey (CSS)", "Complaints metric"] },
+    { tag: "ODI-R",  title: "Output Delivery Incentives — Reputational",
+      desc: "Tracked publicly but not financially rewarded. Used by Ofgem to spotlight performance.",
+      items: ["Stakeholder engagement", "Workforce diversity reporting", "Net-zero readiness reporting"] },
+    { tag: "UIOLI",  title: "Use-It-Or-Lose-It allowances",
+      desc: "Money set aside for forecast load growth. Released only when the DNO triggers and evidences delivery.",
+      items: ["Net-zero load-related expenditure", "EV-charger reinforcement", "LV monitoring expansion"] },
+    { tag: "Re-opener", title: "Re-openers",
+      desc: "Mid-period mechanisms to revisit allowances when the world changes faster than the price control.",
+      items: ["Net Zero re-opener", "Storm resilience re-opener", "Cyber re-opener", "Net-zero pre-construction"] },
+    { tag: "CVP",   title: "Consumer Value Propositions",
+      desc: "Bespoke benefits a DNO commits to over and above baseline. Rewarded if delivered.",
+      items: ["Examples vary per DNO Business Plan", "Often vulnerability or fuel-poverty focused"] },
+    { tag: "AIP",   title: "Annual Iteration Process",
+      desc: "Annual reconciliation that updates allowed revenue for indexation, performance, re-openers and corrections.",
+      items: ["Cost of debt update", "Tax &amp; pensions true-up", "Volume drivers", "Performance adjustments"] }
+  ];
+  document.getElementById("fwGrid").innerHTML = fw.map(f => `
+    <div class="fw-card">
+      <h3><span class="fw-badge">${f.tag}</span>${f.title}</h3>
+      <p>${f.desc}</p>
+      <ul>${f.items.map(i => `<li>${i}</li>`).join("")}</ul>
+    </div>
+  `).join("");
+
+  // ── INNOVATION ────────────────────────────────────────
+  const innov = [
+    { name: "Network Innovation Allowance (NIA)",
+      amt: "~£148 m", period: "ED2 electricity distribution allocation, 2023–2028",
+      desc: "DNO-led, rolling-call innovation budget. Typical project size £50 k–£2 m. Partners keep IP. Lowest-friction route into a DNO." },
+    { name: "Strategic Innovation Fund (SIF)",
+      amt: "~£300 m", period: "Run by Ofgem with UKRI across all RIIO-2 networks",
+      desc: "Themed challenges. Three-stage funnel: Discovery → Alpha → Beta. Beta funding routinely £5 m–£20 m per project. Cross-DNO consortia." },
+    { name: "Use-It-Or-Lose-It (UIOLI)",
+      amt: "Variable", period: "Triggered against forecast load growth",
+      desc: "Not innovation funding per se — but the budget DNOs spend when AI tools surface real connection demand earlier than the baseline plan." }
+  ];
+  document.getElementById("innovGrid").innerHTML = innov.map(i => `
+    <div class="innov-card">
+      <div class="ic-name">${i.name}</div>
+      <div class="ic-amt">${i.amt}</div>
+      <div class="ic-period">${i.period}</div>
+      <div class="ic-desc">${i.desc}</div>
+    </div>
+  `).join("");
+
+  const ed3innov = [
+    { tag: "Continuity", title: "NIA continues, indexed", desc: "Ofgem signalled NIA registrations continue beyond ED2 within the broader RIIO-2 envelope. Expect the same DNO-led shape with refreshed governance.", items: [] },
+    { tag: "SIF",        title: "SIF challenges aligned to ED3 strategic priorities", desc: "Future SIF rounds will plausibly bias toward whole-system planning, AI/automation, anticipatory connections, and flexibility-market integration.", items: [] },
+    { tag: "Rollout",    title: "Innovation → BAU pathway formalised", desc: "Ofgem has been clear that proven innovation must roll into baseline business plans. ED3 BPs will be expected to defend why an ED2-funded innovation has <em>not</em> been adopted.", items: [] },
+    { tag: "AI",         title: "AI &amp; data readiness signalled", desc: "SSMC language flags expectations on data sharing, model governance, and AI-assisted planning. Expect explicit obligations not just innovation pots.", items: [] }
+  ];
+  document.getElementById("ed3InnovGrid").innerHTML = ed3innov.map(f => `
+    <div class="fw-card">
+      <h3><span class="fw-badge" style="background:#6366f1">${f.tag}</span>${f.title}</h3>
+      <p>${f.desc}</p>
+    </div>
+  `).join("");
+
+  // ── CONNECTION REFORMS ────────────────────────────────
+  const reforms = [
+    { when: "ED2 — in force", control: "ed2", title: "Common Connection Charging Methodology (CCCM) settled",
+      body: "Distribution charging boundary clarified post-Significant Code Review. Demand customers see shallower charges; reinforcement costs increasingly socialised. Material for any quote-stage workflow." },
+    { when: "ED2 — in force", control: "ed2", title: "Time to Connect (TTC) ODI-F",
+      body: "Financial incentive on DNO connection lead times for low-voltage demand &amp; generation jobs. Direct link between connection-process automation and DNO revenue." },
+    { when: "ED2 — in force", control: "ed2", title: "Incentive on Connections Engagement (ICE)",
+      body: "Reputational incentive requiring DNOs to demonstrate active engagement with major connecting customers. Failure attracts penalties and Ofgem scrutiny." },
+    { when: "ED2 — re-opener", control: "ed2", title: "Net Zero re-opener",
+      body: "Mid-period mechanism allowing DNOs to bring forward additional allowances for load-related work driven by faster-than-planned electrification." },
+    { when: "ED2 → ED3 bridge", control: "ed2", title: "CMP434 / CMP435 connection-reform implementation",
+      body: "Transmission queue-management changes already cascading into distribution-connected projects via gate criteria. ED3 will need to bake in the post-reform regime." },
+    { when: "ED3 — in design", control: "ed3", title: "RESP integration",
+      body: "Regional Energy Strategic Plans (NESO-led) become the strategic input. Each DNO needs case will need to demonstrate alignment, not just bottom-up DFES." },
+    { when: "ED3 — in design", control: "ed3", title: "Anticipatory investment framework",
+      body: "ED3 SSMC explicitly opens the door to building ahead of firm demand for distribution. New cost-recovery and risk-sharing tools needed — with corresponding governance." },
+    { when: "ED3 — in design", control: "ed3", title: "AI/data-centre &amp; large-load category",
+      body: "Material distribution-connected hyperscale &amp; AI loads forcing new connection product design (flexible connections, time-of-connection terms). Live area through 2026–27." }
+  ];
+  document.getElementById("reformList").innerHTML = reforms.map(r => `
+    <div class="reform-item ${r.control}">
+      <div class="reform-when">${r.when}</div>
+      <h3>${r.title}</h3>
+      <p>${r.body}</p>
+    </div>
+  `).join("");
+
+  // ── GA ANGLE ──────────────────────────────────────────
+  const gaItems = [
+    { tag: "ED2",  title: "Move the ODI-F dial",
+      desc: "TTC, ICE, CSS and complaints are financial outputs — every minute taken out of a connection workflow is bookable. This is the line item a DNO's regulation team can defend internally." },
+    { tag: "ED2",  title: "Land NIA pilots fast",
+      desc: "DNO-led, rolling, partner keeps IP, &lt;£2 m typical. Pair with the funding-landscape page to target DNOs with under-deployed allocations and low partner counts." },
+    { tag: "ED2",  title: "Hook into UIOLI &amp; net-zero re-opener",
+      desc: "If our agents surface load growth earlier or more accurately than the baseline plan, the DNO can trigger UIOLI / re-opener money. Frame it as &ldquo;regulatory-allowance unlock&rdquo;." },
+    { tag: "ED3",  title: "Be in the SSMC/SSMD response loop",
+      desc: "ED3 methodology is being written now. AI-readiness, anticipatory investment, and connection-reform alignment are open questions where structured input from a connection-process toolmaker has weight." },
+    { tag: "ED3",  title: "Position for whole-system / RESP planning",
+      desc: "DNOs will need to defend their needs case against RESP. Tools that ingest both transmission and distribution signals in one model are natively well-placed." },
+    { tag: "ED3",  title: "AI-load product design",
+      desc: "Hyperscale/AI distribution connections force new flexible-connection products. The connection-engineering studies already mapped on this site are exactly the inputs that need automating." }
+  ];
+  document.getElementById("gaGrid").innerHTML = gaItems.map(g => `
+    <div class="fw-card">
+      <h3><span class="fw-badge" style="background:${g.tag === 'ED2' ? '#0ea5e9' : '#6366f1'}">${g.tag}</span>${g.title}</h3>
+      <p>${g.desc}</p>
+    </div>
+  `).join("");
+})();
+</script>
+</body>
+</html>
