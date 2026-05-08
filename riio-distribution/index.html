@@ -710,6 +710,199 @@
   .refs a:hover { text-decoration: underline; }
   .refs .ref-meta { color: #94a3b8; font-size: 0.78rem; margin-left: 8px; }
 
+  /* ── VALUE PROP v2 (zero-prior-knowledge rewrite) ── */
+  .vp2-tag {
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .vp2-tag.dist { background: #e0f2fe; color: #0369a1; }
+  .vp2-tag.tx   { background: #fef3c7; color: #92400e; }
+
+  .vp2-opener {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #f59e0b;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 18px;
+    font-size: 0.95rem;
+    color: #1a1d23;
+    line-height: 1.6;
+  }
+  .vp2-opener strong { color: #7c2d12; }
+
+  .vp2-headline {
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+    border: 1px solid #f59e0b;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  .vp2-headline .h-label {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #92400e;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .vp2-headline .h-value {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+  .vp2-headline .h-sub {
+    font-size: 0.92rem;
+    color: #78350f;
+    margin-top: 6px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .vp2-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  @media (max-width: 760px) { .vp2-board { grid-template-columns: 1fr; } }
+
+  .vp2-col {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .vp2-col.up   { border-top: 4px solid #16a34a; }
+  .vp2-col.down { border-top: 4px solid #dc2626; }
+  .vp2-col h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .vp2-col.up h3   { color: #14532d; }
+  .vp2-col.down h3 { color: #7f1d1d; }
+  .vp2-col h3 .arrow {
+    font-size: 1.3rem;
+    line-height: 1;
+  }
+
+  .vp2-item {
+    border-top: 1px solid #f1f5f9;
+    padding: 12px 0;
+  }
+  .vp2-item:first-of-type { border-top: 0; padding-top: 4px; }
+  .vp2-item .it-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+  .vp2-item .it-name {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: #0f172a;
+  }
+  .vp2-item .it-amt {
+    font-weight: 700;
+    font-size: 0.95rem;
+    white-space: nowrap;
+  }
+  .vp2-col.up   .it-amt { color: #15803d; }
+  .vp2-col.down .it-amt { color: #b91c1c; }
+  .vp2-item .it-plain {
+    font-size: 0.84rem;
+    color: #475569;
+    line-height: 1.55;
+  }
+  .vp2-item .it-plain b { color: #0f172a; font-weight: 600; }
+  .vp2-item .it-cite {
+    display: block;
+    font-size: 0.72rem;
+    color: #94a3b8;
+    margin-top: 4px;
+    font-style: italic;
+  }
+
+  .vp2-example {
+    background: linear-gradient(135deg, #ecfeff 0%, #f0f9ff 100%);
+    border: 1px solid #67e8f9;
+    border-left: 4px solid #0891b2;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 22px;
+    font-size: 0.9rem;
+    color: #0c4a6e;
+    line-height: 1.6;
+  }
+  .vp2-example b { color: #164e63; }
+  .vp2-example .ex-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #155e75;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .vp2-glossary {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+  }
+  .vp2-glossary h4 {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #475569;
+    margin-bottom: 10px;
+  }
+  .vp2-glossary dl {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 6px 14px;
+    font-size: 0.84rem;
+  }
+  @media (max-width: 640px) {
+    .vp2-glossary dl { grid-template-columns: 1fr; gap: 2px 0; }
+    .vp2-glossary dt { margin-top: 8px; }
+  }
+  .vp2-glossary dt {
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .vp2-glossary dd { color: #475569; }
+
+  .vp2-srcref {
+    font-size: 0.78rem;
+    color: #64748b;
+    text-align: right;
+    padding: 0 4px;
+  }
+  .vp2-srcref a { color: #0369a1; text-decoration: none; }
+  .vp2-srcref a:hover { text-decoration: underline; }
+
+  /* tab style for the second VP button */
+  .tab-btn.value-prop.tx-flavour { color: #b45309; }
+  .tab-btn.value-prop.tx-flavour.active { border-bottom-color: #f59e0b; }
+
   /* ── DISCLAIMER ── */
   .disclaimer {
     max-width: 1180px;
@@ -781,7 +974,8 @@
     <button class="tab-btn" data-tab="distribution">Distribution · ED2 vs ED3</button>
     <button class="tab-btn" data-tab="operators">Network Operators</button>
     <button class="tab-btn" data-tab="framework">Outputs &amp; Incentives</button>
-    <button class="tab-btn value-prop" data-tab="value-prop">★ Value Proposition</button>
+    <button class="tab-btn value-prop" data-tab="vp-d">★ VP · Distribution</button>
+    <button class="tab-btn value-prop" data-tab="vp-t">★ VP · Transmission</button>
     <button class="tab-btn" data-tab="innovation">Innovation Funding</button>
     <button class="tab-btn" data-tab="connections">Connection Reforms</button>
     <button class="tab-btn" data-tab="refs">Sources</button>
@@ -961,144 +1155,319 @@
   </div>
 </section>
 
-<!-- ═══ VALUE PROPOSITION ═══ -->
-<section class="panel" id="panel-value-prop">
+<!-- ═══ VALUE PROPOSITION · DISTRIBUTION ═══ -->
+<section class="panel" id="panel-vp-d">
   <div class="panel-inner">
 
-    <div class="vp-hero">
-      <h2>★ Grid Agents value proposition — sized in £</h2>
-      <p>
-        Networks don't buy AI tools because they're cool. They buy them because they move a regulated revenue
-        line. This section maps every major incentive and re-opener mechanism in T2/T3/ED2/ED3 to the specific
-        revenue lever Grid Agents can pull. Where a number appears in <strong>bold</strong>, it is taken from
-        an Ofgem published document; ranges and totex outperformance figures are calculations from those
-        sources. See the Sources tab for direct links.
-      </p>
+    <span class="vp2-tag dist">RIIO-ED2 · Distribution</span>
+    <div class="vp2-opener">
+      Ofgem is Britain's energy regulator. Every five years it sets how much each
+      <b>Distribution Network Operator (DNO)</b> — the company that owns the wires from the local substation to
+      your house — is allowed to earn from electricity bills. The control today is called <b>RIIO-ED2</b>
+      (2023 – 2028). Roughly half of a DNO's revenue is fixed in advance. The other half flexes up or down on
+      performance: <strong>bonuses for things customers and Ofgem care about, fines for failing them.</strong>
+      That flex is where Grid Agents earns money for the network.
     </div>
 
-    <!-- Prize pool sizing -->
-    <div class="section-head">
-      <h2>1 · The size of the prize</h2>
-      <p>Annual addressable revenue impact across GB networks under the active controls.</p>
+    <div class="vp2-headline">
+      <div class="h-label">Realistic annual swing · one DNO group</div>
+      <div class="h-value">£8 – 12 m / year</div>
+      <div class="h-sub">From performance bonuses captured plus penalties avoided. Across the 14 GB distribution licences (in 6 ownership groups), the prize is materially larger.</div>
     </div>
-    <div class="prize-grid">
-      <div class="prize-card">
-        <div class="prize-label">IIS rewards under ED1</div>
-        <div class="prize-value">~£123 m / yr</div>
-        <div class="prize-sub">Industry-wide IIS rewards across 2015–2023 (~£647 m total)</div>
+
+    <div class="vp2-board">
+      <!-- ↑ REWARDS -->
+      <div class="vp2-col up">
+        <h3><span class="arrow">↑</span> Rewards captured</h3>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Customer Satisfaction (CSS)</div>
+            <div class="it-amt">up to ~£8 m / yr</div>
+          </div>
+          <div class="it-plain">
+            Ofgem hires an independent firm to survey customers after a connection, fault or enquiry on a 1–10 scale.
+            Score above target → revenue bonus. <b>UK Power Networks earned £8.09 m</b> in Year 1 of ED2 — its
+            single biggest performance bonus.
+            <span class="it-cite">Source: Ofgem RIIO-2 Electricity Distribution Annual Report 2023-24.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Time to Connect (TTC)</div>
+            <div class="it-amt">~£1 – 2 m / yr per group</div>
+          </div>
+          <div class="it-plain">
+            Working days from a valid connection application to power flowing. Beat the DNO-specific target →
+            bonus. Across the industry, DNOs earned <b>£15.45 m combined</b> in the final ED1 year (2022-23).
+            <span class="it-cite">Source: Ofgem ED1 closeout reporting; NGED "Your Power Future" public dashboard.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Interruption performance (IIS)</div>
+            <div class="it-amt">~£10 – 20 m / yr per group</div>
+          </div>
+          <div class="it-plain">
+            Tracks customer minutes lost to power cuts. Across the 8-year ED1 control DNOs earned
+            <b>~£647 m in total</b> — about £123 m / yr industry-wide. Volatile: ED2 targets are tighter and
+            the upside is harder to reach.
+            <span class="it-cite">Source: Ofgem ED1 closeout reporting.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Totex retained share</div>
+            <div class="it-amt">~£3 – 5 m / yr per group</div>
+          </div>
+          <div class="it-plain">
+            Of every £1 the DNO spends below allowance, it keeps about 50p; the rest goes back to consumers in
+            cheaper bills. The <b>£22.2 bn</b> ED2 allowance is ~£4.4 bn / year industry-wide. A 2 % efficiency
+            saves ~£44 m, of which ~£22 m is retained, ÷ 6 ownership groups ≈ £3.7 m / yr each.
+            <span class="it-cite">Source: RIIO-ED2 Final Determinations, Ofgem 30 Nov 2022.</span>
+          </div>
+        </div>
       </div>
-      <div class="prize-card">
-        <div class="prize-label">TTC reward · ED1 final yr</div>
-        <div class="prize-value">£15.45 m</div>
-        <div class="prize-sub">Combined DNO group reward on Time-to-Connect, 2022-23</div>
-      </div>
-      <div class="prize-card">
-        <div class="prize-label">DNO totex outperformance</div>
-        <div class="prize-value">~£220 m / yr</div>
-        <div class="prize-sub">~50 % share of 5 % efficiency on £4.4 bn/yr ED2 base totex</div>
-      </div>
-      <div class="prize-card">
-        <div class="prize-label">ASTI portfolio cost</div>
-        <div class="prize-value">~£20 bn</div>
-        <div class="prize-sub">26 strategic projects with FOI/FCI exposure on TO P&amp;L</div>
-      </div>
-      <div class="prize-card">
-        <div class="prize-label">T3 ET baseline + pipeline</div>
-        <div class="prize-value">~£70 bn</div>
-        <div class="prize-sub">£10.7 bn ET upfront + ET-specific pipeline over £70 bn (within ~£90 bn whole-RIIO-3 envelope)</div>
-      </div>
-      <div class="prize-card">
-        <div class="prize-label">SIF programme to 2028</div>
-        <div class="prize-value">£450 m</div>
-        <div class="prize-sub">Ofgem / UKRI Strategic Innovation Fund across networks</div>
+
+      <!-- ↓ PENALTIES AVOIDED -->
+      <div class="vp2-col down">
+        <h3><span class="arrow">↓</span> Penalties avoided</h3>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Interruption (IIS) penalty</div>
+            <div class="it-amt">£m-scale per group</div>
+          </div>
+          <div class="it-plain">
+            The downside of the IIS metric above. <b>UK Power Networks took a £5.90 m penalty</b> in Year 1 of ED2
+            as targets re-baselined. Faster fault diagnosis, smarter restoration sequencing and automated customer
+            comms during incidents directly reduce exposure.
+            <span class="it-cite">Source: Ofgem RIIO-2 ED Annual Report 2023-24.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Major Connections (MCI)</div>
+            <div class="it-amt">cap ~0.9 % of base revenue</div>
+          </div>
+          <div class="it-plain">
+            Survey-based score from large connection customers (industrial sites, developers). Below threshold →
+            penalty. <b>SSE Southern took £0.74 m</b> in Year 1; Ofgem has signalled tighter thresholds going
+            forward.
+            <span class="it-cite">Source: Ofgem RIIO-2 ED Annual Report 2023-24.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">GSOP per-customer payouts</div>
+            <div class="it-amt">automatic</div>
+          </div>
+          <div class="it-plain">
+            <b>Guaranteed Standards of Performance</b> are statutory deadlines: typically 45 working days for a
+            low-voltage connection offer, 65 for high-voltage. Miss them and the DNO pays an automatic, fixed
+            amount per affected customer. Pre-screened applications and faster design turnaround keep the clock
+            under control.
+            <span class="it-cite">Source: Electricity (Standards of Performance) Regulations; Ofgem GSOP guidance.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Complaint penalties</div>
+            <div class="it-amt">small £m, rising</div>
+          </div>
+          <div class="it-plain">
+            Volume of complaints normalised by customer base. ED2 makes this <b>penalty-only</b> — no upside.
+            Year 1 industry totals stayed modest but trended upward as connection volumes surged.
+            <span class="it-cite">Source: Ofgem RIIO-2 ED Annual Report 2023-24.</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Mechanism flow -->
-    <div class="mech-flow">
-      <h3>How a £1 of network performance becomes £x of revenue</h3>
-      <div class="flow-row">
-        <div class="flow-mech"><div class="name">Allowed Revenue</div><div class="scope">Base · indexed</div></div>
-        <div class="flow-explain">Set at Final Determinations. Indexed annually for inflation, cost of debt, tax, pensions. <strong>Not where Grid Agents plays.</strong></div>
+    <div class="vp2-example">
+      <span class="ex-label">Worked example — totex retained share</span>
+      Imagine Ofgem sets a corner-shop owner's grocery budget at £400 / month. Spend £380 and you keep £10 of the
+      £20 saved — the rest goes back to customers as cheaper prices. Now scale that to a DNO group: the
+      <b>£22.2 bn ED2 allowance</b> is the budget; about <b>£4.4 bn / year</b> flows industry-wide. A 2 %
+      efficiency from less manual rework, fewer truck rolls and faster design hand-offs saves ~£44 m. Half flows
+      back as retained revenue. Across 6 ownership groups, that's ≈ <b>£3.7 m / yr each</b> — on top of the
+      ODI-F bonuses above.
+    </div>
+
+    <div class="vp2-glossary">
+      <h4>Plain-English glossary</h4>
+      <dl>
+        <dt>Ofgem</dt><dd>The UK energy regulator. Sets what networks can charge.</dd>
+        <dt>DNO</dt><dd>Distribution Network Operator. Owns the lower-voltage wires from the local substation to the consumer.</dd>
+        <dt>RIIO-ED2</dt><dd>Current 5-year price-control period for distribution (2023 – 2028). RIIO = Revenue = Incentives + Innovation + Outputs.</dd>
+        <dt>Totex</dt><dd>The network's total spending: day-to-day running costs + new equipment.</dd>
+        <dt>ODI-F</dt><dd>Output Delivery Incentive (Financial). Bonuses and fines applied based on performance.</dd>
+        <dt>GSOP</dt><dd>Guaranteed Standards of Performance. Statutory deadlines with automatic per-customer payouts if missed.</dd>
+        <dt>UIOLI</dt><dd>Use-It-Or-Lose-It. Extra allowance the DNO can claim against evidence of growing demand.</dd>
+      </dl>
+    </div>
+
+    <div class="vp2-srcref">Full source detail and document links in the <a href="#" data-tab-link="refs">Sources</a> tab.</div>
+  </div>
+</section>
+
+<!-- ═══ VALUE PROPOSITION · TRANSMISSION ═══ -->
+<section class="panel" id="panel-vp-t">
+  <div class="panel-inner">
+
+    <span class="vp2-tag tx">RIIO-T3 · Transmission &amp; ASTI</span>
+    <div class="vp2-opener">
+      Ofgem also regulates the three <b>Transmission Owners (TOs)</b> — National Grid Electricity Transmission,
+      SSEN Transmission, and SP Transmission — that own the high-voltage long-distance network across Great
+      Britain, plus <b>NESO</b>, the system operator. The control today is called <b>RIIO-T3</b> (2026 – 2031).
+      Alongside it sits <b>ASTI</b>: a ~£20 bn programme of 26 strategic projects (HVDC subsea links, onshore
+      reinforcement) being fast-tracked for delivery by 2030. On both, much of the TO's profit moves with delivery
+      and project performance. <strong>That movement is where Grid Agents earns money for the TO.</strong>
+    </div>
+
+    <div class="vp2-headline">
+      <div class="h-label">Per-project &amp; per-year £ at stake · one TO</div>
+      <div class="h-value">single-digit to high-£tens of millions</div>
+      <div class="h-sub">Per ASTI project on schedule and cost performance, plus annual £m-scale flex on system-performance metrics — set against a £10.7 bn T3 upfront baseline within a ~£90 bn whole-RIIO-3 envelope.</div>
+    </div>
+
+    <div class="vp2-board">
+      <!-- ↑ REWARDS -->
+      <div class="vp2-col up">
+        <h3><span class="arrow">↑</span> Rewards captured</h3>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Energy Not Supplied (ENS) reward</div>
+            <div class="it-amt">£m / yr per TO</div>
+          </div>
+          <div class="it-plain">
+            Tracks how much electricity wasn't delivered to customers because of TO outages, weighted by megawatt-hours.
+            Beat target → bonus; miss it → fine. Reported per-TO each year. Predictive asset-health and
+            contingency-planning agents reduce avoidable outages and shorten restoration time.
+            <span class="it-cite">Source: Ofgem RIIO-2 Electricity Transmission Annual Reports 2023-24, 2024-25.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Totex retained share (T3 stepped TIM)</div>
+            <div class="it-amt">band-dependent</div>
+          </div>
+          <div class="it-plain">
+            Spend below allowance → keep a banded share of the saving. ED2's flat ~50 % becomes a band-by-band
+            split under T3, with <b>GT3 (gas) at 39 %</b> retained. The cap on upside means smarter
+            <b>allocation</b> of effort — putting AI-led design automation where the band still pays well —
+            matters more in T3 than it did in T2.
+            <span class="it-cite">Source: RIIO-3 Final Determinations, Ofgem 4 Dec 2025.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Innovation funding (NIA + SIF)</div>
+            <div class="it-amt">£450 m programme</div>
+          </div>
+          <div class="it-plain">
+            Off-totex pots that pay for partnered pilot work. Ofgem and UKRI have <b>£450 m</b> allocated to the
+            Strategic Innovation Fund through 2028, plus per-licensee Network Innovation Allowance (typical
+            project £100 k – £2 m, partners keep IP). The route by which early Grid Agents work gets paid for
+            without touching the TO's totex.
+            <span class="it-cite">Source: Ofgem / UKRI SIF programme; RIIO-2 NIA decisions.</span>
+          </div>
+        </div>
       </div>
-      <div class="flow-row">
-        <div class="flow-mech" style="background:#0ea5e9"><div class="name">Totex sharing</div><div class="scope">~50% retained (ED2/T2)</div></div>
-        <div class="flow-explain">Spend less than allowance → keep ~50 %. Spend more → absorb ~50 %. <strong>OPEX automation, fewer truck rolls, faster design = banked revenue.</strong> Note: T3 ET introduces a stepped Totex Incentive Mechanism (TIM) where retained share varies by band rather than a flat ~50 %; GT3 sits at 39 %.</div>
-      </div>
-      <div class="flow-row">
-        <div class="flow-mech" style="background:#16a34a"><div class="name">ODI-F revenue</div><div class="scope">Direct +/-</div></div>
-        <div class="flow-explain">Performance metrics flex revenue. <strong>TTC, CSS, complaints, ICE, IIS, TOCOM, ENS — every one is movable by AI tooling.</strong></div>
-      </div>
-      <div class="flow-row">
-        <div class="flow-mech" style="background:#dc2626"><div class="name">PCD claw-back</div><div class="scope">Use it or return</div></div>
-        <div class="flow-explain">Took the money, didn't deliver → return it. <strong>Better project tracking and forecasting reduces hand-back risk.</strong></div>
-      </div>
-      <div class="flow-row">
-        <div class="flow-mech" style="background:#f59e0b"><div class="name">Re-openers / UIOLI</div><div class="scope">Bring forward</div></div>
-        <div class="flow-explain">Trigger extra allowance against evidence. <strong>Earlier, better-evidenced load forecasts = unlock allowance ahead of bills.</strong></div>
-      </div>
-      <div class="flow-row">
-        <div class="flow-mech" style="background:#6366f1"><div class="name">Innovation</div><div class="scope">NIA + SIF</div></div>
-        <div class="flow-explain">Off-totex pots for partnered projects. <strong>The route by which Grid Agents itself gets paid in the early years.</strong></div>
+
+      <!-- ↓ PENALTIES AVOIDED -->
+      <div class="vp2-col down">
+        <h3><span class="arrow">↓</span> Penalties avoided</h3>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">ASTI Fixed Output Incentive (FOI)</div>
+            <div class="it-amt">multi-£m per project</div>
+          </div>
+          <div class="it-plain">
+            Each of the <b>26 ASTI projects (~£20 bn portfolio)</b> carries a per-project bonus for hitting the
+            in-service date and a per-project penalty for slippage. Schedules slip mostly on the <b>soft</b> side
+            — consenting, third-party engagement, design version control, change-order review — exactly where
+            AI-assisted document workflows compress time.
+            <span class="it-cite">Source: Ofgem ASTI Guidance &amp; Submission Requirements, Aug 2023.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">ASTI Fixed Cost Incentive (FCI)</div>
+            <div class="it-amt">£tens – £hundreds m cap per project</div>
+          </div>
+          <div class="it-plain">
+            Each ASTI project has a <b>fixed cost cap</b> with limited reopeners. Every £ spent above the cap
+            comes off the TO's own profit. AI-assisted scope control, change-order analysis and supply-chain
+            risk monitoring directly compress overrun risk.
+            <span class="it-cite">Source: Ofgem ASTI framework decision, Dec 2022.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">PCD claw-back</div>
+            <div class="it-amt">£m per programme</div>
+          </div>
+          <div class="it-plain">
+            <b>Price Control Deliverables</b> are funded outputs the TO must deliver (cyber uplifts, asset-health
+            programmes, network-output-measures targets). Took the money, didn't deliver → return it. Better
+            project tracking and forecasting reduces hand-back risk.
+            <span class="it-cite">Source: RIIO-T2 Final Determinations Dec 2020; T3 FDs Dec 2025.</span>
+          </div>
+        </div>
+
+        <div class="vp2-item">
+          <div class="it-head">
+            <div class="it-name">Energy Not Supplied (ENS) penalty</div>
+            <div class="it-amt">£m / yr per TO</div>
+          </div>
+          <div class="it-plain">
+            The downside of the ENS reward above. T3 maintains the incentive with refined targets and a tighter
+            SF6-emissions trajectory alongside it. Avoidable outages are the line item to drive down.
+            <span class="it-cite">Source: RIIO-3 Final Determinations, 4 Dec 2025.</span>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Per-incentive deep dive -->
-    <div class="section-head" style="margin-top: 32px;">
-      <h2>2 · Incentive-by-incentive — where Grid Agents moves the needle</h2>
-      <p>Every major financial incentive across the four active controls, with a published-data performance range and a Grid Agents lever.</p>
+    <div class="vp2-example">
+      <span class="ex-label">Worked example — one ASTI project</span>
+      Take a single £1 bn onshore reinforcement scheme. The Fixed Output Incentive offers a per-project bonus for
+      hitting the in-service date and an equivalent penalty for slippage — typically <b>£m to tens of £m</b> per
+      project. The Fixed Cost Incentive caps cost; every £ above the cap comes off TO profit. The schedule risk
+      is overwhelmingly <b>soft</b>: consenting, stakeholder engagement, change-order review, design version
+      control. Compress those by even a few weeks and the swing tips the right way. Multiplied across the
+      <b>26-project, ~£20 bn ASTI portfolio</b>, the £ at stake is in the <b>low hundreds of millions</b> across
+      the TO group.
     </div>
 
-    <div id="incentiveStack"></div>
-
-    <!-- Strategic levers -->
-    <div class="section-head" style="margin-top: 32px;">
-      <h2>3 · Strategic levers — beyond the published ODI-Fs</h2>
-      <p>The largest revenue effects don't come from individual ODI-F dials. They come from earlier triggering of allowances, better totex outperformance, and being inside SSMC/SSMD rule-writing.</p>
-    </div>
-    <div class="framework-grid" id="strategicGrid"></div>
-
-    <!-- Deployment ladder -->
-    <div class="section-head" style="margin-top: 32px;">
-      <h2>4 · How a Grid Agents deployment is funded</h2>
-      <p>The realistic commercial path from first contact to deployed-everywhere. Each rung is funded under a different RIIO mechanism.</p>
-    </div>
-    <div class="ladder">
-      <div class="ladder-step">
-        <div class="ladder-when">Month 0 – 3</div>
-        <div class="ladder-what"><b>NIA pitch.</b> DNO/TO-led, rolling-call submission to the Network Innovation Allowance. Partner keeps IP. Lowest-friction entry.</div>
-        <div class="ladder-money">£100 k – £500 k pilot</div>
-      </div>
-      <div class="ladder-step">
-        <div class="ladder-when">Month 6 – 18</div>
-        <div class="ladder-what"><b>SIF Discovery → Alpha.</b> Multi-DNO consortium against an Ofgem-set challenge. Cross-licensee scaling.</div>
-        <div class="ladder-money">£200 k → £1 m staged</div>
-      </div>
-      <div class="ladder-step">
-        <div class="ladder-when">Year 1 – 2</div>
-        <div class="ladder-what"><b>SIF Beta.</b> Field deployment with measurable consumer benefit. Direct path into BAU.</div>
-        <div class="ladder-money">£5 m – £20 m</div>
-      </div>
-      <div class="ladder-step">
-        <div class="ladder-when">Year 2 – 3</div>
-        <div class="ladder-what"><b>BAU integration via totex.</b> Replace ODI-F leakage and OPEX line-items. Network keeps ~50 % of efficiency under the ED2/T2 sharing factor (T3 ET applies a stepped TIM with band-dependent retained share).</div>
-        <div class="ladder-money">Per-licensee £m/yr</div>
-      </div>
-      <div class="ladder-step">
-        <div class="ladder-when">Year 3+</div>
-        <div class="ladder-what"><b>ED3/T3 baseline.</b> Capability priced into next business plan; obligation, not pilot. Becomes a 5-year revenue line.</div>
-        <div class="ladder-money">Multi-year contract</div>
-      </div>
+    <div class="vp2-glossary">
+      <h4>Plain-English glossary</h4>
+      <dl>
+        <dt>Ofgem</dt><dd>The UK energy regulator.</dd>
+        <dt>TO</dt><dd>Transmission Owner. Owns the high-voltage long-distance network (NGET, SHE-T, SPT in GB).</dd>
+        <dt>NESO</dt><dd>National Energy System Operator. Runs the GB electricity system in real time. Separated from National Grid on 1 Oct 2024.</dd>
+        <dt>RIIO-T3</dt><dd>Current 5-year price-control period for transmission (2026 – 2031). RIIO = Revenue = Incentives + Innovation + Outputs.</dd>
+        <dt>ASTI</dt><dd>Accelerated Strategic Transmission Investment. The bespoke ~£20 bn / 26-project regime running alongside T2/T3 to fast-track strategic builds.</dd>
+        <dt>FOI / FCI</dt><dd>Fixed Output Incentive (per-project bonus/penalty on in-service date) and Fixed Cost Incentive (per-project cost cap).</dd>
+        <dt>PCD</dt><dd>Price Control Deliverable. Money taken upfront with strings — return it if you don't deliver.</dd>
+        <dt>TIM</dt><dd>Totex Incentive Mechanism. The formula that decides what share of an under- or over-spend the network keeps.</dd>
+      </dl>
     </div>
 
-    <div class="ga-callout" style="margin-top: 24px;">
-      <strong>The pitch in one paragraph</strong>
-      A Grid Agents deployment compresses connection lead times, lifts customer-satisfaction scores, hardens
-      ICE engagement evidence, and produces audit-grade load forecasts. Under ED2 alone that is up to
-      £8 – 12 m/year of ODI-F revenue per DNO group at risk, plus retained totex outperformance, plus
-      earlier re-opener/UIOLI triggering. Under T3 the same engine reduces ASTI FOI penalty risk on £bn projects.
-      Funded via NIA → SIF → totex over a 24-month ramp.
-    </div>
+    <div class="vp2-srcref">Full source detail and document links in the <a href="#" data-tab-link="refs">Sources</a> tab.</div>
   </div>
 </section>
 
@@ -1183,15 +1552,24 @@
 (function () {
   // ── TABS ──────────────────────────────────────────────
   const tabsRoot = document.getElementById("tabs");
-  tabsRoot.addEventListener("click", function (e) {
-    const btn = e.target.closest(".tab-btn");
-    if (!btn) return;
-    const tab = btn.dataset.tab;
-    tabsRoot.querySelectorAll(".tab-btn").forEach(b => b.classList.toggle("active", b === btn));
+  function activateTab(tab) {
+    tabsRoot.querySelectorAll(".tab-btn").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
     document.querySelectorAll(".panel").forEach(p => {
       p.classList.toggle("active", p.id === "panel-" + tab);
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  tabsRoot.addEventListener("click", function (e) {
+    const btn = e.target.closest(".tab-btn");
+    if (!btn) return;
+    activateTab(btn.dataset.tab);
+  });
+  // Inline cross-tab links (e.g. "see Sources tab")
+  document.addEventListener("click", function (e) {
+    const a = e.target.closest("[data-tab-link]");
+    if (!a) return;
+    e.preventDefault();
+    activateTab(a.dataset.tabLink);
   });
 
   // ── TIMELINE NOW MARKER ───────────────────────────────
@@ -1371,157 +1749,11 @@
     </div>
   `).join("");
 
-  // ── INCENTIVE STACK (the heart of value proposition) ──
-  // Public-data baselines are sourced from Ofgem's RIIO-2 ED Annual Reports
-  // (2023-24 published Apr 2025; 2024-25 published Jan 2026), RIIO-ED1 closeout
-  // reporting, RIIO-ED2 Final Determinations (Nov 2022) and the RIIO-3 Final
-  // Determinations (Dec 2025). See the Sources tab for direct links.
-  const incentives = [
-    {
-      name: "Time to Connect (TTC)",
-      scope: "D", scopeLabel: "Distribution · ED2 ODI-F",
-      mech: "Average working days from valid LV demand/generation application to live connection vs DNO-specific target. Reward and penalty regime.",
-      exposure: "Industry combined ~£15 m / yr at ED1 maturity",
-      baseline: "Per Ofgem's NGED Your Power Future ED1 reporting, DNO groups received a combined <strong>£15.45 m TTC reward in 2022-23</strong> (final ED1 year). ED2 Year-1 outturn showed several DNOs slipping into small penalties as connection volumes surged.",
-      ga: "Auto-generated quotes from validated DNO design rules. Pre-screened applications cut the queue tail. Self-service status pages remove enquiry friction. A 10–20 % cycle-time reduction is realistic in pilot."
-    },
-    {
-      name: "Customer Satisfaction Survey (CSS)",
-      scope: "D", scopeLabel: "Distribution · ED2 ODI-F",
-      mech: "Independent customer survey across new connections, faults, general enquiries. Reward/penalty driven by score-vs-target.",
-      exposure: "Up to ~£8 m / yr per DNO group (top performer)",
-      baseline: "Per <strong>Ofgem's RIIO-2 ED Annual Report 2023-24</strong>: UKPN earned <strong>£8.09 m CSS reward</strong> in Year-1 of ED2 — its largest single positive ODI-F line. Industry CSS scores cluster in the high-8 to low-9 range out of 10.",
-      ga: "Conversational status updates, structured explanations of design choices, faster turnaround on follow-up questions. Lifts CSS scores in connection segments — directly bookable revenue under the formula."
-    },
-    {
-      name: "Complaints metric",
-      scope: "D", scopeLabel: "Distribution · ED2 ODI-F",
-      mech: "Volume of customer complaints normalised by customer base. Penalty-only mechanism in ED2.",
-      exposure: "Penalty-only; small £m per DNO group",
-      baseline: "ED2 Year-1 outturn showed complaint rates ticking up across most DNOs as connection volumes surged. Specific per-DNO penalty values are reported in the RIIO-2 ED Annual Report; total industry complaint-metric penalties remained modest in Year 1.",
-      ga: "Root-cause-classify inbound complaints, surface systemic drivers, push proactive comms before a complaint is filed. Direct penalty avoidance."
-    },
-    {
-      name: "Major Connections Incentive (MCI)",
-      scope: "D", scopeLabel: "Distribution · ED2 penalty-only ODI-F (replaced the ED1 ICE)",
-      mech: "DNO survey-based score on engagement and service to large/complex connection customers. Penalty applies below threshold (Year-1 threshold = 7.41 / 10). Maximum exposure ~0.9 % of base revenue per DNO.",
-      exposure: "Capped ~0.9 % base revenue penalty per DNO",
-      baseline: "Per <strong>RIIO-2 ED Annual Report 2023-24</strong>: industry average MCI score <strong>8.52</strong> against 7.41 threshold; only SSES scored below threshold (7.14) and incurred a <strong>£0.74 m penalty</strong>. Total industry MCI penalties in Year-1 were just <strong>£0.7 m</strong> — but Ofgem signal that thresholds will tighten.",
-      ga: "Auto-curated engagement records, structured outreach cadences, evidence packs that satisfy Ofgem MCI submissions without manual document assembly. Removes a routine source of regulatory risk."
-    },
-    {
-      name: "Interruption Incentive Scheme (IIS / CI / CML)",
-      scope: "D", scopeLabel: "Distribution · ED2 ODI-F (largest single DNO incentive)",
-      mech: "Customer Interruptions per 100 customers (CI) and Customer Minutes Lost (CML) vs DNO-specific targets. ±2.5 % of Return on Regulatory Equity (RoRE) at maximum.",
-      exposure: "ED1 industry rewards ~£647 m total (~£123 m / yr avg)",
-      baseline: "Under RIIO-ED1 (2015–2023) DNOs collectively earned <strong>~£647 m in IIS rewards across the 8-year control</strong>, an average <strong>~£123 m / yr industry-wide</strong>. Ofgem's RIIO-2 ED Annual Report 2023-24 shows UKPN incurred a <strong>£5.90 m IIS penalty</strong> in Year-1 of ED2 as ED2 targets re-baselined.",
-      ga: "Faster fault diagnosis, smarter restoration sequencing, automated customer-status comms during incidents. Even a 1–2 % CML improvement is materially bookable against the formula."
-    },
-    {
-      name: "Energy Not Supplied (ENS)",
-      scope: "T", scopeLabel: "Transmission · T2/T3 ODI-F",
-      mech: "Volume of energy not delivered due to TO network outages, MWh-weighted vs target. Reward/penalty mechanism.",
-      exposure: "Per-TO £m-scale reward/penalty per Annual Report",
-      baseline: "Reported per-TO under <strong>Ofgem RIIO-2 Electricity Transmission Annual Reports</strong>. NGET, SPT and SHE-T each report ENS performance; absolute values vary year to year and with weather. T3 (FDs Dec 2025) maintains an ENS incentive with refined targets.",
-      ga: "Predictive-asset health and contingency-planning agents reduce avoidable outages and shorten restoration. Compounds with planned-outage scheduling AI."
-    },
-    {
-      name: "Network Output Measures (NOMs)",
-      scope: "T", scopeLabel: "Transmission · T2/T3 PCD",
-      mech: "Asset-health and risk-reduction outputs delivered against funded plan. PCD claw-back if commitments are not met.",
-      exposure: "Hand-back £m exposure if PCDs slip",
-      baseline: "Ofgem's T2 closeout reporting will publish per-TO hand-backs; T3 NOMs framework continues with refined metrics.",
-      ga: "AI-driven asset-health prioritisation and document-automation for project consenting/design accelerate delivery, reducing hand-back risk."
-    },
-    {
-      name: "ASTI Fixed Output Incentive (FOI)",
-      scope: "T", scopeLabel: "Transmission · ASTI sidecar",
-      mech: "Per-project bonus for early in-service; per-project penalty for slippage. Applies to the <strong>26 ASTI projects</strong> sanctioned via the Dec-2022 framework decision (~£20 bn aggregate cost).",
-      exposure: "Material per-project £m exposure",
-      baseline: "ASTI framework guidance specifies the FOI mechanism; per-project bonus/penalty values are published in TO project licences. Several schemes have flagged slippage risk in stakeholder communications.",
-      ga: "Automated stakeholder-engagement records, design-document version control, consultation-response automation. Compresses the soft schedule (consenting, third-party engagement) which is where schedules slip."
-    },
-    {
-      name: "ASTI Fixed Cost Incentive (FCI)",
-      scope: "T", scopeLabel: "Transmission · ASTI sidecar",
-      mech: "Fixed cost cap per ASTI project with limited reopeners. TO bears overrun risk above the cap.",
-      exposure: "Tens to hundreds of £m per project (cap)",
-      baseline: "Cost overruns historically common on HVDC and onshore reinforcement at this scale; FCI shifts that risk onto the TO. Ofgem's August-2023 ASTI guidance sets the rules.",
-      ga: "AI-assisted scope control, change-order analysis, supply-chain risk monitoring. Marginal containment translates to direct shareholder return."
-    },
-    {
-      name: "Forecasting / system-operator incentives",
-      scope: "SO", scopeLabel: "NESO · system-operator incentives",
-      mech: "Forecast-accuracy incentives on demand and BSUoS; incentives around balancing-action efficiency. NESO took over from NGESO on 1 October 2024.",
-      exposure: "£m-scale, set annually under NESO performance framework",
-      baseline: "NESO's incentives sit outside the RIIO-T price control proper and are reset year-by-year. Forecast accuracy has been a recurring concern, especially around weather-driven renewable peaks.",
-      ga: "Granular load and DG forecasting integrated with weather and behavioural signals lifts forecast accuracy and reduces avoidable balancing actions."
-    },
-    {
-      name: "SF6 / fluorinated-gas emissions",
-      scope: "T", scopeLabel: "Transmission · T2/T3 ODI-F (environmental)",
-      mech: "Per-kg penalty on SF6 emissions above target trajectory.",
-      exposure: "Small £m penalty per TO typical",
-      baseline: "All TOs are tracked against SF6 trajectories under RIIO-T2 Annual Reports; T3 (Dec 2025 FDs) tightens the trajectory. Distribution-side equivalents tracked in RIIO-2 ED Annual Reports.",
-      ga: "Asset-health and leak-prediction analytics reduce emissions; cleaner audit trail for Ofgem reporting."
-    },
-    {
-      name: "Cyber resilience PCD",
-      scope: "both", scopeLabel: "Both · PCD with re-opener",
-      mech: "Specific cyber-uplift programmes funded under PCDs with a cyber re-opener mid-period.",
-      exposure: "Hand-back £m if PCDs slip; re-opener £m+ if triggered",
-      baseline: "Active across all TOs and DNOs through 2024–26 under RIIO-2 / ED2 cyber PCDs.",
-      ga: "Operational-AI reduces analyst load and lifts mean-time-to-detect — directly evidenceable in PCD reporting."
-    }
-  ];
-  document.getElementById("incentiveStack").innerHTML = incentives.map(i => `
-    <div class="incentive-card">
-      <div class="ic-head">
-        <div class="ic-head__left">
-          <div class="ic-name">${i.name}</div>
-          <div class="ic-scope ${i.scope}">${i.scopeLabel}</div>
-          <div class="ic-mech">${i.mech}</div>
-        </div>
-        <div class="ic-exposure">
-          <div class="label">Annual exposure</div>
-          <div class="value">${i.exposure}</div>
-          <div class="sub">indicative</div>
-        </div>
-      </div>
-      <div class="ic-body">
-        <div>
-          <h4>Public-data baseline</h4>
-          <div class="stat">${i.baseline}</div>
-        </div>
-        <div>
-          <h4>Grid Agents lever</h4>
-          <div class="ga-lever"><b>How we move it</b>${i.ga}</div>
-        </div>
-      </div>
-    </div>
-  `).join("");
-
-  // ── STRATEGIC LEVERS ──────────────────────────────────
-  const strategic = [
-    { tag: "Totex", title: "Totex sharing factor",
-      desc: "Each £1 the network spends below allowance, ~50 p flows back as retained revenue. Across ED2's ~£4.4 bn/yr base totex, even 2% efficiency = ~£40 m/yr industry-wide. AI-driven design automation, fewer truck rolls, fewer manual hand-offs all roll directly into this line." },
-    { tag: "UIOLI", title: "Earlier UIOLI / re-opener triggering",
-      desc: "Use-it-or-lose-it allowances are released against evidenced load growth. AI-grade DFES-plus forecasting can trigger UIOLI 6–12 months earlier than baseline DNO planning, unlocking allowance ahead of bills landing." },
-    { tag: "RESP", title: "RESP positioning for ED3",
-      desc: "ED3 will require alignment with NESO's Regional Energy Strategic Plans. A network whose tooling already ingests transmission &amp; distribution signals in one model defends its needs case faster — pulling baseline allowance into ED3 that wouldn't otherwise be there." },
-    { tag: "AI-load", title: "AI / data-centre connection products",
-      desc: "T3/ED3 are designing flexible-connection products for hyperscale loads. The licensee that ships first sells more connection terms — and the tools to operate them. Direct DUoS/TNUoS volume exposure." },
-    { tag: "SSMC", title: "Inside the SSMC/SSMD response loop",
-      desc: "ED3 and successor T-control rules are being written through 2026–27. AI-readiness, data-sharing, anticipatory-investment and connection-process obligations are all live questions where structured input from a connection-process toolmaker has weight." },
-    { tag: "Brand", title: "ICE &amp; reputational performance",
-      desc: "Ofgem-published rankings on connections engagement and stakeholder satisfaction shape commercial trust with the largest connecting customers — and downstream Ofgem appetite for re-opener approvals." }
-  ];
-  document.getElementById("strategicGrid").innerHTML = strategic.map(s => `
-    <div class="fw-card">
-      <h3><span class="fw-badge" style="background:#f59e0b">${s.tag}</span>${s.title}</h3>
-      <p>${s.desc}</p>
-    </div>
-  `).join("");
+  // ── VALUE-PROPOSITION CONTENT ─────────────────────────
+  // Now lives as static HTML in #panel-vp-d and #panel-vp-t. The previous
+  // dynamic incentives[] and strategic[] arrays + their renderers were removed
+  // when the single ★ Value Proposition tab was split into VP · Distribution
+  // and VP · Transmission, written for a non-technical audience.
 
   // ── INNOVATION ────────────────────────────────────────
   const innov = [

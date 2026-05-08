@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connection Application Data — Transmission &amp; Distribution</title>
+<link rel="stylesheet" href="../common/site-nav.css">
+<script src="../common/site-nav.js" defer></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1a1d23;
+    line-height: 1.55;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #fff;
+    padding: 44px 20px 30px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+    margin-bottom: 8px;
+    letter-spacing: -0.3px;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,0.75);
+    max-width: 820px;
+    margin: 0 auto 14px;
+    font-size: 0.96rem;
+  }
+  .hero-stats {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgba(255,255,255,0.66);
+    font-size: 0.85rem;
+  }
+  .hero-stat {
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+
+  /* ── TABS ── */
+  .tabs {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 54px;
+    z-index: 50;
+  }
+  .tabs-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+  }
+  .tab-btn {
+    background: none;
+    border: 0;
+    padding: 14px 14px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    font-family: inherit;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .tab-btn:hover { color: #1a1d23; }
+  .tab-btn.active.tx   { color: #92400e; border-bottom-color: #f59e0b; }
+  .tab-btn.active.dist { color: #0369a1; border-bottom-color: #0ea5e9; }
+
+  /* ── PANELS ── */
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .panel-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 20px 56px;
+  }
+
+  /* ── INTRO ── */
+  .intro {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #f59e0b;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 22px;
+    font-size: 0.95rem;
+    color: #1a1d23;
+    line-height: 1.65;
+  }
+  .panel.dist .intro { border-left-color: #0ea5e9; }
+  .intro b { color: #0f172a; }
+
+  /* ── TABLE ── */
+  .data-table-wrap {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 22px;
+  }
+  table.data {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+  table.data thead th {
+    background: #f8fafc;
+    color: #475569;
+    text-align: left;
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 14px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  table.data tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: top;
+    line-height: 1.55;
+  }
+  table.data tbody tr:last-child td { border-bottom: 0; }
+  table.data tbody tr:hover { background: #fafbfc; }
+  table.data .cat {
+    font-weight: 700;
+    color: #0f172a;
+    white-space: nowrap;
+  }
+  .panel.tx   table.data .cat { color: #92400e; }
+  .panel.dist table.data .cat { color: #0369a1; }
+  table.data .src {
+    font-size: 0.78rem;
+    color: #64748b;
+    font-style: italic;
+  }
+  @media (max-width: 760px) {
+    table.data thead { display: none; }
+    table.data tbody td { display: block; padding: 6px 14px; border: 0; }
+    table.data tbody tr {
+      display: block;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 10px 0;
+    }
+    table.data tbody tr:last-child { border-bottom: 0; }
+    table.data .cat { padding-top: 10px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    table.data .src { padding-bottom: 10px; }
+  }
+
+  /* ── NOTES + SOURCES ── */
+  .notes, .srcbox {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    color: #475569;
+  }
+  .notes h3, .srcbox h3 {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #475569;
+    margin-bottom: 8px;
+  }
+  .notes ul { padding-left: 22px; }
+  .notes li { margin-bottom: 4px; }
+  .srcbox ul { padding-left: 22px; }
+  .srcbox li { margin-bottom: 3px; font-size: 0.86rem; }
+  .srcbox b { color: #0f172a; }
+
+  /* ── DOWNLOAD STRIP ── */
+  .download-strip {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+  .dl-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    color: #0f172a;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .dl-btn:hover {
+    border-color: #0f172a;
+    background: #f8fafc;
+    transform: translateY(-1px);
+  }
+  .dl-btn .dl-icon { font-size: 1rem; }
+  .dl-btn .dl-meta { color: #64748b; font-weight: 500; font-size: 0.78rem; }
+
+  /* ── DISCLAIMER ── */
+  .disclaimer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px 32px;
+    color: #94a3b8;
+    font-size: 0.78rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Connection Application Data</h1>
+  <div class="hero-sub">
+    What a developer has to submit when applying for a grid connection in Great Britain — separated by transmission level (large generation/storage/demand connecting directly to the high-voltage network) and distribution level (smaller projects connecting via a DNO).
+  </div>
+  <div class="hero-stats">
+    <span class="hero-stat">CUSC · Grid Code · Gate 2</span>
+    <span class="hero-stat">G99 · G98 · DCode · DCUSA</span>
+    <span class="hero-stat">Sources: GB Industry Codes &amp; Engineering Recs</span>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections">
+  <div class="tabs-inner" id="tabs">
+    <button class="tab-btn tx active" data-tab="tx">Transmission</button>
+    <button class="tab-btn dist" data-tab="dist">Distribution</button>
+  </div>
+</nav>
+
+<!-- ═══ TRANSMISSION ═══ -->
+<section class="panel tx active" id="panel-tx">
+  <div class="panel-inner">
+
+    <div class="intro">
+      <b>Transmission-level connection</b> applies to large generation, storage, or demand connecting directly to the GB transmission system. Governed by the <b>Connection and Use of System Code (CUSC)</b>, the <b>Grid Code</b>, and (post-reform) the <b>Gate 2 Criteria Methodology</b>. Submission goes via NESO (the system operator) to the relevant Transmission Owner — National Grid Electricity Transmission, SSEN Transmission, or SP Transmission.
+    </div>
+
+    <div class="download-strip">
+      <a class="dl-btn" href="transmission.md" download>
+        <span class="dl-icon">⬇</span>
+        <span>Download as Markdown</span>
+        <span class="dl-meta">transmission.md</span>
+      </a>
+    </div>
+
+    <div class="data-table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th style="width: 16%">Category</th>
+            <th style="width: 32%">What the developer submits</th>
+            <th style="width: 32%">Why the network needs it</th>
+            <th style="width: 20%">Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">Site &amp; location</td><td>Site address + GPS coordinates (WGS84, 3 d.p.)</td><td>Pinpoints where on the network you want to connect</td><td class="src">Gate 2 Criteria Methodology §4.1b</td></tr>
+          <tr><td class="cat">Land — area</td><td>Red-line boundary plan (scaled drawing of your site outline, with postcode and key)</td><td>Proves the site is big enough for the technology and capacity claimed</td><td class="src">CUSC §17.7; Gate 2 §4.1b</td></tr>
+          <tr><td class="cat">Land — control</td><td>Evidence of land rights — freehold, lease, or option agreement of at least 20 years</td><td>Stops speculative applications from people who don't actually have the land</td><td class="src">Gate 2 §4.1c</td></tr>
+          <tr><td class="cat">Land — density</td><td>Compliance with Ofgem's "Energy Density" minimum acreage table for your technology</td><td>Same purpose: filter speculative applications by ensuring enough land for the claimed capacity</td><td class="src">Gate 2 §4.1a</td></tr>
+          <tr><td class="cat">Planning</td><td>Planning consent status — submitted, granted, or DCO (Development Consent Order, the route used for projects above 50 MW onshore / 100 MW offshore)</td><td>Establishes how close the project is to being build-ready</td><td class="src">Gate 2 §5</td></tr>
+          <tr><td class="cat">Project capacity</td><td>Megawatt capacity for each technology + total connection capacity requested</td><td>Drives network-impact studies and queue ordering</td><td class="src">CUSC §2.2.4; Gate 2 §4.1b</td></tr>
+          <tr><td class="cat">Company</td><td>Corporate identity, ownership, financial standing</td><td>Makes sure the counterparty can actually pay and build</td><td class="src">CUSC Schedule 2 Exhibit B; CUSC §2 Part III</td></tr>
+          <tr><td class="cat">Plant — basic</td><td>Generation type, fuel, efficiency, operating envelope</td><td>Used in network design and dispatch planning</td><td class="src">Grid Code PC.A.3</td></tr>
+          <tr><td class="cat">Plant — protection</td><td>Protection relay settings + fault-clearance times (how fast your kit trips off in a fault)</td><td>Must align with the network's own protection so faults don't cascade</td><td class="src">CUSC Appendix F4</td></tr>
+          <tr><td class="cat">Plant — dynamic</td><td>Special automatic facilities — fast frequency response, voltage support, etc. (where applicable)</td><td>Tells NESO what you can offer the system in real-time stability events</td><td class="src">CUSC Appendix F3</td></tr>
+          <tr><td class="cat">Ancillary services <em>(generators)</em></td><td>Generating-unit parameters, HVDC converter specs (where relevant), power-park module data</td><td>Lets NESO model and procure system-stability services</td><td class="src">CUSC §1.3.3 / Schedule 2 Exhibit 4</td></tr>
+          <tr><td class="cat">Network studies</td><td>Steady-state load flow, fault-level analysis, transient stability assessment</td><td>Confirms the connection won't destabilise the rest of the grid</td><td class="src">Grid Code Connection Conditions; CNDM Dec 2025</td></tr>
+          <tr><td class="cat">Metering &amp; access</td><td>Proposed metering point + requested transmission entry capacity (short-term vs long-duration)</td><td>Defines billing point and how much you can export at each timescale</td><td class="src">CUSC §2.3; CUSC Appendix C</td></tr>
+          <tr><td class="cat">Environmental</td><td>Environmental Impact Assessment / Environmental Statement (where planning requires one)</td><td>Mostly a planning input but copied into the connection pack</td><td class="src">Planning regulations; Gate 2</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <h3>Notes</h3>
+      <ul>
+        <li>Post-TMO4+ reform, the <b>Gate 2</b> filter is the dominant change: applicants must now evidence land rights and planning maturity before securing a queue position. The pre-reform queue of ~739 GW was stripped to ~283 GW of generation/storage + ~99 GW of demand at Gate 2 in December 2025.</li>
+        <li>The <b>Connections Network Design Methodology (CNDM, Dec 2025)</b> sets how NESO converts a portfolio of Gate 2 applications into a coordinated network design.</li>
+      </ul>
+    </div>
+
+    <div class="srcbox">
+      <h3>Primary sources</h3>
+      <ul>
+        <li><b>CUSC</b> (Connection and Use of System Code) — current version, Ofgem, 1 April 2026.</li>
+        <li><b>Grid Code</b> — current version, Ofgem.</li>
+        <li><b>Gate 2 Criteria Methodology (G2CM)</b> — NESO / Ofgem, December 2025.</li>
+        <li><b>Connections Network Design Methodology (CNDM)</b> — NESO, December 2025.</li>
+        <li><b>TMO4+ Summary Decision Document</b> — Ofgem, April 2025.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DISTRIBUTION ═══ -->
+<section class="panel dist" id="panel-dist">
+  <div class="panel-inner">
+
+    <div class="intro">
+      <b>Distribution-level connection</b> applies to smaller generation (broadly under ~50 MW) and demand connecting via a <b>Distribution Network Operator (DNO)</b> — the company that owns the lower-voltage local network. Governed by the <b>Distribution Code (DCode)</b>, <b>Engineering Recommendation G99</b> for generation (and <b>G98</b> for the smallest microgenerators), and <b>DCUSA</b> for the commercial side. The pathway and form depend on the project's G99 <b>Type</b>: A is the smallest (≤1 MW), B is 1–10 MW, C is 10–50 MW, D is ≥50 MW or transmission-connected.
+    </div>
+
+    <div class="download-strip">
+      <a class="dl-btn" href="distribution.md" download>
+        <span class="dl-icon">⬇</span>
+        <span>Download as Markdown</span>
+        <span class="dl-meta">distribution.md</span>
+      </a>
+    </div>
+
+    <div class="data-table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th style="width: 16%">Category</th>
+            <th style="width: 32%">What the developer submits</th>
+            <th style="width: 32%">Why the DNO needs it</th>
+            <th style="width: 20%">Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="cat">Applicant</td><td>Customer name, address, agent / installer details</td><td>Identifies counterparty and point of contact</td><td class="src">G99 Design Phase</td></tr>
+          <tr><td class="cat">Site plan</td><td>Scaled plan showing buildings, roads, boundary, and proposed substation location</td><td>DNO needs to know what's there before quoting design and cost</td><td class="src">G99 Design Phase; DCode DPC §6</td></tr>
+          <tr><td class="cat">Connection point</td><td>Proposed metering location + maximum capacity (kVA) at each point</td><td>Defines where the meter goes and how much power can flow</td><td class="src">G99 Design Phase</td></tr>
+          <tr><td class="cat">Project type</td><td>G99 classification — Type A (≤1 MW), Type B (1–10 MW), Type C (10–50 MW), Type D (≥50 MW or transmission-connected)</td><td>Sets which application pathway, form, and tests apply</td><td class="src">G99 §2.2</td></tr>
+          <tr><td class="cat">Technology</td><td>Fuel / technology — solar PV, wind, battery, CHP, etc. — and how it interfaces with the network</td><td>Determines control and protection requirements</td><td class="src">G99 Standard Application / Fast-Track SGI-1/2/3</td></tr>
+          <tr><td class="cat">Type-test evidence</td><td>Manufacturer certification that the unit passes the relevant type test (G98 for the smallest, G99 above)</td><td>Confirms the equipment is approved for use on a UK distribution network</td><td class="src">G99 Construction Phase; DCode DPC §7</td></tr>
+          <tr><td class="cat">PGMD <em>(Type B/C/D)</em></td><td>Power Generating Module Document — compliance statement + full technical data sheet</td><td>Single document evidencing the unit meets every G99 criterion</td><td class="src">G99 Construction Phase</td></tr>
+          <tr><td class="cat">Protection &amp; islanding</td><td>Settings for the relays + the anti-islanding scheme (which prevents you keeping a dead bit of the grid energised on your own)</td><td>Critical for safety of DNO field staff during faults</td><td class="src">G99 §16–19</td></tr>
+          <tr><td class="cat">Performance data</td><td>Efficiency curves, active / reactive power control range, voltage-control capability</td><td>DNO uses this to design the local network around your kit</td><td class="src">G99 Annex C</td></tr>
+          <tr><td class="cat">Network impact study</td><td>Output of any impact assessment / feasibility study run before submission (where the application size requires it)</td><td>Identifies whether reinforcement is needed or whether you accept curtailed export</td><td class="src">G99 Fast-Track or Standard pathway</td></tr>
+          <tr><td class="cat">Installation form</td><td>Form A1-1 / A1-2 (Type A) or Standard Application Form (Type B/C/D)</td><td>The DNO's permission slip — pre-installation for Type B+, post-installation notification for some Type A</td><td class="src">G99 Forms A1-1, A1-2, A3-1, A3-2</td></tr>
+          <tr><td class="cat">Commissioning tests</td><td>Test results — Type A: A3-1 / A3-2; Type B/C: Form B3 / C3 + interface-protection test report</td><td>Proves the kit actually behaves on site as it did in the factory</td><td class="src">G99 §16–19</td></tr>
+          <tr><td class="cat">Operational Notifications <em>(B/C/D)</em></td><td>EON (Energisation), ION (Interim), FON (Final) — three sequential sign-offs</td><td>Lets the DNO release energisation in stages, withholding final approval until everything is confirmed</td><td class="src">G99 Operational Notifications</td></tr>
+          <tr><td class="cat">Land &amp; planning</td><td>Evidence of right to occupy + any planning consent</td><td>Same as transmission, scaled down: prevents speculative applications</td><td class="src">DCode DPC §6</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <h3>Notes</h3>
+      <ul>
+        <li>The G98 / G99 split is a <b>size cut-off</b>: G98 covers fit-and-inform installations up to 16 A per phase (typical domestic rooftop solar). G99 covers everything larger.</li>
+        <li>Type A applications are deliberately streamlined — the network impact of a single small generator is local. Larger Types (B / C / D) carry progressively more documentation and stage-gated commissioning, because their fault contribution and voltage impact reach further.</li>
+      </ul>
+    </div>
+
+    <div class="srcbox">
+      <h3>Primary sources</h3>
+      <ul>
+        <li><b>Distribution Code (DCode)</b> — version 58, Energy Networks Association.</li>
+        <li><b>DCUSA</b> (Distribution Connection and Use of System Agreement) — version 18.1.</li>
+        <li><b>Engineering Recommendation G99</b> — guidance document, ENA, January 2023.</li>
+        <li><b>Engineering Recommendation G98</b> — for fit-and-inform microgeneration installations.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer">
+  Field lists and section references are summarised from the GB industry codes and engineering recommendations cited above. They are intended as an orientation guide for non-specialist readers — the authoritative form schedules sit in the documents themselves.
+</div>
+
+<script>
+(function () {
+  const tabsRoot = document.getElementById("tabs");
+  tabsRoot.addEventListener("click", function (e) {
+    const btn = e.target.closest(".tab-btn");
+    if (!btn) return;
+    const tab = btn.dataset.tab;
+    tabsRoot.querySelectorAll(".tab-btn").forEach(b => b.classList.toggle("active", b === btn));
+    document.querySelectorAll(".panel").forEach(p => {
+      p.classList.toggle("active", p.id === "panel-" + tab);
+    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
+</script>
+</body>
+</html>
