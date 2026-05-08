@@ -230,6 +230,54 @@
     line-height: 1.5;
   }
 
+  /* Forms / exhibits block */
+  .forms-block {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #f59e0b;
+    border-radius: 10px;
+    padding: 16px 20px 14px;
+    margin-bottom: 18px;
+  }
+  .panel.dist .forms-block { border-top-color: #0ea5e9; }
+  .forms-block h3 {
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #475569;
+    margin-bottom: 10px;
+  }
+  .forms-list {
+    display: grid;
+    gap: 10px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 14px;
+    padding: 8px 0;
+    border-top: 1px solid #f1f5f9;
+    font-size: 0.86rem;
+  }
+  .form-row:first-of-type { border-top: 0; padding-top: 4px; }
+  .form-row .fr-name {
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .panel.tx   .form-row .fr-name { color: #92400e; }
+  .panel.dist .form-row .fr-name { color: #0369a1; }
+  .form-row .fr-name a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted currentColor;
+  }
+  .form-row .fr-name a:hover { border-bottom-style: solid; }
+  .form-row .fr-name a::before { content: "📄 "; opacity: 0.6; }
+  .form-row .fr-desc { color: #475569; line-height: 1.55; }
+  @media (max-width: 640px) {
+    .form-row { grid-template-columns: 1fr; gap: 2px; }
+  }
+
   /* Cross-cutting note for "applies the same as gen" tabs */
   .same-as {
     background: #f0fdf4;
@@ -289,6 +337,53 @@
           <span class="dl-meta">transmission.md</span>
         </a>
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=713">Schedule 2 Exhibit 1 — Bilateral Connection Agreement</a></div>
+            <div class="fr-desc">The actual contract template the developer signs with NESO. Front part is contract terms; the data the developer fills in lives in its appendices below.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=730">— Appendix A · Connection Asset / Site</a></div>
+            <div class="fr-desc">Schedule of the assets at the connection site — pre-vesting, post-vesting, energy-metering systems, with descriptions, ages and replacement years.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=731">— Appendix B · Connection Charges / Payment</a></div>
+            <div class="fr-desc">The connection charge schedule (rate of return, transmission cost elements, miscellaneous and one-off charges) over the term of the agreement.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=733">— Appendix C · Connection &amp; Transmission Entry Capacity</a></div>
+            <div class="fr-desc">Connection Entry Capacity (CEC) per genset + total Power Station; Transmission Entry Capacity (TEC) on a half-hour-settlement basis; BM Unit identifiers.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=736">— Appendix F1 · Agreed Balancing Services</a></div>
+            <div class="fr-desc">Site-specific balancing-services declaration (frequency response, reserve, reactive — what NESO can call on).</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=736">— Appendix F3 · Special Automatic Facilities</a></div>
+            <div class="fr-desc">Site-specific automatic-control facilities (intertripping schemes, fast voltage / frequency support).</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=736">— Appendix F4 · Protection &amp; Fault Clearance</a></div>
+            <div class="fr-desc">Protection and control-relay settings, plus fault-clearance times — must align with the network's grading.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=736">— Appendix F5 · Load Shedding Relays</a></div>
+            <div class="fr-desc">Frequency-sensitive load-shedding relay settings (where relevant).</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=931">Schedule 2 Exhibit 4 — Mandatory Services Agreement</a></div>
+            <div class="fr-desc">Separate template covering Mandatory Ancillary Services (frequency response, reactive power) for licensable generators.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/Gate 2 Criteria Methodology (G2CM) - Dec 2025.pdf#page=14">Gate 2 Readiness Submission</a></div>
+            <div class="fr-desc">Pre-application bundle to clear the Gate 2 filter — land rights evidence, red-line boundary, planning consent status, energy-density check.</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:16%">Category</th><th style="width:32%">What the developer submits</th><th style="width:32%">Why the network needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -331,6 +426,41 @@
         <div class="scale-item"><div class="lbl">GB peak demand</div><div class="val">45 GW (Feb 2026)</div></div>
         <div class="scale-item"><div class="lbl">Reform pillars</div><div class="val">Curate · Plan · Connect</div></div>
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=713">Schedule 2 Exhibit 1 — Bilateral Connection Agreement</a></div>
+            <div class="fr-desc">Same template as for generation — but appendices are populated with demand-specific data (max demand, load profile, reliability tier) instead of generator data.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=730">— Appendix A · Connection Asset / Site</a></div>
+            <div class="fr-desc">Asset list at the connection point — incomers, transformers, switchgear assigned to the demand site.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=731">— Appendix B · Connection Charges / Payment</a></div>
+            <div class="fr-desc">Connection charge schedule. Demand connections currently carry higher upfront securities than generation under CUSC §15.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=733">— Appendix C · Capacity</a></div>
+            <div class="fr-desc">Maximum import capacity instead of CEC/TEC; for demand, this defines the connection size and the basis for any future ramp.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=736">— Appendix F4 · Protection &amp; Fault Clearance</a></div>
+            <div class="fr-desc">Protection settings for the demand-side switchgear and any sensitive on-site loads.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">CUSC §17 — Application &amp; Offer Process</div>
+            <div class="fr-desc">The application schedule itself — submitted to NESO before the BCA template is populated. Captures the project type, capacity, site, ramp profile, and customer commercial declaration.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/Demand Connections Call for Input - Feb 2026.pdf#page=12">Strengthened readiness submission <em>(emerging)</em></a></div>
+            <div class="fr-desc">Under reform, data-centre developers will be asked to provide land-control evidence, planning status, off-taker contract, AI-Growth-Zone status — paralleling the generation Gate 2 readiness pack.</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:18%">Category</th><th style="width:32%">What the developer submits</th><th style="width:30%">Why the network needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -369,6 +499,37 @@
       <div class="same-as">
         <b>Same data as Generation</b>, plus the storage-specific fields below. The Generation table is the baseline — Storage adds on top.
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=713">Schedule 2 Exhibit 1 — Bilateral Connection Agreement</a></div>
+            <div class="fr-desc">Storage is treated as generation under the CUSC, so the same BCA template applies — populated with both export and import capacities.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=733">— Appendix C · Capacity (CEC, TEC, plus import)</a></div>
+            <div class="fr-desc">Connection Entry Capacity and Transmission Entry Capacity for the discharge side, plus a Maximum Import Capacity for the charge side. Asymmetric values are common.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=736">— Appendix F1 · Agreed Balancing Services</a></div>
+            <div class="fr-desc">Storage is the marginal source of frequency response, reserve and reactive power — declaring capability here unlocks payments.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=931">Schedule 2 Exhibit 4 — Mandatory Services Agreement</a></div>
+            <div class="fr-desc">Where the storage asset is licensed and large enough, this template is signed alongside the BCA to formalise mandatory frequency response and reactive power.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/NESO Guidance Notes for Co-location of Different Technologies - Issue 3.1 - June 2025.pdf#page=5">Co-location declaration</a></div>
+            <div class="fr-desc">If storage shares a site with generation or demand, declared as such — see the Mixed / Co-located sub-tab.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/Gate 2 Criteria Methodology (G2CM) - Dec 2025.pdf#page=14">Gate 2 Readiness Submission</a></div>
+            <div class="fr-desc">Storage is in scope of the Gate 2 filter — same readiness pack as generation (land, planning, capacity).</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:18%">Category</th><th style="width:32%">Storage-specific addition</th><th style="width:30%">Why the network needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -398,6 +559,33 @@
         <span class="badge">Transmission · Mixed / Co-located</span>
         Sites that combine two or more technologies — typically <b>solar + battery</b>, <b>wind + battery</b>, or generation alongside on-site demand. NESO's <b>Guidance Notes for Co-location of Different Technologies (Issue 3.1, June 2025)</b> set the compliance pathway. The application bundle is a stack of the per-technology forms above, plus a site-level overlay describing how the technologies share the connection.
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=713">Schedule 2 Exhibit 1 — BCA (per technology, or consolidated)</a></div>
+            <div class="fr-desc">For Parallel sites, one BCA per technology. For Consolidated sites, a single BCA with appendices that list each technology's data.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/CUSC - 01 April 2026.pdf#page=737">Schedule 2 Exhibit 1A — Agreement to Vary the BCA</a></div>
+            <div class="fr-desc">When a new technology is added to an existing connection (e.g. battery added to an existing solar site), this is the formal variation template.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/NESO Guidance Notes for Co-location of Different Technologies - Issue 3.1 - June 2025.pdf#page=5">Configuration declaration</a></div>
+            <div class="fr-desc">Parallel vs Consolidated; if Consolidated, Independently Controlled vs Supplementary Controlled. Drives which compliance pathway applies.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/NESO Guidance Notes for Co-location of Different Technologies - Issue 3.1 - June 2025.pdf#page=10">Sequenced commissioning plan</a></div>
+            <div class="fr-desc">Order in which technologies energise, with the EON / ION / FON sign-off sequence per technology and any whole-site testing requirements.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/NESO Guidance Notes for Co-location of Different Technologies - Issue 3.1 - June 2025.pdf#page=18">Substantial Modification declaration</a></div>
+            <div class="fr-desc">If the change is to an existing connection, the developer files a Substantial Modification (NESO publishes worked examples in Appendix B).</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:20%">Category</th><th style="width:32%">What the developer submits</th><th style="width:28%">Why the network needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -460,6 +648,45 @@
           <span class="dl-meta">distribution.md</span>
         </a>
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=238">Form A1-1 / A1-2 / A1-3 · Type A application</a></div>
+            <div class="fr-desc">Pre-installation application form for Type A (≤ 1 MW). A1-1 for &lt; 50 kW, A1-2 for ≥ 50 kW or Fully Type Tested, A1-3 for newer cases. Captures applicant, site, plant data, capacity.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=292">Form A3-1 / A3-2 / A3-3 / A3-4 · Type A installation</a></div>
+            <div class="fr-desc">Installation Document (post-install). Confirms what was installed, settings used, type-test references. For Type A this also acts as the Final Operational Notification.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=350">Type B application form</a></div>
+            <div class="fr-desc">Application form for Type B (1–10 MW), submitted before installation. Drives the DNO design quote and connection offer.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=351">Form B2-1 / B2-2 · Type B compliance + commissioning tests</a></div>
+            <div class="fr-desc">B2-1 is the Power Generating Module Document (PGMD) — single doc evidencing every G99 criterion. B2-2 is the site compliance and commissioning test schedule.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=366">Form B3 · Type B installation &amp; commissioning</a></div>
+            <div class="fr-desc">Final installation &amp; commissioning confirmation form for Type B. Triggers the Final Operational Notification.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=388">Type C / D application + Form C2-1, C2-2</a></div>
+            <div class="fr-desc">Type C (10–50 MW) and Type D (≥ 50 MW or TX-connected) use the same form set. C2-1 is the PGMD; C2-2 is the commissioning test schedule.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">Form C3 · Type C / D installation &amp; commissioning</div>
+            <div class="fr-desc">Final installation &amp; commissioning confirmation; triggers the Final Operational Notification with the DNO (and NESO for Type D).</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">G98 fit-and-inform form <em>(micro-generation)</em></div>
+            <div class="fr-desc">Below G99 threshold (≤ 16 A per phase). Single form sent to the DNO after install — no design phase, no commissioning sign-off.</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:18%">Category</th><th style="width:32%">What the developer submits</th><th style="width:30%">Why the DNO needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -502,6 +729,33 @@
         <div class="scale-item"><div class="lbl">Form complexity scales by</div><div class="val">Voltage + max demand</div></div>
         <div class="scale-item"><div class="lbl">No type-test required</div><div class="val">No G99 / G98 (load only)</div></div>
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name">DNO Connection Enquiry Form (LV)</div>
+            <div class="fr-desc">For low-voltage demand. No national template — each DNO publishes its own (UKPN, NGED, SSEN, SPEN, ENWL, NPg). Captures applicant, site, max demand, premises type. Triggers the 45-working-day GSOP clock.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">DNO HV / EHV Connection Application Form</div>
+            <div class="fr-desc">For high-voltage / extra-high-voltage demand (e.g. data centres, large industrial). DNO-specific. Adds load profile, diversity factor, sensitive-load flag, on-site generation declaration. Triggers the 65-working-day GSOP clock.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/dcode-v58.pdf">Distribution Connection Agreement</a></div>
+            <div class="fr-desc">The contract between DNO and customer once the offer is accepted. Governed by the Distribution Code (DCode) — DPC §6 sets the contents framework.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/DCUSA-v18.1.pdf">DCUSA charging-methodology data</a></div>
+            <div class="fr-desc">Information needed for the DNO's connection-charging assessment under DCUSA — shallow vs deep cost share, allocation of reinforcement.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/Demand Connections Call for Input - Feb 2026.pdf#page=16">Strengthened readiness submission <em>(emerging)</em></a></div>
+            <div class="fr-desc">Reform proposes formal readiness tests at distribution too — planning consent, land control, off-taker contract — particularly for data-centre demand. Not yet formal.</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:18%">Category</th><th style="width:32%">What the developer submits</th><th style="width:30%">Why the DNO needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -539,6 +793,29 @@
       <div class="same-as">
         <b>Same data as Generation</b>, plus the storage-specific fields below. The Generation table is the baseline — Storage adds on top.
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=350">G99 Type B / C / D application + PGMD</a></div>
+            <div class="fr-desc">BESS at distribution is treated as a Power Generating Module under G99 Issue 2 (storage clauses in force from 1 March 2026). Same form set as Generation — Type B/C/D application form, then Form B2-1 / C2-1 PGMD with storage-specific data.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=366">Form B3 / C3 · installation &amp; commissioning</a></div>
+            <div class="fr-desc">Final installation &amp; commissioning confirmation. For storage, additional checks for charge / discharge envelope, anti-islanding, and (if declared) grid-forming behaviour.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">Import-capacity declaration <em>(DNO-specific)</em></div>
+            <div class="fr-desc">In addition to the G99 export side, the developer also files an import-capacity declaration with the DNO so the charging side is treated under the connection charging methodology. No national template — each DNO uses its own form.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/DCUSA-v18.1.pdf">DCUSA bidirectional capacity registration</a></div>
+            <div class="fr-desc">Commercial registration of both export and import capacities. Affects DUoS / connection charges.</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:18%">Category</th><th style="width:32%">Storage-specific addition</th><th style="width:30%">Why the DNO needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -568,6 +845,37 @@
         <span class="badge">Distribution · Mixed / Co-located</span>
         Sites combining generation, storage, and / or demand on a single distribution connection — typically <b>solar PV + BESS</b>, sometimes with a co-located demand site (data centre, EV depot, factory). The application bundles a G99 form for each generator / storage unit, a demand application for the load, and a site-level overlay describing how everything shares the connection.
       </div>
+
+      <div class="forms-block">
+        <h3>Forms &amp; exhibits the developer fills in</h3>
+        <div class="forms-list">
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf#page=238">G99 form set per generator / storage unit</a></div>
+            <div class="fr-desc">One full G99 form bundle per technology — application form (A1-X / B-app / C-app), PGMD (B2-1 / C2-1), commissioning form (B3 / C3), operational notifications. Each technology assessed individually.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">DNO Demand Connection Application <em>(if any pure load)</em></div>
+            <div class="fr-desc">If the site has a co-located demand element (e.g. EV depot, factory), a separate demand connection application is filed alongside the G99 forms. DNO-specific template.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">Site Single-Line Diagram + control philosophy</div>
+            <div class="fr-desc">Site-level drawing showing how each technology connects to the shared point of common coupling, plus a written control philosophy (priority rules, curtailment order, BESS charge / discharge logic).</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name">Active Network Management (ANM) acceptance <em>(if offered)</em></div>
+            <div class="fr-desc">Customer's signed acceptance of curtailment terms in exchange for an earlier or larger connection — common at distribution where reinforcement is expensive.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/02 - Industry Codes/DCUSA-v18.1.pdf">DCUSA combined-capacity registration</a></div>
+            <div class="fr-desc">Single registration of the firm export capacity (the most the whole site can ever export) and total import capacity, not the sum of the parts.</div>
+          </div>
+          <div class="form-row">
+            <div class="fr-name"><a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/NESO Guidance Notes for Co-location of Different Technologies - Issue 3.1 - June 2025.pdf#page=18">Substantial Modification declaration <em>(if adding to an existing site)</em></a></div>
+            <div class="fr-desc">Adding storage to an existing PV site (or vice-versa) is filed as a Substantial Modification, not a fresh connection — NESO publishes worked examples in Appendix B.</div>
+          </div>
+        </div>
+      </div>
+
       <div class="data-table-wrap">
         <table class="data">
           <thead><tr><th style="width:20%">Category</th><th style="width:32%">What the developer submits</th><th style="width:28%">Why the DNO needs it</th><th style="width:20%">Source</th></tr></thead>
@@ -596,7 +904,8 @@
       <ul>
         <li><b>Distribution Code (DCode)</b> — version 58, Energy Networks Association. <a href="../docs/grid-docs-source/02 - Industry Codes/dcode-v58.pdf">Open PDF</a></li>
         <li><b>DCUSA</b> (Distribution Connection and Use of System Agreement) — version 18.1. <a href="../docs/grid-docs-source/02 - Industry Codes/DCUSA-v18.1.pdf">Open PDF</a></li>
-        <li><b>Engineering Recommendation G99</b> — guidance document, ENA, January 2023. <a href="../docs/grid-docs-source/04 - Engineering Recommendations/G99 Guidance Document Jan 23.pdf">Open PDF</a></li>
+        <li><b>Engineering Recommendation G99 — Issue 2 (March 2025)</b>, the master ENA standard with all form templates as appendices (storage clauses in force from 1 March 2026). <a href="../docs/grid-docs-source/04 - Engineering Recommendations/ENA EREC G99 Issue 2 - 2025.pdf">Open PDF</a></li>
+        <li><b>G99 Guidance Document</b> — ENA, January 2023, plain-English overview of how the G99 process flows. <a href="../docs/grid-docs-source/04 - Engineering Recommendations/G99 Guidance Document Jan 23.pdf">Open PDF</a></li>
         <li><b>NESO Guidance Notes for Co-location of Different Technologies, Issue 3.1</b> — June 2025 (technical principles cascade to distribution practice). <a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/NESO Guidance Notes for Co-location of Different Technologies - Issue 3.1 - June 2025.pdf">Open PDF</a></li>
         <li><b>Demand Connections Reform — Call for Input</b> — Ofgem, February 2026 (covers embedded demand reform direction). <a href="../docs/grid-docs-source/05 - Connections Reform (TMO4+)/Demand Connections Call for Input - Feb 2026.pdf">Open PDF</a></li>
       </ul>
