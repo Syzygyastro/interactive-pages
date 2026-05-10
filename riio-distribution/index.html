@@ -272,6 +272,53 @@
   .panel-block { margin-top: 32px; }
   .panel-block:first-child { margin-top: 0; }
 
+  .plain-definition {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0ea5e9;
+    border-radius: 10px;
+    padding: 18px 20px;
+    max-width: 900px;
+    margin-bottom: 16px;
+  }
+  .plain-definition .eyebrow {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0369a1;
+    margin-bottom: 6px;
+  }
+  .plain-definition p {
+    font-size: 0.96rem;
+    color: #334155;
+    margin-bottom: 10px;
+  }
+  .plain-definition p:last-child { margin-bottom: 0; }
+  .plain-definition strong { color: #0f172a; }
+
+  .riio-bargain {
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+    border: 1px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 18px 20px;
+    max-width: 900px;
+    margin: 16px 0 14px;
+  }
+  .riio-bargain .quote {
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+  }
+  .riio-bargain ul {
+    margin-left: 20px;
+    color: #475569;
+    font-size: 0.92rem;
+  }
+  .riio-bargain li { margin-bottom: 4px; }
+
   /* ── DNO/TO CARDS ── */
   .dno-controls {
     display: flex;
@@ -899,7 +946,7 @@
   .vp2-srcref a { color: #0369a1; text-decoration: none; }
   .vp2-srcref a:hover { text-decoration: underline; }
 
-  /* tab style for the second VP button */
+  /* tab style for the second value-proposition button */
   .tab-btn.value-prop.tx-flavour { color: #b45309; }
   .tab-btn.value-prop.tx-flavour.active { border-bottom-color: #f59e0b; }
 
@@ -974,8 +1021,8 @@
     <button class="tab-btn" data-tab="distribution">Distribution · ED2 vs ED3</button>
     <button class="tab-btn" data-tab="operators">Network Operators</button>
     <button class="tab-btn" data-tab="framework">Outputs &amp; Incentives</button>
-    <button class="tab-btn value-prop" data-tab="vp-d">★ VP · Distribution</button>
-    <button class="tab-btn value-prop" data-tab="vp-t">★ VP · Transmission</button>
+    <button class="tab-btn value-prop" data-tab="vp-d">★ Value Proposition · Distribution</button>
+    <button class="tab-btn value-prop" data-tab="vp-t">★ Value Proposition · Transmission</button>
     <button class="tab-btn" data-tab="innovation">Innovation Funding</button>
     <button class="tab-btn" data-tab="connections">Connection Reforms</button>
     <button class="tab-btn" data-tab="refs">Sources</button>
@@ -1012,6 +1059,30 @@
       <div class="section-head">
         <h2>What is RIIO?</h2>
         <p>The framework Ofgem uses to set what monopoly network companies are allowed to earn — and what they have to deliver in return.</p>
+      </div>
+      <div class="plain-definition">
+        <span class="eyebrow">Plain-English definition</span>
+        <p>
+          <strong>RIIO is a performance-based contract system between the UK energy regulator, Ofgem, and monopoly
+          energy network companies.</strong> It is how the regulator decides how much money electricity transmission
+          and distribution networks can recover from customers, and what service, investment, reliability, and
+          innovation standards they must meet in exchange.
+        </p>
+        <p>
+          The monopoly point matters. Customers cannot choose a different local grid operator, so Ofgem cannot rely on
+          normal market competition to keep prices down or service quality up. RIIO is the substitute discipline:
+          regulated companies get an allowed revenue, but that revenue is tied to costs, delivery, outputs, and
+          performance.
+        </p>
+      </div>
+      <div class="riio-bargain">
+        <div class="quote">Ofgem's bargain is essentially: “We will allow you to earn money, but only if you...”</div>
+        <ul>
+          <li>keep costs reasonable,</li>
+          <li>improve and maintain the network,</li>
+          <li>invest in innovation, and</li>
+          <li>hit agreed performance targets.</li>
+        </ul>
       </div>
       <p style="font-size:0.95rem; color:#475569; max-width: 860px;">
         <strong>RIIO</strong> stands for <em>Revenue = Incentives + Innovation + Outputs</em>. Each price-control period
@@ -1161,12 +1232,11 @@
 
     <span class="vp2-tag dist">RIIO-ED2 · Distribution</span>
     <div class="vp2-opener">
-      Ofgem is Britain's energy regulator. Every five years it sets how much each
-      <b>Distribution Network Operator (DNO)</b> — the company that owns the wires from the local substation to
-      your house — is allowed to earn from electricity bills. The control today is called <b>RIIO-ED2</b>
-      (2023 – 2028). Roughly half of a DNO's revenue is fixed in advance. The other half flexes up or down on
-      performance: <strong>bonuses for things customers and Ofgem care about, fines for failing them.</strong>
-      That flex is where Grid Agents earns money for the network.
+      <strong>VP means Value Proposition.</strong> This tab explains why RIIO matters commercially: which parts of
+      the regulation can create extra money for a Distribution Network Operator (DNO), or stop it losing money.
+      A DNO owns the local wires from substations to homes and businesses. Under <b>RIIO-ED2</b> (2023 – 2028),
+      some revenue is fixed, but some moves with performance: bonuses for better service and penalties for poor
+      delivery. <strong>Those moving parts are where Grid Agents can prove value.</strong>
     </div>
 
     <div class="vp2-headline">
@@ -1186,9 +1256,9 @@
             <div class="it-amt">up to ~£8 m / yr</div>
           </div>
           <div class="it-plain">
-            Ofgem hires an independent firm to survey customers after a connection, fault or enquiry on a 1–10 scale.
-            Score above target → revenue bonus. <b>UK Power Networks earned £8.09 m</b> in Year 1 of ED2 — its
-            single biggest performance bonus.
+            Customers are surveyed after connections, faults and enquiries. Higher scores can increase DNO revenue.
+            Grid Agents helps by making applications clearer, responses faster and customer updates more consistent.
+            <b>UK Power Networks earned £8.09 m</b> from this in Year 1 of ED2.
             <span class="it-cite">Source: Ofgem RIIO-2 Electricity Distribution Annual Report 2023-24.</span>
           </div>
         </div>
@@ -1199,8 +1269,9 @@
             <div class="it-amt">~£1 – 2 m / yr per group</div>
           </div>
           <div class="it-plain">
-            Working days from a valid connection application to power flowing. Beat the DNO-specific target →
-            bonus. Across the industry, DNOs earned <b>£15.45 m combined</b> in the final ED1 year (2022-23).
+            This measures how long it takes to connect a customer after a valid application. Faster connections can
+            earn a bonus. Grid Agents helps by reducing manual review, improving design hand-offs and moving simple
+            cases through the queue faster. DNOs earned <b>£15.45 m combined</b> in the final ED1 year (2022-23).
             <span class="it-cite">Source: Ofgem ED1 closeout reporting; NGED "Your Power Future" public dashboard.</span>
           </div>
         </div>
@@ -1211,9 +1282,9 @@
             <div class="it-amt">~£10 – 20 m / yr per group</div>
           </div>
           <div class="it-plain">
-            Tracks customer minutes lost to power cuts. Across the 8-year ED1 control DNOs earned
-            <b>~£647 m in total</b> — about £123 m / yr industry-wide. Volatile: ED2 targets are tighter and
-            the upside is harder to reach.
+            This rewards networks that reduce the number and length of power cuts. Grid Agents helps by improving
+            fault triage, restoration planning and customer communication during incidents. Across ED1, DNOs earned
+            <b>~£647 m in total</b>; ED2 targets are tougher, so the upside is harder but still important.
             <span class="it-cite">Source: Ofgem ED1 closeout reporting.</span>
           </div>
         </div>
@@ -1224,9 +1295,9 @@
             <div class="it-amt">~£3 – 5 m / yr per group</div>
           </div>
           <div class="it-plain">
-            Of every £1 the DNO spends below allowance, it keeps about 50p; the rest goes back to consumers in
-            cheaper bills. The <b>£22.2 bn</b> ED2 allowance is ~£4.4 bn / year industry-wide. A 2 % efficiency
-            saves ~£44 m, of which ~£22 m is retained, ÷ 6 ownership groups ≈ £3.7 m / yr each.
+            If a DNO delivers the required work for less than Ofgem's allowed budget, it keeps part of the saving.
+            Grid Agents helps by cutting rework, avoidable site visits and slow manual design steps. On the
+            <b>£22.2 bn</b> ED2 allowance, a 2 % efficiency is worth ~£44 m industry-wide; about half is retained.
             <span class="it-cite">Source: RIIO-ED2 Final Determinations, Ofgem 30 Nov 2022.</span>
           </div>
         </div>
@@ -1242,9 +1313,9 @@
             <div class="it-amt">£m-scale per group</div>
           </div>
           <div class="it-plain">
-            The downside of the IIS metric above. <b>UK Power Networks took a £5.90 m penalty</b> in Year 1 of ED2
-            as targets re-baselined. Faster fault diagnosis, smarter restoration sequencing and automated customer
-            comms during incidents directly reduce exposure.
+            The same power-cut metric can become a penalty when performance misses target. <b>UK Power Networks took
+            a £5.90 m penalty</b> in Year 1 of ED2. Faster diagnosis, better restoration sequencing and clearer
+            customer messages reduce that risk.
             <span class="it-cite">Source: Ofgem RIIO-2 ED Annual Report 2023-24.</span>
           </div>
         </div>
@@ -1255,9 +1326,9 @@
             <div class="it-amt">cap ~0.9 % of base revenue</div>
           </div>
           <div class="it-plain">
-            Survey-based score from large connection customers (industrial sites, developers). Below threshold →
-            penalty. <b>SSE Southern took £0.74 m</b> in Year 1; Ofgem has signalled tighter thresholds going
-            forward.
+            Large connection customers, such as developers and industrial sites, score the DNO's service. Poor scores
+            can trigger penalties. Grid Agents helps by keeping applications, technical reviews and customer updates
+            moving cleanly. <b>SSE Southern took £0.74 m</b> in Year 1.
             <span class="it-cite">Source: Ofgem RIIO-2 ED Annual Report 2023-24.</span>
           </div>
         </div>
@@ -1268,10 +1339,9 @@
             <div class="it-amt">automatic</div>
           </div>
           <div class="it-plain">
-            <b>Guaranteed Standards of Performance</b> are statutory deadlines: typically 45 working days for a
-            low-voltage connection offer, 65 for high-voltage. Miss them and the DNO pays an automatic, fixed
-            amount per affected customer. Pre-screened applications and faster design turnaround keep the clock
-            under control.
+            <b>Guaranteed Standards of Performance</b> are hard deadlines for customer service, including connection
+            offers. Miss one and the DNO pays customers automatically. Grid Agents helps by pre-screening applications,
+            flagging missing information and speeding up design turnaround.
             <span class="it-cite">Source: Electricity (Standards of Performance) Regulations; Ofgem GSOP guidance.</span>
           </div>
         </div>
@@ -1282,8 +1352,9 @@
             <div class="it-amt">small £m, rising</div>
           </div>
           <div class="it-plain">
-            Volume of complaints normalised by customer base. ED2 makes this <b>penalty-only</b> — no upside.
-            Year 1 industry totals stayed modest but trended upward as connection volumes surged.
+            Complaints create downside only: there is no reward for doing well, only penalties for doing badly.
+            Grid Agents helps by reducing delays, preventing avoidable confusion and giving customers clearer status
+            updates as connection volumes rise.
             <span class="it-cite">Source: Ofgem RIIO-2 ED Annual Report 2023-24.</span>
           </div>
         </div>
@@ -1292,12 +1363,10 @@
 
     <div class="vp2-example">
       <span class="ex-label">Worked example — totex retained share</span>
-      Imagine Ofgem sets a corner-shop owner's grocery budget at £400 / month. Spend £380 and you keep £10 of the
-      £20 saved — the rest goes back to customers as cheaper prices. Now scale that to a DNO group: the
-      <b>£22.2 bn ED2 allowance</b> is the budget; about <b>£4.4 bn / year</b> flows industry-wide. A 2 %
-      efficiency from less manual rework, fewer truck rolls and faster design hand-offs saves ~£44 m. Half flows
-      back as retained revenue. Across 6 ownership groups, that's ≈ <b>£3.7 m / yr each</b> — on top of the
-      ODI-F bonuses above.
+      Ofgem gives DNOs a budget to deliver the network. If a DNO delivers the same work for less, consumers get some
+      of the saving through lower bills and the DNO keeps some as profit. The <b>£22.2 bn ED2 allowance</b> is about
+      <b>£4.4 bn / year</b> across the industry. A 2 % efficiency from less manual rework, fewer site visits and faster
+      design hand-offs saves ~£44 m. About half can be retained by networks.
     </div>
 
     <div class="vp2-glossary">
@@ -1323,12 +1392,10 @@
 
     <span class="vp2-tag tx">RIIO-T3 · Transmission &amp; ASTI</span>
     <div class="vp2-opener">
-      Ofgem also regulates the three <b>Transmission Owners (TOs)</b> — National Grid Electricity Transmission,
-      SSEN Transmission, and SP Transmission — that own the high-voltage long-distance network across Great
-      Britain, plus <b>NESO</b>, the system operator. The control today is called <b>RIIO-T3</b> (2026 – 2031).
-      Alongside it sits <b>ASTI</b>: a ~£20 bn programme of 26 strategic projects (HVDC subsea links, onshore
-      reinforcement) being fast-tracked for delivery by 2030. On both, much of the TO's profit moves with delivery
-      and project performance. <strong>That movement is where Grid Agents earns money for the TO.</strong>
+      <strong>VP means Value Proposition.</strong> This tab explains where Grid Agents can create commercial value for
+      Transmission Owners (TOs): the companies that own Britain's high-voltage long-distance network. Under
+      <b>RIIO-T3</b> (2026 – 2031) and <b>ASTI</b>, a ~£20 bn fast-track build programme, TOs can gain or lose money
+      based on delivery, cost control and system performance. <strong>Those risks and rewards are the buying case.</strong>
     </div>
 
     <div class="vp2-headline">
@@ -1348,9 +1415,9 @@
             <div class="it-amt">£m / yr per TO</div>
           </div>
           <div class="it-plain">
-            Tracks how much electricity wasn't delivered to customers because of TO outages, weighted by megawatt-hours.
-            Beat target → bonus; miss it → fine. Reported per-TO each year. Predictive asset-health and
-            contingency-planning agents reduce avoidable outages and shorten restoration time.
+            ENS measures electricity that was not delivered because of transmission outages. Better performance can
+            earn a reward; poor performance can become a penalty. Grid Agents helps by improving asset-health review,
+            outage planning and restoration decisions.
             <span class="it-cite">Source: Ofgem RIIO-2 Electricity Transmission Annual Reports 2023-24, 2024-25.</span>
           </div>
         </div>
@@ -1361,10 +1428,9 @@
             <div class="it-amt">band-dependent</div>
           </div>
           <div class="it-plain">
-            Spend below allowance → keep a banded share of the saving. ED2's flat ~50 % becomes a band-by-band
-            split under T3, with <b>GT3 (gas) at 39 %</b> retained. The cap on upside means smarter
-            <b>allocation</b> of effort — putting AI-led design automation where the band still pays well —
-            matters more in T3 than it did in T2.
+            TOs keep part of any saving when they deliver work below Ofgem's allowed cost. In T3, that retained share
+            changes by spending band, so the value case depends on where efficiency is created. Grid Agents helps by
+            putting design automation, review support and forecasting on the work packages where savings still pay.
             <span class="it-cite">Source: RIIO-3 Final Determinations, Ofgem 4 Dec 2025.</span>
           </div>
         </div>
@@ -1375,10 +1441,9 @@
             <div class="it-amt">£450 m programme</div>
           </div>
           <div class="it-plain">
-            Off-totex pots that pay for partnered pilot work. Ofgem and UKRI have <b>£450 m</b> allocated to the
-            Strategic Innovation Fund through 2028, plus per-licensee Network Innovation Allowance (typical
-            project £100 k – £2 m, partners keep IP). The route by which early Grid Agents work gets paid for
-            without touching the TO's totex.
+            NIA and SIF are RIIO innovation funds that can pay for pilots before a network commits normal project
+            budget. Ofgem and UKRI allocated <b>£450 m</b> to SIF through 2028, plus licensee-level NIA funding.
+            This is a practical route to fund early Grid Agents deployments.
             <span class="it-cite">Source: Ofgem / UKRI SIF programme; RIIO-2 NIA decisions.</span>
           </div>
         </div>
@@ -1394,10 +1459,9 @@
             <div class="it-amt">multi-£m per project</div>
           </div>
           <div class="it-plain">
-            Each of the <b>26 ASTI projects (~£20 bn portfolio)</b> carries a per-project bonus for hitting the
-            in-service date and a per-project penalty for slippage. Schedules slip mostly on the <b>soft</b> side
-            — consenting, third-party engagement, design version control, change-order review — exactly where
-            AI-assisted document workflows compress time.
+            ASTI projects can earn money for hitting their in-service dates and lose money for delay. The risk is not
+            only construction: consenting, stakeholder engagement, design changes and document control can all slow a
+            project. Grid Agents helps compress those coordination-heavy steps.
             <span class="it-cite">Source: Ofgem ASTI Guidance &amp; Submission Requirements, Aug 2023.</span>
           </div>
         </div>
@@ -1408,9 +1472,9 @@
             <div class="it-amt">£tens – £hundreds m cap per project</div>
           </div>
           <div class="it-plain">
-            Each ASTI project has a <b>fixed cost cap</b> with limited reopeners. Every £ spent above the cap
-            comes off the TO's own profit. AI-assisted scope control, change-order analysis and supply-chain
-            risk monitoring directly compress overrun risk.
+            ASTI projects have cost caps. If costs run above the cap without an allowed reopener, the TO absorbs the
+            pain. Grid Agents helps by tracking scope change, checking change orders and spotting supply-chain or
+            design risks earlier.
             <span class="it-cite">Source: Ofgem ASTI framework decision, Dec 2022.</span>
           </div>
         </div>
@@ -1421,9 +1485,9 @@
             <div class="it-amt">£m per programme</div>
           </div>
           <div class="it-plain">
-            <b>Price Control Deliverables</b> are funded outputs the TO must deliver (cyber uplifts, asset-health
-            programmes, network-output-measures targets). Took the money, didn't deliver → return it. Better
-            project tracking and forecasting reduces hand-back risk.
+            <b>Price Control Deliverables</b> are specific outputs Ofgem has funded, such as asset-health or cyber
+            programmes. If the TO takes the money but does not deliver, Ofgem can claw money back. Better tracking,
+            evidence capture and forecasting reduce that risk.
             <span class="it-cite">Source: RIIO-T2 Final Determinations Dec 2020; T3 FDs Dec 2025.</span>
           </div>
         </div>
@@ -1434,8 +1498,8 @@
             <div class="it-amt">£m / yr per TO</div>
           </div>
           <div class="it-plain">
-            The downside of the ENS reward above. T3 maintains the incentive with refined targets and a tighter
-            SF6-emissions trajectory alongside it. Avoidable outages are the line item to drive down.
+            ENS also has downside. Avoidable outages and slow restoration can reduce TO revenue. Grid Agents helps by
+            improving risk visibility before outages happen and helping teams make faster decisions when they do.
             <span class="it-cite">Source: RIIO-3 Final Determinations, 4 Dec 2025.</span>
           </div>
         </div>
@@ -1444,13 +1508,10 @@
 
     <div class="vp2-example">
       <span class="ex-label">Worked example — one ASTI project</span>
-      Take a single £1 bn onshore reinforcement scheme. The Fixed Output Incentive offers a per-project bonus for
-      hitting the in-service date and an equivalent penalty for slippage — typically <b>£m to tens of £m</b> per
-      project. The Fixed Cost Incentive caps cost; every £ above the cap comes off TO profit. The schedule risk
-      is overwhelmingly <b>soft</b>: consenting, stakeholder engagement, change-order review, design version
-      control. Compress those by even a few weeks and the swing tips the right way. Multiplied across the
-      <b>26-project, ~£20 bn ASTI portfolio</b>, the £ at stake is in the <b>low hundreds of millions</b> across
-      the TO group.
+      Take a single £1 bn reinforcement project. If it goes live on time, the TO may earn a reward; if it slips, the
+      TO may take a penalty. If costs exceed the cap, the overrun can hit profit. Many delays come from paperwork and
+      coordination: consenting, stakeholder updates, design versions and change orders. Compressing those steps by
+      weeks can protect £m-scale value on one project, and ASTI has <b>26 projects worth ~£20 bn</b>.
     </div>
 
     <div class="vp2-glossary">
@@ -1752,8 +1813,8 @@
   // ── VALUE-PROPOSITION CONTENT ─────────────────────────
   // Now lives as static HTML in #panel-vp-d and #panel-vp-t. The previous
   // dynamic incentives[] and strategic[] arrays + their renderers were removed
-  // when the single ★ Value Proposition tab was split into VP · Distribution
-  // and VP · Transmission, written for a non-technical audience.
+  // when the single ★ Value Proposition tab was split into distribution
+  // and transmission versions, written for a non-technical audience.
 
   // ── INNOVATION ────────────────────────────────────────
   const innov = [
